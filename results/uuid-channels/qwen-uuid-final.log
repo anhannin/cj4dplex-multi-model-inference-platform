@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights: 100%|██████████| 760/760 [00:00<00:00, 7972.49it/s]
+[INFO] [1793633238.616853411] [qwen_node]: {"event": "model_loaded", "time": 1793633238.6162283, "dtype": "bfloat16", "bindings": {"causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface", "causal_conv1d_update": "causal_conv1d.causal_conv1d_interface", "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk", "torch_recurrent_gated_delta_rule": "fla.ops.gated_delta_rule.fused_recurrent"}}
+[INFO] [1793633238.618948649] [qwen_node]: {"event": "node_ready", "time": 1793633238.6186903}
+[INFO] [1793633239.328471414] [qwen_node]: {"event": "processing_started", "sequence": 1, "time": 1793633239.3281395}
+[INFO] [1793633251.655900717] [qwen_node]: {"event": "processing_finished", "sequence": 1, "time": 1793633251.6548946, "status": "ok", "queue_wait_ms": 0.25008153170347214, "processing_ms": 12239.576317369938}
+[INFO] [1793633251.656158783] [qwen_node]: {"event": "processing_started", "sequence": 2, "time": 1793633251.6559672}
+[INFO] [1793633254.546964102] [qwen_node]: {"event": "processing_finished", "sequence": 2, "time": 1793633254.5459769, "status": "ok", "queue_wait_ms": 12039.21203315258, "processing_ms": 2876.6822796314955}
+[INFO] [1793633383.965368550] [qwen_node]: {"event": "processing_started", "sequence": 3, "time": 1793633383.9648747}
+[INFO] [1793633395.537154877] [qwen_node]: {"event": "processing_finished", "sequence": 3, "time": 1793633395.536087, "status": "ok", "queue_wait_ms": 0.26894640177488327, "processing_ms": 11486.275048926473}
+[INFO] [1793633395.537425008] [qwen_node]: {"event": "processing_started", "sequence": 4, "time": 1793633395.537219}
+[INFO] [1793633398.416080824] [qwen_node]: {"event": "processing_finished", "sequence": 4, "time": 1793633398.4152997, "status": "ok", "queue_wait_ms": 7940.0337832048535, "processing_ms": 2875.459927134216}
+[INFO] [1793633639.813224859] [qwen_node]: {"event": "processing_started", "sequence": 5, "time": 1793633639.812928}
+[INFO] [1793633640.355121010] [qwen_node]: {"event": "processing_finished", "sequence": 5, "time": 1793633640.3543458, "status": "ok", "queue_wait_ms": 0.23740995675325394, "processing_ms": 456.4011637121439}

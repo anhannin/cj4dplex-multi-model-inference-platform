@@ -1,0 +1,9 @@
+Creating new Ultralytics Settings v0.0.8 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/runtime/ultralytics/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings
+[INFO] [1793640193.951226498] [yolo_node]: {"event": "model_loaded", "time": 1793640193.950812, "device": "cuda:0", "dtype": "torch.float16"}
+[INFO] [1793640193.953697231] [yolo_node]: {"event": "node_ready", "time": 1793640193.9534538}
+[INFO] [1793640296.904252313] [yolo_node]: {"event": "processing_started", "sequence": 1, "time": 1793640296.9037328}
+[INFO] [1793640297.275846582] [yolo_node]: {"event": "processing_finished", "sequence": 1, "time": 1793640297.2745667, "status": "ok", "queue_wait_ms": 0.16691256314516068, "processing_ms": 117.78406426310539}
+[INFO] [1793640297.276084615] [yolo_node]: {"event": "processing_started", "sequence": 2, "time": 1793640297.2758973}
+[INFO] [1793640297.292175029] [yolo_node]: {"event": "processing_finished", "sequence": 2, "time": 1793640297.2915158, "status": "ok", "queue_wait_ms": 0.5928520113229752, "processing_ms": 14.342211186885834}

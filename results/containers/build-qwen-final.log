@@ -1,0 +1,37 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 777B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-spark-base:25.09-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 113B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/cj-spark-base:25.09-cu130
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 18.23kB done
+#5 DONE 0.0s
+
+#6 [2/4] RUN python -m pip install --no-cache-dir --report /opt/qwen-install.json     transformers==5.22.1 flash-linear-attention==0.4.2 fla-core==0.4.2 einops==0.8.1 &&     python -m pip install --no-cache-dir --no-deps     'https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.7.0/causal_conv1d-1.7.0%2Bcu13torch2.9cxx11abiTRUE-cp312-cp312-linux_aarch64.whl' &&     python -m pip freeze > /opt/requirements-resolved.txt
+#6 CACHED
+
+#7 [3/4] COPY scripts /app/scripts
+#7 DONE 0.0s
+
+#8 [4/4] RUN python -c "import torch, triton; from transformers import Qwen3_5ForConditionalGeneration; import causal_conv1d, fla; print(torch.__version__, triton.__version__)"
+#8 2.095 /usr/local/lib/python3.12/dist-packages/fla/utils.py:420: UserWarning: Triton is not supported on current platform, roll back to CPU.
+#8 2.095   warnings.warn(('Triton is not supported on current platform, roll back to CPU.'), stacklevel=1)
+#8 3.068 2.9.0a0+50eac811a6.nv25.09 3.4.0
+#8 DONE 3.6s
+
+#9 exporting to image
+#9 exporting layers 0.1s done
+#9 writing image sha256:bd451e97c8f541dd3e26128fe805d0a371c96acc8f5f5d9d7ee8015fbfb2fc79 done
+#9 naming to docker.io/library/cj-qwen:9b-cu130 done
+#9 DONE 0.1s

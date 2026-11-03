@@ -1,0 +1,19 @@
+cj-qwen-ros
+cj-yolo-ros
+configmap/cj-gpu-sharing unchanged
+daemonset.apps/nvidia-device-plugin-daemonset patched (no change)
+daemon set "nvidia-device-plugin-daemonset" successfully rolled out
+pod/gpu-probe-1 created
+pod/gpu-probe-2 created
+pod/gpu-probe-1 condition met
+pod/gpu-probe-2 condition met
+Same physical GPU: GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc, NVIDIA GB10
+pod "gpu-probe-1" deleted from cj-inference namespace
+pod "gpu-probe-2" deleted from cj-inference namespace
+deployment.apps/qwen created
+deployment.apps/yolo created
+deployment.apps/qwen condition met
+deployment.apps/yolo condition met
+NAME                   READY   STATUS    RESTARTS   AGE    IP               NODE         NOMINATED NODE   READINESS GATES
+qwen-c8879fccc-846wz   1/1     Running   0          111s   192.168.24.204   spark-e6d6   <none>           <none>
+yolo-fdd5ddfb-4h5bt    1/1     Running   0          111s   192.168.24.204   spark-e6d6   <none>           <none>

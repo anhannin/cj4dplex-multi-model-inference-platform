@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cj-validation
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smoke-web
+  namespace: cj-validation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smoke-web
+  template:
+    metadata:
+      labels:
+        app: smoke-web
+    spec:
+      automountServiceAccountToken: false
+      containers:
+      - name: nginx
+        image: nginx:1.28-alpine
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 50m
+            memory: 32Mi
+          limits:
+            memory: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smoke-web
+  namespace: cj-validation
+spec:
+  selector:
+    app: smoke-web
+  ports:
+  - port: 80
+    targetPort: 80

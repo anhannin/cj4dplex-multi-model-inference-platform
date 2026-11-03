@@ -1,0 +1,44 @@
+test_disconnected_waiter_is_skipped_over_real_tcp (test_singlefile_api.StandaloneTests.test_disconnected_waiter_is_skipped_over_real_tcp) ... {"event": "backend_loaded", "model": "qwen", "time": 1793624232.3924375}
+{"event": "model_ready", "model": "qwen", "time": 1793624232.3924944}
+{"event": "inference_started", "model": "qwen", "sequence": 1, "request_id": "263a63971b4a4ab4a441a5f282efbe28", "time": 1793624232.3997543, "queue_wait_ms": 0.036102719604969025}
+{"event": "inference_finished", "model": "qwen", "sequence": 1, "request_id": "263a63971b4a4ab4a441a5f282efbe28", "time": 1793624233.0003417, "processing_ms": 600.583310239017}
+{"event": "inference_started", "model": "qwen", "sequence": 3, "request_id": "3c5a601eb33343b1a38a86dd20309d06", "time": 1793624233.0013573, "queue_wait_ms": 0.03770459443330765}
+{"event": "inference_finished", "model": "qwen", "sequence": 3, "request_id": "3c5a601eb33343b1a38a86dd20309d06", "time": 1793624233.0014162, "processing_ms": 0.059135258197784424}
+ok
+test_fifo_full_and_other_model_independence (test_singlefile_api.StandaloneTests.test_fifo_full_and_other_model_independence) ... {"event": "backend_loaded", "model": "qwen", "time": 1793624233.2086725}
+{"event": "model_ready", "model": "qwen", "time": 1793624233.2087336}
+{"event": "backend_loaded", "model": "yolo", "time": 1793624233.210008}
+{"event": "model_ready", "model": "yolo", "time": 1793624233.210061}
+{"event": "inference_started", "model": "qwen", "sequence": 1, "request_id": "966fe94b3ec941aba88e1244b71adad2", "time": 1793624233.2118177, "queue_wait_ms": 0.06540585309267044}
+{"event": "inference_started", "model": "yolo", "sequence": 1, "request_id": "ddf20c71010f42bfaa518f64f5842f08", "time": 1793624233.2243268, "queue_wait_ms": 0.0797295942902565}
+{"event": "inference_finished", "model": "yolo", "sequence": 1, "request_id": "ddf20c71010f42bfaa518f64f5842f08", "time": 1793624233.224507, "processing_ms": 0.1796642318367958}
+{"event": "inference_finished", "model": "qwen", "sequence": 1, "request_id": "966fe94b3ec941aba88e1244b71adad2", "time": 1793624233.2249553, "processing_ms": 13.13573308289051}
+{"event": "inference_started", "model": "qwen", "sequence": 2, "request_id": "51b69154d3a245eaa661d88df1d203b7", "time": 1793624233.2249947, "queue_wait_ms": 12.526988051831722}
+{"event": "inference_finished", "model": "qwen", "sequence": 2, "request_id": "51b69154d3a245eaa661d88df1d203b7", "time": 1793624233.2250202, "processing_ms": 0.02503208816051483}
+ok
+test_files_have_direct_native_calls_and_no_project_imports (test_singlefile_api.StandaloneTests.test_files_have_direct_native_calls_and_no_project_imports) ... ok
+test_qwen_load_once_responses_and_limits (test_singlefile_api.StandaloneTests.test_qwen_load_once_responses_and_limits) ... {"event": "backend_loaded", "model": "qwen", "time": 1793624233.4345949}
+{"event": "model_ready", "model": "qwen", "time": 1793624233.4346383}
+{"event": "inference_started", "model": "qwen", "sequence": 1, "request_id": "5ca3e184295d4c529f608b2afceebc78", "time": 1793624233.4359052, "queue_wait_ms": 0.057967379689216614}
+{"event": "inference_finished", "model": "qwen", "sequence": 1, "request_id": "5ca3e184295d4c529f608b2afceebc78", "time": 1793624233.4359431, "processing_ms": 0.03646407276391983}
+{"event": "inference_started", "model": "qwen", "sequence": 2, "request_id": "39793a950dce4e44bcacb26c7ee81932", "time": 1793624233.436836, "queue_wait_ms": 0.05632173269987106}
+{"event": "inference_finished", "model": "qwen", "sequence": 2, "request_id": "39793a950dce4e44bcacb26c7ee81932", "time": 1793624233.4368656, "processing_ms": 0.0287545844912529}
+{"event": "inference_started", "model": "qwen", "sequence": 3, "request_id": "9d8df37a5f1e49cabd7865f2688012c9", "time": 1793624233.4398782, "queue_wait_ms": 0.04272535443305969}
+{"event": "inference_error", "model": "qwen", "sequence": 3, "request_id": "9d8df37a5f1e49cabd7865f2688012c9", "time": 1793624233.4398987, "error_type": "HTTPException"}
+{"event": "inference_started", "model": "qwen", "sequence": 4, "request_id": "eefe094fb9ce42bd9fdba86a784fc8fe", "time": 1793624233.440423, "queue_wait_ms": 0.038382597267627716}
+{"event": "inference_error", "model": "qwen", "sequence": 4, "request_id": "eefe094fb9ce42bd9fdba86a784fc8fe", "time": 1793624233.440447, "error_type": "RuntimeError"}
+{"event": "inference_started", "model": "qwen", "sequence": 5, "request_id": "87d12d58d04c4a6aa726b0409f9cd377", "time": 1793624233.4409585, "queue_wait_ms": 0.03822706639766693}
+{"event": "inference_finished", "model": "qwen", "sequence": 5, "request_id": "87d12d58d04c4a6aa726b0409f9cd377", "time": 1793624233.440977, "processing_ms": 0.018358230590820312}
+ok
+test_yolo_image_and_invalid_input (test_singlefile_api.StandaloneTests.test_yolo_image_and_invalid_input) ... {"event": "backend_loaded", "model": "yolo", "time": 1793624233.5445125}
+{"event": "model_ready", "model": "yolo", "time": 1793624233.5445597}
+{"event": "inference_started", "model": "yolo", "sequence": 1, "request_id": "3930166ae91647d08ba8c4bcc4a70b73", "time": 1793624233.5454245, "queue_wait_ms": 0.05997065454721451}
+{"event": "inference_finished", "model": "yolo", "sequence": 1, "request_id": "3930166ae91647d08ba8c4bcc4a70b73", "time": 1793624233.5455403, "processing_ms": 0.11488795280456543}
+{"event": "inference_started", "model": "yolo", "sequence": 2, "request_id": "f462bcb03fab4a65aeeb00bbff28715e", "time": 1793624233.5462878, "queue_wait_ms": 0.048420391976833344}
+{"event": "inference_error", "model": "yolo", "sequence": 2, "request_id": "f462bcb03fab4a65aeeb00bbff28715e", "time": 1793624233.5565598, "error_type": "HTTPException"}
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.297s
+
+OK

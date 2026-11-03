@@ -1,0 +1,8 @@
+[INFO] [1793621148.771682569] [yolo_node]: {"event": "model_loaded", "time": 1793621148.7712169, "device": "cuda:0", "dtype": "torch.float16"}
+[INFO] [1793621148.774189040] [yolo_node]: {"event": "node_ready", "time": 1793621148.7739701}
+[INFO] [1793621149.316569953] [yolo_node]: {"event": "processing_started", "sequence": 1, "time": 1793621149.3159976}
+[INFO] [1793621149.378800775] [yolo_node]: {"event": "processing_finished", "sequence": 1, "time": 1793621149.3782854, "status": "ok", "queue_wait_ms": 0.5137333646416664, "processing_ms": 62.04518768936396}
+[INFO] [1793621149.379118186] [yolo_node]: {"event": "processing_started", "sequence": 2, "time": 1793621149.3789136}
+[INFO] [1793621149.415779943] [yolo_node]: {"event": "processing_finished", "sequence": 2, "time": 1793621149.4153373, "status": "ok", "queue_wait_ms": 63.205039128661156, "processing_ms": 36.22266463935375}
+[INFO] [1793621149.416048698] [yolo_node]: {"event": "processing_started", "sequence": 3, "time": 1793621149.4158645}
+[INFO] [1793621149.437354091] [yolo_node]: {"event": "processing_finished", "sequence": 3, "time": 1793621149.4370005, "status": "error", "queue_wait_ms": 100.0891663134098, "processing_ms": 20.97791898995638}

@@ -1,0 +1,38 @@
+{
+  "kind": "llm",
+  "pid": 1,
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA GB10",
+  "capability": [
+    12,
+    1
+  ],
+  "cpu_threads": 4,
+  "acceleration_bindings": {
+    "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface",
+    "causal_conv1d_update": "causal_conv1d.causal_conv1d_interface",
+    "chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk",
+    "fused_recurrent_gated_delta_rule": "fla.ops.gated_delta_rule.fused_recurrent"
+  },
+  "input_tokens": 473,
+  "output_tokens": 128,
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "prompt_sha256": "9f0652b39945006e253f80ddbd052f97ad8821432ab5067dfed08be9f71e8747",
+  "prompt": "<|im_start|>user\nA film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput, queue wait and failures. Requests can compete for computing resources. A film studio runs text summarization and object detection on one GPU. The platform records latency, throughput,\nSummarize the operational risks in this passage.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "transformers": "5.22.1",
+  "forced_length": true,
+  "load_seconds": 150.77978081349283,
+  "smoke": {
+    "latency_ms": 32814.56068344414,
+    "ttft_ms": 31158.960737288,
+    "tpot_ms": 110.35918444395065,
+    "output_tokens": 16,
+    "text": "Based on the text provided, the operational risks stem from a **single point of"
+  },
+  "allocated_bytes": 18839624192,
+  "reserved_bytes": 19495124992,
+  "rss_bytes": 3276840960
+}

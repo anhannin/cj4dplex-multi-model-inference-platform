@@ -1,0 +1,2 @@
+/cj-qwen-ros image=sha256:912d847a36ebf30cdfc88e419c4390ad804382660193a8f60f1e1c622cfc2fda running=true restart=0
+/cj-yolo-ros image=sha256:489dd320f13c13d31ac2ed5df0970bcb888060e582b01e5e6659e728d5b8936a running=true restart=0

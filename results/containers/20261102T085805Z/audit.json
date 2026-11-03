@@ -1,0 +1,14 @@
+{
+  "state": "PASS",
+  "phases": 5,
+  "raw_requests": 16065,
+  "request_errors": 0,
+  "verified_upstream_files": 3397,
+  "external_kernel_bindings": true,
+  "actual_model_gpu_kernel_trace": true,
+  "cv_cuda_fp16": true,
+  "runtime_fallback_or_warning_logs": false,
+  "pip_check": "PASS",
+  "source_hashes": "PASS",
+  "scope": "exploratory model-level tests, not API E2E/SLO/production certification"
+}

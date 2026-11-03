@@ -1,0 +1,51 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.ros
+#1 transferring dockerfile: 701B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-yolo:26l-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 257B done
+#3 DONE 0.0s
+
+#4 [ros-deps 1/5] FROM docker.io/library/cj-yolo:26l-cu130
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 178B done
+#5 DONE 0.0s
+
+#6 [ros-deps 2/5] COPY containers/ros2/install_ros.sh /tmp/install_ros.sh
+#6 CACHED
+
+#7 [ros-deps 3/5] RUN bash /tmp/install_ros.sh && rm /tmp/install_ros.sh
+#7 CACHED
+
+#8 [ros-deps 4/5] RUN python -m pip install --no-cache-dir pi-heif==1.4.0
+#8 0.487 Collecting pi-heif==1.4.0
+#8 0.520   Downloading pi_heif-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (6.3 kB)
+#8 0.521 Requirement already satisfied: pillow>=11.1.0 in /usr/local/lib/python3.12/dist-packages (from pi-heif==1.4.0) (11.3.0)
+#8 0.526 Downloading pi_heif-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (1.4 MB)
+#8 0.644    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 11.8 MB/s  0:00:00
+#8 0.786 Installing collected packages: pi-heif
+#8 0.840 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#8 0.840 Successfully installed pi-heif-1.4.0
+#8 DONE 0.9s
+
+#9 [ros-deps 5/5] RUN bash -c 'source /opt/ros/jazzy/setup.bash && python -c "import rclpy; from sensor_msgs.msg import CompressedImage; print(CompressedImage())"' && python -m pip check
+#9 0.458 sensor_msgs.msg.CompressedImage(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), format='', data=[])
+#9 0.737 No broken requirements found.
+#9 DONE 0.8s
+
+#10 [runtime 1/1] COPY ros2/yolo_node.py /app/ros2/yolo_node.py
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.1s done
+#11 writing image sha256:69d252494d223532bb16ff8acf5ccfad2ea8efac372f73f656efa17ea2fde3af done
+#11 naming to docker.io/library/cj-yolo-ros:26l-jazzy done
+#11 DONE 0.1s

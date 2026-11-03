@@ -1,0 +1,15 @@
+{
+  "paired_samples": 6,
+  "paired_generation_overhead_fraction": [
+    -0.0003413194129538999,
+    -0.0007404283852771032,
+    -0.0011462261508705662,
+    0.000814939206767562,
+    8.531923353993776e-05,
+    0.0003910978434242818
+  ],
+  "median_overhead_fraction": -0.00012800008970698107,
+  "selected_mode": "tokens",
+  "selection_rule": "tokens if median paired generate overhead <= 5%; otherwise basic",
+  "identical_text_per_pair": true
+}

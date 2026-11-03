@@ -1,0 +1,44 @@
+{
+  "sequence": 1,
+  "request_id": "r_facb8b6cd11e4f42a6ae85c02caa56aa",
+  "queue_wait_ms": 0.16691256314516068,
+  "status": "ok",
+  "width": 1280,
+  "height": 720,
+  "detections": [
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.93994140625,
+      "xyxy": [
+        122.0,
+        201.5,
+        1134.0,
+        714.5
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.93408203125,
+      "xyxy": [
+        746.0,
+        45.25,
+        1146.0,
+        711.0
+      ]
+    },
+    {
+      "class_id": 27,
+      "label": "tie",
+      "confidence": 0.85986328125,
+      "xyxy": [
+        436.0,
+        437.0,
+        526.5,
+        719.0
+      ]
+    }
+  ],
+  "processing_ms": 117.78406426310539
+}

@@ -1,0 +1,67 @@
+Requirement already satisfied: transformers in /work/venv/lib/python3.12/site-packages (5.22.1)
+Requirement already satisfied: huggingface-hub<3.0,>=1.31.0 in /work/venv/lib/python3.12/site-packages (from transformers) (2.4.0)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2.1.0)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from transformers) (6.0.2)
+Collecting regex>=2025.10.22 (from transformers)
+  Downloading regex-2026.9.29-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.6/40.6 kB 1.1 MB/s eta 0:00:00
+Requirement already satisfied: tokenizers<0.24.0,>=0.23.1 in /work/venv/lib/python3.12/site-packages (from transformers) (0.23.3)
+Collecting typer (from transformers)
+  Downloading typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: safetensors>=0.8.0 in /work/venv/lib/python3.12/site-packages (from transformers) (0.8.0)
+Requirement already satisfied: tqdm>=4.60 in /usr/local/lib/python3.12/dist-packages (from transformers) (4.67.1)
+Collecting click<9.0.0,>=8.4.2 (from huggingface-hub<3.0,>=1.31.0->transformers)
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers) (3.19.1)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers) (2025.9.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.6.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers) (1.6.0)
+Collecting httpx2<3,>=2.0.0 (from huggingface-hub<3.0,>=1.31.0->transformers)
+  Downloading httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers) (4.15.0)
+Collecting shellingham>=1.3.0 (from typer->transformers)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: rich>=13.8.0 in /usr/local/lib/python3.12/dist-packages (from typer->transformers) (14.1.0)
+Collecting annotated-doc>=0.0.2 (from typer->transformers)
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Requirement already satisfied: anyio>=4.10 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers) (4.10.0)
+Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers)
+  Downloading httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+Collecting idna>=3.18 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers)
+  Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers) (0.16.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer->transformers) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer->transformers) (2.19.2)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio>=4.10->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers) (1.3.1)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers) (0.1.2)
+Downloading regex-2026.9.29-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (805 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 805.9/805.9 kB 9.2 MB/s eta 0:00:00
+Downloading typer-0.27.3-py3-none-any.whl (123 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.3/123.3 kB 6.9 MB/s eta 0:00:00
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 6.1 MB/s eta 0:00:00
+Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 6.0 MB/s eta 0:00:00
+Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.1/85.1 kB 6.0 MB/s eta 0:00:00
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 4.9 MB/s eta 0:00:00
+Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+Installing collected packages: truststore, shellingham, regex, idna, click, annotated-doc, httpcore2, typer, httpx2
+  Attempting uninstall: regex
+    Found existing installation: regex 2025.9.1
+    Not uninstalling regex at /usr/local/lib/python3.12/dist-packages, outside environment /work/venv
+    Can't uninstall 'regex'. No files were found to uninstall.
+  Attempting uninstall: idna
+    Found existing installation: idna 3.10
+    Not uninstalling idna at /usr/local/lib/python3.12/dist-packages, outside environment /work/venv
+    Can't uninstall 'idna'. No files were found to uninstall.
+  Attempting uninstall: click
+    Found existing installation: click 8.2.1
+    Not uninstalling click at /usr/local/lib/python3.12/dist-packages, outside environment /work/venv
+    Can't uninstall 'click'. No files were found to uninstall.
+Successfully installed annotated-doc-0.0.5 click-8.5.0 httpcore2-2.16.0 httpx2-2.16.0 idna-3.20 regex-2026.9.29 shellingham-1.5.4 truststore-0.10.5 typer-0.27.3

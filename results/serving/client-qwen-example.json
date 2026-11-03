@@ -1,0 +1,11 @@
+{
+  "http_e2e_ms": 1538.230236619711,
+  "response": {
+    "request_id": "c7629153990b4e61b8712ea2a6cf23cc",
+    "sequence": 6,
+    "queue_wait_ms": 0.029760412871837616,
+    "processing_ms": 1522.6188190281391,
+    "text": "Independent model queues enable text generation and object detection to share a GPU.\n",
+    "output_tokens": 17
+  }
+}

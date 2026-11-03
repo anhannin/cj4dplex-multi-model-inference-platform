@@ -1,0 +1,68 @@
+[
+  {
+    "Id": "0d1c524efbef012bb7c7f81eb5809fd848765d0c025bd13fba598c8dd2cfe65d",
+    "Name": "/cj-qwen-api",
+    "Image": "sha256:6eb9d84fd6daa46d90b08935f3f1f834356f881c7e9b4d5e5c3f10597941183f",
+    "RestartCount": 0,
+    "running": true,
+    "oom_killed": false,
+    "ports": {
+      "6006/tcp": null,
+      "8000/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "8001"
+        }
+      ],
+      "8888/tcp": null
+    },
+    "entrypoint": [
+      "python",
+      "-m",
+      "uvicorn",
+      "serving.qwen_app:app",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "8000",
+      "--workers",
+      "1",
+      "--no-access-log",
+      "--timeout-graceful-shutdown",
+      "180"
+    ]
+  },
+  {
+    "Id": "27545f509939475f5bad203edbe6f073b2bdb86b321c85764d94edeefcc0b234",
+    "Name": "/cj-yolo-api",
+    "Image": "sha256:4ec84ed075755cf7074dcf22434f78ca2a886a2d9b7d5842c46466b1431a3dd7",
+    "RestartCount": 0,
+    "running": true,
+    "oom_killed": false,
+    "ports": {
+      "6006/tcp": null,
+      "8000/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "8002"
+        }
+      ],
+      "8888/tcp": null
+    },
+    "entrypoint": [
+      "python",
+      "-m",
+      "uvicorn",
+      "serving.yolo_app:app",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "8000",
+      "--workers",
+      "1",
+      "--no-access-log",
+      "--timeout-graceful-shutdown",
+      "180"
+    ]
+  }
+]

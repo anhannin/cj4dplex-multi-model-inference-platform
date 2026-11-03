@@ -1,0 +1,31 @@
+{
+  "timing_schema": 1,
+  "timings_ms": {
+    "envelope_parse_ms": 0.18409918993711472,
+    "template_tokenize_ms": 0.356198,
+    "input_transfer_ms": 0.06757,
+    "generate_wall_ms": 2884.632622,
+    "output_decode_ms": 0.103202,
+    "callback_to_result_ready_ms": 13796.31176404655
+  },
+  "sequence": 72,
+  "request_id": "r_a474a892460641e798595eccdbf18d41",
+  "queue_wait_ms": 10910.955336876214,
+  "run_id": "",
+  "timing_mode": "basic",
+  "input_tokens": 20,
+  "status": "ok",
+  "text": "FIFO stands for \"First In, First Out,\" a method where the first item added to a collection or queue is the first one to be removed or processed",
+  "output_tokens": 32,
+  "generation_mode": "bounded",
+  "effective_max_new_tokens": 32,
+  "context_limit": 262144,
+  "finish_reason": "length",
+  "processing_ms": 2885.355483740568,
+  "client_timings_ms": {
+    "request_e2e_ms": 14131.168694,
+    "response_parse_ms": 0.035985,
+    "prepare_ms": 71.121039,
+    "setup_discovery_ms": 223.18276
+  }
+}

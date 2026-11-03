@@ -1,0 +1,2 @@
+/qwen_node
+/yolo_node

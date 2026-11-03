@@ -1,0 +1,3 @@
+{"stage": "warmup_done", "counts": {"qwen": 5}}
+{"stage": "measurement_done", "counts": {"qwen": 30}}
+{"state": "PASS", "output": "/home/avees/cj-latency/phases/01-qwen-only"}

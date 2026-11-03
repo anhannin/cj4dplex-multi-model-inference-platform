@@ -1,0 +1,15 @@
+{
+  "state": "PASS",
+  "node": "spark-e6d6",
+  "kubernetes": "v1.37.2",
+  "runtime": "containerd 2.2.1 (dedicated service)",
+  "node_ready": true,
+  "gpu_allocatable": 1,
+  "pod_dns_http": "PASS",
+  "gpu_resource_pod_nvidia_smi": "PASS",
+  "existing_docker_cuda_math": "PASS (both model development containers)",
+  "host_swap": "preserved; kubelet NoSwap for Pods",
+  "ai_models_on_kubernetes": "not deployed",
+  "gpu_sharing": "not configured",
+  "kubeconfig_copied_to_repository": false
+}

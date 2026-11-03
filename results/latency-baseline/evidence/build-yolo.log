@@ -1,0 +1,40 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.ros
+#1 transferring dockerfile: 701B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-yolo:26l-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 257B done
+#3 DONE 0.0s
+
+#4 [ros-deps 1/5] FROM docker.io/library/cj-yolo:26l-cu130
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 13.57kB done
+#5 DONE 0.0s
+
+#6 [ros-deps 3/5] RUN bash /tmp/install_ros.sh && rm /tmp/install_ros.sh
+#6 CACHED
+
+#7 [ros-deps 4/5] RUN python -m pip install --no-cache-dir pi-heif==1.4.0
+#7 CACHED
+
+#8 [ros-deps 2/5] COPY containers/ros2/install_ros.sh /tmp/install_ros.sh
+#8 CACHED
+
+#9 [ros-deps 5/5] RUN bash -c 'source /opt/ros/jazzy/setup.bash && python -c "import rclpy; from sensor_msgs.msg import CompressedImage; print(CompressedImage())"' && python -m pip check
+#9 CACHED
+
+#10 [runtime 1/1] COPY ros2/yolo_node.py /app/ros2/yolo_node.py
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers 0.0s done
+#11 writing image sha256:307b93e7372e1c520a3055dca0531aaa6e71124ed8eb44a225514355198f5625 done
+#11 naming to docker.io/library/cj-yolo-ros:26l-timing-v1 done
+#11 DONE 0.1s

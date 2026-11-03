@@ -1,0 +1,9 @@
+Creating new Ultralytics Settings v0.0.8 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/runtime/ultralytics/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings
+Traceback (most recent call last):
+  File "/app/scripts/worker.py", line 180, in <module>
+    main()
+  File "/app/scripts/worker.py", line 139, in main
+    raise RuntimeError('YOLO did not select native CUDA FP16')
+RuntimeError: YOLO did not select native CUDA FP16

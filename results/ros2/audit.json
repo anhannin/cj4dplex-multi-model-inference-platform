@@ -1,0 +1,30 @@
+{
+  "state": "PASS",
+  "valid_model_results": 6,
+  "expected_invalid_results": 2,
+  "ros2_cli_pub_echo": "PASS",
+  "same_model_fifo_and_serial_processing": true,
+  "independent_model_processing_overlap": true,
+  "overlap_unix_seconds": {
+    "qwen": [
+      1793621148.8082721,
+      1793621160.2686703
+    ],
+    "yolo": [
+      1793621149.3159976,
+      1793621149.3782854
+    ]
+  },
+  "model_loads_per_current_process": 1,
+  "deployed_source_sha256_match": true,
+  "only_two_deployment_python_files": true,
+  "gpu_qwen": "BF16 + external causal_conv1d/FLA",
+  "gpu_yolo": "CUDA FP16",
+  "api_containers": "preserved, stopped to avoid duplicate model residency",
+  "scope": "ROS topics functional validation, not SLO/accuracy/performance claims",
+  "cpu_contract_and_regression_tests": 34,
+  "ruff": "PASS",
+  "compileall": "PASS",
+  "bash_syntax": "PASS",
+  "review_zip": "downloads/ros2_nodes.zip"
+}

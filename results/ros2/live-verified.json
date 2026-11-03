@@ -1,0 +1,224 @@
+{
+  "state": "PASS",
+  "scope": "functional ROS topics, not a performance benchmark",
+  "qwen": [
+    {
+      "sequence": 6,
+      "request_id": "ros-q1",
+      "queue_wait_ms": 0.16796868294477463,
+      "status": "ok",
+      "text": "GPU resource contention occurs when multiple processes, threads, or applications compete for limited hardware resources within a Graphics Processing Unit, leading to performance degradation, latency spikes, or system instability. This phenomenon is particularly critical in modern computing environments where GPUs are shared between the operating system, user applications, and background services.\n\nHere are six key aspects of GPU resource contention in detail:\n\n*   **Compute Unit and SM Starvation**\n    Modern GPUs consist of multiple Streaming Multiprocessors (SMs) or Compute Units, which are the fundamental building blocks for parallel processing. When a single heavy application (e.g., a large AI model training job",
+      "output_tokens": 128,
+      "processing_ms": 11460.26308927685
+    },
+    {
+      "sequence": 7,
+      "request_id": "ros-q2",
+      "queue_wait_ms": 10954.276073724031,
+      "status": "ok",
+      "text": "Here are two key benefits of keeping models resident in GPU memory:\n\n1.  **Elimination of Data Transfer Latency**\n    When a model resides",
+      "output_tokens": 32,
+      "processing_ms": 2863.7158693745732
+    },
+    {
+      "sequence": 8,
+      "request_id": "ros-q3",
+      "queue_wait_ms": 13818.406763486564,
+      "status": "ok",
+      "text": "A FIFO (First-In, First-Out) queue processes data by ensuring that the",
+      "output_tokens": 16,
+      "processing_ms": 1436.0977346077561
+    },
+    {
+      "sequence": 9,
+      "request_id": "invalid-text",
+      "queue_wait_ms": 0.15750527381896973,
+      "status": "error",
+      "error_type": "ValueError",
+      "error": "text must be nonblank and at most 32768 characters",
+      "processing_ms": 0.3790277987718582
+    }
+  ],
+  "yolo": [
+    {
+      "sequence": 1,
+      "source_stamp": {
+        "sec": 1793621149,
+        "nanosec": 314077659
+      },
+      "frame_id": "test_camera",
+      "queue_wait_ms": 0.5137333646416664,
+      "status": "ok",
+      "width": 810,
+      "height": 1080,
+      "detections": [
+        {
+          "class_id": 5,
+          "label": "bus",
+          "confidence": 0.93359375,
+          "xyxy": [
+            6.9609375,
+            229.078125,
+            804.9375,
+            737.859375
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.921875,
+          "xyxy": [
+            667.828125,
+            395.71875,
+            810.0,
+            880.875
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.91845703125,
+          "xyxy": [
+            50.625,
+            399.7265625,
+            247.640625,
+            904.5
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.8984375,
+          "xyxy": [
+            222.328125,
+            407.109375,
+            345.09375,
+            860.203125
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.84912109375,
+          "xyxy": [
+            0.0,
+            550.96875,
+            79.3125,
+            873.28125
+          ]
+        }
+      ],
+      "processing_ms": 62.04518768936396
+    },
+    {
+      "sequence": 2,
+      "source_stamp": {
+        "sec": 1793621149,
+        "nanosec": 314387967
+      },
+      "frame_id": "test_camera",
+      "queue_wait_ms": 63.205039128661156,
+      "status": "ok",
+      "width": 1280,
+      "height": 720,
+      "detections": [
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.93994140625,
+          "xyxy": [
+            122.0,
+            201.5,
+            1134.0,
+            714.5
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.93408203125,
+          "xyxy": [
+            746.0,
+            45.25,
+            1146.0,
+            711.0
+          ]
+        },
+        {
+          "class_id": 27,
+          "label": "tie",
+          "confidence": 0.85986328125,
+          "xyxy": [
+            436.0,
+            437.0,
+            526.5,
+            719.0
+          ]
+        }
+      ],
+      "processing_ms": 36.22266463935375
+    },
+    {
+      "sequence": 3,
+      "source_stamp": {
+        "sec": 1793621149,
+        "nanosec": 314461376
+      },
+      "frame_id": "test_camera",
+      "queue_wait_ms": 100.0891663134098,
+      "status": "error",
+      "error_type": "UnidentifiedImageError",
+      "processing_ms": 20.97791898995638
+    }
+  ],
+  "receive_order": [
+    {
+      "kind": "yolo",
+      "sequence": 1,
+      "time": 1793621149.379126
+    },
+    {
+      "kind": "yolo",
+      "sequence": 2,
+      "time": 1793621149.4160402
+    },
+    {
+      "kind": "yolo",
+      "sequence": 3,
+      "time": 1793621149.4375212
+    },
+    {
+      "kind": "qwen",
+      "sequence": 6,
+      "time": 1793621160.269164
+    },
+    {
+      "kind": "qwen",
+      "sequence": 7,
+      "time": 1793621163.134055
+    },
+    {
+      "kind": "qwen",
+      "sequence": 8,
+      "time": 1793621164.5701983
+    },
+    {
+      "kind": "qwen",
+      "sequence": 9,
+      "time": 1793621164.574739
+    }
+  ],
+  "ros2_cli": {
+    "publish_stdout": "publisher: beginning loop\npublishing #1: std_msgs.msg.String(data='Reply with one short greeting.')\n\n",
+    "echo_stdout": "{\"sequence\": 10, \"request_id\": \"10\", \"queue_wait_ms\": 0.14576036483049393, \"status\": \"ok\", \"text\": \"Hello!\\n\", \"output_tokens\": 5, \"processing_ms\": 458.8328143581748}\n---\n",
+    "result": {
+      "sequence": 10,
+      "request_id": "10",
+      "queue_wait_ms": 0.14576036483049393,
+      "status": "ok",
+      "text": "Hello!\n",
+      "output_tokens": 5,
+      "processing_ms": 458.8328143581748
+    }
+  }
+}

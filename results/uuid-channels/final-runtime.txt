@@ -1,0 +1,6 @@
+/cj-qwen-ros running=true restart=0 image=sha256:912d847a36ebf30cdfc88e419c4390ad804382660193a8f60f1e1c622cfc2fda
+/cj-yolo-ros running=true restart=0 image=sha256:489dd320f13c13d31ac2ed5df0970bcb888060e582b01e5e6659e728d5b8936a
+c0ee1ba1edcffe5dcbea9c503a00409b711c5f698c2da07e736e5bffddf0b3d2  /home/avees/cj-ros2/clients/request_qwen.py
+de0e8331f55fa2c0a1745e4d3f5b634550e29d4a303ea8b94b41d430c0338149  /home/avees/cj-ros2/clients/request_yolo.py
+840b5f54e854f24b78250ccbbfd84d64eed3c4ce6b852bb97a7f1eb354e032ea  /app/ros2/qwen_node.py
+49de79651f792970d407f3773a9411c76ca369d3a2b7f8c8380496a0f9e66a1b  /app/ros2/yolo_node.py

@@ -1,0 +1,6 @@
+daemonset.apps/nvidia-device-plugin-daemonset configured (server dry run)
+configmap/cj-gpu-sharing unchanged (server dry run)
+namespace/cj-inference configured (server dry run)
+deployment.apps/qwen configured (server dry run)
+runtimeclass.node.k8s.io/nvidia unchanged (server dry run)
+deployment.apps/yolo configured (server dry run)

@@ -1,0 +1,31 @@
+{
+  "spec": {
+    "template": {
+      "spec": {
+        "containers": [
+          {
+            "name": "nvidia-device-plugin-ctr",
+            "args": [
+              "--config-file=/config/config.yaml"
+            ],
+            "volumeMounts": [
+              {
+                "name": "cj-gpu-sharing",
+                "mountPath": "/config",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "cj-gpu-sharing",
+            "configMap": {
+              "name": "cj-gpu-sharing"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

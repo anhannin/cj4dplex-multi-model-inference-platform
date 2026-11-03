@@ -1,0 +1,66 @@
+test_fifo_full_and_other_model_independence (test_singlefile_api.StandaloneTests.test_fifo_full_and_other_model_independence) ... ERROR
+test_files_have_direct_native_calls_and_no_project_imports (test_singlefile_api.StandaloneTests.test_files_have_direct_native_calls_and_no_project_imports) ... ERROR
+test_qwen_load_once_responses_and_limits (test_singlefile_api.StandaloneTests.test_qwen_load_once_responses_and_limits) ... ERROR
+test_yolo_image_and_invalid_input (test_singlefile_api.StandaloneTests.test_yolo_image_and_invalid_input) ... ERROR
+
+======================================================================
+ERROR: test_fifo_full_and_other_model_independence (test_singlefile_api.StandaloneTests.test_fifo_full_and_other_model_independence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_singlefile_api.py", line 178, in test_fifo_full_and_other_model_independence
+    q=load('qwen').create_app(queue_capacity=1)
+      ^^^^^^^^^^^^
+  File "/home/avees/cj/tests/test_singlefile_api.py", line 23, in load
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/avees/cj/api/qwen_api.py'
+
+======================================================================
+ERROR: test_files_have_direct_native_calls_and_no_project_imports (test_singlefile_api.StandaloneTests.test_files_have_direct_native_calls_and_no_project_imports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_singlefile_api.py", line 132, in test_files_have_direct_native_calls_and_no_project_imports
+    source = (ROOT/'api'/(kind+'_api.py')).read_text()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/avees/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/avees/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/avees/cj/api/qwen_api.py'
+
+======================================================================
+ERROR: test_qwen_load_once_responses_and_limits (test_singlefile_api.StandaloneTests.test_qwen_load_once_responses_and_limits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_singlefile_api.py", line 143, in test_qwen_load_once_responses_and_limits
+    module = load('qwen')
+             ^^^^^^^^^^^^
+  File "/home/avees/cj/tests/test_singlefile_api.py", line 23, in load
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/avees/cj/api/qwen_api.py'
+
+======================================================================
+ERROR: test_yolo_image_and_invalid_input (test_singlefile_api.StandaloneTests.test_yolo_image_and_invalid_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_singlefile_api.py", line 163, in test_yolo_image_and_invalid_input
+    module=load('yolo')
+           ^^^^^^^^^^^^
+  File "/home/avees/cj/tests/test_singlefile_api.py", line 23, in load
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/avees/cj/api/yolo_api.py'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (errors=4)

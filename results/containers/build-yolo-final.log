@@ -1,0 +1,38 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 460B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-spark-base:25.09-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 113B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/cj-spark-base:25.09-cu130
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 371B done
+#5 DONE 0.0s
+
+#6 [2/4] RUN python -m pip install --no-cache-dir --report /opt/yolo-install.json     ultralytics-opencv-headless==8.4.198 &&     python -m pip freeze > /opt/requirements-resolved.txt
+#6 CACHED
+
+#7 [3/4] COPY scripts /app/scripts
+#7 DONE 0.0s
+
+#8 [4/4] RUN python -c "import torch, torchvision, ultralytics; print(torch.__version__, torchvision.__version__, ultralytics.__version__)"
+#8 1.213 Creating new Ultralytics Settings v0.0.8 file ✅ 
+#8 1.213 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+#8 1.213 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings
+#8 1.213 2.9.0a0+50eac811a6.nv25.09 0.24.0a0+98f8b375 8.4.198
+#8 DONE 1.5s
+
+#9 exporting to image
+#9 exporting layers 0.1s done
+#9 writing image sha256:49db9771a4f856a73c42e0a690072509041c472309dee102afaad0fbbe9782b9 done
+#9 naming to docker.io/library/cj-yolo:26l-cu130 done
+#9 DONE 0.1s

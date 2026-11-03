@@ -1,0 +1,29 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "gpu-probe-1",
+    "namespace": "cj-inference"
+  },
+  "spec": {
+    "runtimeClassName": "nvidia",
+    "restartPolicy": "Never",
+    "containers": [
+      {
+        "name": "probe",
+        "image": "docker.io/library/cj-yolo-ros:26l-timing-v1",
+        "imagePullPolicy": "Never",
+        "command": [
+          "/bin/sh",
+          "-c",
+          "nvidia-smi --query-gpu=uuid,name --format=csv,noheader; sleep 60"
+        ],
+        "resources": {
+          "limits": {
+            "nvidia.com/gpu.shared": 1
+          }
+        }
+      }
+    ]
+  }
+}

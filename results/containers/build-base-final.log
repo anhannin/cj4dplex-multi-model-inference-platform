@@ -1,0 +1,48 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 641B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for nvcr.io/nvidia/pytorch:25.09-py3@sha256:f3b4a33fd60d5e0358287bb44d57e91eda45e8f1681fef1bfd6c969371417130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 113B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM nvcr.io/nvidia/pytorch:25.09-py3@sha256:f3b4a33fd60d5e0358287bb44d57e91eda45e8f1681fef1bfd6c969371417130
+#4 CACHED
+
+#5 [2/4] RUN python -m pip uninstall -y pynvml nvidia-resiliency-ext &&     python -m pip install --no-cache-dir --force-reinstall nvidia-ml-py==13.580.82
+#5 0.289 Found existing installation: pynvml 13.0.1
+#5 0.290 Uninstalling pynvml-13.0.1:
+#5 0.515   Successfully uninstalled pynvml-13.0.1
+#5 0.517 Found existing installation: nvidia-resiliency-ext 0.4.1+cuda13
+#5 0.523 Uninstalling nvidia-resiliency-ext-0.4.1+cuda13:
+#5 0.954   Successfully uninstalled nvidia-resiliency-ext-0.4.1+cuda13
+#5 0.958 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#5 1.182 Collecting nvidia-ml-py==13.580.82
+#5 1.213   Downloading nvidia_ml_py-13.580.82-py3-none-any.whl.metadata (9.6 kB)
+#5 1.219 Downloading nvidia_ml_py-13.580.82-py3-none-any.whl (49 kB)
+#5 1.317 Installing collected packages: nvidia-ml-py
+#5 1.317   Attempting uninstall: nvidia-ml-py
+#5 1.318     Found existing installation: nvidia-ml-py 13.580.82
+#5 1.319     Uninstalling nvidia-ml-py-13.580.82:
+#5 1.486       Successfully uninstalled nvidia-ml-py-13.580.82
+#5 1.523 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#5 1.523 Successfully installed nvidia-ml-py-13.580.82
+#5 DONE 1.6s
+
+#6 [3/4] WORKDIR /app
+#6 DONE 0.0s
+
+#7 [4/4] RUN python -c "import torch; print(torch.__version__); assert torch.version.cuda == '13.0'"
+#7 0.781 2.9.0a0+50eac811a6.nv25.09
+#7 DONE 1.0s
+
+#8 exporting to image
+#8 exporting layers 0.1s done
+#8 writing image sha256:dfd2dba75ac99f3fb70e770435c88583d706f255e16decaac38cea890c5cd71f done
+#8 naming to docker.io/library/cj-spark-base:25.09-cu130 done
+#8 DONE 0.1s

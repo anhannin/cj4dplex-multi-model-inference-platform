@@ -1,0 +1,14 @@
+Requirement already satisfied: transformers in /usr/local/lib/python3.12/dist-packages (4.57.1)
+Collecting ultralytics
+  Downloading ultralytics-8.4.198-py3-none-any.whl.metadata (47 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.7/47.7 kB 1.5 MB/s eta 0:00:00
+Requirement already satisfied: huggingface-hub in /usr/local/lib/python3.12/dist-packages (0.36.2)
+Requirement already satisfied: tokenizers in /usr/local/lib/python3.12/dist-packages (0.22.2)
+Requirement already satisfied: safetensors in /usr/local/lib/python3.12/dist-packages (0.6.2)
+Collecting ultralytics-thop
+  Downloading ultralytics_thop-2.2.4-py3-none-any.whl.metadata (14 kB)
+Downloading ultralytics-8.4.198-py3-none-any.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 10.0 MB/s eta 0:00:00
+Downloading ultralytics_thop-2.2.4-py3-none-any.whl (32 kB)
+Installing collected packages: ultralytics-thop, ultralytics
+Successfully installed ultralytics-8.4.198 ultralytics-thop-2.2.4

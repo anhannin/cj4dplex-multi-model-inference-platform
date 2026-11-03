@@ -1,0 +1,37 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.ros
+#1 transferring dockerfile: 551B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-qwen:9b-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 257B done
+#3 DONE 0.0s
+
+#4 [ros-deps 1/4] FROM docker.io/library/cj-qwen:9b-cu130
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 18.08kB done
+#5 DONE 0.0s
+
+#6 [ros-deps 2/4] COPY containers/ros2/install_ros.sh /tmp/install_ros.sh
+#6 CACHED
+
+#7 [ros-deps 3/4] RUN bash /tmp/install_ros.sh && rm /tmp/install_ros.sh
+#7 CACHED
+
+#8 [ros-deps 4/4] RUN bash -c 'source /opt/ros/jazzy/setup.bash && python -c "import rclpy; from std_msgs.msg import String; assert String(data=\"ok\").data == \"ok\""' && python -m pip check
+#8 CACHED
+
+#9 [runtime 1/1] COPY ros2/qwen_node.py /app/ros2/qwen_node.py
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.0s done
+#10 writing image sha256:d4a616af01248e7284de73a326abe0f1e1fec02ea16c66abda1550e4dfe5b313 done
+#10 naming to docker.io/library/cj-qwen-ros:9b-timing-v1 done
+#10 DONE 0.1s

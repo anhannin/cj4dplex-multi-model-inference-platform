@@ -1,0 +1,31 @@
+{
+  "timing_schema": 1,
+  "timings_ms": {
+    "envelope_parse_ms": 0.41890423744916916,
+    "template_tokenize_ms": 0.445704,
+    "input_transfer_ms": 0.180612,
+    "generate_wall_ms": 11542.957257,
+    "output_decode_ms": 0.299974,
+    "callback_to_result_ready_ms": 11544.53189484775
+  },
+  "sequence": 71,
+  "request_id": "r_1401ce1a360b49e2bbd44be3a08e6af2",
+  "queue_wait_ms": 0.21619629114866257,
+  "run_id": "",
+  "timing_mode": "basic",
+  "input_tokens": 24,
+  "status": "ok",
+  "text": "Here is a detailed explanation of GPU resource contention in six key points:\n\n*   **Shared Execution Resources**: Modern GPUs utilize a Single Instruction, Multiple Data (SIMD) or Single Instruction, Multiple Threads (SIMT) architecture where thousands of cores share limited execution units, such as scalar processors, floating-point units, and load/store units. When multiple workloads (e.g., a game engine and a background AI training job) run simultaneously, they compete for these finite execution slots, causing threads to stall while waiting for access.\n*   **Memory Bandwidth Bottlenecks**: The GPU's memory subsystem, including Global Memory (",
+  "output_tokens": 128,
+  "generation_mode": "bounded",
+  "effective_max_new_tokens": 128,
+  "context_limit": 262144,
+  "finish_reason": "length",
+  "processing_ms": 11544.314802624285,
+  "client_timings_ms": {
+    "request_e2e_ms": 11546.437643,
+    "response_parse_ms": 0.027425,
+    "prepare_ms": 54.649528,
+    "setup_discovery_ms": 192.577031
+  }
+}

@@ -1,0 +1,2 @@
+cj-yolo-dev cj-yolo:26l-cu130 Up 51 seconds
+cj-qwen-dev cj-qwen:9b-cu130 Up 51 seconds

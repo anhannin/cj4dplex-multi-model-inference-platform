@@ -1,0 +1,40 @@
+{
+  "state": "failed",
+  "error": "Container worker exited: 1",
+  "phases": [
+    {
+      "name": "llm-alone",
+      "start": 1793609717.2377543,
+      "end": 1793609777.2377543,
+      "active": [
+        "llm"
+      ],
+      "models": {
+        "llm": {
+          "attempted_including_boundary": 6,
+          "errors_including_boundary": 0,
+          "fully_contained_requests": 5,
+          "latency": {
+            "n": 5,
+            "mean_ms": 11579.151793383062,
+            "p50_ms": 11568.482387810946,
+            "p95_ms": 11606.492438353598
+          },
+          "requests_per_second_contained": 0.08333333333333333,
+          "ttft": {
+            "n": 5,
+            "mean_ms": 183.23997985571623,
+            "p50_ms": 183.02149418741465,
+            "p95_ms": 185.24340856820345
+          },
+          "tpot": {
+            "n": 5,
+            "mean_ms": 89.73036716860814,
+            "p50_ms": 89.65791222881379,
+            "p95_ms": 89.94891048504377
+          }
+        }
+      }
+    }
+  ]
+}

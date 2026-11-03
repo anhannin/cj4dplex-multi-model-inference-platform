@@ -1,0 +1,35 @@
+EE
+======================================================================
+ERROR: test_failures_count_and_warmup_excluded (test_benchmark_metrics.AggregateTests.test_failures_count_and_warmup_excluded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_benchmark_metrics.py", line 17, in test_failures_count_and_warmup_excluded
+    m=module()
+      ^^^^^^^^
+  File "/home/avees/cj/tests/test_benchmark_metrics.py", line 8, in module
+    m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/avees/cj/benchmark/aggregate_latency.py'
+
+======================================================================
+ERROR: test_percentile_linear_and_empty (test_benchmark_metrics.AggregateTests.test_percentile_linear_and_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_benchmark_metrics.py", line 12, in test_percentile_linear_and_empty
+    m=module()
+      ^^^^^^^^
+  File "/home/avees/cj/tests/test_benchmark_metrics.py", line 8, in module
+    m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/avees/cj/benchmark/aggregate_latency.py'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (errors=2)

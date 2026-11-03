@@ -1,0 +1,14 @@
+{
+  "state": "PASS",
+  "host": "spark-e6d6",
+  "os": "Ubuntu24.04 ARM64",
+  "native_ros": "Jazzy",
+  "ros2_binary": "/opt/ros/jazzy/bin/ros2",
+  "new_interactive_shell": "automatic environment, domain42",
+  "native_qwen_cli_request_result": "PASS",
+  "native_yolo_image_publish_result": "PASS",
+  "containers_unchanged": true,
+  "firewall_changed": false,
+  "host_os_release_or_driver_upgraded": false,
+  "local_pc_changed": false
+}

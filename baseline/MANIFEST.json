@@ -1,0 +1,69 @@
+{
+  "baseline_id": "20261103-v1",
+  "frozen_at_utc": "2026-11-03T06:09:36.077842+00:00",
+  "git_repository": "https://github.com/anhannin/cj4dplex-multi-model-inference-platform.git",
+  "git_branch": "baseline",
+  "images": [
+    {
+      "model": "qwen",
+      "image": "docker.io/library/cj-qwen-ros:9b-timing-v1",
+      "image_config_id": "sha256:d4a616af01248e7284de73a326abe0f1e1fec02ea16c66abda1550e4dfe5b313",
+      "preservation_alias": "cj-qwen-ros:baseline-20261103-v1",
+      "source": "ros2/qwen_node.py",
+      "source_sha256": "3cff3b3d48b3316bf5c070cae85431477e729d6d68abad0fb09fdd05927649ac",
+      "captured_app": "baseline/container-code/qwen/app"
+    },
+    {
+      "model": "yolo",
+      "image": "docker.io/library/cj-yolo-ros:26l-timing-v1",
+      "image_config_id": "sha256:307b93e7372e1c520a3055dca0531aaa6e71124ed8eb44a225514355198f5625",
+      "preservation_alias": "cj-yolo-ros:baseline-20261103-v1",
+      "source": "ros2/yolo_node.py",
+      "source_sha256": "748373c3a06917ff2a029e2d6748c0dd7fa3a98466492d89ac3b14b76015656c",
+      "captured_app": "baseline/container-code/yolo/app"
+    }
+  ],
+  "archive": {
+    "filename": "model-images.tar",
+    "bytes": 19781231104,
+    "sha256": "f69f895529d0655b0ac8ba38f766ac72e1ebe0795f5ccba9bb83f2d4b7cbaabe",
+    "spark_path": "/home/avees/cj-baseline-artifacts/20261103-v1/model-images.tar",
+    "local_path": "/home/avees/cj-baseline-artifacts/20261103-v1/model-images.tar",
+    "storage": "outside Git; Docker-save includes both runtime images and all their layers",
+    "local_verified": true,
+    "spark_verified": true
+  },
+  "weights": {
+    "included_in_git_or_image_archive": false,
+    "qwen_snapshot": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "qwen_host_path": "/home/avees/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "yolo_host_path": "/home/avees/cj-containers/assets/yolo26l.pt",
+    "yolo_sha256_file": "results/latency-baseline/evidence/yolo-weights.sha256"
+  },
+  "measurement": {
+    "report": "results/latency-baseline/README.ko.md",
+    "comparison": "results/latency-baseline/comparison.csv",
+    "requests": 12324,
+    "failures": 0,
+    "timing_mode": "tokens",
+    "optimization": "none; shared GPU access slots2 only",
+    "load": "independent closed-loop concurrency1 per active model",
+    "qwen_output_tokens": 128
+  },
+  "runtime_cache_archives": {
+    "storage": "same external artifact directory, not Git",
+    "files": [
+      {
+        "filename": "qwen-runtime-cache.tar.zst",
+        "sha256": "edca86559ee29ac2fe15821237a73618e797aba91943a947f299b2e7aca93c42",
+        "local_verified": true
+      },
+      {
+        "filename": "yolo-runtime-cache.tar.zst",
+        "sha256": "710b16cc5fa535006bc00265833a0beb3a384a9cafa1dd5bb0ceb96c475bf94e",
+        "local_verified": true
+      }
+    ],
+    "note": "Snapshot at preservation time; architecture/driver-specific. Not a checkpoint of GPU execution or per-request queue state."
+  }
+}

@@ -1,0 +1,99 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 460B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-spark-base:25.09-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 113B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/cj-spark-base:25.09-cu130
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 235B done
+#5 DONE 0.0s
+
+#6 [2/4] RUN python -m pip install --no-cache-dir --report /opt/yolo-install.json     ultralytics-opencv-headless==8.4.198 &&     python -m pip freeze > /opt/requirements-resolved.txt
+#6 0.584 Collecting ultralytics-opencv-headless==8.4.198
+#6 0.622   Downloading ultralytics_opencv_headless-8.4.198-py3-none-any.whl.metadata (47 kB)
+#6 0.637 Requirement already satisfied: numpy>=1.23.0 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (2.1.0)
+#6 0.637 Requirement already satisfied: matplotlib>=3.3.0 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (3.10.6)
+#6 0.672 Collecting opencv-python-headless!=4.13.0.90,>=4.7.0 (from ultralytics-opencv-headless==8.4.198)
+#6 0.679   Downloading opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_aarch64.whl.metadata (19 kB)
+#6 0.681 Requirement already satisfied: pillow>=7.1.2 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (11.3.0)
+#6 0.681 Requirement already satisfied: requests>=2.23.0 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (2.32.5)
+#6 0.681 Requirement already satisfied: torch>=1.8.0 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (2.9.0a0+50eac811a6.nv25.9)
+#6 0.681 Requirement already satisfied: torchvision>=0.9.0 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (0.24.0a0+98f8b375)
+#6 0.681 Requirement already satisfied: psutil>=5.8.0 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (7.0.0)
+#6 0.764 Collecting polars>=0.20.0 (from ultralytics-opencv-headless==8.4.198)
+#6 0.771   Downloading polars-2.1.0-py3-none-any.whl.metadata (11 kB)
+#6 0.774 Requirement already satisfied: nvidia-ml-py>=12.0.0 in /usr/local/lib/python3.12/dist-packages (from ultralytics-opencv-headless==8.4.198) (13.580.82)
+#6 0.784 Collecting ultralytics-thop>=2.2.4 (from ultralytics-opencv-headless==8.4.198)
+#6 0.790   Downloading ultralytics_thop-2.2.4-py3-none-any.whl.metadata (14 kB)
+#6 0.802 Collecting ultralytics-platform>=0.1.102 (from ultralytics-opencv-headless==8.4.198)
+#6 0.808   Downloading ultralytics_platform-0.1.102-py3-none-any.whl.metadata (17 kB)
+#6 0.811 Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (1.3.3)
+#6 0.811 Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (0.12.1)
+#6 0.811 Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (4.60.0)
+#6 0.811 Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (1.4.9)
+#6 0.811 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (25.0)
+#6 0.812 Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (3.2.4)
+#6 0.812 Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (2.9.0.post0)
+#6 0.831 Collecting polars-runtime-32==2.1.0 (from polars>=0.20.0->ultralytics-opencv-headless==8.4.198)
+#6 0.838   Downloading polars_runtime_32-2.1.0-cp311-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+#6 0.840 Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics-opencv-headless==8.4.198) (1.16.0)
+#6 0.840 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests>=2.23.0->ultralytics-opencv-headless==8.4.198) (3.4.3)
+#6 0.840 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests>=2.23.0->ultralytics-opencv-headless==8.4.198) (3.10)
+#6 0.841 Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests>=2.23.0->ultralytics-opencv-headless==8.4.198) (2.5.0)
+#6 0.841 Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests>=2.23.0->ultralytics-opencv-headless==8.4.198) (2025.8.3)
+#6 0.843 Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (3.19.1)
+#6 0.843 Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.12/dist-packages (from torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (4.15.0)
+#6 0.844 Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (79.0.1)
+#6 0.844 Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (1.14.0)
+#6 0.844 Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (3.5)
+#6 0.844 Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (3.1.6)
+#6 0.844 Requirement already satisfied: fsspec>=0.8.5 in /usr/local/lib/python3.12/dist-packages (from torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (2025.9.0)
+#6 0.848 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (1.3.0)
+#6 0.850 Requirement already satisfied: httpx<1,>=0.28 in /usr/local/lib/python3.12/dist-packages (from ultralytics-platform>=0.1.102->ultralytics-opencv-headless==8.4.198) (0.28.1)
+#6 0.851 Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.28->ultralytics-platform>=0.1.102->ultralytics-opencv-headless==8.4.198) (4.10.0)
+#6 0.851 Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.28->ultralytics-platform>=0.1.102->ultralytics-opencv-headless==8.4.198) (1.0.9)
+#6 0.852 Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1,>=0.28->ultralytics-platform>=0.1.102->ultralytics-opencv-headless==8.4.198) (0.16.0)
+#6 0.853 Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1,>=0.28->ultralytics-platform>=0.1.102->ultralytics-opencv-headless==8.4.198) (1.3.1)
+#6 0.855 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=1.8.0->ultralytics-opencv-headless==8.4.198) (3.0.2)
+#6 0.864 Downloading ultralytics_opencv_headless-8.4.198-py3-none-any.whl (1.4 MB)
+#6 0.988    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 11.8 MB/s  0:00:00
+#6 0.996 Downloading opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_aarch64.whl (39.6 MB)
+#6 4.383    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.6/39.6 MB 11.7 MB/s  0:00:03
+#6 4.390 Downloading polars-2.1.0-py3-none-any.whl (911 kB)
+#6 4.468    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 911.5/911.5 kB 12.1 MB/s  0:00:00
+#6 4.497 Downloading polars_runtime_32-2.1.0-cp311-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (50.0 MB)
+#6 8.886    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 MB 11.4 MB/s  0:00:04
+#6 8.894 Downloading ultralytics_platform-0.1.102-py3-none-any.whl (100 kB)
+#6 8.909 Downloading ultralytics_thop-2.2.4-py3-none-any.whl (32 kB)
+#6 9.077 Installing collected packages: polars-runtime-32, opencv-python-headless, polars, ultralytics-thop, ultralytics-platform, ultralytics-opencv-headless
+#6 10.25 
+#6 10.26 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#6 10.26 Successfully installed opencv-python-headless-5.0.0.93 polars-2.1.0 polars-runtime-32-2.1.0 ultralytics-opencv-headless-8.4.198 ultralytics-platform-0.1.102 ultralytics-thop-2.2.4
+#6 DONE 10.5s
+
+#7 [3/4] COPY scripts /app/scripts
+#7 DONE 0.0s
+
+#8 [4/4] RUN python -c "import torch, torchvision, ultralytics; print(torch.__version__, torchvision.__version__, ultralytics.__version__)"
+#8 1.226 Creating new Ultralytics Settings v0.0.8 file ✅ 
+#8 1.226 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+#8 1.226 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings
+#8 1.226 2.9.0a0+50eac811a6.nv25.09 0.24.0a0+98f8b375 8.4.198
+#8 DONE 1.5s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.5s done
+#9 writing image sha256:53cac9e927f78943b8ed68b1e314e598241edd08dbcea3b0a594e6600b22ed15 done
+#9 naming to docker.io/library/cj-yolo:26l-cu130 done
+#9 DONE 0.6s

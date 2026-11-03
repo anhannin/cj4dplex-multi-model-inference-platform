@@ -1,0 +1,20 @@
+{
+  "state": "PASS",
+  "phases": 5,
+  "raw_requests": 16376,
+  "errors": 0,
+  "checks": [
+    "recomputed summaries",
+    "positive durations",
+    "128 LLM output tokens",
+    "nonempty CV detections",
+    "resource samples",
+    "source hashes"
+  ],
+  "not_proven": [
+    "model accuracy",
+    "SLO",
+    "root cause",
+    "production readiness"
+  ]
+}

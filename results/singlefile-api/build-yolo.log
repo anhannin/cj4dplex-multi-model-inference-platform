@@ -1,0 +1,78 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.single-api
+#1 transferring dockerfile: 377B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-yolo:26l-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 288B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/cj-yolo:26l-cu130
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 10.32kB done
+#5 DONE 0.0s
+
+#6 [2/4] COPY requirements-api.txt /opt/requirements-api.txt
+#6 CACHED
+
+#7 [3/4] RUN python -m pip install --no-cache-dir -r /opt/requirements-api.txt python-multipart==0.0.33 pi-heif==1.4.0 && python -m pip check
+#7 0.360 Collecting python-multipart==0.0.33
+#7 0.392   Downloading python_multipart-0.0.33-py3-none-any.whl.metadata (6.3 kB)
+#7 0.439 Collecting pi-heif==1.4.0
+#7 0.444   Downloading pi_heif-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (6.3 kB)
+#7 0.485 Collecting fastapi==0.162.0 (from -r /opt/requirements-api.txt (line 1))
+#7 0.489   Downloading fastapi-0.162.0-py3-none-any.whl.metadata (26 kB)
+#7 0.513 Collecting uvicorn==0.54.0 (from -r /opt/requirements-api.txt (line 2))
+#7 0.519   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+#7 0.520 Requirement already satisfied: pillow>=11.1.0 in /usr/local/lib/python3.12/dist-packages (from pi-heif==1.4.0) (11.3.0)
+#7 0.539 Collecting starlette>=0.46.0 (from fastapi==0.162.0->-r /opt/requirements-api.txt (line 1))
+#7 0.543   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+#7 0.546 Requirement already satisfied: pydantic>=2.9.0 in /usr/local/lib/python3.12/dist-packages (from fastapi==0.162.0->-r /opt/requirements-api.txt (line 1)) (2.11.9)
+#7 0.546 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.12/dist-packages (from fastapi==0.162.0->-r /opt/requirements-api.txt (line 1)) (4.15.0)
+#7 0.557 Collecting typing-inspection>=0.4.2 (from fastapi==0.162.0->-r /opt/requirements-api.txt (line 1))
+#7 0.563   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+#7 0.571 Collecting annotated-doc>=0.0.2 (from fastapi==0.162.0->-r /opt/requirements-api.txt (line 1))
+#7 0.575   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+#7 0.588 Collecting opentelemetry-api>=1.44.0 (from fastapi==0.162.0->-r /opt/requirements-api.txt (line 1))
+#7 0.592   Downloading opentelemetry_api-1.45.2-py3-none-any.whl.metadata (1.4 kB)
+#7 0.593 Requirement already satisfied: click>=7.0 in /usr/local/lib/python3.12/dist-packages (from uvicorn==0.54.0->-r /opt/requirements-api.txt (line 2)) (8.2.1)
+#7 0.593 Requirement already satisfied: h11>=0.8 in /usr/local/lib/python3.12/dist-packages (from uvicorn==0.54.0->-r /opt/requirements-api.txt (line 2)) (0.16.0)
+#7 0.595 Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.9.0->fastapi==0.162.0->-r /opt/requirements-api.txt (line 1)) (0.7.0)
+#7 0.595 Requirement already satisfied: pydantic-core==2.33.2 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.9.0->fastapi==0.162.0->-r /opt/requirements-api.txt (line 1)) (2.33.2)
+#7 0.597 Requirement already satisfied: anyio<5,>=4.0.0 in /usr/local/lib/python3.12/dist-packages (from starlette>=0.46.0->fastapi==0.162.0->-r /opt/requirements-api.txt (line 1)) (4.10.0)
+#7 0.597 Requirement already satisfied: idna>=2.8 in /usr/local/lib/python3.12/dist-packages (from anyio<5,>=4.0.0->starlette>=0.46.0->fastapi==0.162.0->-r /opt/requirements-api.txt (line 1)) (3.10)
+#7 0.598 Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio<5,>=4.0.0->starlette>=0.46.0->fastapi==0.162.0->-r /opt/requirements-api.txt (line 1)) (1.3.1)
+#7 0.604 Downloading python_multipart-0.0.33-py3-none-any.whl (32 kB)
+#7 0.612 Downloading pi_heif-1.4.0-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (1.4 MB)
+#7 0.755    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 9.2 MB/s  0:00:00
+#7 0.760 Downloading fastapi-0.162.0-py3-none-any.whl (148 kB)
+#7 0.785 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+#7 0.800 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+#7 0.806 Downloading opentelemetry_api-1.45.2-py3-none-any.whl (60 kB)
+#7 0.815 Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+#7 0.828 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#7 0.955 Installing collected packages: uvicorn, typing-inspection, python-multipart, pi-heif, opentelemetry-api, annotated-doc, starlette, fastapi
+#7 1.022   Attempting uninstall: typing-inspection
+#7 1.024     Found existing installation: typing-inspection 0.4.1
+#7 1.024     Uninstalling typing-inspection-0.4.1:
+#7 1.037       Successfully uninstalled typing-inspection-0.4.1
+#7 1.214 
+#7 1.220 Successfully installed annotated-doc-0.0.5 fastapi-0.162.0 opentelemetry-api-1.45.2 pi-heif-1.4.0 python-multipart-0.0.33 starlette-1.10.0 typing-inspection-0.4.4 uvicorn-0.54.0
+#7 1.220 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#7 1.477 No broken requirements found.
+#7 DONE 1.5s
+
+#8 [4/4] COPY api/yolo_api.py /app/yolo_api.py
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers 0.1s done
+#9 writing image sha256:75bbdf5c6f46aac7100d2d41be2b8da1573db7cb0311c3b8a6484e24cac5616a done
+#9 naming to docker.io/library/cj-yolo-api:26l-single done
+#9 DONE 0.1s

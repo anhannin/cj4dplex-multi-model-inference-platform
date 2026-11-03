@@ -1,0 +1,20 @@
+{
+  "state": "PASS",
+  "scope": "Kubernetes deployment and functional routing only; not performance baseline or SLO proof",
+  "models": [
+    "Qwen3.5-9B",
+    "YOLO26l"
+  ],
+  "pods_ready": 2,
+  "pod_restarts": 0,
+  "physical_gpu": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc, NVIDIA GB10",
+  "allocatable_shared_access_slots": 2,
+  "mps_or_sm_partitioning": false,
+  "native_concurrent_requests": 4,
+  "annotated_images": 2,
+  "request_subscribers_per_model": 1,
+  "yolo_requests_started_during_qwen_processing": 2,
+  "matching_local_and_container_source_hashes": true,
+  "unit_tests_passed": 54,
+  "cold_cache_warning": "Qwen first request includes Triton compilation; do not treat as warmed benchmark"
+}

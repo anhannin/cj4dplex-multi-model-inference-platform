@@ -1,0 +1,2 @@
+NAME         STATUS   ROLES           AGE    VERSION
+spark-e6d6   Ready    control-plane   4h8m   v1.37.2

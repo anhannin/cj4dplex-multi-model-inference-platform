@@ -1,0 +1,356 @@
+[
+  {
+    "time": 1793610470.79064,
+    "cpu_percent": 5.5,
+    "available_memory_bytes": 98162900992,
+    "gpu_util_power_temp_csv": "94, 27.55, 60"
+  },
+  {
+    "time": 1793610471.8274546,
+    "cpu_percent": 0.6,
+    "available_memory_bytes": 98158350336,
+    "gpu_util_power_temp_csv": "0, 15.38, 57"
+  },
+  {
+    "time": 1793610472.8711505,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98160951296,
+    "gpu_util_power_temp_csv": "94, 34.54, 59"
+  },
+  {
+    "time": 1793610473.9142704,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98161238016,
+    "gpu_util_power_temp_csv": "94, 30.59, 60"
+  },
+  {
+    "time": 1793610474.9561095,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98165465088,
+    "gpu_util_power_temp_csv": "94, 30.66, 60"
+  },
+  {
+    "time": 1793610475.9995942,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98165182464,
+    "gpu_util_power_temp_csv": "94, 30.72, 60"
+  },
+  {
+    "time": 1793610477.0437765,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98160427008,
+    "gpu_util_power_temp_csv": "94, 30.75, 60"
+  },
+  {
+    "time": 1793610478.0873144,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98159742976,
+    "gpu_util_power_temp_csv": "94, 30.74, 60"
+  },
+  {
+    "time": 1793610479.1318333,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98157105152,
+    "gpu_util_power_temp_csv": "94, 30.73, 60"
+  },
+  {
+    "time": 1793610480.173998,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98156367872,
+    "gpu_util_power_temp_csv": "94, 30.75, 60"
+  },
+  {
+    "time": 1793610481.2207127,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98155806720,
+    "gpu_util_power_temp_csv": "94, 30.78, 60"
+  },
+  {
+    "time": 1793610482.2598238,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98154790912,
+    "gpu_util_power_temp_csv": "94, 30.85, 60"
+  },
+  {
+    "time": 1793610483.301137,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98152136704,
+    "gpu_util_power_temp_csv": "94, 30.87, 61"
+  },
+  {
+    "time": 1793610484.3435047,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98129043456,
+    "gpu_util_power_temp_csv": "93, 39.56, 61"
+  },
+  {
+    "time": 1793610485.3860202,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98130305024,
+    "gpu_util_power_temp_csv": "94, 31.15, 61"
+  },
+  {
+    "time": 1793610486.4328244,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98134261760,
+    "gpu_util_power_temp_csv": "94, 31.18, 61"
+  },
+  {
+    "time": 1793610487.4756289,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98144092160,
+    "gpu_util_power_temp_csv": "94, 31.14, 61"
+  },
+  {
+    "time": 1793610488.5190122,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98137812992,
+    "gpu_util_power_temp_csv": "94, 31.16, 61"
+  },
+  {
+    "time": 1793610489.5641189,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98139303936,
+    "gpu_util_power_temp_csv": "94, 31.18, 61"
+  },
+  {
+    "time": 1793610490.6068773,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98138578944,
+    "gpu_util_power_temp_csv": "94, 31.21, 61"
+  },
+  {
+    "time": 1793610491.6509974,
+    "cpu_percent": 5.4,
+    "available_memory_bytes": 98140594176,
+    "gpu_util_power_temp_csv": "94, 31.21, 61"
+  },
+  {
+    "time": 1793610492.6933615,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98140880896,
+    "gpu_util_power_temp_csv": "94, 31.22, 61"
+  },
+  {
+    "time": 1793610493.737328,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98140721152,
+    "gpu_util_power_temp_csv": "94, 31.22, 61"
+  },
+  {
+    "time": 1793610494.7826517,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98149482496,
+    "gpu_util_power_temp_csv": "94, 31.25, 61"
+  },
+  {
+    "time": 1793610495.8288336,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98143666176,
+    "gpu_util_power_temp_csv": "94, 39.74, 62"
+  },
+  {
+    "time": 1793610496.8749368,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98148753408,
+    "gpu_util_power_temp_csv": "94, 31.26, 62"
+  },
+  {
+    "time": 1793610497.9202588,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98146414592,
+    "gpu_util_power_temp_csv": "94, 31.29, 62"
+  },
+  {
+    "time": 1793610498.9648502,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98143358976,
+    "gpu_util_power_temp_csv": "94, 31.30, 62"
+  },
+  {
+    "time": 1793610500.0078666,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98141872128,
+    "gpu_util_power_temp_csv": "94, 31.32, 62"
+  },
+  {
+    "time": 1793610501.0499585,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98144993280,
+    "gpu_util_power_temp_csv": "94, 31.29, 62"
+  },
+  {
+    "time": 1793610502.0965023,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98154176512,
+    "gpu_util_power_temp_csv": "94, 31.29, 62"
+  },
+  {
+    "time": 1793610503.1379657,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98150756352,
+    "gpu_util_power_temp_csv": "94, 31.31, 62"
+  },
+  {
+    "time": 1793610504.1821623,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98153328640,
+    "gpu_util_power_temp_csv": "94, 31.34, 62"
+  },
+  {
+    "time": 1793610505.2241066,
+    "cpu_percent": 5.4,
+    "available_memory_bytes": 98149236736,
+    "gpu_util_power_temp_csv": "94, 31.35, 62"
+  },
+  {
+    "time": 1793610506.2681499,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98153828352,
+    "gpu_util_power_temp_csv": "94, 31.35, 62"
+  },
+  {
+    "time": 1793610507.3116703,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98151260160,
+    "gpu_util_power_temp_csv": "94, 40.16, 63"
+  },
+  {
+    "time": 1793610508.3534253,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98154110976,
+    "gpu_util_power_temp_csv": "93, 31.38, 62"
+  },
+  {
+    "time": 1793610509.3994842,
+    "cpu_percent": 5.4,
+    "available_memory_bytes": 98153414656,
+    "gpu_util_power_temp_csv": "94, 31.39, 62"
+  },
+  {
+    "time": 1793610510.4403918,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98136252416,
+    "gpu_util_power_temp_csv": "94, 31.40, 62"
+  },
+  {
+    "time": 1793610511.4814491,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98120142848,
+    "gpu_util_power_temp_csv": "94, 31.42, 62"
+  },
+  {
+    "time": 1793610512.523928,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98133893120,
+    "gpu_util_power_temp_csv": "94, 31.42, 62"
+  },
+  {
+    "time": 1793610513.5659776,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98129457152,
+    "gpu_util_power_temp_csv": "94, 31.44, 63"
+  },
+  {
+    "time": 1793610514.610346,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98131275776,
+    "gpu_util_power_temp_csv": "94, 31.42, 63"
+  },
+  {
+    "time": 1793610515.6513827,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98136154112,
+    "gpu_util_power_temp_csv": "94, 31.44, 63"
+  },
+  {
+    "time": 1793610516.695053,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98135539712,
+    "gpu_util_power_temp_csv": "94, 31.40, 63"
+  },
+  {
+    "time": 1793610517.7425513,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98133704704,
+    "gpu_util_power_temp_csv": "94, 31.46, 63"
+  },
+  {
+    "time": 1793610518.7870927,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98138488832,
+    "gpu_util_power_temp_csv": "94, 40.22, 65"
+  },
+  {
+    "time": 1793610519.8329973,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98145943552,
+    "gpu_util_power_temp_csv": "94, 31.83, 63"
+  },
+  {
+    "time": 1793610520.8745615,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98145054720,
+    "gpu_util_power_temp_csv": "94, 31.78, 63"
+  },
+  {
+    "time": 1793610521.9176779,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98149314560,
+    "gpu_util_power_temp_csv": "94, 31.81, 63"
+  },
+  {
+    "time": 1793610522.9584692,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98151895040,
+    "gpu_util_power_temp_csv": "94, 31.83, 63"
+  },
+  {
+    "time": 1793610524.002959,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98150162432,
+    "gpu_util_power_temp_csv": "94, 31.81, 63"
+  },
+  {
+    "time": 1793610525.0482059,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98146779136,
+    "gpu_util_power_temp_csv": "94, 31.83, 63"
+  },
+  {
+    "time": 1793610526.0906208,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98144854016,
+    "gpu_util_power_temp_csv": "94, 31.85, 63"
+  },
+  {
+    "time": 1793610527.1335003,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98154979328,
+    "gpu_util_power_temp_csv": "94, 31.84, 63"
+  },
+  {
+    "time": 1793610528.1771193,
+    "cpu_percent": 5.3,
+    "available_memory_bytes": 98156404736,
+    "gpu_util_power_temp_csv": "94, 31.90, 63"
+  },
+  {
+    "time": 1793610529.2173953,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98155618304,
+    "gpu_util_power_temp_csv": "94, 31.88, 63"
+  },
+  {
+    "time": 1793610530.257246,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98155110400,
+    "gpu_util_power_temp_csv": "94, 40.41, 69"
+  },
+  {
+    "time": 1793610531.2986248,
+    "cpu_percent": 5.2,
+    "available_memory_bytes": 98146828288,
+    "gpu_util_power_temp_csv": "94, 31.95, 63"
+  }
+]

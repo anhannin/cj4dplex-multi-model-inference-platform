@@ -1,0 +1,18 @@
+cj-qwen-dev
+CUDA_MATH_PASS
+cj-yolo-dev
+CUDA_MATH_PASS
+enabled
+enabled
+600 avees
+NAMESPACE      NAME                                   READY   STATUS    RESTARTS   AGE
+kube-flannel   kube-flannel-ds-vgh49                  1/1     Running   0          4m36s
+kube-system    coredns-559f6c778d-lqwmn               1/1     Running   0          4m36s
+kube-system    coredns-559f6c778d-xjstg               1/1     Running   0          4m36s
+kube-system    etcd-spark-e6d6                        1/1     Running   0          4m45s
+kube-system    kube-apiserver-spark-e6d6              1/1     Running   0          4m45s
+kube-system    kube-controller-manager-spark-e6d6     1/1     Running   0          4m45s
+kube-system    kube-proxy-k99g8                       1/1     Running   0          4m36s
+kube-system    kube-scheduler-spark-e6d6              1/1     Running   0          4m45s
+kube-system    nvidia-device-plugin-daemonset-j5rh6   1/1     Running   0          3m37s
+{'NetworkUnavailable': 'False', 'MemoryPressure': 'False', 'DiskPressure': 'False', 'PIDPressure': 'False', 'Ready': 'True'}

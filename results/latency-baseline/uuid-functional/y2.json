@@ -1,0 +1,64 @@
+{
+  "timing_schema": 1,
+  "timings_ms": {
+    "envelope_parse_ms": 0.7204143330454826,
+    "image_decode_ms": 1.989925,
+    "predict_wall_ms": 31.566212,
+    "yolo_preprocess_ms": 2.450671046972275,
+    "yolo_inference_ms": 16.859709285199642,
+    "yolo_postprocess_ms": 9.601765312254429,
+    "predict_overhead_ms": 2.6540663555736543,
+    "result_extract_ms": 0.179699,
+    "callback_to_result_ready_ms": 35.18170304596424
+  },
+  "sequence": 12250,
+  "request_id": "r_6e5fa4814219475cb0e0397e3bc180c0",
+  "queue_wait_ms": 0.6597721949219704,
+  "run_id": "",
+  "status": "ok",
+  "width": 1280,
+  "height": 720,
+  "detections": [
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.93994140625,
+      "xyxy": [
+        122.0,
+        201.5,
+        1134.0,
+        714.5
+      ]
+    },
+    {
+      "class_id": 0,
+      "label": "person",
+      "confidence": 0.93408203125,
+      "xyxy": [
+        746.0,
+        45.25,
+        1146.0,
+        711.0
+      ]
+    },
+    {
+      "class_id": 27,
+      "label": "tie",
+      "confidence": 0.85986328125,
+      "xyxy": [
+        436.0,
+        437.0,
+        526.5,
+        719.0
+      ]
+    }
+  ],
+  "processing_ms": 34.521003253757954,
+  "client_timings_ms": {
+    "request_e2e_ms": 2827.055099,
+    "response_parse_ms": 0.038321,
+    "prepare_ms": 98.420611,
+    "setup_discovery_ms": 172.953107,
+    "output_save_ms": 171.141914
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "llm-only": {
+    "causal_conv1d_channellast_fwd_kernel": 24,
+    "causal_conv1d_update_kernel": 360,
+    "chunk_gated_delta_rule_fwd_kernel": 728,
+    "fused_recurrent_gated_delta_rule_fwd_kernel": 360,
+    "pytorch_flash": 248
+  },
+  "pair": {
+    "causal_conv1d_channellast_fwd_kernel": 24,
+    "causal_conv1d_update_kernel": 360,
+    "chunk_gated_delta_rule_fwd_kernel": 734,
+    "fused_recurrent_gated_delta_rule_fwd_kernel": 360,
+    "pytorch_flash": 248
+  }
+}

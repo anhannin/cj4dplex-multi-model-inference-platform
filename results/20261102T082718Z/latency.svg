@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430">
+<rect width="1000" height="430" fill="white"/>
+<text x="35" y="30" font-size="19" font-family="sans-serif">Exploration: mean model-call latency (not API E2E)</text>
+<text x="40" y="65" font-size="17" font-family="sans-serif">LLM (seconds)</text>
+<rect x="60" y="182.65" width="95" height="137.35" fill="#4477aa"/>
+<text x="60" y="172.65" font-size="15" font-family="sans-serif">12.08</text>
+<text x="60" y="345" font-size="12" font-family="sans-serif">Standalone</text>
+<rect x="205" y="183.63" width="95" height="136.37" fill="#66aabb"/>
+<text x="205" y="173.63" font-size="15" font-family="sans-serif">11.99</text>
+<text x="205" y="345" font-size="12" font-family="sans-serif">Other idle</text>
+<rect x="350" y="100.00" width="95" height="220.00" fill="#cc6677"/>
+<text x="350" y="90.00" font-size="15" font-family="sans-serif">19.35</text>
+<text x="350" y="345" font-size="12" font-family="sans-serif">Concurrent</text>
+<text x="540" y="65" font-size="17" font-family="sans-serif">CV (milliseconds)</text>
+<rect x="560" y="255.47" width="95" height="64.53" fill="#4477aa"/>
+<text x="560" y="245.47" font-size="15" font-family="sans-serif">8.28</text>
+<text x="560" y="345" font-size="12" font-family="sans-serif">Standalone</text>
+<rect x="705" y="255.50" width="95" height="64.50" fill="#66aabb"/>
+<text x="705" y="245.50" font-size="15" font-family="sans-serif">8.28</text>
+<text x="705" y="345" font-size="12" font-family="sans-serif">Other idle</text>
+<rect x="850" y="100.00" width="95" height="220.00" fill="#cc6677"/>
+<text x="850" y="90.00" font-size="15" font-family="sans-serif">28.23</text>
+<text x="850" y="345" font-size="12" font-family="sans-serif">Concurrent</text>
+<text x="35" y="395" font-size="13" font-family="sans-serif">LLM reference kernels; 3-5 measured LLM requests per condition. Single exploratory trial.</text>
+</svg>

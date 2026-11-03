@@ -1,0 +1,4 @@
+cj-yolo-api cj-yolo-api:26l-v1 Up 21 minutes 6006/tcp, 8888/tcp, 127.0.0.1:8002->8000/tcp
+cj-qwen-api cj-qwen-api:9b-v1 Up 21 minutes 6006/tcp, 8888/tcp, 127.0.0.1:8001->8000/tcp
+cj-yolo-dev cj-yolo:26l-cu130 Up 2 hours 
+cj-qwen-dev cj-qwen:9b-cu130 Up 2 hours 

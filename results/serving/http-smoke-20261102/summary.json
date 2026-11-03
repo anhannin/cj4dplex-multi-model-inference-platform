@@ -1,0 +1,284 @@
+{
+  "state": "FAIL",
+  "scope": "functional smoke; not SLO evidence",
+  "cases": {
+    "qwen_one": {
+      "http_e2e_ms": 1614.16822578758,
+      "response": {
+        "request_id": "402eb1915a6a4a1fbe712952efa2231f",
+        "sequence": 1,
+        "queue_wait_ms": 0.025887973606586456,
+        "processing_ms": 1609.6995659172535,
+        "text": "Two AI models operate concurrently on a single GPU by processing independent requests simultaneously.\n",
+        "output_tokens": 18
+      }
+    },
+    "qwen_two": {
+      "http_e2e_ms": 2848.4268998727202,
+      "response": {
+        "request_id": "3a4c0ea99fbf4092b6f4135e626e8e14",
+        "sequence": 2,
+        "queue_wait_ms": 0.033056363463401794,
+        "processing_ms": 2845.7750072702765,
+        "text": "Here are two key benefits of keeping an AI model resident in GPU memory:\n\n1.  **Elimination of Data Transfer Latency**\n    When a",
+        "output_tokens": 32
+      }
+    },
+    "yolo_one": {
+      "http_e2e_ms": 48.048653639853,
+      "response": {
+        "request_id": "107dc2712c804e099e59b23ef1f7d850",
+        "sequence": 1,
+        "queue_wait_ms": 0.040368176996707916,
+        "processing_ms": 25.436818599700928,
+        "width": 810,
+        "height": 1080,
+        "detections": [
+          {
+            "class_id": 5,
+            "label": "bus",
+            "confidence": 0.93359375,
+            "xyxy": [
+              6.9609375,
+              229.078125,
+              804.9375,
+              737.859375
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.921875,
+            "xyxy": [
+              667.828125,
+              395.71875,
+              810.0,
+              880.875
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.91845703125,
+            "xyxy": [
+              50.625,
+              399.7265625,
+              247.640625,
+              904.5
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.8984375,
+            "xyxy": [
+              222.328125,
+              407.109375,
+              345.09375,
+              860.203125
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.84912109375,
+            "xyxy": [
+              0.0,
+              550.96875,
+              79.3125,
+              873.28125
+            ]
+          }
+        ]
+      }
+    },
+    "yolo_two": {
+      "http_e2e_ms": 16.084580682218075,
+      "response": {
+        "request_id": "9fe7aeef16024821891c548c007ba990",
+        "sequence": 2,
+        "queue_wait_ms": 0.03422517329454422,
+        "processing_ms": 12.83988170325756,
+        "width": 1280,
+        "height": 720,
+        "detections": [
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.93994140625,
+            "xyxy": [
+              122.0,
+              201.5,
+              1134.0,
+              714.5
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.93408203125,
+            "xyxy": [
+              746.0,
+              45.25,
+              1146.0,
+              711.0
+            ]
+          },
+          {
+            "class_id": 27,
+            "label": "tie",
+            "confidence": 0.85986328125,
+            "xyxy": [
+              436.0,
+              437.0,
+              526.5,
+              719.0
+            ]
+          }
+        ]
+      }
+    },
+    "parallel_yolo_one": {
+      "http_e2e_ms": 39.754425175487995,
+      "response": {
+        "request_id": "f002aed92e3347868ca5b7c555453beb",
+        "sequence": 3,
+        "queue_wait_ms": 0.04553701728582382,
+        "processing_ms": 31.337075866758823,
+        "width": 810,
+        "height": 1080,
+        "detections": [
+          {
+            "class_id": 5,
+            "label": "bus",
+            "confidence": 0.93359375,
+            "xyxy": [
+              6.9609375,
+              229.078125,
+              804.9375,
+              737.859375
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.921875,
+            "xyxy": [
+              667.828125,
+              395.71875,
+              810.0,
+              880.875
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.91845703125,
+            "xyxy": [
+              50.625,
+              399.7265625,
+              247.640625,
+              904.5
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.8984375,
+            "xyxy": [
+              222.328125,
+              407.109375,
+              345.09375,
+              860.203125
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.84912109375,
+            "xyxy": [
+              0.0,
+              550.96875,
+              79.3125,
+              873.28125
+            ]
+          }
+        ]
+      }
+    },
+    "parallel_yolo_two": {
+      "http_e2e_ms": 72.44671136140823,
+      "response": {
+        "request_id": "6b6cb689e632464ebe5ae4fa63c34ada",
+        "sequence": 4,
+        "queue_wait_ms": 27.093023993074894,
+        "processing_ms": 33.55392627418041,
+        "width": 1280,
+        "height": 720,
+        "detections": [
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.93994140625,
+            "xyxy": [
+              122.0,
+              201.5,
+              1134.0,
+              714.5
+            ]
+          },
+          {
+            "class_id": 0,
+            "label": "person",
+            "confidence": 0.93408203125,
+            "xyxy": [
+              746.0,
+              45.25,
+              1146.0,
+              711.0
+            ]
+          },
+          {
+            "class_id": 27,
+            "label": "tie",
+            "confidence": 0.85986328125,
+            "xyxy": [
+              436.0,
+              437.0,
+              526.5,
+              719.0
+            ]
+          }
+        ]
+      }
+    },
+    "parallel_qwen_first": {
+      "http_e2e_ms": 11398.392083123326,
+      "response": {
+        "request_id": "520dc398089b4853967c6d20aa47547f",
+        "sequence": 3,
+        "queue_wait_ms": 0.03177672624588013,
+        "processing_ms": 11394.658531062305,
+        "text": "GPU resource contention occurs when multiple processes, threads, or applications compete for limited hardware resources within a Graphics Processing Unit, leading to performance degradation, latency spikes, or system instability. This phenomenon is particularly critical in modern computing environments where GPUs are shared between the operating system, user applications, and background services.\n\nHere are six key aspects of GPU resource contention in detail:\n\n*   **Compute Unit and SM Starvation**\n    Modern GPUs consist of multiple Streaming Multiprocessors (SMs) or Compute Units, which are the fundamental building blocks for parallel processing. When a single heavy application (e.g., a large AI model training job",
+        "output_tokens": 128
+      }
+    },
+    "parallel_qwen_second": {
+      "http_e2e_ms": 19638.092969544232,
+      "response": {
+        "request_id": "c7243d0225be45ba978d107a93b8fb82",
+        "sequence": 5,
+        "queue_wait_ms": 13930.756898596883,
+        "processing_ms": 5704.457568004727,
+        "text": "Measuring AI serving performance is critical for ensuring that models meet real-time requirements and scale efficiently under load. While **latency** refers to the time it takes to process a single request, **throughput** measures the volume of requests the system can handle over a specific period.\n\nHere are three distinct ways to measure",
+        "output_tokens": 64
+      }
+    }
+  },
+  "inputs_sha256": {
+    "bus.jpg": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "zidane.jpg": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb"
+  },
+  "queued_client_timeout": "expected",
+  "error": "AssertionError('Abandoned queued request executed')"
+}

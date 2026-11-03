@@ -1,0 +1,17 @@
+# /etc/systemd/system/containerd-k8s.service
+[Unit]
+Description=Isolated containerd for Kubernetes (CJ)
+After=network.target
+[Service]
+Type=notify
+ExecStart=/usr/bin/containerd --config /etc/containerd-k8s/config.toml
+Delegate=yes
+KillMode=process
+Restart=always
+RestartSec=5
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+TasksMax=infinity
+[Install]
+WantedBy=multi-user.target

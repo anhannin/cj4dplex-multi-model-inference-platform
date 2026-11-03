@@ -1,0 +1,2 @@
+NAME         STATUS   ROLES           AGE     VERSION   INTERNAL-IP      EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION               CONTAINER-RUNTIME
+spark-e6d6   Ready    control-plane   3m16s   v1.37.2   192.168.24.204   <none>        Ubuntu 24.04.4 LTS   6.17.0-1031-nvidia (arm64)   containerd://2.2.1

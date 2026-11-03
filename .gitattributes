@@ -1,0 +1,5 @@
+# Frozen baseline: preserve exact bytes across checkout platforms.
+* -text
+# Raw evidence retains original progress bars, CRLF and trailing spaces.
+results/** -whitespace
+baseline/verification/** -whitespace

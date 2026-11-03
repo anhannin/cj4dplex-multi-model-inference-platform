@@ -1,0 +1,24 @@
+{
+  "bindings": {
+    "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface",
+    "causal_conv1d_update": "causal_conv1d.causal_conv1d_interface",
+    "chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk",
+    "fused_recurrent_gated_delta_rule": "fla.ops.gated_delta_rule.fused_recurrent"
+  },
+  "gpu": "NVIDIA GB10",
+  "capability": [
+    12,
+    1
+  ],
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "torch.float32": {
+    "conv_max_abs_error": 2.384185791015625e-07,
+    "update_max_abs_error": 2.9802322387695312e-08
+  },
+  "torch.bfloat16": {
+    "conv_max_abs_error": 0.00390625,
+    "update_max_abs_error": 0.001953125
+  },
+  "fla_max_abs_error": 0.00048828125,
+  "state": "PASS"
+}

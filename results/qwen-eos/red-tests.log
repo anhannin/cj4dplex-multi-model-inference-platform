@@ -1,0 +1,65 @@
+test_client_accepts_large_explicit_budget (test_qwen_eos.EOSPolicyTests.test_client_accepts_large_explicit_budget) ... ERROR
+test_default_client_has_no_fixed_output_budget (test_qwen_eos.EOSPolicyTests.test_default_client_has_no_fixed_output_budget) ... FAIL
+test_default_uses_remaining_context_not_128_or_512 (test_qwen_eos.EOSPolicyTests.test_default_uses_remaining_context_not_128_or_512) ... ERROR
+test_explicit_budget_above_1028_is_accepted (test_qwen_eos.EOSPolicyTests.test_explicit_budget_above_1028_is_accepted) ... ERROR
+test_explicit_budget_cannot_exceed_model_context (test_qwen_eos.EOSPolicyTests.test_explicit_budget_cannot_exceed_model_context) ... ERROR
+
+======================================================================
+ERROR: test_client_accepts_large_explicit_budget (test_qwen_eos.EOSPolicyTests.test_client_accepts_large_explicit_budget)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 46, in test_client_accepts_large_explicit_budget
+    with self.assertRaises(InitReached):client().request_qwen('test',4096)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/avees/cj/clients/request_qwen.py", line 25, in request_qwen
+    from rclpy.qos import DurabilityPolicy, QoSProfile
+ModuleNotFoundError: No module named 'rclpy.qos'; 'rclpy' is not a package
+
+======================================================================
+ERROR: test_default_uses_remaining_context_not_128_or_512 (test_qwen_eos.EOSPolicyTests.test_default_uses_remaining_context_not_128_or_512)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 31, in test_default_uses_remaining_context_not_128_or_512
+    self.assertEqual(self.policy(None),262144-20)
+                     ^^^^^^^^^^^^^^^^^
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 21, in policy
+    block=source.split('# Resolve the generation budget from the model context.',1)[1].split('with torch.inference_mode():',1)[0]
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_explicit_budget_above_1028_is_accepted (test_qwen_eos.EOSPolicyTests.test_explicit_budget_above_1028_is_accepted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 34, in test_explicit_budget_above_1028_is_accepted
+    self.assertEqual(self.policy(4096),4096)
+                     ^^^^^^^^^^^^^^^^^
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 21, in policy
+    block=source.split('# Resolve the generation budget from the model context.',1)[1].split('with torch.inference_mode():',1)[0]
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_explicit_budget_cannot_exceed_model_context (test_qwen_eos.EOSPolicyTests.test_explicit_budget_cannot_exceed_model_context)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 37, in test_explicit_budget_cannot_exceed_model_context
+    with self.assertRaises(ValueError):self.policy(4096,context=2048)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 21, in policy
+    block=source.split('# Resolve the generation budget from the model context.',1)[1].split('with torch.inference_mode():',1)[0]
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_default_client_has_no_fixed_output_budget (test_qwen_eos.EOSPolicyTests.test_default_client_has_no_fixed_output_budget)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_qwen_eos.py", line 28, in test_default_client_has_no_fixed_output_budget
+    self.assertIsNone(inspect.signature(client().request_qwen).parameters['max_new_tokens'].default)
+AssertionError: 128 is not None
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (failures=1, errors=4)

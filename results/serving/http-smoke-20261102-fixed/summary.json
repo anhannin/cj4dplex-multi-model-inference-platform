@@ -1,0 +1,6 @@
+{
+  "state": "FAIL",
+  "scope": "functional smoke; not SLO evidence",
+  "cases": {},
+  "error": "ConnectionResetError(104, 'Connection reset by peer')"
+}

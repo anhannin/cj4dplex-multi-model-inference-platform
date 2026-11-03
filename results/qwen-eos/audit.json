@@ -1,0 +1,18 @@
+{
+  "state": "PASS",
+  "default_request": {
+    "output_tokens": 420,
+    "finish_reason": "eos",
+    "generation_mode": "eos",
+    "effective_max_new_tokens": 262125
+  },
+  "explicit_budget": {
+    "requested": 4096,
+    "effective": 4096,
+    "finish_reason": "eos"
+  },
+  "model_context_limit": 262144,
+  "input_policy_unchanged": true,
+  "cpu_tests": 51,
+  "only_ros_qwen_changed": true
+}

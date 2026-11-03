@@ -1,0 +1,1 @@
+GPU resource contention occurs when multiple processes or threads compete for limited hardware resources like memory bandwidth, compute units, or registers, causing delays and reduced performance for all involved

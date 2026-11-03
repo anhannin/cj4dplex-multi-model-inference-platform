@@ -1,0 +1,4 @@
+Here is a detailed explanation of GPU resource contention in six key points:
+
+*   **Shared Execution Resources**: Modern GPUs utilize a Single Instruction, Multiple Data (SIMD) or Single Instruction, Multiple Threads (SIMT) architecture where thousands of cores share limited execution units, such as scalar processors, floating-point units, and load/store units. When multiple workloads (e.g., a game engine and a background AI training job) run simultaneously, they compete for these finite execution slots, causing threads to stall while waiting for access.
+*   **Memory Bandwidth Bottlenecks**: The GPU's memory subsystem, including Global Memory (

@@ -1,0 +1,31 @@
+{
+  "kind": "cv",
+  "pid": 191,
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA GB10",
+  "capability": [
+    12,
+    1
+  ],
+  "cpu_threads": 4,
+  "dtype": "float16",
+  "imgsz": 640,
+  "batch": 1,
+  "ultralytics": "8.4.198",
+  "image_decode_in_timing": false,
+  "model_sha256": "9fe3c544f2b19bebad7ea41e76d7ad3d88b7c2f10d11d24430c5311f6b32db26",
+  "load_seconds": 0.5859092697501183,
+  "smoke": {
+    "latency_ms": 2213.7366216629744,
+    "detections": 5,
+    "stages_ms": {
+      "preprocess": 36.23810689896345,
+      "inference": 7.587338797748089,
+      "postprocess": 9.782668203115463
+    }
+  },
+  "allocated_bytes": 83780096,
+  "reserved_bytes": 163577856,
+  "rss_bytes": 1889628160
+}

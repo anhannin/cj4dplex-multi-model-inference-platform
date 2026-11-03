@@ -1,0 +1,136 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 751B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/cj-spark-base:25.09-cu130
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 113B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 15.67kB done
+#4 DONE 0.1s
+
+#5 [1/4] FROM docker.io/library/cj-spark-base:25.09-cu130
+#5 DONE 0.4s
+
+#6 [2/4] RUN python -m pip install --no-cache-dir --report /opt/qwen-install.json     transformers==5.22.1 flash-linear-attention==0.6.0 fla-core==0.6.0 einops==0.8.1 &&     python -m pip install --no-cache-dir --no-deps     'https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.7.0/causal_conv1d-1.7.0%2Bcu13torch2.9cxx11abiTRUE-cp312-cp312-linux_aarch64.whl' &&     python -m pip freeze > /opt/requirements-resolved.txt
+#6 0.423 Collecting transformers==5.22.1
+#6 0.462   Downloading transformers-5.22.1-py3-none-any.whl.metadata (31 kB)
+#6 0.498 Collecting flash-linear-attention==0.6.0
+#6 0.506   Downloading flash_linear_attention-0.6.0-py3-none-any.whl.metadata (44 kB)
+#6 0.518 Collecting fla-core==0.6.0
+#6 0.526   Downloading fla_core-0.6.0-py3-none-any.whl.metadata (44 kB)
+#6 0.531 Requirement already satisfied: einops==0.8.1 in /usr/local/lib/python3.12/dist-packages (0.8.1)
+#6 0.568 Collecting huggingface-hub<3.0,>=1.31.0 (from transformers==5.22.1)
+#6 0.575   Downloading huggingface_hub-2.4.0-py3-none-any.whl.metadata (16 kB)
+#6 0.582 Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.1) (2.1.0)
+#6 0.582 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.1) (25.0)
+#6 0.582 Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.1) (6.0.2)
+#6 0.805 Collecting regex>=2025.10.22 (from transformers==5.22.1)
+#6 0.811   Downloading regex-2026.9.29-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (40 kB)
+#6 0.893 Collecting tokenizers<0.24.0,>=0.23.1 (from transformers==5.22.1)
+#6 0.900   Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.8 kB)
+#6 0.913 Collecting typer (from transformers==5.22.1)
+#6 0.920   Downloading typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+#6 0.998 Collecting safetensors>=0.8.0 (from transformers==5.22.1)
+#6 1.005   Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.2 kB)
+#6 1.008 Requirement already satisfied: tqdm>=4.60 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.1) (4.67.1)
+#6 1.028 Collecting click<9.0.0,>=8.4.2 (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.1)
+#6 1.035   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#6 1.035 Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.1) (3.19.1)
+#6 1.035 Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.1) (2025.9.0)
+#6 1.062 Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.1)
+#6 1.069   Downloading hf_xet-1.8.0-cp38-abi3-manylinux_2_28_aarch64.whl.metadata (4.9 kB)
+#6 1.077 Collecting httpx2<3,>=2.0.0 (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.1)
+#6 1.084   Downloading httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+#6 1.086 Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.1) (4.15.0)
+#6 1.087 Requirement already satisfied: anyio>=4.10 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.1) (4.10.0)
+#6 1.093 Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.1)
+#6 1.100   Downloading httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+#6 1.111 Collecting idna>=3.18 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.1)
+#6 1.118   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#6 1.126 Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.1)
+#6 1.133   Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+#6 1.134 Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.1) (0.16.0)
+#6 1.146 Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio>=4.10->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.1) (1.3.1)
+#6 1.162 Collecting shellingham>=1.3.0 (from typer->transformers==5.22.1)
+#6 1.169   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+#6 1.170 Requirement already satisfied: rich>=13.8.0 in /usr/local/lib/python3.12/dist-packages (from typer->transformers==5.22.1) (14.1.0)
+#6 1.175 Collecting annotated-doc>=0.0.2 (from typer->transformers==5.22.1)
+#6 1.184   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+#6 1.186 Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer->transformers==5.22.1) (4.0.0)
+#6 1.186 Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer->transformers==5.22.1) (2.19.2)
+#6 1.186 Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers==5.22.1) (0.1.2)
+#6 1.195 Downloading transformers-5.22.1-py3-none-any.whl (13.1 MB)
+#6 2.457    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 10.3 MB/s  0:00:01
+#6 2.466 Downloading flash_linear_attention-0.6.0-py3-none-any.whl (403 kB)
+#6 2.508 Downloading fla_core-0.6.0-py3-none-any.whl (1.1 MB)
+#6 2.601    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 11.7 MB/s  0:00:00
+#6 2.609 Downloading huggingface_hub-2.4.0-py3-none-any.whl (857 kB)
+#6 2.682    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 857.0/857.0 kB 12.1 MB/s  0:00:00
+#6 2.690 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#6 2.708 Downloading hf_xet-1.8.0-cp38-abi3-manylinux_2_28_aarch64.whl (4.1 MB)
+#6 3.055    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 11.7 MB/s  0:00:00
+#6 3.064 Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+#6 3.080 Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+#6 3.094 Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.5 MB)
+#6 3.515    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 8.2 MB/s  0:00:00
+#6 3.524 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#6 3.544 Downloading regex-2026.9.29-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (805 kB)
+#6 3.654    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 805.9/805.9 kB 7.6 MB/s  0:00:00
+#6 3.663 Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (502 kB)
+#6 3.740 Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+#6 3.750 Downloading typer-0.27.3-py3-none-any.whl (123 kB)
+#6 3.774 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+#6 3.782 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+#6 3.982 Installing collected packages: truststore, shellingham, safetensors, regex, idna, hf-xet, fla-core, click, annotated-doc, httpcore2, typer, httpx2, huggingface-hub, tokenizers, transformers, flash-linear-attention
+#6 4.032   Attempting uninstall: safetensors
+#6 4.034     Found existing installation: safetensors 0.6.2
+#6 4.035     Uninstalling safetensors-0.6.2:
+#6 4.056       Successfully uninstalled safetensors-0.6.2
+#6 4.071   Attempting uninstall: regex
+#6 4.075     Found existing installation: regex 2025.9.1
+#6 4.076     Uninstalling regex-2025.9.1:
+#6 4.098       Successfully uninstalled regex-2025.9.1
+#6 4.153   Attempting uninstall: idna
+#6 4.157     Found existing installation: idna 3.10
+#6 4.157     Uninstalling idna-3.10:
+#6 4.174       Successfully uninstalled idna-3.10
+#6 4.710   Attempting uninstall: click
+#6 4.712     Found existing installation: click 8.2.1
+#6 4.713     Uninstalling click-8.2.1:
+#6 4.739       Successfully uninstalled click-8.2.1
+#6 8.808 
+#6 8.814 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#6 8.814 Successfully installed annotated-doc-0.0.5 click-8.5.0 fla-core-0.6.0 flash-linear-attention-0.6.0 hf-xet-1.8.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.4.0 idna-3.20 regex-2026.9.29 safetensors-0.8.0 shellingham-1.5.4 tokenizers-0.23.3 transformers-5.22.1 truststore-0.10.5 typer-0.27.3
+#6 9.059 Collecting causal-conv1d==1.7.0+cu13torch2.9cxx11abitrue
+#6 9.663   Downloading https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.7.0/causal_conv1d-1.7.0%2Bcu13torch2.9cxx11abiTRUE-cp312-cp312-linux_aarch64.whl (206.9 MB)
+#6 40.84      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.9/206.9 MB 6.5 MB/s  0:00:31
+#6 40.95 Installing collected packages: causal-conv1d
+#6 41.36 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#6 41.36 Successfully installed causal-conv1d-1.7.0
+#6 DONE 41.6s
+
+#7 [3/4] COPY scripts /app/scripts
+#7 DONE 0.1s
+
+#8 [4/4] RUN python -c "import torch, triton; from transformers import Qwen3_5ForConditionalGeneration; import causal_conv1d, fla; print(torch.__version__, triton.__version__)"
+#8 2.146 /usr/local/lib/python3.12/dist-packages/fla/utils/hardware.py:62: UserWarning: Triton is not supported on current platform, roll back to CPU.
+#8 2.146   _cpu_device_warning()
+#8 3.478 2.9.0a0+50eac811a6.nv25.09 3.4.0
+#8 DONE 4.2s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 1.3s done
+#9 writing image sha256:1d54bcfd634b83d7016da2ec2f5f7c441f19e94c9cca71edd1b268905bad027d done
+#9 naming to docker.io/library/cj-qwen:9b-cu130 done
+#9 DONE 1.3s

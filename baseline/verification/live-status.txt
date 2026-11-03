@@ -1,0 +1,7 @@
+NAME                   READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                                        SELECTOR
+deployment.apps/qwen   1/1     1            1           12h   qwen         docker.io/library/cj-qwen-ros:9b-timing-v1    app=qwen
+deployment.apps/yolo   1/1     1            1           12h   yolo         docker.io/library/cj-yolo-ros:26l-timing-v1   app=yolo
+
+NAME                        READY   STATUS    RESTARTS   AGE   IP               NODE         NOMINATED NODE   READINESS GATES
+pod/qwen-797976b765-zbjkk   1/1     Running   0          11h   192.168.24.204   spark-e6d6   <none>           <none>
+pod/yolo-7897dfbb-t5lq5     1/1     Running   0          11h   192.168.24.204   spark-e6d6   <none>           <none>

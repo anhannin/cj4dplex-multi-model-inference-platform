@@ -1,0 +1,9 @@
+{
+  "sequence": 1,
+  "request_id": "r_cb0b244297a04a29941cc0faede3f755",
+  "queue_wait_ms": 0.2845302224159241,
+  "status": "ok",
+  "text": "GPU resource contention occurs when multiple processes or threads compete for limited hardware resources like memory bandwidth, compute units, or registers, causing delays and reduced performance for all involved",
+  "output_tokens": 32,
+  "processing_ms": 3807.6284686103463
+}

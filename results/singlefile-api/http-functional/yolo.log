@@ -1,0 +1,17 @@
+INFO:     Started server process [58]
+INFO:     Waiting for application startup.
+Creating new Ultralytics Settings v0.0.8 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/runtime/ultralytics/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings
+{"event": "backend_loaded", "model": "yolo", "time": 1793624340.3589683}
+{"event": "model_ready", "model": "yolo", "time": 1793624340.3590395}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+{"event": "inference_started", "model": "yolo", "sequence": 1, "request_id": "c56e84dc82a94ad3bfbd02d73eb98744", "time": 1793624476.1198528, "queue_wait_ms": 0.08553732186555862}
+{"event": "inference_finished", "model": "yolo", "sequence": 1, "request_id": "c56e84dc82a94ad3bfbd02d73eb98744", "time": 1793624476.1607065, "processing_ms": 40.85289780050516}
+{"event": "inference_started", "model": "yolo", "sequence": 2, "request_id": "00bede8da911469bb7513b7d4c36135b", "time": 1793624476.1632278, "queue_wait_ms": 0.08425675332546234}
+{"event": "inference_finished", "model": "yolo", "sequence": 2, "request_id": "00bede8da911469bb7513b7d4c36135b", "time": 1793624476.1766222, "processing_ms": 13.392233289778233}
+{"event": "inference_started", "model": "yolo", "sequence": 3, "request_id": "5db583fc993046859e44935b5b12117a", "time": 1793624476.5141814, "queue_wait_ms": 0.18081720918416977}
+{"event": "inference_finished", "model": "yolo", "sequence": 3, "request_id": "5db583fc993046859e44935b5b12117a", "time": 1793624476.546744, "processing_ms": 32.56365843117237}
+{"event": "inference_started", "model": "yolo", "sequence": 4, "request_id": "d2dbc953531046769d7beacd331daacf", "time": 1793624476.5468614, "queue_wait_ms": 31.535986810922623}
+{"event": "inference_finished", "model": "yolo", "sequence": 4, "request_id": "d2dbc953531046769d7beacd331daacf", "time": 1793624476.5796766, "processing_ms": 32.8133562579751}

@@ -1,0 +1,288 @@
+{
+    "apiVersion": "v1",
+    "kind": "Node",
+    "metadata": {
+        "annotations": {
+            "flannel.alpha.coreos.com/backend-data": "{\"VNI\":1,\"VtepMAC\":\"6e:5b:45:33:23:e9\"}",
+            "flannel.alpha.coreos.com/backend-type": "vxlan",
+            "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+            "flannel.alpha.coreos.com/public-ip": "192.168.24.204",
+            "node.alpha.kubernetes.io/ttl": "0",
+            "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+        },
+        "creationTimestamp": "2026-11-02T09:33:44Z",
+        "labels": {
+            "beta.kubernetes.io/arch": "arm64",
+            "beta.kubernetes.io/os": "linux",
+            "kubernetes.io/arch": "arm64",
+            "kubernetes.io/hostname": "spark-e6d6",
+            "kubernetes.io/os": "linux",
+            "node-role.kubernetes.io/control-plane": "",
+            "node.kubernetes.io/exclude-from-external-load-balancers": ""
+        },
+        "name": "spark-e6d6",
+        "resourceVersion": "43254",
+        "uid": "28d3f6bd-988a-4d36-837d-436b3b94a103"
+    },
+    "spec": {
+        "podCIDR": "10.244.0.0/24",
+        "podCIDRs": [
+            "10.244.0.0/24"
+        ]
+    },
+    "status": {
+        "addresses": [
+            {
+                "address": "192.168.24.204",
+                "type": "InternalIP"
+            },
+            {
+                "address": "spark-e6d6",
+                "type": "Hostname"
+            }
+        ],
+        "allocatable": {
+            "cpu": "20",
+            "ephemeral-storage": "3628684392175",
+            "hugepages-1Gi": "0",
+            "hugepages-2Mi": "0",
+            "hugepages-32Mi": "0",
+            "hugepages-64Ki": "0",
+            "memory": "125405428Ki",
+            "nvidia.com/gpu": "0",
+            "nvidia.com/gpu.shared": "2",
+            "pods": "110"
+        },
+        "capacity": {
+            "cpu": "20",
+            "ephemeral-storage": "4031871553536",
+            "hugepages-1Gi": "0",
+            "hugepages-2Mi": "0",
+            "hugepages-32Mi": "0",
+            "hugepages-64Ki": "0",
+            "memory": "125507828Ki",
+            "nvidia.com/gpu": "0",
+            "nvidia.com/gpu.shared": "2",
+            "pods": "110"
+        },
+        "conditions": [
+            {
+                "lastHeartbeatTime": "2026-11-02T09:34:07Z",
+                "lastTransitionTime": "2026-11-02T09:34:07Z",
+                "message": "Flannel is running on this node",
+                "reason": "FlannelIsUp",
+                "status": "False",
+                "type": "NetworkUnavailable"
+            },
+            {
+                "lastHeartbeatTime": "2026-11-02T18:01:51Z",
+                "lastTransitionTime": "2026-11-02T09:33:43Z",
+                "message": "kubelet has sufficient memory available",
+                "reason": "KubeletHasSufficientMemory",
+                "status": "False",
+                "type": "MemoryPressure"
+            },
+            {
+                "lastHeartbeatTime": "2026-11-02T18:01:51Z",
+                "lastTransitionTime": "2026-11-02T09:33:43Z",
+                "message": "kubelet has no disk pressure",
+                "reason": "KubeletHasNoDiskPressure",
+                "status": "False",
+                "type": "DiskPressure"
+            },
+            {
+                "lastHeartbeatTime": "2026-11-02T18:01:51Z",
+                "lastTransitionTime": "2026-11-02T09:33:43Z",
+                "message": "kubelet has sufficient PID available",
+                "reason": "KubeletHasSufficientPID",
+                "status": "False",
+                "type": "PIDPressure"
+            },
+            {
+                "lastHeartbeatTime": "2026-11-02T18:01:51Z",
+                "lastTransitionTime": "2026-11-02T09:34:04Z",
+                "message": "kubelet is posting ready status",
+                "reason": "KubeletReady",
+                "status": "True",
+                "type": "Ready"
+            }
+        ],
+        "daemonEndpoints": {
+            "kubeletEndpoint": {
+                "Port": 10250
+            }
+        },
+        "declaredFeatures": [
+            "ExtendWebSocketsToKubelet",
+            "InPlacePodLevelResourcesVerticalScaling",
+            "InPlacePodVerticalScalingInitContainers",
+            "RestartAllContainersOnContainerExits"
+        ],
+        "features": {
+            "supplementalGroupsPolicy": true
+        },
+        "images": [
+            {
+                "names": [
+                    "docker.io/library/cj-qwen-ros:9b-timing-v1"
+                ],
+                "sizeBytes": 19098460705
+            },
+            {
+                "names": [
+                    "docker.io/library/cj-qwen-ros:9b-k8s-v1"
+                ],
+                "sizeBytes": 19098455073
+            },
+            {
+                "names": [
+                    "docker.io/library/cj-yolo-ros:26l-timing-v1"
+                ],
+                "sizeBytes": 18956123236
+            },
+            {
+                "names": [
+                    "docker.io/library/cj-yolo-ros:26l-k8s-v1"
+                ],
+                "sizeBytes": 18956119649
+            },
+            {
+                "names": [
+                    "docker.io/nvidia/cuda@sha256:6e43a6b02e5f16e4a715953be8b29c40acbe84aed11a61357ef0fc899967fbd9",
+                    "docker.io/nvidia/cuda:13.0.0-base-ubuntu24.04"
+                ],
+                "sizeBytes": 133053885
+            },
+            {
+                "names": [
+                    "nvcr.io/nvidia/k8s-device-plugin@sha256:27c1b2553a690ca3d29889dcd61df97525d46f58272c0be8dc63c2b18f120075",
+                    "nvcr.io/nvidia/k8s-device-plugin:v0.20.1"
+                ],
+                "sizeBytes": 51358007
+            },
+            {
+                "names": [
+                    "ghcr.io/flannel-io/flannel@sha256:f26b2403273cbbce2bdc262c62e7a6e74c0031b139df247fa0fd5801cb9f639d",
+                    "ghcr.io/flannel-io/flannel:v0.28.10"
+                ],
+                "sizeBytes": 34486072
+            },
+            {
+                "names": [
+                    "registry.k8s.io/kube-apiserver@sha256:3e563afb5cb5b72a10bac7012698dd09f5a42bde7d22de8d7d3c12e654df86b4",
+                    "registry.k8s.io/kube-apiserver:v1.37.2"
+                ],
+                "sizeBytes": 27796385
+            },
+            {
+                "names": [
+                    "registry.k8s.io/kube-proxy@sha256:b2e075697d7ab4f0878775dff9e5dccf818b67644437175210ce72fc1ec70551",
+                    "registry.k8s.io/kube-proxy:v1.37.2"
+                ],
+                "sizeBytes": 26520924
+            },
+            {
+                "names": [
+                    "docker.io/library/nginx@sha256:a8b39bd9cf0f83869a2162827a0caf6137ddf759d50a171451b335cecc87d236",
+                    "docker.io/library/nginx:1.28-alpine"
+                ],
+                "sizeBytes": 25801709
+            },
+            {
+                "names": [
+                    "registry.k8s.io/kube-controller-manager@sha256:28e62daf706ed815a8bd1dd27b03294ba09421b2e1674e9a83bbac38e24ceb0c",
+                    "registry.k8s.io/kube-controller-manager:v1.37.2"
+                ],
+                "sizeBytes": 24416924
+            },
+            {
+                "names": [
+                    "registry.k8s.io/coredns/coredns@sha256:900f9c109f7a33545d3c811516e8376df9019147b750f5ce3e254468769176ea",
+                    "registry.k8s.io/coredns/coredns:v1.14.6"
+                ],
+                "sizeBytes": 21239459
+            },
+            {
+                "names": [
+                    "registry.k8s.io/etcd@sha256:6ecefbe2510c4a30573a62a4d6dd175acf881ca67003fcd91849a16df7a724d5",
+                    "registry.k8s.io/etcd:3.7.0-0"
+                ],
+                "sizeBytes": 20455189
+            },
+            {
+                "names": [
+                    "registry.k8s.io/kube-scheduler@sha256:028c847fc321b8a7f9787f7b1c0840f832d6b68439be2e5c09279ffb14203d6b",
+                    "registry.k8s.io/kube-scheduler:v1.37.2"
+                ],
+                "sizeBytes": 18684146
+            },
+            {
+                "names": [
+                    "ghcr.io/flannel-io/flannel-cni-plugin@sha256:9fccdf677e6e26e76a4aa60da2113bab9852e8317287ba51b2c29778d2351345",
+                    "ghcr.io/flannel-io/flannel-cni-plugin:v1.9.1-flannel3"
+                ],
+                "sizeBytes": 5393134
+            },
+            {
+                "names": [
+                    "docker.io/library/busybox@sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec",
+                    "docker.io/library/busybox:1.37.0"
+                ],
+                "sizeBytes": 1911395
+            },
+            {
+                "names": [
+                    "registry.k8s.io/pause@sha256:f548e0e8e3dc1896ca956272154dde3314e8cc4fde0a57577ee9fa1c63f5baf4",
+                    "registry.k8s.io/pause:3.10.2"
+                ],
+                "sizeBytes": 268296
+            },
+            {
+                "names": [
+                    "registry.k8s.io/pause@sha256:278fb9dbcca9518083ad1e11276933a2e96f23de604a3a08cc3c80002767d24c",
+                    "registry.k8s.io/pause:3.10.1"
+                ],
+                "sizeBytes": 267939
+            }
+        ],
+        "nodeInfo": {
+            "architecture": "arm64",
+            "bootID": "65880fec-ccf9-48b6-9bef-4021ce796781",
+            "containerRuntimeVersion": "containerd://2.2.1",
+            "kernelVersion": "6.17.0-1031-nvidia",
+            "kubeProxyVersion": "",
+            "kubeletVersion": "v1.37.2",
+            "machineID": "7af66f30966a49b6886e00e2fce4b42f",
+            "operatingSystem": "linux",
+            "osImage": "Ubuntu 24.04.4 LTS",
+            "runningInUserNamespace": false,
+            "swap": {
+                "capacity": 17179865088
+            },
+            "systemUUID": "d623a6e6-bfde-11d3-8000-4cbb4729e6d7"
+        },
+        "runtimeHandlers": [
+            {
+                "features": {
+                    "recursiveReadOnlyMounts": true,
+                    "userNamespaces": true
+                },
+                "name": ""
+            },
+            {
+                "features": {
+                    "recursiveReadOnlyMounts": true,
+                    "userNamespaces": true
+                },
+                "name": "nvidia"
+            },
+            {
+                "features": {
+                    "recursiveReadOnlyMounts": true,
+                    "userNamespaces": true
+                },
+                "name": "runc"
+            }
+        ]
+    }
+}

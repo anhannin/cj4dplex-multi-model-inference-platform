@@ -1,0 +1,157 @@
+{
+  "apiVersion": "apps/v1",
+  "kind": "Deployment",
+  "metadata": {
+    "name": "yolo",
+    "namespace": "cj-inference"
+  },
+  "spec": {
+    "replicas": 1,
+    "strategy": {
+      "type": "Recreate"
+    },
+    "selector": {
+      "matchLabels": {
+        "app": "yolo"
+      }
+    },
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "yolo"
+        }
+      },
+      "spec": {
+        "runtimeClassName": "nvidia",
+        "nodeSelector": {
+          "kubernetes.io/hostname": "spark-e6d6"
+        },
+        "hostNetwork": true,
+        "hostIPC": true,
+        "dnsPolicy": "ClusterFirstWithHostNet",
+        "automountServiceAccountToken": false,
+        "terminationGracePeriodSeconds": 300,
+        "securityContext": {
+          "runAsUser": 1000,
+          "runAsGroup": 1000,
+          "fsGroup": 1000
+        },
+        "containers": [
+          {
+            "name": "yolo",
+            "image": "docker.io/library/cj-yolo-ros:26l-timing-v1",
+            "imagePullPolicy": "Never",
+            "env": [
+              {
+                "name": "HOME",
+                "value": "/runtime"
+              },
+              {
+                "name": "PYTHONUNBUFFERED",
+                "value": "1"
+              },
+              {
+                "name": "OMP_NUM_THREADS",
+                "value": "4"
+              },
+              {
+                "name": "HF_HUB_OFFLINE",
+                "value": "1"
+              },
+              {
+                "name": "TRITON_CACHE_DIR",
+                "value": "/runtime/triton"
+              },
+              {
+                "name": "YOLO_CONFIG_DIR",
+                "value": "/runtime/ultralytics"
+              },
+              {
+                "name": "ROS_DOMAIN_ID",
+                "value": "42"
+              },
+              {
+                "name": "ROS_AUTOMATIC_DISCOVERY_RANGE",
+                "value": "LOCALHOST"
+              },
+              {
+                "name": "RMW_IMPLEMENTATION",
+                "value": "rmw_fastrtps_cpp"
+              },
+              {
+                "name": "NVIDIA_DRIVER_CAPABILITIES",
+                "value": "compute,utility"
+              }
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "1",
+                "memory": "4Gi",
+                "nvidia.com/gpu.shared": 1
+              },
+              "limits": {
+                "nvidia.com/gpu.shared": 1
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              }
+            },
+            "volumeMounts": [
+              {
+                "name": "runtime",
+                "mountPath": "/runtime"
+              },
+              {
+                "name": "assets",
+                "mountPath": "/assets",
+                "readOnly": true
+              }
+            ],
+            "startupProbe": {
+              "exec": {
+                "command": [
+                  "/bin/sh",
+                  "-c",
+                  "test -s /tmp/cj-model-ready && kill -0 \"$(cat /tmp/cj-model-ready)\""
+                ]
+              },
+              "periodSeconds": 5,
+              "timeoutSeconds": 2,
+              "failureThreshold": 120
+            },
+            "readinessProbe": {
+              "exec": {
+                "command": [
+                  "/bin/sh",
+                  "-c",
+                  "test -s /tmp/cj-model-ready && kill -0 \"$(cat /tmp/cj-model-ready)\""
+                ]
+              },
+              "periodSeconds": 5,
+              "timeoutSeconds": 2,
+              "failureThreshold": 3
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "name": "runtime",
+            "emptyDir": {}
+          },
+          {
+            "name": "assets",
+            "hostPath": {
+              "path": "/home/avees/cj-containers/assets",
+              "type": "Directory"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "archive_bytes": 19781231104,
+  "archive_sha256": "f69f895529d0655b0ac8ba38f766ac72e1ebe0795f5ccba9bb83f2d4b7cbaabe",
+  "spark_sha256_verified": true,
+  "local_sha256_verified": true,
+  "docker_save_manifest_images": {
+    "cj-qwen-ros:9b-timing-v1": "sha256:d4a616af01248e7284de73a326abe0f1e1fec02ea16c66abda1550e4dfe5b313",
+    "cj-yolo-ros:26l-timing-v1": "sha256:307b93e7372e1c520a3055dca0531aaa6e71124ed8eb44a225514355198f5625"
+  },
+  "image_config_ids_match_live_pods": true,
+  "cold_restore_on_another_host_tested": false
+}

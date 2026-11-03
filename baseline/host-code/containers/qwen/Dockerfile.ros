@@ -1,0 +1,7 @@
+FROM cj-qwen:9b-cu130 AS ros-deps
+COPY containers/ros2/install_ros.sh /tmp/install_ros.sh
+RUN bash /tmp/install_ros.sh && rm /tmp/install_ros.sh
+RUN bash -c 'source /opt/ros/jazzy/setup.bash && python -c "import rclpy; from std_msgs.msg import String; assert String(data=\"ok\").data == \"ok\""' && python -m pip check
+FROM ros-deps AS runtime
+COPY ros2/qwen_node.py /app/ros2/qwen_node.py
+ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/jazzy/setup.bash && exec python /app/ros2/qwen_node.py \"$@\"", "--"]

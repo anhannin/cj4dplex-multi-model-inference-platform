@@ -1,0 +1,32 @@
+INFO:     Started server process [57]
+INFO:     Waiting for application startup.
+
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 760/760 [00:00<00:00, 14542.43it/s]
+{"event": "backend_loaded", "model": "qwen", "load_and_warmup_seconds": 133.7522297585383, "dtype": "bfloat16", "attention": "sdpa", "bindings": {"causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface", "causal_conv1d_update": "causal_conv1d.causal_conv1d_interface", "chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk", "fused_recurrent_gated_delta_rule": "fla.ops.gated_delta_rule.fused_recurrent"}}
+{"event": "model_ready", "model": "qwen", "time": 1793616500.1182141}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     172.17.0.1:49402 - "GET /openapi.json HTTP/1.1" 200 OK
+{"event": "http_request", "model": "qwen", "method": "GET", "path": "/openapi.json", "status": 200, "elapsed_ms": 6.559462286531925}
+{"event": "http_request", "model": "qwen", "method": "GET", "path": "/docs", "status": 200, "elapsed_ms": 0.21104048937559128}
+INFO:     172.17.0.1:49406 - "GET /docs HTTP/1.1" 200 OK
+{"event": "inference_started", "model": "qwen", "request_id": "402eb1915a6a4a1fbe712952efa2231f", "sequence": 1, "time": 1793616578.8086932, "queue_wait_ms": 0.025887973606586456}
+{"event": "inference_finished", "model": "qwen", "request_id": "402eb1915a6a4a1fbe712952efa2231f", "sequence": 1, "time": 1793616580.4183948, "processing_ms": 1609.6995659172535}
+{"event": "http_request", "model": "qwen", "method": "POST", "path": "/generate", "status": 200, "elapsed_ms": 1612.3872678726912}
+INFO:     172.17.0.1:49408 - "POST /generate HTTP/1.1" 200 OK
+{"event": "inference_started", "model": "qwen", "request_id": "3a4c0ea99fbf4092b6f4135e626e8e14", "sequence": 2, "time": 1793616580.4226594, "queue_wait_ms": 0.033056363463401794}
+INFO:     172.17.0.1:49420 - "POST /generate HTTP/1.1" 200 OK
+{"event": "inference_finished", "model": "qwen", "request_id": "3a4c0ea99fbf4092b6f4135e626e8e14", "sequence": 2, "time": 1793616583.2684379, "processing_ms": 2845.7750072702765}
+{"event": "http_request", "model": "qwen", "method": "POST", "path": "/generate", "status": 200, "elapsed_ms": 2846.629174426198}
+{"event": "inference_started", "model": "qwen", "request_id": "520dc398089b4853967c6d20aa47547f", "sequence": 3, "time": 1793616583.3482764, "queue_wait_ms": 0.03177672624588013}
+{"event": "inference_finished", "model": "qwen", "request_id": "520dc398089b4853967c6d20aa47547f", "sequence": 3, "time": 1793616594.7429357, "processing_ms": 11394.658531062305}
+{"event": "inference_started", "model": "qwen", "request_id": "09af61142ec14833bb9ababdddc76bc5", "sequence": 4, "time": 1793616594.7430542, "queue_wait_ms": 11378.709310665727}
+{"event": "http_request", "model": "qwen", "method": "POST", "path": "/generate", "status": 200, "elapsed_ms": 11395.579451695085}
+INFO:     172.17.0.1:58158 - "POST /generate HTTP/1.1" 200 OK
+{"event": "inference_finished", "model": "qwen", "request_id": "09af61142ec14833bb9ababdddc76bc5", "sequence": 4, "time": 1793616597.5963151, "processing_ms": 2853.259362280369}
+{"event": "inference_started", "model": "qwen", "request_id": "c7243d0225be45ba978d107a93b8fb82", "sequence": 5, "time": 1793616597.5964596, "queue_wait_ms": 13930.756898596883}
+{"event": "http_request", "model": "qwen", "method": "POST", "path": "/generate", "status": 200, "elapsed_ms": 14233.000440523028}
+INFO:     172.17.0.1:58180 - "POST /generate HTTP/1.1" 200 OK
+{"event": "inference_finished", "model": "qwen", "request_id": "c7243d0225be45ba978d107a93b8fb82", "sequence": 5, "time": 1793616603.3009193, "processing_ms": 5704.457568004727}
+{"event": "http_request", "model": "qwen", "method": "POST", "path": "/generate", "status": 200, "elapsed_ms": 19636.043448001146}

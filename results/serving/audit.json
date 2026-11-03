@@ -1,0 +1,18 @@
+{
+  "state": "PASS",
+  "valid_real_http_requests": 8,
+  "same_model_fifo_serialized": true,
+  "cross_model_processing_overlap": true,
+  "queued_disconnected_request_skipped": true,
+  "model_loads_per_process": 1,
+  "unit_tests": 29,
+  "lint": "PASS",
+  "compileall": "PASS",
+  "bash_syntax": "PASS",
+  "upstream_record_integrity": "PASS",
+  "pip_check_both_images": "PASS",
+  "host_bind": "127.0.0.1 only",
+  "old_worker_unchanged": true,
+  "independent_subagent_review": "unavailable: account model unsupported",
+  "scope": "minimal Docker HTTP serving; not K8s model deployment/SLO/failover"
+}

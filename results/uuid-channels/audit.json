@@ -1,0 +1,17 @@
+{
+  "state": "PASS",
+  "concurrent_clients": 4,
+  "unique_request_ids": 4,
+  "wrong_response_mixups": 0,
+  "annotated_images": 2,
+  "input_images_unchanged": true,
+  "result_publishers_cleaned": true,
+  "same_model_fifo_and_serialization": true,
+  "cross_model_processing_overlap": true,
+  "cpu_tests": 46,
+  "single_final_clients": 2,
+  "deployed_local_sources_match": true,
+  "request_qos": "reliable TRANSIENT_LOCAL, client depth1/server depth32",
+  "response_qos": "reliable volatile, per-UUID writer match+ACK+destroy",
+  "scope": "request routing and functional validation; not security/SLO/accuracy proof"
+}

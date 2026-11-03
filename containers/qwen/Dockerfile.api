@@ -1,0 +1,8 @@
+FROM cj-qwen:9b-cu130
+COPY requirements-api.txt /opt/requirements-api.txt
+RUN python -m pip install --no-cache-dir --report /opt/api-install.json -r /opt/requirements-api.txt && \
+    python -m pip check && python -m pip freeze > /opt/api-requirements-resolved.txt
+COPY serving /app/serving
+COPY clients /app/clients
+EXPOSE 8000
+ENTRYPOINT ["python", "-m", "uvicorn", "serving.qwen_app:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1", "--no-access-log", "--timeout-graceful-shutdown", "180"]

@@ -1,0 +1,6 @@
+cj-yolo-ros cj-yolo-ros:26l-jazzy Up 4 minutes
+cj-qwen-ros cj-qwen-ros:9b-jazzy Up 10 minutes
+cj-yolo-api cj-yolo-api:26l-v1 Exited (143) 10 minutes ago
+cj-qwen-api cj-qwen-api:9b-v1 Exited (143) 10 minutes ago
+cj-yolo-dev cj-yolo:26l-cu130 Up 3 hours
+cj-qwen-dev cj-qwen:9b-cu130 Up 3 hours

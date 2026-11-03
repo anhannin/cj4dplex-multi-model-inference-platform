@@ -1,0 +1,12 @@
+[INFO] [1793633122.396255939] [yolo_node]: {"event": "model_loaded", "time": 1793633122.395833, "device": "cuda:0", "dtype": "torch.float16"}
+[INFO] [1793633122.398268311] [yolo_node]: {"event": "node_ready", "time": 1793633122.3980076}
+[INFO] [1793633239.607303964] [yolo_node]: {"event": "processing_started", "sequence": 1, "time": 1793633239.6069615}
+[INFO] [1793633239.700102951] [yolo_node]: {"event": "processing_finished", "sequence": 1, "time": 1793633239.6993544, "status": "ok", "queue_wait_ms": 0.29627513140439987, "processing_ms": 90.75115900486708}
+[INFO] [1793633240.484685581] [yolo_node]: {"event": "processing_started", "sequence": 2, "time": 1793633240.4842157}
+[INFO] [1793633240.526987929] [yolo_node]: {"event": "processing_finished", "sequence": 2, "time": 1793633240.5262556, "status": "ok", "queue_wait_ms": 0.3712046891450882, "processing_ms": 39.261484518647194}
+[INFO] [1793633384.582956825] [yolo_node]: {"event": "processing_started", "sequence": 3, "time": 1793633384.5824306}
+[INFO] [1793633384.621770552] [yolo_node]: {"event": "processing_finished", "sequence": 3, "time": 1793633384.62066, "status": "ok", "queue_wait_ms": 0.24862680584192276, "processing_ms": 34.95240584015846}
+[INFO] [1793633384.622034170] [yolo_node]: {"event": "processing_started", "sequence": 4, "time": 1793633384.6218443}
+[INFO] [1793633384.986328821] [yolo_node]: {"event": "processing_finished", "sequence": 4, "time": 1793633384.984526, "status": "ok", "queue_wait_ms": 0.8128555491566658, "processing_ms": 33.90318062156439}
+[INFO] [1793633641.146288834] [yolo_node]: {"event": "processing_started", "sequence": 5, "time": 1793633641.145767}
+[INFO] [1793633641.179150617] [yolo_node]: {"event": "processing_finished", "sequence": 5, "time": 1793633641.177997, "status": "ok", "queue_wait_ms": 0.49554184079170227, "processing_ms": 30.466126278042793}

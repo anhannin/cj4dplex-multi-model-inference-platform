@@ -1,0 +1,55 @@
+2026-11-03T03:02:44+09:00 desired replicas: qwen=0 yolo=0
+deployment.apps/qwen scaled
+deployment.apps/yolo scaled
+pod/qwen-c8879fccc-846wz condition met
+deployment.apps/qwen image updated
+deployment.apps/yolo image updated
+2026-11-03T03:02:47+09:00 desired replicas: qwen=1 yolo=0
+deployment.apps/qwen scaled
+deployment.apps/yolo scaled
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+2026-11-03T03:05:02+09:00 START overhead-qwen
+{"stage": "warmup_done", "counts": {"qwen": 5}}
+{"stage": "measurement_done", "counts": {"qwen": 12}}
+{"state": "PASS", "output": "/home/avees/cj-latency/phases/overhead-qwen"}
+2026-11-03T03:07:14+09:00 PASS overhead-qwen
+Selected timing mode: tokens median overhead: -0.00012800008970698107
+2026-11-03T03:07:14+09:00 START 01-qwen-only
+{"stage": "warmup_done", "counts": {"qwen": 5}}
+{"stage": "measurement_done", "counts": {"qwen": 30}}
+{"state": "PASS", "output": "/home/avees/cj-latency/phases/01-qwen-only"}
+2026-11-03T03:14:02+09:00 PASS 01-qwen-only
+2026-11-03T03:14:02+09:00 desired replicas: qwen=0 yolo=1
+deployment.apps/qwen scaled
+deployment.apps/yolo scaled
+pod/qwen-797976b765-f6j6z condition met
+Waiting for deployment "yolo" rollout to finish: 0 of 1 updated replicas are available...
+deployment "yolo" successfully rolled out
+2026-11-03T03:14:08+09:00 START 02-yolo-only
+{"stage": "warmup_done", "counts": {"yolo": 5}}
+{"stage": "measurement_done", "counts": {"yolo": 300}}
+{"state": "PASS", "output": "/home/avees/cj-latency/phases/02-yolo-only"}
+2026-11-03T03:14:17+09:00 PASS 02-yolo-only
+2026-11-03T03:14:17+09:00 desired replicas: qwen=1 yolo=1
+deployment.apps/qwen scaled
+deployment.apps/yolo scaled
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+2026-11-03T03:16:27+09:00 START 03-both-resident-qwen
+{"stage": "warmup_done", "counts": {"qwen": 5}}
+{"stage": "measurement_done", "counts": {"qwen": 30}}
+{"state": "PASS", "output": "/home/avees/cj-latency/phases/03-both-resident-qwen"}
+2026-11-03T03:23:46+09:00 PASS 03-both-resident-qwen
+2026-11-03T03:23:46+09:00 START 04-both-resident-yolo
+{"stage": "warmup_done", "counts": {"yolo": 5}}
+{"stage": "measurement_done", "counts": {"yolo": 300}}
+{"state": "PASS", "output": "/home/avees/cj-latency/phases/04-both-resident-yolo"}
+2026-11-03T03:23:56+09:00 PASS 04-both-resident-yolo
+2026-11-03T03:23:56+09:00 START 05-concurrent
+{"stage": "warmup_done", "counts": {"qwen": 5, "yolo": 5}}
+{"stage": "measurement_done", "counts": {"qwen": 30, "yolo": 11634}}
+{"state": "PASS", "output": "/home/avees/cj-latency/phases/05-concurrent"}
+2026-11-03T03:32:54+09:00 PASS 05-concurrent
+2026-11-03T03:33:10+09:00 ALL_FIVE_PHASES_PASS

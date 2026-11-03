@@ -1,0 +1,7 @@
+FROM cj-qwen:9b-cu130
+COPY requirements-api.txt /opt/requirements-api.txt
+RUN python -m pip install --no-cache-dir -r /opt/requirements-api.txt && python -m pip check
+COPY api/qwen_api.py /app/qwen_api.py
+ENV HOST=0.0.0.0 PORT=8000
+EXPOSE 8000
+ENTRYPOINT ["python", "/app/qwen_api.py"]

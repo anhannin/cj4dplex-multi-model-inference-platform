@@ -1,0 +1,10 @@
+NAMESPACE      NAME                                   READY   STATUS    RESTARTS   AGE     IP               NODE         NOMINATED NODE   READINESS GATES
+kube-flannel   kube-flannel-ds-vgh49                  1/1     Running   0          3m17s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system    coredns-559f6c778d-lqwmn               1/1     Running   0          3m17s   10.244.0.2       spark-e6d6   <none>           <none>
+kube-system    coredns-559f6c778d-xjstg               1/1     Running   0          3m17s   10.244.0.3       spark-e6d6   <none>           <none>
+kube-system    etcd-spark-e6d6                        1/1     Running   0          3m26s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system    kube-apiserver-spark-e6d6              1/1     Running   0          3m26s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system    kube-controller-manager-spark-e6d6     1/1     Running   0          3m26s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system    kube-proxy-k99g8                       1/1     Running   0          3m17s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system    kube-scheduler-spark-e6d6              1/1     Running   0          3m26s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system    nvidia-device-plugin-daemonset-j5rh6   1/1     Running   0          2m18s   10.244.0.5       spark-e6d6   <none>           <none>

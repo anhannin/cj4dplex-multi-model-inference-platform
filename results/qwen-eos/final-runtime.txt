@@ -1,0 +1,4 @@
+29a6795ce12b042290f7ecd947fecb8efbbd8f63eb983e106091416ffeba24a6  /app/ros2/qwen_node.py
+a9fa1789d015ca56ca4cd9bd964728c4bbd3b008d1f4a824be08d03176cc97b6  /home/avees/cj-ros2/clients/request_qwen.py
+/cj-qwen-ros running=true restart=0
+/cj-yolo-ros running=true restart=0

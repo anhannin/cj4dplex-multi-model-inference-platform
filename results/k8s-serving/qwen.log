@@ -1,0 +1,7 @@
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:  53%|█████▎    | 401/760 [00:00<00:00, 3994.45it/s]Loading weights: 100%|██████████| 760/760 [00:00<00:00, 4958.22it/s]
+[INFO] [1793640296.212932306] [qwen_node]: {"event": "model_loaded", "time": 1793640296.2122507, "dtype": "bfloat16", "bindings": {"causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface", "causal_conv1d_update": "causal_conv1d.causal_conv1d_interface", "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk", "torch_recurrent_gated_delta_rule": "fla.ops.gated_delta_rule.fused_recurrent"}}
+[INFO] [1793640296.215956628] [qwen_node]: {"event": "node_ready", "time": 1793640296.2157145}
+[INFO] [1793640296.610565973] [qwen_node]: {"event": "processing_started", "sequence": 1, "time": 1793640296.610243}
+[INFO] [1793640339.030211454] [qwen_node]: {"event": "processing_finished", "sequence": 1, "time": 1793640339.029574, "status": "ok", "queue_wait_ms": 0.1554572954773903, "processing_ms": 42416.83579888195}
+[INFO] [1793640339.030442863] [qwen_node]: {"event": "processing_started", "sequence": 2, "time": 1793640339.0302625}
+[INFO] [1793640341.917216000] [qwen_node]: {"event": "processing_finished", "sequence": 2, "time": 1793640341.9166298, "status": "ok", "queue_wait_ms": 42157.74471871555, "processing_ms": 2884.396882727742}

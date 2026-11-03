@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "model": "qwen",
+      "path": "ros2/qwen_node.py",
+      "sha256": "3cff3b3d48b3316bf5c070cae85431477e729d6d68abad0fb09fdd05927649ac",
+      "live_copy_matches": true
+    },
+    {
+      "model": "yolo",
+      "path": "ros2/yolo_node.py",
+      "sha256": "748373c3a06917ff2a029e2d6748c0dd7fa3a98466492d89ac3b14b76015656c",
+      "live_copy_matches": true
+    }
+  ],
+  "measurement_core_source_hashes_match": true,
+  "checked_core_files": 7
+}

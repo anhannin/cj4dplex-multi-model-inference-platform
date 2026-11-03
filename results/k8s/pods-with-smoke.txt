@@ -1,0 +1,13 @@
+NAMESPACE       NAME                                   READY   STATUS      RESTARTS   AGE     IP               NODE         NOMINATED NODE   READINESS GATES
+cj-validation   dns-http-smoke                         0/1     Completed   0          81s     10.244.0.6       spark-e6d6   <none>           <none>
+cj-validation   gpu-smoke                              0/1     Completed   0          75s     10.244.0.7       spark-e6d6   <none>           <none>
+cj-validation   smoke-web-6b8999cc56-cjc9b             1/1     Running     0          2m6s    10.244.0.4       spark-e6d6   <none>           <none>
+kube-flannel    kube-flannel-ds-vgh49                  1/1     Running     0          3m6s    192.168.24.204   spark-e6d6   <none>           <none>
+kube-system     coredns-559f6c778d-lqwmn               1/1     Running     0          3m6s    10.244.0.2       spark-e6d6   <none>           <none>
+kube-system     coredns-559f6c778d-xjstg               1/1     Running     0          3m6s    10.244.0.3       spark-e6d6   <none>           <none>
+kube-system     etcd-spark-e6d6                        1/1     Running     0          3m15s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system     kube-apiserver-spark-e6d6              1/1     Running     0          3m15s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system     kube-controller-manager-spark-e6d6     1/1     Running     0          3m15s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system     kube-proxy-k99g8                       1/1     Running     0          3m6s    192.168.24.204   spark-e6d6   <none>           <none>
+kube-system     kube-scheduler-spark-e6d6              1/1     Running     0          3m15s   192.168.24.204   spark-e6d6   <none>           <none>
+kube-system     nvidia-device-plugin-daemonset-j5rh6   1/1     Running     0          2m7s    10.244.0.5       spark-e6d6   <none>           <none>

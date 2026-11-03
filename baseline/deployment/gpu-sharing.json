@@ -1,0 +1,12 @@
+{
+  "apiVersion": "v1",
+  "data": {
+    "config.yaml": "version: v1\nsharing:\n  timeSlicing:\n    renameByDefault: true\n    failRequestsGreaterThanOne: true\n    resources:\n    - name: nvidia.com/gpu\n      replicas: 2\n"
+  },
+  "kind": "ConfigMap",
+  "metadata": {
+    "annotations": {},
+    "name": "cj-gpu-sharing",
+    "namespace": "kube-system"
+  }
+}

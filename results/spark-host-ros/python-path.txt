@@ -1,0 +1,2 @@
+/usr/bin/python3
+/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py

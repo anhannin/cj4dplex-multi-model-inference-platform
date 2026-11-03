@@ -1,0 +1,21 @@
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), deny (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                  
+3389/tcp                   ALLOW IN    Anywhere                  
+5508/tcp                   ALLOW IN    Anywhere                  
+Anywhere on cni0           ALLOW IN    Anywhere                   # CJ Kubernetes CNI
+Anywhere on flannel.1      ALLOW IN    Anywhere                   # CJ Kubernetes Flannel
+Anywhere                   ALLOW IN    10.244.0.0/16              # CJ Kubernetes Pods to host
+22/tcp (v6)                ALLOW IN    Anywhere (v6)             
+3389/tcp (v6)              ALLOW IN    Anywhere (v6)             
+5508/tcp (v6)              ALLOW IN    Anywhere (v6)             
+Anywhere (v6) on cni0      ALLOW IN    Anywhere (v6)              # CJ Kubernetes CNI
+Anywhere (v6) on flannel.1 ALLOW IN    Anywhere (v6)              # CJ Kubernetes Flannel
+
+Anywhere                   ALLOW FWD   10.244.0.0/16              # CJ Kubernetes Pod routing
+

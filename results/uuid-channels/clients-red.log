@@ -1,0 +1,25 @@
+test_image_is_annotated_without_overwriting_input (test_ros_request_clients.RequestClientTests.test_image_is_annotated_without_overwriting_input) ... ERROR
+test_only_own_request_id_is_accepted (test_ros_request_clients.RequestClientTests.test_only_own_request_id_is_accepted) ... ERROR
+
+======================================================================
+ERROR: test_image_is_annotated_without_overwriting_input (test_ros_request_clients.RequestClientTests.test_image_is_annotated_without_overwriting_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_ros_request_clients.py", line 36, in test_image_is_annotated_without_overwriting_input
+    self.assertEqual(module.save_result_image(source,out,reply),out)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ros_client_yolo' has no attribute 'save_result_image'
+
+======================================================================
+ERROR: test_only_own_request_id_is_accepted (test_ros_request_clients.RequestClientTests.test_only_own_request_id_is_accepted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/avees/cj/tests/test_ros_request_clients.py", line 23, in test_only_own_request_id_is_accepted
+    self.assertIsNone(module.parse_result(json.dumps({'request_id':'r_'+'b'*32}),rid))
+                      ^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ros_client_qwen' has no attribute 'parse_result'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.011s
+
+FAILED (errors=2)

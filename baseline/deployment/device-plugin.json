@@ -1,0 +1,119 @@
+{
+  "apiVersion": "apps/v1",
+  "kind": "DaemonSet",
+  "metadata": {
+    "annotations": {
+      "deprecated.daemonset.template.generation": "2"
+    },
+    "name": "nvidia-device-plugin-daemonset",
+    "namespace": "kube-system"
+  },
+  "spec": {
+    "revisionHistoryLimit": 10,
+    "selector": {
+      "matchLabels": {
+        "name": "nvidia-device-plugin-ds"
+      }
+    },
+    "template": {
+      "metadata": {
+        "labels": {
+          "name": "nvidia-device-plugin-ds"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "args": [
+              "--config-file=/config/config.yaml"
+            ],
+            "env": [
+              {
+                "name": "NVIDIA_VISIBLE_DEVICES",
+                "value": "all"
+              },
+              {
+                "name": "NVIDIA_DRIVER_CAPABILITIES",
+                "value": "compute,utility"
+              },
+              {
+                "name": "FAIL_ON_INIT_ERROR",
+                "value": "true"
+              }
+            ],
+            "image": "nvcr.io/nvidia/k8s-device-plugin:v0.20.1",
+            "imagePullPolicy": "IfNotPresent",
+            "name": "nvidia-device-plugin-ctr",
+            "resources": {
+              "limits": {
+                "memory": "256Mi"
+              },
+              "requests": {
+                "cpu": "50m",
+                "memory": "64Mi"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/config",
+                "name": "cj-gpu-sharing",
+                "readOnly": true
+              },
+              {
+                "mountPath": "/var/lib/kubelet/device-plugins",
+                "name": "kubelet-device-plugins-dir"
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "priorityClassName": "system-node-critical",
+        "restartPolicy": "Always",
+        "runtimeClassName": "nvidia",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+          {
+            "effect": "NoSchedule",
+            "key": "nvidia.com/gpu",
+            "operator": "Exists"
+          }
+        ],
+        "volumes": [
+          {
+            "configMap": {
+              "defaultMode": 420,
+              "name": "cj-gpu-sharing"
+            },
+            "name": "cj-gpu-sharing"
+          },
+          {
+            "hostPath": {
+              "path": "/var/lib/kubelet/device-plugins",
+              "type": "Directory"
+            },
+            "name": "kubelet-device-plugins-dir"
+          }
+        ]
+      }
+    },
+    "updateStrategy": {
+      "rollingUpdate": {
+        "maxSurge": 0,
+        "maxUnavailable": 1
+      },
+      "type": "RollingUpdate"
+    }
+  }
+}

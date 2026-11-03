@@ -1,0 +1,9 @@
+SUDO_AUTH_REQUIRED\n
+docker.io/library/cj qwen ros:9b k8s v1 	saved	
+application/vnd.oci.image.manifest.v1+json sha256:861cfa4e1ce75985ff5f58ebac7ddadffef32578e95305f871a431101ea24e99
+Importing	elapsed: 143.4s	total:   0.0 B	(0.0 B/s)	
+[1A[2K[1A[2K[1A[2K[1A[2Kdocker.io/library/cj qwen ros:9b k8s v1 	saved	
+docker.io/library/cj yolo ros:26l k8s v1	saved	
+application/vnd.oci.image.manifest.v1+json sha256:861cfa4e1ce75985ff5f58ebac7ddadffef32578e95305f871a431101ea24e99
+application/vnd.oci.image.manifest.v1+json sha256:d9305d46e9bbe9befa59cee34e413bdb93b141f7d55783757865b4c31dd9118f
+Importing	elapsed: 143.4s	total:   0.0 B	(0.0 B/s)	

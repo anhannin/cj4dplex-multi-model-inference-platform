@@ -1,0 +1,68 @@
+I1102 17:22:23.322292       1 main.go:269] "Starting NVIDIA Device Plugin" version=<
+	487d7a93
+	commit: 487d7a93894b0f3ad08097169593972eb3ca8206
+ >
+I1102 17:22:23.322324       1 main.go:272] Starting FS watcher for /var/lib/kubelet/device-plugins
+I1102 17:22:23.322355       1 main.go:279] Starting OS watcher.
+I1102 17:22:23.322608       1 main.go:294] Starting Plugins.
+I1102 17:22:23.322632       1 main.go:351] Loading configuration.
+I1102 17:22:23.324716       1 main.go:377] Updating config with default resource matching patterns.
+I1102 17:22:23.324863       1 main.go:388] 
+Running with config:
+{
+  "version": "v1",
+  "flags": {
+    "migStrategy": "none",
+    "failOnInitError": true,
+    "mpsRoot": "",
+    "nvidiaDriverRoot": "/",
+    "nvidiaDevRoot": "/",
+    "gdrcopyEnabled": false,
+    "gdsEnabled": false,
+    "mofedEnabled": false,
+    "useNodeFeatureAPI": null,
+    "deviceDiscoveryStrategy": "auto",
+    "plugin": {
+      "passDeviceSpecs": false,
+      "deviceListStrategy": [
+        "envvar"
+      ],
+      "deviceIDStrategy": "uuid",
+      "cdiAnnotationPrefix": "cdi.k8s.io/",
+      "nvidiaCTKPath": "/usr/bin/nvidia-ctk",
+      "containerDriverRoot": "/driver-root",
+      "sharedDevicesAllocationPolicy": "distributed"
+    }
+  },
+  "resources": {
+    "gpus": [
+      {
+        "pattern": "*",
+        "name": "nvidia.com/gpu"
+      }
+    ]
+  },
+  "sharing": {
+    "timeSlicing": {
+      "renameByDefault": true,
+      "failRequestsGreaterThanOne": true,
+      "resources": [
+        {
+          "name": "nvidia.com/gpu",
+          "rename": "nvidia.com/gpu.shared",
+          "devices": "all",
+          "replicas": 2
+        }
+      ]
+    }
+  },
+  "imex": {}
+}
+I1102 17:22:23.324875       1 main.go:391] Retrieving plugins.
+I1102 17:22:23.342846       1 plugin-manager.go:101] Detected platform: nvml
+I1102 17:22:23.342869       1 plugin-manager.go:50] Using device discovery strategy: nvml
+W1102 17:22:23.352814       1 devices.go:78] Ignoring error getting device memory: Not Supported
+I1102 17:22:23.355243       1 server.go:198] Starting GRPC server for 'nvidia.com/gpu.shared'
+I1102 17:22:23.357734       1 server.go:142] Starting to serve 'nvidia.com/gpu.shared' on /var/lib/kubelet/device-plugins/nvidia-gpu.shared.sock
+I1102 17:22:23.359792       1 server.go:149] Registered device plugin for 'nvidia.com/gpu.shared' with Kubelet
+I1102 17:22:23.360877       1 health.go:64] Ignoring the following XIDs for health checks: map[13:true 31:true 43:true 45:true 68:true 109:true]

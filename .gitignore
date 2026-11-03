@@ -1,0 +1,42 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+assets/
+*.pt
+*.safetensors
+.env
+
+# Local container source snapshots (third-party code)
+container_code/
+
+# Kubernetes administrator credentials must remain outside source control.
+**/admin.conf
+**/super-admin.conf
+**/.kube/
+*.kubeconfig
+
+# Local runtime, orchestration state and credentials (never part of the baseline).
+.omx/
+.codex/
+.ruff_cache/
+.pixi/
+local_ros2/.pixi/
+.env.*
+!.env.example
+*.pem
+*.key
+**/.ssh/
+
+# Full container images and compiled caches are preserved outside Git.
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.whl
+*.so
+**/.nv/
+**/ComputeCache/
+**/triton/
+
+*.tar.zst

@@ -1,0 +1,38 @@
+Requirement already satisfied: transformers in /usr/local/lib/python3.12/dist-packages (4.57.1)
+Collecting transformers
+  Downloading transformers-5.22.1-py3-none-any.whl.metadata (31 kB)
+Requirement already satisfied: huggingface-hub in /usr/local/lib/python3.12/dist-packages (0.36.2)
+Collecting huggingface-hub
+  Downloading huggingface_hub-2.4.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: tokenizers in /usr/local/lib/python3.12/dist-packages (0.22.2)
+Collecting tokenizers
+  Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.8 kB)
+Requirement already satisfied: safetensors in /usr/local/lib/python3.12/dist-packages (0.6.2)
+Collecting safetensors
+  Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.2 kB)
+Downloading transformers-5.22.1-py3-none-any.whl (13.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 11.3 MB/s eta 0:00:00
+Downloading huggingface_hub-2.4.0-py3-none-any.whl (857 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 857.0/857.0 kB 10.5 MB/s eta 0:00:00
+Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 11.0 MB/s eta 0:00:00
+Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (502 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.8/502.8 kB 9.8 MB/s eta 0:00:00
+Installing collected packages: transformers, tokenizers, safetensors, huggingface-hub
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.57.1
+    Not uninstalling transformers at /usr/local/lib/python3.12/dist-packages, outside environment /work/venv
+    Can't uninstall 'transformers'. No files were found to uninstall.
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.22.2
+    Not uninstalling tokenizers at /usr/local/lib/python3.12/dist-packages, outside environment /work/venv
+    Can't uninstall 'tokenizers'. No files were found to uninstall.
+  Attempting uninstall: safetensors
+    Found existing installation: safetensors 0.6.2
+    Not uninstalling safetensors at /usr/local/lib/python3.12/dist-packages, outside environment /work/venv
+    Can't uninstall 'safetensors'. No files were found to uninstall.
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface_hub 0.36.2
+    Not uninstalling huggingface-hub at /usr/local/lib/python3.12/dist-packages, outside environment /work/venv
+    Can't uninstall 'huggingface_hub'. No files were found to uninstall.
+Successfully installed huggingface-hub-2.4.0 safetensors-0.8.0 tokenizers-0.23.3 transformers-5.22.1

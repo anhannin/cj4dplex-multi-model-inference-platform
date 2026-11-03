@@ -1,0 +1,24 @@
+INFO:     Started server process [56]
+INFO:     Waiting for application startup.
+{"event": "backend_loaded", "model": "yolo", "load_and_warmup_seconds": 1.813241315074265, "actual_parameter_dtype": "torch.float16", "actual_parameter_device": "cuda:0", "actual_backend": "ultralytics.nn.autobackend.AutoBackend"}
+{"event": "model_ready", "model": "yolo", "time": 1793616737.377154}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+{"event": "http_request", "model": "yolo", "method": "GET", "path": "/openapi.json", "status": 200, "elapsed_ms": 4.017235711216927}
+{"event": "http_request", "model": "yolo", "method": "GET", "path": "/docs", "status": 200, "elapsed_ms": 0.1253131777048111}
+{"event": "inference_started", "model": "yolo", "request_id": "1fe242caa6c44f67a75531abb1a1a80a", "sequence": 1, "time": 1793617131.714403, "queue_wait_ms": 0.04057586193084717}
+{"event": "inference_finished", "model": "yolo", "request_id": "1fe242caa6c44f67a75531abb1a1a80a", "sequence": 1, "time": 1793617131.7376902, "processing_ms": 23.28725904226303}
+{"event": "http_request", "model": "yolo", "method": "POST", "path": "/detect", "status": 200, "elapsed_ms": 34.94430519640446}
+{"event": "inference_started", "model": "yolo", "request_id": "c6d36724e7634f7fb9486974711aefaf", "sequence": 2, "time": 1793617131.742598, "queue_wait_ms": 0.03374461084604263}
+{"event": "inference_finished", "model": "yolo", "request_id": "c6d36724e7634f7fb9486974711aefaf", "sequence": 2, "time": 1793617131.7538967, "processing_ms": 11.3001624122262}
+{"event": "http_request", "model": "yolo", "method": "POST", "path": "/detect", "status": 200, "elapsed_ms": 15.237429179251194}
+{"event": "inference_started", "model": "yolo", "request_id": "4f8f02057f4d47c7b1089c15574039d2", "sequence": 3, "time": 1793617132.090456, "queue_wait_ms": 0.04879944026470184}
+{"event": "inference_finished", "model": "yolo", "request_id": "4f8f02057f4d47c7b1089c15574039d2", "sequence": 3, "time": 1793617132.122724, "processing_ms": 32.26655442267656}
+{"event": "inference_started", "model": "yolo", "request_id": "4b03001fff044bec9ce275b970803f89", "sequence": 4, "time": 1793617132.1228917, "queue_wait_ms": 28.044276870787144}
+{"event": "http_request", "model": "yolo", "method": "POST", "path": "/detect", "status": 200, "elapsed_ms": 37.784106098115444}
+{"event": "inference_finished", "model": "yolo", "request_id": "4b03001fff044bec9ce275b970803f89", "sequence": 4, "time": 1793617132.1541314, "processing_ms": 31.236544251441956}
+{"event": "http_request", "model": "yolo", "method": "POST", "path": "/detect", "status": 200, "elapsed_ms": 67.69955065101385}
+{"event": "http_request", "model": "yolo", "method": "POST", "path": "/detect", "status": 422, "elapsed_ms": 0.613621436059475}
+{"event": "inference_started", "model": "yolo", "request_id": "66fcaeec5ddf459b856b948158ba52ff", "sequence": 5, "time": 1793617347.9130418, "queue_wait_ms": 0.02275221049785614}
+{"event": "inference_finished", "model": "yolo", "request_id": "66fcaeec5ddf459b856b948158ba52ff", "sequence": 5, "time": 1793617347.9240859, "processing_ms": 11.043904349207878}
+{"event": "http_request", "model": "yolo", "method": "POST", "path": "/detect", "status": 200, "elapsed_ms": 16.17962960153818}

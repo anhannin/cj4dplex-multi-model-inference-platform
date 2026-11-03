@@ -1,0 +1,13 @@
+{
+  "sequence": 2,
+  "request_id": "r_29a285e398d94c2a9925a583be61d981",
+  "queue_wait_ms": 0.3051385283470154,
+  "status": "ok",
+  "text": "Hello!\n",
+  "output_tokens": 5,
+  "generation_mode": "bounded",
+  "effective_max_new_tokens": 4096,
+  "context_limit": 262144,
+  "finish_reason": "eos",
+  "processing_ms": 460.3470079600811
+}
