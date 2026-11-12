@@ -4,10 +4,6 @@
       "path": "results/static-eval/20261110-v1/analysis/summary.json",
       "sha256": "46241c5716a7481f8021d5266e4490b6ad18c00bfe9dbe7633b32d25052c4a2e"
     },
-    "sustained": {
-      "path": "results/sustained/20261111-v2/analysis/summary.json",
-      "sha256": "d9d0bdbe50386e2ac11f0e68a932e7c609d9bed67608d7d75c90f6c3310be021"
-    },
     "fault": {
       "path": "results/fault-idle/20261110-v1/analysis/summary.json",
       "sha256": "ec12523c6d417c857eccbcd52c8f61eb825212ef21836338964d821cf5fd1522"
@@ -62,96 +58,6 @@
       "yolo_completion_s": 11.5918385096,
       "qwen_p95_s": 111.8762039583,
       "yolo_p95_s": 10.67360628645
-    }
-  ],
-  "sustained": [
-    {
-      "rate": 8,
-      "condition": "control",
-      "qwen_p95_s": 12.245373258859999,
-      "yolo_p95_ms": 59.45648428,
-      "qwen_change_pct": 0.0,
-      "yolo_change_pct": 0.0,
-      "qwen_pass": true,
-      "yolo_pass": false,
-      "both_pass": false
-    },
-    {
-      "rate": 8,
-      "condition": "mps-only",
-      "qwen_p95_s": 11.7401583401,
-      "yolo_p95_ms": 147.48822073,
-      "qwen_change_pct": -4.125761690395646,
-      "yolo_change_pct": 148.06078347221106,
-      "qwen_pass": true,
-      "yolo_pass": false,
-      "both_pass": false
-    },
-    {
-      "rate": 8,
-      "condition": "static-q8-y40",
-      "qwen_p95_s": 11.5554942251,
-      "yolo_p95_ms": 49.794921089999995,
-      "qwen_change_pct": -5.633793426924283,
-      "yolo_change_pct": -16.249805731029344,
-      "qwen_pass": true,
-      "yolo_pass": false,
-      "both_pass": false
-    },
-    {
-      "rate": 8,
-      "condition": "static-q16-y32",
-      "qwen_p95_s": 12.383854152100001,
-      "yolo_p95_ms": 60.567724289999994,
-      "qwen_change_pct": 1.1308833982647704,
-      "yolo_change_pct": 1.8689971723972132,
-      "qwen_pass": false,
-      "yolo_pass": false,
-      "both_pass": false
-    },
-    {
-      "rate": 15,
-      "condition": "control",
-      "qwen_p95_s": 13.17092202454,
-      "yolo_p95_ms": 143.33448554999998,
-      "qwen_change_pct": 0.0,
-      "yolo_change_pct": 0.0,
-      "qwen_pass": true,
-      "yolo_pass": false,
-      "both_pass": false
-    },
-    {
-      "rate": 15,
-      "condition": "mps-only",
-      "qwen_p95_s": 12.0007560772,
-      "yolo_p95_ms": 23456.21126817,
-      "qwen_change_pct": -8.884464923258617,
-      "yolo_change_pct": 16264.667008197179,
-      "qwen_pass": true,
-      "yolo_pass": false,
-      "both_pass": false
-    },
-    {
-      "rate": 15,
-      "condition": "static-q8-y40",
-      "qwen_p95_s": 11.8990547016,
-      "yolo_p95_ms": 86.55832416999999,
-      "qwen_change_pct": -9.656630876488848,
-      "yolo_change_pct": -39.61095695996657,
-      "qwen_pass": true,
-      "yolo_pass": true,
-      "both_pass": true
-    },
-    {
-      "rate": 15,
-      "condition": "static-q16-y32",
-      "qwen_p95_s": 12.741028926630001,
-      "yolo_p95_ms": 80.56508686999997,
-      "qwen_change_pct": -3.2639559865970225,
-      "yolo_change_pct": -43.79225169654227,
-      "qwen_pass": true,
-      "yolo_pass": true,
-      "both_pass": true
     }
   ],
   "fault": {

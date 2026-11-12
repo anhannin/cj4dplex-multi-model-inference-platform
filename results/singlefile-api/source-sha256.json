@@ -1,8 +1,0 @@
-{
-  "source": "downloaded deployment files from cj-qwen-api-single/cj-yolo-api-single",
-  "created_at_utc": "2026-11-02T13:09:30.399940+00:00",
-  "files": {
-    "qwen_api.py": "a118024fe840eb67c0317c3a0846f87c36569981fefe3c52ec27f326ccba3678",
-    "yolo_api.py": "4cac5f7745053d893730bd3663325d4ba3ec706c0ee3b37e6f092566c058669b"
-  }
-}

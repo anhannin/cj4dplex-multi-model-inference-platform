@@ -20,8 +20,6 @@ DOCS = [
     "docs/REPRODUCIBILITY.ko.md",
     "docs/CODE_MAP.ko.md",
     "docs/USAGE_AND_LICENSES.ko.md",
-    "docs/SUBMISSION_CHECKLIST.ko.md",
-    "docs/CLEANUP_REPORT.ko.md",
 ]
 DOCS += [
     "docs/EXPERIMENT_INDEX.ko.md",

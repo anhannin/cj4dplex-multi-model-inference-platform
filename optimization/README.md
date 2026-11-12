@@ -1,7 +1,7 @@
 # Reversible optimization sweep
 
 Frozen baseline source/manifests/images remain untouched. Plan and evaluator:
-`docs/plans/2026-11-04-optimization-sweep.md`. Server workspace:
+[실험 인덱스](../docs/EXPERIMENT_INDEX.ko.md). Server workspace:
 `~/cj-optimization/20261104-v1`.
 
 `run_sweep.py` runs on Spark after sourcing native ROS2 setup. It backs comparisons with actual template snapshots, raw request records and server logs; restores saved baseline templates in `finally`. Backups must be created from live deployments before first use. Never run multiple sweep/export/profiling jobs concurrently on this GPU. SIGKILL/host loss bypasses Python finally; recover by patching each saved `spec.template` using candidate `control` (do not apply stale resourceVersion/status from full object).

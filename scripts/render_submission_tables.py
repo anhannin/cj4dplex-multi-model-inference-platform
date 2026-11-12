@@ -11,7 +11,6 @@ ROOT = Path(__file__).resolve().parents[1]
 def evidence():
     paths = {
         "burst": "results/static-eval/20261110-v1/analysis/summary.json",
-        "sustained": "results/sustained/20261111-v2/analysis/summary.json",
         "fault": "results/fault-idle/20261110-v1/analysis/summary.json",
     }
     raw = {k: json.loads((ROOT / v).read_text()) for k, v in paths.items()}
@@ -29,7 +28,6 @@ def render():
             for k, v in paths.items()
         },
         "burst": [],
-        "sustained": [],
         "fault": raw["fault"]["recovery"],
     }
     lines = [
@@ -62,35 +60,6 @@ def render():
             "|{condition}|{qwen_completion_s:.3f}|{yolo_completion_s:.3f}|{qwen_p95_s:.3f}|{yolo_p95_s:.3f}|".format(
                 **row
             )
-        )
-    lines += [
-        "",
-        "## 지속 부하: Qwen C1 + YOLO 일정 요청률",
-        "실행별 요청 E2E p95를 먼저 구한 뒤5회 평균. Burst의 pooled 집계와 같지 않다. Qwen 표본은 조건당50~55개, YOLO는4800또는9000개.",
-        "",
-        "| YOLO req/s | 설정 | Qwen p95(s) | YOLO p95(ms) | Q 변화 | Y 변화 | 두 목표 충족 |",
-        "|---:|---|---:|---:|---:|---:|---|",
-    ]
-    for g in raw["sustained"]["groups"]:
-        row = {
-            "rate": g["rate"],
-            "condition": g["condition"],
-            "qwen_p95_s": g["qwen"]["e2e_ms"]["p95"] / 1000,
-            "yolo_p95_ms": g["yolo"]["e2e_ms"]["p95"],
-            **g["slo"],
-        }
-        facts["sustained"].append(row)
-        result = (
-            "기준"
-            if g["condition"] == "control"
-            else ("관측 충족" if g["slo"]["both_pass"] else "미충족")
-        )
-        lines.append(
-            "|{rate:g}|{condition}|{qwen_p95_s:.3f}|{yolo_p95_ms:.2f}|{qwen_change_pct:+.2f}%|{yolo_change_pct:+.2f}%|".format(
-                **row
-            )
-            + result
-            + "|"
         )
     lines += [
         "",

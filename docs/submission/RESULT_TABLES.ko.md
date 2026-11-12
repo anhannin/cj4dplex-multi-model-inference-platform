@@ -15,20 +15,6 @@
 |static-q32-y16|119.755|18.125|119.620|16.524|
 |static-q8-y40|111.887|11.592|111.876|10.674|
 
-## 지속 부하: Qwen C1 + YOLO 일정 요청률
-실행별 요청 E2E p95를 먼저 구한 뒤5회 평균. Burst의 pooled 집계와 같지 않다. Qwen 표본은 조건당50~55개, YOLO는4800또는9000개.
-
-| YOLO req/s | 설정 | Qwen p95(s) | YOLO p95(ms) | Q 변화 | Y 변화 | 두 목표 충족 |
-|---:|---|---:|---:|---:|---:|---|
-|8|control|12.245|59.46|+0.00%|+0.00%|기준|
-|8|mps-only|11.740|147.49|-4.13%|+148.06%|미충족|
-|8|static-q8-y40|11.555|49.79|-5.63%|-16.25%|미충족|
-|8|static-q16-y32|12.384|60.57|+1.13%|+1.87%|미충족|
-|15|control|13.171|143.33|+0.00%|+0.00%|기준|
-|15|mps-only|12.001|23456.21|-8.88%|+16264.67%|미충족|
-|15|static-q8-y40|11.899|86.56|-9.66%|-39.61%|관측 충족|
-|15|static-q16-y32|12.741|80.57|-3.26%|-43.79%|관측 충족|
-
 ## 유휴 프로세스 장애 — Kubernetes 기본 재시작
 SIGKILL 직전부터의 초 단위 경과. 탐지·container시작·Ready는250ms polling 관측 상한값, 첫 정상응답은클라이언트수신시각.
 
@@ -40,5 +26,4 @@ SIGKILL 직전부터의 초 단위 경과. 탐지·container시작·Ready는250m
 
 원본 출처:
 - `results/static-eval/20261110-v1/analysis/summary.json` (SHA-256 `46241c5716a7481f8021d5266e4490b6ad18c00bfe9dbe7633b32d25052c4a2e`)
-- `results/sustained/20261111-v2/analysis/summary.json` (SHA-256 `d9d0bdbe50386e2ac11f0e68a932e7c609d9bed67608d7d75c90f6c3310be021`)
 - `results/fault-idle/20261110-v1/analysis/summary.json` (SHA-256 `ec12523c6d417c857eccbcd52c8f61eb825212ef21836338964d821cf5fd1522`)

@@ -191,6 +191,566 @@
       "path": "tests/test_singlefile_api.py",
       "sha256": "5bd485ac7f2df827bae21bcebcdd17f58a9ad94608eef30cc8a5c3256fbd328b",
       "reason": "unselected HTTP path"
+    },
+    {
+      "path": "SLO_운영시나리오_초안.md",
+      "sha256": "bbed10efc9d70ff62dafb99b99d952a77a32e2fd50567e2df5e4557a34fdbd7b",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/CLEANUP_REPORT.ko.md",
+      "sha256": "a14d0216f5ffe7adec92b6755d0399d228318204f1024411806ced78fbed9b38",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/EXECUTABLE_CLEANUP.ko.md",
+      "sha256": "cafb804cd9e68139b55eba785f29df604a3709fd0a0f71b907a7605fb605e671",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/EXECUTIVE_SUMMARY.ko.html",
+      "sha256": "b084e128a09c8d1e06c8d4cf50398c590980b6fa35c83d01e77d4ebe7d5c968e",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/MAIN_FINALIZATION.ko.md",
+      "sha256": "bfe4cbe7cee0da5159e82f19d257f3b3bed8922b90bb2b61cc82ed66d201665c",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/TECHNICAL_REPORT.ko.html",
+      "sha256": "86d40744e9592944be49274c4598cf53cdcda2e9c6edc37c8ec6b51988bafafc",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/architecture.svg",
+      "sha256": "df657d5497224249bae695b8a01820e75fb7887c845a8d5ccefb45ebbc359ce4",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/history/baseline-root-README.md",
+      "sha256": "9b3b130fc30316cd4ed94a2bbbb8a740096020bc9d471480b7c7d20578b1d5af",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/minimal-serving.md",
+      "sha256": "02a5df2fe95dca41e2493ebe4b11b2973e06871a04975fe1fa7be1db96af6df2",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-02-kubernetes-install.md",
+      "sha256": "491db0bf3414ca2fe341dce0651b3327367179e340312ea72500769e4e5905ea",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-02-model-containers.md",
+      "sha256": "328940fc546538d283b3230ce37a73869ac1565ccf6b52a3e0da13e4fca9409d",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-02-ros2-minimal-nodes.md",
+      "sha256": "7758d9b537cac7ccca5dea9b60159945de4218d28bfc2dc94f09d06cc17fdbfc",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-02-spark-feasibility.md",
+      "sha256": "16def698d709182a217eccaf839ee6a4179cda259760d7cbe904c9f33343d551",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-03-singlefile-api-and-local-ros.md",
+      "sha256": "d14fa11138316c999e40fa61c72fe1af09963fa86a44206ca17e15263dfea145",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-03-standalone-api.md",
+      "sha256": "c8ecd4ac5e8ea119aefe429ae737461f7b9995708e833f5a1205834174177edd",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-03-uuid-result-channels.md",
+      "sha256": "5f4340fbc977f506540df79b0227953370a6fa80140e88438da3fc642fa838cf",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-04-optimization-sweep.md",
+      "sha256": "dd4e56cf01574c97087b85d3e3a0548b8d191fc91ecc8332b2493cbacc34d56b",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-09-green-burst-optimization.md",
+      "sha256": "94ed8740f18656ddfb7922eb617f79068ea63e861529a561aeabc080083ed890",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-09-green-e2e-combinations.md",
+      "sha256": "64f9245d04579563a358a0b08f49734de893a0dc9fa15358f01a528a279f1724",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-09-green-sm-sweep.md",
+      "sha256": "496e296d40cfe1c7193a67ae0e6f5a7bf16105551c11d81d033d0fc00d5f968a",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-10-cuda131-mps-static.md",
+      "sha256": "a5da99fa5834e7a3eb3f07e22b966d721a90ce2484f3f84d7336f8ce37bc37e9",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-10-green-kernel-overlap.md",
+      "sha256": "5962984646f879fce7f501ee3286750c27584d959ccb6ee488c251260d50fee7",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-10-idle-node-recovery.md",
+      "sha256": "a6959ef0542679fa676b81f25e6fb09546c33efeee2b6572f42dd3a6c3f974ce",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-10-mps-burst-comparison.md",
+      "sha256": "fd36f5005e9ff9d5e3d16aed6efbbda134429f3e1ca4fce0df7501dc5da73885",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-10-mps-green-concurrency.md",
+      "sha256": "cc13e517f675ae6b9a9ee29edcffc41e9688e08ef446895039b83eb858d7ea56",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-10-serving-timelines.md",
+      "sha256": "b49626066d8284b548b5f551a069d29c7935af2e9bc2a46cd7002f820a5d78ec",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-10-static-eval.md",
+      "sha256": "e3b27640dee05391195f88eac5b5efd622443d8f0470c4673f4d25314fc6d65c",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-11-sustained-load.md",
+      "sha256": "14c493152c75ae7f18c56c833bf7ddbf478128d6b9665df99cedcb33343d3f2d",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-12-burst-report-figure.md",
+      "sha256": "5252d647a33756303f19d08193a85de4795c370ef87dcf76a1abbbc129139437",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-12-main-submission-finalize.md",
+      "sha256": "73ace8c86221001d13298f85d67707d35e6610a164045516d0cf93c4621385c0",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-12-remove-obsolete-launchers.md",
+      "sha256": "020c2e5f3c26b44305627920814642f777e180ae6bcaf56735e1672ca5c7c360",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/plans/2026-11-12-submission-cleanup.md",
+      "sha256": "88958f19c4b3381c5fe4762adb9455b9036ac22049511b0c3da7fa0ccc371e2a",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/GIT_CONTENTS.json",
+      "sha256": "6908ecb8446211c748718969d28346817b04973b281d55ba3b57506a40f93069",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/MAIN_ORGANIZATION.json",
+      "sha256": "b312f984d736437ff95d06ffc817862b3caa9285273c6d0d5dd0da9f790dd601",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/MAIN_VALIDATION.json",
+      "sha256": "4ce44e8f2a76b2fd0d4db16e60ddf6a3631f5254b2b61e976b706fcd740584c8",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/file-classification.json",
+      "sha256": "c5105217977a4f9b6f4a1fef69749193e977b2d5790faf30a3c216868b1ecfe0",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/git-history-security.json",
+      "sha256": "d3aab410d3ac571bc8300948ad7330675e908bc50f8a7f876ca855b9ad70ec2a",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/report-review.json",
+      "sha256": "07452a1f7a8cbaf6bd1d1c399de3da6d18082d8ca036100943780ddb626ba753",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/technical-report-pdf.json",
+      "sha256": "6fb7ab07b0eb5770b076b27f45453bc6be146de892aaa58d4ddf2aa01ef73764",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "docs/submission/validation-summary.json",
+      "sha256": "cfcc25bf521f41a35620a58a1fa38f06257efb315a28332cc6ada1218df7fc6b",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "downloads/yolo_results/bus.png",
+      "sha256": "225296515032ab19aeba5861e65e69351c7f03ecfd4f77014bcad0cf17d431be",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "downloads/yolo_results/zidane.png",
+      "sha256": "af13df09296bfa99b917b2d06bee8801df37ba1b4e0d3c2349f1b7116bdd7200",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "측정결과_종합정리_SLO검토용.md",
+      "sha256": "f7920cccd85529fd178de06e7ee52ce469706a862d608ef48f441657d554cccf",
+      "reason": "user-approved submission authoring/intermediate material removal"
+    },
+    {
+      "path": "results/serving-unit-tests.log",
+      "sha256": "6e306428840d62a7224ff4b80bc74dde02dabddfc7d45813b04e3905b4910675",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/REPORT.ko.md",
+      "sha256": "b1ef29b6b66d5528b01b46359eb056ee074216886294d3eaa70cf37bc98c8f30",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/audit.json",
+      "sha256": "4f3f6357f6d90078664d3e5d72ccfe6ef2226f12bdd204b2d67ddec9c6b9c38a",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/build-controller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/build-qwen.log",
+      "sha256": "c9e69668ada8c3c8ae46be904700fad788810bbaf0b21600d03ad7f048d7702d",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/build-status.txt",
+      "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/build-yolo.log",
+      "sha256": "ee8e0132173b72740d1b0dfba03bd9a6aa830860bca61040a629a256d60784cf",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/client-qwen-example.json",
+      "sha256": "8e7814d417050ead68a1661f5850bb7334e482e21a11be7584e67555ce82a90c",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/client-yolo-example.json",
+      "sha256": "f3b0effb3df31c4a3c3bc78f2be5204c1ec71ec1e38ea843e8f1ed621a8100b3",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/deployed-source-qwen.sha256",
+      "sha256": "a595d1b7ab9140e11b4c81052d35d0f3af257716a3b0e9d62b1f1e1a02f1135b",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/deployed-source-yolo.sha256",
+      "sha256": "a595d1b7ab9140e11b4c81052d35d0f3af257716a3b0e9d62b1f1e1a02f1135b",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/deployment.json",
+      "sha256": "2742a80b9e26dabe3804643bd7ae5f6b19e624a92633ced68fd427cd86337d42",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/deployment.txt",
+      "sha256": "7faa2b49d1d7f335612ad3b3d2a5b7d5b7c0376087652c3ed84448b7395e6df3",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/final-containers.txt",
+      "sha256": "c158fbe3f0eb6753061e7e3f23e3b35bb79433646f82ec998b5b2f93cfd6566b",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102-fixed/qwen.log",
+      "sha256": "ca3fbba2fe4667a4493d261c3899838e1ff0adbf9944079168f6a333439d23a7",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102-fixed/summary.json",
+      "sha256": "1b509cbc0c52ccc8743fe0d9d7fee7c5452c2f719544413e8818ca68bc70893f",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102-fixed/yolo.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102-verified/qwen.log",
+      "sha256": "b90080cac66cef0eefbdfdacd2c1f26d5cabe5aab852f30abeae7a652547830b",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102-verified/summary.json",
+      "sha256": "c48f701cd1a814668d21dad89dd93624c21872d01f28443f8143f972fb132c14",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102-verified/yolo.log",
+      "sha256": "038c9f08a7749b9bf244e85598672902c01c4424df85f33f4fcf47a6708f75ad",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102/qwen.log",
+      "sha256": "765fe1938be106a92ba056bfde0470e79927d630e922c49334df161fb9a6c3b9",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102/summary.json",
+      "sha256": "6a1fef276903269c182c511123532b4f05b78caebb1080becd02079ff6c226f6",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-20261102/yolo.log",
+      "sha256": "c42af28b4f82e277d2cdceb4230f7e05196fd481fcb0d5159b7b2e4133cc75d4",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-controller.log",
+      "sha256": "c4a5dcee290866c15cdb059274bc58fbf77cb8489707014918e4ab064997e404",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-fixed-controller.log",
+      "sha256": "e7cfc9cba7d1b24639ccc3c5edda99bf7b7dbc9ad322b2b9f9782a4d415ffc44",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/http-smoke-verified-controller.log",
+      "sha256": "2ac768e85f58fdb9afe785f3d7a37a56c8ec5be31ebf8c30e65d6991e5d1d2e8",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/integrity-qwen.json",
+      "sha256": "c66137cc94f0ebf73fae8502ab3bbc4436f40d92b91d78846250d162caaf9019",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/integrity-yolo.json",
+      "sha256": "c96149d74f211c7cfaa9430babde11bca5794539879af68c7bcbea18bd69cff8",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/lint.txt",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/pip-check-qwen.txt",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/pip-check-yolo.txt",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/qwen-latest.log",
+      "sha256": "403f243a43f466f3912b9e6bcece69f984fe1f56c6f1208a0da89571a99d9bc7",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/qwen-openapi.json",
+      "sha256": "ca2d2235f659978c5af7d62ac8b6373f23afdb2e44501583627e83a18f47b628",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source-sha256.json",
+      "sha256": "8dc14cc825d1e5f6c37fded872efa27ca4903cd50e9cd51c6801e89403a0f4d4",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/build_serving.sh",
+      "sha256": "fe85d5d869c621480f573c294f4e38e6b6738335dd948aaa7201e2f0cb87b46f",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/clients/request_qwen.py",
+      "sha256": "f23346b3f18fc20f5391ff8f687a0fe68bf5b30d1fa8de15873aab465285e827",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/clients/request_yolo.py",
+      "sha256": "77e53c5a8eda72770502f8897c906f9ea589a6c328d8f4e4f1dabf0773b6e447",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/serving/__init__.py",
+      "sha256": "f1a4e483d01cec32039e802a27f4e527a438ea888ebc72ece194e7efd88df1eb",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/serving/backends.py",
+      "sha256": "eaaab1af9d0216a4521cb3eddcba17dad20e981d938768e937a34a63ff287473",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/serving/http.py",
+      "sha256": "f6901290ccdd8ece44d88bed3f399eb87819014998739b636fdb6eb12c810474",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/serving/queue.py",
+      "sha256": "2087a93cf325719445de0723f6a0e97ffebd5b19f51a41efc3b6b1644e7142da",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/serving/qwen_app.py",
+      "sha256": "8c7a7d84c8912d0ad1f64e6c87d847255ad405523490c1903527534bdc8e9517",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/serving/yolo_app.py",
+      "sha256": "7e548a2309c83d0aa6476f702e60551132d90027803d18b129a4d2e5fb7a4deb",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/smoke_serving.py",
+      "sha256": "a14c6e35ea44c970c42b6261cceb9c5bbb1b44627c63e0a287fb421a9662736c",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/source/start_serving.sh",
+      "sha256": "e0ccc9209c72841b512da0313e0c7282ff02cfe5a3a1b8363057186e375af123",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/unit-tests.log",
+      "sha256": "265582525cb58e73afcbfe014690602c61c65027fecd0c33c3b5c03061d842cc",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/versions-qwen.json",
+      "sha256": "3cc94bd1012525c157725eaddc4cb4909a3857424b7b3e5f321074bf8433da5d",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/versions-yolo.json",
+      "sha256": "3cc94bd1012525c157725eaddc4cb4909a3857424b7b3e5f321074bf8433da5d",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/yolo-latest.log",
+      "sha256": "f3c74662fe884d8963baf27cb4ae257324b949a3622b1aa8a1b6776547841fe2",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/serving/yolo-openapi.json",
+      "sha256": "905dac2961cbaf63dd0c6f93848de688e7ec8254e2736bfdd91a660c981ee083",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/REPORT.ko.md",
+      "sha256": "0f81439f6f01d9dbf125b5c9e672dd2ee21755c064ee855395bbaaa97ed83201",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/all-unit-tests.log",
+      "sha256": "b6a6dd1581d1a943a89f26081a3d4d70ee858495890114c8a37b7aeced89770a",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/audit.json",
+      "sha256": "6bf955808e44c32294533eb94ee38e3fc6dfcdd34951f8308fcf138dcc8c30ec",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/build-qwen.log",
+      "sha256": "8b9b738d2dc91b4ad85d2bca36a3553d0f6ac1df65cdbf17beae0e8b89fa37f0",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/build-yolo.log",
+      "sha256": "a1d5c549419e0e94ecffd4dc90cd4097634c684b5e8d6c79786aba4999df4858",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/containers-final.txt",
+      "sha256": "37cfda5e23ee36d51afd8b16bb210c5c8ce1b54a094ef7d6cf3f2f990685b9f7",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/controller.log",
+      "sha256": "3ee052ce5d4b01ff550292b879e37362d0d2ea3c80cffe6988eea088d8f7c505",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/deployed-code/qwen_api.py",
+      "sha256": "a118024fe840eb67c0317c3a0846f87c36569981fefe3c52ec27f326ccba3678",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/deployed-code/yolo_api.py",
+      "sha256": "4cac5f7745053d893730bd3663325d4ba3ec706c0ee3b37e6f092566c058669b",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/deployment.txt",
+      "sha256": "e981ae1dd8b2227c7ab8e1203528339b8f77fd159aae7d0b7641e9f958c4e697",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/http-functional/qwen.log",
+      "sha256": "a178d07f32404314b906455732a81a737214bd42b6d208a0eebde9c31c2984e2",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/http-functional/summary.json",
+      "sha256": "f1fbc310c6fee65177b51d728d9ca5aae18d28246a21897f3b28d9aa9cec2cc2",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/http-functional/yolo.log",
+      "sha256": "a752ff73e52f65c67fd8a6e7e201395d17f68b02440045753b94074cbef7796b",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/lint.txt",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/pip-check-qwen.txt",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/pip-check-yolo.txt",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/red-tests.log",
+      "sha256": "f44eba5285605cec0455a9d0701a5a0953c54ff3f1ddbc56c9640af9ee24a29a",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/source-sha256.json",
+      "sha256": "e24e9710aa855586d0421d4d31764217ec30a12279dfed2269b55fd0bc95e61f",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
+    },
+    {
+      "path": "results/singlefile-api/unit-tests.log",
+      "sha256": "c93a0a872a2449bb3237c23032187d58a9cb396cc65e3c9635289667672a029c",
+      "reason": "explicit user-approved out-of-scope experiment removal from main; original Git history retained"
     }
   ],
   "updated": [
@@ -213,10 +773,6 @@
     {
       "path": "containers/README.ko.md",
       "sha256": "f2b604fbfa119fff323dbbfd4eeb64ef74b19b55fd39788f5006f086fe4d587c"
-    },
-    {
-      "path": "docs/minimal-serving.md",
-      "sha256": "02a5df2fe95dca41e2493ebe4b11b2973e06871a04975fe1fa7be1db96af6df2"
     },
     {
       "path": "requirements-dev.txt",
@@ -493,30 +1049,6 @@
       "sha256": "c4e421d9cc13c24ef7c902641c5cc3a0d0f8700d425098bdbec12a711582395f"
     },
     {
-      "path": "diagnostics/sustained/protocol.py",
-      "sha256": "dfbd4db5a71664c933f47c277d91d8f2f358bea56dc3d3cee73d784d5886493e"
-    },
-    {
-      "path": "diagnostics/sustained/report.py",
-      "sha256": "4af89de1e1b90d087bb95dbfd2580d1421fbec7b605f77594515c3c1137e6143"
-    },
-    {
-      "path": "diagnostics/sustained/controller.py",
-      "sha256": "07fe746c228f97644dbecd2134438b47c06066ed5dfb44e096d3e0b984db948a"
-    },
-    {
-      "path": "diagnostics/sustained/plot.py",
-      "sha256": "54b31f3026cb07301eb960721626242cec0dc53c2c8615e4f9320aaf15ba5541"
-    },
-    {
-      "path": "diagnostics/sustained/client.py",
-      "sha256": "2b5c07cf51ee1778e864347bffeb3f924f64ce995019c6b50dcc93b15cdb4895"
-    },
-    {
-      "path": "diagnostics/sustained/analysis.py",
-      "sha256": "da98be8cec9aa61564baf772250d5e3bfb3c5c7624c4b3bd9d7084886e83ae03"
-    },
-    {
       "path": "diagnostics/mps_burst/plan.py",
       "sha256": "65f11cdf1a1bc78c20c5582900f21b089bcb2fdd73a8928bf236379891d24f9a"
     },
@@ -778,7 +1310,9 @@
     },
     {
       "path": "optimization/README.md",
-      "sha256": "167c735ff78709e280e3a7f7e533bb00eca8ae7ee54fad5790f290d6da3b1d42"
+      "sha256": "0f73852b5d0f7bf4504babf27bc3c668017b3a96a51f88d60b1da6b76121d65c",
+      "original_sha256": "167c735ff78709e280e3a7f7e533bb00eca8ae7ee54fad5790f290d6da3b1d42",
+      "reason": "Documentation link updated after approved plan removal; inference code unchanged"
     },
     {
       "path": "optimization/compare.py",

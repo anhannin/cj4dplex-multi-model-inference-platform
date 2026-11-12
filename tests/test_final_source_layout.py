@@ -56,8 +56,6 @@ class FinalSourceLayout(unittest.TestCase):
             "k8s/serving/yolo.json",
             "diagnostics/mps_static/eval_runner.py",
             "diagnostics/mps_static/profile_runner.py",
-            "diagnostics/sustained/controller.py",
-            "diagnostics/sustained/client.py",
             "diagnostics/fault_idle/controller.py",
             "diagnostics/fault_idle/resource_supervisor.py",
             "diagnostics/sm_sweep/controller.py",

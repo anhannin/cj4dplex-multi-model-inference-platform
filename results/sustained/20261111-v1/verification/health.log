@@ -1,3 +1,0 @@
-{"stage": "warmup_done", "counts": {"qwen": 1, "yolo": 1}}
-{"stage": "measurement_done", "counts": {"qwen": 1, "yolo": 33}}
-{"state": "PASS", "output": "/home/avees/cj-sustained/20261111-v1/verification/health-1794382095472125131"}

@@ -1,8 +1,0 @@
-cj-yolo-api-single cj-yolo-api:26l-single Exited (143) Less than a second ago
-cj-qwen-api-single cj-qwen-api:9b-single Exited (143) Less than a second ago
-cj-yolo-ros cj-yolo-ros:26l-jazzy Up About an hour
-cj-qwen-ros cj-qwen-ros:9b-jazzy Up About an hour
-cj-yolo-api cj-yolo-api:26l-v1 Exited (143) About an hour ago
-cj-qwen-api cj-qwen-api:9b-v1 Exited (143) About an hour ago
-cj-yolo-dev cj-yolo:26l-cu130 Up 4 hours
-cj-qwen-dev cj-qwen:9b-cu130 Up 4 hours

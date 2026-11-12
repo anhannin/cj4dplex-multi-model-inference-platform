@@ -19,7 +19,7 @@ class SubmissionChecks(unittest.TestCase):
             exclusion_reason(Path("diagnostics/mps_static/native_query.cu"), 100)
         )
         self.assertIsNone(
-            exclusion_reason(Path("results/sustained/run/plots/e2e.png"), 100)
+            exclusion_reason(Path("results/static-eval/run/plots/e2e.png"), 100)
         )
         self.assertIsNotNone(exclusion_reason(Path("results/raw/trace.sqlite"), 100))
         self.assertIsNotNone(exclusion_reason(Path("results/raw/bus.png"), 100))

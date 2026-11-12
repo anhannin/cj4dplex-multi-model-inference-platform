@@ -1,2 +1,0 @@
-/cj-qwen-api-single sha256:7926b34a448216274a1d500dd2500f74d28b0ee452a10a61f3178b7613db86aa {"6006/tcp":null,"8000/tcp":[{"HostIp":"127.0.0.1","HostPort":"8001"}],"8888/tcp":null}
-/cj-yolo-api-single sha256:75bbdf5c6f46aac7100d2d41be2b8da1573db7cb0311c3b8a6484e24cac5616a {"6006/tcp":null,"8000/tcp":[{"HostIp":"127.0.0.1","HostPort":"8002"}],"8888/tcp":null}

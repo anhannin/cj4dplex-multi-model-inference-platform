@@ -1,1 +1,0 @@
-{"torch": "2.9.0a0+50eac811a6.nv25.9", "fastapi": "0.162.0", "uvicorn": "0.54.0", "starlette": "1.10.0", "pydantic": "2.11.9"}

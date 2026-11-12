@@ -38,8 +38,7 @@
 | Green E2E/Burst 탐색 | [green_e2e](../diagnostics/green_e2e/), [green_burst](../diagnostics/green_burst/) | [green-e2e](../results/green-e2e/), [green-burst](../results/green-burst/) |
 | 일반 MPS 동시성/Burst·과거 static 지원 진단 | [mps_concurrency](../diagnostics/mps_concurrency/), [mps_burst](../diagnostics/mps_burst/) | [mps-concurrency](../results/mps-concurrency/), [mps-static](../results/mps-static/) |
 | kernel overlap 보조 진단 | [kernel_overlap](../diagnostics/kernel_overlap/) | [kernel-overlap](../results/kernel-overlap/) |
-| 지속/open-loop 부하 | [sustained](../diagnostics/sustained/) | [sustained](../results/sustained/) |
 | NCU/환경 제약·초기 최적화 탐색 | [진단 묶음](../diagnostics/) | [nsight-compute](../results/nsight-compute/), [optimization-sweep](../results/optimization-sweep/) |
-| ROS/컨테이너·배포·EOS 검증 | [ROS2](../ros2/), [K8s](../k8s/) | [qwen-eos](../results/qwen-eos/), [k8s-serving](../results/k8s-serving/), [serving](../results/serving/) |
+| ROS/컨테이너·배포·EOS 검증 | [ROS2](../ros2/), [K8s](../k8s/) | [qwen-eos](../results/qwen-eos/), [k8s-serving](../results/k8s-serving/) |
 
 [최종 성능 표](submission/BURST_TABLES.ko.md) · [보고서](TECHNICAL_REPORT.ko.md) · [그림 데이터](figures/burst-request-p95-before-after.json)
