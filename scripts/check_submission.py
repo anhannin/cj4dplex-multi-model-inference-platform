@@ -26,6 +26,7 @@ DOCS = [
 DOCS += [
     "docs/EXPERIMENT_INDEX.ko.md",
     "docs/IMPLEMENTATION.ko.md",
+    "docs/implementation.md",
     "docs/DEPLOYMENT_MODES.ko.md",
     *[
         "experiments/" + name + "/README.md"

@@ -193,7 +193,8 @@ CUDA Toolkit 업그레이드가 컨테이너의 PyTorch 빌드 버전을 자동�
 - [Experiment Index](docs/EXPERIMENT_INDEX.ko.md)
 - [Reproducibility Guide](docs/REPRODUCIBILITY.ko.md)
 - [Source Code Map](docs/CODE_MAP.ko.md)
-- [Implementation Scope](docs/IMPLEMENTATION.ko.md)
+- [사용 내역 및 구현 범위](docs/implementation.md)
+- [구현 상세·코드 근거](docs/IMPLEMENTATION.ko.md)
 - [Deployment Modes](docs/DEPLOYMENT_MODES.ko.md)
 - [Model and Open-Source Licenses](docs/USAGE_AND_LICENSES.ko.md)
 
