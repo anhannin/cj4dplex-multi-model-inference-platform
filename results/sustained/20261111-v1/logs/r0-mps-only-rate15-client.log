@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/avees/cj-sustained/20261111-v1/src/sustained_client.py", line 303, in <module>
+    main()
+  File "/home/avees/cj-sustained/20261111-v1/src/sustained_client.py", line 278, in main
+    raise RuntimeError("Invalid workload/result " + repr(v) + repr(errors))
+RuntimeError: Invalid workload/result {'valid': False, 'lag_p95_ms': 20.2465384, 'lag_max_ms': 95.5158, 'errors': 0}[]

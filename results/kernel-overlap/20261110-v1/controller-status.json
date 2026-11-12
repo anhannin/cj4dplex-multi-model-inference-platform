@@ -1,0 +1,13 @@
+{
+  "state": "PASS",
+  "start_wall_ns": 1794236937378391528,
+  "completed": [
+    "q16-y32",
+    "default"
+  ],
+  "root": "/home/avees/cj-kernel-overlap/20261110-v1",
+  "scope": "diagnostic GPU timeline ONLY, not performance benchmark",
+  "phase": "default",
+  "restoration": "PASS",
+  "end_wall_ns": 1794237776377097676
+}

@@ -1,0 +1,16 @@
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+Removed "/home/avees/.config/systemd/user/default.target.wants/cj-cuda-mps.service".
+Traceback (most recent call last):
+  File "/home/avees/cj-serving/mps-green-v1/deploy.py", line 51, in <module>
+    servers = control(pipe, "get_server_list").split()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/avees/cj-serving/mps-green-v1/deploy.py", line 27, in control
+    return base.run(
+           ^^^^^^^^^
+  File "/home/avees/cj-mps-concurrency/20261110-v1/src/burst_runner.py", line 22, in run
+    return subprocess.run(args, check=True, text=True, timeout=timeout, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['nvidia-cuda-mps-control']' returned non-zero exit status 1.

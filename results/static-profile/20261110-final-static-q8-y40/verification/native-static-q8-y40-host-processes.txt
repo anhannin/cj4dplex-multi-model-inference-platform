@@ -1,0 +1,5 @@
+ 376777  1000 nvidia-cuda-mps nvidia-cuda-mps-server -force-tegra
+ 376846  1000 nsys            nsys profile --session-new=overlap-native-static-q8-y40-yolo --trace=cuda,nvtx --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --kill=none --output=/experiment/validation/native-static-q8-y40/yolo/trace python /experiment/src/yolo_burst_node.py --ros-args -p queue_capacity:=512
+ 376854  1000 nsys            nsys profile --session-new=overlap-native-static-q8-y40-qwen --trace=cuda,nvtx --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --kill=none --output=/experiment/validation/native-static-q8-y40/qwen/trace python /experiment/src/qwen_burst_node.py --ros-args -p queue_capacity:=16
+ 376904  1000 python          /usr/bin/python /experiment/src/yolo_burst_node.py --ros-args -p queue_capacity:=512
+ 376907  1000 python          /usr/bin/python /experiment/src/qwen_burst_node.py --ros-args -p queue_capacity:=16

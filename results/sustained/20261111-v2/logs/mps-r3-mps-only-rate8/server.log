@@ -1,0 +1,56 @@
+[2026-11-11 19:17:07.110 Server 3157487] Startup
+[2026-11-11 19:17:07.110 Server 3157487] Connecting to control daemon on socket: /home/avees/cj-sustained/20261111-v2/eval-pipe/control
+[2026-11-11 19:17:07.110 Server 3157487] Initializing server process
+[2026-11-11 19:17:07.195 Server 3157487] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-11 19:17:07.314 Server 3157487] Created anonymous shared memory region mps.shm.1000.3157487
+[2026-11-11 19:17:07.314 Server 3157487] CUDA MPS Server for Linux/Unix. Binary version: 13020
+[2026-11-11 19:17:07.314 Server 3157487] Display Driver version: 595
+[2026-11-11 19:17:07.314 Server 3157487] Active Threads Percentage set to 100.0
+[2026-11-11 19:17:07.314 Server 3157487] Server Priority set to 0
+[2026-11-11 19:17:07.314 Server 3157487] Static Partitioning mode disabled
+[2026-11-11 19:17:07.314 Server 3157487] Server has started
+[2026-11-11 19:17:07.315 Server 3157487] Received new client request from PID 3157480
+[2026-11-11 19:17:07.315 Server 3157487] Priority level of client {3157480} is: 0 (NORMAL)
+[2026-11-11 19:17:07.315 Server 3157487] Client {PID: 3157480, Context ID: 0} connected
+[2026-11-11 19:17:07.315 Server 3157487] Creating worker thread for client {PID: 3157480, Context ID: 0}
+[2026-11-11 19:17:07.315 Server 3157487] Received new client request from PID 3157509
+[2026-11-11 19:17:07.315 Server 3157487] Priority level of client {3157509} is: 0 (NORMAL)
+[2026-11-11 19:17:07.315 Server 3157487] Client {PID: 3157509, Context ID: 0} connected
+[2026-11-11 19:17:07.315 Server 3157487] Creating worker thread for client {PID: 3157509, Context ID: 0}
+[2026-11-11 19:17:37.108 Server 3157487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 3157480, Context ID: 0} exit
+[2026-11-11 19:17:37.108 Server 3157487] Client process 3157480 disconnected
+[2026-11-11 19:17:37.208 Server 3157487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 3157509, Context ID: 0} exit
+[2026-11-11 19:17:37.208 Server 3157487] Client process 3157509 disconnected
+[2026-11-11 19:17:37.947 Server 3157487] Received new client request from PID 3157320
+[2026-11-11 19:17:37.948 Server 3157487] Priority level of client {3157320} is: 0 (NORMAL)
+[2026-11-11 19:17:37.948 Server 3157487] Client {PID: 3157320, Context ID: 0} connected
+[2026-11-11 19:17:37.948 Server 3157487] Creating worker thread for client {PID: 3157320, Context ID: 0}
+[2026-11-11 19:17:37.996 Server 3157487] Received new client request from PID 3157320
+[2026-11-11 19:17:37.996 Server 3157487] Priority level of client {3157320} is: 0 (NORMAL)
+[2026-11-11 19:17:37.996 Server 3157487] Client {PID: 3157320, Context ID: 1} connected
+[2026-11-11 19:17:37.996 Server 3157487] Creating worker thread for client {PID: 3157320, Context ID: 1}
+[2026-11-11 19:17:37.996 Server 3157487] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-11 19:17:37.996 Server 3157487] Status of client {PID: 3157320, Context ID: 1} is ACTIVE
+[2026-11-11 10:17:37.997 Client     1] Static partitioning mode disabled
+[2026-11-11 19:17:38.061 Server 3157487] Received new client request from PID 3157368
+[2026-11-11 19:17:38.062 Server 3157487] Priority level of client {3157368} is: 0 (NORMAL)
+[2026-11-11 19:17:38.062 Server 3157487] Client {PID: 3157368, Context ID: 0} connected
+[2026-11-11 19:17:38.062 Server 3157487] Creating worker thread for client {PID: 3157368, Context ID: 0}
+[2026-11-11 19:17:38.120 Server 3157487] Received new client request from PID 3157368
+[2026-11-11 19:17:38.121 Server 3157487] Priority level of client {3157368} is: 0 (NORMAL)
+[2026-11-11 19:17:38.121 Server 3157487] Client {PID: 3157368, Context ID: 1} connected
+[2026-11-11 19:17:38.121 Server 3157487] Creating worker thread for client {PID: 3157368, Context ID: 1}
+[2026-11-11 19:17:38.121 Server 3157487] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-11 19:17:38.121 Server 3157487] Status of client {PID: 3157368, Context ID: 1} is ACTIVE
+[2026-11-11 10:17:38.123 Client     1] Static partitioning mode disabled
+[2026-11-11 19:23:10.552 Server 3157487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 3157368, Context ID: 1} exit
+[2026-11-11 19:23:10.552 Server 3157487] Client {PID: 3157368, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-11 19:23:10.666 Server 3157487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 3157368, Context ID: 0} exit
+[2026-11-11 19:23:10.666 Server 3157487] Client process 3157368 disconnected
+[2026-11-11 19:23:10.715 Server 3157487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 3157320, Context ID: 1} exit
+[2026-11-11 19:23:10.715 Server 3157487] Client {PID: 3157320, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-11 19:23:10.832 Server 3157487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 3157320, Context ID: 0} exit
+[2026-11-11 19:23:10.832 Server 3157487] Client process 3157320 disconnected
+[2026-11-11 19:23:11.738 Server 3157487] Server has been notified to shutdown
+[2026-11-11 19:23:11.738 Server 3157487] Waiting for current clients to finish
+[2026-11-11 19:23:11.738 Server 3157487] Exiting

@@ -1,0 +1,41 @@
+{
+  "state": "FAIL",
+  "phase": "main",
+  "condition": "mps-only",
+  "round": 0,
+  "rate": 15.0,
+  "duration_s": 120.0,
+  "run_id": "r0-mps-only-rate15_a3e58ec4ac7340eb965badcb7bea8089",
+  "ros_domain": 74,
+  "qwen_load": "closed-loop C1",
+  "yolo_load": "fixed-rate open-loop",
+  "result_subscriptions": "rolling 128 ahead; retain >=1s after receive",
+  "e2e": "before JSON encoding/publish -> matching result parsed",
+  "start_wall_ns": 1794381794428159446,
+  "t0_ns": 136389810172454,
+  "stop_ns": 136509810172454,
+  "t0_wall_ns": 1794381797534617770,
+  "deadline_ns": 136809810172454,
+  "expected": {
+    "qwen": 11,
+    "yolo": 1800
+  },
+  "received": {
+    "qwen": 11,
+    "yolo": 1800
+  },
+  "errors": [],
+  "generator": {
+    "valid": false,
+    "lag_p95_ms": 20.2465384,
+    "lag_max_ms": 95.5158,
+    "errors": 0
+  },
+  "pilot_queue": {
+    "tail_queue_mean_ms": 18399.722698286674,
+    "queue_slope_rps": 2.701611558766324,
+    "errors": 0
+  },
+  "error": "RuntimeError(\"Invalid workload/result {'valid': False, 'lag_p95_ms': 20.2465384, 'lag_max_ms': 95.5158, 'errors': 0}[]\")",
+  "end_wall_ns": 1794381935187973403
+}

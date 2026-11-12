@@ -1,7 +1,0 @@
-FROM cj-yolo:26l-cu130
-COPY requirements-api.txt /opt/requirements-api.txt
-RUN python -m pip install --no-cache-dir -r /opt/requirements-api.txt python-multipart==0.0.33 pi-heif==1.4.0 && python -m pip check
-COPY api/yolo_api.py /app/yolo_api.py
-ENV HOST=0.0.0.0 PORT=8000
-EXPOSE 8000
-ENTRYPOINT ["python", "/app/yolo_api.py"]

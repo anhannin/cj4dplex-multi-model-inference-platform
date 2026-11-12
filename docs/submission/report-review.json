@@ -1,0 +1,11 @@
+{
+  "state": "PASS",
+  "path": "docs/TECHNICAL_REPORT.ko.md",
+  "report_sha256": "1a6a4b01fe8f91fc4dd4f76b24177701b4ae91d4188ead480baf4b48ff36c323",
+  "performance_scope": "Burst Q10/Y300 only",
+  "tradeoff_source_rows_checked": 5,
+  "structure": "sections1to9 present",
+  "fault_evidence": "controlled idleYOLO SIGKILL3 and IPCcase separated",
+  "raw_local_verified": true,
+  "github_recipient_access_checked": false
+}

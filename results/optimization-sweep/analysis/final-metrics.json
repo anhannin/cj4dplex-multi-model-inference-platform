@@ -1,0 +1,110 @@
+{
+  "qwen": {
+    "control_n": 30,
+    "winner_n": 30,
+    "request_e2e_ms_mean": {
+      "control": 16131.657281466667,
+      "winner": 13327.6711188,
+      "reduction_percent": 17.38188528148381
+    },
+    "request_e2e_ms_p95": {
+      "control": 16484.7879236,
+      "winner": 13373.9386904,
+      "reduction_percent": 18.871029749472466
+    },
+    "server_ttft_ms_mean": {
+      "control": 131.68591573333333,
+      "winner": 106.82719953333333,
+      "reduction_percent": 18.877277848254792
+    },
+    "server_ttft_ms_p95": {
+      "control": 141.5646804,
+      "winner": 109.9072054,
+      "reduction_percent": 22.36255181062804
+    },
+    "tpot_ms_mean": {
+      "control": 125.88942608950131,
+      "winner": 104.06663570052494,
+      "reduction_percent": 17.334887501561425
+    },
+    "tpot_ms_p95": {
+      "control": 128.68003362913387,
+      "winner": 104.39067608503937,
+      "reduction_percent": 18.8757780512386
+    },
+    "processing_ms_mean": {
+      "control": 16120.04398095111,
+      "winner": 13323.070490670701,
+      "reduction_percent": 17.350904833668956
+    },
+    "processing_ms_p95": {
+      "control": 16480.974109331146,
+      "winner": 13366.615120740607,
+      "reduction_percent": 18.89669244020753
+    },
+    "queue_wait_ms_mean": {
+      "control": 0.8116034480432669,
+      "winner": 0.7944553159177303,
+      "reduction_percent": 2.1128707827547832
+    },
+    "queue_wait_ms_p95": {
+      "control": 1.057924935594201,
+      "winner": 1.0305597912520168,
+      "reduction_percent": 2.586681098202326
+    },
+    "throughput": {
+      "control": 0.06198753693182993,
+      "winner": 0.07502709605036888,
+      "increase_percent": 21.035775518680566
+    }
+  },
+  "yolo": {
+    "control_n": 11793,
+    "winner_n": 16089,
+    "request_e2e_ms_mean": {
+      "control": 39.73937869210549,
+      "winner": 23.62306268363478,
+      "reduction_percent": 40.55502762974079
+    },
+    "request_e2e_ms_p95": {
+      "control": 48.587498999999994,
+      "winner": 32.6851516,
+      "reduction_percent": 32.72929812666422
+    },
+    "yolo_inference_ms_mean": {
+      "control": 16.77622141411774,
+      "winner": 8.427056117218658,
+      "reduction_percent": 49.76785350408516
+    },
+    "yolo_inference_ms_p95": {
+      "control": 17.635720409452915,
+      "winner": 11.135610379278654,
+      "reduction_percent": 36.85763824363046
+    },
+    "processing_ms_mean": {
+      "control": 32.74051904074047,
+      "winner": 19.34112385358756,
+      "reduction_percent": 40.92603165661318
+    },
+    "processing_ms_p95": {
+      "control": 34.93396230041981,
+      "winner": 26.559922471642494,
+      "reduction_percent": 23.97105646580686
+    },
+    "queue_wait_ms_mean": {
+      "control": 0.3572096809666494,
+      "winner": 0.3350954523080954,
+      "reduction_percent": 6.190825679390999
+    },
+    "queue_wait_ms_p95": {
+      "control": 0.949583016335964,
+      "winner": 0.9270220994949341,
+      "reduction_percent": 2.3758761954360663
+    },
+    "throughput": {
+      "control": 24.366345690150574,
+      "winner": 40.23678427609902,
+      "increase_percent": 65.13261687969747
+    }
+  }
+}

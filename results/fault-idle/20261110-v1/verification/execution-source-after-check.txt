@@ -1,0 +1,7 @@
+/home/avees/cj-fault-idle/20261110-v1/src/qwen_burst_node.py: OK
+/home/avees/cj-fault-idle/20261110-v1/src/yolo_burst_node.py: OK
+/home/avees/cj-fault-idle/20261110-v1/src/controller.py: OK
+/home/avees/cj-fault-idle/20261110-v1/src/ros_client.py: OK
+/home/avees/cj-fault-idle/20261110-v1/src/qwen_monitor.py: OK
+/home/avees/cj-fault-idle/20261110-v1/src/yolo_probe.py: OK
+/home/avees/cj-fault-idle/20261110-v1/src/fault_metrics.py: OK

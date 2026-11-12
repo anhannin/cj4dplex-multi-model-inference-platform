@@ -1,0 +1,38 @@
+Processing [/profiles/qwen/yolo-only.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/cuda_gpu_kern_sum.py]... 
+SKIPPED: /profiles/qwen/yolo-only.sqlite does not contain CUDA kernel data.
+
+Processing [/profiles/qwen/yolo-only.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+SKIPPED: /profiles/qwen/yolo-only.sqlite does not contain CUDA trace data.
+
+Processing [/profiles/qwen/yolo-only.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/cuda_gpu_mem_time_sum.py]... 
+SKIPPED: /profiles/qwen/yolo-only.sqlite does not contain GPU memory data.
+
+Processing [/profiles/qwen/yolo-only.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/osrt_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+37.1,14099146976,382,36908761.7,505856.0,11600,5973170224,430959125.9,pthread_cond_wait
+17.8,6750268256,403,16750045.3,493520.0,3152,333531728,60266420.0,sem_timedwait
+16.5,6284364112,484,12984223.4,4411872.0,5664,1000147824,83369433.9,pthread_cond_clockwait
+10.0,3809695040,38,100255132.6,100212696.0,100111856,100803200,190574.9,poll
+10.0,3805469872,38,100143944.0,100136624.0,100054864,100501136,115377.7,sem_clockwait
+8.5,3250380480,473,6871840.3,447056.0,1168,286724992,25542030.4,recvfrom
+0.0,12262720,167,73429.5,35920.0,1536,341536,70325.4,pthread_mutex_lock
+0.0,2360944,617,3826.5,3280.0,1008,14336,2140.2,pthread_cond_signal
+0.0,998912,48,20810.7,19104.0,1632,48704,11051.8,open64
+0.0,909520,99,9187.1,4800.0,2640,85136,12957.2,sendto
+0.0,153040,45,3400.9,2464.0,1008,32256,4661.2,close
+0.0,123488,41,3011.9,2992.0,1200,6000,1101.5,fstat64
+0.0,113648,37,3071.6,2752.0,1712,7712,1338.7,read
+0.0,66240,1,66240.0,66240.0,66240,66240,0.0,ioctl
+0.0,39024,2,19512.0,19512.0,4240,34784,21597.9,connect
+0.0,38208,3,12736.0,8944.0,6576,22688,8699.6,mmap64
+0.0,36544,2,18272.0,18272.0,3168,33376,21360.3,socket
+0.0,26704,2,13352.0,13352.0,3120,23584,14470.2,stat64
+0.0,15824,2,7912.0,7912.0,4704,11120,4536.8,pthread_mutex_timedlock
+0.0,13696,1,13696.0,13696.0,13696,13696,0.0,write
+0.0,13184,6,2197.3,1664.0,1376,4176,1116.7,flock
+0.0,2528,1,2528.0,2528.0,2528,2528,0.0,fflush
+
+Processing [/profiles/qwen/yolo-only.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/nvtx_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Style,Range
+100.0,3811280048,1,3811280048.0,3811280048.0,3811280048,3811280048,0.0,PushPop,:phase:yolo-only
+

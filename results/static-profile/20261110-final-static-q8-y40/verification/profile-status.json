@@ -1,0 +1,7 @@
+{
+  "state": "PASS",
+  "scope": "Native595 static-q8-y40 Q8/Y40; NO Green; paired actual models; diagnostic only",
+  "start_wall_ns": 1794258804967580623,
+  "restoration": "PASS",
+  "end_wall_ns": 1794259322298711836
+}

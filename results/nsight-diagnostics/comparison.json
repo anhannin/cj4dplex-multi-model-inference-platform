@@ -1,0 +1,62 @@
+[
+  {
+    "model": "qwen",
+    "phase": "qwen-only",
+    "requests": 2,
+    "kernel_count": 499860,
+    "kernels_per_request": 249930.0,
+    "nvtx_model_call_mean_ms": 11703.691576000001,
+    "gpu_kernel_union_per_call_ms": 11011.803664,
+    "non_kernel_coverage_per_call_ms": 691.887912,
+    "launch_return_to_kernel_start_mean_us": 27491.388097435283,
+    "launch_return_to_kernel_start_p95_us": 42761.0432,
+    "application_queue_mean_ms": 0.6729848682880402,
+    "memcpy_device_total_ms": 42.974688,
+    "warning_count": 1
+  },
+  {
+    "model": "yolo",
+    "phase": "yolo-only",
+    "requests": 100,
+    "kernel_count": 84500,
+    "kernels_per_request": 845.0,
+    "nvtx_model_call_mean_ms": 10.37029952,
+    "gpu_kernel_union_per_call_ms": 6.18844288,
+    "non_kernel_coverage_per_call_ms": 4.18185664,
+    "launch_return_to_kernel_start_mean_us": 622.3653716449704,
+    "launch_return_to_kernel_start_p95_us": 1510.336,
+    "application_queue_mean_ms": 0.30427180230617523,
+    "memcpy_device_total_ms": 3.018336,
+    "warning_count": 0
+  },
+  {
+    "model": "qwen",
+    "phase": "concurrent",
+    "requests": 2,
+    "kernel_count": 499860,
+    "kernels_per_request": 249930.0,
+    "nvtx_model_call_mean_ms": 16136.056544,
+    "gpu_kernel_union_per_call_ms": 14912.475536,
+    "non_kernel_coverage_per_call_ms": 1223.581008,
+    "launch_return_to_kernel_start_mean_us": 38884.809016348576,
+    "launch_return_to_kernel_start_p95_us": 63827.928799999994,
+    "application_queue_mean_ms": 0.698720570653677,
+    "memcpy_device_total_ms": 48.537632,
+    "warning_count": 0
+  },
+  {
+    "model": "yolo",
+    "phase": "concurrent",
+    "requests": 780,
+    "kernel_count": 659100,
+    "kernels_per_request": 845.0,
+    "nvtx_model_call_mean_ms": 30.096796635897437,
+    "gpu_kernel_union_per_call_ms": 8.435769394871794,
+    "non_kernel_coverage_per_call_ms": 21.661027241025643,
+    "launch_return_to_kernel_start_mean_us": 5491.714910562889,
+    "launch_return_to_kernel_start_p95_us": 9107.280799999999,
+    "application_queue_mean_ms": 0.7684857512895877,
+    "memcpy_device_total_ms": 64.804352,
+    "warning_count": 0
+  }
+]

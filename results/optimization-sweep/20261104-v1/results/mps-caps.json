@@ -1,0 +1,22 @@
+[
+  {
+    "cap": 25,
+    "sms": 12,
+    "name": "NVIDIA GB10"
+  },
+  {
+    "cap": 50,
+    "sms": 24,
+    "name": "NVIDIA GB10"
+  },
+  {
+    "cap": 75,
+    "sms": 36,
+    "name": "NVIDIA GB10"
+  },
+  {
+    "cap": 100,
+    "sms": 48,
+    "name": "NVIDIA GB10"
+  }
+]

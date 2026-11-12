@@ -1,0 +1,4 @@
+Here is a detailed explanation of GPU resource contention in six key points:
+
+*   **Memory Bandwidth Saturation**: When multiple processes or threads attempt to access the GPU's high-speed memory (HBM or GDDR) simultaneously, they compete for the limited memory bus width. This creates a bottleneck where data transfer rates drop significantly, causing threads to stall while waiting for data to be fetched or written, effectively reducing overall throughput.
+*   **Register File Exhaustion**: Each thread in a warp or wavefront requires a specific number of registers to store local variables. If a kernel launches too many threads or uses excessive local variables, the

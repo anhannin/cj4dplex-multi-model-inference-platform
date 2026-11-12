@@ -1,0 +1,3 @@
+{"stage": "warmup_done", "counts": {"yolo": 3}}
+{"stage": "measurement_done", "counts": {"yolo": 300}}
+{"state": "PASS", "output": "/home/avees/cj-green-e2e/20261109-v1/results/q8-y40-yolo-solo"}

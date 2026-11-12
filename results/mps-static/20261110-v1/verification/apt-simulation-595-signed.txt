@@ -1,0 +1,107 @@
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libwoff1 linux-modules-nvidia-fs-6.11.0-1014-nvidia
+  linux-nvidia-6.11-tools-6.11.0-1014 linux-tools-6.11.0-1014-nvidia
+  nvidia-firmware-580-580.173.02 nvidia-firmware-580-580.95.05
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  dkms fakeroot libfakeroot libnvidia-cfg1-595 libnvidia-common-595
+  libnvidia-compute-595 libnvidia-decode-595 libnvidia-encode-595
+  libnvidia-extra-595 libnvidia-fbc1-595 libnvidia-gl-595
+  linux-image-7.0.0-1025-nvidia linux-modules-7.0.0-1025-nvidia
+  nvidia-compute-utils-595 nvidia-dkms-595-open nvidia-firmware-595-595.99.02
+  nvidia-kernel-common-595 nvidia-kernel-source-595-open nvidia-prime
+  nvidia-utils-595 pahole xserver-xorg-video-nvidia-595
+Suggested packages:
+  menu linux-perf linux-nvidia-7.0-tools linux-headers-7.0.0-1025-nvidia
+  nvidia-driver-595
+The following packages will be REMOVED:
+  libnvidia-cfg1-580 libnvidia-common-580 libnvidia-compute-580
+  libnvidia-decode-580 libnvidia-encode-580 libnvidia-extra-580
+  libnvidia-fbc1-580 libnvidia-gl-580
+  linux-modules-nvidia-580-open-6.14.0-1015-nvidia
+  linux-modules-nvidia-580-open-6.17.0-1031-nvidia
+  linux-modules-nvidia-580-open-nvidia-hwe-24.04 nvidia-compute-utils-580
+  nvidia-driver-580-open nvidia-kernel-common-580
+  nvidia-kernel-source-580-open nvidia-utils-580 xserver-xorg-video-nvidia-580
+The following NEW packages will be installed:
+  dkms fakeroot libfakeroot libnvidia-cfg1-595 libnvidia-common-595
+  libnvidia-compute-595 libnvidia-decode-595 libnvidia-encode-595
+  libnvidia-extra-595 libnvidia-fbc1-595 libnvidia-gl-595
+  linux-image-7.0.0-1025-nvidia linux-modules-7.0.0-1025-nvidia
+  linux-modules-nvidia-595-open-7.0.0-1025-nvidia nvidia-compute-utils-595
+  nvidia-dkms-595-open nvidia-driver-595-open nvidia-firmware-595-595.99.02
+  nvidia-kernel-common-595 nvidia-kernel-source-595-open nvidia-prime
+  nvidia-utils-595 pahole xserver-xorg-video-nvidia-595
+0 upgraded, 24 newly installed, 17 to remove and 417 not upgraded.
+Remv nvidia-driver-580-open [580.173.02-0ubuntu0.24.04.1]
+Remv xserver-xorg-video-nvidia-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-cfg1-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-gl-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-encode-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-decode-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-compute-580 [580.173.02-0ubuntu0.24.04.1] [nvidia-compute-utils-580:arm64 nvidia-utils-580:arm64 ]
+Inst libnvidia-compute-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [nvidia-compute-utils-580:arm64 nvidia-utils-580:arm64 ]
+Remv nvidia-compute-utils-580 [580.173.02-0ubuntu0.24.04.1] [nvidia-utils-580:arm64 ]
+Inst nvidia-compute-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [nvidia-utils-580:arm64 ]
+Remv nvidia-utils-580 [580.173.02-0ubuntu0.24.04.1] [nvidia-conf-xconfig:arm64 ]
+Inst nvidia-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) []
+Remv libnvidia-common-580 [580.173.02-0ubuntu0.24.04.1] []
+Remv linux-modules-nvidia-580-open-nvidia-hwe-24.04 [6.17.0-1031.31] []
+Remv libnvidia-fbc1-580 [580.173.02-0ubuntu0.24.04.1] []
+Remv linux-modules-nvidia-580-open-6.17.0-1031-nvidia [6.17.0-1031.31] []
+Remv libnvidia-extra-580 [580.173.02-0ubuntu0.24.04.1] []
+Remv nvidia-kernel-common-580 [580.173.02-0ubuntu0.24.04.1] [linux-modules-nvidia-580-open-6.14.0-1015-nvidia:arm64 ]
+Inst nvidia-firmware-595-595.99.02 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [linux-modules-nvidia-580-open-6.14.0-1015-nvidia:arm64 ]
+Inst nvidia-kernel-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [linux-modules-nvidia-580-open-6.14.0-1015-nvidia:arm64 ]
+Remv linux-modules-nvidia-580-open-6.14.0-1015-nvidia [6.14.0-1015.15+6]
+Remv nvidia-kernel-source-580-open [580.173.02-0ubuntu0.24.04.1]
+Inst pahole (1.25-0ubuntu3 Ubuntu:24.04/noble [arm64])
+Inst dkms (1:3.4.4-1ubuntu1 NVIDIA CUDA:developer.download.nvidia.com [all])
+Inst libfakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Inst fakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Inst libnvidia-cfg1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-decode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-encode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-extra-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-fbc1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-gl-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst linux-modules-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Inst linux-image-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Inst linux-modules-nvidia-595-open-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Inst nvidia-kernel-source-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst nvidia-dkms-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst xserver-xorg-video-nvidia-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst nvidia-driver-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst nvidia-prime (0.8.17.2 Ubuntu:24.04/noble [all])
+Conf libnvidia-compute-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-compute-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-firmware-595-595.99.02 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-kernel-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf pahole (1.25-0ubuntu3 Ubuntu:24.04/noble [arm64])
+Conf dkms (1:3.4.4-1ubuntu1 NVIDIA CUDA:developer.download.nvidia.com [all])
+Conf libfakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Conf fakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Conf libnvidia-cfg1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-decode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-encode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-extra-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-fbc1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-gl-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf linux-modules-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Conf linux-image-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Conf linux-modules-nvidia-595-open-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Conf nvidia-kernel-source-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-dkms-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf xserver-xorg-video-nvidia-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-driver-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-prime (0.8.17.2 Ubuntu:24.04/noble [all])

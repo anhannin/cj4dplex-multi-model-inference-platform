@@ -1,0 +1,94 @@
+[2026-11-10 05:22:09.421 Control 285264] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 05:22:09.421 Control 285264] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 05:22:09.421 Control 285264] CUDA MPS Control binary version: 13020
+[2026-11-10 05:22:09.422 Control 285264] Accepting connection...
+[2026-11-10 05:22:09.422 Control 285264] NEW UI
+[2026-11-10 05:22:09.422 Control 285264] Cmd:get_server_list
+[2026-11-10 05:22:09.422 Control 285264] UI closed
+[2026-11-10 05:22:09.439 Control 285264] Accepting connection...
+[2026-11-10 05:22:09.439 Control 285264] NEW UI
+[2026-11-10 05:22:09.439 Control 285264] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-10 05:22:09.458 Control 285264] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:22:09.458 Control 285264] UI closed
+[2026-11-10 05:22:09.460 Control 285264] Accepting connection...
+[2026-11-10 05:22:09.460 Control 285264] NEW UI
+[2026-11-10 05:22:09.460 Control 285264] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-10 05:22:09.460 Control 285264] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:22:09.460 Control 285264] UI closed
+[2026-11-10 05:22:09.461 Control 285264] Accepting connection...
+[2026-11-10 05:22:09.461 Control 285264] NEW UI
+[2026-11-10 05:22:09.461 Control 285264] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 05:22:09.461 Control 285264] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 05:22:09.461 Control 285264] Failed to create partition
+[2026-11-10 05:22:09.461 Control 285264] UI closed
+[2026-11-10 05:22:10.325 Control 285264] Accepting connection...
+[2026-11-10 05:22:10.325 Control 285264] User did not send valid credentials
+[2026-11-10 05:22:10.325 Control 285264] Accepting connection...
+[2026-11-10 05:22:10.325 Control 285264] NEW CLIENT 285621 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 05:22:10.325 Control 285628] Starting new server 285628 for user 1000
+[2026-11-10 05:22:10.326 Control 285264] Accepting connection...
+[2026-11-10 05:22:10.640 Control 285264] NEW SERVER 285628: Ready
+[2026-11-10 05:22:10.641 Control 285264] Accepting connection...
+[2026-11-10 05:22:10.641 Control 285264] User did not send valid credentials
+[2026-11-10 05:22:10.641 Control 285264] Accepting connection...
+[2026-11-10 05:22:10.641 Control 285264] NEW CLIENT 285650 from user 1000: Server already exists
+[2026-11-10 05:22:11.445 Control 285264] Accepting connection...
+[2026-11-10 05:22:11.445 Control 285264] User did not send valid credentials
+[2026-11-10 05:22:11.445 Control 285264] Accepting connection...
+[2026-11-10 05:22:11.445 Control 285264] NEW CLIENT 285475 from user 1000: Server already exists
+[2026-11-10 05:22:11.484 Control 285264] Accepting connection...
+[2026-11-10 05:22:11.484 Control 285264] User did not send valid credentials
+[2026-11-10 05:22:11.484 Control 285264] Accepting connection...
+[2026-11-10 05:22:11.484 Control 285264] NEW CLIENT 285458 from user 1000: Server already exists
+[2026-11-10 05:22:11.488 Control 285264] Accepting connection...
+[2026-11-10 05:22:11.488 Control 285264] NEW CLIENT 285475 from user 1000: Server already exists
+[2026-11-10 05:22:11.529 Control 285264] Accepting connection...
+[2026-11-10 05:22:11.529 Control 285264] NEW CLIENT 285458 from user 1000: Server already exists
+[2026-11-10 05:24:10.320 Control 285264] Accepting connection...
+[2026-11-10 05:24:10.320 Control 285264] NEW UI
+[2026-11-10 05:24:10.320 Control 285264] Cmd:get_server_list
+[2026-11-10 05:24:10.320 Control 285264] 285628
+[2026-11-10 05:24:10.320 Control 285264] UI closed
+[2026-11-10 05:24:10.321 Control 285264] Accepting connection...
+[2026-11-10 05:24:10.321 Control 285264] NEW UI
+[2026-11-10 05:24:10.321 Control 285264] Cmd:get_client_list 285628
+[2026-11-10 05:24:10.321 Control 285264] 285475
+[2026-11-10 05:24:10.321 Control 285264] 285458
+[2026-11-10 05:24:10.321 Control 285264] UI closed
+[2026-11-10 05:25:21.319 Control 285264] Accepting connection...
+[2026-11-10 05:25:21.319 Control 285264] NEW UI
+[2026-11-10 05:25:21.319 Control 285264] Cmd:get_server_list
+[2026-11-10 05:25:21.319 Control 285264] 285628
+[2026-11-10 05:25:21.319 Control 285264] UI closed
+[2026-11-10 05:25:21.320 Control 285264] Accepting connection...
+[2026-11-10 05:25:21.320 Control 285264] NEW UI
+[2026-11-10 05:25:21.320 Control 285264] Cmd:get_client_list 285628
+[2026-11-10 05:25:21.320 Control 285264] 285475
+[2026-11-10 05:25:21.320 Control 285264] 285458
+[2026-11-10 05:25:21.320 Control 285264] UI closed
+[2026-11-10 05:27:19.948 Control 285264] Accepting connection...
+[2026-11-10 05:27:19.948 Control 285264] NEW UI
+[2026-11-10 05:27:19.948 Control 285264] Cmd:get_server_list
+[2026-11-10 05:27:19.948 Control 285264] 285628
+[2026-11-10 05:27:19.948 Control 285264] UI closed
+[2026-11-10 05:27:19.949 Control 285264] Accepting connection...
+[2026-11-10 05:27:19.949 Control 285264] NEW UI
+[2026-11-10 05:27:19.949 Control 285264] Cmd:get_client_list 285628
+[2026-11-10 05:27:19.949 Control 285264] 285475
+[2026-11-10 05:27:19.949 Control 285264] 285458
+[2026-11-10 05:27:19.949 Control 285264] UI closed
+[2026-11-10 05:27:22.077 Control 285264] Accepting connection...
+[2026-11-10 05:27:22.077 Control 285264] NEW UI
+[2026-11-10 05:27:22.077 Control 285264] Cmd:get_server_list
+[2026-11-10 05:27:22.077 Control 285264] 285628
+[2026-11-10 05:27:22.077 Control 285264] UI closed
+[2026-11-10 05:27:22.078 Control 285264] Accepting connection...
+[2026-11-10 05:27:22.078 Control 285264] NEW UI
+[2026-11-10 05:27:22.078 Control 285264] Cmd:get_client_list 285628
+[2026-11-10 05:27:22.079 Control 285264] UI closed
+[2026-11-10 05:27:22.080 Control 285264] Accepting connection...
+[2026-11-10 05:27:22.080 Control 285264] NEW UI
+[2026-11-10 05:27:22.080 Control 285264] Cmd:quit
+[2026-11-10 05:27:22.080 Control 285264] Try shutting down server 285628, backoff is disabled
+[2026-11-10 05:27:22.154 Control 285264] Server 285628 exited with status 0
+[2026-11-10 05:27:22.155 Control 285264] Exit with status 0

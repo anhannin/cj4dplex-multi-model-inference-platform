@@ -1,0 +1,44 @@
+{
+  "total_sms": 48,
+  "minimum_partition_sms": 8,
+  "coscheduled_alignment": 8,
+  "parts": [
+    {
+      "actual_sms": 32,
+      "stream_ptr": 274069443341392,
+      "green_handle": 274069443284608,
+      "stream_owner_verified": true
+    },
+    {
+      "actual_sms": 16,
+      "stream_ptr": 274069444975088,
+      "green_handle": 274069444979280,
+      "stream_owner_verified": true
+    }
+  ],
+  "selected_index": 1,
+  "selected_sms": 16,
+  "observed_smids": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "event": "gpu_resource_ready",
+  "enabled": true,
+  "pair": "pilot-q16-y32",
+  "pid": 111,
+  "time_ns": 1794218320403598638
+}

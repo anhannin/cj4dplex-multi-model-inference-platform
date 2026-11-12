@@ -1,5 +1,3 @@
--r requirements-api.txt
-python-multipart==0.0.33
-httpx2==2.16.0
+# CPU regression tests for the retained ROS2/benchmark/optimization sources.
 Pillow==11.3.0
 ruff==0.14.10

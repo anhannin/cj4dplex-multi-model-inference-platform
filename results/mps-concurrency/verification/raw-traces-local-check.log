@@ -1,0 +1,6 @@
+validation/mps-green-q16-y32-r1/qwen/trace.nsys-rep: OK
+validation/mps-green-q16-y32-r1/qwen/trace.sqlite: OK
+validation/mps-green-q16-y32-r1/scheduler/trace.nsys-rep: OK
+validation/mps-green-q16-y32-r1/scheduler/trace.sqlite: OK
+validation/mps-green-q16-y32-r1/yolo/trace.nsys-rep: OK
+validation/mps-green-q16-y32-r1/yolo/trace.sqlite: OK

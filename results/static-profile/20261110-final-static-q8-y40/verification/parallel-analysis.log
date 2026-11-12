@@ -1,0 +1,84 @@
+{
+  "mps_server_host_pid": 376777,
+  "mps_clients_host_pid": [
+    376907,
+    376904
+  ],
+  "scheduler_clock": {
+    "anchors": 69,
+    "base_trace_ns": 1794258998049301994,
+    "base_host_ns": 13590324835766,
+    "slope": 1.0000027768858155,
+    "intercept_relative_ns": 24141.6864528656,
+    "max_midpoint_residual_ns": 24142.0,
+    "max_anchor_bracket_ns": 101248.0,
+    "empirical_alignment_error_ns": 58840.0,
+    "note": "empirical anchor-fit/bracket tolerance, not a hardware clock accuracy guarantee"
+  },
+  "context_events": 19,
+  "internal_sequence_gaps": 0,
+  "context_attribution_note": "This driver attributes MPS scheduling events to member client PIDs, not the server PID. Membership verified separately; never infer attribution from server name alone.",
+  "context_pids": [
+    0,
+    376904,
+    376907
+  ],
+  "mps_associated_hardware_resident_ms": 20021.639852,
+  "cross_model_kernel_overlap_in_mps_hardware_residence_ms": 2397.583572,
+  "transition_guard_ns": 200000,
+  "overlap_away_from_context_transitions_ms": 2397.583572,
+  "conservative_overlap_in_uninterrupted_mps_residence_ms": 175.751117,
+  "device_metrics": {
+    "6": {
+      "samples": 200266,
+      "mean_percent": 99.3412311625538,
+      "max_percent": 100
+    },
+    "7": {
+      "samples": 200266,
+      "mean_percent": 23.454949916610907,
+      "max_percent": 100
+    },
+    "8": {
+      "samples": 200266,
+      "mean_percent": 6.394625148552425,
+      "max_percent": 43
+    },
+    "9": {
+      "samples": 200266,
+      "mean_percent": 2.305598553923282,
+      "max_percent": 56
+    },
+    "16": {
+      "samples": 200266,
+      "mean_percent": 7.929868275193992,
+      "max_percent": 97
+    }
+  },
+  "note": "Kernel elapsed spans inside uninterrupted MPS-associated context residence, with two actual-model clients. Device metrics not process-attributed. No Green API. Static status/SMcounts taken from actual partition-plan case; clientmembership captured before warmup and hostPID reconfirmed at capture start.",
+  "partition_plan": {
+    "case": {
+      "label": "native-static-q8-y40",
+      "condition": "static-q8-y40",
+      "mps": true,
+      "static": true,
+      "green": false,
+      "qsm": 8,
+      "ysm": 40
+    },
+    "parts": {
+      "qwen": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "yolo": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "native_driver": true,
+    "green": false,
+    "actual_chunk_sms": 2,
+    "raw": {
+      "qwen": "Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created\n",
+      "yolo": "Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created\n"
+    },
+    "overallocate_output": "Failed to create partition\n"
+  },
+  "conservative_50ms_gate": true,
+  "reference_only": false
+}

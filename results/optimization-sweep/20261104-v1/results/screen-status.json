@@ -1,0 +1,27 @@
+[
+  {
+    "candidate": "mps",
+    "label": "screen-00-mps",
+    "status": "PASS"
+  },
+  {
+    "candidate": "mps-q75",
+    "label": "screen-01-mps-q75",
+    "status": "PASS"
+  },
+  {
+    "candidate": "mps-q50",
+    "label": "screen-02-mps-q50",
+    "status": "PASS"
+  },
+  {
+    "candidate": "affinity",
+    "label": "screen-03-affinity",
+    "status": "PASS"
+  },
+  {
+    "candidate": "dds",
+    "label": "screen-04-dds",
+    "status": "PASS"
+  }
+]

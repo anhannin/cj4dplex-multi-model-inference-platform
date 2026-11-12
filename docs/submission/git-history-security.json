@@ -1,0 +1,7 @@
+{
+  "state": "PASS",
+  "commits": 1,
+  "text_blobs_checked": 504,
+  "findings": [],
+  "scope": "all local Git refs; UTF8 text blobs<=50MiB; signature scan, not a scan of container layers or external raw archives"
+}

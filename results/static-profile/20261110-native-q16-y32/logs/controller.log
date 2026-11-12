@@ -1,0 +1,11 @@
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "native-static-q16-y32-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1246.495842, "qwen": 68639.1852}, "overall_completion_ms": 68639.1852, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.772553, "last_send_from_t0_ms": 1.042802, "all_published_from_t0_ms": 1.079555}, "yolo": {"first_send_from_t0_ms": 1.199495, "last_send_from_t0_ms": 55.031865, "all_published_from_t0_ms": 57.600331}}, "dispatch_window_ms": 57.600331}, "time": 1794246277.2237267}
+{"event": "burst_complete", "label": "native-static-q16-y32-burst", "warmup": false, "summary": {"model_completion_ms": {"yolo": 12929.01601, "qwen": 122134.792312}, "overall_completion_ms": 122134.792312, "completed": {"qwen": 10, "yolo": 300}, "dispatch": {"qwen": {"first_send_from_t0_ms": 3.578394, "last_send_from_t0_ms": 4.071608, "all_published_from_t0_ms": 4.094889}, "yolo": {"first_send_from_t0_ms": 4.222781, "last_send_from_t0_ms": 521.621182, "all_published_from_t0_ms": 527.900743}}, "dispatch_window_ms": 527.900743}, "time": 1794246409.05283}
+pod/qwen-656bffdb5d-2pw7p condition met
+Created symlink /home/avees/.config/systemd/user/default.target.wants/cj-cuda-mps.service → /home/avees/.config/systemd/user/cj-cuda-mps.service.
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"state": "PASS", "scope": "Native595 static MPS16/32; NO Green; pairedactualmodels; diagnosticprofileonly", "start_wall_ns": 1794246080610120698, "restoration": "PASS", "end_wall_ns": 1794246593682256161}

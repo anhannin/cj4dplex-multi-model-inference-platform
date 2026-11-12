@@ -1,0 +1,5 @@
+Collecting data...
+Generating '/tmp/nsys-report-0157.qdstrm'
+[1/1] [0%                          ] trace.nsys-rep[1/1] [0%                          ] trace.nsys-rep[1/1] [=16%                        ] trace.nsys-rep[1/1] [======33%                   ] trace.nsys-rep[1/1] [==============62%           ] trace.nsys-rep[1/1] [======================92%   ] trace.nsys-rep[1/1] [=======================93%  ] trace.nsys-rep[1/1] [========================100%] trace.nsys-rep[1/1] [========================100%] trace.nsys-rep
+Generated:
+	/experiment/validation/ctxsw-probe/trace.nsys-rep

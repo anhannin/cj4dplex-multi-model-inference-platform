@@ -1,0 +1,3 @@
+{"stage": "warmup_done", "counts": {"yolo": 0}}
+{"stage": "measurement_done", "counts": {"yolo": 100}}
+{"state": "PASS", "output": "/home/avees/cj-nsys-diagnostics/20261103-v1/clients/yolo-only"}

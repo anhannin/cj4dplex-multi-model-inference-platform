@@ -1,0 +1,94 @@
+[2026-11-10 05:54:35.349 Control 340033] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 05:54:35.349 Control 340033] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 05:54:35.349 Control 340033] CUDA MPS Control binary version: 13020
+[2026-11-10 05:54:35.351 Control 340033] Accepting connection...
+[2026-11-10 05:54:35.351 Control 340033] NEW UI
+[2026-11-10 05:54:35.351 Control 340033] Cmd:get_server_list
+[2026-11-10 05:54:35.351 Control 340033] UI closed
+[2026-11-10 05:54:35.371 Control 340033] Accepting connection...
+[2026-11-10 05:54:35.371 Control 340033] NEW UI
+[2026-11-10 05:54:35.371 Control 340033] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 12
+[2026-11-10 05:54:35.386 Control 340033] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/x3EcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:54:35.386 Control 340033] UI closed
+[2026-11-10 05:54:35.388 Control 340033] Accepting connection...
+[2026-11-10 05:54:35.388 Control 340033] NEW UI
+[2026-11-10 05:54:35.388 Control 340033] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 12
+[2026-11-10 05:54:35.388 Control 340033] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/OI7jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:54:35.388 Control 340033] UI closed
+[2026-11-10 05:54:35.389 Control 340033] Accepting connection...
+[2026-11-10 05:54:35.389 Control 340033] NEW UI
+[2026-11-10 05:54:35.389 Control 340033] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 05:54:35.389 Control 340033] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 05:54:35.389 Control 340033] Failed to create partition
+[2026-11-10 05:54:35.389 Control 340033] UI closed
+[2026-11-10 05:54:36.210 Control 340033] Accepting connection...
+[2026-11-10 05:54:36.210 Control 340033] User did not send valid credentials
+[2026-11-10 05:54:36.210 Control 340033] Accepting connection...
+[2026-11-10 05:54:36.210 Control 340033] NEW CLIENT 340392 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 05:54:36.211 Control 340394] Starting new server 340394 for user 1000
+[2026-11-10 05:54:36.212 Control 340033] Accepting connection...
+[2026-11-10 05:54:36.439 Control 340033] NEW SERVER 340394: Ready
+[2026-11-10 05:54:36.440 Control 340033] Accepting connection...
+[2026-11-10 05:54:36.440 Control 340033] User did not send valid credentials
+[2026-11-10 05:54:36.440 Control 340033] Accepting connection...
+[2026-11-10 05:54:36.440 Control 340033] NEW CLIENT 340403 from user 1000: Server already exists
+[2026-11-10 05:54:37.270 Control 340033] Accepting connection...
+[2026-11-10 05:54:37.271 Control 340033] User did not send valid credentials
+[2026-11-10 05:54:37.271 Control 340033] Accepting connection...
+[2026-11-10 05:54:37.271 Control 340033] NEW CLIENT 340220 from user 1000: Server already exists
+[2026-11-10 05:54:37.291 Control 340033] Accepting connection...
+[2026-11-10 05:54:37.291 Control 340033] User did not send valid credentials
+[2026-11-10 05:54:37.291 Control 340033] Accepting connection...
+[2026-11-10 05:54:37.291 Control 340033] NEW CLIENT 340258 from user 1000: Server already exists
+[2026-11-10 05:54:37.308 Control 340033] Accepting connection...
+[2026-11-10 05:54:37.308 Control 340033] NEW CLIENT 340220 from user 1000: Server already exists
+[2026-11-10 05:54:37.338 Control 340033] Accepting connection...
+[2026-11-10 05:54:37.338 Control 340033] NEW CLIENT 340258 from user 1000: Server already exists
+[2026-11-10 05:56:41.275 Control 340033] Accepting connection...
+[2026-11-10 05:56:41.275 Control 340033] NEW UI
+[2026-11-10 05:56:41.275 Control 340033] Cmd:get_server_list
+[2026-11-10 05:56:41.275 Control 340033] 340394
+[2026-11-10 05:56:41.275 Control 340033] UI closed
+[2026-11-10 05:56:41.276 Control 340033] Accepting connection...
+[2026-11-10 05:56:41.276 Control 340033] NEW UI
+[2026-11-10 05:56:41.276 Control 340033] Cmd:get_client_list 340394
+[2026-11-10 05:56:41.276 Control 340033] 340220
+[2026-11-10 05:56:41.276 Control 340033] 340258
+[2026-11-10 05:56:41.276 Control 340033] UI closed
+[2026-11-10 05:57:53.365 Control 340033] Accepting connection...
+[2026-11-10 05:57:53.365 Control 340033] NEW UI
+[2026-11-10 05:57:53.365 Control 340033] Cmd:get_server_list
+[2026-11-10 05:57:53.365 Control 340033] 340394
+[2026-11-10 05:57:53.365 Control 340033] UI closed
+[2026-11-10 05:57:53.365 Control 340033] Accepting connection...
+[2026-11-10 05:57:53.365 Control 340033] NEW UI
+[2026-11-10 05:57:53.365 Control 340033] Cmd:get_client_list 340394
+[2026-11-10 05:57:53.365 Control 340033] 340220
+[2026-11-10 05:57:53.365 Control 340033] 340258
+[2026-11-10 05:57:53.365 Control 340033] UI closed
+[2026-11-10 05:59:55.770 Control 340033] Accepting connection...
+[2026-11-10 05:59:55.770 Control 340033] NEW UI
+[2026-11-10 05:59:55.770 Control 340033] Cmd:get_server_list
+[2026-11-10 05:59:55.770 Control 340033] 340394
+[2026-11-10 05:59:55.770 Control 340033] UI closed
+[2026-11-10 05:59:55.772 Control 340033] Accepting connection...
+[2026-11-10 05:59:55.772 Control 340033] NEW UI
+[2026-11-10 05:59:55.772 Control 340033] Cmd:get_client_list 340394
+[2026-11-10 05:59:55.772 Control 340033] 340220
+[2026-11-10 05:59:55.772 Control 340033] 340258
+[2026-11-10 05:59:55.772 Control 340033] UI closed
+[2026-11-10 05:59:57.495 Control 340033] Accepting connection...
+[2026-11-10 05:59:57.495 Control 340033] NEW UI
+[2026-11-10 05:59:57.495 Control 340033] Cmd:get_server_list
+[2026-11-10 05:59:57.495 Control 340033] 340394
+[2026-11-10 05:59:57.495 Control 340033] UI closed
+[2026-11-10 05:59:57.496 Control 340033] Accepting connection...
+[2026-11-10 05:59:57.496 Control 340033] NEW UI
+[2026-11-10 05:59:57.496 Control 340033] Cmd:get_client_list 340394
+[2026-11-10 05:59:57.496 Control 340033] UI closed
+[2026-11-10 05:59:57.497 Control 340033] Accepting connection...
+[2026-11-10 05:59:57.497 Control 340033] NEW UI
+[2026-11-10 05:59:57.497 Control 340033] Cmd:quit
+[2026-11-10 05:59:57.497 Control 340033] Try shutting down server 340394, backoff is disabled
+[2026-11-10 05:59:57.568 Control 340033] Server 340394 exited with status 0
+[2026-11-10 05:59:57.569 Control 340033] Exit with status 0

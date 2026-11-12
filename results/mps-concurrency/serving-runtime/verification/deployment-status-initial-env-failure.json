@@ -1,0 +1,14 @@
+{
+  "state": "FAIL",
+  "start_wall_ns": 1794240863902827169,
+  "membership": {
+    "server": "954661",
+    "clients": [
+      "954576",
+      "954756"
+    ]
+  },
+  "error": "CalledProcessError(1, ['python3', '/home/avees/cj-ros2/benchmark/bench_ros2.py', '--models', 'both', '--output', '/home/avees/cj-serving/mps-green-v1/verification/health', '--samples', '1', '--warmup', '1', '--max-new-tokens', '8'])",
+  "rollback": "CalledProcessError(1, ['python3', '/home/avees/cj-ros2/benchmark/bench_ros2.py', '--models', 'both', '--output', '/home/avees/cj-serving/mps-green-v1/verification/health-1794241114666176142', '--samples', '1', '--warmup', '1', '--max-new-tokens', '8'])",
+  "end_wall_ns": 1794241114780221674
+}

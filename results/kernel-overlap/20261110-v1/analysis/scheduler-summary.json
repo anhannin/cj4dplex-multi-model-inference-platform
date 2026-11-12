@@ -1,0 +1,70 @@
+{
+  "case": "q16-y32-ctxsw2",
+  "common_window_ms": 20029.658944,
+  "host_pid_mapping": {
+    "qwen": 875217,
+    "yolo": 875036
+  },
+  "context_events": 12083,
+  "internal_sequence_gaps": 0,
+  "clock": {
+    "anchors": 76,
+    "base_trace_ns": 1794238537131610830,
+    "base_host_ns": 6074718615235665,
+    "slope": 1.0000036324280508,
+    "intercept_relative_ns": 23816.088871002197,
+    "max_midpoint_residual_ns": 23815.0,
+    "max_anchor_bracket_ns": 77344.0,
+    "empirical_alignment_error_ns": 58231.5,
+    "note": "empirical anchor-fit/bracket tolerance, not a hardware clock accuracy guarantee"
+  },
+  "unclosed_tail": [
+    6074755426771196,
+    7624,
+    875217
+  ],
+  "residence_ms": {
+    "qwen": 16893.752351,
+    "yolo": 2794.887665
+  },
+  "residence_slices": {
+    "qwen": 3019,
+    "yolo": 3015
+  },
+  "median_residence_ms": {
+    "qwen": 2.150824,
+    "yolo": 0.097984
+  },
+  "cross_process_residence_overlap_ms": 0.0,
+  "other_context_residence_ms": 5.438296,
+  "kernel_span_overlap_ms": 2985.771158,
+  "qwen_kernel_spans_during_yolo_residence_ms": 2482.609677,
+  "gpu_metrics_device_level": {
+    "6": {
+      "samples": 200289,
+      "mean_percent": 95.80264018493277,
+      "max_percent": 100
+    },
+    "7": {
+      "samples": 200289,
+      "mean_percent": 31.62516663421356,
+      "max_percent": 67
+    },
+    "8": {
+      "samples": 200289,
+      "mean_percent": 6.300720458936836,
+      "max_percent": 42
+    },
+    "9": {
+      "samples": 200289,
+      "mean_percent": 1.7556980163663507,
+      "max_percent": 45
+    },
+    "16": {
+      "samples": 200289,
+      "mean_percent": 9.546285617283026,
+      "max_percent": 67
+    }
+  },
+  "interpretation": "RESTORE_START to SAVE_END residence intervals are alternating. Kernel elapsed spans include descheduled time; they do not prove simultaneous SM execution. Finite profiled two-process capture only."
+}

@@ -1,0 +1,24 @@
+{
+  "qwen": {
+    "state": "PASS",
+    "all_model_roi_kernels_green": true,
+    "kernel_groups": [
+      {
+        "greenContextId": 2,
+        "kernels": 62606
+      }
+    ],
+    "roi_ms": 2842.287632
+  },
+  "yolo": {
+    "state": "PASS",
+    "all_model_roi_kernels_green": true,
+    "kernel_groups": [
+      {
+        "greenContextId": 2,
+        "kernels": 845
+      }
+    ],
+    "roi_ms": 20.984336
+  }
+}

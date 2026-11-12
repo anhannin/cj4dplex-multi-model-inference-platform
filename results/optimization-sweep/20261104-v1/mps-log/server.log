@@ -1,0 +1,449 @@
+[2026-11-04 17:07:40.116 Other 315194] Startup
+[2026-11-04 17:07:40.116 Other 315194] Connecting to control daemon on socket: /home/avees/cj-optimization/20261104-v1/mps-pipe/control
+[2026-11-04 17:07:40.117 Other 315194] Initializing server process
+[2026-11-04 17:07:40.137 Server 315194] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-04 17:07:40.269 Server 315194] Created anonymous shared memory region mps.shm.1000.315194
+[2026-11-04 17:07:40.269 Server 315194] CUDA MPS Server for Linux/Unix. Binary version: 13000
+[2026-11-04 17:07:40.269 Server 315194] Active Threads Percentage set to 100.0
+[2026-11-04 17:07:40.269 Server 315194] Server Priority set to 0
+[2026-11-04 17:07:40.269 Server 315194] Server has started
+[2026-11-04 17:07:40.269 Server 315194] Received new client request for {PID: -993132144, Context ID: 0}
+[2026-11-04 17:07:40.269 Server 315194] Client {PID: 315083, Context ID: 0} connected
+[2026-11-04 17:07:40.269 Server 315194] Creating worker thread for client {PID: 315083, Context ID: 0}
+[2026-11-04 17:07:40.302 Server 315194] Received new client request for {PID: 315083, Context ID: 0}
+[2026-11-04 17:07:40.302 Server 315194] Client {PID: 315083, Context ID: 1} connected
+[2026-11-04 17:07:40.302 Server 315194] Creating worker thread for client {PID: 315083, Context ID: 1}
+[2026-11-04 17:07:40.302 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:07:40.302 Server 315194] Status of client {PID: 315083, Context ID: 1} is ACTIVE
+[2026-11-04 17:08:00.587 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 315083, Context ID: 1} exit
+[2026-11-04 17:08:00.587 Server 315194] Client {PID: 315083, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:08:00.638 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 315083, Context ID: 0} exit
+[2026-11-04 17:08:00.638 Server 315194] Client process 315083 disconnected
+[2026-11-04 17:08:10.668 Server 315194] Received new client request for {PID: 315083, Context ID: 1}
+[2026-11-04 17:08:10.669 Server 315194] Client {PID: 317160, Context ID: 0} connected
+[2026-11-04 17:08:10.669 Server 315194] Creating worker thread for client {PID: 317160, Context ID: 0}
+[2026-11-04 17:08:10.669 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 317160, Context ID: 0} exit
+[2026-11-04 17:08:10.669 Server 315194] Client process 317160 disconnected
+[2026-11-04 17:08:11.090 Server 315194] Received new client request for {PID: 317160, Context ID: 0}
+[2026-11-04 17:08:11.090 Server 315194] Creating worker thread for client {PID: 317353, Context ID: 0}
+[2026-11-04 17:08:11.090 Server 315194] Client {PID: 317353, Context ID: 0} connected
+[2026-11-04 17:08:11.091 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 317353, Context ID: 0} exit
+[2026-11-04 17:08:11.091 Server 315194] Client process 317353 disconnected
+[2026-11-04 17:08:11.576 Server 315194] Received new client request for {PID: 317353, Context ID: 0}
+[2026-11-04 17:08:11.576 Server 315194] Client {PID: 317074, Context ID: 0} connected
+[2026-11-04 17:08:11.576 Server 315194] Creating worker thread for client {PID: 317074, Context ID: 0}
+[2026-11-04 17:08:11.623 Server 315194] Received new client request for {PID: 317074, Context ID: 0}
+[2026-11-04 17:08:11.623 Server 315194] Client {PID: 317074, Context ID: 1} connected
+[2026-11-04 17:08:11.623 Server 315194] Creating worker thread for client {PID: 317074, Context ID: 1}
+[2026-11-04 17:08:11.623 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:08:11.623 Server 315194] Status of client {PID: 317074, Context ID: 1} is ACTIVE
+[2026-11-04 17:08:13.090 Server 315194] Received new client request for {PID: 317074, Context ID: 1}
+[2026-11-04 17:08:13.090 Server 315194] Client {PID: 317262, Context ID: 0} connected
+[2026-11-04 17:08:13.091 Server 315194] Creating worker thread for client {PID: 317262, Context ID: 0}
+[2026-11-04 17:08:14.465 Server 315194] Received new client request for {PID: 317262, Context ID: 0}
+[2026-11-04 17:08:14.466 Server 315194] Client {PID: 317262, Context ID: 1} connected
+[2026-11-04 17:08:14.466 Server 315194] Creating worker thread for client {PID: 317262, Context ID: 1}
+[2026-11-04 17:08:14.466 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:08:14.466 Server 315194] Status of client {PID: 317262, Context ID: 1} is ACTIVE
+[2026-11-04 17:12:55.884 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 317074, Context ID: 1} exit
+[2026-11-04 17:12:55.884 Server 315194] Client {PID: 317074, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:12:56.018 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 317262, Context ID: 1} exit
+[2026-11-04 17:12:56.018 Server 315194] Client {PID: 317262, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:12:56.025 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 317074, Context ID: 0} exit
+[2026-11-04 17:12:56.025 Server 315194] Client process 317074 disconnected
+[2026-11-04 17:12:56.184 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 317262, Context ID: 0} exit
+[2026-11-04 17:12:56.184 Server 315194] Client process 317262 disconnected
+[2026-11-04 17:12:56.986 Server 315194] Received new client request for {PID: 317262, Context ID: 1}
+[2026-11-04 17:12:56.986 Server 315194] Client {PID: 327608, Context ID: 0} connected
+[2026-11-04 17:12:56.986 Server 315194] Creating worker thread for client {PID: 327608, Context ID: 0}
+[2026-11-04 17:12:56.987 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 327608, Context ID: 0} exit
+[2026-11-04 17:12:56.987 Server 315194] Client process 327608 disconnected
+[2026-11-04 17:12:57.426 Server 315194] Received new client request for {PID: 327608, Context ID: 0}
+[2026-11-04 17:12:57.426 Server 315194] Creating worker thread for client {PID: 327773, Context ID: 0}
+[2026-11-04 17:12:57.426 Server 315194] Client {PID: 327773, Context ID: 0} connected
+[2026-11-04 17:12:57.427 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 327773, Context ID: 0} exit
+[2026-11-04 17:12:57.427 Server 315194] Client process 327773 disconnected
+[2026-11-04 17:12:57.931 Server 315194] Received new client request for {PID: 327773, Context ID: 0}
+[2026-11-04 17:12:57.931 Server 315194] Creating worker thread for client {PID: 327496, Context ID: 0}
+[2026-11-04 17:12:57.931 Server 315194] Client {PID: 327496, Context ID: 0} connected
+[2026-11-04 17:12:57.977 Server 315194] Received new client request for {PID: 327496, Context ID: 0}
+[2026-11-04 17:12:57.977 Server 315194] Client {PID: 327496, Context ID: 1} connected
+[2026-11-04 17:12:57.977 Server 315194] Creating worker thread for client {PID: 327496, Context ID: 1}
+[2026-11-04 17:12:57.977 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:12:57.977 Server 315194] Status of client {PID: 327496, Context ID: 1} is ACTIVE
+[2026-11-04 17:12:59.396 Server 315194] Received new client request for {PID: 327496, Context ID: 1}
+[2026-11-04 17:12:59.396 Server 315194] Creating worker thread for client {PID: 327674, Context ID: 0}
+[2026-11-04 17:12:59.396 Server 315194] Client {PID: 327674, Context ID: 0} connected
+[2026-11-04 17:13:00.786 Server 315194] Received new client request for {PID: 327674, Context ID: 0}
+[2026-11-04 17:13:00.787 Server 315194] Client {PID: 327674, Context ID: 1} connected
+[2026-11-04 17:13:00.787 Server 315194] Creating worker thread for client {PID: 327674, Context ID: 1}
+[2026-11-04 17:13:00.787 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:13:00.787 Server 315194] Status of client {PID: 327674, Context ID: 1} is ACTIVE
+[2026-11-04 17:17:49.860 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 327674, Context ID: 1} exit
+[2026-11-04 17:17:49.860 Server 315194] Client {PID: 327674, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:17:50.001 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 327674, Context ID: 0} exit
+[2026-11-04 17:17:50.001 Server 315194] Client process 327674 disconnected
+[2026-11-04 17:17:51.261 Server 315194] Received new client request for {PID: 327674, Context ID: 1}
+[2026-11-04 17:17:51.261 Server 315194] Client {PID: 336495, Context ID: 0} connected
+[2026-11-04 17:17:51.261 Server 315194] Creating worker thread for client {PID: 336495, Context ID: 0}
+[2026-11-04 17:17:51.262 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 336495, Context ID: 0} exit
+[2026-11-04 17:17:51.262 Server 315194] Client process 336495 disconnected
+[2026-11-04 17:17:53.286 Server 315194] Received new client request for {PID: 336495, Context ID: 0}
+[2026-11-04 17:17:53.286 Server 315194] Client {PID: 336410, Context ID: 0} connected
+[2026-11-04 17:17:53.286 Server 315194] Creating worker thread for client {PID: 336410, Context ID: 0}
+[2026-11-04 17:17:54.701 Server 315194] Received new client request for {PID: 336410, Context ID: 0}
+[2026-11-04 17:17:54.701 Server 315194] Client {PID: 336410, Context ID: 1} connected
+[2026-11-04 17:17:54.701 Server 315194] Creating worker thread for client {PID: 336410, Context ID: 1}
+[2026-11-04 17:17:54.701 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:17:54.701 Server 315194] Status of client {PID: 336410, Context ID: 1} is ACTIVE
+[2026-11-04 17:22:41.837 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 327496, Context ID: 1} exit
+[2026-11-04 17:22:41.837 Server 315194] Client {PID: 327496, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:22:41.997 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 327496, Context ID: 0} exit
+[2026-11-04 17:22:41.997 Server 315194] Client process 327496 disconnected
+[2026-11-04 17:22:42.042 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 336410, Context ID: 1} exit
+[2026-11-04 17:22:42.042 Server 315194] Client {PID: 336410, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:22:42.199 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 336410, Context ID: 0} exit
+[2026-11-04 17:22:42.199 Server 315194] Client process 336410 disconnected
+[2026-11-04 17:35:36.294 Server 315194] Received new client request for {PID: 336410, Context ID: 1}
+[2026-11-04 17:35:36.294 Server 315194] Client {PID: 370359, Context ID: 0} connected
+[2026-11-04 17:35:36.294 Server 315194] Creating worker thread for client {PID: 370359, Context ID: 0}
+[2026-11-04 17:35:36.329 Server 315194] Received new client request for {PID: 370359, Context ID: 0}
+[2026-11-04 17:35:36.329 Server 315194] Client {PID: 370359, Context ID: 1} connected
+[2026-11-04 17:35:36.329 Server 315194] Creating worker thread for client {PID: 370359, Context ID: 1}
+[2026-11-04 17:35:36.329 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:35:36.330 Server 315194] Status of client {PID: 370359, Context ID: 1} is ACTIVE
+[2026-11-04 17:35:36.611 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370359, Context ID: 1} exit
+[2026-11-04 17:35:36.611 Server 315194] Client {PID: 370359, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:35:36.664 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370359, Context ID: 0} exit
+[2026-11-04 17:35:36.664 Server 315194] Client process 370359 disconnected
+[2026-11-04 17:35:37.290 Server 315194] Received new client request for {PID: 370359, Context ID: 1}
+[2026-11-04 17:35:37.290 Server 315194] Client {PID: 370368, Context ID: 0} connected
+[2026-11-04 17:35:37.290 Server 315194] Creating worker thread for client {PID: 370368, Context ID: 0}
+[2026-11-04 17:35:37.324 Server 315194] Received new client request for {PID: 370368, Context ID: 0}
+[2026-11-04 17:35:37.325 Server 315194] Client {PID: 370368, Context ID: 1} connected
+[2026-11-04 17:35:37.325 Server 315194] Creating worker thread for client {PID: 370368, Context ID: 1}
+[2026-11-04 17:35:37.325 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:35:37.325 Server 315194] Status of client {PID: 370368, Context ID: 1} is ACTIVE
+[2026-11-04 17:35:37.577 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370368, Context ID: 1} exit
+[2026-11-04 17:35:37.577 Server 315194] Client {PID: 370368, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:35:37.636 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370368, Context ID: 0} exit
+[2026-11-04 17:35:37.636 Server 315194] Client process 370368 disconnected
+[2026-11-04 17:35:38.299 Server 315194] Received new client request for {PID: 370368, Context ID: 1}
+[2026-11-04 17:35:38.299 Server 315194] Client {PID: 370462, Context ID: 0} connected
+[2026-11-04 17:35:38.299 Server 315194] Creating worker thread for client {PID: 370462, Context ID: 0}
+[2026-11-04 17:35:38.333 Server 315194] Received new client request for {PID: 370462, Context ID: 0}
+[2026-11-04 17:35:38.333 Server 315194] Client {PID: 370462, Context ID: 1} connected
+[2026-11-04 17:35:38.333 Server 315194] Creating worker thread for client {PID: 370462, Context ID: 1}
+[2026-11-04 17:35:38.333 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:35:38.333 Server 315194] Status of client {PID: 370462, Context ID: 1} is ACTIVE
+[2026-11-04 17:35:38.582 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370462, Context ID: 1} exit
+[2026-11-04 17:35:38.582 Server 315194] Client {PID: 370462, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:35:38.641 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370462, Context ID: 0} exit
+[2026-11-04 17:35:38.641 Server 315194] Client process 370462 disconnected
+[2026-11-04 17:35:39.317 Server 315194] Received new client request for {PID: 370462, Context ID: 1}
+[2026-11-04 17:35:39.317 Server 315194] Client {PID: 370471, Context ID: 0} connected
+[2026-11-04 17:35:39.317 Server 315194] Creating worker thread for client {PID: 370471, Context ID: 0}
+[2026-11-04 17:35:39.351 Server 315194] Received new client request for {PID: 370471, Context ID: 0}
+[2026-11-04 17:35:39.352 Server 315194] Client {PID: 370471, Context ID: 1} connected
+[2026-11-04 17:35:39.352 Server 315194] Creating worker thread for client {PID: 370471, Context ID: 1}
+[2026-11-04 17:35:39.352 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:35:39.352 Server 315194] Status of client {PID: 370471, Context ID: 1} is ACTIVE
+[2026-11-04 17:35:39.605 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370471, Context ID: 1} exit
+[2026-11-04 17:35:39.605 Server 315194] Client {PID: 370471, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:35:39.665 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 370471, Context ID: 0} exit
+[2026-11-04 17:35:39.665 Server 315194] Client process 370471 disconnected
+[2026-11-04 17:35:59.874 Server 315194] Received new client request for {PID: 370471, Context ID: 1}
+[2026-11-04 17:35:59.874 Server 315194] Client {PID: 371333, Context ID: 0} connected
+[2026-11-04 17:35:59.874 Server 315194] Creating worker thread for client {PID: 371333, Context ID: 0}
+[2026-11-04 17:35:59.899 Server 315194] Received new client request for {PID: 371333, Context ID: 0}
+[2026-11-04 17:35:59.899 Server 315194] Client {PID: 371333, Context ID: 1} connected
+[2026-11-04 17:35:59.899 Server 315194] Creating worker thread for client {PID: 371333, Context ID: 1}
+[2026-11-04 17:35:59.899 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:35:59.899 Server 315194] Status of client {PID: 371333, Context ID: 1} is ACTIVE
+[2026-11-04 17:36:01.765 Server 315194] Received new client request for {PID: 371333, Context ID: 1}
+[2026-11-04 17:36:01.765 Server 315194] Client {PID: 371408, Context ID: 0} connected
+[2026-11-04 17:36:01.765 Server 315194] Creating worker thread for client {PID: 371408, Context ID: 0}
+[2026-11-04 17:36:01.780 Server 315194] Received new client request for {PID: 371408, Context ID: 0}
+[2026-11-04 17:36:01.781 Server 315194] Client {PID: 371409, Context ID: 0} connected
+[2026-11-04 17:36:01.781 Server 315194] Creating worker thread for client {PID: 371409, Context ID: 0}
+[2026-11-04 17:36:01.793 Server 315194] Received new client request for {PID: 371409, Context ID: 0}
+[2026-11-04 17:36:01.809 Server 315194] Client {PID: 371408, Context ID: 1} connected
+[2026-11-04 17:36:01.809 Server 315194] Creating worker thread for client {PID: 371408, Context ID: 1}
+[2026-11-04 17:36:01.809 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:36:01.809 Server 315194] Status of client {PID: 371408, Context ID: 1} is ACTIVE
+[2026-11-04 17:36:01.809 Server 315194] Received new client request for {PID: 371408, Context ID: 1}
+[2026-11-04 17:36:01.809 Server 315194] Client {PID: 371409, Context ID: 1} connected
+[2026-11-04 17:36:01.809 Server 315194] Creating worker thread for client {PID: 371409, Context ID: 1}
+[2026-11-04 17:36:01.809 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:36:01.809 Server 315194] Status of client {PID: 371409, Context ID: 1} is ACTIVE
+[2026-11-04 17:36:03.355 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371409, Context ID: 1} exit
+[2026-11-04 17:36:03.355 Server 315194] Client {PID: 371409, Context ID: 1} exiting. Number of active client contexts is 2.
+[2026-11-04 17:36:03.363 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371408, Context ID: 1} exit
+[2026-11-04 17:36:03.363 Server 315194] Client {PID: 371408, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:36:03.404 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371409, Context ID: 0} exit
+[2026-11-04 17:36:03.404 Server 315194] Client process 371409 disconnected
+[2026-11-04 17:36:03.411 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371408, Context ID: 0} exit
+[2026-11-04 17:36:03.411 Server 315194] Client process 371408 disconnected
+[2026-11-04 17:36:03.549 Server 315194] Received new client request for {PID: 371409, Context ID: 1}
+[2026-11-04 17:36:03.549 Server 315194] Client {PID: 371495, Context ID: 0} connected
+[2026-11-04 17:36:03.549 Server 315194] Creating worker thread for client {PID: 371495, Context ID: 0}
+[2026-11-04 17:36:03.562 Server 315194] Received new client request for {PID: 371495, Context ID: 0}
+[2026-11-04 17:36:03.562 Server 315194] Client {PID: 371494, Context ID: 0} connected
+[2026-11-04 17:36:03.562 Server 315194] Creating worker thread for client {PID: 371494, Context ID: 0}
+[2026-11-04 17:36:03.569 Server 315194] Received new client request for {PID: 371494, Context ID: 0}
+[2026-11-04 17:36:03.569 Server 315194] Client {PID: 371495, Context ID: 1} connected
+[2026-11-04 17:36:03.569 Server 315194] Creating worker thread for client {PID: 371495, Context ID: 1}
+[2026-11-04 17:36:03.569 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:36:03.570 Server 315194] Status of client {PID: 371495, Context ID: 1} is ACTIVE
+[2026-11-04 17:36:03.594 Server 315194] Received new client request for {PID: 371495, Context ID: 1}
+[2026-11-04 17:36:03.594 Server 315194] Client {PID: 371494, Context ID: 1} connected
+[2026-11-04 17:36:03.594 Server 315194] Creating worker thread for client {PID: 371494, Context ID: 1}
+[2026-11-04 17:36:03.594 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:36:03.594 Server 315194] Status of client {PID: 371494, Context ID: 1} is ACTIVE
+[2026-11-04 17:36:05.129 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371494, Context ID: 1} exit
+[2026-11-04 17:36:05.129 Server 315194] Client {PID: 371494, Context ID: 1} exiting. Number of active client contexts is 2.
+[2026-11-04 17:36:05.133 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371495, Context ID: 1} exit
+[2026-11-04 17:36:05.133 Server 315194] Client {PID: 371495, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:36:05.177 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371494, Context ID: 0} exit
+[2026-11-04 17:36:05.177 Server 315194] Client process 371494 disconnected
+[2026-11-04 17:36:05.185 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371495, Context ID: 0} exit
+[2026-11-04 17:36:05.185 Server 315194] Client process 371495 disconnected
+[2026-11-04 17:36:05.286 Server 315194] Received new client request for {PID: 371494, Context ID: 1}
+[2026-11-04 17:36:05.286 Server 315194] Client {PID: 371525, Context ID: 0} connected
+[2026-11-04 17:36:05.286 Server 315194] Creating worker thread for client {PID: 371525, Context ID: 0}
+[2026-11-04 17:36:05.286 Server 315194] Received new client request for {PID: 371525, Context ID: 0}
+[2026-11-04 17:36:05.286 Server 315194] Client {PID: 371524, Context ID: 0} connected
+[2026-11-04 17:36:05.286 Server 315194] Creating worker thread for client {PID: 371524, Context ID: 0}
+[2026-11-04 17:36:05.316 Server 315194] Received new client request for {PID: 371524, Context ID: 0}
+[2026-11-04 17:36:05.316 Server 315194] Client {PID: 371525, Context ID: 1} connected
+[2026-11-04 17:36:05.316 Server 315194] Creating worker thread for client {PID: 371525, Context ID: 1}
+[2026-11-04 17:36:05.316 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:36:05.316 Server 315194] Status of client {PID: 371525, Context ID: 1} is ACTIVE
+[2026-11-04 17:36:05.321 Server 315194] Received new client request for {PID: 371525, Context ID: 1}
+[2026-11-04 17:36:05.321 Server 315194] Client {PID: 371524, Context ID: 1} connected
+[2026-11-04 17:36:05.321 Server 315194] Creating worker thread for client {PID: 371524, Context ID: 1}
+[2026-11-04 17:36:05.321 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:36:05.322 Server 315194] Status of client {PID: 371524, Context ID: 1} is ACTIVE
+[2026-11-04 17:36:06.867 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371524, Context ID: 1} exit
+[2026-11-04 17:36:06.867 Server 315194] Client {PID: 371524, Context ID: 1} exiting. Number of active client contexts is 2.
+[2026-11-04 17:36:06.871 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371525, Context ID: 1} exit
+[2026-11-04 17:36:06.871 Server 315194] Client {PID: 371525, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:36:06.919 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371524, Context ID: 0} exit
+[2026-11-04 17:36:06.919 Server 315194] Client process 371524 disconnected
+[2026-11-04 17:36:06.926 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371525, Context ID: 0} exit
+[2026-11-04 17:36:06.926 Server 315194] Client process 371525 disconnected
+[2026-11-04 17:36:07.010 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371333, Context ID: 1} exit
+[2026-11-04 17:36:07.010 Server 315194] Client {PID: 371333, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:36:07.038 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 371333, Context ID: 0} exit
+[2026-11-04 17:36:07.038 Server 315194] Client process 371333 disconnected
+[2026-11-04 17:44:10.570 Server 315194] Received new client request for {PID: 371524, Context ID: 1}
+[2026-11-04 17:44:10.570 Server 315194] Client {PID: 387751, Context ID: 0} connected
+[2026-11-04 17:44:10.570 Server 315194] Creating worker thread for client {PID: 387751, Context ID: 0}
+[2026-11-04 17:44:10.571 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 387751, Context ID: 0} exit
+[2026-11-04 17:44:10.571 Server 315194] Client process 387751 disconnected
+[2026-11-04 17:44:11.057 Server 315194] Received new client request for {PID: 387751, Context ID: 0}
+[2026-11-04 17:44:11.057 Server 315194] Client {PID: 387955, Context ID: 0} connected
+[2026-11-04 17:44:11.057 Server 315194] Creating worker thread for client {PID: 387955, Context ID: 0}
+[2026-11-04 17:44:11.058 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 387955, Context ID: 0} exit
+[2026-11-04 17:44:11.058 Server 315194] Client process 387955 disconnected
+[2026-11-04 17:44:11.466 Server 315194] Received new client request for {PID: 387955, Context ID: 0}
+[2026-11-04 17:44:11.466 Server 315194] Client {PID: 387666, Context ID: 0} connected
+[2026-11-04 17:44:11.466 Server 315194] Creating worker thread for client {PID: 387666, Context ID: 0}
+[2026-11-04 17:44:11.499 Server 315194] Received new client request for {PID: 387666, Context ID: 0}
+[2026-11-04 17:44:11.499 Server 315194] Client {PID: 387666, Context ID: 1} connected
+[2026-11-04 17:44:11.499 Server 315194] Creating worker thread for client {PID: 387666, Context ID: 1}
+[2026-11-04 17:44:11.499 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:44:11.499 Server 315194] Status of client {PID: 387666, Context ID: 1} is ACTIVE
+[2026-11-04 17:44:13.095 Server 315194] Received new client request for {PID: 387666, Context ID: 1}
+[2026-11-04 17:44:13.096 Server 315194] Client {PID: 387854, Context ID: 0} connected
+[2026-11-04 17:44:13.096 Server 315194] Creating worker thread for client {PID: 387854, Context ID: 0}
+[2026-11-04 17:44:14.532 Server 315194] Received new client request for {PID: 387854, Context ID: 0}
+[2026-11-04 17:44:14.532 Server 315194] Client {PID: 387854, Context ID: 1} connected
+[2026-11-04 17:44:14.532 Server 315194] Creating worker thread for client {PID: 387854, Context ID: 1}
+[2026-11-04 17:44:14.532 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:44:14.532 Server 315194] Status of client {PID: 387854, Context ID: 1} is ACTIVE
+[2026-11-04 17:48:44.645 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 387666, Context ID: 1} exit
+[2026-11-04 17:48:44.645 Server 315194] Client {PID: 387666, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:48:44.764 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 387666, Context ID: 0} exit
+[2026-11-04 17:48:44.764 Server 315194] Client process 387666 disconnected
+[2026-11-04 17:48:44.808 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 387854, Context ID: 1} exit
+[2026-11-04 17:48:44.808 Server 315194] Client {PID: 387854, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:48:44.984 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 387854, Context ID: 0} exit
+[2026-11-04 17:48:44.984 Server 315194] Client process 387854 disconnected
+[2026-11-04 17:48:45.735 Server 315194] Received new client request for {PID: 387854, Context ID: 1}
+[2026-11-04 17:48:45.736 Server 315194] Creating worker thread for client {PID: 395351, Context ID: 0}
+[2026-11-04 17:48:45.736 Server 315194] Client {PID: 395351, Context ID: 0} connected
+[2026-11-04 17:48:45.737 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 395351, Context ID: 0} exit
+[2026-11-04 17:48:45.737 Server 315194] Client process 395351 disconnected
+[2026-11-04 17:48:46.209 Server 315194] Received new client request for {PID: 395351, Context ID: 0}
+[2026-11-04 17:48:46.209 Server 315194] Client {PID: 395541, Context ID: 0} connected
+[2026-11-04 17:48:46.209 Server 315194] Creating worker thread for client {PID: 395541, Context ID: 0}
+[2026-11-04 17:48:46.209 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 395541, Context ID: 0} exit
+[2026-11-04 17:48:46.209 Server 315194] Client process 395541 disconnected
+[2026-11-04 17:48:46.651 Server 315194] Received new client request for {PID: 395541, Context ID: 0}
+[2026-11-04 17:48:46.651 Server 315194] Client {PID: 395267, Context ID: 0} connected
+[2026-11-04 17:48:46.651 Server 315194] Creating worker thread for client {PID: 395267, Context ID: 0}
+[2026-11-04 17:48:46.686 Server 315194] Received new client request for {PID: 395267, Context ID: 0}
+[2026-11-04 17:48:46.686 Server 315194] Client {PID: 395267, Context ID: 1} connected
+[2026-11-04 17:48:46.687 Server 315194] Creating worker thread for client {PID: 395267, Context ID: 1}
+[2026-11-04 17:48:46.687 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:48:46.687 Server 315194] Status of client {PID: 395267, Context ID: 1} is ACTIVE
+[2026-11-04 17:48:48.202 Server 315194] Received new client request for {PID: 395267, Context ID: 1}
+[2026-11-04 17:48:48.202 Server 315194] Client {PID: 395454, Context ID: 0} connected
+[2026-11-04 17:48:48.202 Server 315194] Creating worker thread for client {PID: 395454, Context ID: 0}
+[2026-11-04 17:48:49.623 Server 315194] Received new client request for {PID: 395454, Context ID: 0}
+[2026-11-04 17:48:49.624 Server 315194] Client {PID: 395454, Context ID: 1} connected
+[2026-11-04 17:48:49.624 Server 315194] Creating worker thread for client {PID: 395454, Context ID: 1}
+[2026-11-04 17:48:49.624 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:48:49.624 Server 315194] Status of client {PID: 395454, Context ID: 1} is ACTIVE
+[2026-11-04 17:53:19.363 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 395267, Context ID: 1} exit
+[2026-11-04 17:53:19.363 Server 315194] Client {PID: 395267, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:53:19.466 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 395267, Context ID: 0} exit
+[2026-11-04 17:53:19.466 Server 315194] Client process 395267 disconnected
+[2026-11-04 17:53:19.536 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 395454, Context ID: 1} exit
+[2026-11-04 17:53:19.536 Server 315194] Client {PID: 395454, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:53:19.682 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 395454, Context ID: 0} exit
+[2026-11-04 17:53:19.682 Server 315194] Client process 395454 disconnected
+[2026-11-04 17:55:31.582 Server 315194] Received new client request for {PID: 395454, Context ID: 1}
+[2026-11-04 17:55:31.582 Server 315194] Client {PID: 406915, Context ID: 0} connected
+[2026-11-04 17:55:31.582 Server 315194] Creating worker thread for client {PID: 406915, Context ID: 0}
+[2026-11-04 17:55:31.606 Server 315194] Received new client request for {PID: 406915, Context ID: 0}
+[2026-11-04 17:55:31.606 Server 315194] Client {PID: 406915, Context ID: 1} connected
+[2026-11-04 17:55:31.606 Server 315194] Creating worker thread for client {PID: 406915, Context ID: 1}
+[2026-11-04 17:55:31.606 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:55:31.606 Server 315194] Status of client {PID: 406915, Context ID: 1} is ACTIVE
+[2026-11-04 17:55:31.747 Server 315194] Received new client request for {PID: 406915, Context ID: 1}
+[2026-11-04 17:55:31.747 Server 315194] Client {PID: 406920, Context ID: 0} connected
+[2026-11-04 17:55:31.747 Server 315194] Creating worker thread for client {PID: 406920, Context ID: 0}
+[2026-11-04 17:55:31.766 Server 315194] Received new client request for {PID: 406920, Context ID: 0}
+[2026-11-04 17:55:31.766 Server 315194] Client {PID: 406920, Context ID: 1} connected
+[2026-11-04 17:55:31.766 Server 315194] Creating worker thread for client {PID: 406920, Context ID: 1}
+[2026-11-04 17:55:31.766 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:55:31.767 Server 315194] Status of client {PID: 406920, Context ID: 1} is ACTIVE
+[2026-11-04 17:55:31.908 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406915, Context ID: 1} exit
+[2026-11-04 17:55:31.908 Server 315194] Client {PID: 406915, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:55:31.926 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406920, Context ID: 1} exit
+[2026-11-04 17:55:31.926 Server 315194] Client {PID: 406920, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:55:31.938 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406915, Context ID: 0} exit
+[2026-11-04 17:55:31.938 Server 315194] Client process 406915 disconnected
+[2026-11-04 17:55:31.959 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406920, Context ID: 0} exit
+[2026-11-04 17:55:31.959 Server 315194] Client process 406920 disconnected
+[2026-11-04 17:55:32.068 Server 315194] Received new client request for {PID: 406920, Context ID: 1}
+[2026-11-04 17:55:32.068 Server 315194] Client {PID: 406925, Context ID: 0} connected
+[2026-11-04 17:55:32.068 Server 315194] Creating worker thread for client {PID: 406925, Context ID: 0}
+[2026-11-04 17:55:32.088 Server 315194] Received new client request for {PID: 406925, Context ID: 0}
+[2026-11-04 17:55:32.088 Server 315194] Client {PID: 406925, Context ID: 1} connected
+[2026-11-04 17:55:32.088 Server 315194] Creating worker thread for client {PID: 406925, Context ID: 1}
+[2026-11-04 17:55:32.088 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:55:32.088 Server 315194] Status of client {PID: 406925, Context ID: 1} is ACTIVE
+[2026-11-04 17:55:32.235 Server 315194] Received new client request for {PID: 406925, Context ID: 1}
+[2026-11-04 17:55:32.235 Server 315194] Client {PID: 406930, Context ID: 0} connected
+[2026-11-04 17:55:32.235 Server 315194] Creating worker thread for client {PID: 406930, Context ID: 0}
+[2026-11-04 17:55:32.254 Server 315194] Received new client request for {PID: 406930, Context ID: 0}
+[2026-11-04 17:55:32.254 Server 315194] Client {PID: 406930, Context ID: 1} connected
+[2026-11-04 17:55:32.254 Server 315194] Creating worker thread for client {PID: 406930, Context ID: 1}
+[2026-11-04 17:55:32.254 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:55:32.254 Server 315194] Status of client {PID: 406930, Context ID: 1} is ACTIVE
+[2026-11-04 17:55:32.399 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406925, Context ID: 1} exit
+[2026-11-04 17:55:32.399 Server 315194] Client {PID: 406925, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:55:32.407 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406930, Context ID: 1} exit
+[2026-11-04 17:55:32.407 Server 315194] Client {PID: 406930, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:55:32.436 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406925, Context ID: 0} exit
+[2026-11-04 17:55:32.436 Server 315194] Client process 406925 disconnected
+[2026-11-04 17:55:32.453 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406930, Context ID: 0} exit
+[2026-11-04 17:55:32.453 Server 315194] Client process 406930 disconnected
+[2026-11-04 17:55:32.562 Server 315194] Received new client request for {PID: 406930, Context ID: 1}
+[2026-11-04 17:55:32.562 Server 315194] Client {PID: 406935, Context ID: 0} connected
+[2026-11-04 17:55:32.562 Server 315194] Creating worker thread for client {PID: 406935, Context ID: 0}
+[2026-11-04 17:55:32.580 Server 315194] Received new client request for {PID: 406935, Context ID: 0}
+[2026-11-04 17:55:32.580 Server 315194] Client {PID: 406935, Context ID: 1} connected
+[2026-11-04 17:55:32.580 Server 315194] Creating worker thread for client {PID: 406935, Context ID: 1}
+[2026-11-04 17:55:32.580 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:55:32.581 Server 315194] Status of client {PID: 406935, Context ID: 1} is ACTIVE
+[2026-11-04 17:55:32.727 Server 315194] Received new client request for {PID: 406935, Context ID: 1}
+[2026-11-04 17:55:32.727 Server 315194] Client {PID: 406940, Context ID: 0} connected
+[2026-11-04 17:55:32.727 Server 315194] Creating worker thread for client {PID: 406940, Context ID: 0}
+[2026-11-04 17:55:32.747 Server 315194] Received new client request for {PID: 406940, Context ID: 0}
+[2026-11-04 17:55:32.747 Server 315194] Client {PID: 406940, Context ID: 1} connected
+[2026-11-04 17:55:32.747 Server 315194] Creating worker thread for client {PID: 406940, Context ID: 1}
+[2026-11-04 17:55:32.747 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 17:55:32.747 Server 315194] Status of client {PID: 406940, Context ID: 1} is ACTIVE
+[2026-11-04 17:55:32.884 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406935, Context ID: 1} exit
+[2026-11-04 17:55:32.884 Server 315194] Client {PID: 406935, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 17:55:32.902 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406940, Context ID: 1} exit
+[2026-11-04 17:55:32.902 Server 315194] Client {PID: 406940, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 17:55:32.915 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406935, Context ID: 0} exit
+[2026-11-04 17:55:32.915 Server 315194] Client process 406935 disconnected
+[2026-11-04 17:55:32.933 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 406940, Context ID: 0} exit
+[2026-11-04 17:55:32.933 Server 315194] Client process 406940 disconnected
+[2026-11-04 18:00:20.176 Server 315194] Received new client request for {PID: 406940, Context ID: 1}
+[2026-11-04 18:00:20.176 Server 315194] Client {PID: 416072, Context ID: 0} connected
+[2026-11-04 18:00:20.176 Server 315194] Creating worker thread for client {PID: 416072, Context ID: 0}
+[2026-11-04 18:00:20.177 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 416072, Context ID: 0} exit
+[2026-11-04 18:00:20.177 Server 315194] Client process 416072 disconnected
+[2026-11-04 18:00:20.659 Server 315194] Received new client request for {PID: 416072, Context ID: 0}
+[2026-11-04 18:00:20.659 Server 315194] Client {PID: 416347, Context ID: 0} connected
+[2026-11-04 18:00:20.659 Server 315194] Creating worker thread for client {PID: 416347, Context ID: 0}
+[2026-11-04 18:00:20.659 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 416347, Context ID: 0} exit
+[2026-11-04 18:00:20.659 Server 315194] Client process 416347 disconnected
+[2026-11-04 18:00:21.121 Server 315194] Received new client request for {PID: 416347, Context ID: 0}
+[2026-11-04 18:00:21.121 Server 315194] Client {PID: 415922, Context ID: 0} connected
+[2026-11-04 18:00:21.121 Server 315194] Creating worker thread for client {PID: 415922, Context ID: 0}
+[2026-11-04 18:00:21.172 Server 315194] Received new client request for {PID: 415922, Context ID: 0}
+[2026-11-04 18:00:21.172 Server 315194] Client {PID: 415922, Context ID: 1} connected
+[2026-11-04 18:00:21.172 Server 315194] Creating worker thread for client {PID: 415922, Context ID: 1}
+[2026-11-04 18:00:21.172 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 18:00:21.172 Server 315194] Status of client {PID: 415922, Context ID: 1} is ACTIVE
+[2026-11-04 18:00:22.762 Server 315194] Received new client request for {PID: 415922, Context ID: 1}
+[2026-11-04 18:00:22.762 Server 315194] Client {PID: 416255, Context ID: 0} connected
+[2026-11-04 18:00:22.762 Server 315194] Creating worker thread for client {PID: 416255, Context ID: 0}
+[2026-11-04 18:00:24.190 Server 315194] Received new client request for {PID: 416255, Context ID: 0}
+[2026-11-04 18:00:24.190 Server 315194] Client {PID: 416255, Context ID: 1} connected
+[2026-11-04 18:00:24.190 Server 315194] Creating worker thread for client {PID: 416255, Context ID: 1}
+[2026-11-04 18:00:24.190 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 18:00:24.190 Server 315194] Status of client {PID: 416255, Context ID: 1} is ACTIVE
+[2026-11-04 18:05:11.093 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 415922, Context ID: 1} exit
+[2026-11-04 18:05:11.093 Server 315194] Client {PID: 415922, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 18:05:11.264 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 416255, Context ID: 1} exit
+[2026-11-04 18:05:11.264 Server 315194] Client {PID: 416255, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 18:05:11.275 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 415922, Context ID: 0} exit
+[2026-11-04 18:05:11.275 Server 315194] Client process 415922 disconnected
+[2026-11-04 18:05:11.416 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 416255, Context ID: 0} exit
+[2026-11-04 18:05:11.416 Server 315194] Client process 416255 disconnected
+[2026-11-04 18:17:53.147 Server 315194] Received new client request for {PID: 416255, Context ID: 1}
+[2026-11-04 18:17:53.147 Server 315194] Client {PID: 441886, Context ID: 0} connected
+[2026-11-04 18:17:53.147 Server 315194] Creating worker thread for client {PID: 441886, Context ID: 0}
+[2026-11-04 18:17:53.148 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 441886, Context ID: 0} exit
+[2026-11-04 18:17:53.148 Server 315194] Client process 441886 disconnected
+[2026-11-04 18:17:53.441 Server 315194] Received new client request for {PID: 441886, Context ID: 0}
+[2026-11-04 18:17:53.441 Server 315194] Client {PID: 442012, Context ID: 0} connected
+[2026-11-04 18:17:53.441 Server 315194] Creating worker thread for client {PID: 442012, Context ID: 0}
+[2026-11-04 18:17:53.442 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 442012, Context ID: 0} exit
+[2026-11-04 18:17:53.442 Server 315194] Client process 442012 disconnected
+[2026-11-04 18:17:54.134 Server 315194] Received new client request for {PID: 442012, Context ID: 0}
+[2026-11-04 18:17:54.134 Server 315194] Client {PID: 441736, Context ID: 0} connected
+[2026-11-04 18:17:54.134 Server 315194] Creating worker thread for client {PID: 441736, Context ID: 0}
+[2026-11-04 18:17:54.168 Server 315194] Received new client request for {PID: 441736, Context ID: 0}
+[2026-11-04 18:17:54.169 Server 315194] Client {PID: 441736, Context ID: 1} connected
+[2026-11-04 18:17:54.169 Server 315194] Creating worker thread for client {PID: 441736, Context ID: 1}
+[2026-11-04 18:17:54.169 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 18:17:54.169 Server 315194] Status of client {PID: 441736, Context ID: 1} is ACTIVE
+[2026-11-04 18:17:55.530 Server 315194] Received new client request for {PID: 441736, Context ID: 1}
+[2026-11-04 18:17:55.530 Server 315194] Client {PID: 441909, Context ID: 0} connected
+[2026-11-04 18:17:55.530 Server 315194] Creating worker thread for client {PID: 441909, Context ID: 0}
+[2026-11-04 18:17:56.921 Server 315194] Received new client request for {PID: 441909, Context ID: 0}
+[2026-11-04 18:17:56.921 Server 315194] Client {PID: 441909, Context ID: 1} connected
+[2026-11-04 18:17:56.921 Server 315194] Creating worker thread for client {PID: 441909, Context ID: 1}
+[2026-11-04 18:17:56.921 Server 315194] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-04 18:17:56.922 Server 315194] Status of client {PID: 441909, Context ID: 1} is ACTIVE
+[2026-11-04 18:31:23.244 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 441736, Context ID: 1} exit
+[2026-11-04 18:31:23.244 Server 315194] Client {PID: 441736, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-04 18:31:23.376 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 441736, Context ID: 0} exit
+[2026-11-04 18:31:23.376 Server 315194] Client process 441736 disconnected
+[2026-11-04 18:31:23.550 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 441909, Context ID: 1} exit
+[2026-11-04 18:31:23.550 Server 315194] Client {PID: 441909, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-04 18:31:23.696 Server 315194] Server failed to recevie command with status 806, assuming client {PID: 441909, Context ID: 0} exit
+[2026-11-04 18:31:23.696 Server 315194] Client process 441909 disconnected
+[2026-11-04 18:37:48.380 Server 315194] Server has been notified to shutdown
+[2026-11-04 18:37:48.380 Server 315194] Waiting for current clients to finish
+[2026-11-04 18:37:48.380 Server 315194] Exiting

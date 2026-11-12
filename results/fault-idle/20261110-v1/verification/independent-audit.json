@@ -1,0 +1,14 @@
+{
+  "state": "PASS",
+  "trials": 3,
+  "same_uid_per_trial": true,
+  "independent_uid_across_trials": true,
+  "exit137": true,
+  "all_result_count": 28,
+  "qwen_results": 13,
+  "yolo_results": 15,
+  "idle_sync_ack_verified": true,
+  "timestamps_recomputed": true,
+  "mps_qwen_pid_preserved": true,
+  "publication_ack_verified": true
+}

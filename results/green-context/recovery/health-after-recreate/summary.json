@@ -1,0 +1,172 @@
+{
+  "state": "FAIL",
+  "scope": "functional routing; not SLO or security proof",
+  "requests": {
+    "r_2f3322b0dadc4b0487400dec5be2e100": {
+      "kind": "qwen",
+      "text": "Explain GPU resource contention in detail with six bullet points.",
+      "encoded_bytes": 0
+    },
+    "r_783e2c0f6eb740d89e1b7ffd1794369e": {
+      "kind": "qwen",
+      "text": "Describe what FIFO means in one sentence.",
+      "encoded_bytes": 0
+    },
+    "r_1d0867b7a7104dfd9bd8028aec1473d8": {
+      "kind": "yolo",
+      "text": null,
+      "encoded_bytes": 183228
+    }
+  },
+  "clients": {
+    "q1": {
+      "timing_schema": 1,
+      "timings_ms": {
+        "envelope_parse_ms": 0.46410132199525833,
+        "template_tokenize_ms": 12.56553,
+        "input_transfer_ms": 0.19573,
+        "generate_wall_ms": 42869.559123,
+        "output_decode_ms": 1.160685,
+        "callback_to_result_ready_ms": 42884.14369896054
+      },
+      "sequence": 1,
+      "request_id": "r_2f3322b0dadc4b0487400dec5be2e100",
+      "queue_wait_ms": 0.18243398517370224,
+      "run_id": "",
+      "timing_mode": "basic",
+      "input_tokens": 24,
+      "status": "ok",
+      "text": "Here is a detailed explanation of GPU resource contention in six key points:\n\n*   **Memory Bandwidth Saturation**: When multiple processes or threads attempt to access the GPU's high-speed memory (HBM or GDDR) simultaneously, they compete for the limited memory bus width. This creates a bottleneck where data transfer rates drop significantly, causing threads to stall while waiting for data to be fetched or written, effectively reducing overall throughput.\n*   **Register File Exhaustion**: Each thread in a warp or wavefront requires a specific number of registers to store local variables. If a kernel launches too many threads or uses excessive local variables, the",
+      "output_tokens": 128,
+      "generation_mode": "bounded",
+      "effective_max_new_tokens": 128,
+      "context_limit": 262144,
+      "finish_reason": "length",
+      "processing_ms": 42883.960001170635,
+      "client_timings_ms": {
+        "request_e2e_ms": 42885.778533,
+        "response_parse_ms": 0.035217,
+        "prepare_ms": 55.814613,
+        "setup_discovery_ms": 191.671594
+      }
+    },
+    "q2": {
+      "timing_schema": 1,
+      "timings_ms": {
+        "envelope_parse_ms": 0.18369778990745544,
+        "template_tokenize_ms": 0.37042,
+        "input_transfer_ms": 0.047776,
+        "generate_wall_ms": 2906.081619,
+        "output_decode_ms": 0.101346,
+        "callback_to_result_ready_ms": 45512.12213374674
+      },
+      "sequence": 2,
+      "request_id": "r_783e2c0f6eb740d89e1b7ffd1794369e",
+      "queue_wait_ms": 42605.324890464544,
+      "run_id": "",
+      "timing_mode": "basic",
+      "input_tokens": 20,
+      "status": "ok",
+      "text": "FIFO stands for \"First In, First Out,\" a method where the first item added to a collection or queue is the first one to be removed or processed",
+      "output_tokens": 32,
+      "generation_mode": "bounded",
+      "effective_max_new_tokens": 32,
+      "context_limit": 262144,
+      "finish_reason": "length",
+      "processing_ms": 2906.796363182366,
+      "client_timings_ms": {
+        "request_e2e_ms": 45527.5952,
+        "response_parse_ms": 0.026512,
+        "prepare_ms": 55.527715,
+        "setup_discovery_ms": 195.067663
+      }
+    },
+    "y1": {
+      "timing_schema": 1,
+      "timings_ms": {
+        "envelope_parse_ms": 0.8963458240032196,
+        "image_decode_ms": 105.482823,
+        "predict_wall_ms": 25.700507,
+        "yolo_preprocess_ms": 0.6194468587636948,
+        "yolo_inference_ms": 7.650756277143955,
+        "yolo_postprocess_ms": 13.30774649977684,
+        "predict_overhead_ms": 4.122557364315512,
+        "result_extract_ms": 0.118641,
+        "callback_to_result_ready_ms": 132.55384005606174
+      },
+      "sequence": 1,
+      "request_id": "r_1d0867b7a7104dfd9bd8028aec1473d8",
+      "queue_wait_ms": 0.31425897032022476,
+      "run_id": "",
+      "status": "ok",
+      "width": 810,
+      "height": 1080,
+      "detections": [
+        {
+          "class_id": 5,
+          "label": "bus",
+          "confidence": 0.93359375,
+          "xyxy": [
+            6.9609375,
+            229.078125,
+            804.9375,
+            737.859375
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.921875,
+          "xyxy": [
+            667.828125,
+            395.71875,
+            810.0,
+            880.875
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.91845703125,
+          "xyxy": [
+            50.625,
+            399.7265625,
+            247.640625,
+            904.5
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.8984375,
+          "xyxy": [
+            222.328125,
+            407.109375,
+            345.09375,
+            860.203125
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.84912109375,
+          "xyxy": [
+            0.0,
+            550.96875,
+            79.3125,
+            873.28125
+          ]
+        }
+      ],
+      "processing_ms": 132.23873265087605,
+      "client_timings_ms": {
+        "request_e2e_ms": 134.768937,
+        "response_parse_ms": 0.034576,
+        "prepare_ms": 69.039766,
+        "setup_discovery_ms": 201.83577,
+        "output_save_ms": 130.916191
+      }
+    }
+  },
+  "error": "AssertionError()"
+}

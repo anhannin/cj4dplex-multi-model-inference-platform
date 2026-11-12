@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dds xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <profiles>
+    <data_writer profile_name="cj_low_latency_writer" is_default_profile="true">
+      <times><initialHeartbeatDelay><sec>0</sec><nanosec>0</nanosec></initialHeartbeatDelay></times>
+      <historyMemoryPolicy>PREALLOCATED_WITH_REALLOC</historyMemoryPolicy>
+    </data_writer>
+    <data_reader profile_name="cj_low_latency_reader" is_default_profile="true">
+      <times><initialAcknackDelay><sec>0</sec><nanosec>0</nanosec></initialAcknackDelay></times>
+      <historyMemoryPolicy>PREALLOCATED_WITH_REALLOC</historyMemoryPolicy>
+    </data_reader>
+  </profiles>
+</dds>

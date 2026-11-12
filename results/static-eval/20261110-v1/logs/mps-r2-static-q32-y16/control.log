@@ -1,0 +1,94 @@
+[2026-11-10 04:16:35.411 Control 177198] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 04:16:35.411 Control 177198] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 04:16:35.411 Control 177198] CUDA MPS Control binary version: 13020
+[2026-11-10 04:16:35.412 Control 177198] Accepting connection...
+[2026-11-10 04:16:35.412 Control 177198] NEW UI
+[2026-11-10 04:16:35.413 Control 177198] Cmd:get_server_list
+[2026-11-10 04:16:35.413 Control 177198] UI closed
+[2026-11-10 04:16:35.436 Control 177198] Accepting connection...
+[2026-11-10 04:16:35.436 Control 177198] NEW UI
+[2026-11-10 04:16:35.437 Control 177198] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 04:16:35.466 Control 177198] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/z/M8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:16:35.466 Control 177198] UI closed
+[2026-11-10 04:16:35.468 Control 177198] Accepting connection...
+[2026-11-10 04:16:35.468 Control 177198] NEW UI
+[2026-11-10 04:16:35.468 Control 177198] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 04:16:35.468 Control 177198] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/MAzDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:16:35.468 Control 177198] UI closed
+[2026-11-10 04:16:35.469 Control 177198] Accepting connection...
+[2026-11-10 04:16:35.469 Control 177198] NEW UI
+[2026-11-10 04:16:35.469 Control 177198] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 04:16:35.469 Control 177198] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 04:16:35.469 Control 177198] Failed to create partition
+[2026-11-10 04:16:35.469 Control 177198] UI closed
+[2026-11-10 04:16:36.303 Control 177198] Accepting connection...
+[2026-11-10 04:16:36.303 Control 177198] User did not send valid credentials
+[2026-11-10 04:16:36.303 Control 177198] Accepting connection...
+[2026-11-10 04:16:36.303 Control 177198] NEW CLIENT 177552 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 04:16:36.304 Control 177554] Starting new server 177554 for user 1000
+[2026-11-10 04:16:36.306 Control 177198] Accepting connection...
+[2026-11-10 04:16:36.633 Control 177198] NEW SERVER 177554: Ready
+[2026-11-10 04:16:36.634 Control 177198] Accepting connection...
+[2026-11-10 04:16:36.634 Control 177198] User did not send valid credentials
+[2026-11-10 04:16:36.634 Control 177198] Accepting connection...
+[2026-11-10 04:16:36.634 Control 177198] NEW CLIENT 177599 from user 1000: Server already exists
+[2026-11-10 04:16:37.420 Control 177198] Accepting connection...
+[2026-11-10 04:16:37.421 Control 177198] User did not send valid credentials
+[2026-11-10 04:16:37.421 Control 177198] Accepting connection...
+[2026-11-10 04:16:37.421 Control 177198] NEW CLIENT 177475 from user 1000: Server already exists
+[2026-11-10 04:16:37.456 Control 177198] Accepting connection...
+[2026-11-10 04:16:37.456 Control 177198] User did not send valid credentials
+[2026-11-10 04:16:37.456 Control 177198] Accepting connection...
+[2026-11-10 04:16:37.456 Control 177198] NEW CLIENT 177399 from user 1000: Server already exists
+[2026-11-10 04:16:37.466 Control 177198] Accepting connection...
+[2026-11-10 04:16:37.466 Control 177198] NEW CLIENT 177475 from user 1000: Server already exists
+[2026-11-10 04:16:37.515 Control 177198] Accepting connection...
+[2026-11-10 04:16:37.515 Control 177198] NEW CLIENT 177399 from user 1000: Server already exists
+[2026-11-10 04:18:31.323 Control 177198] Accepting connection...
+[2026-11-10 04:18:31.323 Control 177198] NEW UI
+[2026-11-10 04:18:31.323 Control 177198] Cmd:get_server_list
+[2026-11-10 04:18:31.323 Control 177198] 177554
+[2026-11-10 04:18:31.323 Control 177198] UI closed
+[2026-11-10 04:18:31.323 Control 177198] Accepting connection...
+[2026-11-10 04:18:31.323 Control 177198] NEW UI
+[2026-11-10 04:18:31.323 Control 177198] Cmd:get_client_list 177554
+[2026-11-10 04:18:31.323 Control 177198] 177475
+[2026-11-10 04:18:31.323 Control 177198] 177399
+[2026-11-10 04:18:31.323 Control 177198] UI closed
+[2026-11-10 04:19:44.624 Control 177198] Accepting connection...
+[2026-11-10 04:19:44.624 Control 177198] NEW UI
+[2026-11-10 04:19:44.624 Control 177198] Cmd:get_server_list
+[2026-11-10 04:19:44.624 Control 177198] 177554
+[2026-11-10 04:19:44.624 Control 177198] UI closed
+[2026-11-10 04:19:44.625 Control 177198] Accepting connection...
+[2026-11-10 04:19:44.625 Control 177198] NEW UI
+[2026-11-10 04:19:44.625 Control 177198] Cmd:get_client_list 177554
+[2026-11-10 04:19:44.625 Control 177198] 177475
+[2026-11-10 04:19:44.625 Control 177198] 177399
+[2026-11-10 04:19:44.625 Control 177198] UI closed
+[2026-11-10 04:21:51.214 Control 177198] Accepting connection...
+[2026-11-10 04:21:51.214 Control 177198] NEW UI
+[2026-11-10 04:21:51.214 Control 177198] Cmd:get_server_list
+[2026-11-10 04:21:51.214 Control 177198] 177554
+[2026-11-10 04:21:51.214 Control 177198] UI closed
+[2026-11-10 04:21:51.215 Control 177198] Accepting connection...
+[2026-11-10 04:21:51.215 Control 177198] NEW UI
+[2026-11-10 04:21:51.215 Control 177198] Cmd:get_client_list 177554
+[2026-11-10 04:21:51.215 Control 177198] 177475
+[2026-11-10 04:21:51.215 Control 177198] 177399
+[2026-11-10 04:21:51.215 Control 177198] UI closed
+[2026-11-10 04:21:53.005 Control 177198] Accepting connection...
+[2026-11-10 04:21:53.005 Control 177198] NEW UI
+[2026-11-10 04:21:53.005 Control 177198] Cmd:get_server_list
+[2026-11-10 04:21:53.005 Control 177198] 177554
+[2026-11-10 04:21:53.005 Control 177198] UI closed
+[2026-11-10 04:21:53.007 Control 177198] Accepting connection...
+[2026-11-10 04:21:53.007 Control 177198] NEW UI
+[2026-11-10 04:21:53.007 Control 177198] Cmd:get_client_list 177554
+[2026-11-10 04:21:53.007 Control 177198] UI closed
+[2026-11-10 04:21:53.008 Control 177198] Accepting connection...
+[2026-11-10 04:21:53.008 Control 177198] NEW UI
+[2026-11-10 04:21:53.009 Control 177198] Cmd:quit
+[2026-11-10 04:21:53.009 Control 177198] Try shutting down server 177554, backoff is disabled
+[2026-11-10 04:21:53.082 Control 177198] Server 177554 exited with status 0
+[2026-11-10 04:21:53.082 Control 177198] Exit with status 0

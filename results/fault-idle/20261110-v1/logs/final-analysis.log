@@ -1,0 +1,121 @@
+{
+  "scope": "GPU-IDLE YOLO ROS Node SIGKILL only;3independentPodUIDs;notbusyGPUfault/notthreadhang/notqueuepersistence",
+  "trials": [
+    {
+      "trial": 0,
+      "detect_observed_ms": 745.692606,
+      "container_start_observed_ms": 1252.729384,
+      "ready_observed_ms": 8257.675978,
+      "first_valid_response_ms": 4503.881406,
+      "probe_e2e_ms": 4499.980524,
+      "probe_publish_after_fault_ms": 3.900882,
+      "observer_max_query_ms": 57.585619,
+      "same_pod_uid": true,
+      "new_container": true,
+      "restart_count": 1,
+      "exit_code": 137,
+      "mps_server_unchanged": true,
+      "qwen_host_pid_unchanged": true
+    },
+    {
+      "trial": 1,
+      "detect_observed_ms": 999.417647,
+      "container_start_observed_ms": 1254.343595,
+      "ready_observed_ms": 6505.886573,
+      "first_valid_response_ms": 4504.094511,
+      "probe_e2e_ms": 4498.547727,
+      "probe_publish_after_fault_ms": 5.546784,
+      "observer_max_query_ms": 58.563706,
+      "same_pod_uid": true,
+      "new_container": true,
+      "restart_count": 1,
+      "exit_code": 137,
+      "mps_server_unchanged": true,
+      "qwen_host_pid_unchanged": true
+    },
+    {
+      "trial": 2,
+      "detect_observed_ms": 492.560233,
+      "container_start_observed_ms": 997.059368,
+      "ready_observed_ms": 6497.966813,
+      "first_valid_response_ms": 4162.603897,
+      "probe_e2e_ms": 4160.906682,
+      "probe_publish_after_fault_ms": 1.697215,
+      "observer_max_query_ms": 53.251915,
+      "same_pod_uid": true,
+      "new_container": true,
+      "restart_count": 1,
+      "exit_code": 137,
+      "mps_server_unchanged": true,
+      "qwen_host_pid_unchanged": true
+    }
+  ],
+  "recovery": {
+    "detect_observed_ms": {
+      "n": 3,
+      "mean": 745.8901619999999,
+      "median": 745.692606,
+      "min": 492.560233,
+      "max": 999.417647
+    },
+    "container_start_observed_ms": {
+      "n": 3,
+      "mean": 1168.0441156666666,
+      "median": 1252.729384,
+      "min": 997.059368,
+      "max": 1254.343595
+    },
+    "ready_observed_ms": {
+      "n": 3,
+      "mean": 7087.176454666666,
+      "median": 6505.886573,
+      "min": 6497.966813,
+      "max": 8257.675978
+    },
+    "first_valid_response_ms": {
+      "n": 3,
+      "mean": 4390.1932713333335,
+      "median": 4503.881406,
+      "min": 4162.603897,
+      "max": 4504.094511
+    }
+  },
+  "qwen": {
+    "requests": 13,
+    "warmup": 3,
+    "measured": 10,
+    "errors": 0,
+    "host_pid": 1286470,
+    "cohorts": {
+      "before_first_fault": {
+        "n": 3,
+        "mean": 11031.640323666667,
+        "median": 11007.348828,
+        "min": 10993.544783,
+        "max": 11094.02736
+      },
+      "overlap_fault_recovery": {
+        "n": 3,
+        "mean": 11296.300541666666,
+        "median": 11296.446407,
+        "min": 11275.201231,
+        "max": 11317.253987
+      },
+      "after_last_functional_recovery": {
+        "n": 2,
+        "mean": 11075.1353475,
+        "median": 11075.1353475,
+        "min": 11070.482463,
+        "max": 11079.788232
+      }
+    }
+  },
+  "mps_server_pid": 1286646,
+  "patient_probe_successes": 3,
+  "no_application_retry": true,
+  "outage_success_rate_not_established": true,
+  "rto_slo_not_defined": true,
+  "restoration": "PASS",
+  "all_yolo_requests": 15,
+  "all_result_count": 28
+}

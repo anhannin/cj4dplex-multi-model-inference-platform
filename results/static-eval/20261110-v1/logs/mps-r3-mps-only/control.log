@@ -1,0 +1,78 @@
+[2026-11-10 05:05:08.172 Control 257545] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 05:05:08.172 Control 257545] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 05:05:08.173 Control 257545] CUDA MPS Control binary version: 13020
+[2026-11-10 05:05:08.174 Control 257545] Accepting connection...
+[2026-11-10 05:05:08.174 Control 257545] NEW UI
+[2026-11-10 05:05:08.174 Control 257545] Cmd:get_server_list
+[2026-11-10 05:05:08.174 Control 257545] UI closed
+[2026-11-10 05:05:09.021 Control 257545] Accepting connection...
+[2026-11-10 05:05:09.021 Control 257545] User did not send valid credentials
+[2026-11-10 05:05:09.021 Control 257545] Accepting connection...
+[2026-11-10 05:05:09.021 Control 257545] NEW CLIENT 257861 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 05:05:09.021 Control 257864] Starting new server 257864 for user 1000
+[2026-11-10 05:05:09.022 Control 257545] Accepting connection...
+[2026-11-10 05:05:09.322 Control 257545] NEW SERVER 257864: Ready
+[2026-11-10 05:05:09.323 Control 257545] Accepting connection...
+[2026-11-10 05:05:09.323 Control 257545] User did not send valid credentials
+[2026-11-10 05:05:09.323 Control 257545] Accepting connection...
+[2026-11-10 05:05:09.323 Control 257545] NEW CLIENT 257916 from user 1000: Server already exists
+[2026-11-10 05:05:39.861 Control 257545] Accepting connection...
+[2026-11-10 05:05:39.861 Control 257545] User did not send valid credentials
+[2026-11-10 05:05:39.862 Control 257545] Accepting connection...
+[2026-11-10 05:05:39.862 Control 257545] NEW CLIENT 257726 from user 1000: Server already exists
+[2026-11-10 05:05:39.912 Control 257545] Accepting connection...
+[2026-11-10 05:05:39.912 Control 257545] NEW CLIENT 257726 from user 1000: Server already exists
+[2026-11-10 05:05:39.932 Control 257545] Accepting connection...
+[2026-11-10 05:05:39.932 Control 257545] User did not send valid credentials
+[2026-11-10 05:05:39.932 Control 257545] Accepting connection...
+[2026-11-10 05:05:39.932 Control 257545] NEW CLIENT 257797 from user 1000: Server already exists
+[2026-11-10 05:05:39.996 Control 257545] Accepting connection...
+[2026-11-10 05:05:39.997 Control 257545] NEW CLIENT 257797 from user 1000: Server already exists
+[2026-11-10 05:07:59.020 Control 257545] Accepting connection...
+[2026-11-10 05:07:59.020 Control 257545] NEW UI
+[2026-11-10 05:07:59.020 Control 257545] Cmd:get_server_list
+[2026-11-10 05:07:59.020 Control 257545] 257864
+[2026-11-10 05:07:59.020 Control 257545] UI closed
+[2026-11-10 05:07:59.021 Control 257545] Accepting connection...
+[2026-11-10 05:07:59.021 Control 257545] NEW UI
+[2026-11-10 05:07:59.021 Control 257545] Cmd:get_client_list 257864
+[2026-11-10 05:07:59.021 Control 257545] 257726
+[2026-11-10 05:07:59.021 Control 257545] 257797
+[2026-11-10 05:07:59.021 Control 257545] UI closed
+[2026-11-10 05:09:09.975 Control 257545] Accepting connection...
+[2026-11-10 05:09:09.975 Control 257545] NEW UI
+[2026-11-10 05:09:09.975 Control 257545] Cmd:get_server_list
+[2026-11-10 05:09:09.975 Control 257545] 257864
+[2026-11-10 05:09:09.975 Control 257545] UI closed
+[2026-11-10 05:09:09.976 Control 257545] Accepting connection...
+[2026-11-10 05:09:09.976 Control 257545] NEW UI
+[2026-11-10 05:09:09.976 Control 257545] Cmd:get_client_list 257864
+[2026-11-10 05:09:09.976 Control 257545] 257726
+[2026-11-10 05:09:09.976 Control 257545] 257797
+[2026-11-10 05:09:09.977 Control 257545] UI closed
+[2026-11-10 05:11:09.656 Control 257545] Accepting connection...
+[2026-11-10 05:11:09.656 Control 257545] NEW UI
+[2026-11-10 05:11:09.656 Control 257545] Cmd:get_server_list
+[2026-11-10 05:11:09.656 Control 257545] 257864
+[2026-11-10 05:11:09.656 Control 257545] UI closed
+[2026-11-10 05:11:09.657 Control 257545] Accepting connection...
+[2026-11-10 05:11:09.657 Control 257545] NEW UI
+[2026-11-10 05:11:09.657 Control 257545] Cmd:get_client_list 257864
+[2026-11-10 05:11:09.657 Control 257545] 257726
+[2026-11-10 05:11:09.657 Control 257545] 257797
+[2026-11-10 05:11:09.657 Control 257545] UI closed
+[2026-11-10 05:11:11.839 Control 257545] Accepting connection...
+[2026-11-10 05:11:11.840 Control 257545] NEW UI
+[2026-11-10 05:11:11.840 Control 257545] Cmd:get_server_list
+[2026-11-10 05:11:11.840 Control 257545] 257864
+[2026-11-10 05:11:11.840 Control 257545] UI closed
+[2026-11-10 05:11:11.841 Control 257545] Accepting connection...
+[2026-11-10 05:11:11.841 Control 257545] NEW UI
+[2026-11-10 05:11:11.841 Control 257545] Cmd:get_client_list 257864
+[2026-11-10 05:11:11.841 Control 257545] UI closed
+[2026-11-10 05:11:11.842 Control 257545] Accepting connection...
+[2026-11-10 05:11:11.842 Control 257545] NEW UI
+[2026-11-10 05:11:11.842 Control 257545] Cmd:quit
+[2026-11-10 05:11:11.842 Control 257545] Try shutting down server 257864, backoff is disabled
+[2026-11-10 05:11:11.919 Control 257545] Server 257864 exited with status 0
+[2026-11-10 05:11:11.919 Control 257545] Exit with status 0

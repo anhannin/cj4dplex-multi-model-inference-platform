@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights: 100%|██████████| 760/760 [00:00<00:00, 17009.53it/s]
+Traceback (most recent call last):
+  File "/experiment/src/run_model.py", line 268, in <module>
+    main()
+  File "/experiment/src/run_model.py", line 214, in main
+    runner=Qwen(torch,a) if a.model=='qwen' else Yolo(torch,a)
+           ^^^^^^^^^^^^^
+  File "/experiment/src/run_model.py", line 84, in __init__
+    raise RuntimeError('Missing pinned native inference kernels')
+RuntimeError: Missing pinned native inference kernels
+Processing events...
+Generated:
+	No reports were generated

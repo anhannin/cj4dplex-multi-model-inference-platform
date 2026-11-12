@@ -1,0 +1,244 @@
+{
+  "state": "PASS",
+  "scope": "functional routing; not SLO or security proof",
+  "requests": {
+    "r_260c90adbe514cf7a3fb1c780f48e545": {
+      "kind": "qwen",
+      "text": "Explain GPU resource contention in detail with six bullet points.",
+      "encoded_bytes": 0
+    },
+    "r_f3ab7fcc64de49218f73f227556a8947": {
+      "kind": "qwen",
+      "text": "Describe what FIFO means in one sentence.",
+      "encoded_bytes": 0
+    },
+    "r_438f5363a54b47c0989c642a4eda8cd7": {
+      "kind": "yolo",
+      "text": null,
+      "encoded_bytes": 183228
+    },
+    "r_3fd24e27ffbe4c0cba9891591123f34d": {
+      "kind": "yolo",
+      "text": null,
+      "encoded_bytes": 67236
+    }
+  },
+  "clients": {
+    "q1": {
+      "timing_schema": 1,
+      "timings_ms": {
+        "envelope_parse_ms": 0.47146063297986984,
+        "template_tokenize_ms": 0.434949,
+        "input_transfer_ms": 0.185314,
+        "generate_wall_ms": 11638.165579,
+        "output_decode_ms": 0.361652,
+        "callback_to_result_ready_ms": 11639.826909638941
+      },
+      "sequence": 3,
+      "request_id": "r_260c90adbe514cf7a3fb1c780f48e545",
+      "queue_wait_ms": 0.19449833780527115,
+      "run_id": "",
+      "timing_mode": "basic",
+      "input_tokens": 24,
+      "status": "ok",
+      "text": "Here is a detailed explanation of GPU resource contention in six key points:\n\n*   **Memory Bandwidth Saturation**: When multiple processes or threads attempt to access the GPU's high-speed memory (HBM or GDDR) simultaneously, they compete for the limited memory bus width. This creates a bottleneck where data transfer rates drop significantly, causing threads to stall while waiting for data to be fetched or written, effectively reducing overall throughput.\n*   **Register File Exhaustion**: Each thread in a warp or wavefront requires a specific number of registers to store local variables. If a kernel launches too many threads or uses excessive local variables, the",
+      "output_tokens": 128,
+      "generation_mode": "bounded",
+      "effective_max_new_tokens": 128,
+      "context_limit": 262144,
+      "finish_reason": "length",
+      "processing_ms": 11639.631611295044,
+      "client_timings_ms": {
+        "request_e2e_ms": 11725.66444,
+        "response_parse_ms": 0.035648,
+        "prepare_ms": 60.962907,
+        "setup_discovery_ms": 193.23845
+      }
+    },
+    "q2": {
+      "timing_schema": 1,
+      "timings_ms": {
+        "envelope_parse_ms": 0.19129738211631775,
+        "template_tokenize_ms": 0.391461,
+        "input_transfer_ms": 0.094273,
+        "generate_wall_ms": 2906.602952,
+        "output_decode_ms": 0.097089,
+        "callback_to_result_ready_ms": 13957.580490037799
+      },
+      "sequence": 4,
+      "request_id": "r_f3ab7fcc64de49218f73f227556a8947",
+      "queue_wait_ms": 11050.19173771143,
+      "run_id": "",
+      "timing_mode": "basic",
+      "input_tokens": 20,
+      "status": "ok",
+      "text": "FIFO stands for \"First In, First Out,\" a method where the first item added to a collection or queue is the first one to be removed or processed",
+      "output_tokens": 32,
+      "generation_mode": "bounded",
+      "effective_max_new_tokens": 32,
+      "context_limit": 262144,
+      "finish_reason": "length",
+      "processing_ms": 2907.38792065531,
+      "client_timings_ms": {
+        "request_e2e_ms": 13959.816162,
+        "response_parse_ms": 0.030608,
+        "prepare_ms": 70.653685,
+        "setup_discovery_ms": 575.735564
+      }
+    },
+    "y1": {
+      "timing_schema": 1,
+      "timings_ms": {
+        "envelope_parse_ms": 1.007002778351307,
+        "image_decode_ms": 4.319696,
+        "predict_wall_ms": 39.618225,
+        "yolo_preprocess_ms": 3.7215296179056168,
+        "yolo_inference_ms": 23.750499822199345,
+        "yolo_postprocess_ms": 9.444838389754295,
+        "predict_overhead_ms": 2.7013571701407457,
+        "result_extract_ms": 0.117858,
+        "callback_to_result_ready_ms": 45.42950447648764
+      },
+      "sequence": 3,
+      "request_id": "r_438f5363a54b47c0989c642a4eda8cd7",
+      "queue_wait_ms": 0.3258911892771721,
+      "run_id": "",
+      "status": "ok",
+      "width": 810,
+      "height": 1080,
+      "detections": [
+        {
+          "class_id": 5,
+          "label": "bus",
+          "confidence": 0.93359375,
+          "xyxy": [
+            6.9609375,
+            229.078125,
+            804.9375,
+            737.859375
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.921875,
+          "xyxy": [
+            667.828125,
+            395.71875,
+            810.0,
+            880.875
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.91845703125,
+          "xyxy": [
+            50.625,
+            399.7265625,
+            247.640625,
+            904.5
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.8984375,
+          "xyxy": [
+            222.328125,
+            407.109375,
+            345.09375,
+            860.203125
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.84912109375,
+          "xyxy": [
+            0.0,
+            550.96875,
+            79.3125,
+            873.28125
+          ]
+        }
+      ],
+      "processing_ms": 45.10203003883362,
+      "client_timings_ms": {
+        "request_e2e_ms": 48.835462,
+        "response_parse_ms": 0.08304,
+        "prepare_ms": 82.587352,
+        "setup_discovery_ms": 3656.914414,
+        "output_save_ms": 132.18783
+      }
+    },
+    "y2": {
+      "timing_schema": 1,
+      "timings_ms": {
+        "envelope_parse_ms": 0.4688361659646034,
+        "image_decode_ms": 3.022129,
+        "predict_wall_ms": 35.385027,
+        "yolo_preprocess_ms": 1.8370924517512321,
+        "yolo_inference_ms": 22.003072313964367,
+        "yolo_postprocess_ms": 9.47562325745821,
+        "predict_overhead_ms": 2.069238976826192,
+        "result_extract_ms": 0.109857,
+        "callback_to_result_ready_ms": 40.59229977428913
+      },
+      "sequence": 4,
+      "request_id": "r_3fd24e27ffbe4c0cba9891591123f34d",
+      "queue_wait_ms": 1.573825255036354,
+      "run_id": "",
+      "status": "ok",
+      "width": 1280,
+      "height": 720,
+      "detections": [
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.93994140625,
+          "xyxy": [
+            122.0,
+            201.5,
+            1134.0,
+            714.5
+          ]
+        },
+        {
+          "class_id": 0,
+          "label": "person",
+          "confidence": 0.93408203125,
+          "xyxy": [
+            746.0,
+            45.25,
+            1146.0,
+            711.0
+          ]
+        },
+        {
+          "class_id": 27,
+          "label": "tie",
+          "confidence": 0.85986328125,
+          "xyxy": [
+            436.0,
+            437.0,
+            526.5,
+            719.0
+          ]
+        }
+      ],
+      "processing_ms": 39.01756275445223,
+      "client_timings_ms": {
+        "request_e2e_ms": 44.52852,
+        "response_parse_ms": 0.066625,
+        "prepare_ms": 85.522199,
+        "setup_discovery_ms": 3699.975877,
+        "output_save_ms": 153.512415
+      }
+    }
+  },
+  "unique_ids": 4,
+  "wrong_response_mixups": 0,
+  "annotated_images": 2,
+  "ephemeral_publishers_cleaned": true
+}

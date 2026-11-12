@@ -1,0 +1,10 @@
+{
+  "qwen": {
+    "template_equal": true,
+    "replicas": 1
+  },
+  "yolo": {
+    "template_equal": true,
+    "replicas": 1
+  }
+}

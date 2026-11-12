@@ -1,0 +1,37 @@
+configmap/cj-nsys-diagnostics created
+deployment.apps/qwen configured
+deployment.apps/yolo configured
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+START qwen-only
+deployment.apps/qwen patched
+deployment.apps/yolo patched
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+configmap "cj-nsys-diagnostics" deleted from cj-inference namespace
+{
+  "state": "FAIL",
+  "phase": "complete",
+  "started_at_utc": "2026-11-03T08:15:42.029158+00:00",
+  "scope": "diagnostic only, not a performance baseline",
+  "reports": {},
+  "error": "TimeoutError('qwen report export')",
+  "baseline_restored": true,
+  "finished_at_utc": "2026-11-03T08:23:59.046822+00:00"
+}
+Traceback (most recent call last):
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 303, in <module>
+    main()
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 186, in main
+    wait_until(
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 64, in wait_until
+    raise TimeoutError(label)
+TimeoutError: qwen report export

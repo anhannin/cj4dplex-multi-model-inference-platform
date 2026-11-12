@@ -1,0 +1,236 @@
+[2026-11-10 19:09:23.218 Control 1286275] Starting control daemon using socket /home/avees/cj-fault-idle/20261110-v1/eval-pipe/control
+[2026-11-10 19:09:23.218 Control 1286275] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-fault-idle/20261110-v1/eval-pipe
+[2026-11-10 19:09:23.218 Control 1286275] CUDA MPS Control binary version: 13020
+[2026-11-10 19:09:23.219 Control 1286275] Accepting connection...
+[2026-11-10 19:09:23.219 Control 1286275] NEW UI
+[2026-11-10 19:09:23.219 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:09:23.219 Control 1286275] UI closed
+[2026-11-10 19:09:23.239 Control 1286275] Accepting connection...
+[2026-11-10 19:09:23.239 Control 1286275] NEW UI
+[2026-11-10 19:09:23.239 Control 1286275] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-10 19:09:23.264 Control 1286275] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 19:09:23.264 Control 1286275] UI closed
+[2026-11-10 19:09:23.265 Control 1286275] Accepting connection...
+[2026-11-10 19:09:23.265 Control 1286275] NEW UI
+[2026-11-10 19:09:23.265 Control 1286275] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-10 19:09:23.265 Control 1286275] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 19:09:23.265 Control 1286275] UI closed
+[2026-11-10 19:09:23.266 Control 1286275] Accepting connection...
+[2026-11-10 19:09:23.266 Control 1286275] NEW UI
+[2026-11-10 19:09:23.266 Control 1286275] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 19:09:23.266 Control 1286275] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 19:09:23.266 Control 1286275] Failed to create partition
+[2026-11-10 19:09:23.266 Control 1286275] UI closed
+[2026-11-10 19:09:24.113 Control 1286275] Accepting connection...
+[2026-11-10 19:09:24.113 Control 1286275] User did not send valid credentials
+[2026-11-10 19:09:24.113 Control 1286275] Accepting connection...
+[2026-11-10 19:09:24.113 Control 1286275] NEW CLIENT 1286643 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 19:09:24.113 Control 1286646] Starting new server 1286646 for user 1000
+[2026-11-10 19:09:24.116 Control 1286275] Accepting connection...
+[2026-11-10 19:09:24.415 Control 1286275] NEW SERVER 1286646: Ready
+[2026-11-10 19:09:24.416 Control 1286275] Accepting connection...
+[2026-11-10 19:09:24.416 Control 1286275] User did not send valid credentials
+[2026-11-10 19:09:24.416 Control 1286275] Accepting connection...
+[2026-11-10 19:09:24.416 Control 1286275] NEW CLIENT 1286655 from user 1000: Server already exists
+[2026-11-10 19:09:25.256 Control 1286275] Accepting connection...
+[2026-11-10 19:09:25.256 Control 1286275] User did not send valid credentials
+[2026-11-10 19:09:25.256 Control 1286275] Accepting connection...
+[2026-11-10 19:09:25.256 Control 1286275] NEW CLIENT 1286470 from user 1000: Server already exists
+[2026-11-10 19:09:25.266 Control 1286275] Accepting connection...
+[2026-11-10 19:09:25.266 Control 1286275] User did not send valid credentials
+[2026-11-10 19:09:25.266 Control 1286275] Accepting connection...
+[2026-11-10 19:09:25.266 Control 1286275] NEW CLIENT 1286514 from user 1000: Server already exists
+[2026-11-10 19:09:25.317 Control 1286275] Accepting connection...
+[2026-11-10 19:09:25.317 Control 1286275] NEW CLIENT 1286470 from user 1000: Server already exists
+[2026-11-10 19:09:25.324 Control 1286275] Accepting connection...
+[2026-11-10 19:09:25.324 Control 1286275] NEW CLIENT 1286514 from user 1000: Server already exists
+[2026-11-10 19:11:39.090 Control 1286275] Accepting connection...
+[2026-11-10 19:11:39.090 Control 1286275] NEW UI
+[2026-11-10 19:11:39.090 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:11:39.090 Control 1286275] 1286646
+[2026-11-10 19:11:39.090 Control 1286275] UI closed
+[2026-11-10 19:11:39.091 Control 1286275] Accepting connection...
+[2026-11-10 19:11:39.091 Control 1286275] NEW UI
+[2026-11-10 19:11:39.091 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:11:39.091 Control 1286275] 1286470
+[2026-11-10 19:11:39.091 Control 1286275] 1286514
+[2026-11-10 19:11:39.091 Control 1286275] UI closed
+[2026-11-10 19:13:24.771 Control 1286275] Accepting connection...
+[2026-11-10 19:13:24.771 Control 1286275] NEW UI
+[2026-11-10 19:13:24.771 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:13:24.771 Control 1286275] 1286646
+[2026-11-10 19:13:24.771 Control 1286275] UI closed
+[2026-11-10 19:13:24.773 Control 1286275] Accepting connection...
+[2026-11-10 19:13:24.773 Control 1286275] NEW UI
+[2026-11-10 19:13:24.773 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:13:24.773 Control 1286275] 1286470
+[2026-11-10 19:13:24.773 Control 1286275] 1286514
+[2026-11-10 19:13:24.773 Control 1286275] UI closed
+[2026-11-10 19:13:25.557 Control 1286275] Accepting connection...
+[2026-11-10 19:13:25.557 Control 1286275] NEW UI
+[2026-11-10 19:13:25.558 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:13:25.558 Control 1286275] 1286646
+[2026-11-10 19:13:25.558 Control 1286275] UI closed
+[2026-11-10 19:13:25.559 Control 1286275] Accepting connection...
+[2026-11-10 19:13:25.559 Control 1286275] NEW UI
+[2026-11-10 19:13:25.559 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:13:25.559 Control 1286275] 1286470
+[2026-11-10 19:13:25.559 Control 1286275] 1286514
+[2026-11-10 19:13:25.559 Control 1286275] UI closed
+[2026-11-10 19:13:25.575 Control 1286275] Accepting connection...
+[2026-11-10 19:13:25.575 Control 1286275] NEW UI
+[2026-11-10 19:13:25.575 Control 1286275] Cmd:get_server_status 1286646
+[2026-11-10 19:13:25.576 Control 1286275] ACTIVE
+[2026-11-10 19:13:25.576 Control 1286275] UI closed
+[2026-11-10 19:13:26.711 Control 1286275] Accepting connection...
+[2026-11-10 19:13:26.711 Control 1286275] User did not send valid credentials
+[2026-11-10 19:13:26.711 Control 1286275] Accepting connection...
+[2026-11-10 19:13:26.711 Control 1286275] NEW CLIENT 1293909 from user 1000: Server already exists
+[2026-11-10 19:13:27.780 Control 1286275] Accepting connection...
+[2026-11-10 19:13:27.780 Control 1286275] User did not send valid credentials
+[2026-11-10 19:13:27.780 Control 1286275] Accepting connection...
+[2026-11-10 19:13:27.780 Control 1286275] NEW CLIENT 1293808 from user 1000: Server already exists
+[2026-11-10 19:13:27.827 Control 1286275] Accepting connection...
+[2026-11-10 19:13:27.827 Control 1286275] NEW CLIENT 1293808 from user 1000: Server already exists
+[2026-11-10 19:13:34.029 Control 1286275] Accepting connection...
+[2026-11-10 19:13:34.029 Control 1286275] NEW UI
+[2026-11-10 19:13:34.029 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:13:34.029 Control 1286275] 1286646
+[2026-11-10 19:13:34.029 Control 1286275] UI closed
+[2026-11-10 19:13:34.031 Control 1286275] Accepting connection...
+[2026-11-10 19:13:34.031 Control 1286275] NEW UI
+[2026-11-10 19:13:34.031 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:13:34.031 Control 1286275] 1286470
+[2026-11-10 19:13:34.031 Control 1286275] 1293808
+[2026-11-10 19:13:34.031 Control 1286275] UI closed
+[2026-11-10 19:13:40.168 Control 1286275] Accepting connection...
+[2026-11-10 19:13:40.168 Control 1286275] User did not send valid credentials
+[2026-11-10 19:13:40.168 Control 1286275] Accepting connection...
+[2026-11-10 19:13:40.168 Control 1286275] NEW CLIENT 1295052 from user 1000: Server already exists
+[2026-11-10 19:13:41.209 Control 1286275] Accepting connection...
+[2026-11-10 19:13:41.210 Control 1286275] User did not send valid credentials
+[2026-11-10 19:13:41.210 Control 1286275] Accepting connection...
+[2026-11-10 19:13:41.210 Control 1286275] NEW CLIENT 1294967 from user 1000: Server already exists
+[2026-11-10 19:13:41.259 Control 1286275] Accepting connection...
+[2026-11-10 19:13:41.259 Control 1286275] NEW CLIENT 1294967 from user 1000: Server already exists
+[2026-11-10 19:13:47.416 Control 1286275] Accepting connection...
+[2026-11-10 19:13:47.416 Control 1286275] NEW UI
+[2026-11-10 19:13:47.416 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:13:47.416 Control 1286275] 1286646
+[2026-11-10 19:13:47.416 Control 1286275] UI closed
+[2026-11-10 19:13:47.418 Control 1286275] Accepting connection...
+[2026-11-10 19:13:47.418 Control 1286275] NEW UI
+[2026-11-10 19:13:47.418 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:13:47.418 Control 1286275] 1286470
+[2026-11-10 19:13:47.418 Control 1286275] 1294967
+[2026-11-10 19:13:47.418 Control 1286275] UI closed
+[2026-11-10 19:13:48.556 Control 1286275] Accepting connection...
+[2026-11-10 19:13:48.556 Control 1286275] NEW UI
+[2026-11-10 19:13:48.556 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:13:48.556 Control 1286275] 1286646
+[2026-11-10 19:13:48.556 Control 1286275] UI closed
+[2026-11-10 19:13:48.558 Control 1286275] Accepting connection...
+[2026-11-10 19:13:48.558 Control 1286275] NEW UI
+[2026-11-10 19:13:48.558 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:13:48.558 Control 1286275] 1286470
+[2026-11-10 19:13:48.558 Control 1286275] 1294967
+[2026-11-10 19:13:48.558 Control 1286275] UI closed
+[2026-11-10 19:13:48.574 Control 1286275] Accepting connection...
+[2026-11-10 19:13:48.574 Control 1286275] NEW UI
+[2026-11-10 19:13:48.574 Control 1286275] Cmd:get_server_status 1286646
+[2026-11-10 19:13:48.574 Control 1286275] ACTIVE
+[2026-11-10 19:13:48.574 Control 1286275] UI closed
+[2026-11-10 19:13:49.734 Control 1286275] Accepting connection...
+[2026-11-10 19:13:49.734 Control 1286275] User did not send valid credentials
+[2026-11-10 19:13:49.734 Control 1286275] Accepting connection...
+[2026-11-10 19:13:49.734 Control 1286275] NEW CLIENT 1295575 from user 1000: Server already exists
+[2026-11-10 19:13:50.766 Control 1286275] Accepting connection...
+[2026-11-10 19:13:50.766 Control 1286275] User did not send valid credentials
+[2026-11-10 19:13:50.766 Control 1286275] Accepting connection...
+[2026-11-10 19:13:50.766 Control 1286275] NEW CLIENT 1295477 from user 1000: Server already exists
+[2026-11-10 19:13:50.812 Control 1286275] Accepting connection...
+[2026-11-10 19:13:50.813 Control 1286275] NEW CLIENT 1295477 from user 1000: Server already exists
+[2026-11-10 19:13:55.324 Control 1286275] Accepting connection...
+[2026-11-10 19:13:55.324 Control 1286275] NEW UI
+[2026-11-10 19:13:55.324 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:13:55.324 Control 1286275] 1286646
+[2026-11-10 19:13:55.324 Control 1286275] UI closed
+[2026-11-10 19:13:55.326 Control 1286275] Accepting connection...
+[2026-11-10 19:13:55.326 Control 1286275] NEW UI
+[2026-11-10 19:13:55.326 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:13:55.326 Control 1286275] 1286470
+[2026-11-10 19:13:55.326 Control 1286275] 1295477
+[2026-11-10 19:13:55.326 Control 1286275] UI closed
+[2026-11-10 19:14:01.600 Control 1286275] Accepting connection...
+[2026-11-10 19:14:01.600 Control 1286275] User did not send valid credentials
+[2026-11-10 19:14:01.600 Control 1286275] Accepting connection...
+[2026-11-10 19:14:01.600 Control 1286275] NEW CLIENT 1296570 from user 1000: Server already exists
+[2026-11-10 19:14:02.687 Control 1286275] Accepting connection...
+[2026-11-10 19:14:02.687 Control 1286275] User did not send valid credentials
+[2026-11-10 19:14:02.687 Control 1286275] Accepting connection...
+[2026-11-10 19:14:02.687 Control 1286275] NEW CLIENT 1296483 from user 1000: Server already exists
+[2026-11-10 19:14:02.738 Control 1286275] Accepting connection...
+[2026-11-10 19:14:02.739 Control 1286275] NEW CLIENT 1296483 from user 1000: Server already exists
+[2026-11-10 19:14:08.569 Control 1286275] Accepting connection...
+[2026-11-10 19:14:08.569 Control 1286275] NEW UI
+[2026-11-10 19:14:08.569 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:14:08.569 Control 1286275] 1286646
+[2026-11-10 19:14:08.569 Control 1286275] UI closed
+[2026-11-10 19:14:08.570 Control 1286275] Accepting connection...
+[2026-11-10 19:14:08.570 Control 1286275] NEW UI
+[2026-11-10 19:14:08.570 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:14:08.570 Control 1286275] 1286470
+[2026-11-10 19:14:08.570 Control 1286275] 1296483
+[2026-11-10 19:14:08.570 Control 1286275] UI closed
+[2026-11-10 19:14:09.959 Control 1286275] Accepting connection...
+[2026-11-10 19:14:09.959 Control 1286275] NEW UI
+[2026-11-10 19:14:09.960 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:14:09.960 Control 1286275] 1286646
+[2026-11-10 19:14:09.960 Control 1286275] UI closed
+[2026-11-10 19:14:09.961 Control 1286275] Accepting connection...
+[2026-11-10 19:14:09.961 Control 1286275] NEW UI
+[2026-11-10 19:14:09.961 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:14:09.961 Control 1286275] 1286470
+[2026-11-10 19:14:09.961 Control 1286275] 1296483
+[2026-11-10 19:14:09.961 Control 1286275] UI closed
+[2026-11-10 19:14:09.977 Control 1286275] Accepting connection...
+[2026-11-10 19:14:09.977 Control 1286275] NEW UI
+[2026-11-10 19:14:09.977 Control 1286275] Cmd:get_server_status 1286646
+[2026-11-10 19:14:09.977 Control 1286275] ACTIVE
+[2026-11-10 19:14:09.977 Control 1286275] UI closed
+[2026-11-10 19:14:10.800 Control 1286275] Accepting connection...
+[2026-11-10 19:14:10.800 Control 1286275] User did not send valid credentials
+[2026-11-10 19:14:10.800 Control 1286275] Accepting connection...
+[2026-11-10 19:14:10.800 Control 1286275] NEW CLIENT 1297080 from user 1000: Server already exists
+[2026-11-10 19:14:11.876 Control 1286275] Accepting connection...
+[2026-11-10 19:14:11.877 Control 1286275] User did not send valid credentials
+[2026-11-10 19:14:11.877 Control 1286275] Accepting connection...
+[2026-11-10 19:14:11.877 Control 1286275] NEW CLIENT 1296977 from user 1000: Server already exists
+[2026-11-10 19:14:11.922 Control 1286275] Accepting connection...
+[2026-11-10 19:14:11.922 Control 1286275] NEW CLIENT 1296977 from user 1000: Server already exists
+[2026-11-10 19:14:16.667 Control 1286275] Accepting connection...
+[2026-11-10 19:14:16.667 Control 1286275] NEW UI
+[2026-11-10 19:14:16.667 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:14:16.667 Control 1286275] 1286646
+[2026-11-10 19:14:16.667 Control 1286275] UI closed
+[2026-11-10 19:14:16.668 Control 1286275] Accepting connection...
+[2026-11-10 19:14:16.668 Control 1286275] NEW UI
+[2026-11-10 19:14:16.668 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:14:16.668 Control 1286275] 1286470
+[2026-11-10 19:14:16.668 Control 1286275] 1296977
+[2026-11-10 19:14:16.669 Control 1286275] UI closed
+[2026-11-10 19:14:46.627 Control 1286275] Accepting connection...
+[2026-11-10 19:14:46.627 Control 1286275] NEW UI
+[2026-11-10 19:14:46.627 Control 1286275] Cmd:get_server_list
+[2026-11-10 19:14:46.627 Control 1286275] 1286646
+[2026-11-10 19:14:46.627 Control 1286275] UI closed
+[2026-11-10 19:14:46.629 Control 1286275] Accepting connection...
+[2026-11-10 19:14:46.629 Control 1286275] NEW UI
+[2026-11-10 19:14:46.629 Control 1286275] Cmd:get_client_list 1286646
+[2026-11-10 19:14:46.629 Control 1286275] UI closed
+[2026-11-10 19:14:46.630 Control 1286275] Accepting connection...
+[2026-11-10 19:14:46.630 Control 1286275] NEW UI
+[2026-11-10 19:14:46.630 Control 1286275] Cmd:quit
+[2026-11-10 19:14:46.630 Control 1286275] Try shutting down server 1286646, backoff is disabled
+[2026-11-10 19:14:46.716 Control 1286275] Server 1286646 exited with status 0
+[2026-11-10 19:14:46.716 Control 1286275] Exit with status 0

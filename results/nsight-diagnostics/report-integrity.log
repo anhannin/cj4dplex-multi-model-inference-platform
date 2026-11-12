@@ -1,0 +1,12 @@
+reports/qwen/capture.1.nsys-rep: OK
+reports/qwen/capture.2.nsys-rep: OK
+reports/qwen/capture.3.nsys-rep: OK
+reports/qwen/concurrent.sqlite: OK
+reports/qwen/qwen-only.sqlite: OK
+reports/qwen/yolo-only.sqlite: OK
+reports/yolo/capture.1.nsys-rep: OK
+reports/yolo/capture.2.nsys-rep: OK
+reports/yolo/capture.3.nsys-rep: OK
+reports/yolo/concurrent.sqlite: OK
+reports/yolo/qwen-only.sqlite: OK
+reports/yolo/yolo-only.sqlite: OK

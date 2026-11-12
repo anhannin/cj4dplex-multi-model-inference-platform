@@ -1,0 +1,4 @@
+  File "<string>", line 1
+    from run_sweep import measure; measure(\x27control\x27,\x27logging-smoke-control\x27,5000,5,models=\x27yolo\x27)
+                                            ^
+SyntaxError: unexpected character after line continuation character

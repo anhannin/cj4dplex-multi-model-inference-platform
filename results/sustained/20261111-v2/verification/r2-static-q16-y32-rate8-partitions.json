@@ -1,0 +1,23 @@
+{
+  "case": {
+    "condition": "static-q16-y32",
+    "label": "r2-static-q16-y32-rate8",
+    "mps": true,
+    "static": true,
+    "green": false,
+    "qsm": 16,
+    "ysm": 32
+  },
+  "parts": {
+    "qwen": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "yolo": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "native_driver": true,
+  "green": false,
+  "actual_chunk_sms": 2,
+  "raw": {
+    "qwen": "Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created\n",
+    "yolo": "Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created\n"
+  },
+  "overallocate_output": "Failed to create partition\n"
+}

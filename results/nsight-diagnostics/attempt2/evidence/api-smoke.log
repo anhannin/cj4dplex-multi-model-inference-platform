@@ -1,0 +1,7 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-15f5.qdstrm'
+[1/1] [0%                          ] api-smoke.nsys-repProcessing events...
+[1/1] [0%                          ] api-smoke.nsys-rep[1/1] [==18%                       ] api-smoke.nsys-rep[1/1] [======35%                   ] api-smoke.nsys-rep[1/1] [==============64%           ] api-smoke.nsys-rep[1/1] [===============67%          ] api-smoke.nsys-rep[1/1] [========================100%] api-smoke.nsys-rep[1/1] [========================100%] api-smoke.nsys-rep
+Generated:
+	/runtime/diag-preflight/api-smoke.nsys-rep

@@ -1,0 +1,94 @@
+[2026-11-10 03:28:06.584 Control 96914] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 03:28:06.584 Control 96914] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 03:28:06.584 Control 96914] CUDA MPS Control binary version: 13020
+[2026-11-10 03:28:06.586 Control 96914] Accepting connection...
+[2026-11-10 03:28:06.586 Control 96914] NEW UI
+[2026-11-10 03:28:06.586 Control 96914] Cmd:get_server_list
+[2026-11-10 03:28:06.586 Control 96914] UI closed
+[2026-11-10 03:28:06.609 Control 96914] Accepting connection...
+[2026-11-10 03:28:06.609 Control 96914] NEW UI
+[2026-11-10 03:28:06.609 Control 96914] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 03:28:06.636 Control 96914] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:28:06.636 Control 96914] UI closed
+[2026-11-10 03:28:06.638 Control 96914] Accepting connection...
+[2026-11-10 03:28:06.638 Control 96914] NEW UI
+[2026-11-10 03:28:06.638 Control 96914] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 03:28:06.638 Control 96914] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:28:06.638 Control 96914] UI closed
+[2026-11-10 03:28:06.640 Control 96914] Accepting connection...
+[2026-11-10 03:28:06.640 Control 96914] NEW UI
+[2026-11-10 03:28:06.640 Control 96914] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 03:28:06.640 Control 96914] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 03:28:06.640 Control 96914] Failed to create partition
+[2026-11-10 03:28:06.640 Control 96914] UI closed
+[2026-11-10 03:28:07.451 Control 96914] Accepting connection...
+[2026-11-10 03:28:07.451 Control 96914] User did not send valid credentials
+[2026-11-10 03:28:07.451 Control 96914] Accepting connection...
+[2026-11-10 03:28:07.451 Control 96914] NEW CLIENT 97290 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 03:28:07.451 Control 97296] Starting new server 97296 for user 1000
+[2026-11-10 03:28:07.454 Control 96914] Accepting connection...
+[2026-11-10 03:28:07.772 Control 96914] NEW SERVER 97296: Ready
+[2026-11-10 03:28:07.773 Control 96914] Accepting connection...
+[2026-11-10 03:28:07.773 Control 96914] User did not send valid credentials
+[2026-11-10 03:28:07.773 Control 96914] Accepting connection...
+[2026-11-10 03:28:07.773 Control 96914] NEW CLIENT 97306 from user 1000: Server already exists
+[2026-11-10 03:28:08.596 Control 96914] Accepting connection...
+[2026-11-10 03:28:08.596 Control 96914] User did not send valid credentials
+[2026-11-10 03:28:08.596 Control 96914] Accepting connection...
+[2026-11-10 03:28:08.597 Control 96914] NEW CLIENT 97117 from user 1000: Server already exists
+[2026-11-10 03:28:08.639 Control 96914] Accepting connection...
+[2026-11-10 03:28:08.639 Control 96914] User did not send valid credentials
+[2026-11-10 03:28:08.639 Control 96914] Accepting connection...
+[2026-11-10 03:28:08.640 Control 96914] NEW CLIENT 97174 from user 1000: Server already exists
+[2026-11-10 03:28:08.640 Control 96914] Accepting connection...
+[2026-11-10 03:28:08.641 Control 96914] NEW CLIENT 97117 from user 1000: Server already exists
+[2026-11-10 03:28:08.704 Control 96914] Accepting connection...
+[2026-11-10 03:28:08.704 Control 96914] NEW CLIENT 97174 from user 1000: Server already exists
+[2026-11-10 03:30:02.500 Control 96914] Accepting connection...
+[2026-11-10 03:30:02.500 Control 96914] NEW UI
+[2026-11-10 03:30:02.500 Control 96914] Cmd:get_server_list
+[2026-11-10 03:30:02.500 Control 96914] 97296
+[2026-11-10 03:30:02.500 Control 96914] UI closed
+[2026-11-10 03:30:02.501 Control 96914] Accepting connection...
+[2026-11-10 03:30:02.501 Control 96914] NEW UI
+[2026-11-10 03:30:02.501 Control 96914] Cmd:get_client_list 97296
+[2026-11-10 03:30:02.501 Control 96914] 97117
+[2026-11-10 03:30:02.501 Control 96914] 97174
+[2026-11-10 03:30:02.501 Control 96914] UI closed
+[2026-11-10 03:31:15.520 Control 96914] Accepting connection...
+[2026-11-10 03:31:15.520 Control 96914] NEW UI
+[2026-11-10 03:31:15.520 Control 96914] Cmd:get_server_list
+[2026-11-10 03:31:15.520 Control 96914] 97296
+[2026-11-10 03:31:15.520 Control 96914] UI closed
+[2026-11-10 03:31:15.521 Control 96914] Accepting connection...
+[2026-11-10 03:31:15.521 Control 96914] NEW UI
+[2026-11-10 03:31:15.521 Control 96914] Cmd:get_client_list 97296
+[2026-11-10 03:31:15.521 Control 96914] 97117
+[2026-11-10 03:31:15.521 Control 96914] 97174
+[2026-11-10 03:31:15.521 Control 96914] UI closed
+[2026-11-10 03:33:20.739 Control 96914] Accepting connection...
+[2026-11-10 03:33:20.739 Control 96914] NEW UI
+[2026-11-10 03:33:20.739 Control 96914] Cmd:get_server_list
+[2026-11-10 03:33:20.739 Control 96914] 97296
+[2026-11-10 03:33:20.739 Control 96914] UI closed
+[2026-11-10 03:33:20.740 Control 96914] Accepting connection...
+[2026-11-10 03:33:20.740 Control 96914] NEW UI
+[2026-11-10 03:33:20.740 Control 96914] Cmd:get_client_list 97296
+[2026-11-10 03:33:20.740 Control 96914] 97117
+[2026-11-10 03:33:20.740 Control 96914] 97174
+[2026-11-10 03:33:20.740 Control 96914] UI closed
+[2026-11-10 03:33:23.185 Control 96914] Accepting connection...
+[2026-11-10 03:33:23.186 Control 96914] NEW UI
+[2026-11-10 03:33:23.186 Control 96914] Cmd:get_server_list
+[2026-11-10 03:33:23.186 Control 96914] 97296
+[2026-11-10 03:33:23.186 Control 96914] UI closed
+[2026-11-10 03:33:23.187 Control 96914] Accepting connection...
+[2026-11-10 03:33:23.187 Control 96914] NEW UI
+[2026-11-10 03:33:23.187 Control 96914] Cmd:get_client_list 97296
+[2026-11-10 03:33:23.187 Control 96914] UI closed
+[2026-11-10 03:33:23.188 Control 96914] Accepting connection...
+[2026-11-10 03:33:23.188 Control 96914] NEW UI
+[2026-11-10 03:33:23.188 Control 96914] Cmd:quit
+[2026-11-10 03:33:23.188 Control 96914] Try shutting down server 97296, backoff is disabled
+[2026-11-10 03:33:23.256 Control 96914] Server 97296 exited with status 0
+[2026-11-10 03:33:23.256 Control 96914] Exit with status 0

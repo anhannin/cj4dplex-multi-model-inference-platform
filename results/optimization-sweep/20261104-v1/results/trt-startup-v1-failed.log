@@ -1,0 +1,25 @@
+Loading /experiment/engine/yolo26l.engine for TensorRT inference...
+[11/04/2026-08:40:18] [TRT] [I] Loaded engine size: 52 MiB
+[11/04/2026-08:40:18] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +64, now: CPU 0, GPU 112 (MiB)
+Traceback (most recent call last):
+  File "/experiment/src/yolo_trt_node.py", line 94, in _worker
+    not backend.engine
+        ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/nn/autobackend.py", line 300, in __getattr__
+    return super().__getattr__(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'AutoBackend' object has no attribute 'engine'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/experiment/src/yolo_trt_node.py", line 339, in <module>
+    main()
+  File "/experiment/src/yolo_trt_node.py", line 327, in main
+    node = YoloNode()
+           ^^^^^^^^^^
+  File "/experiment/src/yolo_trt_node.py", line 52, in __init__
+    raise RuntimeError("Model startup failed") from self.load_error
+RuntimeError: Model startup failed

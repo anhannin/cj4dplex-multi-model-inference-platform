@@ -1,0 +1,22 @@
+{
+  "state": "PASS",
+  "scope": "actual model kernel binding, not performance samples",
+  "checks": [
+    {
+      "label": "qwen.green.sm8",
+      "kernels": 251766,
+      "green_context_kernel_counts": {
+        "3": 251766
+      },
+      "all_roi_kernels_green": true
+    },
+    {
+      "label": "qwen.green.sm48",
+      "kernels": 251766,
+      "green_context_kernel_counts": {
+        "2": 251766
+      },
+      "all_roi_kernels_green": true
+    }
+  ]
+}

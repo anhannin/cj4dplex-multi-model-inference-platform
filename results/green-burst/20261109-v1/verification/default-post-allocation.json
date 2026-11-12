@@ -1,0 +1,35 @@
+{
+  "qwen": {
+    "selected_sms": 48,
+    "observed_smids": null,
+    "event": "gpu_resource_ready",
+    "enabled": false,
+    "pair": "default-post",
+    "pid": 1,
+    "time_ns": 1794227931860468394,
+    "clock_check": {
+      "time_namespace": "time:[4026531834]",
+      "offsets": "monotonic           0         0\nboottime            0         0\n",
+      "clock": "clock_gettime(CLOCK_MONOTONIC)"
+    }
+  },
+  "yolo": {
+    "selected_sms": 48,
+    "observed_smids": null,
+    "event": "gpu_resource_ready",
+    "enabled": false,
+    "pair": "default-post",
+    "pid": 1,
+    "time_ns": 1794227931327007042,
+    "clock_check": {
+      "time_namespace": "time:[4026531834]",
+      "offsets": "monotonic           0         0\nboottime            0         0\n",
+      "clock": "clock_gettime(CLOCK_MONOTONIC)"
+    }
+  },
+  "shared_clock": {
+    "time_namespace": "time:[4026531834]",
+    "offsets": "monotonic           0         0\nboottime            0         0\n",
+    "clock": "clock_gettime(CLOCK_MONOTONIC)"
+  }
+}

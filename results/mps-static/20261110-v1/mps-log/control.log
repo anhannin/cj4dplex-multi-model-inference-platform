@@ -1,0 +1,64 @@
+[2026-11-10 01:51:52.947 Control 1017252] Starting control daemon using socket /home/avees/cj-mps-static/20261110-v1/mps-pipe/control
+[2026-11-10 01:51:52.947 Control 1017252] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-mps-static/20261110-v1/mps-pipe
+[2026-11-10 01:51:52.947 Control 1017252] CUDA MPS Control binary version: 13010
+[2026-11-10 01:51:54.969 Control 1017252] Accepting connection...
+[2026-11-10 01:51:54.969 Control 1017252] NEW UI
+[2026-11-10 01:51:54.969 Control 1017252] Cmd:sm_partition list GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc
+[2026-11-10 01:51:54.986 Control 1017252] Invalid option for sm_partition
+[2026-11-10 01:51:54.986 Control 1017252] UI closed
+[2026-11-10 01:51:54.987 Control 1017252] Accepting connection...
+[2026-11-10 01:51:54.987 Control 1017252] NEW UI
+[2026-11-10 01:51:54.987 Control 1017252] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 01:51:54.987 Control 1017252] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 01:51:54.987 Control 1017252] UI closed
+[2026-11-10 01:52:25.474 Control 1017252] Accepting connection...
+[2026-11-10 01:52:25.474 Control 1017252] NEW UI
+[2026-11-10 01:52:25.474 Control 1017252] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 01:52:25.474 Control 1017252] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 01:52:25.474 Control 1017252] UI closed
+[2026-11-10 01:52:25.487 Control 1017252] Accepting connection...
+[2026-11-10 01:52:25.488 Control 1017252] NEW UI
+[2026-11-10 01:52:25.488 Control 1017252] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 01:52:25.488 Control 1017252] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 01:52:25.488 Control 1017252] Failed to create partition
+[2026-11-10 01:52:25.488 Control 1017252] UI closed
+[2026-11-10 01:52:46.871 Control 1017252] Accepting connection...
+[2026-11-10 01:52:46.871 Control 1017252] User did not send valid credentials
+[2026-11-10 01:52:46.871 Control 1017252] Accepting connection...
+[2026-11-10 01:52:46.871 Control 1017252] NEW CLIENT 1018758 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 01:52:46.872 Control 1018982] Starting new server 1018982 for user 1000
+[2026-11-10 01:52:46.873 Control 1017252] Accepting connection...
+[2026-11-10 01:52:47.019 Control 1017252] NEW SERVER 1018982: Ready
+[2026-11-10 01:52:47.053 Control 1017252] Accepting connection...
+[2026-11-10 01:52:47.053 Control 1017252] User did not send valid credentials
+[2026-11-10 01:52:47.053 Control 1017252] Accepting connection...
+[2026-11-10 01:52:47.053 Control 1017252] NEW CLIENT 1018752 from user 1000: Server already exists
+[2026-11-10 01:52:47.056 Control 1017252] Server 1018982 exited with status 1
+[2026-11-10 01:55:39.663 Control 1017252] Accepting connection...
+[2026-11-10 01:55:39.663 Control 1017252] User did not send valid credentials
+[2026-11-10 01:55:39.663 Control 1017252] Accepting connection...
+[2026-11-10 01:55:39.663 Control 1017252] NEW CLIENT 1022553 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 01:55:39.663 Control 1022744] Starting new server 1022744 for user 1000
+[2026-11-10 01:55:39.665 Control 1017252] Accepting connection...
+[2026-11-10 01:55:39.970 Control 1017252] NEW SERVER 1022744: Ready
+[2026-11-10 01:55:40.056 Control 1017252] Accepting connection...
+[2026-11-10 01:55:40.056 Control 1017252] User did not send valid credentials
+[2026-11-10 01:55:40.056 Control 1017252] Accepting connection...
+[2026-11-10 01:55:40.056 Control 1017252] NEW CLIENT 1022559 from user 1000: Server already exists
+[2026-11-10 01:55:40.060 Control 1017252] Server 1022744 exited with status 1
+[2026-11-10 01:58:14.258 Control 1017252] Accepting connection...
+[2026-11-10 01:58:14.258 Control 1017252] User did not send valid credentials
+[2026-11-10 01:58:14.258 Control 1017252] Accepting connection...
+[2026-11-10 01:58:14.258 Control 1017252] NEW CLIENT 1026401 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 01:58:14.259 Control 1026403] Starting new server 1026403 for user 1000
+[2026-11-10 01:58:14.260 Control 1017252] Accepting connection...
+[2026-11-10 01:58:14.576 Control 1017252] NEW SERVER 1026403: Ready
+[2026-11-10 01:58:14.668 Control 1017252] Server 1026403 exited with status 1
+[2026-11-10 01:58:31.094 Control 1017252] Accepting connection...
+[2026-11-10 01:58:31.094 Control 1017252] NEW UI
+[2026-11-10 01:58:31.094 Control 1017252] Cmd:get_server_list
+[2026-11-10 01:58:31.094 Control 1017252] UI closed
+[2026-11-10 01:59:24.079 Control 1017252] Accepting connection...
+[2026-11-10 01:59:24.079 Control 1017252] NEW UI
+[2026-11-10 01:59:24.079 Control 1017252] Cmd:quit
+[2026-11-10 01:59:24.079 Control 1017252] Exit with status 1

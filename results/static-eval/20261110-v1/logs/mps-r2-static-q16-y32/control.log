@@ -1,0 +1,94 @@
+[2026-11-10 04:27:31.911 Control 195049] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 04:27:31.912 Control 195049] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 04:27:31.912 Control 195049] CUDA MPS Control binary version: 13020
+[2026-11-10 04:27:31.913 Control 195049] Accepting connection...
+[2026-11-10 04:27:31.913 Control 195049] NEW UI
+[2026-11-10 04:27:31.913 Control 195049] Cmd:get_server_list
+[2026-11-10 04:27:31.913 Control 195049] UI closed
+[2026-11-10 04:27:31.931 Control 195049] Accepting connection...
+[2026-11-10 04:27:31.931 Control 195049] NEW UI
+[2026-11-10 04:27:31.931 Control 195049] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 04:27:31.946 Control 195049] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:27:31.946 Control 195049] UI closed
+[2026-11-10 04:27:31.948 Control 195049] Accepting connection...
+[2026-11-10 04:27:31.948 Control 195049] NEW UI
+[2026-11-10 04:27:31.948 Control 195049] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 04:27:31.948 Control 195049] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:27:31.948 Control 195049] UI closed
+[2026-11-10 04:27:31.949 Control 195049] Accepting connection...
+[2026-11-10 04:27:31.949 Control 195049] NEW UI
+[2026-11-10 04:27:31.949 Control 195049] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 04:27:31.949 Control 195049] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 04:27:31.949 Control 195049] Failed to create partition
+[2026-11-10 04:27:31.949 Control 195049] UI closed
+[2026-11-10 04:27:32.790 Control 195049] Accepting connection...
+[2026-11-10 04:27:32.790 Control 195049] User did not send valid credentials
+[2026-11-10 04:27:32.790 Control 195049] Accepting connection...
+[2026-11-10 04:27:32.790 Control 195049] NEW CLIENT 195397 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 04:27:32.791 Control 195401] Starting new server 195401 for user 1000
+[2026-11-10 04:27:32.793 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.089 Control 195049] NEW SERVER 195401: Ready
+[2026-11-10 04:27:33.089 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.089 Control 195049] User did not send valid credentials
+[2026-11-10 04:27:33.089 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.089 Control 195049] NEW CLIENT 195430 from user 1000: Server already exists
+[2026-11-10 04:27:33.908 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.908 Control 195049] User did not send valid credentials
+[2026-11-10 04:27:33.908 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.908 Control 195049] NEW CLIENT 195300 from user 1000: Server already exists
+[2026-11-10 04:27:33.951 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.951 Control 195049] NEW CLIENT 195300 from user 1000: Server already exists
+[2026-11-10 04:27:33.970 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.970 Control 195049] User did not send valid credentials
+[2026-11-10 04:27:33.970 Control 195049] Accepting connection...
+[2026-11-10 04:27:33.970 Control 195049] NEW CLIENT 195243 from user 1000: Server already exists
+[2026-11-10 04:27:34.031 Control 195049] Accepting connection...
+[2026-11-10 04:27:34.031 Control 195049] NEW CLIENT 195243 from user 1000: Server already exists
+[2026-11-10 04:29:42.743 Control 195049] Accepting connection...
+[2026-11-10 04:29:42.743 Control 195049] NEW UI
+[2026-11-10 04:29:42.743 Control 195049] Cmd:get_server_list
+[2026-11-10 04:29:42.743 Control 195049] 195401
+[2026-11-10 04:29:42.743 Control 195049] UI closed
+[2026-11-10 04:29:42.744 Control 195049] Accepting connection...
+[2026-11-10 04:29:42.744 Control 195049] NEW UI
+[2026-11-10 04:29:42.744 Control 195049] Cmd:get_client_list 195401
+[2026-11-10 04:29:42.744 Control 195049] 195300
+[2026-11-10 04:29:42.744 Control 195049] 195243
+[2026-11-10 04:29:42.744 Control 195049] UI closed
+[2026-11-10 04:30:56.016 Control 195049] Accepting connection...
+[2026-11-10 04:30:56.016 Control 195049] NEW UI
+[2026-11-10 04:30:56.016 Control 195049] Cmd:get_server_list
+[2026-11-10 04:30:56.016 Control 195049] 195401
+[2026-11-10 04:30:56.016 Control 195049] UI closed
+[2026-11-10 04:30:56.017 Control 195049] Accepting connection...
+[2026-11-10 04:30:56.017 Control 195049] NEW UI
+[2026-11-10 04:30:56.017 Control 195049] Cmd:get_client_list 195401
+[2026-11-10 04:30:56.017 Control 195049] 195300
+[2026-11-10 04:30:56.017 Control 195049] 195243
+[2026-11-10 04:30:56.017 Control 195049] UI closed
+[2026-11-10 04:33:02.049 Control 195049] Accepting connection...
+[2026-11-10 04:33:02.049 Control 195049] NEW UI
+[2026-11-10 04:33:02.049 Control 195049] Cmd:get_server_list
+[2026-11-10 04:33:02.049 Control 195049] 195401
+[2026-11-10 04:33:02.049 Control 195049] UI closed
+[2026-11-10 04:33:02.050 Control 195049] Accepting connection...
+[2026-11-10 04:33:02.050 Control 195049] NEW UI
+[2026-11-10 04:33:02.050 Control 195049] Cmd:get_client_list 195401
+[2026-11-10 04:33:02.050 Control 195049] 195300
+[2026-11-10 04:33:02.050 Control 195049] 195243
+[2026-11-10 04:33:02.050 Control 195049] UI closed
+[2026-11-10 04:33:04.500 Control 195049] Accepting connection...
+[2026-11-10 04:33:04.500 Control 195049] NEW UI
+[2026-11-10 04:33:04.500 Control 195049] Cmd:get_server_list
+[2026-11-10 04:33:04.500 Control 195049] 195401
+[2026-11-10 04:33:04.500 Control 195049] UI closed
+[2026-11-10 04:33:04.502 Control 195049] Accepting connection...
+[2026-11-10 04:33:04.502 Control 195049] NEW UI
+[2026-11-10 04:33:04.502 Control 195049] Cmd:get_client_list 195401
+[2026-11-10 04:33:04.502 Control 195049] UI closed
+[2026-11-10 04:33:04.503 Control 195049] Accepting connection...
+[2026-11-10 04:33:04.503 Control 195049] NEW UI
+[2026-11-10 04:33:04.503 Control 195049] Cmd:quit
+[2026-11-10 04:33:04.503 Control 195049] Try shutting down server 195401, backoff is disabled
+[2026-11-10 04:33:04.591 Control 195049] Server 195401 exited with status 0
+[2026-11-10 04:33:04.592 Control 195049] Exit with status 0

@@ -1,0 +1,41 @@
+{
+  "qwen": {
+    "event": "gpu_resource_ready",
+    "enabled": false,
+    "selected_sms": 48,
+    "observed_smids": null,
+    "partition_id": null,
+    "torch_build_cuda": "13.0",
+    "cuda_runtime": 13010,
+    "pid": 1,
+    "time_ns": 1794389092932930812,
+    "pair": "r2-control-rate15",
+    "clock_check": {
+      "time_namespace": "time:[4026531834]",
+      "offsets": "monotonic           0         0\nboottime            0         0\n",
+      "clock": "clock_gettime(CLOCK_MONOTONIC)"
+    }
+  },
+  "yolo": {
+    "event": "gpu_resource_ready",
+    "enabled": false,
+    "selected_sms": 48,
+    "observed_smids": null,
+    "partition_id": null,
+    "torch_build_cuda": "13.0",
+    "cuda_runtime": 13010,
+    "pid": 1,
+    "time_ns": 1794389092982169938,
+    "pair": "r2-control-rate15",
+    "clock_check": {
+      "time_namespace": "time:[4026531834]",
+      "offsets": "monotonic           0         0\nboottime            0         0\n",
+      "clock": "clock_gettime(CLOCK_MONOTONIC)"
+    }
+  },
+  "shared_clock": {
+    "time_namespace": "time:[4026531834]",
+    "offsets": "monotonic           0         0\nboottime            0         0\n",
+    "clock": "clock_gettime(CLOCK_MONOTONIC)"
+  }
+}

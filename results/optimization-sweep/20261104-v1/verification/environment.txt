@@ -1,0 +1,7 @@
+2026-11-04T18:37:52+09:00
+Linux spark-e6d6 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+name, uuid, driver_version, compute_cap, compute_mode, memory.total [MiB]
+NVIDIA GB10, GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc, 580.173.02, 12.1, Default, [N/A]
+Linger=yes
+RmProfilingAdminOnly: 1
+2 shared GPU slots

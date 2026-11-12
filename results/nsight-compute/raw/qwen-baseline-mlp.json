@@ -1,0 +1,30 @@
+{
+  "state": "PASS",
+  "model": "Qwen3.5-9B",
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "source_sha256": "3cff3b3d48b3316bf5c070cae85431477e729d6d68abad0fb09fdd05927649ac",
+  "mode": "baseline-counter-diagnostic",
+  "input_tokens": 23,
+  "max_new_tokens": 128,
+  "scope": "diagnostic only, not a baseline latency measurement",
+  "selected_modules": [
+    {
+      "name": "model.language_model.layers.0.mlp.up_proj",
+      "weight_shape": [
+        12288,
+        4096
+      ]
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.down_proj",
+      "weight_shape": [
+        4096,
+        12288
+      ]
+    }
+  ],
+  "output_tokens": 128,
+  "output_text": "*   **Shared Execution Units**: Multiple threads compete for a limited number of CUDA cores or stream processors, causing some to wait while others execute.\n*   **Memory Bandwidth Bottlenecks**: High demand for global memory access saturates the bus, forcing threads to stall while waiting for data retrieval.\n*   **Register File Pressure**: Excessive local register usage per thread reduces the total number of active warps the GPU can schedule simultaneously.\n*   **Cache Thrashing**: Intense competition for L1/L2 caches leads to frequent evictions, increasing latency and reducing data reuse efficiency.\n*   **Scheduler Overhead",
+  "exact_token_match_to_default": true,
+  "eos_or_length_finite_output": true
+}

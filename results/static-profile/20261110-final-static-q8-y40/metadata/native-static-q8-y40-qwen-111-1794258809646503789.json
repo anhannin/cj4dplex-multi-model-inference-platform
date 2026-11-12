@@ -1,0 +1,12 @@
+{
+  "event": "gpu_resource_ready",
+  "enabled": false,
+  "selected_sms": 8,
+  "observed_smids": null,
+  "partition_id": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "torch_build_cuda": "13.0",
+  "cuda_runtime": 13010,
+  "pid": 111,
+  "time_ns": 1794258809646427437,
+  "pair": "native-static-q8-y40"
+}

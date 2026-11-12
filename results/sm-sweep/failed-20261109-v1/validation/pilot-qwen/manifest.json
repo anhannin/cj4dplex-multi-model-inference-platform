@@ -1,0 +1,21 @@
+{
+  "state": "FAIL",
+  "start_wall_ns": 1794211688153433313,
+  "model": "qwen",
+  "sms": [
+    8,
+    48
+  ],
+  "rounds": 1,
+  "samples_per_round": 1,
+  "warmup_per_point_round": 1,
+  "reference_samples_per_position": 1,
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "gpu": "NVIDIA GB10",
+  "graph_capture": false,
+  "mps": false,
+  "scope": "single active real-model CUDA-event/host inference sensitivity, NOT service E2E or concurrent performance",
+  "timing_note": "CUDA events bracket native Module.forward; spans can include GPU idle/dispatch gaps, not pure kernel busy time. No added per-token synchronize.",
+  "error": "RuntimeError('Missing pinned native inference kernels')",
+  "end_wall_ns": 1794211816184867020
+}

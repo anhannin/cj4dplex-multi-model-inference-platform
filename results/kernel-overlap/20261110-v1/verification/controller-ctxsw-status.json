@@ -1,0 +1,8 @@
+{
+  "state": "FAIL",
+  "scope": "additional diagnostic scheduling/aggregate GPU metrics; rootCAP_SYS_ADMIN only collector; model Pods unchanged UID1000",
+  "start_wall_ns": 1794237868054149974,
+  "error": "AssertionError('Scheduler collector failed before ready')",
+  "restoration": "PASS",
+  "end_wall_ns": 1794238236356985888
+}

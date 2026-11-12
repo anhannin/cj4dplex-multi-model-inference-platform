@@ -1,0 +1,28 @@
+{
+  "state": "FAIL",
+  "scope": "functional routing; not SLO or security proof",
+  "requests": {
+    "r_d9f048fda2e24ec3b875bba4dc3554e6": {
+      "kind": "qwen",
+      "text": "Explain GPU resource contention in detail with six bullet points.",
+      "encoded_bytes": 0
+    },
+    "r_b1803bbf67644173bcd4bce84ebad8e3": {
+      "kind": "qwen",
+      "text": "Describe what FIFO means in one sentence.",
+      "encoded_bytes": 0
+    },
+    "r_b2d0e05e708a4491b8f0b7f9a74e64bd": {
+      "kind": "yolo",
+      "text": null,
+      "encoded_bytes": 183228
+    },
+    "r_10e5744dcfda47c8afd12bc7c615c017": {
+      "kind": "yolo",
+      "text": null,
+      "encoded_bytes": 67236
+    }
+  },
+  "clients": {},
+  "error": "AssertionError(('q1', 'Qwen response timed out: r_d9f048fda2e24ec3b875bba4dc3554e6\\n'))"
+}

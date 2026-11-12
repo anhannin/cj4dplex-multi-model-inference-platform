@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/avees/cj-ros2/benchmark/bench_ros2.py", line 260, in <module>
+    main()
+  File "/home/avees/cj-ros2/benchmark/bench_ros2.py", line 48, in main
+    import rclpy
+ModuleNotFoundError: No module named 'rclpy'

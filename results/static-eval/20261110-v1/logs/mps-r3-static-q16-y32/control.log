@@ -1,0 +1,94 @@
+[2026-11-10 05:11:11.937 Control 267201] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 05:11:11.937 Control 267201] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 05:11:11.937 Control 267201] CUDA MPS Control binary version: 13020
+[2026-11-10 05:11:11.938 Control 267201] Accepting connection...
+[2026-11-10 05:11:11.938 Control 267201] NEW UI
+[2026-11-10 05:11:11.938 Control 267201] Cmd:get_server_list
+[2026-11-10 05:11:11.938 Control 267201] UI closed
+[2026-11-10 05:11:11.956 Control 267201] Accepting connection...
+[2026-11-10 05:11:11.956 Control 267201] NEW UI
+[2026-11-10 05:11:11.956 Control 267201] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 05:11:11.973 Control 267201] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:11:11.973 Control 267201] UI closed
+[2026-11-10 05:11:11.974 Control 267201] Accepting connection...
+[2026-11-10 05:11:11.974 Control 267201] NEW UI
+[2026-11-10 05:11:11.975 Control 267201] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 05:11:11.975 Control 267201] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:11:11.975 Control 267201] UI closed
+[2026-11-10 05:11:11.976 Control 267201] Accepting connection...
+[2026-11-10 05:11:11.976 Control 267201] NEW UI
+[2026-11-10 05:11:11.976 Control 267201] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 05:11:11.976 Control 267201] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 05:11:11.976 Control 267201] Failed to create partition
+[2026-11-10 05:11:11.976 Control 267201] UI closed
+[2026-11-10 05:11:12.784 Control 267201] Accepting connection...
+[2026-11-10 05:11:12.784 Control 267201] User did not send valid credentials
+[2026-11-10 05:11:12.784 Control 267201] Accepting connection...
+[2026-11-10 05:11:12.784 Control 267201] NEW CLIENT 267565 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 05:11:12.784 Control 267568] Starting new server 267568 for user 1000
+[2026-11-10 05:11:12.786 Control 267201] Accepting connection...
+[2026-11-10 05:11:13.093 Control 267201] NEW SERVER 267568: Ready
+[2026-11-10 05:11:13.094 Control 267201] Accepting connection...
+[2026-11-10 05:11:13.094 Control 267201] User did not send valid credentials
+[2026-11-10 05:11:13.094 Control 267201] Accepting connection...
+[2026-11-10 05:11:13.094 Control 267201] NEW CLIENT 267577 from user 1000: Server already exists
+[2026-11-10 05:11:13.953 Control 267201] Accepting connection...
+[2026-11-10 05:11:13.953 Control 267201] User did not send valid credentials
+[2026-11-10 05:11:13.953 Control 267201] Accepting connection...
+[2026-11-10 05:11:13.953 Control 267201] NEW CLIENT 267401 from user 1000: Server already exists
+[2026-11-10 05:11:13.969 Control 267201] Accepting connection...
+[2026-11-10 05:11:13.970 Control 267201] User did not send valid credentials
+[2026-11-10 05:11:13.970 Control 267201] Accepting connection...
+[2026-11-10 05:11:13.970 Control 267201] NEW CLIENT 267406 from user 1000: Server already exists
+[2026-11-10 05:11:14.008 Control 267201] Accepting connection...
+[2026-11-10 05:11:14.008 Control 267201] NEW CLIENT 267401 from user 1000: Server already exists
+[2026-11-10 05:11:14.021 Control 267201] Accepting connection...
+[2026-11-10 05:11:14.021 Control 267201] NEW CLIENT 267406 from user 1000: Server already exists
+[2026-11-10 05:13:17.817 Control 267201] Accepting connection...
+[2026-11-10 05:13:17.817 Control 267201] NEW UI
+[2026-11-10 05:13:17.817 Control 267201] Cmd:get_server_list
+[2026-11-10 05:13:17.817 Control 267201] 267568
+[2026-11-10 05:13:17.817 Control 267201] UI closed
+[2026-11-10 05:13:17.819 Control 267201] Accepting connection...
+[2026-11-10 05:13:17.819 Control 267201] NEW UI
+[2026-11-10 05:13:17.819 Control 267201] Cmd:get_client_list 267568
+[2026-11-10 05:13:17.819 Control 267201] 267401
+[2026-11-10 05:13:17.819 Control 267201] 267406
+[2026-11-10 05:13:17.819 Control 267201] UI closed
+[2026-11-10 05:14:31.189 Control 267201] Accepting connection...
+[2026-11-10 05:14:31.189 Control 267201] NEW UI
+[2026-11-10 05:14:31.189 Control 267201] Cmd:get_server_list
+[2026-11-10 05:14:31.189 Control 267201] 267568
+[2026-11-10 05:14:31.189 Control 267201] UI closed
+[2026-11-10 05:14:31.190 Control 267201] Accepting connection...
+[2026-11-10 05:14:31.191 Control 267201] NEW UI
+[2026-11-10 05:14:31.191 Control 267201] Cmd:get_client_list 267568
+[2026-11-10 05:14:31.191 Control 267201] 267401
+[2026-11-10 05:14:31.191 Control 267201] 267406
+[2026-11-10 05:14:31.191 Control 267201] UI closed
+[2026-11-10 05:16:38.087 Control 267201] Accepting connection...
+[2026-11-10 05:16:38.087 Control 267201] NEW UI
+[2026-11-10 05:16:38.087 Control 267201] Cmd:get_server_list
+[2026-11-10 05:16:38.087 Control 267201] 267568
+[2026-11-10 05:16:38.087 Control 267201] UI closed
+[2026-11-10 05:16:38.088 Control 267201] Accepting connection...
+[2026-11-10 05:16:38.088 Control 267201] NEW UI
+[2026-11-10 05:16:38.088 Control 267201] Cmd:get_client_list 267568
+[2026-11-10 05:16:38.089 Control 267201] 267401
+[2026-11-10 05:16:38.089 Control 267201] 267406
+[2026-11-10 05:16:38.089 Control 267201] UI closed
+[2026-11-10 05:16:40.627 Control 267201] Accepting connection...
+[2026-11-10 05:16:40.627 Control 267201] NEW UI
+[2026-11-10 05:16:40.627 Control 267201] Cmd:get_server_list
+[2026-11-10 05:16:40.627 Control 267201] 267568
+[2026-11-10 05:16:40.627 Control 267201] UI closed
+[2026-11-10 05:16:40.629 Control 267201] Accepting connection...
+[2026-11-10 05:16:40.629 Control 267201] NEW UI
+[2026-11-10 05:16:40.629 Control 267201] Cmd:get_client_list 267568
+[2026-11-10 05:16:40.629 Control 267201] UI closed
+[2026-11-10 05:16:40.629 Control 267201] Accepting connection...
+[2026-11-10 05:16:40.629 Control 267201] NEW UI
+[2026-11-10 05:16:40.629 Control 267201] Cmd:quit
+[2026-11-10 05:16:40.629 Control 267201] Try shutting down server 267568, backoff is disabled
+[2026-11-10 05:16:40.703 Control 267201] Server 267568 exited with status 0
+[2026-11-10 05:16:40.704 Control 267201] Exit with status 0

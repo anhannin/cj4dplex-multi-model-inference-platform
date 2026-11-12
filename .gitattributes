@@ -3,3 +3,7 @@
 # Raw evidence retains original progress bars, CRLF and trailing spaces.
 results/** -whitespace
 baseline/verification/** -whitespace
+# Markdown hard line breaks intentionally use two spaces.
+*.md whitespace=-blank-at-eol
+# Generated Matplotlib SVG paths retain whitespace separators verbatim.
+docs/figures/*.svg -whitespace

@@ -1,0 +1,55 @@
+{
+  "ranking": {
+    "strict_fastest": "static-q8-y40",
+    "balanced": "static-q8-y40",
+    "band": 0.03,
+    "eligible": [
+      "control",
+      "static-q24-y24",
+      "mps-only",
+      "static-q8-y40"
+    ],
+    "pareto": [
+      "static-q8-y40"
+    ],
+    "note": "descriptive mean-total tie band then minimumCV completion; not SLO/statistical equivalence"
+  },
+  "means": [
+    {
+      "label": "control",
+      "total_ms": 113361.3247652,
+      "yolo_ms": 16321.654487
+    },
+    {
+      "label": "static-q24-y24",
+      "total_ms": 114617.8506048,
+      "yolo_ms": 14126.4292646
+    },
+    {
+      "label": "static-q40-y8",
+      "total_ms": 117721.6300342,
+      "yolo_ms": 26764.0894558
+    },
+    {
+      "label": "static-q16-y32",
+      "total_ms": 119284.9753136,
+      "yolo_ms": 12712.504785
+    },
+    {
+      "label": "mps-only",
+      "total_ms": 112494.897274,
+      "yolo_ms": 25372.7526238
+    },
+    {
+      "label": "static-q32-y16",
+      "total_ms": 119755.2849318,
+      "yolo_ms": 18125.242422
+    },
+    {
+      "label": "static-q8-y40",
+      "total_ms": 111887.31551839999,
+      "yolo_ms": 11591.8385096
+    }
+  ],
+  "audited_requests": 12005
+}

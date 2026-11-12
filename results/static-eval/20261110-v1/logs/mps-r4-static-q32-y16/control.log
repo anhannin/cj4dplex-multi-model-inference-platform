@@ -1,0 +1,94 @@
+[2026-11-10 05:43:37.445 Control 321750] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 05:43:37.445 Control 321750] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 05:43:37.445 Control 321750] CUDA MPS Control binary version: 13020
+[2026-11-10 05:43:37.446 Control 321750] Accepting connection...
+[2026-11-10 05:43:37.446 Control 321750] NEW UI
+[2026-11-10 05:43:37.447 Control 321750] Cmd:get_server_list
+[2026-11-10 05:43:37.447 Control 321750] UI closed
+[2026-11-10 05:43:37.464 Control 321750] Accepting connection...
+[2026-11-10 05:43:37.464 Control 321750] NEW UI
+[2026-11-10 05:43:37.464 Control 321750] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 05:43:37.483 Control 321750] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/z/M8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:43:37.483 Control 321750] UI closed
+[2026-11-10 05:43:37.484 Control 321750] Accepting connection...
+[2026-11-10 05:43:37.484 Control 321750] NEW UI
+[2026-11-10 05:43:37.484 Control 321750] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 05:43:37.485 Control 321750] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/MAzDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 05:43:37.485 Control 321750] UI closed
+[2026-11-10 05:43:37.486 Control 321750] Accepting connection...
+[2026-11-10 05:43:37.486 Control 321750] NEW UI
+[2026-11-10 05:43:37.486 Control 321750] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 05:43:37.486 Control 321750] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 05:43:37.486 Control 321750] Failed to create partition
+[2026-11-10 05:43:37.486 Control 321750] UI closed
+[2026-11-10 05:43:38.320 Control 321750] Accepting connection...
+[2026-11-10 05:43:38.320 Control 321750] User did not send valid credentials
+[2026-11-10 05:43:38.320 Control 321750] Accepting connection...
+[2026-11-10 05:43:38.320 Control 321750] NEW CLIENT 322116 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 05:43:38.321 Control 322118] Starting new server 322118 for user 1000
+[2026-11-10 05:43:38.323 Control 321750] Accepting connection...
+[2026-11-10 05:43:38.685 Control 321750] NEW SERVER 322118: Ready
+[2026-11-10 05:43:38.685 Control 321750] Accepting connection...
+[2026-11-10 05:43:38.686 Control 321750] User did not send valid credentials
+[2026-11-10 05:43:38.686 Control 321750] Accepting connection...
+[2026-11-10 05:43:38.686 Control 321750] NEW CLIENT 322153 from user 1000: Server already exists
+[2026-11-10 05:43:39.511 Control 321750] Accepting connection...
+[2026-11-10 05:43:39.511 Control 321750] User did not send valid credentials
+[2026-11-10 05:43:39.511 Control 321750] Accepting connection...
+[2026-11-10 05:43:39.511 Control 321750] NEW CLIENT 321996 from user 1000: Server already exists
+[2026-11-10 05:43:39.512 Control 321750] Accepting connection...
+[2026-11-10 05:43:39.512 Control 321750] User did not send valid credentials
+[2026-11-10 05:43:39.512 Control 321750] Accepting connection...
+[2026-11-10 05:43:39.512 Control 321750] NEW CLIENT 321960 from user 1000: Server already exists
+[2026-11-10 05:43:39.590 Control 321750] Accepting connection...
+[2026-11-10 05:43:39.590 Control 321750] NEW CLIENT 321960 from user 1000: Server already exists
+[2026-11-10 05:43:39.592 Control 321750] Accepting connection...
+[2026-11-10 05:43:39.592 Control 321750] NEW CLIENT 321996 from user 1000: Server already exists
+[2026-11-10 05:45:33.340 Control 321750] Accepting connection...
+[2026-11-10 05:45:33.340 Control 321750] NEW UI
+[2026-11-10 05:45:33.340 Control 321750] Cmd:get_server_list
+[2026-11-10 05:45:33.340 Control 321750] 322118
+[2026-11-10 05:45:33.340 Control 321750] UI closed
+[2026-11-10 05:45:33.341 Control 321750] Accepting connection...
+[2026-11-10 05:45:33.341 Control 321750] NEW UI
+[2026-11-10 05:45:33.341 Control 321750] Cmd:get_client_list 322118
+[2026-11-10 05:45:33.341 Control 321750] 321960
+[2026-11-10 05:45:33.341 Control 321750] 321996
+[2026-11-10 05:45:33.341 Control 321750] UI closed
+[2026-11-10 05:46:46.752 Control 321750] Accepting connection...
+[2026-11-10 05:46:46.752 Control 321750] NEW UI
+[2026-11-10 05:46:46.752 Control 321750] Cmd:get_server_list
+[2026-11-10 05:46:46.752 Control 321750] 322118
+[2026-11-10 05:46:46.752 Control 321750] UI closed
+[2026-11-10 05:46:46.754 Control 321750] Accepting connection...
+[2026-11-10 05:46:46.754 Control 321750] NEW UI
+[2026-11-10 05:46:46.754 Control 321750] Cmd:get_client_list 322118
+[2026-11-10 05:46:46.754 Control 321750] 321960
+[2026-11-10 05:46:46.754 Control 321750] 321996
+[2026-11-10 05:46:46.754 Control 321750] UI closed
+[2026-11-10 05:48:54.076 Control 321750] Accepting connection...
+[2026-11-10 05:48:54.076 Control 321750] NEW UI
+[2026-11-10 05:48:54.076 Control 321750] Cmd:get_server_list
+[2026-11-10 05:48:54.076 Control 321750] 322118
+[2026-11-10 05:48:54.076 Control 321750] UI closed
+[2026-11-10 05:48:54.077 Control 321750] Accepting connection...
+[2026-11-10 05:48:54.077 Control 321750] NEW UI
+[2026-11-10 05:48:54.077 Control 321750] Cmd:get_client_list 322118
+[2026-11-10 05:48:54.077 Control 321750] 321960
+[2026-11-10 05:48:54.077 Control 321750] 321996
+[2026-11-10 05:48:54.077 Control 321750] UI closed
+[2026-11-10 05:48:56.113 Control 321750] Accepting connection...
+[2026-11-10 05:48:56.113 Control 321750] NEW UI
+[2026-11-10 05:48:56.113 Control 321750] Cmd:get_server_list
+[2026-11-10 05:48:56.113 Control 321750] 322118
+[2026-11-10 05:48:56.113 Control 321750] UI closed
+[2026-11-10 05:48:56.114 Control 321750] Accepting connection...
+[2026-11-10 05:48:56.114 Control 321750] NEW UI
+[2026-11-10 05:48:56.114 Control 321750] Cmd:get_client_list 322118
+[2026-11-10 05:48:56.114 Control 321750] UI closed
+[2026-11-10 05:48:56.117 Control 321750] Accepting connection...
+[2026-11-10 05:48:56.117 Control 321750] NEW UI
+[2026-11-10 05:48:56.117 Control 321750] Cmd:quit
+[2026-11-10 05:48:56.117 Control 321750] Try shutting down server 322118, backoff is disabled
+[2026-11-10 05:48:56.180 Control 321750] Server 322118 exited with status 0
+[2026-11-10 05:48:56.180 Control 321750] Exit with status 0

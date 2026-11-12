@@ -1,0 +1,8 @@
+{
+  "state": "FAIL",
+  "start": 1794211674.8811793,
+  "root": "/home/avees/cj-sm-sweep/20261109-v1",
+  "error": "CalledProcessError(1, ['ssh', '-o', 'ConnectTimeout=10', 'avees@192.168.24.204', 'docker run --rm --name cj-sm-sweep-pilot-qwen --gpus all --ipc=host --network none --user 1000:1000 --cap-drop ALL -e HOME=/tmp -e HF_HUB_OFFLINE=1 -e YOLO_CONFIG_DIR=/tmp/yolo -e PYTHONPATH=/experiment/src -e TRITON_CACHE_DIR=/experiment/cache/triton -v /home/avees/cj-sm-sweep/20261109-v1:/experiment -v /home/avees/.cache/huggingface/hub:/cache:ro -v /home/avees/cj-containers/assets:/assets:ro --entrypoint /usr/local/cuda/bin/nsys cj-qwen-ros:9b-timing-v1 profile --trace=cuda,nvtx --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --output /experiment/validation/pilot-qwen python /experiment/src/run_model.py --model qwen --output /experiment/validation/pilot-qwen --sms 8 48 --rounds 1 --samples-per-round 1 --warmup 1 --reference-samples 1 --trace-probe > /home/avees/cj-sm-sweep/20261109-v1/logs/pilot-qwen.log 2>&1'])",
+  "restoration": "PASS",
+  "end": 1794211983.8513203
+}

@@ -1,0 +1,1529 @@
+{
+  "scope": "kernel replay diagnostic, not serving latency baseline",
+  "kernels": [
+    {
+      "id": 0,
+      "kernel": "enable_if<!T7, void>::type kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 0, 1, 1, 0, 7, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+      "metrics": {
+        "SM Frequency": {
+          "value": 2.41,
+          "unit": "Ghz",
+          "raw": "2.41",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Elapsed Cycles": {
+          "value": 26758847.0,
+          "unit": "cycle",
+          "raw": "26758847",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Memory Throughput": {
+          "value": 15.81,
+          "unit": "%",
+          "raw": "15.81",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Duration": {
+          "value": 11.08,
+          "unit": "ms",
+          "raw": "11.08",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L1/TEX Cache Throughput": {
+          "value": 10.41,
+          "unit": "%",
+          "raw": "10.41",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L2 Cache Throughput": {
+          "value": 16.52,
+          "unit": "%",
+          "raw": "16.52",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "SM Active Cycles": {
+          "value": 26484507.94,
+          "unit": "cycle",
+          "raw": "26484507.94",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Compute (SM) Throughput": {
+          "value": 10.3,
+          "unit": "%",
+          "raw": "10.30",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Block Size": {
+          "value": 128.0,
+          "unit": "",
+          "raw": "128",
+          "section": "Launch Statistics"
+        },
+        "Cluster Scheduling Policy": {
+          "value": null,
+          "unit": "",
+          "raw": "PolicySpread",
+          "section": "Launch Statistics"
+        },
+        "Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Function Cache Configuration": {
+          "value": null,
+          "unit": "",
+          "raw": "CachePreferNone",
+          "section": "Launch Statistics"
+        },
+        "Grid Size": {
+          "value": 31040.0,
+          "unit": "",
+          "raw": "31040",
+          "section": "Launch Statistics"
+        },
+        "Preferred Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Registers Per Thread": {
+          "value": 164.0,
+          "unit": "register/thread",
+          "raw": "164",
+          "section": "Launch Statistics"
+        },
+        "Shared Memory Configuration Size": {
+          "value": 16.38,
+          "unit": "Kbyte",
+          "raw": "16.38",
+          "section": "Launch Statistics"
+        },
+        "Driver Shared Memory Per Block": {
+          "value": 1.02,
+          "unit": "Kbyte/block",
+          "raw": "1.02",
+          "section": "Launch Statistics"
+        },
+        "Dynamic Shared Memory Per Block": {
+          "value": 544.0,
+          "unit": "byte/block",
+          "raw": "544",
+          "section": "Launch Statistics"
+        },
+        "Static Shared Memory Per Block": {
+          "value": 0.0,
+          "unit": "byte/block",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "# SMs": {
+          "value": 48.0,
+          "unit": "SM",
+          "raw": "48",
+          "section": "Launch Statistics"
+        },
+        "Stack Size": {
+          "value": 2624.0,
+          "unit": "",
+          "raw": "2624",
+          "section": "Launch Statistics"
+        },
+        "Threads": {
+          "value": 3973120.0,
+          "unit": "thread",
+          "raw": "3973120",
+          "section": "Launch Statistics"
+        },
+        "# TPCs": {
+          "value": 24.0,
+          "unit": "",
+          "raw": "24",
+          "section": "Launch Statistics"
+        },
+        "Enabled TPC IDs": {
+          "value": null,
+          "unit": "",
+          "raw": "all",
+          "section": "Launch Statistics"
+        },
+        "Uses Green Context": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Waves Per SM": {
+          "value": 215.56,
+          "unit": "",
+          "raw": "215.56",
+          "section": "Launch Statistics"
+        },
+        "Max Active Clusters": {
+          "value": 0.0,
+          "unit": "cluster",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Max Cluster Size": {
+          "value": 8.0,
+          "unit": "block",
+          "raw": "8",
+          "section": "Occupancy"
+        },
+        "Overall GPU Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Cluster Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Block Limit Barriers": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit SM": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit Registers": {
+          "value": 3.0,
+          "unit": "block",
+          "raw": "3",
+          "section": "Occupancy"
+        },
+        "Block Limit Shared Mem": {
+          "value": 9.0,
+          "unit": "block",
+          "raw": "9",
+          "section": "Occupancy"
+        },
+        "Block Limit Warps": {
+          "value": 12.0,
+          "unit": "block",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Active Warps per SM": {
+          "value": 12.0,
+          "unit": "warp",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Occupancy": {
+          "value": 25.0,
+          "unit": "%",
+          "raw": "25",
+          "section": "Occupancy"
+        },
+        "Achieved Occupancy": {
+          "value": 25.16,
+          "unit": "%",
+          "raw": "25.16",
+          "section": "Occupancy"
+        },
+        "Achieved Active Warps Per SM": {
+          "value": 12.08,
+          "unit": "warp",
+          "raw": "12.08",
+          "section": "Occupancy"
+        }
+      },
+      "rules": [
+        {
+          "name": "SOLBottleneck",
+          "text": "This workload exhibits low compute throughput and memory bandwidth utilization relative to the peak performance of this device. Achieved compute throughput and/or memory bandwidth below 60.0% of peak typically indicate latency issues. Look at Scheduler Statistics and Warp State Statistics for potential reasons."
+        },
+        {
+          "name": "TheoreticalOccupancy",
+          "text": "The 3.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the hardware maximum of 12. This kernel's theoretical occupancy (25.0%) is limited by the number of required registers."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "kernel": "enable_if<!T7, void>::type kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 0, 1, 1, 0, 7, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+      "metrics": {
+        "SM Frequency": {
+          "value": 2.42,
+          "unit": "Ghz",
+          "raw": "2.42",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Elapsed Cycles": {
+          "value": 879285.0,
+          "unit": "cycle",
+          "raw": "879285",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Memory Throughput": {
+          "value": 10.87,
+          "unit": "%",
+          "raw": "10.87",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Duration": {
+          "value": 364.0,
+          "unit": "us",
+          "raw": "364",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L1/TEX Cache Throughput": {
+          "value": 14.93,
+          "unit": "%",
+          "raw": "14.93",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L2 Cache Throughput": {
+          "value": 16.61,
+          "unit": "%",
+          "raw": "16.61",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "SM Active Cycles": {
+          "value": 640147.77,
+          "unit": "cycle",
+          "raw": "640147.77",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Compute (SM) Throughput": {
+          "value": 10.87,
+          "unit": "%",
+          "raw": "10.87",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Block Size": {
+          "value": 128.0,
+          "unit": "",
+          "raw": "128",
+          "section": "Launch Statistics"
+        },
+        "Cluster Scheduling Policy": {
+          "value": null,
+          "unit": "",
+          "raw": "PolicySpread",
+          "section": "Launch Statistics"
+        },
+        "Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Function Cache Configuration": {
+          "value": null,
+          "unit": "",
+          "raw": "CachePreferNone",
+          "section": "Launch Statistics"
+        },
+        "Grid Size": {
+          "value": 2048.0,
+          "unit": "",
+          "raw": "2048",
+          "section": "Launch Statistics"
+        },
+        "Preferred Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Registers Per Thread": {
+          "value": 164.0,
+          "unit": "register/thread",
+          "raw": "164",
+          "section": "Launch Statistics"
+        },
+        "Shared Memory Configuration Size": {
+          "value": 16.38,
+          "unit": "Kbyte",
+          "raw": "16.38",
+          "section": "Launch Statistics"
+        },
+        "Driver Shared Memory Per Block": {
+          "value": 1.02,
+          "unit": "Kbyte/block",
+          "raw": "1.02",
+          "section": "Launch Statistics"
+        },
+        "Dynamic Shared Memory Per Block": {
+          "value": 528.0,
+          "unit": "byte/block",
+          "raw": "528",
+          "section": "Launch Statistics"
+        },
+        "Static Shared Memory Per Block": {
+          "value": 0.0,
+          "unit": "byte/block",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "# SMs": {
+          "value": 48.0,
+          "unit": "SM",
+          "raw": "48",
+          "section": "Launch Statistics"
+        },
+        "Stack Size": {
+          "value": 2624.0,
+          "unit": "",
+          "raw": "2624",
+          "section": "Launch Statistics"
+        },
+        "Threads": {
+          "value": 262144.0,
+          "unit": "thread",
+          "raw": "262144",
+          "section": "Launch Statistics"
+        },
+        "# TPCs": {
+          "value": 24.0,
+          "unit": "",
+          "raw": "24",
+          "section": "Launch Statistics"
+        },
+        "Enabled TPC IDs": {
+          "value": null,
+          "unit": "",
+          "raw": "all",
+          "section": "Launch Statistics"
+        },
+        "Uses Green Context": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Waves Per SM": {
+          "value": 14.22,
+          "unit": "",
+          "raw": "14.22",
+          "section": "Launch Statistics"
+        },
+        "Max Active Clusters": {
+          "value": 0.0,
+          "unit": "cluster",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Max Cluster Size": {
+          "value": 8.0,
+          "unit": "block",
+          "raw": "8",
+          "section": "Occupancy"
+        },
+        "Overall GPU Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Cluster Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Block Limit Barriers": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit SM": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit Registers": {
+          "value": 3.0,
+          "unit": "block",
+          "raw": "3",
+          "section": "Occupancy"
+        },
+        "Block Limit Shared Mem": {
+          "value": 9.0,
+          "unit": "block",
+          "raw": "9",
+          "section": "Occupancy"
+        },
+        "Block Limit Warps": {
+          "value": 12.0,
+          "unit": "block",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Active Warps per SM": {
+          "value": 12.0,
+          "unit": "warp",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Occupancy": {
+          "value": 25.0,
+          "unit": "%",
+          "raw": "25",
+          "section": "Occupancy"
+        },
+        "Achieved Occupancy": {
+          "value": 33.03,
+          "unit": "%",
+          "raw": "33.03",
+          "section": "Occupancy"
+        },
+        "Achieved Active Warps Per SM": {
+          "value": 15.85,
+          "unit": "warp",
+          "raw": "15.85",
+          "section": "Occupancy"
+        }
+      },
+      "rules": [
+        {
+          "name": "SOLBottleneck",
+          "text": "This workload exhibits low compute throughput and memory bandwidth utilization relative to the peak performance of this device. Achieved compute throughput and/or memory bandwidth below 60.0% of peak typically indicate latency issues. Look at Scheduler Statistics and Warp State Statistics for potential reasons."
+        },
+        {
+          "name": "TheoreticalOccupancy",
+          "text": "The 3.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the hardware maximum of 12. This kernel's theoretical occupancy (25.0%) is limited by the number of required registers."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kernel": "enable_if<!T7, void>::type kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 0, 1, 1, 0, 6, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+      "metrics": {
+        "SM Frequency": {
+          "value": 2.42,
+          "unit": "Ghz",
+          "raw": "2.42",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Elapsed Cycles": {
+          "value": 553292.0,
+          "unit": "cycle",
+          "raw": "553292",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Memory Throughput": {
+          "value": 13.59,
+          "unit": "%",
+          "raw": "13.59",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Duration": {
+          "value": 229.09,
+          "unit": "us",
+          "raw": "229.09",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L1/TEX Cache Throughput": {
+          "value": 9.88,
+          "unit": "%",
+          "raw": "9.88",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L2 Cache Throughput": {
+          "value": 13.59,
+          "unit": "%",
+          "raw": "13.59",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "SM Active Cycles": {
+          "value": 460386.25,
+          "unit": "cycle",
+          "raw": "460386.25",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Compute (SM) Throughput": {
+          "value": 8.22,
+          "unit": "%",
+          "raw": "8.22",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Block Size": {
+          "value": 64.0,
+          "unit": "",
+          "raw": "64",
+          "section": "Launch Statistics"
+        },
+        "Cluster Scheduling Policy": {
+          "value": null,
+          "unit": "",
+          "raw": "PolicySpread",
+          "section": "Launch Statistics"
+        },
+        "Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Function Cache Configuration": {
+          "value": null,
+          "unit": "",
+          "raw": "CachePreferNone",
+          "section": "Launch Statistics"
+        },
+        "Grid Size": {
+          "value": 1024.0,
+          "unit": "",
+          "raw": "1024",
+          "section": "Launch Statistics"
+        },
+        "Preferred Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Registers Per Thread": {
+          "value": 164.0,
+          "unit": "register/thread",
+          "raw": "164",
+          "section": "Launch Statistics"
+        },
+        "Shared Memory Configuration Size": {
+          "value": 32.77,
+          "unit": "Kbyte",
+          "raw": "32.77",
+          "section": "Launch Statistics"
+        },
+        "Driver Shared Memory Per Block": {
+          "value": 1.02,
+          "unit": "Kbyte/block",
+          "raw": "1.02",
+          "section": "Launch Statistics"
+        },
+        "Dynamic Shared Memory Per Block": {
+          "value": 272.0,
+          "unit": "byte/block",
+          "raw": "272",
+          "section": "Launch Statistics"
+        },
+        "Static Shared Memory Per Block": {
+          "value": 0.0,
+          "unit": "byte/block",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "# SMs": {
+          "value": 48.0,
+          "unit": "SM",
+          "raw": "48",
+          "section": "Launch Statistics"
+        },
+        "Stack Size": {
+          "value": 2624.0,
+          "unit": "",
+          "raw": "2624",
+          "section": "Launch Statistics"
+        },
+        "Threads": {
+          "value": 65536.0,
+          "unit": "thread",
+          "raw": "65536",
+          "section": "Launch Statistics"
+        },
+        "# TPCs": {
+          "value": 24.0,
+          "unit": "",
+          "raw": "24",
+          "section": "Launch Statistics"
+        },
+        "Enabled TPC IDs": {
+          "value": null,
+          "unit": "",
+          "raw": "all",
+          "section": "Launch Statistics"
+        },
+        "Uses Green Context": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Waves Per SM": {
+          "value": 3.56,
+          "unit": "",
+          "raw": "3.56",
+          "section": "Launch Statistics"
+        },
+        "Max Active Clusters": {
+          "value": 0.0,
+          "unit": "cluster",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Max Cluster Size": {
+          "value": 8.0,
+          "unit": "block",
+          "raw": "8",
+          "section": "Occupancy"
+        },
+        "Overall GPU Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Cluster Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Block Limit Barriers": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit SM": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit Registers": {
+          "value": 6.0,
+          "unit": "block",
+          "raw": "6",
+          "section": "Occupancy"
+        },
+        "Block Limit Shared Mem": {
+          "value": 23.0,
+          "unit": "block",
+          "raw": "23",
+          "section": "Occupancy"
+        },
+        "Block Limit Warps": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Theoretical Active Warps per SM": {
+          "value": 12.0,
+          "unit": "warp",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Occupancy": {
+          "value": 25.0,
+          "unit": "%",
+          "raw": "25",
+          "section": "Occupancy"
+        },
+        "Achieved Occupancy": {
+          "value": 27.52,
+          "unit": "%",
+          "raw": "27.52",
+          "section": "Occupancy"
+        },
+        "Achieved Active Warps Per SM": {
+          "value": 13.21,
+          "unit": "warp",
+          "raw": "13.21",
+          "section": "Occupancy"
+        }
+      },
+      "rules": [
+        {
+          "name": "SOLBottleneck",
+          "text": "This workload exhibits low compute throughput and memory bandwidth utilization relative to the peak performance of this device. Achieved compute throughput and/or memory bandwidth below 60.0% of peak typically indicate latency issues. Look at Scheduler Statistics and Warp State Statistics for potential reasons."
+        },
+        {
+          "name": "LaunchConfiguration",
+          "text": "A wave of thread blocks is defined as the maximum number of blocks that can be executed in parallel on the target GPU. The number of blocks in a wave depends on the number of multiprocessors and the theoretical occupancy of the kernel. This kernel launch results in 3 full waves and a partial wave of 160 thread blocks. Under the assumption of a uniform execution duration of all thread blocks, this partial wave may account for up to 25.0% of the total runtime of this kernel. Try launching a grid with no partial wave. The overall impact of this tail effect also lessens with the number of full waves executed for a grid. See the Hardware Model (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model) description for more details on launch configurations."
+        },
+        {
+          "name": "TheoreticalOccupancy",
+          "text": "The 3.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the hardware maximum of 12. This kernel's theoretical occupancy (25.0%) is limited by the number of required registers."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "kernel": "enable_if<!T7, void>::type kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 0, 1, 1, 0, 7, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+      "metrics": {
+        "SM Frequency": {
+          "value": 2.4,
+          "unit": "Ghz",
+          "raw": "2.40",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Elapsed Cycles": {
+          "value": 31766.0,
+          "unit": "cycle",
+          "raw": "31766",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Memory Throughput": {
+          "value": 1.61,
+          "unit": "%",
+          "raw": "1.61",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Duration": {
+          "value": 13.22,
+          "unit": "us",
+          "raw": "13.22",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L1/TEX Cache Throughput": {
+          "value": 13.98,
+          "unit": "%",
+          "raw": "13.98",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L2 Cache Throughput": {
+          "value": 2.08,
+          "unit": "%",
+          "raw": "2.08",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "SM Active Cycles": {
+          "value": 2669.56,
+          "unit": "cycle",
+          "raw": "2669.56",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Compute (SM) Throughput": {
+          "value": 1.18,
+          "unit": "%",
+          "raw": "1.18",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Block Size": {
+          "value": 128.0,
+          "unit": "",
+          "raw": "128",
+          "section": "Launch Statistics"
+        },
+        "Cluster Scheduling Policy": {
+          "value": null,
+          "unit": "",
+          "raw": "PolicySpread",
+          "section": "Launch Statistics"
+        },
+        "Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Function Cache Configuration": {
+          "value": null,
+          "unit": "",
+          "raw": "CachePreferNone",
+          "section": "Launch Statistics"
+        },
+        "Grid Size": {
+          "value": 8.0,
+          "unit": "",
+          "raw": "8",
+          "section": "Launch Statistics"
+        },
+        "Preferred Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Registers Per Thread": {
+          "value": 164.0,
+          "unit": "register/thread",
+          "raw": "164",
+          "section": "Launch Statistics"
+        },
+        "Shared Memory Configuration Size": {
+          "value": 16.38,
+          "unit": "Kbyte",
+          "raw": "16.38",
+          "section": "Launch Statistics"
+        },
+        "Driver Shared Memory Per Block": {
+          "value": 1.02,
+          "unit": "Kbyte/block",
+          "raw": "1.02",
+          "section": "Launch Statistics"
+        },
+        "Dynamic Shared Memory Per Block": {
+          "value": 528.0,
+          "unit": "byte/block",
+          "raw": "528",
+          "section": "Launch Statistics"
+        },
+        "Static Shared Memory Per Block": {
+          "value": 0.0,
+          "unit": "byte/block",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "# SMs": {
+          "value": 48.0,
+          "unit": "SM",
+          "raw": "48",
+          "section": "Launch Statistics"
+        },
+        "Stack Size": {
+          "value": 2624.0,
+          "unit": "",
+          "raw": "2624",
+          "section": "Launch Statistics"
+        },
+        "Threads": {
+          "value": 1024.0,
+          "unit": "thread",
+          "raw": "1024",
+          "section": "Launch Statistics"
+        },
+        "# TPCs": {
+          "value": 24.0,
+          "unit": "",
+          "raw": "24",
+          "section": "Launch Statistics"
+        },
+        "Enabled TPC IDs": {
+          "value": null,
+          "unit": "",
+          "raw": "all",
+          "section": "Launch Statistics"
+        },
+        "Uses Green Context": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Waves Per SM": {
+          "value": 0.06,
+          "unit": "",
+          "raw": "0.06",
+          "section": "Launch Statistics"
+        },
+        "Max Active Clusters": {
+          "value": 0.0,
+          "unit": "cluster",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Max Cluster Size": {
+          "value": 8.0,
+          "unit": "block",
+          "raw": "8",
+          "section": "Occupancy"
+        },
+        "Overall GPU Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Cluster Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Block Limit Barriers": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit SM": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit Registers": {
+          "value": 3.0,
+          "unit": "block",
+          "raw": "3",
+          "section": "Occupancy"
+        },
+        "Block Limit Shared Mem": {
+          "value": 9.0,
+          "unit": "block",
+          "raw": "9",
+          "section": "Occupancy"
+        },
+        "Block Limit Warps": {
+          "value": 12.0,
+          "unit": "block",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Active Warps per SM": {
+          "value": 12.0,
+          "unit": "warp",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Occupancy": {
+          "value": 25.0,
+          "unit": "%",
+          "raw": "25",
+          "section": "Occupancy"
+        },
+        "Achieved Occupancy": {
+          "value": 11.22,
+          "unit": "%",
+          "raw": "11.22",
+          "section": "Occupancy"
+        },
+        "Achieved Active Warps Per SM": {
+          "value": 5.39,
+          "unit": "warp",
+          "raw": "5.39",
+          "section": "Occupancy"
+        }
+      },
+      "rules": [
+        {
+          "name": "SOLBottleneck",
+          "text": "This kernel grid is too small to fill the available resources on this device, resulting in only 0.1 full waves across all SMs. Look at Launch Statistics for more details."
+        },
+        {
+          "name": "LaunchConfiguration",
+          "text": "The grid for this launch is configured to execute only 8 blocks, which is less than the GPU's 48 multiprocessors. This can underutilize some multiprocessors. If you do not intend to execute this kernel concurrently with other workloads, consider reducing the block size to have at least one block per multiprocessor or increase the size of the grid to fully utilize the available hardware resources. See the Hardware Model (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model) description for more details on launch configurations."
+        },
+        {
+          "name": "AchievedOccupancy",
+          "text": "The difference between calculated theoretical (25.0%) and measured achieved occupancy (11.2%) can be the result of warp scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on optimizing occupancy."
+        },
+        {
+          "name": "TheoreticalOccupancy",
+          "text": "The 3.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the hardware maximum of 12. This kernel's theoretical occupancy (25.0%) is limited by the number of required registers."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "kernel": "enable_if<!T7, void>::type kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 0, 1, 1, 0, 7, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+      "metrics": {
+        "SM Frequency": {
+          "value": 2.42,
+          "unit": "Ghz",
+          "raw": "2.42",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Elapsed Cycles": {
+          "value": 27955.0,
+          "unit": "cycle",
+          "raw": "27955",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Memory Throughput": {
+          "value": 1.82,
+          "unit": "%",
+          "raw": "1.82",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Duration": {
+          "value": 11.55,
+          "unit": "us",
+          "raw": "11.55",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L1/TEX Cache Throughput": {
+          "value": 14.34,
+          "unit": "%",
+          "raw": "14.34",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L2 Cache Throughput": {
+          "value": 2.35,
+          "unit": "%",
+          "raw": "2.35",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "SM Active Cycles": {
+          "value": 2603.31,
+          "unit": "cycle",
+          "raw": "2603.31",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Compute (SM) Throughput": {
+          "value": 1.34,
+          "unit": "%",
+          "raw": "1.34",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Block Size": {
+          "value": 128.0,
+          "unit": "",
+          "raw": "128",
+          "section": "Launch Statistics"
+        },
+        "Cluster Scheduling Policy": {
+          "value": null,
+          "unit": "",
+          "raw": "PolicySpread",
+          "section": "Launch Statistics"
+        },
+        "Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Function Cache Configuration": {
+          "value": null,
+          "unit": "",
+          "raw": "CachePreferNone",
+          "section": "Launch Statistics"
+        },
+        "Grid Size": {
+          "value": 8.0,
+          "unit": "",
+          "raw": "8",
+          "section": "Launch Statistics"
+        },
+        "Preferred Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Registers Per Thread": {
+          "value": 164.0,
+          "unit": "register/thread",
+          "raw": "164",
+          "section": "Launch Statistics"
+        },
+        "Shared Memory Configuration Size": {
+          "value": 16.38,
+          "unit": "Kbyte",
+          "raw": "16.38",
+          "section": "Launch Statistics"
+        },
+        "Driver Shared Memory Per Block": {
+          "value": 1.02,
+          "unit": "Kbyte/block",
+          "raw": "1.02",
+          "section": "Launch Statistics"
+        },
+        "Dynamic Shared Memory Per Block": {
+          "value": 528.0,
+          "unit": "byte/block",
+          "raw": "528",
+          "section": "Launch Statistics"
+        },
+        "Static Shared Memory Per Block": {
+          "value": 0.0,
+          "unit": "byte/block",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "# SMs": {
+          "value": 48.0,
+          "unit": "SM",
+          "raw": "48",
+          "section": "Launch Statistics"
+        },
+        "Stack Size": {
+          "value": 2624.0,
+          "unit": "",
+          "raw": "2624",
+          "section": "Launch Statistics"
+        },
+        "Threads": {
+          "value": 1024.0,
+          "unit": "thread",
+          "raw": "1024",
+          "section": "Launch Statistics"
+        },
+        "# TPCs": {
+          "value": 24.0,
+          "unit": "",
+          "raw": "24",
+          "section": "Launch Statistics"
+        },
+        "Enabled TPC IDs": {
+          "value": null,
+          "unit": "",
+          "raw": "all",
+          "section": "Launch Statistics"
+        },
+        "Uses Green Context": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Waves Per SM": {
+          "value": 0.06,
+          "unit": "",
+          "raw": "0.06",
+          "section": "Launch Statistics"
+        },
+        "Max Active Clusters": {
+          "value": 0.0,
+          "unit": "cluster",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Max Cluster Size": {
+          "value": 8.0,
+          "unit": "block",
+          "raw": "8",
+          "section": "Occupancy"
+        },
+        "Overall GPU Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Cluster Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Block Limit Barriers": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit SM": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit Registers": {
+          "value": 3.0,
+          "unit": "block",
+          "raw": "3",
+          "section": "Occupancy"
+        },
+        "Block Limit Shared Mem": {
+          "value": 9.0,
+          "unit": "block",
+          "raw": "9",
+          "section": "Occupancy"
+        },
+        "Block Limit Warps": {
+          "value": 12.0,
+          "unit": "block",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Active Warps per SM": {
+          "value": 12.0,
+          "unit": "warp",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Occupancy": {
+          "value": 25.0,
+          "unit": "%",
+          "raw": "25",
+          "section": "Occupancy"
+        },
+        "Achieved Occupancy": {
+          "value": 11.64,
+          "unit": "%",
+          "raw": "11.64",
+          "section": "Occupancy"
+        },
+        "Achieved Active Warps Per SM": {
+          "value": 5.59,
+          "unit": "warp",
+          "raw": "5.59",
+          "section": "Occupancy"
+        }
+      },
+      "rules": [
+        {
+          "name": "SOLBottleneck",
+          "text": "This kernel grid is too small to fill the available resources on this device, resulting in only 0.1 full waves across all SMs. Look at Launch Statistics for more details."
+        },
+        {
+          "name": "LaunchConfiguration",
+          "text": "The grid for this launch is configured to execute only 8 blocks, which is less than the GPU's 48 multiprocessors. This can underutilize some multiprocessors. If you do not intend to execute this kernel concurrently with other workloads, consider reducing the block size to have at least one block per multiprocessor or increase the size of the grid to fully utilize the available hardware resources. See the Hardware Model (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model) description for more details on launch configurations."
+        },
+        {
+          "name": "AchievedOccupancy",
+          "text": "The difference between calculated theoretical (25.0%) and measured achieved occupancy (11.6%) can be the result of warp scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on optimizing occupancy."
+        },
+        {
+          "name": "TheoreticalOccupancy",
+          "text": "The 3.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the hardware maximum of 12. This kernel's theoretical occupancy (25.0%) is limited by the number of required registers."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "kernel": "enable_if<!T7, void>::type kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 0, 1, 1, 0, 6, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+      "metrics": {
+        "SM Frequency": {
+          "value": 2.42,
+          "unit": "Ghz",
+          "raw": "2.42",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Elapsed Cycles": {
+          "value": 566914.0,
+          "unit": "cycle",
+          "raw": "566914",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Memory Throughput": {
+          "value": 12.57,
+          "unit": "%",
+          "raw": "12.57",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Duration": {
+          "value": 234.69,
+          "unit": "us",
+          "raw": "234.69",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L1/TEX Cache Throughput": {
+          "value": 9.77,
+          "unit": "%",
+          "raw": "9.77",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "L2 Cache Throughput": {
+          "value": 12.89,
+          "unit": "%",
+          "raw": "12.89",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "SM Active Cycles": {
+          "value": 465694.73,
+          "unit": "cycle",
+          "raw": "465694.73",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Compute (SM) Throughput": {
+          "value": 8.02,
+          "unit": "%",
+          "raw": "8.02",
+          "section": "GPU Speed Of Light Throughput"
+        },
+        "Block Size": {
+          "value": 64.0,
+          "unit": "",
+          "raw": "64",
+          "section": "Launch Statistics"
+        },
+        "Cluster Scheduling Policy": {
+          "value": null,
+          "unit": "",
+          "raw": "PolicySpread",
+          "section": "Launch Statistics"
+        },
+        "Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Function Cache Configuration": {
+          "value": null,
+          "unit": "",
+          "raw": "CachePreferNone",
+          "section": "Launch Statistics"
+        },
+        "Grid Size": {
+          "value": 1024.0,
+          "unit": "",
+          "raw": "1024",
+          "section": "Launch Statistics"
+        },
+        "Preferred Cluster Size": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Registers Per Thread": {
+          "value": 164.0,
+          "unit": "register/thread",
+          "raw": "164",
+          "section": "Launch Statistics"
+        },
+        "Shared Memory Configuration Size": {
+          "value": 32.77,
+          "unit": "Kbyte",
+          "raw": "32.77",
+          "section": "Launch Statistics"
+        },
+        "Driver Shared Memory Per Block": {
+          "value": 1.02,
+          "unit": "Kbyte/block",
+          "raw": "1.02",
+          "section": "Launch Statistics"
+        },
+        "Dynamic Shared Memory Per Block": {
+          "value": 272.0,
+          "unit": "byte/block",
+          "raw": "272",
+          "section": "Launch Statistics"
+        },
+        "Static Shared Memory Per Block": {
+          "value": 0.0,
+          "unit": "byte/block",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "# SMs": {
+          "value": 48.0,
+          "unit": "SM",
+          "raw": "48",
+          "section": "Launch Statistics"
+        },
+        "Stack Size": {
+          "value": 2624.0,
+          "unit": "",
+          "raw": "2624",
+          "section": "Launch Statistics"
+        },
+        "Threads": {
+          "value": 65536.0,
+          "unit": "thread",
+          "raw": "65536",
+          "section": "Launch Statistics"
+        },
+        "# TPCs": {
+          "value": 24.0,
+          "unit": "",
+          "raw": "24",
+          "section": "Launch Statistics"
+        },
+        "Enabled TPC IDs": {
+          "value": null,
+          "unit": "",
+          "raw": "all",
+          "section": "Launch Statistics"
+        },
+        "Uses Green Context": {
+          "value": 0.0,
+          "unit": "",
+          "raw": "0",
+          "section": "Launch Statistics"
+        },
+        "Waves Per SM": {
+          "value": 3.56,
+          "unit": "",
+          "raw": "3.56",
+          "section": "Launch Statistics"
+        },
+        "Max Active Clusters": {
+          "value": 0.0,
+          "unit": "cluster",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Max Cluster Size": {
+          "value": 8.0,
+          "unit": "block",
+          "raw": "8",
+          "section": "Occupancy"
+        },
+        "Overall GPU Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Cluster Occupancy": {
+          "value": 0.0,
+          "unit": "%",
+          "raw": "0",
+          "section": "Occupancy"
+        },
+        "Block Limit Barriers": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit SM": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Block Limit Registers": {
+          "value": 6.0,
+          "unit": "block",
+          "raw": "6",
+          "section": "Occupancy"
+        },
+        "Block Limit Shared Mem": {
+          "value": 23.0,
+          "unit": "block",
+          "raw": "23",
+          "section": "Occupancy"
+        },
+        "Block Limit Warps": {
+          "value": 24.0,
+          "unit": "block",
+          "raw": "24",
+          "section": "Occupancy"
+        },
+        "Theoretical Active Warps per SM": {
+          "value": 12.0,
+          "unit": "warp",
+          "raw": "12",
+          "section": "Occupancy"
+        },
+        "Theoretical Occupancy": {
+          "value": 25.0,
+          "unit": "%",
+          "raw": "25",
+          "section": "Occupancy"
+        },
+        "Achieved Occupancy": {
+          "value": 27.26,
+          "unit": "%",
+          "raw": "27.26",
+          "section": "Occupancy"
+        },
+        "Achieved Active Warps Per SM": {
+          "value": 13.08,
+          "unit": "warp",
+          "raw": "13.08",
+          "section": "Occupancy"
+        }
+      },
+      "rules": [
+        {
+          "name": "SOLBottleneck",
+          "text": "This workload exhibits low compute throughput and memory bandwidth utilization relative to the peak performance of this device. Achieved compute throughput and/or memory bandwidth below 60.0% of peak typically indicate latency issues. Look at Scheduler Statistics and Warp State Statistics for potential reasons."
+        },
+        {
+          "name": "LaunchConfiguration",
+          "text": "A wave of thread blocks is defined as the maximum number of blocks that can be executed in parallel on the target GPU. The number of blocks in a wave depends on the number of multiprocessors and the theoretical occupancy of the kernel. This kernel launch results in 3 full waves and a partial wave of 160 thread blocks. Under the assumption of a uniform execution duration of all thread blocks, this partial wave may account for up to 25.0% of the total runtime of this kernel. Try launching a grid with no partial wave. The overall impact of this tail effect also lessens with the number of full waves executed for a grid. See the Hardware Model (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model) description for more details on launch configurations."
+        },
+        {
+          "name": "TheoreticalOccupancy",
+          "text": "The 3.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the hardware maximum of 12. This kernel's theoretical occupancy (25.0%) is limited by the number of required registers."
+        }
+      ]
+    }
+  ]
+}

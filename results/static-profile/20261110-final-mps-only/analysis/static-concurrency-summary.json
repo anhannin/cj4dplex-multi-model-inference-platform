@@ -1,0 +1,1424 @@
+{
+  "model_trace": {
+    "case": "native-mps-only",
+    "scope": "kernel execution intervals on common anchored host timeline; not per-SM instruction issue/occupancy guarantee",
+    "common_window_from_batch_t0_ms": [
+      0.0,
+      20042.188577
+    ],
+    "common_window_ms": 20042.188577,
+    "qwen_kernel_union_ms": 19086.349819,
+    "yolo_kernel_union_ms": 2552.477043,
+    "cross_kernel_overlap_ms": 1750.926057,
+    "overlap_fraction_of_qwen": 0.09173708297314112,
+    "overlap_fraction_of_yolo": 0.6859713241307299,
+    "any_model_kernel_union_ms": 19887.900805,
+    "no_model_kernel_interval_ms": 154.287772,
+    "host_model_call_overlap_ms": 13427.585242,
+    "empirical_alignment_tolerance_ns": {
+      "qwen": 28564,
+      "yolo": 86624
+    },
+    "overlap_tolerance_bounds_ms": {
+      "observed": 1750.926057,
+      "lower": 29.014596,
+      "upper": 6684.581489
+    },
+    "sensitivity": [
+      {
+        "extra_tolerance_ns": 1000,
+        "observed_ms": 1750.926057,
+        "lower_ms": 28.497979,
+        "upper_ms": 6726.369153
+      },
+      {
+        "extra_tolerance_ns": 10000,
+        "observed_ms": 1750.926057,
+        "lower_ms": 24.253806,
+        "upper_ms": 7078.031799
+      },
+      {
+        "extra_tolerance_ns": 100000,
+        "observed_ms": 1750.926057,
+        "lower_ms": 5.590718,
+        "upper_ms": 9656.963379
+      }
+    ],
+    "reports": {
+      "qwen": {
+        "model": "qwen",
+        "report": "/home/avees/cj-static-profile/20261110-final-mps-only/validation/native-mps-only/qwen/trace.sqlite",
+        "clock": {
+          "anchors": 6,
+          "base_trace_ns": 1794258484544462577,
+          "base_host_ns": 13076820007925,
+          "slope": 0.999998841221822,
+          "intercept_relative_ns": 8620.211784362793,
+          "max_midpoint_residual_ns": 8620.0,
+          "max_anchor_bracket_ns": 37888.0,
+          "empirical_alignment_error_ns": 27564.0,
+          "note": "empirical anchor-fit/bracket tolerance, not a hardware clock accuracy guarantee",
+          "analysis_error_ns": 28564
+        },
+        "missing_anchor_count": 0,
+        "utc_normalization_minus_wall_ns": {
+          "min": 5978,
+          "max": 44136
+        },
+        "roi_count": 2,
+        "kernels_in_rois": 503436,
+        "kernel_green_counts": {
+          "0": 503436
+        },
+        "kernel_stream_context_keys": [
+          {
+            "globalPid": 281478852247552,
+            "contextId": 1,
+            "greenContextId": 0,
+            "streamId": 7,
+            "kernels": 503436
+          }
+        ],
+        "other_captured_kernels": 0,
+        "boundary_crossings": 0,
+        "capture_monotonic_ns": [
+          13076820007925,
+          13104699089542
+        ],
+        "model_host_rois": [
+          [
+            13080569228281,
+            13092701894542,
+            "request:qwen:r_e030b94141a54f2f81af1ea31e3899f7"
+          ],
+          [
+            13092713752880,
+            13104690156106,
+            "request:qwen:r_4ccab9332438465aab495ef348de0c5e"
+          ]
+        ]
+      },
+      "yolo": {
+        "model": "yolo",
+        "report": "/home/avees/cj-static-profile/20261110-final-mps-only/validation/native-mps-only/yolo/trace.sqlite",
+        "clock": {
+          "anchors": 484,
+          "base_trace_ns": 1794258484539464924,
+          "base_host_ns": 13076814984901,
+          "slope": 0.9999985850452972,
+          "intercept_relative_ns": 40351.84907531738,
+          "max_midpoint_residual_ns": 40352.0,
+          "max_anchor_bracket_ns": 90544.0,
+          "empirical_alignment_error_ns": 85624.0,
+          "note": "empirical anchor-fit/bracket tolerance, not a hardware clock accuracy guarantee",
+          "analysis_error_ns": 86624
+        },
+        "missing_anchor_count": 0,
+        "utc_normalization_minus_wall_ns": {
+          "min": 2705,
+          "max": 42444
+        },
+        "roi_count": 241,
+        "kernels_in_rois": 203645,
+        "kernel_green_counts": {
+          "0": 203645
+        },
+        "kernel_stream_context_keys": [
+          {
+            "globalPid": 281478885801984,
+            "contextId": 1,
+            "greenContextId": 0,
+            "streamId": 7,
+            "kernels": 203645
+          }
+        ],
+        "other_captured_kernels": 0,
+        "boundary_crossings": 0,
+        "capture_monotonic_ns": [
+          13076814984901,
+          13100606115061
+        ],
+        "model_host_rois": [
+          [
+            13080572050737,
+            13080623232440,
+            "request:yolo:r_ae66ed3c4420426ea532f2bb8bf57be2"
+          ],
+          [
+            13080650078706,
+            13080700879579,
+            "request:yolo:r_8c7855876dac4f07b8bc153f72dab35d"
+          ],
+          [
+            13080716041333,
+            13080774683794,
+            "request:yolo:r_4cebbc30c3084e889aa313e224e1fb44"
+          ],
+          [
+            13080788124495,
+            13080844468895,
+            "request:yolo:r_103c75cf92844bd78861eb2ff5c8b6e7"
+          ],
+          [
+            13080858552299,
+            13080917444168,
+            "request:yolo:r_f5dd0260fa8748e6b9c2484cb191d466"
+          ],
+          [
+            13080931908980,
+            13080990407425,
+            "request:yolo:r_79e3c2d44cfe43bab9dedd976a78191b"
+          ],
+          [
+            13081004437709,
+            13081064372248,
+            "request:yolo:r_74def4dc32564e84a2cf4dcee84f16ea"
+          ],
+          [
+            13081078474164,
+            13081133422295,
+            "request:yolo:r_212d5e8f2a39443e8b0bb4a36bafa179"
+          ],
+          [
+            13081156786933,
+            13081210478873,
+            "request:yolo:r_ab5bb31d46a74f179882ce6374fc2f72"
+          ],
+          [
+            13081223077288,
+            13081276749884,
+            "request:yolo:r_e9fd7be144884cfbbb00533605a1934a"
+          ],
+          [
+            13081300565130,
+            13081359590550,
+            "request:yolo:r_6ffef6a1f1464e6395ee022d94224cc0"
+          ],
+          [
+            13081454697920,
+            13081506840886,
+            "request:yolo:r_fdf7762433f44ac2a29f2d99d7b0680e"
+          ],
+          [
+            13081602150575,
+            13081663072265,
+            "request:yolo:r_31a7221f7da44d8cbe21870c5cb0c866"
+          ],
+          [
+            13081676087447,
+            13081732525591,
+            "request:yolo:r_58623bd2dd78471c932e155affd62442"
+          ],
+          [
+            13081756633189,
+            13081812904453,
+            "request:yolo:r_ffe5c4957214496b8c87910fca7f736a"
+          ],
+          [
+            13081837816690,
+            13081901949991,
+            "request:yolo:r_695b7a8acd9e4bcc9c653963a77932db"
+          ],
+          [
+            13081926398964,
+            13081978647499,
+            "request:yolo:r_dd3b97a79f4e4f7cbf12d0f6fd4067db"
+          ],
+          [
+            13081991707048,
+            13082040707459,
+            "request:yolo:r_479eeb9ab2ae4c52a105eab9bd2d1d83"
+          ],
+          [
+            13082053739872,
+            13082112981132,
+            "request:yolo:r_fb8b383ce7dc4b669397dd23bcee4303"
+          ],
+          [
+            13082209201972,
+            13082273004346,
+            "request:yolo:r_4e5149aa3b2c4ce4882b6654ad7b441a"
+          ],
+          [
+            13082284920281,
+            13082337498415,
+            "request:yolo:r_128f113f6e4f4e7abc19b52a55809259"
+          ],
+          [
+            13082361771932,
+            13082414746577,
+            "request:yolo:r_944c86a185354d54bd1e9d58d592daef"
+          ],
+          [
+            13082427863407,
+            13082484065439,
+            "request:yolo:r_bad6c194630f4a289687ff1a9071e4f3"
+          ],
+          [
+            13082578917577,
+            13082630823264,
+            "request:yolo:r_2be593c07f964b2b9e44125b8fb84386"
+          ],
+          [
+            13082654779566,
+            13082707012372,
+            "request:yolo:r_dcee59c8bdf94bc482434bb8894b9171"
+          ],
+          [
+            13082719391330,
+            13082776085986,
+            "request:yolo:r_5ecebdd24b0b43d7aa7e06516734bc7f"
+          ],
+          [
+            13082869809230,
+            13082927191036,
+            "request:yolo:r_14d3a3f411964dacb6c84c8389c1e337"
+          ],
+          [
+            13083022761189,
+            13083074537292,
+            "request:yolo:r_ffd5b88c97814ffdbb199d949f9daa63"
+          ],
+          [
+            13083098798186,
+            13083152028830,
+            "request:yolo:r_715e34244f3b428da235a177e91dbbe6"
+          ],
+          [
+            13083164820428,
+            13083221895259,
+            "request:yolo:r_ebf459679f254db4b090b4ae97ad453c"
+          ],
+          [
+            13083234337818,
+            13083296196402,
+            "request:yolo:r_f070efc407a3439d9110cb792fb2e1bf"
+          ],
+          [
+            13083320406560,
+            13083373151749,
+            "request:yolo:r_b179c6eefbf243b9adef8d9600e4ab84"
+          ],
+          [
+            13083397648883,
+            13083451112967,
+            "request:yolo:r_6ef9a61bf6254a34aef1eeba8284f5c8"
+          ],
+          [
+            13083463724965,
+            13083522725906,
+            "request:yolo:r_0975c99cecdc4735b3f8388bb5bc45a8"
+          ],
+          [
+            13083547658910,
+            13083603404368,
+            "request:yolo:r_4539ae5a43b94006b2666c72b614cc02"
+          ],
+          [
+            13083628187149,
+            13083686909257,
+            "request:yolo:r_eb32afaddd6941dfbd3d4bb41348d151"
+          ],
+          [
+            13083711594935,
+            13083770080196,
+            "request:yolo:r_3b4791fc87de4b6d896ec60e6b9be359"
+          ],
+          [
+            13083863897423,
+            13083915933877,
+            "request:yolo:r_878af60a5acd4b92abf7c1da8c551109"
+          ],
+          [
+            13083940120211,
+            13083995558277,
+            "request:yolo:r_a650b9fa684f44bc944dab8538699758"
+          ],
+          [
+            13084019922658,
+            13084081027004,
+            "request:yolo:r_1f9a9520f58847eda190b179308497c8"
+          ],
+          [
+            13084105077226,
+            13084161904585,
+            "request:yolo:r_9980d21b21654fbc800a93d0cca7b200"
+          ],
+          [
+            13084185969703,
+            13084243933973,
+            "request:yolo:r_00ce54e17243498aae24a26845e31314"
+          ],
+          [
+            13084268258947,
+            13084328868397,
+            "request:yolo:r_cdc86adc084a42d5986e97ed3868a82a"
+          ],
+          [
+            13084341608027,
+            13084394952128,
+            "request:yolo:r_9aa6b0753c6c4ee38f0415be677adebc"
+          ],
+          [
+            13084419056317,
+            13084470862724,
+            "request:yolo:r_8e0003c63e02422f8aa8cede8c74c742"
+          ],
+          [
+            13084483686226,
+            13084537028007,
+            "request:yolo:r_e599d93a8ab240a49b72927e458dc3ab"
+          ],
+          [
+            13084561514884,
+            13084617719860,
+            "request:yolo:r_adba8802f57d446b85fe5606822502f3"
+          ],
+          [
+            13084641690354,
+            13084703355275,
+            "request:yolo:r_5bba2031d57f4a01bfc90323e6cb15b2"
+          ],
+          [
+            13084727617609,
+            13084780799934,
+            "request:yolo:r_9640f12b32ab430b9ecc053930ef08e5"
+          ],
+          [
+            13084793571676,
+            13084845549122,
+            "request:yolo:r_0854db562c9f4c22adfdf635b555575a"
+          ],
+          [
+            13084869324592,
+            13084928768204,
+            "request:yolo:r_f09cf657a4744aac872d7cbdd012da81"
+          ],
+          [
+            13084953287466,
+            13085012224614,
+            "request:yolo:r_dabcf0bfdc934e52be0ba0c8c0fbe60e"
+          ],
+          [
+            13085036440116,
+            13085093058468,
+            "request:yolo:r_8adc3eacd8014724bf555b45f518fc55"
+          ],
+          [
+            13085117283058,
+            13085176375934,
+            "request:yolo:r_a4160a53ed2a40c4ae86696ba3f4fe4b"
+          ],
+          [
+            13085200934075,
+            13085254375712,
+            "request:yolo:r_8faaee5610964869a64414e7b6eac9a5"
+          ],
+          [
+            13085266904814,
+            13085318282245,
+            "request:yolo:r_07ffefc691dc4ff393ce2e8e60fd4b95"
+          ],
+          [
+            13085331306195,
+            13085388212130,
+            "request:yolo:r_34305ef5867e48af8568a94d661c28f0"
+          ],
+          [
+            13085412091248,
+            13085466670755,
+            "request:yolo:r_2563b5a732704e9daa0b9837005241e6"
+          ],
+          [
+            13085479435249,
+            13085531454519,
+            "request:yolo:r_37824dd58e7f4b0080dffde16f165e01"
+          ],
+          [
+            13085626820065,
+            13085685755837,
+            "request:yolo:r_438e961255d04802a0865c0c9b3abd6c"
+          ],
+          [
+            13085710111611,
+            13085765487404,
+            "request:yolo:r_d5d0d20b90e1463f8aea187d0023aa09"
+          ],
+          [
+            13085789938922,
+            13085847912456,
+            "request:yolo:r_5a0e64940d534f85a0983634a9b09204"
+          ],
+          [
+            13085871711254,
+            13085928739493,
+            "request:yolo:r_fef74b2f4ede4e41bf9e64a0bacaa722"
+          ],
+          [
+            13085953036179,
+            13086004530714,
+            "request:yolo:r_23463eeb35b84d67abc05fdf4ff80f1c"
+          ],
+          [
+            13086028970472,
+            13086081905069,
+            "request:yolo:r_e26469ad0a2444fba2495a2ebe376051"
+          ],
+          [
+            13086105251260,
+            13086161703836,
+            "request:yolo:r_e358b8442d25480ba3f45883cc845813"
+          ],
+          [
+            13086184719723,
+            13086239781757,
+            "request:yolo:r_1c5113890bde4637ba2c6dca9f15acfb"
+          ],
+          [
+            13086263720475,
+            13086323671415,
+            "request:yolo:r_0e8a155e808c4062bb443aadc5ce9515"
+          ],
+          [
+            13086347979108,
+            13086406078226,
+            "request:yolo:r_0e14a7f738544137bc73daf8ec03b898"
+          ],
+          [
+            13086430409919,
+            13086482550678,
+            "request:yolo:r_92334fe7b19d4582b63796b95b5acd83"
+          ],
+          [
+            13086506962691,
+            13086558935178,
+            "request:yolo:r_35298b9d1fc44a77b3c5455833a9cfe9"
+          ],
+          [
+            13086583183223,
+            13086635186798,
+            "request:yolo:r_f0f02258c28c4ecfa646f71738decbea"
+          ],
+          [
+            13086659366572,
+            13086718365112,
+            "request:yolo:r_07cd9fab4dd64d3d96197d9e427fa09b"
+          ],
+          [
+            13086742955109,
+            13086799714549,
+            "request:yolo:r_d4de449033e6417e893942caacab5a74"
+          ],
+          [
+            13086824179122,
+            13086884391021,
+            "request:yolo:r_66bd956c795f4a0db4ee5af1e03df826"
+          ],
+          [
+            13086909201658,
+            13086969776692,
+            "request:yolo:r_a1d70bbfe0984ac593cd408ce2a739aa"
+          ],
+          [
+            13086994489521,
+            13087048387605,
+            "request:yolo:r_8db1026f452147e280254c3a0bc31f50"
+          ],
+          [
+            13087072550323,
+            13087124898809,
+            "request:yolo:r_a6fe9d08cc404e51a523516f3d62bc3f"
+          ],
+          [
+            13087148909879,
+            13087202504667,
+            "request:yolo:r_2d3e103817034ea88dea9a4fd0e10f01"
+          ],
+          [
+            13087226472361,
+            13087289330272,
+            "request:yolo:r_181830d895da493b993c7ef4920dfb3f"
+          ],
+          [
+            13087314375533,
+            13087369599343,
+            "request:yolo:r_7dbe80503c944207b73728230f8fbf98"
+          ],
+          [
+            13087394176764,
+            13087451110331,
+            "request:yolo:r_277a6f7f75c6433f901ef1932569dd07"
+          ],
+          [
+            13087475324153,
+            13087535449332,
+            "request:yolo:r_3824463b7fcf4dd79d1e2e80fc38f6e6"
+          ],
+          [
+            13087560397601,
+            13087611640408,
+            "request:yolo:r_1dba41931ad54d78a37ef878122553be"
+          ],
+          [
+            13087636151717,
+            13087689374698,
+            "request:yolo:r_a6acda77842541ea8d338500e06ec6f1"
+          ],
+          [
+            13087713647704,
+            13087765844814,
+            "request:yolo:r_b6d36e8d449941159e6697e5b0aae491"
+          ],
+          [
+            13087789945916,
+            13087848994456,
+            "request:yolo:r_6b01fc0b2340433f8e67b01762ab3db1"
+          ],
+          [
+            13087873119702,
+            13087929608678,
+            "request:yolo:r_1937000dc67e487da7f7a1c9ab15e027"
+          ],
+          [
+            13087954475059,
+            13088010513220,
+            "request:yolo:r_f64901fc95094f5eb3a9b991b733c925"
+          ],
+          [
+            13088034784305,
+            13088097381065,
+            "request:yolo:r_b5c31d634b694260a3f5f8a0c2b095f3"
+          ],
+          [
+            13088121368215,
+            13088171679584,
+            "request:yolo:r_4673a1c40ed14dd18a98d385cbc50f76"
+          ],
+          [
+            13088196455165,
+            13088250210993,
+            "request:yolo:r_26bd0a2843a94b2eb4260eda1330ea2e"
+          ],
+          [
+            13088273949695,
+            13088329052801,
+            "request:yolo:r_2bc8aa58c86d4cde9f84a9dc7abefeee"
+          ],
+          [
+            13088352844399,
+            13088410179294,
+            "request:yolo:r_94640e9cc0af4a4d90612f6795c2e899"
+          ],
+          [
+            13088434665372,
+            13088492568282,
+            "request:yolo:r_a3506fd289cd4c0486ea62da23859d88"
+          ],
+          [
+            13088517081607,
+            13088574425174,
+            "request:yolo:r_36cb84c289d74e8397ab647026659cbe"
+          ],
+          [
+            13088597978772,
+            13088651847864,
+            "request:yolo:r_f1049ec490e84d0fad9876190054d5fc"
+          ],
+          [
+            13088676090806,
+            13088728148716,
+            "request:yolo:r_8cf7b7eaa24a4b2b8dbc4dcb5dddadca"
+          ],
+          [
+            13088751883115,
+            13088805460719,
+            "request:yolo:r_b00cb9f9f04244139930ac90589baa75"
+          ],
+          [
+            13088818775964,
+            13088875828187,
+            "request:yolo:r_9054f0edbdaf447d91946f70808723a6"
+          ],
+          [
+            13088900480280,
+            13088957853351,
+            "request:yolo:r_25e4d45cf0734f83a71167d26bac7734"
+          ],
+          [
+            13088981707590,
+            13089042109632,
+            "request:yolo:r_66d5bf24c21a4025a0fbc4d300f17c19"
+          ],
+          [
+            13089066723469,
+            13089120013330,
+            "request:yolo:r_db358f51d2c549fe879ad548f3cfa437"
+          ],
+          [
+            13089143682880,
+            13089194799112,
+            "request:yolo:r_b550ba96b7184a81ad1cd41ca2b98957"
+          ],
+          [
+            13089219185014,
+            13089274174200,
+            "request:yolo:r_78542ad96e204a9f9746079cab45f22e"
+          ],
+          [
+            13089298932949,
+            13089356825171,
+            "request:yolo:r_8b722aaa4e9b4aefacc707eaf6f86bbc"
+          ],
+          [
+            13089381628784,
+            13089439345742,
+            "request:yolo:r_2cb5863a16d54f3198ffeb8067ad96f7"
+          ],
+          [
+            13089462911437,
+            13089519981052,
+            "request:yolo:r_d4f0048ab696491dbb0be3eeb3539d0e"
+          ],
+          [
+            13089614995621,
+            13089668392618,
+            "request:yolo:r_706c1dc624d74248b82fc374511b8d65"
+          ],
+          [
+            13089681787319,
+            13089743310560,
+            "request:yolo:r_c57180f164fa44c2929a7d766cc77f7c"
+          ],
+          [
+            13089768051437,
+            13089824409517,
+            "request:yolo:r_54d5533aa99541108811a144eefcf2cf"
+          ],
+          [
+            13089849938745,
+            13089906321689,
+            "request:yolo:r_959e17f1bc83445dae4cbee3a712cb8b"
+          ],
+          [
+            13089930290071,
+            13089984577627,
+            "request:yolo:r_bdfddfb60528412daec73b84872fd1a4"
+          ],
+          [
+            13090009205528,
+            13090072556014,
+            "request:yolo:r_757f1f2d960949878c4e8b60ccfb0a3e"
+          ],
+          [
+            13090096733948,
+            13090145540311,
+            "request:yolo:r_3db6d02ef88e4169acb3c8b4da4f6a1f"
+          ],
+          [
+            13090169962724,
+            13090222008427,
+            "request:yolo:r_def01ee14dc54a0981511d5d21ecb81d"
+          ],
+          [
+            13090248257013,
+            13090305354917,
+            "request:yolo:r_8a66c80ee01046bdbe340d105507e3d9"
+          ],
+          [
+            13090330939472,
+            13090391399355,
+            "request:yolo:r_03180db6c50248e5b4692667afe49f6f"
+          ],
+          [
+            13090415448665,
+            13090470036828,
+            "request:yolo:r_79c906674526458c8ecd4ca68479c314"
+          ],
+          [
+            13090494507433,
+            13090555101107,
+            "request:yolo:r_82ffb4a2f53d4ec4845f1e6ca64a4839"
+          ],
+          [
+            13090580203968,
+            13090638734237,
+            "request:yolo:r_cae6678490874ecf92452a0035d7453d"
+          ],
+          [
+            13090663212506,
+            13090715370480,
+            "request:yolo:r_a28a29c9db1f48e69c51a3d930499eef"
+          ],
+          [
+            13090739744030,
+            13090792128820,
+            "request:yolo:r_e50b31e26ed4459084376dfdef76458e"
+          ],
+          [
+            13090888261020,
+            13090940976241,
+            "request:yolo:r_df4fe91f724d4d7387e88610f54bfa82"
+          ],
+          [
+            13090966194414,
+            13091022096110,
+            "request:yolo:r_7ad3aef0dd764fb5b91a8ff24715ba12"
+          ],
+          [
+            13091047289019,
+            13091105757768,
+            "request:yolo:r_bccc4dfb136a438881905eddc8ccfa21"
+          ],
+          [
+            13091129145207,
+            13091183584810,
+            "request:yolo:r_078704f488fe456993ac73c0c95e15eb"
+          ],
+          [
+            13091207175481,
+            13091259957678,
+            "request:yolo:r_54377fe805d64a6b99d7fafe79b3b6fa"
+          ],
+          [
+            13091284021516,
+            13091339665341,
+            "request:yolo:r_cd56f89e6ced434bb51700bfdef8a100"
+          ],
+          [
+            13091363977179,
+            13091417975470,
+            "request:yolo:r_7331b3532d3947d0afdbcffff3eaf627"
+          ],
+          [
+            13091442063964,
+            13091499076972,
+            "request:yolo:r_ec2adb328caf46f89ec7236300d3f3a6"
+          ],
+          [
+            13091523489337,
+            13091580332889,
+            "request:yolo:r_4e10872d43b14344be54e5cf65022528"
+          ],
+          [
+            13091604187607,
+            13091658030283,
+            "request:yolo:r_1a3deca4087842acadfacfbc3cc3c41d"
+          ],
+          [
+            13091683324951,
+            13091735192413,
+            "request:yolo:r_1b0c49b16f1a4b24b69f1620e5bdfecb"
+          ],
+          [
+            13091759815115,
+            13091818276664,
+            "request:yolo:r_f723a67269a245c2800f81dcca6b01e5"
+          ],
+          [
+            13091843037877,
+            13091900313076,
+            "request:yolo:r_e72d6585e09e40cfbc27c313bfec315e"
+          ],
+          [
+            13091924446066,
+            13091980611330,
+            "request:yolo:r_36e08f3d59434dbe971bb1abe395689b"
+          ],
+          [
+            13092075128284,
+            13092128500097,
+            "request:yolo:r_70070ccda7cc405892fcfed18b4150c9"
+          ],
+          [
+            13092152577455,
+            13092204947285,
+            "request:yolo:r_9b8096e843384e7a8f436d29bdf32f49"
+          ],
+          [
+            13092229300018,
+            13092281146777,
+            "request:yolo:r_13ad8feec43a44f8bd7ea597953294ca"
+          ],
+          [
+            13092305771078,
+            13092366283472,
+            "request:yolo:r_30f93a7c8172474d9c7af3057b95febf"
+          ],
+          [
+            13092391160493,
+            13092448715948,
+            "request:yolo:r_14c222cce1f34166a98376d73e95067c"
+          ],
+          [
+            13092543250374,
+            13092594883293,
+            "request:yolo:r_84be5e41b3f3473cbd4878a205999b3b"
+          ],
+          [
+            13092619483402,
+            13092671219521,
+            "request:yolo:r_5d0c736444c9424abaf5d31e7e05f072"
+          ],
+          [
+            13092695172239,
+            13092709545435,
+            "request:yolo:r_feec0d48f7554fccb1959aaa36feabc0"
+          ],
+          [
+            13092721995497,
+            13092771764979,
+            "request:yolo:r_e8edc985dec24f678d4a833385fa6ead"
+          ],
+          [
+            13092797163535,
+            13092844609452,
+            "request:yolo:r_24b006cffbf149e0a527106832cfa299"
+          ],
+          [
+            13092869068969,
+            13092924727242,
+            "request:yolo:r_91736b73f03d40389d0d197ea2c08716"
+          ],
+          [
+            13092949071800,
+            13093009637490,
+            "request:yolo:r_d62acae5c7d64c0488400e9f0c2d4b9d"
+          ],
+          [
+            13093034600783,
+            13093087005381,
+            "request:yolo:r_b41bdd6281fa41afaf2ee18cf9ea6437"
+          ],
+          [
+            13093111847410,
+            13093162803097,
+            "request:yolo:r_f0b3081cbd774621bc63db01496d90fc"
+          ],
+          [
+            13093187429031,
+            13093242992664,
+            "request:yolo:r_7de590da98034bc181439c6e097d404c"
+          ],
+          [
+            13093339316064,
+            13093398939195,
+            "request:yolo:r_2eb3db69754f491fb44d8f84fb14036b"
+          ],
+          [
+            13093424762791,
+            13093483034964,
+            "request:yolo:r_9dbb72762c0f45f2ae30a259cd09175b"
+          ],
+          [
+            13093507960993,
+            13093568933963,
+            "request:yolo:r_111f54719cb84ef7a36f4c5ac173fec8"
+          ],
+          [
+            13093593608936,
+            13093645763214,
+            "request:yolo:r_ad51c2e347804ecc91bbaec4c6048b8f"
+          ],
+          [
+            13093670305051,
+            13093723315664,
+            "request:yolo:r_bde4b9422b1c4603be5a6b067e5d13f9"
+          ],
+          [
+            13093747643278,
+            13093800204404,
+            "request:yolo:r_bfee4cc827d74d1dac17b9f431f19824"
+          ],
+          [
+            13093825354816,
+            13093883934077,
+            "request:yolo:r_f77c6ccfb9d04428aebfdc572166e6d7"
+          ],
+          [
+            13093898198073,
+            13093963130365,
+            "request:yolo:r_1e5fae5b949841b9ad8671cf93997ea2"
+          ],
+          [
+            13093987590426,
+            13094043907963,
+            "request:yolo:r_1e7d91d205f34d609f84edbeec52c0c7"
+          ],
+          [
+            13094069437415,
+            13094132883693,
+            "request:yolo:r_34a773fa065645548f71f19c4abe130a"
+          ],
+          [
+            13094156911947,
+            13094210273775,
+            "request:yolo:r_751cde083e2e419f952069e17938a11a"
+          ],
+          [
+            13094236174139,
+            13094289006560,
+            "request:yolo:r_573e9f8ba07e4608bba39a9033bf9b0f"
+          ],
+          [
+            13094313542077,
+            13094366813026,
+            "request:yolo:r_041582d2716f4899b29016efb5ecead7"
+          ],
+          [
+            13094391569359,
+            13094449060669,
+            "request:yolo:r_7f6eb6c6c984443ca32f3675996cf019"
+          ],
+          [
+            13094473700923,
+            13094530143115,
+            "request:yolo:r_e6a6f90f22544c969d8950c37f8a5624"
+          ],
+          [
+            13094554369736,
+            13094610861465,
+            "request:yolo:r_75f9e3315682461b942e211ce292bf0b"
+          ],
+          [
+            13094635864005,
+            13094697689182,
+            "request:yolo:r_c1272be623414fb2bb0e44095dd0cae6"
+          ],
+          [
+            13094722410539,
+            13094776940990,
+            "request:yolo:r_32b8472f522c4a6ca4285ca4615e85a6"
+          ],
+          [
+            13094801924362,
+            13094854060256,
+            "request:yolo:r_6571b15f32bd49948f2e2d9ca7c40ace"
+          ],
+          [
+            13094878163710,
+            13094932645633,
+            "request:yolo:r_2a52270d977046438d14be76c520e7cd"
+          ],
+          [
+            13094957132175,
+            13095016456107,
+            "request:yolo:r_aadea33867404a00b24168464a8ebb57"
+          ],
+          [
+            13095041885927,
+            13095097853463,
+            "request:yolo:r_1854d9f83dca49009ca8c0e1b7fdff50"
+          ],
+          [
+            13095122418709,
+            13095178112214,
+            "request:yolo:r_0d78d406a47949e9845ae4dcc7f98507"
+          ],
+          [
+            13095203226898,
+            13095262454175,
+            "request:yolo:r_930352a0ddd8403d8cb13a69c9a59063"
+          ],
+          [
+            13095286992012,
+            13095340843008,
+            "request:yolo:r_8a6426b920654b109d98299c96896fd8"
+          ],
+          [
+            13095367036075,
+            13095418958577,
+            "request:yolo:r_b27ed104b7b34a168b63f0cfe86d3e08"
+          ],
+          [
+            13095515226985,
+            13095572887575,
+            "request:yolo:r_ad40dd8215e24d82b8990424bbd04b3c"
+          ],
+          [
+            13095597897988,
+            13095653787109,
+            "request:yolo:r_af1a7a76542944ca9e953b5a5b1f0b11"
+          ],
+          [
+            13095678409010,
+            13095734323283,
+            "request:yolo:r_4372ff9bb0ee4dc2b34d1b146f877456"
+          ],
+          [
+            13095758895488,
+            13095821817959,
+            "request:yolo:r_fc2f7196f3af4b97a553d3660007a360"
+          ],
+          [
+            13095847112371,
+            13095899883513,
+            "request:yolo:r_b729c72400134f23aa3a501d5d2f35f9"
+          ],
+          [
+            13095923732951,
+            13095975648989,
+            "request:yolo:r_174bf815f037478487c5e01c4dc278e9"
+          ],
+          [
+            13096000339146,
+            13096055529356,
+            "request:yolo:r_f9805e433a514f18a862c79fe347240c"
+          ],
+          [
+            13096080497097,
+            13096136033386,
+            "request:yolo:r_32601d1bfe77402b8cadd99ad867afb1"
+          ],
+          [
+            13096159533881,
+            13096220268243,
+            "request:yolo:r_a3a70188b3d14f3380b81b9b3218fdba"
+          ],
+          [
+            13096245519232,
+            13096302864270,
+            "request:yolo:r_a26a75116b44470f83012697b38020b6"
+          ],
+          [
+            13096329234569,
+            13096391270929,
+            "request:yolo:r_8ae31fc21e684aeb825e1affeb5aa206"
+          ],
+          [
+            13096415421567,
+            13096467735541,
+            "request:yolo:r_bdba3325b825453ebdd3a4ebaa7a3c69"
+          ],
+          [
+            13096491674515,
+            13096543620250,
+            "request:yolo:r_25b8bf100c804ddaa3fd5dab6fa91d5a"
+          ],
+          [
+            13096568309959,
+            13096623927720,
+            "request:yolo:r_b23bb754eca54722ac805fbea036edd7"
+          ],
+          [
+            13096648150806,
+            13096708715120,
+            "request:yolo:r_454ee8fadfd94a8e8cf73fa621dd3dd7"
+          ],
+          [
+            13096733362093,
+            13096790659084,
+            "request:yolo:r_c60f337c7b39431c948cd797e2ba40cf"
+          ],
+          [
+            13096815853961,
+            13096873960166,
+            "request:yolo:r_0e7dbf8f52e8479190e9fb906f22b3b6"
+          ],
+          [
+            13096898750915,
+            13096958598655,
+            "request:yolo:r_183d92a7a33d442e987119233f4426ec"
+          ],
+          [
+            13096983843051,
+            13097046297426,
+            "request:yolo:r_2a64d21695894efd88fe9cf688379f18"
+          ],
+          [
+            13097070917328,
+            13097122710006,
+            "request:yolo:r_6c2c7dda3fbe45acb2a68fd260df495e"
+          ],
+          [
+            13097146745972,
+            13097199415098,
+            "request:yolo:r_419ac0f24e06406cbdc064a2f3f79914"
+          ],
+          [
+            13097223963399,
+            13097282065205,
+            "request:yolo:r_1efea76ae79b42ba85ef589391b9063d"
+          ],
+          [
+            13097307348321,
+            13097362757699,
+            "request:yolo:r_d028fd1004014676a683ba4474998ccb"
+          ],
+          [
+            13097388364110,
+            13097444496655,
+            "request:yolo:r_79bfab2fd4574422a928c9203837108c"
+          ],
+          [
+            13097469158108,
+            13097523708735,
+            "request:yolo:r_a337e83a427a404380724854ca79e9d1"
+          ],
+          [
+            13097548143420,
+            13097611457715,
+            "request:yolo:r_75368c6b55ff448ba57d51224cf855ea"
+          ],
+          [
+            13097635327137,
+            13097687329751,
+            "request:yolo:r_d8c7fef3e7cb4ad49e5bd35edc24e5bd"
+          ],
+          [
+            13097711423061,
+            13097763331596,
+            "request:yolo:r_5b3ab0dfffb04df4be559d2e51930bcc"
+          ],
+          [
+            13097787357994,
+            13097845922567,
+            "request:yolo:r_d6dc73abc6ac4c2a9e81cbce8000a0c3"
+          ],
+          [
+            13097870096533,
+            13097931329822,
+            "request:yolo:r_40f1822dd76248c9883eae943d47cee7"
+          ],
+          [
+            13097956358987,
+            13098012432987,
+            "request:yolo:r_8ed6e517828a47d1a13fddf2d376d444"
+          ],
+          [
+            13098037130792,
+            13098095945493,
+            "request:yolo:r_d21d7a5df4424d81aedf313d17dac925"
+          ],
+          [
+            13098120325443,
+            13098179939390,
+            "request:yolo:r_b3226d57168b4b8e963ca23f84639514"
+          ],
+          [
+            13098204358396,
+            13098257066801,
+            "request:yolo:r_e2f4daeba50f4dddba633fd584a199c2"
+          ],
+          [
+            13098281186255,
+            13098335115491,
+            "request:yolo:r_5746ec033b2b4f7d86b9c48332a7d4bb"
+          ],
+          [
+            13098359252689,
+            13098413558500,
+            "request:yolo:r_7fa45127160c46ecba4dc8446c0cb94b"
+          ],
+          [
+            13098437250210,
+            13098494752385,
+            "request:yolo:r_fe6ddbb6fb12447bbed2ceecc32531fe"
+          ],
+          [
+            13098518922207,
+            13098579300937,
+            "request:yolo:r_8369e0307fb844af8f5cbaa1cf1ded74"
+          ],
+          [
+            13098603672695,
+            13098658304538,
+            "request:yolo:r_3950a2ac9dd64a71b1bf8504ae4c66a8"
+          ],
+          [
+            13098683083558,
+            13098746538573,
+            "request:yolo:r_13c8340829ea448f8bda1dd884ab4a1f"
+          ],
+          [
+            13098770822970,
+            13098821898226,
+            "request:yolo:r_2ce2c257e8e54712941fa8e232883e5f"
+          ],
+          [
+            13098846468015,
+            13098901061938,
+            "request:yolo:r_b3b69c1c9cdd4fbda087a224da104da0"
+          ],
+          [
+            13098925853711,
+            13098981470592,
+            "request:yolo:r_106a6ee13c65465ca42a3350ae8e4f4d"
+          ],
+          [
+            13099006088989,
+            13099064888698,
+            "request:yolo:r_56874d5de7ae402a8ac87da722128886"
+          ],
+          [
+            13099089385416,
+            13099146093047,
+            "request:yolo:r_043a95dc0a2140e5a976835f827d16e7"
+          ],
+          [
+            13099170285461,
+            13099226559717,
+            "request:yolo:r_e819275413e147bba14e6a1f028ab194"
+          ],
+          [
+            13099251278371,
+            13099314266633,
+            "request:yolo:r_9c4dfc65d03d4225a125be321c68d519"
+          ],
+          [
+            13099339292518,
+            13099391898204,
+            "request:yolo:r_9be8db5002204c9e8401af2356e2aec8"
+          ],
+          [
+            13099417716679,
+            13099469269678,
+            "request:yolo:r_49751dcd601a4448aeeae3e8d249eb18"
+          ],
+          [
+            13099494111643,
+            13099545599026,
+            "request:yolo:r_7004f250973f461193fd7b1ccccc6d28"
+          ],
+          [
+            13099570102319,
+            13099623795875,
+            "request:yolo:r_2499a09f5c1142f4b9832136c0a2c451"
+          ],
+          [
+            13099647706898,
+            13099704612529,
+            "request:yolo:r_b7ea34025dd74e02b1662e25bb5664f5"
+          ],
+          [
+            13099729679886,
+            13099787609868,
+            "request:yolo:r_579f697b04b64dcdb919a7cbd2585587"
+          ],
+          [
+            13099812394105,
+            13099864754414,
+            "request:yolo:r_83907a2e16ab494e9a1bb515662a0fe8"
+          ],
+          [
+            13099888798188,
+            13099940175604,
+            "request:yolo:r_b9b0f0aee23f4f149c11c6a5c3ee8d44"
+          ],
+          [
+            13099964568241,
+            13100018447157,
+            "request:yolo:r_6499dabaf1d34008a1fb0d7a842bba73"
+          ],
+          [
+            13100043922177,
+            13100101316736,
+            "request:yolo:r_cda9454a76f845fb814c635367e377a0"
+          ],
+          [
+            13100125469982,
+            13100181657262,
+            "request:yolo:r_218420f83b0040d4b9451562ede8a130"
+          ],
+          [
+            13100207309354,
+            13100264161977,
+            "request:yolo:r_9c7b18ce4c884fcfbba0337a5892dd22"
+          ],
+          [
+            13100289259014,
+            13100348481394,
+            "request:yolo:r_badf6c88f3d64552b637740ef64fc28e"
+          ],
+          [
+            13100373318959,
+            13100427849314,
+            "request:yolo:r_de541fb6f3e94574b01771004ae1665e"
+          ],
+          [
+            13100452145839,
+            13100504983061,
+            "request:yolo:r_d5a4903153be42f8877f25b09135de0a"
+          ],
+          [
+            13100529379970,
+            13100584957523,
+            "request:yolo:r_8c3832b58de041ca9835420c3c9a005e"
+          ]
+        ]
+      }
+    }
+  },
+  "mps_server_host_pid": 358487,
+  "mps_clients_host_pid": [
+    359146,
+    359149
+  ],
+  "scheduler_clock": {
+    "anchors": 69,
+    "base_trace_ns": 1794258484183796583,
+    "base_host_ns": 13076459269467,
+    "slope": 0.9999988096556441,
+    "intercept_relative_ns": 77309.93425369263,
+    "max_midpoint_residual_ns": 77310.0,
+    "max_anchor_bracket_ns": 186096.0,
+    "empirical_alignment_error_ns": 170358.0,
+    "note": "empirical anchor-fit/bracket tolerance, not a hardware clock accuracy guarantee"
+  },
+  "context_events": 21,
+  "internal_sequence_gaps": 0,
+  "context_attribution_note": "This driver attributes MPS scheduling events to member client PIDs, not the server PID. Membership verified separately; never infer attribution from server name alone.",
+  "context_pids": [
+    0,
+    359149
+  ],
+  "mps_associated_hardware_resident_ms": 20036.69596,
+  "cross_model_kernel_overlap_in_mps_hardware_residence_ms": 1750.926057,
+  "transition_guard_ns": 257982,
+  "overlap_away_from_context_transitions_ms": 1750.896041,
+  "conservative_overlap_in_uninterrupted_mps_residence_ms": 29.014596,
+  "device_metrics": {
+    "6": {
+      "samples": 200415,
+      "mean_percent": 99.71684255170521,
+      "max_percent": 100
+    },
+    "7": {
+      "samples": 200415,
+      "mean_percent": 95.73904148891052,
+      "max_percent": 100
+    },
+    "8": {
+      "samples": 200415,
+      "mean_percent": 6.3253648678991095,
+      "max_percent": 48
+    },
+    "9": {
+      "samples": 200415,
+      "mean_percent": 1.5502282763266222,
+      "max_percent": 81
+    },
+    "16": {
+      "samples": 200415,
+      "mean_percent": 25.526317890377467,
+      "max_percent": 99
+    }
+  },
+  "note": "Kernel elapsed spans inside uninterrupted MPS-associated context residence, with two actual-model clients. Device metrics not process-attributed. No Green API. Static status/SMcounts taken from actual partition-plan case; clientmembership captured before warmup and hostPID reconfirmed at capture start.",
+  "partition_plan": {
+    "case": {
+      "label": "native-mps-only",
+      "condition": "mps-only",
+      "mps": true,
+      "static": false,
+      "green": false,
+      "qsm": 48,
+      "ysm": 48
+    },
+    "parts": {},
+    "native_driver": true,
+    "green": false,
+    "actual_chunk_sms": 2
+  },
+  "conservative_50ms_gate": false,
+  "reference_only": true
+}

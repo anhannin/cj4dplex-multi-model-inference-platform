@@ -1,0 +1,94 @@
+[2026-11-10 03:06:00.458 Control 60817] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 03:06:00.458 Control 60817] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 03:06:00.458 Control 60817] CUDA MPS Control binary version: 13020
+[2026-11-10 03:06:00.459 Control 60817] Accepting connection...
+[2026-11-10 03:06:00.459 Control 60817] NEW UI
+[2026-11-10 03:06:00.460 Control 60817] Cmd:get_server_list
+[2026-11-10 03:06:00.460 Control 60817] UI closed
+[2026-11-10 03:06:00.477 Control 60817] Accepting connection...
+[2026-11-10 03:06:00.477 Control 60817] NEW UI
+[2026-11-10 03:06:00.478 Control 60817] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 03:06:00.496 Control 60817] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:06:00.496 Control 60817] UI closed
+[2026-11-10 03:06:00.497 Control 60817] Accepting connection...
+[2026-11-10 03:06:00.498 Control 60817] NEW UI
+[2026-11-10 03:06:00.498 Control 60817] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 03:06:00.498 Control 60817] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:06:00.498 Control 60817] UI closed
+[2026-11-10 03:06:00.499 Control 60817] Accepting connection...
+[2026-11-10 03:06:00.499 Control 60817] NEW UI
+[2026-11-10 03:06:00.499 Control 60817] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 03:06:00.499 Control 60817] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 03:06:00.499 Control 60817] Failed to create partition
+[2026-11-10 03:06:00.499 Control 60817] UI closed
+[2026-11-10 03:06:01.311 Control 60817] Accepting connection...
+[2026-11-10 03:06:01.311 Control 60817] User did not send valid credentials
+[2026-11-10 03:06:01.311 Control 60817] Accepting connection...
+[2026-11-10 03:06:01.311 Control 60817] NEW CLIENT 61189 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 03:06:01.311 Control 61191] Starting new server 61191 for user 1000
+[2026-11-10 03:06:01.313 Control 60817] Accepting connection...
+[2026-11-10 03:06:01.633 Control 60817] NEW SERVER 61191: Ready
+[2026-11-10 03:06:01.634 Control 60817] Accepting connection...
+[2026-11-10 03:06:01.634 Control 60817] User did not send valid credentials
+[2026-11-10 03:06:01.634 Control 60817] Accepting connection...
+[2026-11-10 03:06:01.634 Control 60817] NEW CLIENT 61200 from user 1000: Server already exists
+[2026-11-10 03:06:02.435 Control 60817] Accepting connection...
+[2026-11-10 03:06:02.436 Control 60817] User did not send valid credentials
+[2026-11-10 03:06:02.436 Control 60817] Accepting connection...
+[2026-11-10 03:06:02.436 Control 60817] NEW CLIENT 61011 from user 1000: Server already exists
+[2026-11-10 03:06:02.475 Control 60817] Accepting connection...
+[2026-11-10 03:06:02.475 Control 60817] User did not send valid credentials
+[2026-11-10 03:06:02.475 Control 60817] Accepting connection...
+[2026-11-10 03:06:02.475 Control 60817] NEW CLIENT 61032 from user 1000: Server already exists
+[2026-11-10 03:06:02.477 Control 60817] Accepting connection...
+[2026-11-10 03:06:02.477 Control 60817] NEW CLIENT 61011 from user 1000: Server already exists
+[2026-11-10 03:06:02.549 Control 60817] Accepting connection...
+[2026-11-10 03:06:02.549 Control 60817] NEW CLIENT 61032 from user 1000: Server already exists
+[2026-11-10 03:08:21.343 Control 60817] Accepting connection...
+[2026-11-10 03:08:21.343 Control 60817] NEW UI
+[2026-11-10 03:08:21.344 Control 60817] Cmd:get_server_list
+[2026-11-10 03:08:21.344 Control 60817] 61191
+[2026-11-10 03:08:21.344 Control 60817] UI closed
+[2026-11-10 03:08:21.345 Control 60817] Accepting connection...
+[2026-11-10 03:08:21.345 Control 60817] NEW UI
+[2026-11-10 03:08:21.345 Control 60817] Cmd:get_client_list 61191
+[2026-11-10 03:08:21.345 Control 60817] 61011
+[2026-11-10 03:08:21.345 Control 60817] 61032
+[2026-11-10 03:08:21.345 Control 60817] UI closed
+[2026-11-10 03:09:34.116 Control 60817] Accepting connection...
+[2026-11-10 03:09:34.116 Control 60817] NEW UI
+[2026-11-10 03:09:34.116 Control 60817] Cmd:get_server_list
+[2026-11-10 03:09:34.116 Control 60817] 61191
+[2026-11-10 03:09:34.116 Control 60817] UI closed
+[2026-11-10 03:09:34.117 Control 60817] Accepting connection...
+[2026-11-10 03:09:34.117 Control 60817] NEW UI
+[2026-11-10 03:09:34.117 Control 60817] Cmd:get_client_list 61191
+[2026-11-10 03:09:34.117 Control 60817] 61011
+[2026-11-10 03:09:34.117 Control 60817] 61032
+[2026-11-10 03:09:34.117 Control 60817] UI closed
+[2026-11-10 03:11:38.903 Control 60817] Accepting connection...
+[2026-11-10 03:11:38.903 Control 60817] NEW UI
+[2026-11-10 03:11:38.903 Control 60817] Cmd:get_server_list
+[2026-11-10 03:11:38.903 Control 60817] 61191
+[2026-11-10 03:11:38.903 Control 60817] UI closed
+[2026-11-10 03:11:38.904 Control 60817] Accepting connection...
+[2026-11-10 03:11:38.904 Control 60817] NEW UI
+[2026-11-10 03:11:38.904 Control 60817] Cmd:get_client_list 61191
+[2026-11-10 03:11:38.904 Control 60817] 61011
+[2026-11-10 03:11:38.904 Control 60817] 61032
+[2026-11-10 03:11:38.904 Control 60817] UI closed
+[2026-11-10 03:11:41.141 Control 60817] Accepting connection...
+[2026-11-10 03:11:41.142 Control 60817] NEW UI
+[2026-11-10 03:11:41.142 Control 60817] Cmd:get_server_list
+[2026-11-10 03:11:41.142 Control 60817] 61191
+[2026-11-10 03:11:41.142 Control 60817] UI closed
+[2026-11-10 03:11:41.143 Control 60817] Accepting connection...
+[2026-11-10 03:11:41.143 Control 60817] NEW UI
+[2026-11-10 03:11:41.143 Control 60817] Cmd:get_client_list 61191
+[2026-11-10 03:11:41.143 Control 60817] UI closed
+[2026-11-10 03:11:41.144 Control 60817] Accepting connection...
+[2026-11-10 03:11:41.144 Control 60817] NEW UI
+[2026-11-10 03:11:41.144 Control 60817] Cmd:quit
+[2026-11-10 03:11:41.144 Control 60817] Try shutting down server 61191, backoff is disabled
+[2026-11-10 03:11:41.245 Control 60817] Server 61191 exited with status 0
+[2026-11-10 03:11:41.245 Control 60817] Exit with status 0

@@ -1,0 +1,94 @@
+[2026-11-10 04:00:51.170 Control 150923] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 04:00:51.170 Control 150923] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 04:00:51.170 Control 150923] CUDA MPS Control binary version: 13020
+[2026-11-10 04:00:51.172 Control 150923] Accepting connection...
+[2026-11-10 04:00:51.172 Control 150923] NEW UI
+[2026-11-10 04:00:51.172 Control 150923] Cmd:get_server_list
+[2026-11-10 04:00:51.172 Control 150923] UI closed
+[2026-11-10 04:00:51.193 Control 150923] Accepting connection...
+[2026-11-10 04:00:51.193 Control 150923] NEW UI
+[2026-11-10 04:00:51.193 Control 150923] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-10 04:00:51.212 Control 150923] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:00:51.212 Control 150923] UI closed
+[2026-11-10 04:00:51.215 Control 150923] Accepting connection...
+[2026-11-10 04:00:51.215 Control 150923] NEW UI
+[2026-11-10 04:00:51.215 Control 150923] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-10 04:00:51.215 Control 150923] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:00:51.215 Control 150923] UI closed
+[2026-11-10 04:00:51.216 Control 150923] Accepting connection...
+[2026-11-10 04:00:51.216 Control 150923] NEW UI
+[2026-11-10 04:00:51.216 Control 150923] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 04:00:51.216 Control 150923] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 04:00:51.216 Control 150923] Failed to create partition
+[2026-11-10 04:00:51.216 Control 150923] UI closed
+[2026-11-10 04:00:52.037 Control 150923] Accepting connection...
+[2026-11-10 04:00:52.037 Control 150923] User did not send valid credentials
+[2026-11-10 04:00:52.037 Control 150923] Accepting connection...
+[2026-11-10 04:00:52.037 Control 150923] NEW CLIENT 151256 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 04:00:52.037 Control 151258] Starting new server 151258 for user 1000
+[2026-11-10 04:00:52.040 Control 150923] Accepting connection...
+[2026-11-10 04:00:52.364 Control 150923] NEW SERVER 151258: Ready
+[2026-11-10 04:00:52.365 Control 150923] Accepting connection...
+[2026-11-10 04:00:52.365 Control 150923] User did not send valid credentials
+[2026-11-10 04:00:52.365 Control 150923] Accepting connection...
+[2026-11-10 04:00:52.365 Control 150923] NEW CLIENT 151303 from user 1000: Server already exists
+[2026-11-10 04:00:53.198 Control 150923] Accepting connection...
+[2026-11-10 04:00:53.199 Control 150923] User did not send valid credentials
+[2026-11-10 04:00:53.199 Control 150923] Accepting connection...
+[2026-11-10 04:00:53.199 Control 150923] NEW CLIENT 151160 from user 1000: Server already exists
+[2026-11-10 04:00:53.215 Control 150923] Accepting connection...
+[2026-11-10 04:00:53.215 Control 150923] User did not send valid credentials
+[2026-11-10 04:00:53.215 Control 150923] Accepting connection...
+[2026-11-10 04:00:53.215 Control 150923] NEW CLIENT 151112 from user 1000: Server already exists
+[2026-11-10 04:00:53.259 Control 150923] Accepting connection...
+[2026-11-10 04:00:53.259 Control 150923] NEW CLIENT 151160 from user 1000: Server already exists
+[2026-11-10 04:00:53.261 Control 150923] Accepting connection...
+[2026-11-10 04:00:53.262 Control 150923] NEW CLIENT 151112 from user 1000: Server already exists
+[2026-11-10 04:02:57.063 Control 150923] Accepting connection...
+[2026-11-10 04:02:57.063 Control 150923] NEW UI
+[2026-11-10 04:02:57.063 Control 150923] Cmd:get_server_list
+[2026-11-10 04:02:57.063 Control 150923] 151258
+[2026-11-10 04:02:57.063 Control 150923] UI closed
+[2026-11-10 04:02:57.064 Control 150923] Accepting connection...
+[2026-11-10 04:02:57.064 Control 150923] NEW UI
+[2026-11-10 04:02:57.064 Control 150923] Cmd:get_client_list 151258
+[2026-11-10 04:02:57.064 Control 150923] 151160
+[2026-11-10 04:02:57.064 Control 150923] 151112
+[2026-11-10 04:02:57.064 Control 150923] UI closed
+[2026-11-10 04:04:08.148 Control 150923] Accepting connection...
+[2026-11-10 04:04:08.148 Control 150923] NEW UI
+[2026-11-10 04:04:08.148 Control 150923] Cmd:get_server_list
+[2026-11-10 04:04:08.148 Control 150923] 151258
+[2026-11-10 04:04:08.148 Control 150923] UI closed
+[2026-11-10 04:04:08.149 Control 150923] Accepting connection...
+[2026-11-10 04:04:08.149 Control 150923] NEW UI
+[2026-11-10 04:04:08.149 Control 150923] Cmd:get_client_list 151258
+[2026-11-10 04:04:08.149 Control 150923] 151160
+[2026-11-10 04:04:08.149 Control 150923] 151112
+[2026-11-10 04:04:08.149 Control 150923] UI closed
+[2026-11-10 04:06:06.493 Control 150923] Accepting connection...
+[2026-11-10 04:06:06.493 Control 150923] NEW UI
+[2026-11-10 04:06:06.493 Control 150923] Cmd:get_server_list
+[2026-11-10 04:06:06.493 Control 150923] 151258
+[2026-11-10 04:06:06.493 Control 150923] UI closed
+[2026-11-10 04:06:06.494 Control 150923] Accepting connection...
+[2026-11-10 04:06:06.494 Control 150923] NEW UI
+[2026-11-10 04:06:06.494 Control 150923] Cmd:get_client_list 151258
+[2026-11-10 04:06:06.494 Control 150923] 151160
+[2026-11-10 04:06:06.494 Control 150923] 151112
+[2026-11-10 04:06:06.494 Control 150923] UI closed
+[2026-11-10 04:06:08.779 Control 150923] Accepting connection...
+[2026-11-10 04:06:08.779 Control 150923] NEW UI
+[2026-11-10 04:06:08.779 Control 150923] Cmd:get_server_list
+[2026-11-10 04:06:08.779 Control 150923] 151258
+[2026-11-10 04:06:08.779 Control 150923] UI closed
+[2026-11-10 04:06:08.780 Control 150923] Accepting connection...
+[2026-11-10 04:06:08.780 Control 150923] NEW UI
+[2026-11-10 04:06:08.780 Control 150923] Cmd:get_client_list 151258
+[2026-11-10 04:06:08.781 Control 150923] UI closed
+[2026-11-10 04:06:08.782 Control 150923] Accepting connection...
+[2026-11-10 04:06:08.782 Control 150923] NEW UI
+[2026-11-10 04:06:08.782 Control 150923] Cmd:quit
+[2026-11-10 04:06:08.782 Control 150923] Try shutting down server 151258, backoff is disabled
+[2026-11-10 04:06:08.869 Control 150923] Server 151258 exited with status 0
+[2026-11-10 04:06:08.870 Control 150923] Exit with status 0

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/avees/cj-fault-idle/20261110-v1/src/analyze.py", line 115, in <module>
+    assert abs(v - s[k]) < 1e-6
+               ~~^~~~~~
+TypeError: unsupported operand type(s) for -: 'int' and 'str'

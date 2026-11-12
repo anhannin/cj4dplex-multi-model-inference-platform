@@ -1,3 +1,5 @@
+> **역사 문서:** 아래는 이전 HTTP 탐색 기록이다. FastAPI 실행 코드·전용 Dockerfile·HTTP 테스트는 2026-11-12 제출 정리에서 제거했다. 실행 안내로 사용하지 말고 현재 ROS2 경로와 `CODE_MAP.ko.md`를 따른다. 원문 당시 코드는 동결 baseline 및 결과 source 스냅샷에 보존된다.
+
 # 최소 FastAPI 모델 서빙
 
 ## 현재 상태

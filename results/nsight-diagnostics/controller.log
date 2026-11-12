@@ -1,0 +1,58 @@
+configmap/cj-nsys-diagnostics created
+deployment.apps/qwen configured
+deployment.apps/yolo configured
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+START qwen-only
+CAPTURED_RANGE qwen-only
+START yolo-only
+CAPTURED_RANGE yolo-only
+START concurrent
+CAPTURED_RANGE concurrent
+There are no active sessions.
+command terminated with exit code 1
+deployment.apps/qwen patched
+deployment.apps/yolo patched
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+configmap "cj-nsys-diagnostics" deleted from cj-inference namespace
+{
+  "state": "FAIL",
+  "phase": "complete",
+  "started_at_utc": "2026-11-03T08:26:57.310181+00:00",
+  "scope": "diagnostic only, not a performance baseline",
+  "reports": {},
+  "captured_phases": [
+    "qwen-only",
+    "yolo-only",
+    "concurrent"
+  ],
+  "error": "CalledProcessError(1, ['kubectl', '-n', 'cj-inference', 'exec', 'deployment/qwen', '--', 'nsys', 'shutdown', '--session=cj-qwen-diagnostic', '--kill=none'])",
+  "baseline_restored": true,
+  "finished_at_utc": "2026-11-03T08:34:33.218797+00:00"
+}
+Traceback (most recent call last):
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 323, in <module>
+    main()
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 205, in main
+    podexec(
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 57, in podexec
+    return kubectl("exec", "deployment/" + model, "--", *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 53, in kubectl
+    return execute(["kubectl", "-n", "cj-inference", *args], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 47, in execute
+    return subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['kubectl', '-n', 'cj-inference', 'exec', 'deployment/qwen', '--', 'nsys', 'shutdown', '--session=cj-qwen-diagnostic', '--kill=none']' returned non-zero exit status 1.

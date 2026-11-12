@@ -1,0 +1,152 @@
+[2026-11-10 00:59:41.544 Other 915489] Startup
+[2026-11-10 00:59:41.544 Other 915489] Connecting to control daemon on socket: /home/avees/cj-mps-concurrency/20261110-v1/mps-pipe/control
+[2026-11-10 00:59:41.544 Other 915489] Initializing server process
+[2026-11-10 00:59:41.562 Server 915489] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-10 00:59:41.687 Server 915489] Created anonymous shared memory region mps.shm.1000.915489
+[2026-11-10 00:59:41.687 Server 915489] CUDA MPS Server for Linux/Unix. Binary version: 13000
+[2026-11-10 00:59:41.687 Server 915489] Active Threads Percentage set to 100.0
+[2026-11-10 00:59:41.687 Server 915489] Server Priority set to 0
+[2026-11-10 00:59:41.687 Server 915489] Server has started
+[2026-11-10 00:59:41.687 Server 915489] Received new client request for {PID: -411354464, Context ID: 0}
+[2026-11-10 00:59:41.687 Server 915489] Client {PID: 915376, Context ID: 0} connected
+[2026-11-10 00:59:41.687 Server 915489] Creating worker thread for client {PID: 915376, Context ID: 0}
+[2026-11-10 00:59:41.708 Server 915489] Received new client request for {PID: 915376, Context ID: 0}
+[2026-11-10 00:59:41.709 Server 915489] Client {PID: 915376, Context ID: 1} connected
+[2026-11-10 00:59:41.709 Server 915489] Creating worker thread for client {PID: 915376, Context ID: 1}
+[2026-11-10 00:59:41.709 Server 915489] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-10 00:59:41.709 Server 915489] Status of client {PID: 915376, Context ID: 1} is ACTIVE
+[2026-11-10 00:59:57.006 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 915376, Context ID: 1} exit
+[2026-11-10 00:59:57.006 Server 915489] Client {PID: 915376, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-10 00:59:57.063 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 915376, Context ID: 0} exit
+[2026-11-10 00:59:57.063 Server 915489] Client process 915376 disconnected
+[2026-11-10 01:00:10.753 Server 915489] Received new client request for {PID: 915376, Context ID: 1}
+[2026-11-10 01:00:10.753 Server 915489] Client {PID: 917306, Context ID: 0} connected
+[2026-11-10 01:00:10.753 Server 915489] Creating worker thread for client {PID: 917306, Context ID: 0}
+[2026-11-10 01:00:10.754 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917306, Context ID: 0} exit
+[2026-11-10 01:00:10.754 Server 915489] Client process 917306 disconnected
+[2026-11-10 01:00:10.955 Server 915489] Received new client request for {PID: 917306, Context ID: 0}
+[2026-11-10 01:00:10.955 Server 915489] Client {PID: 917343, Context ID: 0} connected
+[2026-11-10 01:00:10.955 Server 915489] Creating worker thread for client {PID: 917343, Context ID: 0}
+[2026-11-10 01:00:10.978 Server 915489] Received new client request for {PID: 917343, Context ID: 0}
+[2026-11-10 01:00:10.978 Server 915489] Client {PID: 917385, Context ID: 0} connected
+[2026-11-10 01:00:10.978 Server 915489] Creating worker thread for client {PID: 917385, Context ID: 0}
+[2026-11-10 01:00:10.998 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917385, Context ID: 0} exit
+[2026-11-10 01:00:10.998 Server 915489] Client process 917385 disconnected
+[2026-11-10 01:00:11.124 Server 915489] Received new client request for {PID: 917385, Context ID: 0}
+[2026-11-10 01:00:11.125 Server 915489] Client {PID: 917477, Context ID: 0} connected
+[2026-11-10 01:00:11.125 Server 915489] Creating worker thread for client {PID: 917477, Context ID: 0}
+[2026-11-10 01:00:11.126 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917477, Context ID: 0} exit
+[2026-11-10 01:00:11.126 Server 915489] Client process 917477 disconnected
+[2026-11-10 01:00:11.348 Server 915489] Received new client request for {PID: 917477, Context ID: 0}
+[2026-11-10 01:00:11.348 Server 915489] Client {PID: 917505, Context ID: 0} connected
+[2026-11-10 01:00:11.348 Server 915489] Creating worker thread for client {PID: 917505, Context ID: 0}
+[2026-11-10 01:00:11.370 Server 915489] Received new client request for {PID: 917505, Context ID: 0}
+[2026-11-10 01:00:11.371 Server 915489] Client {PID: 917531, Context ID: 0} connected
+[2026-11-10 01:00:11.371 Server 915489] Creating worker thread for client {PID: 917531, Context ID: 0}
+[2026-11-10 01:00:11.391 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917531, Context ID: 0} exit
+[2026-11-10 01:00:11.391 Server 915489] Client process 917531 disconnected
+[2026-11-10 01:00:11.985 Server 915489] Received new client request for {PID: 917531, Context ID: 0}
+[2026-11-10 01:00:11.985 Server 915489] Client {PID: 917397, Context ID: 0} connected
+[2026-11-10 01:00:11.985 Server 915489] Creating worker thread for client {PID: 917397, Context ID: 0}
+[2026-11-10 01:00:12.045 Server 915489] Received new client request for {PID: 917397, Context ID: 0}
+[2026-11-10 01:00:12.065 Server 915489] Client {PID: 917397, Context ID: 1} connected
+[2026-11-10 01:00:12.065 Server 915489] Creating worker thread for client {PID: 917397, Context ID: 1}
+[2026-11-10 01:00:12.065 Server 915489] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-10 01:00:12.066 Server 915489] Status of client {PID: 917397, Context ID: 1} is ACTIVE
+[2026-11-10 01:00:12.430 Server 915489] Received new client request for {PID: 917397, Context ID: 1}
+[2026-11-10 01:00:12.445 Server 915489] Client {PID: 917535, Context ID: 0} connected
+[2026-11-10 01:00:12.445 Server 915489] Creating worker thread for client {PID: 917535, Context ID: 0}
+[2026-11-10 01:00:12.490 Server 915489] Received new client request for {PID: 917535, Context ID: 0}
+[2026-11-10 01:00:12.505 Server 915489] Client {PID: 917535, Context ID: 1} connected
+[2026-11-10 01:00:12.505 Server 915489] Creating worker thread for client {PID: 917535, Context ID: 1}
+[2026-11-10 01:00:12.505 Server 915489] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-10 01:00:12.505 Server 915489] Status of client {PID: 917535, Context ID: 1} is ACTIVE
+[2026-11-10 01:02:25.568 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917397, Context ID: 1} exit
+[2026-11-10 01:02:25.568 Server 915489] Client {PID: 917397, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-10 01:02:25.772 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917397, Context ID: 0} exit
+[2026-11-10 01:02:25.772 Server 915489] Client process 917397 disconnected
+[2026-11-10 01:02:25.931 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917343, Context ID: 0} exit
+[2026-11-10 01:02:25.931 Server 915489] Client process 917343 disconnected
+[2026-11-10 01:02:26.537 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917535, Context ID: 1} exit
+[2026-11-10 01:02:26.537 Server 915489] Client {PID: 917535, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-10 01:02:26.672 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917535, Context ID: 0} exit
+[2026-11-10 01:02:26.672 Server 915489] Client process 917535 disconnected
+[2026-11-10 01:02:26.818 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 917505, Context ID: 0} exit
+[2026-11-10 01:02:26.818 Server 915489] Client process 917505 disconnected
+[2026-11-10 01:05:26.935 Server 915489] Received new client request for {PID: 917535, Context ID: 1}
+[2026-11-10 01:05:26.935 Server 915489] Client {PID: 930695, Context ID: 0} connected
+[2026-11-10 01:05:26.935 Server 915489] Creating worker thread for client {PID: 930695, Context ID: 0}
+[2026-11-10 01:05:26.935 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930695, Context ID: 0} exit
+[2026-11-10 01:05:26.935 Server 915489] Client process 930695 disconnected
+[2026-11-10 01:05:27.152 Server 915489] Received new client request for {PID: 930695, Context ID: 0}
+[2026-11-10 01:05:27.152 Server 915489] Client {PID: 930726, Context ID: 0} connected
+[2026-11-10 01:05:27.152 Server 915489] Creating worker thread for client {PID: 930726, Context ID: 0}
+[2026-11-10 01:05:27.177 Server 915489] Received new client request for {PID: 930726, Context ID: 0}
+[2026-11-10 01:05:27.177 Server 915489] Client {PID: 930804, Context ID: 0} connected
+[2026-11-10 01:05:27.177 Server 915489] Creating worker thread for client {PID: 930804, Context ID: 0}
+[2026-11-10 01:05:27.204 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930804, Context ID: 0} exit
+[2026-11-10 01:05:27.204 Server 915489] Client process 930804 disconnected
+[2026-11-10 01:05:27.229 Server 915489] Received new client request for {PID: 930804, Context ID: 0}
+[2026-11-10 01:05:27.229 Server 915489] Client {PID: 930836, Context ID: 0} connected
+[2026-11-10 01:05:27.229 Server 915489] Creating worker thread for client {PID: 930836, Context ID: 0}
+[2026-11-10 01:05:27.230 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930836, Context ID: 0} exit
+[2026-11-10 01:05:27.230 Server 915489] Client process 930836 disconnected
+[2026-11-10 01:05:27.449 Server 915489] Received new client request for {PID: 930836, Context ID: 0}
+[2026-11-10 01:05:27.449 Server 915489] Client {PID: 930854, Context ID: 0} connected
+[2026-11-10 01:05:27.449 Server 915489] Creating worker thread for client {PID: 930854, Context ID: 0}
+[2026-11-10 01:05:27.473 Server 915489] Received new client request for {PID: 930854, Context ID: 0}
+[2026-11-10 01:05:27.473 Server 915489] Client {PID: 930896, Context ID: 0} connected
+[2026-11-10 01:05:27.473 Server 915489] Creating worker thread for client {PID: 930896, Context ID: 0}
+[2026-11-10 01:05:27.493 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930896, Context ID: 0} exit
+[2026-11-10 01:05:27.493 Server 915489] Client process 930896 disconnected
+[2026-11-10 01:05:28.201 Server 915489] Received new client request for {PID: 930896, Context ID: 0}
+[2026-11-10 01:05:28.202 Server 915489] Client {PID: 930827, Context ID: 0} connected
+[2026-11-10 01:05:28.202 Server 915489] Creating worker thread for client {PID: 930827, Context ID: 0}
+[2026-11-10 01:05:28.260 Server 915489] Received new client request for {PID: 930827, Context ID: 0}
+[2026-11-10 01:05:28.284 Server 915489] Client {PID: 930827, Context ID: 1} connected
+[2026-11-10 01:05:28.284 Server 915489] Creating worker thread for client {PID: 930827, Context ID: 1}
+[2026-11-10 01:05:28.284 Server 915489] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-10 01:05:28.284 Server 915489] Status of client {PID: 930827, Context ID: 1} is ACTIVE
+[2026-11-10 01:05:28.480 Server 915489] Received new client request for {PID: 930827, Context ID: 1}
+[2026-11-10 01:05:28.480 Server 915489] Client {PID: 930900, Context ID: 0} connected
+[2026-11-10 01:05:28.480 Server 915489] Creating worker thread for client {PID: 930900, Context ID: 0}
+[2026-11-10 01:05:28.523 Server 915489] Received new client request for {PID: 930900, Context ID: 0}
+[2026-11-10 01:05:28.538 Server 915489] Client {PID: 930900, Context ID: 1} connected
+[2026-11-10 01:05:28.538 Server 915489] Creating worker thread for client {PID: 930900, Context ID: 1}
+[2026-11-10 01:05:28.538 Server 915489] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-10 01:05:28.538 Server 915489] Status of client {PID: 930900, Context ID: 1} is ACTIVE
+[2026-11-10 01:08:54.914 Server 915489] Received new client request for {PID: 930900, Context ID: 1}
+[2026-11-10 01:08:54.914 Server 915489] Client {PID: 930886, Context ID: 0} connected
+[2026-11-10 01:08:54.914 Server 915489] Creating worker thread for client {PID: 930886, Context ID: 0}
+[2026-11-10 01:08:54.923 Server 915489] Received new client request for {PID: 930886, Context ID: 0}
+[2026-11-10 01:08:54.924 Server 915489] Client {PID: 930779, Context ID: 0} connected
+[2026-11-10 01:08:54.924 Server 915489] Creating worker thread for client {PID: 930779, Context ID: 0}
+[2026-11-10 01:08:54.992 Server 915489] Received new client request for {PID: 930779, Context ID: 0}
+[2026-11-10 01:08:54.992 Server 915489] Client {PID: 940423, Context ID: 0} connected
+[2026-11-10 01:08:54.992 Server 915489] Creating worker thread for client {PID: 940423, Context ID: 0}
+[2026-11-10 01:08:55.034 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 940423, Context ID: 0} exit
+[2026-11-10 01:08:55.034 Server 915489] Client process 940423 disconnected
+[2026-11-10 01:08:55.047 Server 915489] Received new client request for {PID: 940423, Context ID: 0}
+[2026-11-10 01:08:55.047 Server 915489] Client {PID: 940426, Context ID: 0} connected
+[2026-11-10 01:08:55.047 Server 915489] Creating worker thread for client {PID: 940426, Context ID: 0}
+[2026-11-10 01:08:55.077 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 940426, Context ID: 0} exit
+[2026-11-10 01:08:55.077 Server 915489] Client process 940426 disconnected
+[2026-11-10 01:11:16.080 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930900, Context ID: 1} exit
+[2026-11-10 01:11:16.080 Server 915489] Client {PID: 930900, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-10 01:11:16.302 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930900, Context ID: 0} exit
+[2026-11-10 01:11:16.302 Server 915489] Client process 930900 disconnected
+[2026-11-10 01:11:16.346 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930827, Context ID: 1} exit
+[2026-11-10 01:11:16.346 Server 915489] Client {PID: 930827, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-10 01:11:16.364 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930854, Context ID: 0} exit
+[2026-11-10 01:11:16.364 Server 915489] Client process 930854 disconnected
+[2026-11-10 01:11:16.377 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930886, Context ID: 0} exit
+[2026-11-10 01:11:16.377 Server 915489] Client process 930886 disconnected
+[2026-11-10 01:11:16.533 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930827, Context ID: 0} exit
+[2026-11-10 01:11:16.533 Server 915489] Client process 930827 disconnected
+[2026-11-10 01:11:16.805 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930726, Context ID: 0} exit
+[2026-11-10 01:11:16.805 Server 915489] Client process 930726 disconnected
+[2026-11-10 01:11:16.809 Server 915489] Server failed to recevie command with status 806, assuming client {PID: 930779, Context ID: 0} exit
+[2026-11-10 01:11:16.809 Server 915489] Client process 930779 disconnected
+[2026-11-10 01:14:23.992 Server 915489] Server has been notified to shutdown
+[2026-11-10 01:14:23.992 Server 915489] Waiting for current clients to finish
+[2026-11-10 01:14:23.992 Server 915489] Exiting

@@ -1,0 +1,5 @@
+DRIVER=595.99.02
+KERNEL=7.0.0-1025-nvidia
+SECUREBOOT_MODULE=Canonical
+FALLBACK=gnulinux-advanced-e06eaabb-67cc-466e-88a5-3ee4e1e3037e>gnulinux-6.17.0-1031-nvidia-advanced-e06eaabb-67cc-466e-88a5-3ee4e1e3037e
+NEXT=gnulinux-advanced-e06eaabb-67cc-466e-88a5-3ee4e1e3037e>gnulinux-7.0.0-1025-nvidia-advanced-e06eaabb-67cc-466e-88a5-3ee4e1e3037e

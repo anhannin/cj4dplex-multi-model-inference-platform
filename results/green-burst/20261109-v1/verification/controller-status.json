@@ -1,0 +1,24 @@
+{
+  "state": "PASS",
+  "start": 1794224140.351208,
+  "root": "/home/avees/cj-green-burst/20261109-v1",
+  "completed": [
+    "default-pre",
+    "q16-y32",
+    "q24-y24",
+    "q8-y40",
+    "q32-y16",
+    "q40-y8",
+    "default-post"
+  ],
+  "scope": "simultaneous finite bursts only, no solo comparisons",
+  "measured_burst_counts": {
+    "qwen": 10,
+    "yolo": 300
+  },
+  "replicates": 3,
+  "phase": "default-post",
+  "burst_repetition": 2,
+  "restoration": "PASS",
+  "end": 1794228673.3324873
+}

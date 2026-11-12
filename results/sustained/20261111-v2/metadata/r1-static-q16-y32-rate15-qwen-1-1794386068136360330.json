@@ -1,0 +1,12 @@
+{
+  "event": "gpu_resource_ready",
+  "enabled": false,
+  "selected_sms": 16,
+  "observed_smids": null,
+  "partition_id": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "torch_build_cuda": "13.0",
+  "cuda_runtime": 13010,
+  "pid": 1,
+  "time_ns": 1794386068136312217,
+  "pair": "r1-static-q16-y32-rate15"
+}

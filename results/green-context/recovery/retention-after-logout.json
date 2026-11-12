@@ -1,0 +1,31 @@
+{
+  "state": "PASS",
+  "observations": [
+    {
+      "elapsed_seconds": 15.00521797221154,
+      "properties": {
+        "State": "lingering",
+        "Sessions": "",
+        "Linger": "yes"
+      },
+      "server_files": {
+        "/dev/shm/fastrtps_c08854475285a5ee": true,
+        "/dev/shm/fastrtps_e8cb3c764064e8b5": true
+      },
+      "marker_exists": true
+    },
+    {
+      "elapsed_seconds": 45.00519949942827,
+      "properties": {
+        "State": "lingering",
+        "Sessions": "",
+        "Linger": "yes"
+      },
+      "server_files": {
+        "/dev/shm/fastrtps_c08854475285a5ee": true,
+        "/dev/shm/fastrtps_e8cb3c764064e8b5": true
+      },
+      "marker_exists": true
+    }
+  ]
+}

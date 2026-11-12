@@ -1,0 +1,258 @@
+pod/qwen-597fcb9bbf-j246x condition met
+Removed "/home/avees/.config/systemd/user/default.target.wants/cj-cuda-mps.service".
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "validation-control-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1181.145981, "qwen": 64441.057799}, "overall_completion_ms": 64441.057799, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.403574, "last_send_from_t0_ms": 0.563401, "all_published_from_t0_ms": 0.578649}, "yolo": {"first_send_from_t0_ms": 0.728779, "last_send_from_t0_ms": 34.940148, "all_published_from_t0_ms": 35.988995}}, "dispatch_window_ms": 35.988995}, "time": 1794382555.5488534}
+{"event": "trial_complete", "label": "validation-control-rate15", "phase": "validation", "expected": {"qwen": 3, "yolo": 450}, "generator": {"valid": true, "lag_p95_ms": 0.4867576, "lag_max_ms": 0.674806, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 8.701256622767282, "queue_slope_rps": 0.0035714285714285713, "errors": 0}}
+pod/qwen-746c77768b-9b5kc condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "validation-mps-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 759.829034, "qwen": 64807.124018}, "overall_completion_ms": 64807.124018, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 33.697652, "last_send_from_t0_ms": 33.88277, "all_published_from_t0_ms": 33.91813}, "yolo": {"first_send_from_t0_ms": 1.313429, "last_send_from_t0_ms": 54.625603, "all_published_from_t0_ms": 57.574698}}, "dispatch_window_ms": 57.574698}, "time": 1794382806.295885}
+{"event": "trial_complete", "label": "validation-mps-rate15", "phase": "validation", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.49363375, "lag_max_ms": 5.290736, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 19191.051975134887, "queue_slope_rps": 2.5020839121978327, "errors": 0}}
+pod/qwen-849cbd65cf-lmph4 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-control-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1062.428906, "qwen": 64465.520507}, "overall_completion_ms": 64465.520507, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.407808, "last_send_from_t0_ms": 0.626256, "all_published_from_t0_ms": 0.662384}, "yolo": {"first_send_from_t0_ms": 0.818705, "last_send_from_t0_ms": 34.059977, "all_published_from_t0_ms": 35.095115}}, "dispatch_window_ms": 35.095115}, "time": 1794383156.7842312}
+{"event": "trial_complete", "label": "r0-control-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.5509291500000001, "lag_max_ms": 0.844312, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 14.583062687144977, "queue_slope_rps": -0.0010558488469019176, "errors": 0}}
+pod/qwen-99c7f695f-9lhf8 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-control-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1113.608888, "qwen": 64584.239169}, "overall_completion_ms": 64584.239169, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.481795, "last_send_from_t0_ms": 0.69634, "all_published_from_t0_ms": 0.733172}, "yolo": {"first_send_from_t0_ms": 0.851237, "last_send_from_t0_ms": 55.636363, "all_published_from_t0_ms": 57.268965}}, "dispatch_window_ms": 57.268965}, "time": 1794383494.028726}
+{"event": "trial_complete", "label": "r0-control-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5506374, "lag_max_ms": 0.693585, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.27942616082630894, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-7c8f7dc77f-t4tn2 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-static-q8-y40-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1058.386297, "qwen": 64438.084958}, "overall_completion_ms": 64438.084958, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.404468, "last_send_from_t0_ms": 0.557045, "all_published_from_t0_ms": 0.573829}, "yolo": {"first_send_from_t0_ms": 0.952296, "last_send_from_t0_ms": 54.073041, "all_published_from_t0_ms": 55.747775}}, "dispatch_window_ms": 55.747775}, "time": 1794383813.2824943}
+{"event": "trial_complete", "label": "r0-static-q8-y40-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5354861999999996, "lag_max_ms": 0.88157, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.27635425133970176, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-9c966d595-v747k condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-static-q8-y40-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 871.284759, "qwen": 64385.370238}, "overall_completion_ms": 64385.370238, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.70175, "last_send_from_t0_ms": 0.954169, "all_published_from_t0_ms": 0.988873}, "yolo": {"first_send_from_t0_ms": 1.129963, "last_send_from_t0_ms": 32.655835, "all_published_from_t0_ms": 34.251706}}, "dispatch_window_ms": 34.251706}, "time": 1794384162.0778713}
+{"event": "trial_complete", "label": "r0-static-q8-y40-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.4930777499999999, "lag_max_ms": 1.130396, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.9103852536969094, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-674547695c-lz2h5 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-mps-only-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 950.357886, "qwen": 64620.119793}, "overall_completion_ms": 64620.119793, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.412788, "last_send_from_t0_ms": 0.647431, "all_published_from_t0_ms": 0.682119}, "yolo": {"first_send_from_t0_ms": 0.91441, "last_send_from_t0_ms": 34.261059, "all_published_from_t0_ms": 35.311134}}, "dispatch_window_ms": 35.311134}, "time": 1794384529.680648}
+{"event": "trial_complete", "label": "r0-mps-only-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.4960879, "lag_max_ms": 0.72583, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.44916530041518854, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-694fbd4785-stskb condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-mps-only-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 898.886397, "qwen": 64431.926326}, "overall_completion_ms": 64431.926326, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.302681, "last_send_from_t0_ms": 0.535536, "all_published_from_t0_ms": 0.571201}, "yolo": {"first_send_from_t0_ms": 0.688661, "last_send_from_t0_ms": 34.131979, "all_published_from_t0_ms": 35.191835}}, "dispatch_window_ms": 35.191835}, "time": 1794384895.085489}
+{"event": "trial_complete", "label": "r0-mps-only-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.497753, "lag_max_ms": 1.134783, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 18440.68471137567, "queue_slope_rps": 2.574187274242845, "errors": 0}}
+pod/qwen-8468499965-llzz8 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-static-q16-y32-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1236.6136, "qwen": 66958.394979}, "overall_completion_ms": 66958.394979, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 1.418128, "last_send_from_t0_ms": 1.874218, "all_published_from_t0_ms": 1.923435}, "yolo": {"first_send_from_t0_ms": 2.08211, "last_send_from_t0_ms": 58.41252, "all_published_from_t0_ms": 60.118525}}, "dispatch_window_ms": 60.118525}, "time": 1794385252.4413607}
+{"event": "trial_complete", "label": "r0-static-q16-y32-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.49988385, "lag_max_ms": 0.784419, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 1.0914084583378605, "queue_slope_rps": -0.0007502083912197832, "errors": 0}}
+pod/qwen-554594dc5d-7rhp2 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r0-static-q16-y32-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1027.932315, "qwen": 67034.611447}, "overall_completion_ms": 67034.611447, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.311942, "last_send_from_t0_ms": 0.479465, "all_published_from_t0_ms": 0.496633}, "yolo": {"first_send_from_t0_ms": 0.607499, "last_send_from_t0_ms": 50.229737, "all_published_from_t0_ms": 51.269387}}, "dispatch_window_ms": 51.269387}, "time": 1794385594.0040767}
+{"event": "trial_complete", "label": "r0-static-q16-y32-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.48222344999999994, "lag_max_ms": 0.812599, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.2657491212327538, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-79dc6b9488-dzv8k condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-static-q16-y32-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 742.046556, "qwen": 66803.832383}, "overall_completion_ms": 66803.832383, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 1.037504, "last_send_from_t0_ms": 1.276532, "all_published_from_t0_ms": 1.316245}, "yolo": {"first_send_from_t0_ms": 1.447207, "last_send_from_t0_ms": 35.737994, "all_published_from_t0_ms": 36.764346}}, "dispatch_window_ms": 36.764346}, "time": 1794385931.75959}
+{"event": "trial_complete", "label": "r1-static-q16-y32-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5645906999999997, "lag_max_ms": 0.715598, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.2640658628176122, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-6d5ff9f9-4s6rs condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-static-q16-y32-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 912.335016, "qwen": 66506.007509}, "overall_completion_ms": 66506.007509, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 16.91414, "last_send_from_t0_ms": 17.118767, "all_published_from_t0_ms": 17.154416}, "yolo": {"first_send_from_t0_ms": 0.910045, "last_send_from_t0_ms": 34.264415, "all_published_from_t0_ms": 35.311199}}, "dispatch_window_ms": 35.311199}, "time": 1794386249.940816}
+{"event": "trial_complete", "label": "r1-static-q16-y32-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.5622488999999999, "lag_max_ms": 0.879317, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.40710444206423646, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-59788d8c99-d6j9f condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-static-q8-y40-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1023.46552, "qwen": 64603.917107}, "overall_completion_ms": 64603.917107, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 49.600424, "last_send_from_t0_ms": 49.726426, "all_published_from_t0_ms": 49.755578}, "yolo": {"first_send_from_t0_ms": 0.646089, "last_send_from_t0_ms": 53.265261, "all_published_from_t0_ms": 54.909221}}, "dispatch_window_ms": 54.909221}, "time": 1794386583.7898228}
+{"event": "trial_complete", "label": "r1-static-q8-y40-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.4803289, "lag_max_ms": 0.70015, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.24982108146408186, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-7694c67456-lwvp8 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-static-q8-y40-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 775.183922, "qwen": 64180.66336}, "overall_completion_ms": 64180.66336, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.308908, "last_send_from_t0_ms": 0.479578, "all_published_from_t0_ms": 0.497193}, "yolo": {"first_send_from_t0_ms": 0.820997, "last_send_from_t0_ms": 34.468023, "all_published_from_t0_ms": 35.538984}}, "dispatch_window_ms": 35.538984}, "time": 1794386907.1618254}
+{"event": "trial_complete", "label": "r1-static-q8-y40-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.6159411999999997, "lag_max_ms": 1.017231, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.8938635760245638, "queue_slope_rps": -0.00025006946373992776, "errors": 0}}
+pod/qwen-7565469d68-zf49k condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-control-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 849.542082, "qwen": 64581.587297}, "overall_completion_ms": 64581.587297, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.716941, "last_send_from_t0_ms": 1.032764, "all_published_from_t0_ms": 1.067916}, "yolo": {"first_send_from_t0_ms": 1.193467, "last_send_from_t0_ms": 53.04972, "all_published_from_t0_ms": 55.032289}}, "dispatch_window_ms": 55.032289}, "time": 1794387234.480196}
+{"event": "trial_complete", "label": "r1-control-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5700888, "lag_max_ms": 0.844635, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.2707629312984257, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-7f9795498b-dzcnt condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-control-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1112.260273, "qwen": 64399.786567}, "overall_completion_ms": 64399.786567, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.409441, "last_send_from_t0_ms": 0.647793, "all_published_from_t0_ms": 0.682465}, "yolo": {"first_send_from_t0_ms": 0.891138, "last_send_from_t0_ms": 52.469576, "all_published_from_t0_ms": 54.102684}}, "dispatch_window_ms": 54.102684}, "time": 1794387568.6744416}
+{"event": "trial_complete", "label": "r1-control-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.47815525, "lag_max_ms": 0.705462, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 7.331031737687429, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-746655f4f6-f48wd condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-mps-only-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1121.294421, "qwen": 64581.987814}, "overall_completion_ms": 64581.987814, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.834068, "last_send_from_t0_ms": 1.212902, "all_published_from_t0_ms": 1.248183}, "yolo": {"first_send_from_t0_ms": 1.433384, "last_send_from_t0_ms": 53.143758, "all_published_from_t0_ms": 54.777831}}, "dispatch_window_ms": 54.777831}, "time": 1794387920.6472187}
+{"event": "trial_complete", "label": "r1-mps-only-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.4884609, "lag_max_ms": 0.776014, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 19024.528415152552, "queue_slope_rps": 2.856404556821339, "errors": 0}}
+pod/qwen-5bfb9d7c74-g2rkd condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r1-mps-only-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 854.706458, "qwen": 64768.952165}, "overall_completion_ms": 64768.952165, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.370931, "last_send_from_t0_ms": 0.59442, "all_published_from_t0_ms": 0.626293}, "yolo": {"first_send_from_t0_ms": 0.752837, "last_send_from_t0_ms": 35.316536, "all_published_from_t0_ms": 37.457143}}, "dispatch_window_ms": 37.457143}, "time": 1794388291.7596447}
+{"event": "trial_complete", "label": "r1-mps-only-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.477964, "lag_max_ms": 0.851668, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.3888249900531567, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-594d5946f6-dbznw condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-static-q16-y32-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1328.989949, "qwen": 67129.518748}, "overall_completion_ms": 67129.518748, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 5.884701, "last_send_from_t0_ms": 6.036431, "all_published_from_t0_ms": 6.065903}, "yolo": {"first_send_from_t0_ms": 0.380515, "last_send_from_t0_ms": 53.61291, "all_published_from_t0_ms": 55.874208}}, "dispatch_window_ms": 55.874208}, "time": 1794388620.261722}
+{"event": "trial_complete", "label": "r2-static-q16-y32-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.47181805, "lag_max_ms": 0.68815, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.2702521791434265, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-6c75bd7994-cmhxv condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-static-q16-y32-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 962.7348, "qwen": 66809.470888}, "overall_completion_ms": 66809.470888, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.408808, "last_send_from_t0_ms": 0.642509, "all_published_from_t0_ms": 0.679246}, "yolo": {"first_send_from_t0_ms": 0.799904, "last_send_from_t0_ms": 33.887304, "all_published_from_t0_ms": 34.915404}}, "dispatch_window_ms": 34.915404}, "time": 1794388953.3691325}
+{"event": "trial_complete", "label": "r2-static-q16-y32-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.50029375, "lag_max_ms": 0.751654, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.5437433574439233, "queue_slope_rps": -0.00030564045568213393, "errors": 0}}
+pod/qwen-68fd9f648-dnsgd condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-control-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1174.49364, "qwen": 64661.125297}, "overall_completion_ms": 64661.125297, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 1.116337, "last_send_from_t0_ms": 1.414086, "all_published_from_t0_ms": 1.446662}, "yolo": {"first_send_from_t0_ms": 1.503559, "last_send_from_t0_ms": 54.777087, "all_published_from_t0_ms": 56.511066}}, "dispatch_window_ms": 56.511066}, "time": 1794389293.2813225}
+{"event": "trial_complete", "label": "r2-control-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.69063725, "lag_max_ms": 1.052897, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 7.618397115341698, "queue_slope_rps": -0.0012225618227285357, "errors": 0}}
+pod/qwen-84b6b7868f-5wgbf condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-control-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1359.065414, "qwen": 64305.224134}, "overall_completion_ms": 64305.224134, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.313604, "last_send_from_t0_ms": 0.550551, "all_published_from_t0_ms": 0.587624}, "yolo": {"first_send_from_t0_ms": 0.626328, "last_send_from_t0_ms": 32.936563, "all_published_from_t0_ms": 34.347877}}, "dispatch_window_ms": 34.347877}, "time": 1794389630.6019127}
+{"event": "trial_complete", "label": "r2-control-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.3786257999999999, "lag_max_ms": 0.572521, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.2743473381390989, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-7c56647485-87tbx condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-mps-only-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1328.695815, "qwen": 64561.173145}, "overall_completion_ms": 64561.173145, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.398181, "last_send_from_t0_ms": 0.635703, "all_published_from_t0_ms": 0.669608}, "yolo": {"first_send_from_t0_ms": 0.827305, "last_send_from_t0_ms": 33.406779, "all_published_from_t0_ms": 34.440775}}, "dispatch_window_ms": 34.440775}, "time": 1794389994.724849}
+{"event": "trial_complete", "label": "r2-mps-only-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.49354365, "lag_max_ms": 3.429616, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 19026.58787156303, "queue_slope_rps": 2.6452070019449847, "errors": 0}}
+pod/qwen-8675996cff-srmtw condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-mps-only-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1331.349946, "qwen": 64817.797213}, "overall_completion_ms": 64817.797213, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 6.213986, "last_send_from_t0_ms": 6.35282, "all_published_from_t0_ms": 6.370148}, "yolo": {"first_send_from_t0_ms": 0.412964, "last_send_from_t0_ms": 34.848948, "all_published_from_t0_ms": 35.902815}}, "dispatch_window_ms": 35.902815}, "time": 1794390365.8191407}
+{"event": "trial_complete", "label": "r2-mps-only-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5138238999999996, "lag_max_ms": 0.843177, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.35429922008916037, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-6f96957779-nz4hg condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-static-q8-y40-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 785.855992, "qwen": 64176.683424}, "overall_completion_ms": 64176.683424, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.3921, "last_send_from_t0_ms": 0.625462, "all_published_from_t0_ms": 0.663095}, "yolo": {"first_send_from_t0_ms": 0.782712, "last_send_from_t0_ms": 53.718829, "all_published_from_t0_ms": 55.369374}}, "dispatch_window_ms": 55.369374}, "time": 1794390705.8035514}
+{"event": "trial_complete", "label": "r2-static-q8-y40-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.47586264999999994, "lag_max_ms": 2.031914, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.7635785372500928, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-77864bb8f9-9dl88 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r2-static-q8-y40-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1015.886769, "qwen": 64351.545085}, "overall_completion_ms": 64351.545085, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 10.487051, "last_send_from_t0_ms": 10.699455, "all_published_from_t0_ms": 10.735056}, "yolo": {"first_send_from_t0_ms": 0.718944, "last_send_from_t0_ms": 34.850716, "all_published_from_t0_ms": 35.931796}}, "dispatch_window_ms": 35.931796}, "time": 1794391032.684365}
+{"event": "trial_complete", "label": "r2-static-q8-y40-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.3541133, "lag_max_ms": 0.553102, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.26107879627185565, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-6d7fcb97df-8srgr condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-static-q8-y40-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1275.94725, "qwen": 64310.253389}, "overall_completion_ms": 64310.253389, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.452167, "last_send_from_t0_ms": 0.769453, "all_published_from_t0_ms": 0.789837}, "yolo": {"first_send_from_t0_ms": 1.76491, "last_send_from_t0_ms": 53.995347, "all_published_from_t0_ms": 56.427245}}, "dispatch_window_ms": 56.427245}, "time": 1794391371.4052424}
+{"event": "trial_complete", "label": "r3-static-q8-y40-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.4680611499999999, "lag_max_ms": 0.738101, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.26465580485819373, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-ff4ddcdd6-9fzxw condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-static-q8-y40-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 739.383621, "qwen": 64431.717032}, "overall_completion_ms": 64431.717032, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"yolo": {"first_send_from_t0_ms": 0.629369, "last_send_from_t0_ms": 34.020575, "all_published_from_t0_ms": 35.038942}, "qwen": {"first_send_from_t0_ms": 35.817737, "last_send_from_t0_ms": 36.021868, "all_published_from_t0_ms": 36.053068}}, "dispatch_window_ms": 36.053068}, "time": 1794391719.3195834}
+{"event": "trial_complete", "label": "r3-static-q8-y40-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.5320794499999998, "lag_max_ms": 0.802392, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.31964791084950167, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-6bb7657f66-xflvj condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-mps-only-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1736.255271, "qwen": 64695.264425}, "overall_completion_ms": 64695.264425, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.41071, "last_send_from_t0_ms": 0.637577, "all_published_from_t0_ms": 0.674121}, "yolo": {"first_send_from_t0_ms": 0.945149, "last_send_from_t0_ms": 34.773338, "all_published_from_t0_ms": 35.845336}}, "dispatch_window_ms": 35.845336}, "time": 1794392076.9466968}
+{"event": "trial_complete", "label": "r3-mps-only-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.51201135, "lag_max_ms": 0.942189, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 20160.91746921651, "queue_slope_rps": 3.0734648513475964, "errors": 0}}
+pod/qwen-6675cf5ccb-lvzp9 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-mps-only-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 836.660102, "qwen": 64588.851072}, "overall_completion_ms": 64588.851072, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"yolo": {"first_send_from_t0_ms": 1.050141, "last_send_from_t0_ms": 55.328577, "all_published_from_t0_ms": 58.532089}, "qwen": {"first_send_from_t0_ms": 58.924525, "last_send_from_t0_ms": 59.090527, "all_published_from_t0_ms": 59.118784}}, "dispatch_window_ms": 59.118784}, "time": 1794392453.6225734}
+{"event": "trial_complete", "label": "r3-mps-only-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5931356999999999, "lag_max_ms": 0.782448, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.302379985441803, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-7675f75bb6-lfbjl condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-static-q16-y32-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1321.584841, "qwen": 66773.207673}, "overall_completion_ms": 66773.207673, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 5.774854, "last_send_from_t0_ms": 5.855415, "all_published_from_t0_ms": 5.871383}, "yolo": {"first_send_from_t0_ms": 0.414469, "last_send_from_t0_ms": 52.756415, "all_published_from_t0_ms": 54.225265}}, "dispatch_window_ms": 54.225265}, "time": 1794392781.0917225}
+{"event": "trial_complete", "label": "r3-static-q16-y32-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.49667445, "lag_max_ms": 1.796653, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.8686919654913557, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-67c7d6557-gg22j condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-static-q16-y32-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1003.393693, "qwen": 66841.916396}, "overall_completion_ms": 66841.916396, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 21.894716, "last_send_from_t0_ms": 22.131134, "all_published_from_t0_ms": 22.166111}, "yolo": {"first_send_from_t0_ms": 0.716055, "last_send_from_t0_ms": 34.035807, "all_published_from_t0_ms": 35.106762}}, "dispatch_window_ms": 35.106762}, "time": 1794393116.9544978}
+{"event": "trial_complete", "label": "r3-static-q16-y32-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.4738788, "lag_max_ms": 0.657764, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.253130151698618, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-578479486f-f4fz9 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-control-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1005.784439, "qwen": 64218.461205}, "overall_completion_ms": 64218.461205, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 1.260126, "last_send_from_t0_ms": 1.622738, "all_published_from_t0_ms": 1.655203}, "yolo": {"first_send_from_t0_ms": 1.859141, "last_send_from_t0_ms": 56.992813, "all_published_from_t0_ms": 58.656224}}, "dispatch_window_ms": 58.656224}, "time": 1794393457.2371347}
+{"event": "trial_complete", "label": "r3-control-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5308203499999998, "lag_max_ms": 0.662785, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.2720765603953623, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-86f7c4f9f6-frmh6 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r3-control-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 673.909031, "qwen": 64500.426069}, "overall_completion_ms": 64500.426069, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.303812, "last_send_from_t0_ms": 0.536038, "all_published_from_t0_ms": 0.581319}, "yolo": {"first_send_from_t0_ms": 0.716648, "last_send_from_t0_ms": 55.118034, "all_published_from_t0_ms": 57.581022}}, "dispatch_window_ms": 57.581022}, "time": 1794393776.1725724}
+{"event": "trial_complete", "label": "r3-control-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.5582134, "lag_max_ms": 0.925369, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 4.730109972329552, "queue_slope_rps": 0.0007779938871908864, "errors": 0}}
+pod/qwen-7c56dd476b-hg7sb condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-mps-only-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1533.96057, "qwen": 64459.833119}, "overall_completion_ms": 64459.833119, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.45911, "last_send_from_t0_ms": 0.680664, "all_published_from_t0_ms": 0.717097}, "yolo": {"first_send_from_t0_ms": 0.823354, "last_send_from_t0_ms": 34.286842, "all_published_from_t0_ms": 35.315781}}, "dispatch_window_ms": 35.315781}, "time": 1794394142.991492}
+{"event": "trial_complete", "label": "r4-mps-only-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.5462343999999996, "lag_max_ms": 1.364946, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.3209623685203648, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-69989cb97c-wdwfl condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-mps-only-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 727.92898, "qwen": 64901.426168}, "overall_completion_ms": 64901.426168, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.944555, "last_send_from_t0_ms": 1.239102, "all_published_from_t0_ms": 1.273871}, "yolo": {"first_send_from_t0_ms": 1.529186, "last_send_from_t0_ms": 34.428509, "all_published_from_t0_ms": 35.478105}}, "dispatch_window_ms": 35.478105}, "time": 1794394514.328066}
+{"event": "trial_complete", "label": "r4-mps-only-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.49501975, "lag_max_ms": 0.66829, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 18992.974459460496, "queue_slope_rps": 2.6168380105584883, "errors": 0}}
+pod/qwen-64b9cf78f7-92h7h condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-control-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1627.432891, "qwen": 64437.954301}, "overall_completion_ms": 64437.954301, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 6.539387, "last_send_from_t0_ms": 6.670557, "all_published_from_t0_ms": 6.687917}, "yolo": {"first_send_from_t0_ms": 0.714072, "last_send_from_t0_ms": 54.272914, "all_published_from_t0_ms": 55.906133}}, "dispatch_window_ms": 55.906133}, "time": 1794394876.0400746}
+{"event": "trial_complete", "label": "r4-control-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.48949135, "lag_max_ms": 0.612824, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.269458451657556, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-9f9b5cc87-rk588 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-control-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1243.018278, "qwen": 64583.852893}, "overall_completion_ms": 64583.852893, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.394196, "last_send_from_t0_ms": 0.621783, "all_published_from_t0_ms": 0.663608}, "yolo": {"first_send_from_t0_ms": 0.710664, "last_send_from_t0_ms": 33.365641, "all_published_from_t0_ms": 34.871307}}, "dispatch_window_ms": 34.871307}, "time": 1794395180.271286}
+{"event": "trial_complete", "label": "r4-control-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.51169985, "lag_max_ms": 0.767596, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 9.613742147889248, "queue_slope_rps": 0.0015282022784106697, "errors": 0}}
+pod/qwen-9ff4759-8tzr7 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-static-q8-y40-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1316.516219, "qwen": 64395.257871}, "overall_completion_ms": 64395.257871, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.964828, "last_send_from_t0_ms": 1.499442, "all_published_from_t0_ms": 1.559971}, "yolo": {"first_send_from_t0_ms": 1.719717, "last_send_from_t0_ms": 53.351743, "all_published_from_t0_ms": 54.984083}}, "dispatch_window_ms": 54.984083}, "time": 1794395516.7487078}
+{"event": "trial_complete", "label": "r4-static-q8-y40-rate8", "phase": "main", "expected": {"qwen": 11, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.49507544999999986, "lag_max_ms": 0.848937, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.25821707925691345, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-56c64d6c99-xqmhc condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-static-q8-y40-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1137.6202, "qwen": 64542.267512}, "overall_completion_ms": 64542.267512, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 11.069923, "last_send_from_t0_ms": 11.261525, "all_published_from_t0_ms": 11.294326}, "yolo": {"first_send_from_t0_ms": 0.725833, "last_send_from_t0_ms": 33.580286, "all_published_from_t0_ms": 34.60041}}, "dispatch_window_ms": 34.60041}, "time": 1794395850.7286627}
+{"event": "trial_complete", "label": "r4-static-q8-y40-rate15", "phase": "main", "expected": {"qwen": 11, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.4780073499999999, "lag_max_ms": 1.869391, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 2.802555182392502, "queue_slope_rps": 0.0033620450125034732, "errors": 0}}
+pod/qwen-65ff8d949c-wg544 condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-static-q16-y32-rate8-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1357.233205, "qwen": 66585.944517}, "overall_completion_ms": 66585.944517, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 0.308932, "last_send_from_t0_ms": 0.54567, "all_published_from_t0_ms": 0.584951}, "yolo": {"first_send_from_t0_ms": 0.724152, "last_send_from_t0_ms": 35.159837, "all_published_from_t0_ms": 36.223626}}, "dispatch_window_ms": 36.223626}, "time": 1794396204.6470478}
+{"event": "trial_complete", "label": "r4-static-q16-y32-rate8", "phase": "main", "expected": {"qwen": 10, "yolo": 960}, "generator": {"valid": true, "lag_p95_ms": 0.3294001499999997, "lag_max_ms": 0.614465, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.26733387900700717, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-d8d8796-mwxrb condition met
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"event": "burst_complete", "label": "r4-static-q16-y32-rate15-warmup", "warmup": true, "summary": {"model_completion_ms": {"yolo": 1289.621019, "qwen": 66525.972199}, "overall_completion_ms": 66525.972199, "completed": {"qwen": 3, "yolo": 30}, "dispatch": {"qwen": {"first_send_from_t0_ms": 7.130628, "last_send_from_t0_ms": 7.299286, "all_published_from_t0_ms": 7.335366}, "yolo": {"first_send_from_t0_ms": 0.744761, "last_send_from_t0_ms": 34.594389, "all_published_from_t0_ms": 35.608465}}, "dispatch_window_ms": 35.608465}, "time": 1794396527.3736017}
+{"event": "trial_complete", "label": "r4-static-q16-y32-rate15", "phase": "main", "expected": {"qwen": 10, "yolo": 1800}, "generator": {"valid": true, "lag_p95_ms": 0.47230019999999995, "lag_max_ms": 0.832042, "errors": 0}, "pilot_queue": {"tail_queue_mean_ms": 0.902150571507971, "queue_slope_rps": 0.0, "errors": 0}}
+pod/qwen-658dbc6d86-vzzpj condition met
+Created symlink /home/avees/.config/systemd/user/default.target.wants/cj-cuda-mps.service → /home/avees/.config/systemd/user/cj-cuda-mps.service.
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out

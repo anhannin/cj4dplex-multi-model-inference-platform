@@ -1,0 +1,75 @@
+{
+  "mps_server_host_pid": 358487,
+  "mps_clients_host_pid": [
+    359146,
+    359149
+  ],
+  "scheduler_clock": {
+    "anchors": 69,
+    "base_trace_ns": 1794258484183796583,
+    "base_host_ns": 13076459269467,
+    "slope": 0.9999988096556441,
+    "intercept_relative_ns": 77309.93425369263,
+    "max_midpoint_residual_ns": 77310.0,
+    "max_anchor_bracket_ns": 186096.0,
+    "empirical_alignment_error_ns": 170358.0,
+    "note": "empirical anchor-fit/bracket tolerance, not a hardware clock accuracy guarantee"
+  },
+  "context_events": 21,
+  "internal_sequence_gaps": 0,
+  "context_attribution_note": "This driver attributes MPS scheduling events to member client PIDs, not the server PID. Membership verified separately; never infer attribution from server name alone.",
+  "context_pids": [
+    0,
+    359149
+  ],
+  "mps_associated_hardware_resident_ms": 20036.69596,
+  "cross_model_kernel_overlap_in_mps_hardware_residence_ms": 1750.926057,
+  "transition_guard_ns": 257982,
+  "overlap_away_from_context_transitions_ms": 1750.896041,
+  "conservative_overlap_in_uninterrupted_mps_residence_ms": 29.014596,
+  "device_metrics": {
+    "6": {
+      "samples": 200415,
+      "mean_percent": 99.71684255170521,
+      "max_percent": 100
+    },
+    "7": {
+      "samples": 200415,
+      "mean_percent": 95.73904148891052,
+      "max_percent": 100
+    },
+    "8": {
+      "samples": 200415,
+      "mean_percent": 6.3253648678991095,
+      "max_percent": 48
+    },
+    "9": {
+      "samples": 200415,
+      "mean_percent": 1.5502282763266222,
+      "max_percent": 81
+    },
+    "16": {
+      "samples": 200415,
+      "mean_percent": 25.526317890377467,
+      "max_percent": 99
+    }
+  },
+  "note": "Kernel elapsed spans inside uninterrupted MPS-associated context residence, with two actual-model clients. Device metrics not process-attributed. No Green API. Static status/SMcounts taken from actual partition-plan case; clientmembership captured before warmup and hostPID reconfirmed at capture start.",
+  "partition_plan": {
+    "case": {
+      "label": "native-mps-only",
+      "condition": "mps-only",
+      "mps": true,
+      "static": false,
+      "green": false,
+      "qsm": 48,
+      "ysm": 48
+    },
+    "parts": {},
+    "native_driver": true,
+    "green": false,
+    "actual_chunk_sms": 2
+  },
+  "conservative_50ms_gate": false,
+  "reference_only": true
+}

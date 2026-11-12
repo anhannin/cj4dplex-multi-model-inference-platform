@@ -1,0 +1,22 @@
+{
+  "state": "PASS",
+  "validated_profile_reports": 6,
+  "diagnostic_requests": 884,
+  "request_failures": 0,
+  "total_kernel_events": 1743320,
+  "trace_loss_message_present": false,
+  "baseline_restored": true,
+  "post_restore_health_requests_pass": true,
+  "baseline_code_modified": false,
+  "mps_or_sm_partitioning_applied": false,
+  "controller_automation_state": "FAIL",
+  "controller_postcapture_error_preserved": "CalledProcessError(1, ['kubectl', '-n', 'cj-inference', 'exec', 'deployment/qwen', '--', 'nsys', 'shutdown', '--session=cj-qwen-diagnostic', '--kill=none'])",
+  "collection_validated_independently_of_controller_exit": true,
+  "offline_export_recovery": "CPU-only runc Docker using same nsys2025.5.1",
+  "limits": [
+    "No CPU perf sampling",
+    "No SM/DRAM hardware counters",
+    "Unified Memory tracing unsupported",
+    "Short diagnostic windows not baseline/SLO proof"
+  ]
+}

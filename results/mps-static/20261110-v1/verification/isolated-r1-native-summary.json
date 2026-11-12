@@ -1,0 +1,32 @@
+[
+  {
+    "model": "qwen",
+    "exit": 1,
+    "records": [
+      {
+        "driver_api": 13010,
+        "loaded_cuda": [
+          "fe6be6140000-fe6bebc20000 r-xp 00000000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01",
+          "fe6bebc20000-fe6bebc30000 ---p 05ae0000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01",
+          "fe6bebc30000-fe6bebf8b000 r--p 05ae0000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01",
+          "fe6bebf8b000-fe6bebf90000 rw-p 05e3b000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01"
+        ]
+      }
+    ]
+  },
+  {
+    "model": "yolo",
+    "exit": 1,
+    "records": [
+      {
+        "driver_api": 13010,
+        "loaded_cuda": [
+          "fe160e140000-fe1613c20000 r-xp 00000000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01",
+          "fe1613c20000-fe1613c30000 ---p 05ae0000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01",
+          "fe1613c30000-fe1613f8b000 r--p 05ae0000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01",
+          "fe1613f8b000-fe1613f90000 rw-p 05e3b000 103:02 37236110                  /opt/cuda-compat/libcuda.so.590.48.01"
+        ]
+      }
+    ]
+  }
+]

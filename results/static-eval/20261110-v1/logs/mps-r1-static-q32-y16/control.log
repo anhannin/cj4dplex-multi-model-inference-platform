@@ -1,0 +1,94 @@
+[2026-11-10 03:33:23.278 Control 105795] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 03:33:23.278 Control 105795] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 03:33:23.278 Control 105795] CUDA MPS Control binary version: 13020
+[2026-11-10 03:33:23.280 Control 105795] Accepting connection...
+[2026-11-10 03:33:23.280 Control 105795] NEW UI
+[2026-11-10 03:33:23.280 Control 105795] Cmd:get_server_list
+[2026-11-10 03:33:23.280 Control 105795] UI closed
+[2026-11-10 03:33:23.298 Control 105795] Accepting connection...
+[2026-11-10 03:33:23.298 Control 105795] NEW UI
+[2026-11-10 03:33:23.298 Control 105795] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-10 03:33:23.313 Control 105795] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/z/M8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:33:23.313 Control 105795] UI closed
+[2026-11-10 03:33:23.315 Control 105795] Accepting connection...
+[2026-11-10 03:33:23.315 Control 105795] NEW UI
+[2026-11-10 03:33:23.315 Control 105795] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-10 03:33:23.315 Control 105795] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/MAzDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:33:23.315 Control 105795] UI closed
+[2026-11-10 03:33:23.316 Control 105795] Accepting connection...
+[2026-11-10 03:33:23.316 Control 105795] NEW UI
+[2026-11-10 03:33:23.316 Control 105795] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 03:33:23.316 Control 105795] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 03:33:23.316 Control 105795] Failed to create partition
+[2026-11-10 03:33:23.316 Control 105795] UI closed
+[2026-11-10 03:33:24.113 Control 105795] Accepting connection...
+[2026-11-10 03:33:24.113 Control 105795] User did not send valid credentials
+[2026-11-10 03:33:24.113 Control 105795] Accepting connection...
+[2026-11-10 03:33:24.113 Control 105795] NEW CLIENT 106084 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 03:33:24.113 Control 106093] Starting new server 106093 for user 1000
+[2026-11-10 03:33:24.115 Control 105795] Accepting connection...
+[2026-11-10 03:33:24.446 Control 105795] NEW SERVER 106093: Ready
+[2026-11-10 03:33:24.447 Control 105795] Accepting connection...
+[2026-11-10 03:33:24.447 Control 105795] User did not send valid credentials
+[2026-11-10 03:33:24.447 Control 105795] Accepting connection...
+[2026-11-10 03:33:24.447 Control 105795] NEW CLIENT 106178 from user 1000: Server already exists
+[2026-11-10 03:33:25.253 Control 105795] Accepting connection...
+[2026-11-10 03:33:25.253 Control 105795] User did not send valid credentials
+[2026-11-10 03:33:25.253 Control 105795] Accepting connection...
+[2026-11-10 03:33:25.253 Control 105795] NEW CLIENT 105985 from user 1000: Server already exists
+[2026-11-10 03:33:25.283 Control 105795] Accepting connection...
+[2026-11-10 03:33:25.283 Control 105795] User did not send valid credentials
+[2026-11-10 03:33:25.283 Control 105795] Accepting connection...
+[2026-11-10 03:33:25.283 Control 105795] NEW CLIENT 106083 from user 1000: Server already exists
+[2026-11-10 03:33:25.295 Control 105795] Accepting connection...
+[2026-11-10 03:33:25.295 Control 105795] NEW CLIENT 105985 from user 1000: Server already exists
+[2026-11-10 03:33:25.343 Control 105795] Accepting connection...
+[2026-11-10 03:33:25.343 Control 105795] NEW CLIENT 106083 from user 1000: Server already exists
+[2026-11-10 03:35:19.154 Control 105795] Accepting connection...
+[2026-11-10 03:35:19.154 Control 105795] NEW UI
+[2026-11-10 03:35:19.154 Control 105795] Cmd:get_server_list
+[2026-11-10 03:35:19.154 Control 105795] 106093
+[2026-11-10 03:35:19.154 Control 105795] UI closed
+[2026-11-10 03:35:19.155 Control 105795] Accepting connection...
+[2026-11-10 03:35:19.155 Control 105795] NEW UI
+[2026-11-10 03:35:19.156 Control 105795] Cmd:get_client_list 106093
+[2026-11-10 03:35:19.156 Control 105795] 105985
+[2026-11-10 03:35:19.156 Control 105795] 106083
+[2026-11-10 03:35:19.156 Control 105795] UI closed
+[2026-11-10 03:36:32.171 Control 105795] Accepting connection...
+[2026-11-10 03:36:32.171 Control 105795] NEW UI
+[2026-11-10 03:36:32.171 Control 105795] Cmd:get_server_list
+[2026-11-10 03:36:32.171 Control 105795] 106093
+[2026-11-10 03:36:32.171 Control 105795] UI closed
+[2026-11-10 03:36:32.173 Control 105795] Accepting connection...
+[2026-11-10 03:36:32.173 Control 105795] NEW UI
+[2026-11-10 03:36:32.174 Control 105795] Cmd:get_client_list 106093
+[2026-11-10 03:36:32.174 Control 105795] 105985
+[2026-11-10 03:36:32.174 Control 105795] 106083
+[2026-11-10 03:36:32.174 Control 105795] UI closed
+[2026-11-10 03:38:37.970 Control 105795] Accepting connection...
+[2026-11-10 03:38:37.970 Control 105795] NEW UI
+[2026-11-10 03:38:37.970 Control 105795] Cmd:get_server_list
+[2026-11-10 03:38:37.970 Control 105795] 106093
+[2026-11-10 03:38:37.970 Control 105795] UI closed
+[2026-11-10 03:38:37.971 Control 105795] Accepting connection...
+[2026-11-10 03:38:37.971 Control 105795] NEW UI
+[2026-11-10 03:38:37.971 Control 105795] Cmd:get_client_list 106093
+[2026-11-10 03:38:37.971 Control 105795] 105985
+[2026-11-10 03:38:37.971 Control 105795] 106083
+[2026-11-10 03:38:37.971 Control 105795] UI closed
+[2026-11-10 03:38:39.907 Control 105795] Accepting connection...
+[2026-11-10 03:38:39.907 Control 105795] NEW UI
+[2026-11-10 03:38:39.907 Control 105795] Cmd:get_server_list
+[2026-11-10 03:38:39.907 Control 105795] 106093
+[2026-11-10 03:38:39.907 Control 105795] UI closed
+[2026-11-10 03:38:39.908 Control 105795] Accepting connection...
+[2026-11-10 03:38:39.908 Control 105795] NEW UI
+[2026-11-10 03:38:39.908 Control 105795] Cmd:get_client_list 106093
+[2026-11-10 03:38:39.909 Control 105795] UI closed
+[2026-11-10 03:38:39.909 Control 105795] Accepting connection...
+[2026-11-10 03:38:39.909 Control 105795] NEW UI
+[2026-11-10 03:38:39.909 Control 105795] Cmd:quit
+[2026-11-10 03:38:39.909 Control 105795] Try shutting down server 106093, backoff is disabled
+[2026-11-10 03:38:39.979 Control 105795] Server 106093 exited with status 0
+[2026-11-10 03:38:39.980 Control 105795] Exit with status 0

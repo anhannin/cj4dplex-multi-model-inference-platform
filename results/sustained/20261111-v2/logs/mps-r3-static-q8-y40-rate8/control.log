@@ -1,0 +1,83 @@
+[2026-11-11 18:59:29.605 Control 3122140] Starting control daemon using socket /home/avees/cj-sustained/20261111-v2/eval-pipe/control
+[2026-11-11 18:59:29.605 Control 3122140] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-sustained/20261111-v2/eval-pipe
+[2026-11-11 18:59:29.605 Control 3122140] CUDA MPS Control binary version: 13020
+[2026-11-11 18:59:29.606 Control 3122140] Accepting connection...
+[2026-11-11 18:59:29.606 Control 3122140] NEW UI
+[2026-11-11 18:59:29.606 Control 3122140] Cmd:get_server_list
+[2026-11-11 18:59:29.606 Control 3122140] UI closed
+[2026-11-11 18:59:29.623 Control 3122140] Accepting connection...
+[2026-11-11 18:59:29.623 Control 3122140] NEW UI
+[2026-11-11 18:59:29.623 Control 3122140] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-11 18:59:29.639 Control 3122140] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-11 18:59:29.639 Control 3122140] UI closed
+[2026-11-11 18:59:29.640 Control 3122140] Accepting connection...
+[2026-11-11 18:59:29.640 Control 3122140] NEW UI
+[2026-11-11 18:59:29.640 Control 3122140] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-11 18:59:29.640 Control 3122140] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-11 18:59:29.640 Control 3122140] UI closed
+[2026-11-11 18:59:29.641 Control 3122140] Accepting connection...
+[2026-11-11 18:59:29.641 Control 3122140] NEW UI
+[2026-11-11 18:59:29.641 Control 3122140] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-11 18:59:29.641 Control 3122140] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-11 18:59:29.641 Control 3122140] Failed to create partition
+[2026-11-11 18:59:29.641 Control 3122140] UI closed
+[2026-11-11 18:59:30.491 Control 3122140] Accepting connection...
+[2026-11-11 18:59:30.491 Control 3122140] User did not send valid credentials
+[2026-11-11 18:59:30.491 Control 3122140] Accepting connection...
+[2026-11-11 18:59:30.491 Control 3122140] NEW CLIENT 3122508 from user 1000: Server is not ready, push client to pending list
+[2026-11-11 18:59:30.491 Control 3122510] Starting new server 3122510 for user 1000
+[2026-11-11 18:59:30.493 Control 3122140] Accepting connection...
+[2026-11-11 18:59:30.812 Control 3122140] NEW SERVER 3122510: Ready
+[2026-11-11 18:59:30.813 Control 3122140] Accepting connection...
+[2026-11-11 18:59:30.813 Control 3122140] User did not send valid credentials
+[2026-11-11 18:59:30.813 Control 3122140] Accepting connection...
+[2026-11-11 18:59:30.813 Control 3122140] NEW CLIENT 3122519 from user 1000: Server already exists
+[2026-11-11 18:59:31.661 Control 3122140] Accepting connection...
+[2026-11-11 18:59:31.661 Control 3122140] User did not send valid credentials
+[2026-11-11 18:59:31.661 Control 3122140] Accepting connection...
+[2026-11-11 18:59:31.661 Control 3122140] NEW CLIENT 3122346 from user 1000: Server already exists
+[2026-11-11 18:59:31.697 Control 3122140] Accepting connection...
+[2026-11-11 18:59:31.697 Control 3122140] User did not send valid credentials
+[2026-11-11 18:59:31.697 Control 3122140] Accepting connection...
+[2026-11-11 18:59:31.697 Control 3122140] NEW CLIENT 3122353 from user 1000: Server already exists
+[2026-11-11 18:59:31.714 Control 3122140] Accepting connection...
+[2026-11-11 18:59:31.714 Control 3122140] NEW CLIENT 3122346 from user 1000: Server already exists
+[2026-11-11 18:59:31.745 Control 3122140] Accepting connection...
+[2026-11-11 18:59:31.745 Control 3122140] NEW CLIENT 3122353 from user 1000: Server already exists
+[2026-11-11 19:01:40.519 Control 3122140] Accepting connection...
+[2026-11-11 19:01:40.519 Control 3122140] NEW UI
+[2026-11-11 19:01:40.519 Control 3122140] Cmd:get_server_list
+[2026-11-11 19:01:40.519 Control 3122140] 3122510
+[2026-11-11 19:01:40.519 Control 3122140] UI closed
+[2026-11-11 19:01:40.520 Control 3122140] Accepting connection...
+[2026-11-11 19:01:40.520 Control 3122140] NEW UI
+[2026-11-11 19:01:40.520 Control 3122140] Cmd:get_client_list 3122510
+[2026-11-11 19:01:40.520 Control 3122140] 3122346
+[2026-11-11 19:01:40.520 Control 3122140] 3122353
+[2026-11-11 19:01:40.520 Control 3122140] UI closed
+[2026-11-11 19:05:05.407 Control 3122140] Accepting connection...
+[2026-11-11 19:05:05.407 Control 3122140] NEW UI
+[2026-11-11 19:05:05.408 Control 3122140] Cmd:get_server_list
+[2026-11-11 19:05:05.408 Control 3122140] 3122510
+[2026-11-11 19:05:05.408 Control 3122140] UI closed
+[2026-11-11 19:05:05.409 Control 3122140] Accepting connection...
+[2026-11-11 19:05:05.409 Control 3122140] NEW UI
+[2026-11-11 19:05:05.409 Control 3122140] Cmd:get_client_list 3122510
+[2026-11-11 19:05:05.409 Control 3122140] 3122346
+[2026-11-11 19:05:05.409 Control 3122140] 3122353
+[2026-11-11 19:05:05.409 Control 3122140] UI closed
+[2026-11-11 19:05:07.252 Control 3122140] Accepting connection...
+[2026-11-11 19:05:07.252 Control 3122140] NEW UI
+[2026-11-11 19:05:07.252 Control 3122140] Cmd:get_server_list
+[2026-11-11 19:05:07.252 Control 3122140] 3122510
+[2026-11-11 19:05:07.252 Control 3122140] UI closed
+[2026-11-11 19:05:07.253 Control 3122140] Accepting connection...
+[2026-11-11 19:05:07.253 Control 3122140] NEW UI
+[2026-11-11 19:05:07.254 Control 3122140] Cmd:get_client_list 3122510
+[2026-11-11 19:05:07.254 Control 3122140] UI closed
+[2026-11-11 19:05:07.255 Control 3122140] Accepting connection...
+[2026-11-11 19:05:07.255 Control 3122140] NEW UI
+[2026-11-11 19:05:07.255 Control 3122140] Cmd:quit
+[2026-11-11 19:05:07.255 Control 3122140] Try shutting down server 3122510, backoff is disabled
+[2026-11-11 19:05:07.339 Control 3122140] Server 3122510 exited with status 0
+[2026-11-11 19:05:07.340 Control 3122140] Exit with status 0

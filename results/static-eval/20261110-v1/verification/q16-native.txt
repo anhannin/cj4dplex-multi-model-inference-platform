@@ -1,0 +1,3 @@
+runtime=13010 driver_api=13020
+visible_sms=16
+kernel_value=42

@@ -1,0 +1,374 @@
+[
+  {
+    "run": "default-both",
+    "state": "PASS",
+    "counts": {
+      "yolo": 3780,
+      "qwen": 10
+    },
+    "requests_with_warmup": 3796,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      },
+      "yolo": {
+        "expected": 3780,
+        "captured": 3780,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "default-qwen-solo",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10
+    },
+    "requests_with_warmup": 13,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "default-yolo-solo",
+    "state": "PASS",
+    "counts": {
+      "yolo": 300
+    },
+    "requests_with_warmup": 303,
+    "qwen_output_text_hashes": 0,
+    "publications": {
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "profile-pilot",
+    "state": "PASS",
+    "counts": {
+      "yolo": 369,
+      "qwen": 1
+    },
+    "requests_with_warmup": 376,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 1,
+        "captured": 1,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      },
+      "yolo": {
+        "expected": 369,
+        "captured": 369,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q16-y32-both",
+    "state": "PASS",
+    "counts": {
+      "yolo": 3655,
+      "qwen": 10
+    },
+    "requests_with_warmup": 3671,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      },
+      "yolo": {
+        "expected": 3655,
+        "captured": 3655,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q16-y32-qwen-solo",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10
+    },
+    "requests_with_warmup": 13,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q16-y32-yolo-solo",
+    "state": "PASS",
+    "counts": {
+      "yolo": 300
+    },
+    "requests_with_warmup": 303,
+    "qwen_output_text_hashes": 0,
+    "publications": {
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q24-y24-both",
+    "state": "PASS",
+    "counts": {
+      "yolo": 3656,
+      "qwen": 10
+    },
+    "requests_with_warmup": 3672,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      },
+      "yolo": {
+        "expected": 3656,
+        "captured": 3656,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q24-y24-qwen-solo",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10
+    },
+    "requests_with_warmup": 13,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q24-y24-yolo-solo",
+    "state": "PASS",
+    "counts": {
+      "yolo": 300
+    },
+    "requests_with_warmup": 303,
+    "qwen_output_text_hashes": 0,
+    "publications": {
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q32-y16-both",
+    "state": "PASS",
+    "counts": {
+      "yolo": 3394,
+      "qwen": 10
+    },
+    "requests_with_warmup": 3410,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      },
+      "yolo": {
+        "expected": 3394,
+        "captured": 3394,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q32-y16-qwen-solo",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10
+    },
+    "requests_with_warmup": 13,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q32-y16-yolo-solo",
+    "state": "PASS",
+    "counts": {
+      "yolo": 300
+    },
+    "requests_with_warmup": 303,
+    "qwen_output_text_hashes": 0,
+    "publications": {
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q40-y8-both",
+    "state": "PASS",
+    "counts": {
+      "yolo": 2636,
+      "qwen": 10
+    },
+    "requests_with_warmup": 2652,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      },
+      "yolo": {
+        "expected": 2636,
+        "captured": 2636,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q40-y8-qwen-solo",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10
+    },
+    "requests_with_warmup": 13,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q40-y8-yolo-solo",
+    "state": "PASS",
+    "counts": {
+      "yolo": 300
+    },
+    "requests_with_warmup": 303,
+    "qwen_output_text_hashes": 0,
+    "publications": {
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q8-y40-both",
+    "state": "PASS",
+    "counts": {
+      "yolo": 3957,
+      "qwen": 10
+    },
+    "requests_with_warmup": 3973,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      },
+      "yolo": {
+        "expected": 3957,
+        "captured": 3957,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q8-y40-qwen-solo",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10
+    },
+    "requests_with_warmup": 13,
+    "qwen_output_text_hashes": 1,
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  },
+  {
+    "run": "q8-y40-yolo-solo",
+    "state": "PASS",
+    "counts": {
+      "yolo": 300
+    },
+    "requests_with_warmup": 303,
+    "qwen_output_text_hashes": 0,
+    "publications": {
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "coverage_complete": true,
+        "acknowledged_false": 0
+      }
+    }
+  }
+]
