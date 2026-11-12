@@ -51,9 +51,10 @@ def plot(rows, output):
         }
     )
     fig, axes = plt.subplots(1, 2, figsize=(10.8, 4.6))
-    fig.subplots_adjust(left=0.09, right=0.98, top=0.97, bottom=0.15, wspace=0.32)
+    fig.subplots_adjust(left=0.09, right=0.98, top=0.88, bottom=0.15, wspace=0.32)
     colors = ["#89949F", "#237D8A"]
     for ax, row in zip(axes, rows):
+        ax.set_title("Qwen" if row["model"] == "qwen" else "YOLO", fontsize=15, pad=12)
         values = [row["before_s"], row["after_s"]]
         bars = ax.bar([0, 1], values, width=0.54, color=colors, zorder=3)
         maximum = max(values) * 1.23

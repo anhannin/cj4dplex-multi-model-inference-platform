@@ -87,7 +87,7 @@ class MainDeliveryContracts(unittest.TestCase):
         text = (ROOT / "docs/EXECUTIVE_SUMMARY.ko.md").read_text()
         self.assertNotIn("15req/s", text)
         self.assertNotIn("8req/s", text)
-        for value in ("28.98", "28.66", "4.163", "4.504"):
+        for value in ("28.98", "28.66", "4.39"):
             self.assertIn(value, text)
 
     def test_readme_key_values_match_native_summary(self):

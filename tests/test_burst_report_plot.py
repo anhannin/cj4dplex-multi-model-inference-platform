@@ -29,7 +29,7 @@ class BurstPlotValues(unittest.TestCase):
 
 
 class MinimalFigureLabels(unittest.TestCase):
-    def test_requested_axis_labels_and_no_titles_or_footnotes(self):
+    def test_requested_axis_labels_panel_titles_and_no_footnotes(self):
         import inspect
         from scripts.plot_burst_report import plot
 
@@ -38,6 +38,25 @@ class MinimalFigureLabels(unittest.TestCase):
         self.assertIn("Baseline", source)
         self.assertIn("Ours", source)
         self.assertNotIn("suptitle(", source)
-        self.assertNotIn("set_title(", source)
+        self.assertIn("ax.set_title(", source)
+        self.assertIn('"Qwen"', source)
+        self.assertIn('"YOLO"', source)
+        self.assertIn("top=0.88", source)
         self.assertNotIn("fig.text(", source)
         self.assertNotIn("초", source)
+
+
+class ReportPerformanceCriteria(unittest.TestCase):
+    def test_burst_criteria_are_not_called_operational_slo(self):
+        report = (ROOT / "docs/TECHNICAL_REPORT.ko.md").read_text()
+        section = report.split("### 2.3 ", 1)[1].split("## 3.", 1)[0]
+        self.assertIn("성능 목표 및 평가 기준", section)
+        self.assertIn("Qwen 113.299초 이하, YOLO 11.970초 이하", section)
+        self.assertNotIn("SLO", section)
+
+    def test_result_states_burst_goal_was_met(self):
+        report = (ROOT / "docs/TECHNICAL_REPORT.ko.md").read_text()
+        section = report.split("### 5.2 ", 1)[1].split("### 5.3 ", 1)[0]
+        self.assertIn("정적 8/40은 설정한 상대 성능 기준을 모두 만족하였다", section)
+        self.assertIn("목표를 달성하였다", section)
+        self.assertNotIn("SLO", section)

@@ -7,13 +7,15 @@ import re
 
 root = Path(__file__).resolve().parents[1]
 text = (root / "docs/EXECUTIVE_SUMMARY.ko.md").read_text()
-first, second = text.split("### 최적화의 적용 범위", 1)
-sections = [first, "### 최적화의 적용 범위" + second]
+split_heading = "## 4. 운영 안정성 및 장애 대응"
+first, second = text.split(split_heading, 1)
+sections = [first, split_heading + second]
 
 
 def inline(s):
     s = html.escape(s)
     s = re.sub(r"\*\*(.*?)\*\*", r"<strong>\1</strong>", s)
+    s = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", s)
     s = re.sub(r"\[([^]]+)\]\(([^)]+)\)", r"\1", s)
     return s
 
@@ -58,7 +60,7 @@ def render(md):
 
 
 content = """<!doctype html><html lang="ko"><meta charset="utf-8"><title>CJ4DPLEX Executive Summary</title><style>
-@page{size:A4;margin:15mm 16mm}body{font-family:'Noto Sans CJK JP',sans-serif;color:#172530;font-size:10pt;line-height:1.55;margin:0}section{break-after:page}section:last-child{break-after:auto}h1{font-size:20pt;margin:0 0 4mm}h2{font-size:13pt;margin:0 0 3mm}h3{font-size:11pt;margin:4mm 0 1.8mm;color:#235d76}p{margin:1.8mm 0}.bullet{margin:1.2mm 0}table{width:100%;border-collapse:collapse;font-size:9.5pt;margin:3mm 0}td{border:1px solid #bdc8cf;padding:2mm}tr:first-child{background:#e9f0f4;font-weight:700}strong{font-weight:700}footer{margin-top:3mm;font-size:8pt;color:#526570}
+@page{size:A4;margin:11mm 13mm}body{font-family:'Noto Sans CJK JP',sans-serif;color:#172530;font-size:9.2pt;line-height:1.32;margin:0}section{break-after:page}section:last-child{break-after:auto}h1{font-size:18pt;margin:0 0 2.5mm}h2{font-size:11.5pt;margin:1.8mm 0 1.5mm}h3{font-size:10pt;margin:2.4mm 0 1mm;color:#235d76}p{margin:1mm 0}.bullet{margin:0.8mm 0}table{width:100%;border-collapse:collapse;font-size:8.8pt;margin:1.8mm 0}td{border:1px solid #bdc8cf;padding:1.5mm}tr:first-child{background:#e9f0f4;font-weight:700}strong{font-weight:700}footer{margin-top:2mm;font-size:8pt;color:#526570}
 </style>"""
 content += (
     "".join(

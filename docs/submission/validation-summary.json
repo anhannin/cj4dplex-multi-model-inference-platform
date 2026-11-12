@@ -2,7 +2,7 @@
   "state": "PASS",
   "tests_log_tail": [
     "----------------------------------------------------------------------",
-    "Ran 155 tests in 0.833s",
+    "Ran 157 tests in 0.850s",
     "",
     "OK"
   ],
@@ -12,7 +12,7 @@
   "inference_runtime_changes": false,
   "new_gpu_runs": false,
   "remote_deploy_changes": false,
-  "commit_or_push": "local integration commit pending; remote push not authorized",
+  "commit_or_push": "author approved final main commit and push; record before publication",
   "baseline_note": "Frozen commit6a99fda and baseline-frozen-20261103 tag independently verified; baseline branch may advance by explicit user request",
   "obsolete_files_removed": 38,
   "obsolete_http_tests_removed": 24,
@@ -24,5 +24,6 @@
   "technical_report_revision": "user supplied draft rewritten with verified raw evidence, posthoc SLO, IPC+controlled fault results, numeric tradeoffs and conclusion; Korean prose polished",
   "figure_revision": "minimal: no titles or footnotes; E2E Latency p95 (s); Baseline/Ours; numeric labels s",
   "branch": "main",
-  "main_finalization": "see MAIN_VALIDATION.json"
+  "main_finalization": "see MAIN_VALIDATION.json",
+  "author_revisions_preserved": true
 }

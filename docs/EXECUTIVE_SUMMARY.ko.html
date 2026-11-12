@@ -1,34 +1,59 @@
 <!doctype html><html lang="ko"><meta charset="utf-8"><title>CJ4DPLEX Executive Summary</title><style>
-@page{size:A4;margin:15mm 16mm}body{font-family:'Noto Sans CJK JP',sans-serif;color:#172530;font-size:10pt;line-height:1.55;margin:0}section{break-after:page}section:last-child{break-after:auto}h1{font-size:20pt;margin:0 0 4mm}h2{font-size:13pt;margin:0 0 3mm}h3{font-size:11pt;margin:4mm 0 1.8mm;color:#235d76}p{margin:1.8mm 0}.bullet{margin:1.2mm 0}table{width:100%;border-collapse:collapse;font-size:9.5pt;margin:3mm 0}td{border:1px solid #bdc8cf;padding:2mm}tr:first-child{background:#e9f0f4;font-weight:700}strong{font-weight:700}footer{margin-top:3mm;font-size:8pt;color:#526570}
+@page{size:A4;margin:11mm 13mm}body{font-family:'Noto Sans CJK JP',sans-serif;color:#172530;font-size:9.2pt;line-height:1.32;margin:0}section{break-after:page}section:last-child{break-after:auto}h1{font-size:18pt;margin:0 0 2.5mm}h2{font-size:11.5pt;margin:1.8mm 0 1.5mm}h3{font-size:10pt;margin:2.4mm 0 1mm;color:#235d76}p{margin:1mm 0}.bullet{margin:0.8mm 0}table{width:100%;border-collapse:collapse;font-size:8.8pt;margin:1.8mm 0}td{border:1px solid #bdc8cf;padding:1.5mm}tr:first-child{background:#e9f0f4;font-weight:700}strong{font-weight:700}footer{margin-top:2mm;font-size:8pt;color:#526570}
 </style><section><h1>Executive Summary</h1>
-<h2>하나의 GPU에서 두 AI 서비스의 간섭을 줄이는 운영 정책</h2>
-<p><strong>CJ 4DPLEX AI Platform 개발 사전과제 | 안하민 | 2026-11-12</strong></p>
-<h3>문제와 목표</h3>
-<p>한 대의 DGX Spark에서 문장을 생성하는 Qwen3.5-9B와 이미지를 검출하는 YOLO26l을 함께 운영했다. 모델 정확도 향상이 아니라, 서로 다른 AI 작업이 같은 GPU를 쓸 때 생기는 지연을 측정하고 안정적으로 요청을 처리하는 것이 목표다.</p>
-<p>주요 시나리오는 <strong>Qwen10건·YOLO300건이 한꺼번에 제출되는 제작 작업 묶음</strong>이다. 실제 회사 트래픽을 수집한 것은 아니다. Qwen 전체 응답시간을 악화시키지 않으면서 YOLO의 늦은 응답(p95)을20% 이상 줄이는 상대 목표를 합의했다. Burst 결과를 탐색한 뒤 목표를 정했다는 점을 밝히며 사전등록된 독립 검증처럼 설명하지 않는다.</p>
-<h3>접근 방법</h3>
-<p class="bullet">• 두 모델을 별도 컨테이너·Kubernetes Pod로 배포하고, 모델별 독립 대기열과 Worker를 사용했다.</p>
-<p class="bullet">• 요청별 전체 지연, 대기시간, 모델 호출, GPU forward 구간과 자원·로그를 수집했다.</p>
-<p class="bullet">• 최적화 없음·일반 MPS·고정 SM 분할5개 조합을 같은 환경에서 각각5회 비교했다.</p>
-<p class="bullet">• 생성의 Prefill은 많은 SM에서 빨라졌지만 반복 Decode는 SM 수에 비례해 빨라지지 않았다. 이를 근거로 <strong>Qwen8 / YOLO40 SM</strong> 분배를 검증했다. 단순히 GPU 공유 기능을 켠 것만으로 개선됐다고 주장하지 않는다.</p>
-<h3>주요 결과 — 최적화 없음 대비</h3>
+<h3>단일 GPU 기반 Multi-Model AI 추론 플랫폼 구축 및 최적화</h3>
+<p><strong>CJ 4DPLEX AI Platform 개발 사전과제</strong>  </p>
+<p>안하민 | 2026.11.12</p>
+<h2>1. 프로젝트 개요</h2>
+<p>본 프로젝트는 <strong>하나의 GPU에서 생성형 AI와 컴퓨터 비전 AI를 동시에 운영할 때 발생하는 성능 저하를 분석하고, 제한된 컴퓨팅 자원을 효율적으로 배분하는 AI 추론 플랫폼을 구현</strong>하는 것을 목표로 한다.</p>
+<p>콘텐츠 제작 및 분석 환경에서는 텍스트를 생성하는 AI와 이미지·영상에서 객체를 검출하는 AI가 함께 활용될 수 있다. 그러나 여러 AI 모델이 동일한 GPU를 사용하면 자원 경합으로 인해 처리시간이 증가하고, 대기 중인 요청의 응답까지 지연될 수 있다.</p>
+<p>이를 해결하기 위해 단일 NVIDIA DGX Spark 환경에 두 AI 모델을 독립적으로 배포하고, 실제 요청 처리시간과 GPU 자원 사용 특성을 분석하였다. 이후 CUDA MPS 기반의 GPU 자원 분할을 적용하여 모델 간 간섭을 줄이고, 전체 서비스 성능을 개선하는 방법을 검증하였다.</p>
+<h2>2. 시스템 구성 및 최적화 접근</h2>
+<p>본 플랫폼은 다음 두 모델로 구성된다.</p>
+<p class="bullet">• <strong>Qwen3.5-9B:</strong> 사용자 입력에 대한 텍스트 생성</p>
+<p class="bullet">• <strong>YOLO26l:</strong> 이미지 내 객체 검출</p>
+<p>각 모델은 Kubernetes 기반의 독립적인 Pod에서 실행되며, ROS 2를 통해 요청을 수신한다. 접수된 요청은 모델별 FIFO Queue에 저장되고, 전용 Worker가 순차적으로 처리한다. 두 모델은 서로 독립적으로 동작하지만 하나의 물리 GPU를 공유한다.</p>
+<p>성능 분석 과정에서 두 모델의 GPU 자원 특성에 차이가 있음을 확인하였다.</p>
+<p>Qwen은 입력을 분석하는 초기 단계에서 GPU 연산 자원의 영향을 크게 받았으나, 이후 문장을 생성하는 반복 단계에서는 자원 증가에 따른 처리시간 개선이 상대적으로 작았다. 반면 YOLO는 GPU 연산 자원을 추가로 사용할수록 이미지 처리시간이 뚜렷하게 감소하였다.</p>
+<p>이러한 특성을 바탕으로 <strong>Qwen에 필요한 자원을 제한적으로 배분하고, 나머지 자원을 YOLO에 집중하는 비대칭 자원 분할 전략</strong>을 적용하였다.</p>
+<p>GPU의 총 48개 SM(연산 자원 단위)을 여러 비율로 분할하여 비교한 결과, 평가한 조건에서는 <strong>Qwen 8SM / YOLO 40SM</strong> 구성이 가장 유리한 전체 작업 완료시간과 YOLO 처리 성능을 나타냈다.</p>
+<h2>3. 주요 성과</h2>
+<p>최신 실험에서는 Qwen 요청 10건과 YOLO 이미지 처리 요청 300건을 동시에 발행하고, 동일한 작업량에서 GPU 자원 배분 방식에 따른 성능을 비교하였다. 각 설정은 5회 반복 측정하였다.</p>
+<h3>핵심 성능 비교</h3>
 <table>
-<tr><td>Burst 지표</td><td>최적화 없음</td><td>고정8/40</td><td>변화</td></tr>
-<tr><td>YOLO300건 전체 완료 평균</td><td>16.322초</td><td>11.592초</td><td><strong>28.98% 단축</strong></td></tr>
-<tr><td>YOLO 요청 E2E p95</td><td>14.963초</td><td>10.674초</td><td><strong>28.66% 감소</strong></td></tr>
-<tr><td>Qwen 요청 E2E p95</td><td>113.299초</td><td>111.876초</td><td>약1.26% 감소</td></tr>
+<tr><td>평가 지표</td><td>최적화 전 (MPS 없음)</td><td>최적화 후 (8/40SM)</td><td>결과</td></tr>
+<tr><td>YOLO 300건 완료시간</td><td>16.322초</td><td><strong>11.592초</strong></td><td><strong>28.98% 단축</strong></td></tr>
+<tr><td>YOLO 요청 E2E p95</td><td>14.963초</td><td><strong>10.674초</strong></td><td><strong>28.66% 단축</strong></td></tr>
+<tr><td>전체 310건 완료시간</td><td>113.361초</td><td><strong>111.887초</strong></td><td>1.30% 단축</td></tr>
 </table>
-<p>p95는 요청95%가 해당 시간 이내에 완료됐음을 나타내는 기술통계다. Burst p95는 조건별 요청을 합친 분포이며 실행 반복 단위는5회다. 전체 요청묶음 완료시간은 약1.30%만 줄었으므로 대폭적인 전체 처리량 개선으로 과장하지 않는다.</p><footer>CJ 4DPLEX AI Platform · 안하민 · 1/2</footer></section><section><h3>최적화의 적용 범위</h3>
-<p>최종 비교는 같은 입력·출력·Queue·Worker를 유지한 7조건 × 5회 Burst다. 본측정 10,850건과 워밍업 1,155건의 응답을 구분해 검증했다. 요청을 버리거나 모델 batch 크기를 늘려 작업량을 줄인 결과가 아니다.</p>
-<p class="bullet">• 측정한 분할 후보 중 8/40이 Qwen 전체 응답 유지와 YOLO 지연 개선에 유리했다. 모든 입력·업무·지표의 유일한 최적해라는 뜻은 아니다.</p>
-<p class="bullet">• YOLO가 먼저 끝나므로 전체 측정시간 내내 두 모델이 계속 경합한 것은 아니다. 다른 요청 도착 패턴·장기 운영으로 결과를 확대하지 않는다.</p>
-<p class="bullet">• SLO는 탐색 후 정한 상대 기준이며 관측 통과를 독립 검증된 운영 보장으로 설명하지 않는다.</p>
-<h3>비용과 운영 리스크</h3>
-<p>SM을 적게 받은 Qwen의 내부 첫 토큰 생성시간 평균은 <strong>188→472ms</strong>로 악화됐다. 최종 응답이 비슷하게 유지됐다는 사실이 첫 반응까지 유지됐다는 뜻은 아니다. 또한 단일 YOLO 모델 호출의 p95는 8/40보다 16/32가 낮았다. 최종 완료·첫 반응·개별 tail 중 무엇을 우선하는지에 따라 정책 선택이 달라진다.</p>
-<p>GPU 공유는 메모리·대역폭·장애의 완전한 격리를 제공하지 않는다. UUID 응답 채널은 요청 혼선 방지이며 보안 인증이 아니다. 신뢰된 단일 호스트의 실험이며 외부 공개 서비스의 SLA나 장기 가용성을 보증하지 않는다.</p>
-<h3>장애 대응과 검증 범위</h3>
-<p>YOLO 자신의 CUDA 작업이 유휴이고 큐가 비었음을 확인한 뒤 Node를 강제 종료하고 <strong>Kubernetes 기본 재시작</strong>을 검증했다. 3회에서 종료 신호 직전부터 첫 정상 결과 수신까지 <strong>4.163~4.504초</strong>였다. 직접 만든 복구 최적화나 무중단 서비스 성과가 아니다. 진행 중 요청 보존, GPU 실행 중 장애, 반복 CrashLoop는 검증하지 않았다.</p>
-<h3>결론과 활용</h3>
-<p>하나의 GPU에서 모델별 자원 민감도를 측정하고 실행 정책을 바꾸면, 언어 모델의 전체 응답시간을 유지하면서 CV 대기와 완료시간을 줄일 수 있었다. 동시에 첫 토큰 비용과 고정 자원 배분·입력 범위의 한계를 공개해 정책의 적용 범위를 구분했다.</p>
-<p>기존 운영 배포는 원래 설정으로 복구했다. 8/40은 검토 가능한 후보이며 사용자 승인 없이 상시 운영 설정을 바꾸지 않았다. 다음 단계는 실제 업무 입력과 우선순위에 맞춘 독립 검증, 필요한 health·요청 보존 수준 결정이다.</p>
-<p><strong>산출물:</strong> 소스·설정·재현 안내·구성도·기술 보고서·원시 결과 및 감사 기록. 모델/OSS/AI 보조 범위와 권리 미확정 사항은 별도 고지했다. 상세: 기술 보고서.</p><footer>CJ 4DPLEX AI Platform · 안하민 · 2/2</footer></section></html>
+<p><em>요청 E2E는 대기시간을 포함한 실제 요청·응답 구간이며, p95는 측정된 요청 지연 분포의 95번째 백분위수이다. 본 결과는 정해진 요청을 한 번에 발행한 Burst 실험에 한정된다.</em></p>
+<p>추가로, 단순히 MPS를 활성화한 일반 GPU 공유 방식과 비교하면 YOLO 300건의 완료시간을 <strong>54.31% 단축</strong>하였다.</p>
+<p>이는 두 모델을 단순히 병렬 실행하는 것보다, 각 모델의 처리 특성에 맞춰 GPU 자원을 분배하는 것이 효과적일 수 있음을 보여준다.</p>
+<p>이번 최적화에서 중요한 점은 <strong>YOLO의 처리시간을 줄이면서도 동일한 실험 조건에서 Qwen의 전체 응답 완료시간을 크게 악화시키지 않았다는 것</strong>이다.</p>
+<p>또한 처리시간 감소는 후속 요청의 Queue 대기시간 감소로 이어졌다. 요청을 삭제하거나 작업량을 줄이지 않고 동일한 입력과 모델을 유지한 상태에서 얻은 개선이다.</p><footer>CJ 4DPLEX AI Platform · 안하민 · 1/2</footer></section><section><h2>4. 운영 안정성 및 장애 대응</h2>
+<p>성능 최적화와 함께 플랫폼 운영 과정에서 발생할 수 있는 장애도 조사하였다.</p>
+<p>실제 운영 중 Kubernetes Pod가 Ready 상태임에도 ROS 2 요청이 전달되지 않는 문제가 발생하였다. 분석 결과 FastDDS의 공유 메모리 자원과 사용자 세션 종료 시 IPC 정리 정책의 연관성을 확인하였으며, 계정 및 Pod 설정을 조정한 뒤 요청이 정상적으로 처리되는 것을 검증하였다.</p>
+<p>또한 YOLO 프로세스를 의도적으로 종료하는 장애 실험을 수행하였다.</p>
+<p>유휴 상태에서 프로세스를 강제 종료한 3회 실험에서 Kubernetes의 기본 재시작 기능을 통해 <strong>평균 4.39초 만에 첫 정상 응답을 다시 수신</strong>하였다.</p>
+<p>이를 통해 기본적인 프로세스 장애 복구 동작을 확인하였다. 다만 해당 결과는 유휴 상태에서의 장애 실험으로, 실제 추론 중 장애에 대한 무손실 처리나 무중단 서비스를 보장하는 것은 아니다.</p>
+<h2>5. 주요 리스크 및 한계</h2>
+<p>이번 실험은 제한된 환경에서 자원 분할 전략의 효과를 검증한 것으로, 실제 서비스에 적용하기 위해서는 다음 사항을 추가로 고려해야 한다.</p>
+<p><strong>첫째, AI 모델 간 성능 Trade-off가 존재한다.</strong>  </p>
+<p>Qwen의 전체 작업 완료시간은 유지되었지만, 내부 첫 토큰 생성시간은 평균 약 188ms에서 472ms로 증가하였다. 따라서 사용자에게 첫 응답을 빠르게 제공해야 하는 대화형 서비스에서는 다른 자원 배분이 더 적합할 수 있다.</p>
+<p><strong>둘째, 현재 자원 배분은 고정되어 있다.</strong>  </p>
+<p>YOLO 요청이 없더라도 Qwen이 YOLO에 할당된 SM을 자동으로 활용하지는 못한다. 요청량이 시간에 따라 변하는 실제 서비스에서는 유휴 자원 문제가 발생할 수 있다.</p>
+<p><strong>셋째, 실험 부하의 대표성이 제한적이다.</strong>  </p>
+<p>동일한 입력 길이와 이미지로 구성된 일괄 요청을 평가했으며, 지속적으로 요청이 유입되는 환경의 지연, 장기 가용성, 다양한 입력에 대한 성능은 아직 검증하지 않았다.</p>
+<p>따라서 이번 결과는 특정 실험 조건에서의 최적화 성과이며, 실제 운영 환경의 SLO 달성을 의미하지는 않는다.</p>
+<h2>6. 향후 개선 방향</h2>
+<p>실제 서비스 운영을 위한 후속 과제로 다음 세 가지를 제안한다.</p>
+<p>1. <strong>서비스 특성에 따른 자원 배분 정책 고도화</strong>  </p>
+<p>   대화형 AI의 응답속도와 이미지 처리량 중 우선순위가 높은 지표에 따라 GPU 자원 배분을 선택하고, 요청량 변화에 따른 동적 재배분의 필요성을 평가한다.</p>
+<p>2. <strong>전체 추론 파이프라인의 추가 최적화</strong>  </p>
+<p>   GPU 모델 연산뿐 아니라 요청 전달, Queue 대기, 결과 반환 과정의 지연을 세분화하여 분석하고, 모델 외 처리 구간의 병목을 줄인다.</p>
+<p>3. <strong>운영 안정성 및 서비스 수준 검증</strong>  </p>
+<p>   지속 부하 실험, Queue 포화 대응, 요청 제한 및 재시도 정책, 추론 중 장애 복구 등을 검증하고 실제 업무 요구사항에 기반한 SLO를 수립한다.</p>
+<h2>7. 결론</h2>
+<p>본 프로젝트는 <strong>AI 모델별 연산 특성에 기반한 GPU 자원 배분이 단일 GPU의 Multi-Model 추론 성능을 개선할 수 있음을 실험적으로 확인</strong>하였다.</p>
+<p>모델별 독립적인 운영 구조를 구축하고, 성능 저하 원인을 분석한 후 CUDA MPS 정적 분할을 적용한 결과, Qwen의 전체 응답 성능을 유지하면서 YOLO의 일괄 처리 완료시간을 약 29% 단축하였다.</p>
+<p>또한 성능 개선에 따른 비용과 장애 복구의 검증 범위를 함께 분석함으로써, <strong>제한된 컴퓨팅 자원에서 서로 다른 AI 서비스를 안정적이고 효율적으로 운영하기 위한 기술적 기반</strong>을 마련하였다.</p><footer>CJ 4DPLEX AI Platform · 안하민 · 2/2</footer></section></html>

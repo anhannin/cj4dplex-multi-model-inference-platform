@@ -1,12 +1,12 @@
 {
   "state": "PASS",
   "source": "docs/TECHNICAL_REPORT.ko.md",
-  "source_sha256": "d1bd22dd14e62f7ae6471666c27841e5f1299cdcaaa16c706b6162fd75b47664",
+  "source_sha256": "5a24386785980a0e24bf1cfb6b9cff129fe27789bfa00840d7131a0ecc4f45ef",
   "pdf": "docs/TECHNICAL_REPORT.ko.pdf",
-  "pdf_sha256": "1df8698a18f571dd1bca4cbfbbab6c44518455177d9d8805838b1e3c6f33f077",
+  "pdf_sha256": "4b03b4d36762e4dfc479412169ff1f64498bd5ccddeb5a56d92915d15f236e73",
   "pages": 11,
   "page_size": "A4",
-  "bytes": 903776,
+  "bytes": 908010,
   "embedded_diagram": "Mermaid rendered SVG",
   "embedded_data_figures": 2,
   "text_checks": [
@@ -21,13 +21,11 @@
     "결론"
   ],
   "reviewed_pages": [
-    1,
-    2,
-    8,
-    11
+    8
   ],
   "renderer": "Google Chrome 148.0.7778.178",
   "tools": "temporary Marked12.0.2+Mermaid10.9.3, no project dependency changes",
   "markdown_changed": false,
-  "new_gpu_runs": false
+  "new_gpu_runs": false,
+  "revision": "latest author-edited report and model-labelled figure"
 }

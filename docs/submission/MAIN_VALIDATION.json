@@ -7,8 +7,8 @@
   "files_sha256": {
     "README.md": "deaf8e4a80af3c5ab3d62586664990d5ffbbf507d183bd21024208a0af79e4fa",
     "docs/ARCHITECTURE.ko.md": "251b04ba5c371ba630c85ed10eb68276d03569025b16292e15d8a5047d45f5d2",
-    "docs/EXECUTIVE_SUMMARY.ko.md": "065eb937b188c38a6f9f70ca09cd79a88c35343261187ecb8c4b7b05d4c0fc80",
-    "docs/EXECUTIVE_SUMMARY.ko.pdf": "d60c20f94d03a85f702528e08c6edf226288b33af6032d6baf5be28288ec9d06",
+    "docs/EXECUTIVE_SUMMARY.ko.md": "3ba46d55f83cb5e71094d54073ac84ad0dbbe843c95bfe3cabd9c293c7395c7c",
+    "docs/EXECUTIVE_SUMMARY.ko.pdf": "a9e235f75a1a4a015fe369842ff1d61ba740c4fb5ec3944c16eef2f81750d904",
     "docs/DEPLOYMENT_MODES.ko.md": "d187429036fa541be2888cce4e7df66feb44eb1d6a2f450bb7808955d00d0572",
     "docs/IMPLEMENTATION.ko.md": "ff1f1c80fcc1016aa7c35d226c289e9d72d617a70fa7045b82c422950a5f8d2e",
     "docs/EXPERIMENT_INDEX.ko.md": "f2a3aebaa238a861a3a76f3a93b9495111184f1782af6f6fd869e8f6b8c6a533"
@@ -20,7 +20,7 @@
   "new_kubernetes_apply": false,
   "remote_push": false,
   "checks": [
-    "155 CPU tests",
+    "157 CPU tests",
     "Docker COPY existence",
     "Kubernetes JSON7/YAML7 parse (no cluster)",
     "Bash -n",
@@ -29,5 +29,17 @@
     "all delivery Markdown links",
     "frozen677/protected145 audit",
     "offline raw copies: static12005 inclwarmup, archivedstudy55620/40, fault28"
-  ]
+  ],
+  "author_revision_files": {
+    "docs/EXECUTIVE_SUMMARY.ko.html": "b084e128a09c8d1e06c8d4cf50398c590980b6fa35c83d01e77d4ebe7d5c968e",
+    "docs/EXECUTIVE_SUMMARY.ko.md": "3ba46d55f83cb5e71094d54073ac84ad0dbbe843c95bfe3cabd9c293c7395c7c",
+    "docs/EXECUTIVE_SUMMARY.ko.pdf": "a9e235f75a1a4a015fe369842ff1d61ba740c4fb5ec3944c16eef2f81750d904",
+    "docs/TECHNICAL_REPORT.ko.md": "5a24386785980a0e24bf1cfb6b9cff129fe27789bfa00840d7131a0ecc4f45ef",
+    "docs/figures/burst-request-p95-before-after.png": "b515e728b502ebab652bcf784691a282f6da8925e28d1a1003ef0b72b50acddc",
+    "docs/figures/burst-request-p95-before-after.svg": "99ee94bce90d24e287bafdaf3fd737a10b487511561ad33ded063acbd0695802",
+    "scripts/plot_burst_report.py": "f93236d11e0327fb3ea64efb3658897f744d77b7decf1dd0e2bb73931843822a",
+    "scripts/render_executive_html.py": "3e7df0c0f1e9c0dc8b3d33954a38ed4b12c435039748ae5cff87452285923279",
+    "tests/test_burst_report_plot.py": "e975596650c6397b7fbcc02d02c494fab62750e65f5ee7e5da25f80f54a76731"
+  },
+  "record_stage": "pre-publication validation; user authorized push"
 }
