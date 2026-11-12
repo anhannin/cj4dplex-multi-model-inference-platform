@@ -1,0 +1,13 @@
+{
+  "server": 141897,
+  "clients": [
+    141767,
+    141843
+  ],
+  "models": {
+    "qwen": 141767,
+    "yolo": 141843
+  },
+  "expected_mps": true,
+  "wall_ns": 1794250849048946627
+}

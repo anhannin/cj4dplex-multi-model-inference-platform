@@ -1,0 +1,5 @@
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 85 (/usr/bin/python3.12)
+==PROF== Profiling "kernel" - 0 (1/1): 0%....50%....100% - 9 passes
+==PROF== Disconnected from process 85
+==PROF== Report: /out/counter-probe-admin.ncu-rep

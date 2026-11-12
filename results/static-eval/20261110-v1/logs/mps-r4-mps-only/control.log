@@ -1,0 +1,78 @@
+[2026-11-10 05:48:56.204 Control 330484] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 05:48:56.204 Control 330484] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 05:48:56.204 Control 330484] CUDA MPS Control binary version: 13020
+[2026-11-10 05:48:56.206 Control 330484] Accepting connection...
+[2026-11-10 05:48:56.206 Control 330484] NEW UI
+[2026-11-10 05:48:56.206 Control 330484] Cmd:get_server_list
+[2026-11-10 05:48:56.206 Control 330484] UI closed
+[2026-11-10 05:48:57.007 Control 330484] Accepting connection...
+[2026-11-10 05:48:57.007 Control 330484] User did not send valid credentials
+[2026-11-10 05:48:57.007 Control 330484] Accepting connection...
+[2026-11-10 05:48:57.007 Control 330484] NEW CLIENT 330822 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 05:48:57.008 Control 330826] Starting new server 330826 for user 1000
+[2026-11-10 05:48:57.009 Control 330484] Accepting connection...
+[2026-11-10 05:48:57.319 Control 330484] NEW SERVER 330826: Ready
+[2026-11-10 05:48:57.319 Control 330484] Accepting connection...
+[2026-11-10 05:48:57.320 Control 330484] User did not send valid credentials
+[2026-11-10 05:48:57.320 Control 330484] Accepting connection...
+[2026-11-10 05:48:57.320 Control 330484] NEW CLIENT 330858 from user 1000: Server already exists
+[2026-11-10 05:49:27.839 Control 330484] Accepting connection...
+[2026-11-10 05:49:27.839 Control 330484] User did not send valid credentials
+[2026-11-10 05:49:27.839 Control 330484] Accepting connection...
+[2026-11-10 05:49:27.839 Control 330484] NEW CLIENT 330669 from user 1000: Server already exists
+[2026-11-10 05:49:27.890 Control 330484] Accepting connection...
+[2026-11-10 05:49:27.890 Control 330484] NEW CLIENT 330669 from user 1000: Server already exists
+[2026-11-10 05:49:27.954 Control 330484] Accepting connection...
+[2026-11-10 05:49:27.954 Control 330484] User did not send valid credentials
+[2026-11-10 05:49:27.955 Control 330484] Accepting connection...
+[2026-11-10 05:49:27.955 Control 330484] NEW CLIENT 330725 from user 1000: Server already exists
+[2026-11-10 05:49:28.018 Control 330484] Accepting connection...
+[2026-11-10 05:49:28.018 Control 330484] NEW CLIENT 330725 from user 1000: Server already exists
+[2026-11-10 05:51:22.041 Control 330484] Accepting connection...
+[2026-11-10 05:51:22.041 Control 330484] NEW UI
+[2026-11-10 05:51:22.041 Control 330484] Cmd:get_server_list
+[2026-11-10 05:51:22.041 Control 330484] 330826
+[2026-11-10 05:51:22.041 Control 330484] UI closed
+[2026-11-10 05:51:22.042 Control 330484] Accepting connection...
+[2026-11-10 05:51:22.042 Control 330484] NEW UI
+[2026-11-10 05:51:22.042 Control 330484] Cmd:get_client_list 330826
+[2026-11-10 05:51:22.042 Control 330484] 330669
+[2026-11-10 05:51:22.042 Control 330484] 330725
+[2026-11-10 05:51:22.042 Control 330484] UI closed
+[2026-11-10 05:52:33.113 Control 330484] Accepting connection...
+[2026-11-10 05:52:33.113 Control 330484] NEW UI
+[2026-11-10 05:52:33.113 Control 330484] Cmd:get_server_list
+[2026-11-10 05:52:33.113 Control 330484] 330826
+[2026-11-10 05:52:33.113 Control 330484] UI closed
+[2026-11-10 05:52:33.114 Control 330484] Accepting connection...
+[2026-11-10 05:52:33.114 Control 330484] NEW UI
+[2026-11-10 05:52:33.114 Control 330484] Cmd:get_client_list 330826
+[2026-11-10 05:52:33.114 Control 330484] 330669
+[2026-11-10 05:52:33.114 Control 330484] 330725
+[2026-11-10 05:52:33.114 Control 330484] UI closed
+[2026-11-10 05:54:33.308 Control 330484] Accepting connection...
+[2026-11-10 05:54:33.308 Control 330484] NEW UI
+[2026-11-10 05:54:33.308 Control 330484] Cmd:get_server_list
+[2026-11-10 05:54:33.308 Control 330484] 330826
+[2026-11-10 05:54:33.308 Control 330484] UI closed
+[2026-11-10 05:54:33.309 Control 330484] Accepting connection...
+[2026-11-10 05:54:33.309 Control 330484] NEW UI
+[2026-11-10 05:54:33.309 Control 330484] Cmd:get_client_list 330826
+[2026-11-10 05:54:33.309 Control 330484] 330669
+[2026-11-10 05:54:33.309 Control 330484] 330725
+[2026-11-10 05:54:33.309 Control 330484] UI closed
+[2026-11-10 05:54:35.243 Control 330484] Accepting connection...
+[2026-11-10 05:54:35.243 Control 330484] NEW UI
+[2026-11-10 05:54:35.243 Control 330484] Cmd:get_server_list
+[2026-11-10 05:54:35.243 Control 330484] 330826
+[2026-11-10 05:54:35.243 Control 330484] UI closed
+[2026-11-10 05:54:35.244 Control 330484] Accepting connection...
+[2026-11-10 05:54:35.244 Control 330484] NEW UI
+[2026-11-10 05:54:35.244 Control 330484] Cmd:get_client_list 330826
+[2026-11-10 05:54:35.244 Control 330484] UI closed
+[2026-11-10 05:54:35.246 Control 330484] Accepting connection...
+[2026-11-10 05:54:35.246 Control 330484] NEW UI
+[2026-11-10 05:54:35.246 Control 330484] Cmd:quit
+[2026-11-10 05:54:35.246 Control 330484] Try shutting down server 330826, backoff is disabled
+[2026-11-10 05:54:35.324 Control 330484] Server 330826 exited with status 0
+[2026-11-10 05:54:35.324 Control 330484] Exit with status 0

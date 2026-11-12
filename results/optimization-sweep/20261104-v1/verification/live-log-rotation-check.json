@@ -1,0 +1,8 @@
+{
+  "measured": 5000,
+  "live_captured": 5000,
+  "end_snapshot_captured": 0,
+  "live_ack_failure": 0,
+  "pass": true,
+  "rotation_loss_demonstrated": true
+}

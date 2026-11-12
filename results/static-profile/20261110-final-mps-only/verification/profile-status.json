@@ -1,0 +1,7 @@
+{
+  "state": "PASS",
+  "scope": "Native595 mps-only Q48/Y48; NO Green; paired actual models; diagnostic only",
+  "start_wall_ns": 1794258250936788105,
+  "restoration": "PASS",
+  "end_wall_ns": 1794258799536389102
+}

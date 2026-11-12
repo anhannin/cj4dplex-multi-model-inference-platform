@@ -1,0 +1,2 @@
+ROLLBACK_PACKAGES=16
+ROOT_SYSTEM_BACKUP=/var/backups/cj-driver-upgrade-20261110

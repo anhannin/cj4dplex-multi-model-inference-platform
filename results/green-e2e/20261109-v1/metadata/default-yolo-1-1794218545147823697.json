@@ -1,0 +1,9 @@
+{
+  "selected_sms": 48,
+  "observed_smids": null,
+  "event": "gpu_resource_ready",
+  "enabled": false,
+  "pair": "default",
+  "pid": 1,
+  "time_ns": 1794218545147766865
+}

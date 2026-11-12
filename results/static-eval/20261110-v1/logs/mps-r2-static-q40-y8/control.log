@@ -1,0 +1,94 @@
+[2026-11-10 04:33:04.626 Control 204578] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 04:33:04.626 Control 204578] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 04:33:04.626 Control 204578] CUDA MPS Control binary version: 13020
+[2026-11-10 04:33:04.627 Control 204578] Accepting connection...
+[2026-11-10 04:33:04.627 Control 204578] NEW UI
+[2026-11-10 04:33:04.627 Control 204578] Cmd:get_server_list
+[2026-11-10 04:33:04.627 Control 204578] UI closed
+[2026-11-10 04:33:04.647 Control 204578] Accepting connection...
+[2026-11-10 04:33:04.647 Control 204578] NEW UI
+[2026-11-10 04:33:04.647 Control 204578] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-10 04:33:04.672 Control 204578] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/3/d9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:33:04.672 Control 204578] UI closed
+[2026-11-10 04:33:04.674 Control 204578] Accepting connection...
+[2026-11-10 04:33:04.674 Control 204578] NEW UI
+[2026-11-10 04:33:04.674 Control 204578] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-10 04:33:04.674 Control 204578] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/IAiCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:33:04.674 Control 204578] UI closed
+[2026-11-10 04:33:04.676 Control 204578] Accepting connection...
+[2026-11-10 04:33:04.676 Control 204578] NEW UI
+[2026-11-10 04:33:04.676 Control 204578] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 04:33:04.676 Control 204578] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 04:33:04.676 Control 204578] Failed to create partition
+[2026-11-10 04:33:04.676 Control 204578] UI closed
+[2026-11-10 04:33:05.515 Control 204578] Accepting connection...
+[2026-11-10 04:33:05.515 Control 204578] User did not send valid credentials
+[2026-11-10 04:33:05.515 Control 204578] Accepting connection...
+[2026-11-10 04:33:05.515 Control 204578] NEW CLIENT 204952 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 04:33:05.515 Control 204957] Starting new server 204957 for user 1000
+[2026-11-10 04:33:05.517 Control 204578] Accepting connection...
+[2026-11-10 04:33:05.827 Control 204578] NEW SERVER 204957: Ready
+[2026-11-10 04:33:05.829 Control 204578] Accepting connection...
+[2026-11-10 04:33:05.829 Control 204578] User did not send valid credentials
+[2026-11-10 04:33:05.829 Control 204578] Accepting connection...
+[2026-11-10 04:33:05.829 Control 204578] NEW CLIENT 204963 from user 1000: Server already exists
+[2026-11-10 04:33:06.667 Control 204578] Accepting connection...
+[2026-11-10 04:33:06.668 Control 204578] User did not send valid credentials
+[2026-11-10 04:33:06.668 Control 204578] Accepting connection...
+[2026-11-10 04:33:06.668 Control 204578] NEW CLIENT 204794 from user 1000: Server already exists
+[2026-11-10 04:33:06.675 Control 204578] Accepting connection...
+[2026-11-10 04:33:06.675 Control 204578] User did not send valid credentials
+[2026-11-10 04:33:06.675 Control 204578] Accepting connection...
+[2026-11-10 04:33:06.676 Control 204578] NEW CLIENT 204787 from user 1000: Server already exists
+[2026-11-10 04:33:06.719 Control 204578] Accepting connection...
+[2026-11-10 04:33:06.720 Control 204578] NEW CLIENT 204794 from user 1000: Server already exists
+[2026-11-10 04:33:06.730 Control 204578] Accepting connection...
+[2026-11-10 04:33:06.730 Control 204578] NEW CLIENT 204787 from user 1000: Server already exists
+[2026-11-10 04:35:10.516 Control 204578] Accepting connection...
+[2026-11-10 04:35:10.516 Control 204578] NEW UI
+[2026-11-10 04:35:10.516 Control 204578] Cmd:get_server_list
+[2026-11-10 04:35:10.516 Control 204578] 204957
+[2026-11-10 04:35:10.516 Control 204578] UI closed
+[2026-11-10 04:35:10.517 Control 204578] Accepting connection...
+[2026-11-10 04:35:10.517 Control 204578] NEW UI
+[2026-11-10 04:35:10.518 Control 204578] Cmd:get_client_list 204957
+[2026-11-10 04:35:10.518 Control 204578] 204794
+[2026-11-10 04:35:10.518 Control 204578] 204787
+[2026-11-10 04:35:10.518 Control 204578] UI closed
+[2026-11-10 04:36:22.995 Control 204578] Accepting connection...
+[2026-11-10 04:36:22.996 Control 204578] NEW UI
+[2026-11-10 04:36:22.996 Control 204578] Cmd:get_server_list
+[2026-11-10 04:36:22.996 Control 204578] 204957
+[2026-11-10 04:36:22.996 Control 204578] UI closed
+[2026-11-10 04:36:22.996 Control 204578] Accepting connection...
+[2026-11-10 04:36:22.996 Control 204578] NEW UI
+[2026-11-10 04:36:22.996 Control 204578] Cmd:get_client_list 204957
+[2026-11-10 04:36:22.997 Control 204578] 204794
+[2026-11-10 04:36:22.997 Control 204578] 204787
+[2026-11-10 04:36:22.997 Control 204578] UI closed
+[2026-11-10 04:38:27.692 Control 204578] Accepting connection...
+[2026-11-10 04:38:27.692 Control 204578] NEW UI
+[2026-11-10 04:38:27.693 Control 204578] Cmd:get_server_list
+[2026-11-10 04:38:27.693 Control 204578] 204957
+[2026-11-10 04:38:27.693 Control 204578] UI closed
+[2026-11-10 04:38:27.693 Control 204578] Accepting connection...
+[2026-11-10 04:38:27.693 Control 204578] NEW UI
+[2026-11-10 04:38:27.693 Control 204578] Cmd:get_client_list 204957
+[2026-11-10 04:38:27.693 Control 204578] 204794
+[2026-11-10 04:38:27.694 Control 204578] 204787
+[2026-11-10 04:38:27.694 Control 204578] UI closed
+[2026-11-10 04:38:29.618 Control 204578] Accepting connection...
+[2026-11-10 04:38:29.618 Control 204578] NEW UI
+[2026-11-10 04:38:29.618 Control 204578] Cmd:get_server_list
+[2026-11-10 04:38:29.618 Control 204578] 204957
+[2026-11-10 04:38:29.618 Control 204578] UI closed
+[2026-11-10 04:38:29.620 Control 204578] Accepting connection...
+[2026-11-10 04:38:29.620 Control 204578] NEW UI
+[2026-11-10 04:38:29.620 Control 204578] Cmd:get_client_list 204957
+[2026-11-10 04:38:29.620 Control 204578] UI closed
+[2026-11-10 04:38:29.622 Control 204578] Accepting connection...
+[2026-11-10 04:38:29.622 Control 204578] NEW UI
+[2026-11-10 04:38:29.622 Control 204578] Cmd:quit
+[2026-11-10 04:38:29.622 Control 204578] Try shutting down server 204957, backoff is disabled
+[2026-11-10 04:38:29.692 Control 204578] Server 204957 exited with status 0
+[2026-11-10 04:38:29.692 Control 204578] Exit with status 0

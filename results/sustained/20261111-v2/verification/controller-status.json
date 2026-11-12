@@ -1,0 +1,798 @@
+{
+  "state": "PASS",
+  "phase": "finished",
+  "started_wall_ns": 1794382345621877488,
+  "pid": 2828474,
+  "completed": [
+    {
+      "condition": "control",
+      "round": 0,
+      "rate": 15,
+      "label": "r0-control-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5509291500000001,
+        "lag_max_ms": 0.844312,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794383294344262513
+    },
+    {
+      "condition": "control",
+      "round": 0,
+      "rate": 8,
+      "label": "r0-control-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5506374,
+        "lag_max_ms": 0.693585,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794383623840193929
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 0,
+      "rate": 8,
+      "label": "r0-static-q8-y40-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5354861999999996,
+        "lag_max_ms": 0.88157,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794383948306045890
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 0,
+      "rate": 15,
+      "label": "r0-static-q8-y40-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4930777499999999,
+        "lag_max_ms": 1.130396,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794384300247350702
+    },
+    {
+      "condition": "mps-only",
+      "round": 0,
+      "rate": 8,
+      "label": "r0-mps-only-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4960879,
+        "lag_max_ms": 0.72583,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794384665771380801
+    },
+    {
+      "condition": "mps-only",
+      "round": 0,
+      "rate": 15,
+      "label": "r0-mps-only-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.497753,
+        "lag_max_ms": 1.134783,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794385041006995631
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 0,
+      "rate": 15,
+      "label": "r0-static-q16-y32-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.49988385,
+        "lag_max_ms": 0.784419,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794385386816716375
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 0,
+      "rate": 8,
+      "label": "r0-static-q16-y32-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.48222344999999994,
+        "lag_max_ms": 0.812599,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794385725267020479
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 1,
+      "rate": 8,
+      "label": "r1-static-q16-y32-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5645906999999997,
+        "lag_max_ms": 0.715598,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794386064132168612
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 1,
+      "rate": 15,
+      "label": "r1-static-q16-y32-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5622488999999999,
+        "lag_max_ms": 0.879317,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794386384649745130
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 1,
+      "rate": 8,
+      "label": "r1-static-q8-y40-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4803289,
+        "lag_max_ms": 0.70015,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794386718475806229
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 1,
+      "rate": 15,
+      "label": "r1-static-q8-y40-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.6159411999999997,
+        "lag_max_ms": 1.017231,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794387044949178546
+    },
+    {
+      "condition": "control",
+      "round": 1,
+      "rate": 8,
+      "label": "r1-control-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5700888,
+        "lag_max_ms": 0.844635,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794387364279847760
+    },
+    {
+      "condition": "control",
+      "round": 1,
+      "rate": 15,
+      "label": "r1-control-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.47815525,
+        "lag_max_ms": 0.705462,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794387706216202610
+    },
+    {
+      "condition": "mps-only",
+      "round": 1,
+      "rate": 15,
+      "label": "r1-mps-only-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4884609,
+        "lag_max_ms": 0.776014,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794388067268836713
+    },
+    {
+      "condition": "mps-only",
+      "round": 1,
+      "rate": 8,
+      "label": "r1-mps-only-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.477964,
+        "lag_max_ms": 0.851668,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794388428140855893
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 2,
+      "rate": 8,
+      "label": "r2-static-q16-y32-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.47181805,
+        "lag_max_ms": 0.68815,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794388751582510042
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 2,
+      "rate": 15,
+      "label": "r2-static-q16-y32-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.50029375,
+        "lag_max_ms": 0.751654,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794389088417725479
+    },
+    {
+      "condition": "control",
+      "round": 2,
+      "rate": 15,
+      "label": "r2-control-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.69063725,
+        "lag_max_ms": 1.052897,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794389431043578531
+    },
+    {
+      "condition": "control",
+      "round": 2,
+      "rate": 8,
+      "label": "r2-control-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.3786257999999999,
+        "lag_max_ms": 0.572521,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794389760298684113
+    },
+    {
+      "condition": "mps-only",
+      "round": 2,
+      "rate": 15,
+      "label": "r2-mps-only-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.49354365,
+        "lag_max_ms": 3.429616,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794390140756216308
+    },
+    {
+      "condition": "mps-only",
+      "round": 2,
+      "rate": 8,
+      "label": "r2-mps-only-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5138238999999996,
+        "lag_max_ms": 0.843177,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794390502286723617
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 2,
+      "rate": 15,
+      "label": "r2-static-q8-y40-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.47586264999999994,
+        "lag_max_ms": 2.031914,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794390843379187071
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 2,
+      "rate": 8,
+      "label": "r2-static-q8-y40-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.3541133,
+        "lag_max_ms": 0.553102,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794391167110631575
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 3,
+      "rate": 8,
+      "label": "r3-static-q8-y40-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4680611499999999,
+        "lag_max_ms": 0.738101,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794391505425397667
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 3,
+      "rate": 15,
+      "label": "r3-static-q8-y40-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5320794499999998,
+        "lag_max_ms": 0.802392,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794391857385487147
+    },
+    {
+      "condition": "mps-only",
+      "round": 3,
+      "rate": 15,
+      "label": "r3-mps-only-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.51201135,
+        "lag_max_ms": 0.942189,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794392224251543057
+    },
+    {
+      "condition": "mps-only",
+      "round": 3,
+      "rate": 8,
+      "label": "r3-mps-only-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5931356999999999,
+        "lag_max_ms": 0.782448,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794392589754966189
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 3,
+      "rate": 15,
+      "label": "r3-static-q16-y32-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.49667445,
+        "lag_max_ms": 1.796653,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794392915427753644
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 3,
+      "rate": 8,
+      "label": "r3-static-q16-y32-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4738788,
+        "lag_max_ms": 0.657764,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794393248197891673
+    },
+    {
+      "condition": "control",
+      "round": 3,
+      "rate": 8,
+      "label": "r3-control-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5308203499999998,
+        "lag_max_ms": 0.662785,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794393586647165367
+    },
+    {
+      "condition": "control",
+      "round": 3,
+      "rate": 15,
+      "label": "r3-control-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5582134,
+        "lag_max_ms": 0.925369,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794393913667364694
+    },
+    {
+      "condition": "mps-only",
+      "round": 4,
+      "rate": 8,
+      "label": "r4-mps-only-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.5462343999999996,
+        "lag_max_ms": 1.364946,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794394279111760120
+    },
+    {
+      "condition": "mps-only",
+      "round": 4,
+      "rate": 15,
+      "label": "r4-mps-only-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.49501975,
+        "lag_max_ms": 0.66829,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794394661752362079
+    },
+    {
+      "condition": "control",
+      "round": 4,
+      "rate": 8,
+      "label": "r4-control-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.48949135,
+        "lag_max_ms": 0.612824,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794395005704151483
+    },
+    {
+      "condition": "control",
+      "round": 4,
+      "rate": 15,
+      "label": "r4-control-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.51169985,
+        "lag_max_ms": 0.767596,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794395317862388573
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 4,
+      "rate": 8,
+      "label": "r4-static-q8-y40-rate8",
+      "expected": {
+        "qwen": 11,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.49507544999999986,
+        "lag_max_ms": 0.848937,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794395651158346188
+    },
+    {
+      "condition": "static-q8-y40",
+      "round": 4,
+      "rate": 15,
+      "label": "r4-static-q8-y40-rate15",
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4780073499999999,
+        "lag_max_ms": 1.869391,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794395988460158991
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 4,
+      "rate": 8,
+      "label": "r4-static-q16-y32-rate8",
+      "expected": {
+        "qwen": 10,
+        "yolo": 960
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.3294001499999997,
+        "lag_max_ms": 0.614465,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794396335888618388
+    },
+    {
+      "condition": "static-q16-y32",
+      "round": 4,
+      "rate": 15,
+      "label": "r4-static-q16-y32-rate15",
+      "expected": {
+        "qwen": 10,
+        "yolo": 1800
+      },
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.47230019999999995,
+        "lag_max_ms": 0.832042,
+        "errors": 0
+      },
+      "finished_wall_ns": 1794396662053373033
+    }
+  ],
+  "pilot": [],
+  "restoration": "PASS",
+  "current": {
+    "condition": "static-q16-y32",
+    "round": 4,
+    "rate": 15,
+    "label": "r4-static-q16-y32-rate15"
+  },
+  "validation": [
+    {
+      "state": "PASS",
+      "phase": "validation",
+      "condition": "control",
+      "round": -1,
+      "rate": 15.0,
+      "duration_s": 30.0,
+      "run_id": "validation-control-rate15_e5b56b9574dc4afc800855dd89f51782",
+      "ros_domain": 74,
+      "qwen_load": "closed-loop C1",
+      "yolo_load": "fixed-rate open-loop, dedicated publisher process",
+      "result_subscriptions": "rolling 128 ahead; retain >=1s after receive",
+      "e2e": "before JSON encoding/publish -> matching result parsed",
+      "start_wall_ns": 1794382555819898872,
+      "t0_ns": 137152807862574,
+      "stop_ns": 137182807862574,
+      "t0_wall_ns": 1794382560532305698,
+      "deadline_ns": 137482807862574,
+      "expected": {
+        "qwen": 3,
+        "yolo": 450
+      },
+      "received": {
+        "qwen": 3,
+        "yolo": 450
+      },
+      "errors": [],
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.4867576,
+        "lag_max_ms": 0.674806,
+        "errors": 0
+      },
+      "pilot_queue": {
+        "tail_queue_mean_ms": 8.701256622767282,
+        "queue_slope_rps": 0.0035714285714285713,
+        "errors": 0
+      },
+      "end_wall_ns": 1794382599362966335
+    },
+    {
+      "state": "PASS",
+      "phase": "validation",
+      "condition": "mps-only",
+      "round": -1,
+      "rate": 15.0,
+      "duration_s": 120.0,
+      "run_id": "validation-mps-rate15_e2166e6ab44e4707999b4fba0b6bef91",
+      "ros_domain": 74,
+      "qwen_load": "closed-loop C1",
+      "yolo_load": "fixed-rate open-loop, dedicated publisher process",
+      "result_subscriptions": "rolling 128 ahead; retain >=1s after receive",
+      "e2e": "before JSON encoding/publish -> matching result parsed",
+      "start_wall_ns": 1794382806587387847,
+      "t0_ns": 137403261630999,
+      "stop_ns": 137523261630999,
+      "t0_wall_ns": 1794382810986072906,
+      "deadline_ns": 137823261630999,
+      "expected": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "received": {
+        "qwen": 11,
+        "yolo": 1800
+      },
+      "errors": [],
+      "generator": {
+        "valid": true,
+        "lag_p95_ms": 0.49363375,
+        "lag_max_ms": 5.290736,
+        "errors": 0
+      },
+      "pilot_queue": {
+        "tail_queue_mean_ms": 19191.051975134887,
+        "queue_slope_rps": 2.5020839121978327,
+        "errors": 0
+      },
+      "end_wall_ns": 1794382950659699239
+    }
+  ],
+  "rates": [
+    8,
+    15
+  ],
+  "total_trials": 40,
+  "index": 39,
+  "restored_membership": {
+    "server": 3304201,
+    "clients": [
+      3304052,
+      3304089
+    ],
+    "models": {
+      "qwen": 3304052,
+      "yolo": 3304089
+    },
+    "expected_mps": true,
+    "wall_ns": 1794396844101314869
+  },
+  "end_wall_ns": 1794396844671981001
+}

@@ -1,0 +1,5 @@
+==WARNING== Could not deploy stock section files to "/diag/cache/Documents/NVIDIA Nsight Compute/2025.3.1/Sections".
+Set the HOME environment variable to a writable directory.
+==WARNING== Using "/opt/nvidia/nsight-compute/2025.3.1/target/linux-desktop-t210-a64/../../sections" instead.
+==WARNING== See https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#faq.
+==ERROR== Unable to write to file permission-probe.ncu-rep. Please verify this file is not locked, and writable.

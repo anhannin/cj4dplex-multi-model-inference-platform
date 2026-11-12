@@ -1,0 +1,16 @@
+[2026-11-10 01:58:48.006 Control 1027110] Starting control daemon using socket /home/avees/cj-mps-static/20261110-v1/dynamic-pipe/control
+[2026-11-10 01:58:48.006 Control 1027110] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-mps-static/20261110-v1/dynamic-pipe
+[2026-11-10 01:58:48.006 Control 1027110] CUDA MPS Control binary version: 13010
+[2026-11-10 01:58:49.011 Control 1027110] Accepting connection...
+[2026-11-10 01:58:49.011 Control 1027110] User did not send valid credentials
+[2026-11-10 01:58:49.011 Control 1027110] Accepting connection...
+[2026-11-10 01:58:49.011 Control 1027110] NEW CLIENT 1027119 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 01:58:49.012 Control 1027121] Starting new server 1027121 for user 1000
+[2026-11-10 01:58:49.013 Control 1027110] Accepting connection...
+[2026-11-10 01:58:49.329 Control 1027110] NEW SERVER 1027121: Ready
+[2026-11-10 01:58:49.426 Control 1027110] Accepting connection...
+[2026-11-10 01:58:49.426 Control 1027110] NEW UI
+[2026-11-10 01:58:49.426 Control 1027110] Cmd:quit
+[2026-11-10 01:58:49.426 Control 1027110] Try shutting down server 1027121, backoff is disabled
+[2026-11-10 01:58:49.427 Control 1027110] Server 1027121 exited with status 1
+[2026-11-10 01:58:49.427 Control 1027110] Exit with status 1

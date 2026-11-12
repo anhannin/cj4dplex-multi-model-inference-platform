@@ -1,0 +1,20 @@
+[
+  {
+    "model": "qwen",
+    "state": "PASS",
+    "measured_green": 180,
+    "warmup_green": 36,
+    "measured_default": 10,
+    "warmup_default": 6,
+    "fixed_work_and_native_stream_resource_checks": true
+  },
+  {
+    "model": "yolo",
+    "state": "PASS",
+    "measured_green": 600,
+    "warmup_green": 120,
+    "measured_default": 100,
+    "warmup_default": 20,
+    "fixed_work_and_native_stream_resource_checks": true
+  }
+]

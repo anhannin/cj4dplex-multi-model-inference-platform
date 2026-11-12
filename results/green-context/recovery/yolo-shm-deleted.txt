@@ -1,0 +1,7 @@
+eb8a40249000-eb8a402d0000 rw-s 00000000 00:1e 14968                      /dev/shm/fastrtps_dff90b74b49e5b94 (deleted)
+eb8a4a5c3000-eb8a4a5d0000 rw-s 00000000 00:1e 14442                      /dev/shm/fastrtps_port17913 (deleted)
+eb8a4a6f3000-eb8a4a700000 rw-s 00000000 00:1e 14449                      /dev/shm/fastrtps_port7001 (deleted)
+eb8a4ace3000-eb8a4acf0000 rw-s 00000000 00:1e 14973                      /dev/shm/fastrtps_port7000 (deleted)
+eb8a4ad22000-eb8a4ad2f000 rw-s 00000000 00:1e 14970                      /dev/shm/fastrtps_port17911 (deleted)
+eb8a4add1000-eb8a4add2000 r--s 00000000 00:1e 14421                      /dev/shm/lttng-ust-wait-8-1000 (deleted)
+eb8a4adfb000-eb8a4adfc000 r--s 00000000 00:1e 3                          /dev/shm/lttng-ust-wait-8

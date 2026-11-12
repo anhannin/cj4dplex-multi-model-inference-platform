@@ -1,0 +1,67 @@
+[2026-11-11 19:10:59.429 Control 3145176] Starting control daemon using socket /home/avees/cj-sustained/20261111-v2/eval-pipe/control
+[2026-11-11 19:10:59.429 Control 3145176] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-sustained/20261111-v2/eval-pipe
+[2026-11-11 19:10:59.429 Control 3145176] CUDA MPS Control binary version: 13020
+[2026-11-11 19:10:59.430 Control 3145176] Accepting connection...
+[2026-11-11 19:10:59.430 Control 3145176] NEW UI
+[2026-11-11 19:10:59.430 Control 3145176] Cmd:get_server_list
+[2026-11-11 19:10:59.430 Control 3145176] UI closed
+[2026-11-11 19:11:00.252 Control 3145176] Accepting connection...
+[2026-11-11 19:11:00.252 Control 3145176] User did not send valid credentials
+[2026-11-11 19:11:00.252 Control 3145176] Accepting connection...
+[2026-11-11 19:11:00.252 Control 3145176] NEW CLIENT 3145542 from user 1000: Server is not ready, push client to pending list
+[2026-11-11 19:11:00.252 Control 3145544] Starting new server 3145544 for user 1000
+[2026-11-11 19:11:00.254 Control 3145176] Accepting connection...
+[2026-11-11 19:11:00.498 Control 3145176] NEW SERVER 3145544: Ready
+[2026-11-11 19:11:00.501 Control 3145176] Accepting connection...
+[2026-11-11 19:11:00.501 Control 3145176] User did not send valid credentials
+[2026-11-11 19:11:00.501 Control 3145176] Accepting connection...
+[2026-11-11 19:11:00.501 Control 3145176] NEW CLIENT 3145553 from user 1000: Server already exists
+[2026-11-11 19:11:31.054 Control 3145176] Accepting connection...
+[2026-11-11 19:11:31.054 Control 3145176] User did not send valid credentials
+[2026-11-11 19:11:31.054 Control 3145176] Accepting connection...
+[2026-11-11 19:11:31.054 Control 3145176] NEW CLIENT 3145374 from user 1000: Server already exists
+[2026-11-11 19:11:31.067 Control 3145176] Accepting connection...
+[2026-11-11 19:11:31.067 Control 3145176] User did not send valid credentials
+[2026-11-11 19:11:31.067 Control 3145176] Accepting connection...
+[2026-11-11 19:11:31.067 Control 3145176] NEW CLIENT 3145382 from user 1000: Server already exists
+[2026-11-11 19:11:31.121 Control 3145176] Accepting connection...
+[2026-11-11 19:11:31.122 Control 3145176] NEW CLIENT 3145374 from user 1000: Server already exists
+[2026-11-11 19:11:31.131 Control 3145176] Accepting connection...
+[2026-11-11 19:11:31.132 Control 3145176] NEW CLIENT 3145382 from user 1000: Server already exists
+[2026-11-11 19:13:25.342 Control 3145176] Accepting connection...
+[2026-11-11 19:13:25.342 Control 3145176] NEW UI
+[2026-11-11 19:13:25.342 Control 3145176] Cmd:get_server_list
+[2026-11-11 19:13:25.342 Control 3145176] 3145544
+[2026-11-11 19:13:25.342 Control 3145176] UI closed
+[2026-11-11 19:13:25.343 Control 3145176] Accepting connection...
+[2026-11-11 19:13:25.343 Control 3145176] NEW UI
+[2026-11-11 19:13:25.343 Control 3145176] Cmd:get_client_list 3145544
+[2026-11-11 19:13:25.343 Control 3145176] 3145374
+[2026-11-11 19:13:25.343 Control 3145176] 3145382
+[2026-11-11 19:13:25.343 Control 3145176] UI closed
+[2026-11-11 19:17:04.239 Control 3145176] Accepting connection...
+[2026-11-11 19:17:04.239 Control 3145176] NEW UI
+[2026-11-11 19:17:04.239 Control 3145176] Cmd:get_server_list
+[2026-11-11 19:17:04.239 Control 3145176] 3145544
+[2026-11-11 19:17:04.239 Control 3145176] UI closed
+[2026-11-11 19:17:04.240 Control 3145176] Accepting connection...
+[2026-11-11 19:17:04.240 Control 3145176] NEW UI
+[2026-11-11 19:17:04.240 Control 3145176] Cmd:get_client_list 3145544
+[2026-11-11 19:17:04.240 Control 3145176] 3145374
+[2026-11-11 19:17:04.240 Control 3145176] 3145382
+[2026-11-11 19:17:04.240 Control 3145176] UI closed
+[2026-11-11 19:17:06.172 Control 3145176] Accepting connection...
+[2026-11-11 19:17:06.172 Control 3145176] NEW UI
+[2026-11-11 19:17:06.172 Control 3145176] Cmd:get_server_list
+[2026-11-11 19:17:06.172 Control 3145176] 3145544
+[2026-11-11 19:17:06.172 Control 3145176] UI closed
+[2026-11-11 19:17:06.174 Control 3145176] Accepting connection...
+[2026-11-11 19:17:06.174 Control 3145176] NEW UI
+[2026-11-11 19:17:06.174 Control 3145176] Cmd:get_client_list 3145544
+[2026-11-11 19:17:06.174 Control 3145176] UI closed
+[2026-11-11 19:17:06.176 Control 3145176] Accepting connection...
+[2026-11-11 19:17:06.176 Control 3145176] NEW UI
+[2026-11-11 19:17:06.177 Control 3145176] Cmd:quit
+[2026-11-11 19:17:06.177 Control 3145176] Try shutting down server 3145544, backoff is disabled
+[2026-11-11 19:17:06.252 Control 3145176] Server 3145544 exited with status 0
+[2026-11-11 19:17:06.252 Control 3145176] Exit with status 0

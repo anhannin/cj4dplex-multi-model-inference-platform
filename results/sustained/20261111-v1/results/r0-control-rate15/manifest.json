@@ -1,0 +1,40 @@
+{
+  "state": "PASS",
+  "phase": "main",
+  "condition": "control",
+  "round": 0,
+  "rate": 15.0,
+  "duration_s": 120.0,
+  "run_id": "r0-control-rate15_b3efe95989d842bf9bdcd939aeb6f8cb",
+  "ros_domain": 74,
+  "qwen_load": "closed-loop C1",
+  "yolo_load": "fixed-rate open-loop",
+  "result_subscriptions": "rolling 128 ahead; retain >=1s after receive",
+  "e2e": "before JSON encoding/publish -> matching result parsed",
+  "start_wall_ns": 1794380095076039171,
+  "t0_ns": 134690466483892,
+  "stop_ns": 134810466483892,
+  "t0_wall_ns": 1794380098190924663,
+  "deadline_ns": 135110466483892,
+  "expected": {
+    "qwen": 10,
+    "yolo": 1800
+  },
+  "received": {
+    "qwen": 10,
+    "yolo": 1800
+  },
+  "errors": [],
+  "generator": {
+    "valid": true,
+    "lag_p95_ms": 6.934864299999999,
+    "lag_max_ms": 32.918338,
+    "errors": 0
+  },
+  "pilot_queue": {
+    "tail_queue_mean_ms": 6.993568442930053,
+    "queue_slope_rps": 0.0003612114476243401,
+    "errors": 0
+  },
+  "end_wall_ns": 1794380228242604755
+}

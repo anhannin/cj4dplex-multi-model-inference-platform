@@ -1,0 +1,7 @@
+{
+  "state": "PASS",
+  "scope": "additional diagnostic scheduling/aggregate GPU metrics; rootCAP_SYS_ADMIN only collector; model Pods unchanged UID1000",
+  "start_wall_ns": 1794238327259160633,
+  "restoration": "PASS",
+  "end_wall_ns": 1794238845790528015
+}

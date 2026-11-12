@@ -1,0 +1,4 @@
+{"name": "clock:positive:capture-start:6073798741698022", "tag": "capture-start", "model": "positive", "pre_ns": 6073798741701782, "post_ns": 6073798741797655, "wall_pre_ns": 1794237617258048839, "wall_post_ns": 1794237617258143672}
+{"name": "clock:positive:after-serial:6073799124393327", "tag": "after-serial", "model": "positive", "pre_ns": 6073799124393727, "post_ns": 6073799124395119, "wall_pre_ns": 1794237617640739968, "wall_post_ns": 1794237617640741184}
+{"name": "clock:positive:before-parallel:6073799125004023", "tag": "before-parallel", "model": "positive", "pre_ns": 6073799125004887, "post_ns": 6073799125006807, "wall_pre_ns": 1794237617641351112, "wall_post_ns": 1794237617641352904}
+{"name": "clock:positive:capture-stop:6073799317587042", "tag": "capture-stop", "model": "positive", "pre_ns": 6073799317588978, "post_ns": 6073799317597986, "wall_pre_ns": 1794237617833935827, "wall_post_ns": 1794237617833944003}

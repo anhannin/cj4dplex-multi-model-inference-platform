@@ -1,0 +1,22 @@
+{
+  "qwen-qwen-only": {
+    "kernels": 499860,
+    "unique_kernel_correlation_ids": 499860,
+    "duplicate_launch_correlations": false
+  },
+  "qwen-concurrent": {
+    "kernels": 499860,
+    "unique_kernel_correlation_ids": 499860,
+    "duplicate_launch_correlations": false
+  },
+  "yolo-yolo-only": {
+    "kernels": 84500,
+    "unique_kernel_correlation_ids": 84500,
+    "duplicate_launch_correlations": false
+  },
+  "yolo-concurrent": {
+    "kernels": 659100,
+    "unique_kernel_correlation_ids": 659100,
+    "duplicate_launch_correlations": false
+  }
+}

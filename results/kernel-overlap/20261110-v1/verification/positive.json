@@ -1,0 +1,11 @@
+{
+  "serial_calls_ms": [
+    191.180331,
+    191.140826
+  ],
+  "parallel_calls_ms": [
+    191.13369,
+    191.188155
+  ],
+  "scope": "synthetic tool concurrency validation only;not model performance/equal-total-work claim"
+}

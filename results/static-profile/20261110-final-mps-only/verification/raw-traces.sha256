@@ -1,0 +1,6 @@
+ccc3b7d039d928c858eafca0b23299862c11a65386eaf68f84707f2367d198f6  validation/native-mps-only/qwen/trace.nsys-rep
+3c4797d50ab2d34f583a556f790801d311dd3cecd3049fefa1eeffafb1fd9115  validation/native-mps-only/qwen/trace.sqlite
+5f78e51b29d8e2f710204e9ec2c443452446954c630644f25c04227e33193403  validation/native-mps-only/scheduler/trace.nsys-rep
+3fc350ad6b506857b1dd0106c0abc10b7581706c9545658297aa9d842404489f  validation/native-mps-only/scheduler/trace.sqlite
+0e8287b9580bdd49493ecc771349420128028813caf5dc650a8a1d179ff28d09  validation/native-mps-only/yolo/trace.nsys-rep
+9728173fd5a2bfd9755a74111c0cc51d9f9d058a776f350dae625864676764f0  validation/native-mps-only/yolo/trace.sqlite

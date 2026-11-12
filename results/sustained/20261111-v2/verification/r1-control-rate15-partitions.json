@@ -1,0 +1,15 @@
+{
+  "case": {
+    "condition": "control",
+    "label": "r1-control-rate15",
+    "mps": false,
+    "static": false,
+    "green": false,
+    "qsm": 48,
+    "ysm": 48
+  },
+  "parts": {},
+  "native_driver": true,
+  "green": false,
+  "actual_chunk_sms": 2
+}

@@ -1,0 +1,916 @@
+{
+  "state": "PASS",
+  "runs": [
+    {
+      "run": "r0-control-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r0-control",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r0-static-q24-y24-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r0-static-q24-y24",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r0-static-q40-y8-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r0-static-q40-y8",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r0-static-q16-y32-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r0-static-q16-y32",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r0-mps-only-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r0-mps-only",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r0-static-q32-y16-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r0-static-q32-y16",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r0-static-q8-y40-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r0-static-q8-y40",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r1-static-q16-y32-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r1-static-q16-y32",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r1-static-q32-y16-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r1-static-q32-y16",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r1-control-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r1-control",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r1-static-q40-y8-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r1-static-q40-y8",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r1-static-q24-y24-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r1-static-q24-y24",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r1-mps-only-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r1-mps-only",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r1-static-q8-y40-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r1-static-q8-y40",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r2-control-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r2-control",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r2-static-q8-y40-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r2-static-q8-y40",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r2-static-q32-y16-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r2-static-q32-y16",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r2-mps-only-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r2-mps-only",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r2-static-q16-y32-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r2-static-q16-y32",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r2-static-q40-y8-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r2-static-q40-y8",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r2-static-q24-y24-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r2-static-q24-y24",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r3-control-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r3-control",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r3-static-q40-y8-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r3-static-q40-y8",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r3-static-q8-y40-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r3-static-q8-y40",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r3-static-q24-y24-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r3-static-q24-y24",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r3-mps-only-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r3-mps-only",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r3-static-q16-y32-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r3-static-q16-y32",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r3-static-q32-y16-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r3-static-q32-y16",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r4-static-q8-y40-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r4-static-q8-y40",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r4-static-q16-y32-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r4-static-q16-y32",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r4-control-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r4-control",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r4-static-q40-y8-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r4-static-q40-y8",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r4-static-q32-y16-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r4-static-q32-y16",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r4-mps-only-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r4-mps-only",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    },
+    {
+      "run": "r4-static-q24-y24-warmup",
+      "kind": "warmup",
+      "state": "PASS",
+      "counts": {
+        "qwen": 3,
+        "yolo": 30
+      },
+      "publications": {
+        "qwen": 3,
+        "yolo": 30
+      }
+    },
+    {
+      "run": "r4-static-q24-y24",
+      "kind": "results",
+      "state": "PASS",
+      "counts": {
+        "qwen": 10,
+        "yolo": 300
+      },
+      "publications": {
+        "qwen": 10,
+        "yolo": 300
+      }
+    }
+  ],
+  "requests": 12005
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/avees/cj-ros2/tests/test_uuid_clients.py", line 217, in <module>
+    main()
+  File "/home/avees/cj-ros2/tests/test_uuid_clients.py", line 145, in main
+    assert rid in seen and response["status"] == "ok"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,7 @@
+{
+  "state": "FAIL",
+  "start_wall_ns": 1794241180116886015,
+  "error": "CalledProcessError(1, ['nvidia-cuda-mps-control'])",
+  "rollback": "PASS",
+  "end_wall_ns": 1794241183711466952
+}

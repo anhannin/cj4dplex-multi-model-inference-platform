@@ -1,0 +1,24 @@
+{
+  "model_completion_ms": {
+    "yolo": 871.284759,
+    "qwen": 64385.370238
+  },
+  "overall_completion_ms": 64385.370238,
+  "completed": {
+    "qwen": 3,
+    "yolo": 30
+  },
+  "dispatch": {
+    "qwen": {
+      "first_send_from_t0_ms": 0.70175,
+      "last_send_from_t0_ms": 0.954169,
+      "all_published_from_t0_ms": 0.988873
+    },
+    "yolo": {
+      "first_send_from_t0_ms": 1.129963,
+      "last_send_from_t0_ms": 32.655835,
+      "all_published_from_t0_ms": 34.251706
+    }
+  },
+  "dispatch_window_ms": 34.251706
+}

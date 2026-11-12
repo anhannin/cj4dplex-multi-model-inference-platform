@@ -1,0 +1,11 @@
+[2026-11-10 01:58:49.013 Server 1027121] Startup
+[2026-11-10 01:58:49.013 Server 1027121] Connecting to control daemon on socket: /home/avees/cj-mps-static/20261110-v1/dynamic-pipe/control
+[2026-11-10 01:58:49.013 Server 1027121] Initializing server process
+[2026-11-10 01:58:49.143 Server 1027121] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-10 01:58:49.329 Server 1027121] Created anonymous shared memory region mps.shm.1000.1027121
+[2026-11-10 01:58:49.329 Server 1027121] CUDA MPS Server for Linux/Unix. Binary version: 13010
+[2026-11-10 01:58:49.329 Server 1027121] Display Driver version: 580
+[2026-11-10 01:58:49.329 Server 1027121] Active Threads Percentage set to 100.0
+[2026-11-10 01:58:49.329 Server 1027121] Server Priority set to 0
+[2026-11-10 01:58:49.329 Server 1027121] Server has started
+[2026-11-10 01:58:49.329 Server 1027121] Destroy server context on device 0 (NVIDIA GB10)

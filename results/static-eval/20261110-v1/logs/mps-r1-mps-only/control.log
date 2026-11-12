@@ -1,0 +1,78 @@
+[2026-11-10 03:55:03.372 Control 141586] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 03:55:03.372 Control 141586] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 03:55:03.372 Control 141586] CUDA MPS Control binary version: 13020
+[2026-11-10 03:55:03.374 Control 141586] Accepting connection...
+[2026-11-10 03:55:03.374 Control 141586] NEW UI
+[2026-11-10 03:55:03.374 Control 141586] Cmd:get_server_list
+[2026-11-10 03:55:03.374 Control 141586] UI closed
+[2026-11-10 03:55:04.227 Control 141586] Accepting connection...
+[2026-11-10 03:55:04.227 Control 141586] User did not send valid credentials
+[2026-11-10 03:55:04.227 Control 141586] Accepting connection...
+[2026-11-10 03:55:04.227 Control 141586] NEW CLIENT 141895 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 03:55:04.228 Control 141897] Starting new server 141897 for user 1000
+[2026-11-10 03:55:04.230 Control 141586] Accepting connection...
+[2026-11-10 03:55:04.572 Control 141586] NEW SERVER 141897: Ready
+[2026-11-10 03:55:04.572 Control 141586] Accepting connection...
+[2026-11-10 03:55:04.572 Control 141586] User did not send valid credentials
+[2026-11-10 03:55:04.572 Control 141586] Accepting connection...
+[2026-11-10 03:55:04.572 Control 141586] NEW CLIENT 141965 from user 1000: Server already exists
+[2026-11-10 03:55:35.044 Control 141586] Accepting connection...
+[2026-11-10 03:55:35.044 Control 141586] User did not send valid credentials
+[2026-11-10 03:55:35.044 Control 141586] Accepting connection...
+[2026-11-10 03:55:35.045 Control 141586] NEW CLIENT 141767 from user 1000: Server already exists
+[2026-11-10 03:55:35.095 Control 141586] Accepting connection...
+[2026-11-10 03:55:35.096 Control 141586] NEW CLIENT 141767 from user 1000: Server already exists
+[2026-11-10 03:55:35.223 Control 141586] Accepting connection...
+[2026-11-10 03:55:35.223 Control 141586] User did not send valid credentials
+[2026-11-10 03:55:35.223 Control 141586] Accepting connection...
+[2026-11-10 03:55:35.223 Control 141586] NEW CLIENT 141843 from user 1000: Server already exists
+[2026-11-10 03:55:35.259 Control 141586] Accepting connection...
+[2026-11-10 03:55:35.259 Control 141586] NEW CLIENT 141843 from user 1000: Server already exists
+[2026-11-10 03:57:39.261 Control 141586] Accepting connection...
+[2026-11-10 03:57:39.261 Control 141586] NEW UI
+[2026-11-10 03:57:39.262 Control 141586] Cmd:get_server_list
+[2026-11-10 03:57:39.262 Control 141586] 141897
+[2026-11-10 03:57:39.262 Control 141586] UI closed
+[2026-11-10 03:57:39.262 Control 141586] Accepting connection...
+[2026-11-10 03:57:39.262 Control 141586] NEW UI
+[2026-11-10 03:57:39.262 Control 141586] Cmd:get_client_list 141897
+[2026-11-10 03:57:39.262 Control 141586] 141767
+[2026-11-10 03:57:39.262 Control 141586] 141843
+[2026-11-10 03:57:39.262 Control 141586] UI closed
+[2026-11-10 03:58:50.128 Control 141586] Accepting connection...
+[2026-11-10 03:58:50.128 Control 141586] NEW UI
+[2026-11-10 03:58:50.128 Control 141586] Cmd:get_server_list
+[2026-11-10 03:58:50.128 Control 141586] 141897
+[2026-11-10 03:58:50.128 Control 141586] UI closed
+[2026-11-10 03:58:50.129 Control 141586] Accepting connection...
+[2026-11-10 03:58:50.129 Control 141586] NEW UI
+[2026-11-10 03:58:50.129 Control 141586] Cmd:get_client_list 141897
+[2026-11-10 03:58:50.130 Control 141586] 141767
+[2026-11-10 03:58:50.130 Control 141586] 141843
+[2026-11-10 03:58:50.130 Control 141586] UI closed
+[2026-11-10 04:00:49.037 Control 141586] Accepting connection...
+[2026-11-10 04:00:49.037 Control 141586] NEW UI
+[2026-11-10 04:00:49.038 Control 141586] Cmd:get_server_list
+[2026-11-10 04:00:49.038 Control 141586] 141897
+[2026-11-10 04:00:49.038 Control 141586] UI closed
+[2026-11-10 04:00:49.038 Control 141586] Accepting connection...
+[2026-11-10 04:00:49.038 Control 141586] NEW UI
+[2026-11-10 04:00:49.038 Control 141586] Cmd:get_client_list 141897
+[2026-11-10 04:00:49.038 Control 141586] 141767
+[2026-11-10 04:00:49.038 Control 141586] 141843
+[2026-11-10 04:00:49.038 Control 141586] UI closed
+[2026-11-10 04:00:51.074 Control 141586] Accepting connection...
+[2026-11-10 04:00:51.074 Control 141586] NEW UI
+[2026-11-10 04:00:51.074 Control 141586] Cmd:get_server_list
+[2026-11-10 04:00:51.074 Control 141586] 141897
+[2026-11-10 04:00:51.074 Control 141586] UI closed
+[2026-11-10 04:00:51.075 Control 141586] Accepting connection...
+[2026-11-10 04:00:51.075 Control 141586] NEW UI
+[2026-11-10 04:00:51.075 Control 141586] Cmd:get_client_list 141897
+[2026-11-10 04:00:51.075 Control 141586] UI closed
+[2026-11-10 04:00:51.077 Control 141586] Accepting connection...
+[2026-11-10 04:00:51.078 Control 141586] NEW UI
+[2026-11-10 04:00:51.078 Control 141586] Cmd:quit
+[2026-11-10 04:00:51.078 Control 141586] Try shutting down server 141897, backoff is disabled
+[2026-11-10 04:00:51.152 Control 141586] Server 141897 exited with status 0
+[2026-11-10 04:00:51.152 Control 141586] Exit with status 0

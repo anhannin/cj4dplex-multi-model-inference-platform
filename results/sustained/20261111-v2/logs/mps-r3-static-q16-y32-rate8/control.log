@@ -1,0 +1,83 @@
+[2026-11-11 19:28:37.558 Control 3179727] Starting control daemon using socket /home/avees/cj-sustained/20261111-v2/eval-pipe/control
+[2026-11-11 19:28:37.558 Control 3179727] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-sustained/20261111-v2/eval-pipe
+[2026-11-11 19:28:37.558 Control 3179727] CUDA MPS Control binary version: 13020
+[2026-11-11 19:28:37.559 Control 3179727] Accepting connection...
+[2026-11-11 19:28:37.559 Control 3179727] NEW UI
+[2026-11-11 19:28:37.559 Control 3179727] Cmd:get_server_list
+[2026-11-11 19:28:37.559 Control 3179727] UI closed
+[2026-11-11 19:28:37.577 Control 3179727] Accepting connection...
+[2026-11-11 19:28:37.577 Control 3179727] NEW UI
+[2026-11-11 19:28:37.577 Control 3179727] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 8
+[2026-11-11 19:28:37.600 Control 3179727] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/wzAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-11 19:28:37.600 Control 3179727] UI closed
+[2026-11-11 19:28:37.603 Control 3179727] Accepting connection...
+[2026-11-11 19:28:37.603 Control 3179727] NEW UI
+[2026-11-11 19:28:37.603 Control 3179727] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 16
+[2026-11-11 19:28:37.603 Control 3179727] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/PM/zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-11 19:28:37.603 Control 3179727] UI closed
+[2026-11-11 19:28:37.605 Control 3179727] Accepting connection...
+[2026-11-11 19:28:37.605 Control 3179727] NEW UI
+[2026-11-11 19:28:37.605 Control 3179727] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-11 19:28:37.605 Control 3179727] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-11 19:28:37.605 Control 3179727] Failed to create partition
+[2026-11-11 19:28:37.605 Control 3179727] UI closed
+[2026-11-11 19:28:38.423 Control 3179727] Accepting connection...
+[2026-11-11 19:28:38.423 Control 3179727] User did not send valid credentials
+[2026-11-11 19:28:38.423 Control 3179727] Accepting connection...
+[2026-11-11 19:28:38.423 Control 3179727] NEW CLIENT 3180030 from user 1000: Server is not ready, push client to pending list
+[2026-11-11 19:28:38.423 Control 3180039] Starting new server 3180039 for user 1000
+[2026-11-11 19:28:38.426 Control 3179727] Accepting connection...
+[2026-11-11 19:28:38.742 Control 3179727] NEW SERVER 3180039: Ready
+[2026-11-11 19:28:38.742 Control 3179727] Accepting connection...
+[2026-11-11 19:28:38.743 Control 3179727] User did not send valid credentials
+[2026-11-11 19:28:38.743 Control 3179727] Accepting connection...
+[2026-11-11 19:28:38.743 Control 3179727] NEW CLIENT 3180111 from user 1000: Server already exists
+[2026-11-11 19:28:39.556 Control 3179727] Accepting connection...
+[2026-11-11 19:28:39.556 Control 3179727] User did not send valid credentials
+[2026-11-11 19:28:39.556 Control 3179727] Accepting connection...
+[2026-11-11 19:28:39.556 Control 3179727] NEW CLIENT 3180009 from user 1000: Server already exists
+[2026-11-11 19:28:39.595 Control 3179727] Accepting connection...
+[2026-11-11 19:28:39.595 Control 3179727] User did not send valid credentials
+[2026-11-11 19:28:39.595 Control 3179727] Accepting connection...
+[2026-11-11 19:28:39.595 Control 3179727] NEW CLIENT 3179921 from user 1000: Server already exists
+[2026-11-11 19:28:39.609 Control 3179727] Accepting connection...
+[2026-11-11 19:28:39.609 Control 3179727] NEW CLIENT 3180009 from user 1000: Server already exists
+[2026-11-11 19:28:39.656 Control 3179727] Accepting connection...
+[2026-11-11 19:28:39.656 Control 3179727] NEW CLIENT 3179921 from user 1000: Server already exists
+[2026-11-11 19:30:43.526 Control 3179727] Accepting connection...
+[2026-11-11 19:30:43.526 Control 3179727] NEW UI
+[2026-11-11 19:30:43.526 Control 3179727] Cmd:get_server_list
+[2026-11-11 19:30:43.526 Control 3179727] 3180039
+[2026-11-11 19:30:43.526 Control 3179727] UI closed
+[2026-11-11 19:30:43.527 Control 3179727] Accepting connection...
+[2026-11-11 19:30:43.527 Control 3179727] NEW UI
+[2026-11-11 19:30:43.527 Control 3179727] Cmd:get_client_list 3180039
+[2026-11-11 19:30:43.527 Control 3179727] 3180009
+[2026-11-11 19:30:43.527 Control 3179727] 3179921
+[2026-11-11 19:30:43.527 Control 3179727] UI closed
+[2026-11-11 19:34:08.180 Control 3179727] Accepting connection...
+[2026-11-11 19:34:08.180 Control 3179727] NEW UI
+[2026-11-11 19:34:08.180 Control 3179727] Cmd:get_server_list
+[2026-11-11 19:34:08.180 Control 3179727] 3180039
+[2026-11-11 19:34:08.180 Control 3179727] UI closed
+[2026-11-11 19:34:08.181 Control 3179727] Accepting connection...
+[2026-11-11 19:34:08.181 Control 3179727] NEW UI
+[2026-11-11 19:34:08.181 Control 3179727] Cmd:get_client_list 3180039
+[2026-11-11 19:34:08.181 Control 3179727] 3180009
+[2026-11-11 19:34:08.181 Control 3179727] 3179921
+[2026-11-11 19:34:08.181 Control 3179727] UI closed
+[2026-11-11 19:34:10.175 Control 3179727] Accepting connection...
+[2026-11-11 19:34:10.175 Control 3179727] NEW UI
+[2026-11-11 19:34:10.175 Control 3179727] Cmd:get_server_list
+[2026-11-11 19:34:10.175 Control 3179727] 3180039
+[2026-11-11 19:34:10.176 Control 3179727] UI closed
+[2026-11-11 19:34:10.177 Control 3179727] Accepting connection...
+[2026-11-11 19:34:10.177 Control 3179727] NEW UI
+[2026-11-11 19:34:10.177 Control 3179727] Cmd:get_client_list 3180039
+[2026-11-11 19:34:10.177 Control 3179727] UI closed
+[2026-11-11 19:34:10.178 Control 3179727] Accepting connection...
+[2026-11-11 19:34:10.178 Control 3179727] NEW UI
+[2026-11-11 19:34:10.178 Control 3179727] Cmd:quit
+[2026-11-11 19:34:10.178 Control 3179727] Try shutting down server 3180039, backoff is disabled
+[2026-11-11 19:34:10.258 Control 3179727] Server 3180039 exited with status 0
+[2026-11-11 19:34:10.258 Control 3179727] Exit with status 0

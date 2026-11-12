@@ -1,0 +1,82 @@
+{
+  "qwen-qwen-only": [
+    {
+      "direction": "Host-to-Device",
+      "calls": 8,
+      "bytes": 816,
+      "device_elapsed_ms": 0.00848
+    },
+    {
+      "direction": "Device-to-Host",
+      "calls": 526,
+      "bytes": 4768,
+      "device_elapsed_ms": 0.86832
+    },
+    {
+      "direction": "Device-to-Device",
+      "calls": 7178,
+      "bytes": 12884905480,
+      "device_elapsed_ms": 42.097888
+    }
+  ],
+  "yolo-yolo-only": [
+    {
+      "direction": "Host-to-Device",
+      "calls": 100,
+      "bytes": 122880000,
+      "device_elapsed_ms": 2.42576
+    },
+    {
+      "direction": "Device-to-Host",
+      "calls": 400,
+      "bytes": 10800,
+      "device_elapsed_ms": 0.486496
+    },
+    {
+      "direction": "Device-to-Device",
+      "calls": 100,
+      "bytes": 31200,
+      "device_elapsed_ms": 0.10608
+    }
+  ],
+  "qwen-concurrent": [
+    {
+      "direction": "Host-to-Device",
+      "calls": 8,
+      "bytes": 816,
+      "device_elapsed_ms": 0.00256
+    },
+    {
+      "direction": "Device-to-Host",
+      "calls": 526,
+      "bytes": 4768,
+      "device_elapsed_ms": 1.644
+    },
+    {
+      "direction": "Device-to-Device",
+      "calls": 7178,
+      "bytes": 12884905480,
+      "device_elapsed_ms": 46.891072
+    }
+  ],
+  "yolo-concurrent": [
+    {
+      "direction": "Host-to-Device",
+      "calls": 780,
+      "bytes": 958464000,
+      "device_elapsed_ms": 54.59936
+    },
+    {
+      "direction": "Device-to-Host",
+      "calls": 3120,
+      "bytes": 84240,
+      "device_elapsed_ms": 9.332128
+    },
+    {
+      "direction": "Device-to-Device",
+      "calls": 780,
+      "bytes": 243360,
+      "device_elapsed_ms": 0.872864
+    }
+  ]
+}

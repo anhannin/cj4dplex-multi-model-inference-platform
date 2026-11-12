@@ -1,0 +1,16 @@
+[
+  {
+    "model": "qwen",
+    "cuda_runtime": 13010,
+    "torch_build_cuda": "13.0",
+    "sms": 16,
+    "sum": 1024.0
+  },
+  {
+    "model": "yolo",
+    "cuda_runtime": 13010,
+    "torch_build_cuda": "13.0",
+    "sms": 32,
+    "sum": 1024.0
+  }
+]

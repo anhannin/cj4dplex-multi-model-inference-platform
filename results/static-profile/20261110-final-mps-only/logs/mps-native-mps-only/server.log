@@ -1,0 +1,104 @@
+[2026-11-10 06:04:14.169 Server 358487] Startup
+[2026-11-10 06:04:14.169 Server 358487] Connecting to control daemon on socket: /home/avees/cj-static-profile/20261110-final-mps-only/eval-pipe/control
+[2026-11-10 06:04:14.169 Server 358487] Initializing server process
+[2026-11-10 06:04:14.299 Server 358487] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-10 06:04:14.475 Server 358487] Created anonymous shared memory region mps.shm.1000.358487
+[2026-11-10 06:04:14.475 Server 358487] CUDA MPS Server for Linux/Unix. Binary version: 13020
+[2026-11-10 06:04:14.475 Server 358487] Display Driver version: 595
+[2026-11-10 06:04:14.475 Server 358487] Active Threads Percentage set to 100.0
+[2026-11-10 06:04:14.475 Server 358487] Server Priority set to 0
+[2026-11-10 06:04:14.475 Server 358487] Static Partitioning mode disabled
+[2026-11-10 06:04:14.475 Server 358487] Server has started
+[2026-11-10 06:04:14.475 Server 358487] Received new client request from PID 358485
+[2026-11-10 06:04:14.476 Server 358487] Priority level of client {358485} is: 0 (NORMAL)
+[2026-11-10 06:04:14.476 Server 358487] Client {PID: 358485, Context ID: 0} connected
+[2026-11-10 06:04:14.476 Server 358487] Received new client request from PID 358496
+[2026-11-10 06:04:14.476 Server 358487] Creating worker thread for client {PID: 358485, Context ID: 0}
+[2026-11-10 06:04:14.476 Server 358487] Priority level of client {358496} is: 0 (NORMAL)
+[2026-11-10 06:04:14.476 Server 358487] Client {PID: 358496, Context ID: 0} connected
+[2026-11-10 06:04:14.476 Server 358487] Creating worker thread for client {PID: 358496, Context ID: 0}
+[2026-11-10 06:04:44.167 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 358485, Context ID: 0} exit
+[2026-11-10 06:04:44.167 Server 358487] Client process 358485 disconnected
+[2026-11-10 06:04:44.174 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 358496, Context ID: 0} exit
+[2026-11-10 06:04:44.174 Server 358487] Client process 358496 disconnected
+[2026-11-10 06:04:44.361 Server 358487] Received new client request from PID 359088
+[2026-11-10 06:04:44.361 Server 358487] Priority level of client {359088} is: 0 (NORMAL)
+[2026-11-10 06:04:44.361 Server 358487] Client {PID: 359088, Context ID: 0} connected
+[2026-11-10 06:04:44.361 Server 358487] Creating worker thread for client {PID: 359088, Context ID: 0}
+[2026-11-10 06:04:44.402 Server 358487] Received new client request from PID 359137
+[2026-11-10 06:04:44.402 Server 358487] Priority level of client {359137} is: 0 (NORMAL)
+[2026-11-10 06:04:44.402 Server 358487] Client {PID: 359137, Context ID: 0} connected
+[2026-11-10 06:04:44.402 Server 358487] Creating worker thread for client {PID: 359137, Context ID: 0}
+[2026-11-10 06:04:44.406 Server 358487] Received new client request from PID 359096
+[2026-11-10 06:04:44.406 Server 358487] Priority level of client {359096} is: 0 (NORMAL)
+[2026-11-10 06:04:44.406 Server 358487] Client {PID: 359096, Context ID: 0} connected
+[2026-11-10 06:04:44.406 Server 358487] Creating worker thread for client {PID: 359096, Context ID: 0}
+[2026-11-10 06:04:44.461 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359137, Context ID: 0} exit
+[2026-11-10 06:04:44.461 Server 358487] Client process 359137 disconnected
+[2026-11-10 06:04:44.468 Server 358487] Received new client request from PID 359142
+[2026-11-10 06:04:44.468 Server 358487] Priority level of client {359142} is: 0 (NORMAL)
+[2026-11-10 06:04:44.468 Server 358487] Creating worker thread for client {PID: 359142, Context ID: 0}
+[2026-11-10 06:04:44.468 Server 358487] Client {PID: 359142, Context ID: 0} connected
+[2026-11-10 06:04:44.498 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359142, Context ID: 0} exit
+[2026-11-10 06:04:44.498 Server 358487] Client process 359142 disconnected
+[2026-11-10 06:04:45.396 Server 358487] Received new client request from PID 359146
+[2026-11-10 06:04:45.396 Server 358487] Priority level of client {359146} is: 0 (NORMAL)
+[2026-11-10 06:04:45.396 Server 358487] Client {PID: 359146, Context ID: 0} connected
+[2026-11-10 06:04:45.396 Server 358487] Creating worker thread for client {PID: 359146, Context ID: 0}
+[2026-11-10 06:04:45.424 Server 358487] Received new client request from PID 359149
+[2026-11-10 06:04:45.424 Server 358487] Priority level of client {359149} is: 0 (NORMAL)
+[2026-11-10 06:04:45.424 Server 358487] Client {PID: 359149, Context ID: 0} connected
+[2026-11-10 06:04:45.424 Server 358487] Creating worker thread for client {PID: 359149, Context ID: 0}
+[2026-11-10 06:04:45.472 Server 358487] Received new client request from PID 359146
+[2026-11-10 06:04:45.472 Server 358487] Priority level of client {359146} is: 0 (NORMAL)
+[2026-11-10 06:04:45.472 Server 358487] Client {PID: 359146, Context ID: 1} connected
+[2026-11-10 06:04:45.472 Server 358487] Creating worker thread for client {PID: 359146, Context ID: 1}
+[2026-11-10 06:04:45.472 Server 358487] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-10 06:04:45.473 Server 358487] Status of client {PID: 359146, Context ID: 1} is ACTIVE
+[2026-11-09 21:04:45.475 Client   233] Static partitioning mode disabled
+[2026-11-10 06:04:45.515 Server 358487] Received new client request from PID 359149
+[2026-11-10 06:04:45.515 Server 358487] Priority level of client {359149} is: 0 (NORMAL)
+[2026-11-10 06:04:45.515 Server 358487] Client {PID: 359149, Context ID: 1} connected
+[2026-11-10 06:04:45.515 Server 358487] Creating worker thread for client {PID: 359149, Context ID: 1}
+[2026-11-10 06:04:45.515 Server 358487] Device NVIDIA GB10 (uuid GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc) is associated
+[2026-11-10 06:04:45.515 Server 358487] Status of client {PID: 359149, Context ID: 1} is ACTIVE
+[2026-11-09 21:04:45.519 Client   231] Static partitioning mode disabled
+[2026-11-10 06:08:04.231 Server 358487] Received new client request from PID 359130
+[2026-11-10 06:08:04.231 Server 358487] Priority level of client {359130} is: 0 (NORMAL)
+[2026-11-10 06:08:04.231 Server 358487] Client {PID: 359130, Context ID: 0} connected
+[2026-11-10 06:08:04.232 Server 358487] Creating worker thread for client {PID: 359130, Context ID: 0}
+[2026-11-10 06:08:04.246 Server 358487] Received new client request from PID 359113
+[2026-11-10 06:08:04.246 Server 358487] Priority level of client {359113} is: 0 (NORMAL)
+[2026-11-10 06:08:04.246 Server 358487] Client {PID: 359113, Context ID: 0} connected
+[2026-11-10 06:08:04.246 Server 358487] Creating worker thread for client {PID: 359113, Context ID: 0}
+[2026-11-10 06:08:04.325 Server 358487] Received new client request from PID 366413
+[2026-11-10 06:08:04.325 Server 358487] Priority level of client {366413} is: 0 (NORMAL)
+[2026-11-10 06:08:04.325 Server 358487] Client {PID: 366413, Context ID: 0} connected
+[2026-11-10 06:08:04.325 Server 358487] Creating worker thread for client {PID: 366413, Context ID: 0}
+[2026-11-10 06:08:04.351 Server 358487] Received new client request from PID 366416
+[2026-11-10 06:08:04.351 Server 358487] Priority level of client {366416} is: 0 (NORMAL)
+[2026-11-10 06:08:04.351 Server 358487] Client {PID: 366416, Context ID: 0} connected
+[2026-11-10 06:08:04.351 Server 358487] Creating worker thread for client {PID: 366416, Context ID: 0}
+[2026-11-10 06:08:04.366 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 366413, Context ID: 0} exit
+[2026-11-10 06:08:04.366 Server 358487] Client process 366413 disconnected
+[2026-11-10 06:08:04.386 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 366416, Context ID: 0} exit
+[2026-11-10 06:08:04.386 Server 358487] Client process 366416 disconnected
+[2026-11-10 06:10:17.570 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359146, Context ID: 1} exit
+[2026-11-10 06:10:17.570 Server 358487] Client {PID: 359146, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-10 06:10:17.689 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359146, Context ID: 0} exit
+[2026-11-10 06:10:17.689 Server 358487] Client process 359146 disconnected
+[2026-11-10 06:10:17.750 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359088, Context ID: 0} exit
+[2026-11-10 06:10:17.750 Server 358487] Client process 359088 disconnected
+[2026-11-10 06:10:17.755 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359113, Context ID: 0} exit
+[2026-11-10 06:10:17.755 Server 358487] Client process 359113 disconnected
+[2026-11-10 06:10:17.789 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359149, Context ID: 1} exit
+[2026-11-10 06:10:17.789 Server 358487] Client {PID: 359149, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-10 06:10:17.917 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359149, Context ID: 0} exit
+[2026-11-10 06:10:17.926 Server 358487] Client process 359149 disconnected
+[2026-11-10 06:10:18.071 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359096, Context ID: 0} exit
+[2026-11-10 06:10:18.071 Server 358487] Client process 359096 disconnected
+[2026-11-10 06:10:18.085 Server 358487] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 359130, Context ID: 0} exit
+[2026-11-10 06:10:18.085 Server 358487] Client process 359130 disconnected
+[2026-11-10 06:10:19.916 Server 358487] Server has been notified to shutdown
+[2026-11-10 06:10:19.916 Server 358487] Waiting for current clients to finish
+[2026-11-10 06:10:19.916 Server 358487] Exiting

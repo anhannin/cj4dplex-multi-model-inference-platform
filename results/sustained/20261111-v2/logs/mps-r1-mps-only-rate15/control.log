@@ -1,0 +1,67 @@
+[2026-11-11 18:01:48.657 Control 3007908] Starting control daemon using socket /home/avees/cj-sustained/20261111-v2/eval-pipe/control
+[2026-11-11 18:01:48.657 Control 3007908] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-sustained/20261111-v2/eval-pipe
+[2026-11-11 18:01:48.657 Control 3007908] CUDA MPS Control binary version: 13020
+[2026-11-11 18:01:48.658 Control 3007908] Accepting connection...
+[2026-11-11 18:01:48.658 Control 3007908] NEW UI
+[2026-11-11 18:01:48.659 Control 3007908] Cmd:get_server_list
+[2026-11-11 18:01:48.659 Control 3007908] UI closed
+[2026-11-11 18:01:49.525 Control 3007908] Accepting connection...
+[2026-11-11 18:01:49.525 Control 3007908] User did not send valid credentials
+[2026-11-11 18:01:49.525 Control 3007908] Accepting connection...
+[2026-11-11 18:01:49.525 Control 3007908] NEW CLIENT 3008272 from user 1000: Server is not ready, push client to pending list
+[2026-11-11 18:01:49.525 Control 3008279] Starting new server 3008279 for user 1000
+[2026-11-11 18:01:49.526 Control 3007908] Accepting connection...
+[2026-11-11 18:01:49.829 Control 3007908] NEW SERVER 3008279: Ready
+[2026-11-11 18:01:49.830 Control 3007908] Accepting connection...
+[2026-11-11 18:01:49.830 Control 3007908] User did not send valid credentials
+[2026-11-11 18:01:49.830 Control 3007908] Accepting connection...
+[2026-11-11 18:01:49.830 Control 3007908] NEW CLIENT 3008301 from user 1000: Server already exists
+[2026-11-11 18:02:20.396 Control 3007908] Accepting connection...
+[2026-11-11 18:02:20.396 Control 3007908] User did not send valid credentials
+[2026-11-11 18:02:20.396 Control 3007908] Accepting connection...
+[2026-11-11 18:02:20.396 Control 3007908] NEW CLIENT 3008110 from user 1000: Server already exists
+[2026-11-11 18:02:20.445 Control 3007908] Accepting connection...
+[2026-11-11 18:02:20.445 Control 3007908] NEW CLIENT 3008110 from user 1000: Server already exists
+[2026-11-11 18:02:20.569 Control 3007908] Accepting connection...
+[2026-11-11 18:02:20.570 Control 3007908] User did not send valid credentials
+[2026-11-11 18:02:20.570 Control 3007908] Accepting connection...
+[2026-11-11 18:02:20.570 Control 3007908] NEW CLIENT 3008167 from user 1000: Server already exists
+[2026-11-11 18:02:20.606 Control 3007908] Accepting connection...
+[2026-11-11 18:02:20.606 Control 3007908] NEW CLIENT 3008167 from user 1000: Server already exists
+[2026-11-11 18:04:09.524 Control 3007908] Accepting connection...
+[2026-11-11 18:04:09.524 Control 3007908] NEW UI
+[2026-11-11 18:04:09.524 Control 3007908] Cmd:get_server_list
+[2026-11-11 18:04:09.524 Control 3007908] 3008279
+[2026-11-11 18:04:09.524 Control 3007908] UI closed
+[2026-11-11 18:04:09.525 Control 3007908] Accepting connection...
+[2026-11-11 18:04:09.525 Control 3007908] NEW UI
+[2026-11-11 18:04:09.525 Control 3007908] Cmd:get_client_list 3008279
+[2026-11-11 18:04:09.525 Control 3007908] 3008110
+[2026-11-11 18:04:09.525 Control 3007908] 3008167
+[2026-11-11 18:04:09.525 Control 3007908] UI closed
+[2026-11-11 18:07:47.250 Control 3007908] Accepting connection...
+[2026-11-11 18:07:47.250 Control 3007908] NEW UI
+[2026-11-11 18:07:47.250 Control 3007908] Cmd:get_server_list
+[2026-11-11 18:07:47.250 Control 3007908] 3008279
+[2026-11-11 18:07:47.250 Control 3007908] UI closed
+[2026-11-11 18:07:47.252 Control 3007908] Accepting connection...
+[2026-11-11 18:07:47.252 Control 3007908] NEW UI
+[2026-11-11 18:07:47.252 Control 3007908] Cmd:get_client_list 3008279
+[2026-11-11 18:07:47.252 Control 3007908] 3008110
+[2026-11-11 18:07:47.252 Control 3007908] 3008167
+[2026-11-11 18:07:47.252 Control 3007908] UI closed
+[2026-11-11 18:07:49.449 Control 3007908] Accepting connection...
+[2026-11-11 18:07:49.449 Control 3007908] NEW UI
+[2026-11-11 18:07:49.450 Control 3007908] Cmd:get_server_list
+[2026-11-11 18:07:49.450 Control 3007908] 3008279
+[2026-11-11 18:07:49.450 Control 3007908] UI closed
+[2026-11-11 18:07:49.451 Control 3007908] Accepting connection...
+[2026-11-11 18:07:49.451 Control 3007908] NEW UI
+[2026-11-11 18:07:49.451 Control 3007908] Cmd:get_client_list 3008279
+[2026-11-11 18:07:49.452 Control 3007908] UI closed
+[2026-11-11 18:07:49.452 Control 3007908] Accepting connection...
+[2026-11-11 18:07:49.452 Control 3007908] NEW UI
+[2026-11-11 18:07:49.453 Control 3007908] Cmd:quit
+[2026-11-11 18:07:49.453 Control 3007908] Try shutting down server 3008279, backoff is disabled
+[2026-11-11 18:07:49.521 Control 3007908] Server 3008279 exited with status 0
+[2026-11-11 18:07:49.521 Control 3007908] Exit with status 0

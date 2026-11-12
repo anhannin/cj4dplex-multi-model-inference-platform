@@ -42,7 +42,7 @@ NVIDIA DGX Spark의 **단일 GB10 GPU(48 SM)**에서 서로 다른 특성을 가
 
 ## 2. System Architecture
 
-![System Architecture](figures/system-architecture.svg)
+![System Architecture](docs/architecture.svg)
 
 ROS 2 기반 요청·응답 경로를 사용하며, 두 모델은 Kubernetes에서 별도 Pod로 실행됩니다.
 
@@ -62,11 +62,11 @@ ROS 2 기반 요청·응답 경로를 사용하며, 두 모델은 Kubernetes에�
 
 Queue 용량 16/512는 최신 Burst 측정 조건입니다. 기존 일반 서빙의 기본 Queue 용량 8과 구분합니다. 두 모델 사이에는 공통 Queue나 전역 실행 순서 조정 로직이 없습니다.
 
-**Kubernetes는 Pod 실행 및 재시작을 관리하며, MPS는 GPU의 SM 자원을 배분합니다.** Kubernetes의 GPU 공유 슬롯 자체가 SM을 고정 예약하는 것은 아닙니다. 정적 분할 역시 GPU 메모리·대역폭·장애를 완전히 격리하지는 않습니다.
+**Kubernetes는 Pod 실행 및 재시작을 관리하며, MPS는 GPU의 SM 자원을 배분합니다.** Kubernetes의 GPU 공유 슬롯 자체가 SM을 고정 예약하는 것은 아닙니다. 정적 분할 역시 GPU 메모리·대역폭·장애를 완전히 격리하지는 않습니다. 그림의 8/40은 성능 비교 후보이며, 실험 뒤 확인한 복원 상태인 일반 MPS+Green 16/32와 구분합니다. [배포 모드 안내](docs/DEPLOYMENT_MODES.ko.md).
 
 ## 3. Experiment Workflow
 
-본 과제의 최적화 과정은 다음 순서로 진행했습니다.
+본 과제의 최적화 과정은 다음 순서로 진행했습니다. 실험별 목적·가설·방법·한계·원본 경로는 [실험 인덱스](docs/EXPERIMENT_INDEX.ko.md)에서 이 순서로 따라갈 수 있습니다.
 
 | 단계 | 목적 | 주요 실험·증거 |
 |---|---|---|
@@ -127,18 +127,18 @@ MPS 없음, 일반 MPS, 정적 **8/40 · 16/32 · 24/24 · 32/16 · 40/8 SM**을
 | 경로 | 설명 |
 |---|---|
 | `ros2/` | Qwen·YOLO ROS 2 Node 및 메시지 처리 |
-| `serving/` | 모델별 Queue·Backend 등 서빙 구성 |
+| `clients/` | UUID 기반 Qwen·YOLO 요청 및 결과 수신 |
 | `containers/` | 모델별 Dockerfile 및 실행 환경 |
 | `k8s/` | Kubernetes 배포·GPU 공유 설정 |
-| `mps/` | MPS 실행·정적 SM 분할 설정 |
+| `diagnostics/mps_static/` | MPS 정적 SM 분할·검증·성능 비교 |
 | `benchmark/` | 요청 생성, 지연 측정, 자원 샘플링, 통계 집계 |
 | `experiments/` | 실험 조건·설정·실행 절차 |
 | `results/` | 원시 데이터, 요약 결과, 검증 로그 |
-| `figures/` | 아키텍처 및 성능 그래프 |
+| `docs/figures/` | 기술 보고서의 성능 그래프·수치 출처 |
 | `docs/` | 기술 보고서·설계·재현 문서 |
 | `tests/` | 기능 및 회귀 테스트 |
 
-초기 구현의 기준선은 별도 `baseline` 브랜치에 보존합니다. 최종 제출 브랜치에서는 Baseline과 최적화 환경의 **실제 변경 사항과 재현 방법**을 구분합니다.
+최적화 전 동결 원본은 `baseline-frozen-20261103` 태그와 commit `6a99fdaf26307e2f0b41f708478fdec3fcfad7ac`으로 보존합니다. `baseline` 브랜치에는 최신 개발 이력도 있으므로 브랜치 이름을 측정 기준선과 혼동하지 않습니다. 최종 제출 브랜치에서는 Baseline과 최적화 환경의 **실제 변경 사항과 재현 방법**을 구분합니다.
 
 ## 6. How to Run
 
@@ -177,7 +177,7 @@ CUDA Toolkit 업그레이드가 컨테이너의 PyTorch 빌드 버전을 자동�
 
 ## 7. Limitations
 
-- 결과는 **Qwen 10건 + YOLO 300건의 유한 Burst**에 대한 것이며 지속 도착 부하와 과부하 포화점은 미검증입니다.
+- 본 제출 보고서의 성능 평가는 **Qwen 10건 + YOLO 300건의 유한 Burst**로 한정하며, 다른 요청 도착 패턴·장기 운영으로 결론을 일반화하지 않습니다.
 - Qwen은 고정 입력·출력 토큰, YOLO는 단일 테스트 이미지로 평가했습니다. 자연 종료 출력·다양한 영상 데이터·모델 정확도 일반화는 별도 검증이 필요합니다.
 - 요청 E2E에는 FIFO 대기가 포함됩니다. 최신 Burst의 YOLO p95가 수 초인 것은 한 장의 GPU 모델 연산이 수 초 걸렸다는 의미가 아닙니다.
 - Qwen TTFT는 서버 내부 첫 토큰 관측시간이며 클라이언트 스트리밍 TTFT가 아닙니다.
@@ -188,11 +188,13 @@ CUDA Toolkit 업그레이드가 컨테이너의 PyTorch 빌드 버전을 자동�
 ## 8. Documentation
 
 - [System Architecture](docs/ARCHITECTURE.ko.md)
-- [Technical Report](docs/TECHNICAL_REPORT.ko.md)
-- [Executive Summary](docs/EXECUTIVE_SUMMARY.ko.md)
+- [Technical Report](docs/TECHNICAL_REPORT.ko.md) · [PDF](docs/TECHNICAL_REPORT.ko.pdf)
+- [Executive Summary](docs/EXECUTIVE_SUMMARY.ko.md) · [2페이지 PDF](docs/EXECUTIVE_SUMMARY.ko.pdf)
 - [Experiment Index](docs/EXPERIMENT_INDEX.ko.md)
 - [Reproducibility Guide](docs/REPRODUCIBILITY.ko.md)
 - [Source Code Map](docs/CODE_MAP.ko.md)
+- [Implementation Scope](docs/IMPLEMENTATION.ko.md)
+- [Deployment Modes](docs/DEPLOYMENT_MODES.ko.md)
 - [Model and Open-Source Licenses](docs/USAGE_AND_LICENSES.ko.md)
 
 ## 9. Notes

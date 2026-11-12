@@ -1,0 +1,187 @@
+{
+  "provenance": {
+    "burst": {
+      "path": "results/static-eval/20261110-v1/analysis/summary.json",
+      "sha256": "46241c5716a7481f8021d5266e4490b6ad18c00bfe9dbe7633b32d25052c4a2e"
+    },
+    "sustained": {
+      "path": "results/sustained/20261111-v2/analysis/summary.json",
+      "sha256": "d9d0bdbe50386e2ac11f0e68a932e7c609d9bed67608d7d75c90f6c3310be021"
+    },
+    "fault": {
+      "path": "results/fault-idle/20261110-v1/analysis/summary.json",
+      "sha256": "ec12523c6d417c857eccbcd52c8f61eb825212ef21836338964d821cf5fd1522"
+    }
+  },
+  "burst": [
+    {
+      "condition": "control",
+      "qwen_completion_s": 113.3613247652,
+      "yolo_completion_s": 16.321654487,
+      "qwen_p95_s": 113.29920292675,
+      "yolo_p95_s": 14.962520538500002
+    },
+    {
+      "condition": "static-q24-y24",
+      "qwen_completion_s": 114.6178506048,
+      "yolo_completion_s": 14.126429264599999,
+      "qwen_p95_s": 114.7917702484,
+      "yolo_p95_s": 12.779923480699997
+    },
+    {
+      "condition": "static-q40-y8",
+      "qwen_completion_s": 117.7216300342,
+      "yolo_completion_s": 26.7640894558,
+      "qwen_p95_s": 117.747462194,
+      "yolo_p95_s": 24.8068980095
+    },
+    {
+      "condition": "static-q16-y32",
+      "qwen_completion_s": 119.2849753136,
+      "yolo_completion_s": 12.712504784999998,
+      "qwen_p95_s": 119.04668035754999,
+      "yolo_p95_s": 11.538394478799999
+    },
+    {
+      "condition": "mps-only",
+      "qwen_completion_s": 112.494897274,
+      "yolo_completion_s": 25.3727526238,
+      "qwen_p95_s": 112.46820852855,
+      "yolo_p95_s": 23.403868875649998
+    },
+    {
+      "condition": "static-q32-y16",
+      "qwen_completion_s": 119.75528493179999,
+      "yolo_completion_s": 18.125242422,
+      "qwen_p95_s": 119.61983910724999,
+      "yolo_p95_s": 16.5241618752
+    },
+    {
+      "condition": "static-q8-y40",
+      "qwen_completion_s": 111.88731551839999,
+      "yolo_completion_s": 11.5918385096,
+      "qwen_p95_s": 111.8762039583,
+      "yolo_p95_s": 10.67360628645
+    }
+  ],
+  "sustained": [
+    {
+      "rate": 8,
+      "condition": "control",
+      "qwen_p95_s": 12.245373258859999,
+      "yolo_p95_ms": 59.45648428,
+      "qwen_change_pct": 0.0,
+      "yolo_change_pct": 0.0,
+      "qwen_pass": true,
+      "yolo_pass": false,
+      "both_pass": false
+    },
+    {
+      "rate": 8,
+      "condition": "mps-only",
+      "qwen_p95_s": 11.7401583401,
+      "yolo_p95_ms": 147.48822073,
+      "qwen_change_pct": -4.125761690395646,
+      "yolo_change_pct": 148.06078347221106,
+      "qwen_pass": true,
+      "yolo_pass": false,
+      "both_pass": false
+    },
+    {
+      "rate": 8,
+      "condition": "static-q8-y40",
+      "qwen_p95_s": 11.5554942251,
+      "yolo_p95_ms": 49.794921089999995,
+      "qwen_change_pct": -5.633793426924283,
+      "yolo_change_pct": -16.249805731029344,
+      "qwen_pass": true,
+      "yolo_pass": false,
+      "both_pass": false
+    },
+    {
+      "rate": 8,
+      "condition": "static-q16-y32",
+      "qwen_p95_s": 12.383854152100001,
+      "yolo_p95_ms": 60.567724289999994,
+      "qwen_change_pct": 1.1308833982647704,
+      "yolo_change_pct": 1.8689971723972132,
+      "qwen_pass": false,
+      "yolo_pass": false,
+      "both_pass": false
+    },
+    {
+      "rate": 15,
+      "condition": "control",
+      "qwen_p95_s": 13.17092202454,
+      "yolo_p95_ms": 143.33448554999998,
+      "qwen_change_pct": 0.0,
+      "yolo_change_pct": 0.0,
+      "qwen_pass": true,
+      "yolo_pass": false,
+      "both_pass": false
+    },
+    {
+      "rate": 15,
+      "condition": "mps-only",
+      "qwen_p95_s": 12.0007560772,
+      "yolo_p95_ms": 23456.21126817,
+      "qwen_change_pct": -8.884464923258617,
+      "yolo_change_pct": 16264.667008197179,
+      "qwen_pass": true,
+      "yolo_pass": false,
+      "both_pass": false
+    },
+    {
+      "rate": 15,
+      "condition": "static-q8-y40",
+      "qwen_p95_s": 11.8990547016,
+      "yolo_p95_ms": 86.55832416999999,
+      "qwen_change_pct": -9.656630876488848,
+      "yolo_change_pct": -39.61095695996657,
+      "qwen_pass": true,
+      "yolo_pass": true,
+      "both_pass": true
+    },
+    {
+      "rate": 15,
+      "condition": "static-q16-y32",
+      "qwen_p95_s": 12.741028926630001,
+      "yolo_p95_ms": 80.56508686999997,
+      "qwen_change_pct": -3.2639559865970225,
+      "yolo_change_pct": -43.79225169654227,
+      "qwen_pass": true,
+      "yolo_pass": true,
+      "both_pass": true
+    }
+  ],
+  "fault": {
+    "detect_observed_ms": {
+      "n": 3,
+      "mean": 745.8901619999999,
+      "median": 745.692606,
+      "min": 492.560233,
+      "max": 999.417647
+    },
+    "container_start_observed_ms": {
+      "n": 3,
+      "mean": 1168.0441156666666,
+      "median": 1252.729384,
+      "min": 997.059368,
+      "max": 1254.343595
+    },
+    "ready_observed_ms": {
+      "n": 3,
+      "mean": 7087.176454666666,
+      "median": 6505.886573,
+      "min": 6497.966813,
+      "max": 8257.675978
+    },
+    "first_valid_response_ms": {
+      "n": 3,
+      "mean": 4390.1932713333335,
+      "median": 4503.881406,
+      "min": 4162.603897,
+      "max": 4504.094511
+    }
+  }
+}

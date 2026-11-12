@@ -1,0 +1,29 @@
+{
+  "source": "results/static-eval/20261110-v1/analysis/summary.json",
+  "source_sha256": "46241c5716a7481f8021d5266e4490b6ad18c00bfe9dbe7633b32d25052c4a2e",
+  "conditions": [
+    "control",
+    "static-q8-y40"
+  ],
+  "rows": [
+    {
+      "model": "qwen",
+      "metric": "pooled request E2E p95",
+      "before_s": 113.29920292675,
+      "after_s": 111.8762039583,
+      "reduction_pct": 1.2559655599430841,
+      "requests_per_condition": 50
+    },
+    {
+      "model": "yolo",
+      "metric": "pooled request E2E p95",
+      "before_s": 14.962520538500002,
+      "after_s": 10.67360628645,
+      "reduction_pct": 28.664383390580582,
+      "requests_per_condition": 1500
+    }
+  ],
+  "aggregation": "pooled request p95 across5bursts; NOT a mean, batch makespan, or per-run p95 average",
+  "axes": "seconds, both start at0, independent panel maxima",
+  "new_measurement": false
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "candidate": "trt",
+    "label": "backend-00-trt",
+    "status": "PASS"
+  },
+  {
+    "candidate": "trt-mps-q50",
+    "label": "backend-01-trt-mps-q50",
+    "status": "PASS"
+  },
+  {
+    "candidate": "trt-dds-mps-q50",
+    "label": "backend-02-trt-dds-mps-q50",
+    "status": "PASS"
+  }
+]

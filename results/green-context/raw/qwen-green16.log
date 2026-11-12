@@ -1,0 +1,43 @@
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:  50%|█████     | 381/760 [00:00<00:00, 3808.26it/s]Loading weights: 100%|██████████| 760/760 [00:00<00:00, 4350.94it/s]
+MODEL_LOADED
+WARMUP_COMPLETE
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-cdda.qdstrm'
+[1/1] [0%                          ] qwen-green16.nsys-repProcessing events...
+[1/1] [0%                          ] qwen-green16.nsys-rep[1/1] [13%                         ] qwen-green16.nsys-rep[1/1] [11%                         ] qwen-green16.nsys-rep[1/1] [10%                         ] qwen-green16.nsys-rep[1/1] [9%                          ] qwen-green16.nsys-rep[1/1] [8%                          ] qwen-green16.nsys-rep[1/1] [=16%                        ] qwen-green16.nsys-rep[1/1] [=15%                        ] qwen-green16.nsys-rep[1/1] [14%                         ] qwen-green16.nsys-rep[1/1] [===22%                      ] qwen-green16.nsys-rep[1/1] [=====29%                    ] qwen-green16.nsys-rep[1/1] [=======36%                  ] qwen-green16.nsys-rep[1/1] [=========44%                ] qwen-green16.nsys-rep[1/1] [===========51%              ] qwen-green16.nsys-rep[1/1] [=============58%            ] qwen-green16.nsys-rep[1/1] [===============66%          ] qwen-green16.nsys-rep[1/1] [=================73%        ] qwen-green16.nsys-rep[1/1] [===================81%      ] qwen-green16.nsys-rep[1/1] [===================82%      ] qwen-green16.nsys-rep[1/1] [========================100%] qwen-green16.nsys-rep[1/1] [========================100%] qwen-green16.nsys-rep
+{
+  "state": "PASS",
+  "model": "Qwen3.5-9B",
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "source_sha256": "3cff3b3d48b3316bf5c070cae85431477e729d6d68abad0fb09fdd05927649ac",
+  "mode": "green-functional",
+  "input_tokens": 23,
+  "max_new_tokens": 32,
+  "scope": "diagnostic only, not a baseline latency measurement",
+  "green_allocation": {
+    "total_sms": 48,
+    "minimum_partition_sms": 8,
+    "coscheduled_alignment": 8,
+    "parts": [
+      {
+        "actual_sms": 16,
+        "stream_ptr": 1634361296,
+        "green_handle": 1765962080,
+        "stream_owner_verified": true
+      },
+      {
+        "actual_sms": 32,
+        "stream_ptr": 1759743088,
+        "green_handle": 2018173744,
+        "stream_owner_verified": true
+      }
+    ]
+  },
+  "output_tokens": 32,
+  "output_text": "*   **Shared Execution Units**: Multiple threads compete for a limited number of CUDA cores or stream processors, causing some to wait while others execute.\n*  ",
+  "exact_token_match_to_default": true,
+  "eos_or_length_finite_output": true
+}
+Generated:
+	/diag/results/qwen-green16.nsys-rep

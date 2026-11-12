@@ -1,0 +1,23 @@
+{
+  "task": "approved final organization on existing main",
+  "main_before": "5a69e1aab9677941cb641e718381c4ae45a44661",
+  "imported_baseline": "90cb3fa2c4ff18587de527dab0a783d7d0ba6d08",
+  "frozen_tag": "baseline-frozen-20261103",
+  "frozen_commit": "6a99fdaf26307e2f0b41f708478fdec3fcfad7ac",
+  "preserved_paths": [
+    "baseline/",
+    "results/",
+    "ros2/",
+    "clients/",
+    "containers/",
+    "k8s/",
+    "benchmark/",
+    "diagnostics/",
+    "optimization/"
+  ],
+  "readme_change_policy": "preserve main text and sections; fix real link/role/scope errors only",
+  "historical_inventory": "GIT_CONTENTS.json describes the earlier baseline publication; it is not a fresh complete main inventory",
+  "new_remote_push": false,
+  "new_gpu_run": false,
+  "new_deploy": false
+}

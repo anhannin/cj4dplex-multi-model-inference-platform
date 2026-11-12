@@ -1,0 +1,16 @@
+{
+  "state": "PASS",
+  "start": 1794218316.6194818,
+  "root": "/home/avees/cj-green-e2e/20261109-v1",
+  "completed": [
+    "default",
+    "q16-y32",
+    "q24-y24",
+    "q32-y16",
+    "q8-y40",
+    "q40-y8"
+  ],
+  "phase": "q40-y8",
+  "restoration": "PASS",
+  "end": 1794221941.5572457
+}

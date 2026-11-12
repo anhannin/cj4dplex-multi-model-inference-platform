@@ -1,0 +1,260 @@
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libwoff1 linux-modules-nvidia-fs-6.11.0-1014-nvidia
+  linux-nvidia-6.11-tools-6.11.0-1014 linux-tools-6.11.0-1014-nvidia
+  nvidia-firmware-580-580.173.02 nvidia-firmware-580-580.95.05
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  cuda-cccl-13-1 cuda-command-line-tools-13-1 cuda-compiler-13-1 cuda-crt-13-1
+  cuda-cudart-13-1 cuda-cudart-dev-13-1 cuda-culibos-dev-13-1
+  cuda-cuobjdump-13-1 cuda-cupti-13-1 cuda-cupti-dev-13-1 cuda-cuxxfilt-13-1
+  cuda-documentation-13-1 cuda-driver-dev-13-1 cuda-gdb-13-1
+  cuda-libraries-13-1 cuda-libraries-dev-13-1 cuda-nsight-compute-13-1
+  cuda-nsight-systems-13-1 cuda-nvcc-13-1 cuda-nvdisasm-13-1
+  cuda-nvml-dev-13-1 cuda-nvprune-13-1 cuda-nvrtc-13-1 cuda-nvrtc-dev-13-1
+  cuda-nvtx-13-1 cuda-profiler-api-13-1 cuda-sanitizer-13-1 cuda-tileiras-13-1
+  cuda-toolkit-13-1-config-common cuda-tools-13-1 cuda-visual-tools-13-1 dkms
+  fakeroot gds-tools-13-1 libcublas-13-1 libcublas-dev-13-1 libcufft-13-1
+  libcufft-dev-13-1 libcufile-13-1 libcufile-dev-13-1 libcuobjclient-13-1
+  libcuobjclient-dev-13-1 libcurand-13-1 libcurand-dev-13-1 libcusolver-13-1
+  libcusolver-dev-13-1 libcusparse-13-1 libcusparse-dev-13-1 libfakeroot
+  libnpp-13-1 libnpp-dev-13-1 libnvfatbin-13-1 libnvfatbin-dev-13-1
+  libnvidia-cfg1-595 libnvidia-common-595 libnvidia-compute-595
+  libnvidia-decode-595 libnvidia-encode-595 libnvidia-extra-595
+  libnvidia-fbc1-595 libnvidia-gl-595 libnvjitlink-13-1 libnvjitlink-dev-13-1
+  libnvjpeg-13-1 libnvjpeg-dev-13-1 libnvptxcompiler-13-1 libnvvm-13-1
+  libxcb-dri2-0 linux-image-7.0.0-1025-nvidia linux-modules-7.0.0-1025-nvidia
+  nsight-compute-2025.4.1 nsight-systems-2025.5.2 nvidia-compute-utils-595
+  nvidia-dkms-595-open nvidia-driver-595-open nvidia-firmware-595-595.99.02
+  nvidia-kernel-common-595 nvidia-kernel-source-595-open nvidia-prime
+  nvidia-utils-595 pahole xserver-xorg-video-nvidia-595
+Suggested packages:
+  menu linux-perf linux-nvidia-7.0-tools linux-headers-7.0.0-1025-nvidia
+  nvidia-driver-595
+The following packages will be REMOVED:
+  libnvidia-cfg1-580 libnvidia-common-580 libnvidia-compute-580
+  libnvidia-decode-580 libnvidia-encode-580 libnvidia-extra-580
+  libnvidia-fbc1-580 libnvidia-gl-580
+  linux-modules-nvidia-580-open-6.14.0-1015-nvidia
+  linux-modules-nvidia-580-open-6.17.0-1031-nvidia
+  linux-modules-nvidia-580-open-nvidia-hwe-24.04 nvidia-compute-utils-580
+  nvidia-driver-580-open nvidia-kernel-common-580
+  nvidia-kernel-source-580-open nvidia-utils-580 xserver-xorg-video-nvidia-580
+The following NEW packages will be installed:
+  cuda-cccl-13-1 cuda-command-line-tools-13-1 cuda-compiler-13-1 cuda-crt-13-1
+  cuda-cudart-13-1 cuda-cudart-dev-13-1 cuda-culibos-dev-13-1
+  cuda-cuobjdump-13-1 cuda-cupti-13-1 cuda-cupti-dev-13-1 cuda-cuxxfilt-13-1
+  cuda-documentation-13-1 cuda-driver-dev-13-1 cuda-gdb-13-1
+  cuda-libraries-13-1 cuda-libraries-dev-13-1 cuda-nsight-compute-13-1
+  cuda-nsight-systems-13-1 cuda-nvcc-13-1 cuda-nvdisasm-13-1
+  cuda-nvml-dev-13-1 cuda-nvprune-13-1 cuda-nvrtc-13-1 cuda-nvrtc-dev-13-1
+  cuda-nvtx-13-1 cuda-profiler-api-13-1 cuda-sanitizer-13-1 cuda-tileiras-13-1
+  cuda-toolkit-13-1 cuda-toolkit-13-1-config-common cuda-tools-13-1
+  cuda-visual-tools-13-1 dkms fakeroot gds-tools-13-1 libcublas-13-1
+  libcublas-dev-13-1 libcufft-13-1 libcufft-dev-13-1 libcufile-13-1
+  libcufile-dev-13-1 libcuobjclient-13-1 libcuobjclient-dev-13-1
+  libcurand-13-1 libcurand-dev-13-1 libcusolver-13-1 libcusolver-dev-13-1
+  libcusparse-13-1 libcusparse-dev-13-1 libfakeroot libnpp-13-1
+  libnpp-dev-13-1 libnvfatbin-13-1 libnvfatbin-dev-13-1 libnvidia-cfg1-595
+  libnvidia-common-595 libnvidia-compute-595 libnvidia-decode-595
+  libnvidia-encode-595 libnvidia-extra-595 libnvidia-fbc1-595 libnvidia-gl-595
+  libnvjitlink-13-1 libnvjitlink-dev-13-1 libnvjpeg-13-1 libnvjpeg-dev-13-1
+  libnvptxcompiler-13-1 libnvvm-13-1 libxcb-dri2-0
+  linux-image-7.0.0-1025-nvidia linux-modules-7.0.0-1025-nvidia
+  nsight-compute-2025.4.1 nsight-systems-2025.5.2 nvidia-compute-utils-595
+  nvidia-dkms-595-open nvidia-driver-590-open nvidia-driver-595-open
+  nvidia-firmware-595-595.99.02 nvidia-kernel-common-595
+  nvidia-kernel-source-595-open nvidia-prime nvidia-utils-595 pahole
+  xserver-xorg-video-nvidia-595
+0 upgraded, 84 newly installed, 17 to remove and 417 not upgraded.
+Remv nvidia-driver-580-open [580.173.02-0ubuntu0.24.04.1]
+Remv xserver-xorg-video-nvidia-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-cfg1-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-gl-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-encode-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-decode-580 [580.173.02-0ubuntu0.24.04.1]
+Remv libnvidia-compute-580 [580.173.02-0ubuntu0.24.04.1] [nvidia-compute-utils-580:arm64 nvidia-utils-580:arm64 ]
+Inst libnvidia-compute-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [nvidia-compute-utils-580:arm64 nvidia-utils-580:arm64 ]
+Remv nvidia-compute-utils-580 [580.173.02-0ubuntu0.24.04.1] [nvidia-utils-580:arm64 ]
+Inst nvidia-compute-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [nvidia-utils-580:arm64 ]
+Remv nvidia-utils-580 [580.173.02-0ubuntu0.24.04.1] [nvidia-conf-xconfig:arm64 ]
+Inst nvidia-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) []
+Remv libnvidia-common-580 [580.173.02-0ubuntu0.24.04.1] []
+Remv linux-modules-nvidia-580-open-nvidia-hwe-24.04 [6.17.0-1031.31] []
+Remv libnvidia-fbc1-580 [580.173.02-0ubuntu0.24.04.1] []
+Remv linux-modules-nvidia-580-open-6.17.0-1031-nvidia [6.17.0-1031.31] []
+Remv libnvidia-extra-580 [580.173.02-0ubuntu0.24.04.1] []
+Remv nvidia-kernel-common-580 [580.173.02-0ubuntu0.24.04.1] [linux-modules-nvidia-580-open-6.14.0-1015-nvidia:arm64 ]
+Inst nvidia-firmware-595-595.99.02 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [linux-modules-nvidia-580-open-6.14.0-1015-nvidia:arm64 ]
+Inst nvidia-kernel-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64]) [linux-modules-nvidia-580-open-6.14.0-1015-nvidia:arm64 ]
+Remv linux-modules-nvidia-580-open-6.14.0-1015-nvidia [6.14.0-1015.15+6]
+Remv nvidia-kernel-source-580-open [580.173.02-0ubuntu0.24.04.1]
+Inst pahole (1.25-0ubuntu3 Ubuntu:24.04/noble [arm64])
+Inst dkms (1:3.4.4-1ubuntu1 NVIDIA CUDA:developer.download.nvidia.com [all])
+Inst cuda-cccl-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-cupti-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-cupti-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nvdisasm-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-cuobjdump-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-gdb-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nvtx-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-sanitizer-13-1 (13.1.118-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-command-line-tools-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-cuxxfilt-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-toolkit-13-1-config-common (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [all])
+Inst cuda-cudart-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-culibos-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-driver-dev-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-cudart-dev-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvvm-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-crt-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvptxcompiler-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nvcc-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nvprune-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-tileiras-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-compiler-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-documentation-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nvrtc-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcublas-13-1 (13.2.2.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcufft-13-1 (12.1.0.78-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcufile-13-1 (1.16.1.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcuobjclient-13-1 (1.0.0.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcurand-13-1 (10.4.1.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcusolver-13-1 (12.0.9.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcusparse-13-1 (12.7.3.1-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnpp-13-1 (13.0.3.3-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvjitlink-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvfatbin-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvjpeg-13-1 (13.0.3.75-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-libraries-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-profiler-api-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nvrtc-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcublas-dev-13-1 (13.2.2.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcufft-dev-13-1 (12.1.0.78-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcufile-dev-13-1 (1.16.1.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcuobjclient-dev-13-1 (1.0.0.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcurand-dev-13-1 (10.4.1.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcusolver-dev-13-1 (12.0.9.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libcusparse-dev-13-1 (12.7.3.1-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnpp-dev-13-1 (13.0.3.3-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvjitlink-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvfatbin-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libnvjpeg-dev-13-1 (13.0.3.75-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-libraries-dev-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst nsight-compute-2025.4.1 (2025.4.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nsight-compute-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libxcb-dri2-0 (1.15-1ubuntu2 Ubuntu:24.04/noble [arm64])
+Inst nsight-systems-2025.5.2 (2025.5.2.266-255236693005v0 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nsight-systems-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-nvml-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-visual-tools-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst gds-tools-13-1 (1.16.1.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-tools-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst cuda-toolkit-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Inst libfakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Inst fakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Inst libnvidia-cfg1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-decode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-encode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-extra-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-fbc1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst libnvidia-gl-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst linux-modules-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Inst linux-image-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Inst nvidia-kernel-source-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst nvidia-dkms-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst xserver-xorg-video-nvidia-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst nvidia-driver-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst nvidia-driver-590-open (590.48.01-0ubuntu0.24.04.5 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Inst nvidia-prime (0.8.17.2 Ubuntu:24.04/noble [all])
+Conf libnvidia-compute-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-compute-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-utils-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-firmware-595-595.99.02 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-kernel-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf pahole (1.25-0ubuntu3 Ubuntu:24.04/noble [arm64])
+Conf dkms (1:3.4.4-1ubuntu1 NVIDIA CUDA:developer.download.nvidia.com [all])
+Conf cuda-cccl-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-cupti-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-cupti-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nvdisasm-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-cuobjdump-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-gdb-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nvtx-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-sanitizer-13-1 (13.1.118-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-command-line-tools-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-cuxxfilt-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-toolkit-13-1-config-common (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [all])
+Conf cuda-cudart-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-culibos-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-driver-dev-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-cudart-dev-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvvm-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-crt-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvptxcompiler-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nvcc-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nvprune-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-tileiras-13-1 (13.1.80-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-compiler-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-documentation-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nvrtc-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcublas-13-1 (13.2.2.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcufft-13-1 (12.1.0.78-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcufile-13-1 (1.16.1.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcuobjclient-13-1 (1.0.0.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcurand-13-1 (10.4.1.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcusolver-13-1 (12.0.9.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcusparse-13-1 (12.7.3.1-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnpp-13-1 (13.0.3.3-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvjitlink-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvfatbin-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvjpeg-13-1 (13.0.3.75-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-libraries-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-profiler-api-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nvrtc-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcublas-dev-13-1 (13.2.2.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcufft-dev-13-1 (12.1.0.78-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcufile-dev-13-1 (1.16.1.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcuobjclient-dev-13-1 (1.0.0.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcurand-dev-13-1 (10.4.1.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcusolver-dev-13-1 (12.0.9.81-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libcusparse-dev-13-1 (12.7.3.1-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnpp-dev-13-1 (13.0.3.3-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvjitlink-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvfatbin-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libnvjpeg-dev-13-1 (13.0.3.75-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-libraries-dev-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf nsight-compute-2025.4.1 (2025.4.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nsight-compute-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libxcb-dri2-0 (1.15-1ubuntu2 Ubuntu:24.04/noble [arm64])
+Conf nsight-systems-2025.5.2 (2025.5.2.266-255236693005v0 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nsight-systems-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-nvml-dev-13-1 (13.1.115-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-visual-tools-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf gds-tools-13-1 (1.16.1.26-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-tools-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf cuda-toolkit-13-1 (13.1.2-1 NVIDIA CUDA:developer.download.nvidia.com [arm64])
+Conf libfakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Conf fakeroot (1.33-1 Ubuntu:24.04/noble [arm64])
+Conf libnvidia-cfg1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-common-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-decode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-encode-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-extra-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-fbc1-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf libnvidia-gl-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf linux-modules-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Conf linux-image-7.0.0-1025-nvidia (7.0.0-1025.26~24.04.1 Ubuntu:24.04/noble-updates [arm64])
+Conf nvidia-kernel-source-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-dkms-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf xserver-xorg-video-nvidia-595 (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-driver-595-open (595.99.02-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-driver-590-open (590.48.01-0ubuntu0.24.04.5 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [arm64])
+Conf nvidia-prime (0.8.17.2 Ubuntu:24.04/noble [all])

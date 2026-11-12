@@ -1,0 +1,18 @@
+{
+  "qwen": {
+    "label": "qwen.green.serving",
+    "kernels": 251766,
+    "green_context_kernel_counts": {
+      "3": 251766
+    },
+    "all_roi_kernels_green": true
+  },
+  "yolo": {
+    "label": "yolo.green.serving",
+    "kernels": 845,
+    "green_context_kernel_counts": {
+      "2": 845
+    },
+    "all_roi_kernels_green": true
+  }
+}

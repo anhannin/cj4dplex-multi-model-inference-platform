@@ -1,0 +1,16 @@
+{
+  "case": {
+    "round": 3,
+    "condition": "control",
+    "label": "r3-control",
+    "mps": false,
+    "static": false,
+    "green": false,
+    "qsm": 48,
+    "ysm": 48
+  },
+  "parts": {},
+  "native_driver": true,
+  "green": false,
+  "actual_chunk_sms": 2
+}

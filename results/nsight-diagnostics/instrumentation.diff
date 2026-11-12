@@ -1,0 +1,94 @@
+--- baseline/qwen
++++ diagnostic/qwen
+@@ -121,7 +121,24 @@
+             self.loaded.set()
+             return
+         self.loaded.set()
++        capture_phase = None
++        control = Path("/profiles/control/capture")
+         while not self.stopping.is_set():
++            try:
++                requested_phase = control.read_text().strip()
++            except FileNotFoundError:
++                requested_phase = None
++            if requested_phase and capture_phase is None:
++                torch.cuda.profiler.start()
++                torch.cuda.nvtx.range_push("phase:" + requested_phase)
++                capture_phase = requested_phase
++                Path("/profiles/control/qwen.started").write_text(capture_phase)
++            elif not requested_phase and capture_phase is not None:
++                ended_phase = capture_phase
++                torch.cuda.nvtx.range_pop()
++                torch.cuda.profiler.stop()
++                capture_phase = None
++                Path("/profiles/control/qwen.stopped").write_text(ended_phase)
+             try:
+                 sequence, enqueued, message = self.requests.get(timeout=0.1)
+             except queue.Empty:
+@@ -214,17 +231,18 @@
+                     generation_options = (
+                         {"streamer": token_clock} if token_clock else {}
+                     )
+-                    output = model.generate(
+-                        **inputs,
+-                        **generation_options,
+-                        max_new_tokens=maximum,
+-                        do_sample=False,
+-                        use_cache=True,
+-                        pad_token_id=tokenizer.eos_token_id,
+-                    )
+-                    # Generation already reads CUDA output tokens for stopping/streaming.
+-                    # One completion boundary per request, never per-token synchronize.
+-                    torch.cuda.synchronize()
++                    with torch.cuda.nvtx.range("qwen.generate"):
++                        output = model.generate(
++                            **inputs,
++                            **generation_options,
++                            max_new_tokens=maximum,
++                            do_sample=False,
++                            use_cache=True,
++                            pad_token_id=tokenizer.eos_token_id,
++                        )
++                        # Generation already reads CUDA output tokens for stopping/streaming.
++                        # One completion boundary per request, never per-token synchronize.
++                        torch.cuda.synchronize()
+                     timing["generate_wall_ms"] = (
+                         time.perf_counter_ns() - generate_start
+                     ) / 1e6
+--- baseline/yolo
++++ diagnostic/yolo
+@@ -111,7 +111,24 @@
+             self.loaded.set()
+             return
+         self.loaded.set()
++        capture_phase = None
++        control = Path("/profiles/control/capture")
+         while not self.stopping.is_set():
++            try:
++                requested_phase = control.read_text().strip()
++            except FileNotFoundError:
++                requested_phase = None
++            if requested_phase and capture_phase is None:
++                torch.cuda.profiler.start()
++                torch.cuda.nvtx.range_push("phase:" + requested_phase)
++                capture_phase = requested_phase
++                Path("/profiles/control/yolo.started").write_text(capture_phase)
++            elif not requested_phase and capture_phase is not None:
++                ended_phase = capture_phase
++                torch.cuda.nvtx.range_pop()
++                torch.cuda.profiler.stop()
++                capture_phase = None
++                Path("/profiles/control/yolo.stopped").write_text(ended_phase)
+             try:
+                 sequence, enqueued, message = self.requests.get(timeout=0.1)
+             except queue.Empty:
+@@ -172,7 +189,8 @@
+                 # Stock Ultralytics example: predict image, read original-coordinate boxes.
+                 with torch.inference_mode():
+                     predict_start = time.perf_counter_ns()
+-                    result = model.predict(image, **options)[0]
++                    with torch.cuda.nvtx.range("yolo.predict"):
++                        result = model.predict(image, **options)[0]
+                     timing["predict_wall_ms"] = (
+                         time.perf_counter_ns() - predict_start
+                     ) / 1e6

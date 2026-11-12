@@ -1,0 +1,11 @@
+src/_green_sweep.cpython-312-aarch64-linux-gnu.so: OK
+src/build.sh: OK
+src/controller.py: OK
+src/dispatch.py: OK
+src/green_sweep.cu: OK
+src/metrics.py: OK
+src/observer.py: OK
+src/plot_results.py: OK
+src/run_model.py: OK
+src/smoke.py: OK
+src/verify_trace.py: OK

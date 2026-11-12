@@ -1,0 +1,94 @@
+[2026-11-10 03:22:49.115 Control 88200] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 03:22:49.115 Control 88200] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 03:22:49.115 Control 88200] CUDA MPS Control binary version: 13020
+[2026-11-10 03:22:49.116 Control 88200] Accepting connection...
+[2026-11-10 03:22:49.116 Control 88200] NEW UI
+[2026-11-10 03:22:49.116 Control 88200] Cmd:get_server_list
+[2026-11-10 03:22:49.116 Control 88200] UI closed
+[2026-11-10 03:22:49.132 Control 88200] Accepting connection...
+[2026-11-10 03:22:49.132 Control 88200] NEW UI
+[2026-11-10 03:22:49.132 Control 88200] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-10 03:22:49.151 Control 88200] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:22:49.151 Control 88200] UI closed
+[2026-11-10 03:22:49.152 Control 88200] Accepting connection...
+[2026-11-10 03:22:49.152 Control 88200] NEW UI
+[2026-11-10 03:22:49.152 Control 88200] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-10 03:22:49.152 Control 88200] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 03:22:49.152 Control 88200] UI closed
+[2026-11-10 03:22:49.153 Control 88200] Accepting connection...
+[2026-11-10 03:22:49.153 Control 88200] NEW UI
+[2026-11-10 03:22:49.153 Control 88200] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 03:22:49.153 Control 88200] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 03:22:49.153 Control 88200] Failed to create partition
+[2026-11-10 03:22:49.153 Control 88200] UI closed
+[2026-11-10 03:22:49.938 Control 88200] Accepting connection...
+[2026-11-10 03:22:49.938 Control 88200] User did not send valid credentials
+[2026-11-10 03:22:49.938 Control 88200] Accepting connection...
+[2026-11-10 03:22:49.938 Control 88200] NEW CLIENT 88542 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 03:22:49.938 Control 88544] Starting new server 88544 for user 1000
+[2026-11-10 03:22:49.940 Control 88200] Accepting connection...
+[2026-11-10 03:22:50.270 Control 88200] NEW SERVER 88544: Ready
+[2026-11-10 03:22:50.270 Control 88200] Accepting connection...
+[2026-11-10 03:22:50.270 Control 88200] User did not send valid credentials
+[2026-11-10 03:22:50.270 Control 88200] Accepting connection...
+[2026-11-10 03:22:50.270 Control 88200] NEW CLIENT 88589 from user 1000: Server already exists
+[2026-11-10 03:22:51.109 Control 88200] Accepting connection...
+[2026-11-10 03:22:51.110 Control 88200] User did not send valid credentials
+[2026-11-10 03:22:51.110 Control 88200] Accepting connection...
+[2026-11-10 03:22:51.110 Control 88200] NEW CLIENT 88469 from user 1000: Server already exists
+[2026-11-10 03:22:51.155 Control 88200] Accepting connection...
+[2026-11-10 03:22:51.156 Control 88200] NEW CLIENT 88469 from user 1000: Server already exists
+[2026-11-10 03:22:51.156 Control 88200] Accepting connection...
+[2026-11-10 03:22:51.156 Control 88200] User did not send valid credentials
+[2026-11-10 03:22:51.156 Control 88200] Accepting connection...
+[2026-11-10 03:22:51.156 Control 88200] NEW CLIENT 88401 from user 1000: Server already exists
+[2026-11-10 03:22:51.205 Control 88200] Accepting connection...
+[2026-11-10 03:22:51.206 Control 88200] NEW CLIENT 88401 from user 1000: Server already exists
+[2026-11-10 03:24:55.028 Control 88200] Accepting connection...
+[2026-11-10 03:24:55.028 Control 88200] NEW UI
+[2026-11-10 03:24:55.028 Control 88200] Cmd:get_server_list
+[2026-11-10 03:24:55.028 Control 88200] 88544
+[2026-11-10 03:24:55.028 Control 88200] UI closed
+[2026-11-10 03:24:55.029 Control 88200] Accepting connection...
+[2026-11-10 03:24:55.029 Control 88200] NEW UI
+[2026-11-10 03:24:55.029 Control 88200] Cmd:get_client_list 88544
+[2026-11-10 03:24:55.029 Control 88200] 88469
+[2026-11-10 03:24:55.029 Control 88200] 88401
+[2026-11-10 03:24:55.029 Control 88200] UI closed
+[2026-11-10 03:26:05.646 Control 88200] Accepting connection...
+[2026-11-10 03:26:05.646 Control 88200] NEW UI
+[2026-11-10 03:26:05.646 Control 88200] Cmd:get_server_list
+[2026-11-10 03:26:05.646 Control 88200] 88544
+[2026-11-10 03:26:05.646 Control 88200] UI closed
+[2026-11-10 03:26:05.647 Control 88200] Accepting connection...
+[2026-11-10 03:26:05.647 Control 88200] NEW UI
+[2026-11-10 03:26:05.647 Control 88200] Cmd:get_client_list 88544
+[2026-11-10 03:26:05.647 Control 88200] 88469
+[2026-11-10 03:26:05.647 Control 88200] 88401
+[2026-11-10 03:26:05.647 Control 88200] UI closed
+[2026-11-10 03:28:03.861 Control 88200] Accepting connection...
+[2026-11-10 03:28:03.861 Control 88200] NEW UI
+[2026-11-10 03:28:03.861 Control 88200] Cmd:get_server_list
+[2026-11-10 03:28:03.861 Control 88200] 88544
+[2026-11-10 03:28:03.861 Control 88200] UI closed
+[2026-11-10 03:28:03.862 Control 88200] Accepting connection...
+[2026-11-10 03:28:03.862 Control 88200] NEW UI
+[2026-11-10 03:28:03.862 Control 88200] Cmd:get_client_list 88544
+[2026-11-10 03:28:03.862 Control 88200] 88469
+[2026-11-10 03:28:03.862 Control 88200] 88401
+[2026-11-10 03:28:03.862 Control 88200] UI closed
+[2026-11-10 03:28:06.451 Control 88200] Accepting connection...
+[2026-11-10 03:28:06.451 Control 88200] NEW UI
+[2026-11-10 03:28:06.451 Control 88200] Cmd:get_server_list
+[2026-11-10 03:28:06.451 Control 88200] 88544
+[2026-11-10 03:28:06.451 Control 88200] UI closed
+[2026-11-10 03:28:06.452 Control 88200] Accepting connection...
+[2026-11-10 03:28:06.452 Control 88200] NEW UI
+[2026-11-10 03:28:06.452 Control 88200] Cmd:get_client_list 88544
+[2026-11-10 03:28:06.452 Control 88200] UI closed
+[2026-11-10 03:28:06.454 Control 88200] Accepting connection...
+[2026-11-10 03:28:06.454 Control 88200] NEW UI
+[2026-11-10 03:28:06.454 Control 88200] Cmd:quit
+[2026-11-10 03:28:06.454 Control 88200] Try shutting down server 88544, backoff is disabled
+[2026-11-10 03:28:06.550 Control 88200] Server 88544 exited with status 0
+[2026-11-10 03:28:06.550 Control 88200] Exit with status 0

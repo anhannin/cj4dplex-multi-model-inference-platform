@@ -1,0 +1,7 @@
+2026-11-09T20:00:40+09:00
+NAME                    READY   STATUS    RESTARTS   AGE
+qwen-797976b765-gb29s   1/1     Running   0          4m13s
+yolo-7897dfbb-dkd85     1/1     Running   0          4m14s
+3cff3b3d48b3316bf5c070cae85431477e729d6d68abad0fb09fdd05927649ac  /app/ros2/qwen_node.py
+748373c3a06917ff2a029e2d6748c0dd7fa3a98466492d89ac3b14b76015656c  /app/ros2/yolo_node.py
+9fe3c544f2b19bebad7ea41e76d7ad3d88b7c2f10d11d24430c5311f6b32db26  /home/avees/cj-containers/assets/yolo26l.pt

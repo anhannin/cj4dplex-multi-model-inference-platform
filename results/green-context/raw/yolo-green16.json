@@ -1,0 +1,27 @@
+{
+  "state": "PASS",
+  "model": "YOLO26l",
+  "scope": "functional binding only, not latency baseline",
+  "green_allocation": {
+    "total_sms": 48,
+    "minimum_partition_sms": 8,
+    "coscheduled_alignment": 8,
+    "parts": [
+      {
+        "actual_sms": 16,
+        "stream_ptr": 1444656272,
+        "green_handle": 1496059248,
+        "stream_owner_verified": true
+      },
+      {
+        "actual_sms": 32,
+        "stream_ptr": 1444659168,
+        "green_handle": 1497745872,
+        "stream_owner_verified": true
+      }
+    ]
+  },
+  "detections": 5,
+  "same_classes": true,
+  "max_abs_error": 0.0
+}

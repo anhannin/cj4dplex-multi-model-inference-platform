@@ -1,0 +1,11 @@
+{
+  "state": "PASS",
+  "scope": "counter support probe, not model baseline",
+  "shape": [
+    1,
+    4096,
+    4096
+  ],
+  "dtype": "bfloat16",
+  "finite": true
+}

@@ -1,0 +1,24 @@
+{
+  "case": {
+    "round": 3,
+    "condition": "static-q24-y24",
+    "label": "r3-static-q24-y24",
+    "mps": true,
+    "static": true,
+    "green": false,
+    "qsm": 24,
+    "ysm": 24
+  },
+  "parts": {
+    "qwen": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/x3EcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "yolo": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/OI7jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "native_driver": true,
+  "green": false,
+  "actual_chunk_sms": 2,
+  "raw": {
+    "qwen": "Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/x3EcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created\n",
+    "yolo": "Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/OI7jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created\n"
+  },
+  "overallocate_output": "Failed to create partition\n"
+}

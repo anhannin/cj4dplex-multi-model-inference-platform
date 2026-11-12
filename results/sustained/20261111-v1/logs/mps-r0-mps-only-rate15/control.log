@@ -1,0 +1,56 @@
+[2026-11-11 16:19:46.862 Control 2802967] Starting control daemon using socket /home/avees/cj-sustained/20261111-v1/eval-pipe/control
+[2026-11-11 16:19:46.862 Control 2802967] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-sustained/20261111-v1/eval-pipe
+[2026-11-11 16:19:46.862 Control 2802967] CUDA MPS Control binary version: 13020
+[2026-11-11 16:19:46.863 Control 2802967] Accepting connection...
+[2026-11-11 16:19:46.863 Control 2802967] NEW UI
+[2026-11-11 16:19:46.863 Control 2802967] Cmd:get_server_list
+[2026-11-11 16:19:46.863 Control 2802967] UI closed
+[2026-11-11 16:19:47.663 Control 2802967] Accepting connection...
+[2026-11-11 16:19:47.663 Control 2802967] User did not send valid credentials
+[2026-11-11 16:19:47.663 Control 2802967] Accepting connection...
+[2026-11-11 16:19:47.663 Control 2802967] NEW CLIENT 2803297 from user 1000: Server is not ready, push client to pending list
+[2026-11-11 16:19:47.663 Control 2803299] Starting new server 2803299 for user 1000
+[2026-11-11 16:19:47.664 Control 2802967] Accepting connection...
+[2026-11-11 16:19:47.966 Control 2802967] NEW SERVER 2803299: Ready
+[2026-11-11 16:19:47.967 Control 2802967] Accepting connection...
+[2026-11-11 16:19:47.967 Control 2802967] User did not send valid credentials
+[2026-11-11 16:19:47.967 Control 2802967] Accepting connection...
+[2026-11-11 16:19:47.967 Control 2802967] NEW CLIENT 2803344 from user 1000: Server already exists
+[2026-11-11 16:20:18.510 Control 2802967] Accepting connection...
+[2026-11-11 16:20:18.511 Control 2802967] User did not send valid credentials
+[2026-11-11 16:20:18.511 Control 2802967] Accepting connection...
+[2026-11-11 16:20:18.511 Control 2802967] NEW CLIENT 2803155 from user 1000: Server already exists
+[2026-11-11 16:20:18.561 Control 2802967] Accepting connection...
+[2026-11-11 16:20:18.561 Control 2802967] NEW CLIENT 2803155 from user 1000: Server already exists
+[2026-11-11 16:20:18.589 Control 2802967] Accepting connection...
+[2026-11-11 16:20:18.589 Control 2802967] User did not send valid credentials
+[2026-11-11 16:20:18.589 Control 2802967] Accepting connection...
+[2026-11-11 16:20:18.589 Control 2802967] NEW CLIENT 2803224 from user 1000: Server already exists
+[2026-11-11 16:20:18.649 Control 2802967] Accepting connection...
+[2026-11-11 16:20:18.650 Control 2802967] NEW CLIENT 2803224 from user 1000: Server already exists
+[2026-11-11 16:22:02.698 Control 2802967] Accepting connection...
+[2026-11-11 16:22:02.699 Control 2802967] NEW UI
+[2026-11-11 16:22:02.699 Control 2802967] Cmd:get_server_list
+[2026-11-11 16:22:02.699 Control 2802967] 2803299
+[2026-11-11 16:22:02.699 Control 2802967] UI closed
+[2026-11-11 16:22:02.700 Control 2802967] Accepting connection...
+[2026-11-11 16:22:02.700 Control 2802967] NEW UI
+[2026-11-11 16:22:02.700 Control 2802967] Cmd:get_client_list 2803299
+[2026-11-11 16:22:02.700 Control 2802967] 2803155
+[2026-11-11 16:22:02.700 Control 2802967] 2803224
+[2026-11-11 16:22:02.700 Control 2802967] UI closed
+[2026-11-11 16:25:39.466 Control 2802967] Accepting connection...
+[2026-11-11 16:25:39.466 Control 2802967] NEW UI
+[2026-11-11 16:25:39.466 Control 2802967] Cmd:get_server_list
+[2026-11-11 16:25:39.466 Control 2802967] 2803299
+[2026-11-11 16:25:39.466 Control 2802967] UI closed
+[2026-11-11 16:25:39.466 Control 2802967] Accepting connection...
+[2026-11-11 16:25:39.467 Control 2802967] NEW UI
+[2026-11-11 16:25:39.467 Control 2802967] Cmd:get_client_list 2803299
+[2026-11-11 16:25:39.467 Control 2802967] UI closed
+[2026-11-11 16:25:39.469 Control 2802967] Accepting connection...
+[2026-11-11 16:25:39.469 Control 2802967] NEW UI
+[2026-11-11 16:25:39.469 Control 2802967] Cmd:quit
+[2026-11-11 16:25:39.469 Control 2802967] Try shutting down server 2803299, backoff is disabled
+[2026-11-11 16:25:39.564 Control 2802967] Server 2803299 exited with status 0
+[2026-11-11 16:25:39.564 Control 2802967] Exit with status 0

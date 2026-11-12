@@ -1,0 +1,129 @@
+Processing [/profiles/yolo/concurrent.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+15.1,996120640,110760,8993.5,3488.0,1472,2793856,68526.2,"void cudnn::engines_precompiled::nchwToNhwcKernel<__half, __half, float, (bool)0, (bool)1, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nchw2nhwc_params_t<T3>, const T1 *, T2 *)"
+12.4,817994720,19500,41948.4,17856.0,9184,2647136,237827.0,sm80_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x16_t1r3s3_execute_kernel__5x_cudnn
+10.7,705586080,132600,5321.2,2688.0,960,2756960,41788.5,"void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<c10::Half>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+9.8,644755680,9360,68884.2,16672.0,14880,2794336,218051.7,sm80_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x32_stage4_warpsize4x1x1_g1_tensor16x8x16_execute_kernel__5x_cudnn
+8.4,554409696,16380,33846.7,22048.0,6464,2586976,125871.6,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+7.7,505959456,14040,36037.0,14432.0,14112,2559808,215120.2,sm80_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage5_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn
+6.3,413430880,114660,3605.7,2112.0,1248,2831360,29158.5,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::silu_kernel(at::TensorIteratorBase &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 5)]::operator ()() const::[lambda(c10::Half) (instance 1)], std::array<char *, (unsigned long)2>>(int, T2, T3)"
+5.2,339447968,21840,15542.5,5632.0,1440,2654624,69391.3,"void at::native::<unnamed>::CatArrayBatchedCopy_alignedK_contig<at::native::<unnamed>::OpaqueType<(unsigned int)2>, unsigned int, (int)4, (int)128, (int)1, (int)8>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)"
+4.9,319409856,55380,5767.6,2880.0,1280,2724288,31416.0,"void cudnn::engines_precompiled::nhwcToNchwKernel<__half, __half, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nhwc2nchw_params_t<T3>, const T1 *, T2 *)"
+4.1,272636640,24180,11275.3,9536.0,5184,2599552,52999.8,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+1.8,116381408,2340,49735.6,5872.0,5504,2528256,319226.9,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_tn_align8>(T1::Params)
+1.6,105760800,2340,45196.9,41120.0,19232,2820288,159750.9,sm80_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x128x32_stage5_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn
+1.4,91829920,9360,9810.9,5056.0,3968,2450912,99182.9,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x2_nn_align8>(T1::Params)
+1.2,78365888,4680,16744.8,6688.0,6208,2471968,149899.4,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x2_nn_align8>(T1::Params)
+1.0,66613088,7800,8540.1,5888.0,3872,2396928,71244.1,sm80_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn
+0.9,62168800,8580,7245.8,5952.0,1984,2555200,54011.2,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align8>(T1::Params)
+0.9,57183968,780,73312.8,70880.0,51424,164000,10234.4,sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x16_stage1_warpsize4x1x1_g1_tensor16x8x16_aligna2_alignc8_execute_kernel__5x_cudnn
+0.8,55763040,31980,1743.7,1440.0,896,124320,1600.4,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<c10::Half>, std::array<char *, (unsigned long)3>>(int, T2, T3)"
+0.8,51334112,780,65813.0,55872.0,55232,2497024,146981.2,sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x16x64_stage1_warpsize4x1x1_g1_tensor16x8x16_alignc4_execute_kernel__5x_cudnn
+0.7,46799616,7020,6666.6,4832.0,2240,103968,5024.3,conv2d_c1_k1_nchw_shmem_tiling
+0.5,34723424,2340,14839.1,6784.0,4000,2452160,137904.1,"void <unnamed>::softmax_warp_forward<c10::Half, c10::Half, float, (int)9, (bool)0, (bool)0>(T2 *, const T1 *, int, int, int, const bool *, int, bool)"
+0.5,30894240,2340,13202.7,7584.0,4224,2516320,122065.8,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nt_align8>(T1::Params)
+0.4,25742176,1560,16501.4,23424.0,7744,86912,8893.4,"void at::native::<unnamed>::upsample_nearest2d_out_frame<c10::Half, &at::native::nearest_neighbor_compute_source_index>(const T1 *, T1 *, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, float, float)"
+0.4,24173216,2340,10330.4,8064.0,7872,2506464,71110.9,"void at::native::<unnamed>::max_pool_forward_nchw<c10::Half>(int, const T1 *, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *, long *)"
+0.2,14075904,3120,4511.5,3488.0,3296,2368416,42375.5,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align8>(T1::Params)
+0.2,13688576,2340,5849.8,4480.0,1216,2603264,53808.1,"void at::native::<unnamed>::CatArrayBatchedCopy_alignedK_contig<at::native::<unnamed>::OpaqueType<(unsigned int)2>, unsigned int, (int)3, (int)128, (int)1, (int)8>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)"
+0.2,12488096,780,16010.4,15552.0,8640,67360,4046.1,"void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 1)]::operator ()() const::[lambda(unsigned char) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.1,8707616,780,11163.6,7648.0,7488,2499296,89260.3,sm80_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn
+0.1,8151872,780,10451.1,9824.0,7840,67360,4129.7,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 10)]::operator ()() const::[lambda(c10::Half) (instance 1)], std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T4, T5, T6, T7)"
+0.1,7633344,4680,1631.1,1856.0,928,29568,826.9,"void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 10)]::operator ()() const::[lambda(c10::Half) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.1,6517984,780,8356.4,7920.0,6752,67968,3397.0,"void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::flip_kernel_impl<at::native::OpaqueType<(int)1>>(at::TensorIterator &)::[lambda(int) (instance 1)]>(long, T3)"
+0.1,6309024,2340,2696.2,1984.0,1600,27168,1447.7,"void at_cuda_detail::cub::detail::select::DeviceSelectSweepKernel<at_cuda_detail::cub::detail::select::policy_hub<long, bool, int, (bool)0, (at_cuda_detail::cub::SelectImpl)0>::Policy1000, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::counting_iterator<long, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default>, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::transform_iterator<at::native::<unnamed>::NonZeroOp<bool>, const bool *, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default>, long *, int *, at_cuda_detail::cub::ScanTileState<int, (bool)1>, at_cuda_detail::cub::NullType, at_cuda_detail::cub::NullType, int, at_cuda_detail::cub::detail::select::streaming_context_t<long, (bool)1>, (at_cuda_detail::cub::SelectImpl)0>(T2, T3, T4, T5, T6, T7, T8, T9, int, T10, at_cuda_detail::cub::detail::vsmem_t)"
+0.1,5931168,780,7604.1,8544.0,6048,79072,3248.7,"void vision::ops::<unnamed>::nms_kernel_impl<float>(int, double, const T1 *, unsigned long long *)"
+0.1,5840224,780,7487.5,6528.0,6208,73184,5413.9,"void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void at::native::index_kernel_impl<at::native::OpaqueType<(int)2>>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>)::[lambda(char *, const char *, long) (instance 1)]>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>, const T1 &, bool)::[lambda(int) (instance 1)]>(long, T3)"
+0.1,4903968,2340,2095.7,2048.0,1824,35168,1006.3,"void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::AUnaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.1,4884352,780,6262.0,5440.0,5088,48544,3952.5,"void at::native::reduce_kernel<(int)128, (int)4, at::native::ReduceOp<c10::Half, at::native::func_wrapper_t<c10::Half, at::native::MaxNanFunctor<c10::Half>>, unsigned int, c10::Half, (int)4, (int)4>>(T3)"
+0.1,4728704,1560,3031.2,3200.0,1472,69088,2287.6,"void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void at::native::index_kernel_impl<at::native::OpaqueType<(int)4>>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>)::[lambda(char *, const char *, long) (instance 1)]>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>, const T1 &, bool)::[lambda(int) (instance 1)]>(long, T3)"
+0.1,4238016,1560,2716.7,3648.0,1024,51712,2456.0,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::BUnaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float>>, std::array<char *, (unsigned long)2>>(int, T2, T3)"
+0.1,3728640,3120,1195.1,1024.0,960,32544,930.5,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.1,3574976,3120,1145.8,1024.0,960,39264,1279.5,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctorOnSelf_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.1,3422464,3120,1096.9,1024.0,960,30656,1033.5,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.1,3351008,780,4296.2,4128.0,3968,32416,1274.0,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::sigmoid_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(c10::Half) (instance 1)], std::array<char *, (unsigned long)2>>(int, T2, T3)"
+0.0,2790080,2340,1192.3,960.0,768,39264,1948.8,"void at_cuda_detail::cub::detail::scan::DeviceCompactInitKernel<at_cuda_detail::cub::ScanTileState<int, (bool)1>, int *>(T1, int, T2)"
+0.0,2750048,2340,1175.2,1088.0,960,22944,721.2,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.0,2733152,780,3504.0,3232.0,2944,70304,2837.7,"void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<c10::Half, at::native::MaxOps<c10::Half>, unsigned int, c10::Half, (int)4, (int)4>>(T3)"
+0.0,2697952,780,3458.9,3264.0,3168,42688,1944.6,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)
+0.0,2600384,1560,1666.9,1216.0,1152,52384,1692.3,"void at::native::vectorized_elementwise_kernel<(int)4, void at::native::compare_scalar_kernel<c10::Half>(at::TensorIteratorBase &, at::native::<unnamed>::OpType, T1)::[lambda(c10::Half) (instance 1)], std::array<char *, (unsigned long)2>>(int, T2, T3)"
+0.0,2493248,1560,1598.2,1376.0,1088,39968,1974.8,"void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.0,2479136,780,3178.4,3520.0,2560,34816,1345.9,"vision::ops::<unnamed>::gather_keep_from_mask(bool *, const unsigned long long *, int)"
+0.0,2226336,1560,1427.1,1344.0,1152,27936,1107.8,"void at_cuda_detail::cub::detail::reduce::DeviceReduceSingleTileKernel<at_cuda_detail::cub::detail::reduce::policy_hub<int, unsigned long long, cuda::std::__4::plus<void>>::Policy1000, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::transform_iterator<at::native::<unnamed>::NonZeroOp<bool>, const bool *, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default>, int *, unsigned long long, cuda::std::__4::plus<void>, int, int, cuda::std::__4::__identity>(T2, T3, T4, T5, T6, T8)"
+0.0,2101504,780,2694.2,2304.0,2176,62368,3710.9,"void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.0,1940928,780,2488.4,2400.0,2272,12064,580.2,"void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void at::native::index_kernel_impl<at::native::OpaqueType<(int)8>>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>)::[lambda(char *, const char *, long) (instance 1)]>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>, const T1 &, bool)::[lambda(int) (instance 1)]>(long, T3)"
+0.0,1747968,390,4482.0,4256.0,4192,21952,1423.7,"void at::native::radixSortKVInPlace<(int)-2, (int)-1, (int)32, (int)4, float, long, unsigned int>(at::cuda::detail::TensorInfo<T5, T7>, T7, T7, T7, at::cuda::detail::TensorInfo<T6, T7>, T7, bool)"
+0.0,1710752,780,2193.3,2048.0,1984,32064,1523.7,"void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)2>, unsigned int, (int)3, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)"
+0.0,1708960,1560,1095.5,960.0,736,49376,1918.1,"void <unnamed>::elementwise_kernel_with_index<int, at::native::arange_cuda_out(const c10::Scalar &, const c10::Scalar &, const c10::Scalar &, at::Tensor &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)]>(T1, T2, function_traits<T2>::result_type *)"
+0.0,1454240,390,3728.8,3680.0,3616,9152,402.8,"void at::native::radixSortKVInPlace<(int)-2, (int)-1, (int)16, (int)2, float, long, unsigned int>(at::cuda::detail::TensorInfo<T5, T7>, T7, T7, T7, at::cuda::detail::TensorInfo<T6, T7>, T7, bool)"
+0.0,1434336,780,1838.9,1568.0,1312,28352,1778.6,"void at_cuda_detail::cub::detail::reduce::DeviceReduceKernel<at_cuda_detail::cub::detail::reduce::policy_hub<int, unsigned long long, cuda::std::__4::plus<void>>::Policy1000, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::transform_iterator<at::native::<unnamed>::NonZeroOp<bool>, const bool *, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default, thrust::THRUST_300001_SM_800_860_900_1000_1100_1200_NS::use_default>, unsigned long long, cuda::std::__4::plus<void>, int, cuda::std::__4::__identity>(T2, T5 *, T3, at_cuda_detail::cub::GridEvenShare<T3>, T4, T6)"
+0.0,1196928,780,1534.5,1408.0,1344,23392,1013.2,"void at_cuda_detail::cub::detail::reduce::DeviceReduceSingleTileKernel<at_cuda_detail::cub::detail::reduce::policy_hub<int, unsigned long long, cuda::std::__4::plus<void>>::Policy1000, int *, int *, int, cuda::std::__4::plus<void>, int, int, cuda::std::__4::__identity>(T2, T3, T4, T5, T6, T8)"
+0.0,1148256,780,1472.1,1344.0,1024,25696,1248.4,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.0,1147392,780,1471.0,1248.0,1152,28512,1756.4,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T4, T5, T6, T7)"
+0.0,1103296,780,1414.5,1312.0,1120,31328,1218.7,"void at::native::vectorized_gather_kernel<(int)16, long>(char *, char *, T2 *, int, long, long, long, long, bool)"
+0.0,1013888,780,1299.9,1248.0,992,14080,885.3,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::AUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.0,968960,780,1242.3,1152.0,1088,24960,960.9,"void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)"
+0.0,791136,780,1014.3,960.0,832,25120,1005.9,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<bool>, std::array<char *, (unsigned long)1>>(int, T2, T3)"
+
+Processing [/profiles/yolo/concurrent.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+54.5,8914025280,5460,1632605.4,34808.0,768,12522448,2878936.8,cudaDeviceSynchronize
+28.6,4675132240,3900,1198751.9,2008864.0,592,2423248,1036815.9,cudaStreamSynchronize
+12.3,2015414576,524940,3839.3,3200.0,2240,855408,3137.8,cudaLaunchKernel
+1.7,277358416,78780,3520.7,2992.0,2160,286448,2195.0,cuLaunchKernel
+1.3,218394080,55380,3943.6,3312.0,2336,348464,2628.8,cudaLaunchKernelExC_v11060
+1.1,172616496,4680,36883.9,12096.0,2752,873008,79712.9,cudaMemcpyAsync
+0.2,33387968,524940,63.6,48.0,0,10656,114.1,cuKernelGetName
+0.2,25278112,71760,352.3,208.0,112,18272,601.9,cuKernelGetFunction
+0.1,16852608,6240,2700.7,400.0,48,30128,3608.7,cudaMemsetAsync
+
+Processing [/profiles/yolo/concurrent.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/cuda_gpu_mem_time_sum.py]... 
+Time (%),Total Time (ns),Count,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Operation
+82.9,54599360,780,69999.2,77200.0,24128,136736,23664.2,[CUDA memcpy Host-to-Device]
+14.2,9332128,3120,2991.1,1920.0,544,73120,3159.3,[CUDA memcpy Device-to-Host]
+1.6,1044000,2340,446.2,352.0,288,30816,862.6,[CUDA memset]
+1.3,872864,780,1119.1,1056.0,864,30528,1481.6,[CUDA memcpy Device-to-Device]
+
+Processing [/profiles/yolo/concurrent.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/osrt_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+25.3,105209669280,9705,10840769.6,610528.0,1552,5000030992,146512327.2,pthread_cond_clockwait
+25.1,104284218944,4787,21784879.7,736768.0,1024,4183367376,127230741.9,pthread_cond_wait
+16.2,67337695184,3844,17517610.6,3932488.0,1712,333699616,24322531.1,sem_timedwait
+8.4,35001066192,7,5000152313.1,5000119568.0,5000008464,5000378576,164961.0,sleep
+8.3,34507807232,346,99733546.9,100217456.0,2080,100837024,5914441.5,poll
+8.1,33774953472,1774,19038868.9,1585264.0,1040,746749520,29363932.3,recvfrom
+7.8,32547227360,6390,5093462.8,142808.0,1008,4000409712,132319512.7,pthread_cond_timedwait
+0.5,2233291488,235,9503368.0,905952.0,154944,100855872,27831753.0,sem_clockwait
+0.0,184195232,3322,55447.1,19568.0,1008,1080832,75052.5,pthread_mutex_lock
+0.0,88347584,52075,1696.5,1296.0,1008,57168,2249.8,lstat64
+0.0,80794016,3660,22074.9,11608.0,2240,128624,18346.4,sendto
+0.0,77248576,11691,6607.5,1456.0,1008,103616,14136.0,stat64
+0.0,53910608,14888,3621.1,2976.0,1008,410720,4100.3,pthread_cond_signal
+0.0,23396400,60,389940.0,457944.0,2688,678480,225034.9,ioctl
+0.0,14758272,823,17932.3,17136.0,1312,99888,7830.2,open64
+0.0,8894176,957,9293.8,1936.0,1008,67456,14054.5,fwrite
+0.0,6755872,35,193024.9,193456.0,2032,960704,200305.9,pthread_rwlock_rdlock
+0.0,6733488,40,168337.2,139584.0,1008,756704,154565.2,pthread_rwlock_wrlock
+0.0,4616128,1083,4262.4,4112.0,1008,19328,2188.7,pthread_cond_broadcast
+0.0,3794368,828,4582.6,4112.0,1056,52528,2824.4,close
+0.0,2843440,806,3527.8,3328.0,1248,18192,1256.8,read
+0.0,1633696,798,2047.2,1792.0,1008,16848,1324.9,fstat64
+0.0,866288,1,866288.0,866288.0,866288,866288,0.0,sem_wait
+0.0,662224,367,1804.4,1232.0,1008,39008,2751.9,pthread_mutex_timedlock
+0.0,468096,15,31206.4,21920.0,8320,68976,21969.6,connect
+0.0,406416,15,27094.4,24912.0,3552,64624,22204.6,socket
+0.0,282928,7,40418.3,42128.0,21120,63968,14455.9,fflush
+0.0,130624,5,26124.8,16752.0,4608,53808,21837.0,write
+0.0,91248,18,5069.3,4608.0,1136,12112,2991.4,flock
+0.0,67216,1,67216.0,67216.0,67216,67216,0.0,pthread_create
+0.0,54048,45,1201.1,1184.0,1008,1840,158.3,fileno
+0.0,34000,2,17000.0,17000.0,11904,22096,7206.8,stat
+0.0,25072,4,6268.0,6928.0,2320,8896,2799.5,mmap64
+
+Processing [/profiles/yolo/concurrent.sqlite] with [/usr/local/cuda-13.0/NsightSystems-cli-2025.5.1/target-linux-sbsa-armv8/reports/nvtx_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Style,Range
+59.3,34336466416,1,34336466416.0,34336466416.0,34336466416,34336466416,0.0,PushPop,:phase:concurrent
+40.6,23475501376,780,30096796.6,30512552.0,10216160,35373920,2344877.8,PushPop,:yolo.predict
+0.1,34218768,2340,14623.4,9992.0,4064,59712,10463.4,PushPop,CCCL:cub::DeviceReduce::Sum
+0.0,26625328,2340,11378.3,10048.0,7824,32624,2793.4,PushPop,CCCL:cub::DeviceSelect::Flagged
+

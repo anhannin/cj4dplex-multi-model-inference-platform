@@ -1,0 +1,122 @@
+{
+  "qwen": {
+    "total_sms": 48,
+    "minimum_partition_sms": 8,
+    "coscheduled_alignment": 8,
+    "parts": [
+      {
+        "actual_sms": 8,
+        "stream_ptr": 256440065224912,
+        "green_handle": 256440060735200,
+        "stream_owner_verified": true
+      },
+      {
+        "actual_sms": 40,
+        "stream_ptr": 256440066906848,
+        "green_handle": 256440065229424,
+        "stream_owner_verified": true
+      }
+    ],
+    "selected_index": 1,
+    "selected_sms": 40,
+    "observed_smids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "event": "gpu_resource_ready",
+    "enabled": true,
+    "pair": "q40-y8",
+    "pid": 1,
+    "time_ns": 1794227331292402321,
+    "clock_check": {
+      "time_namespace": "time:[4026531834]",
+      "offsets": "monotonic           0         0\nboottime            0         0\n",
+      "clock": "clock_gettime(CLOCK_MONOTONIC)"
+    }
+  },
+  "yolo": {
+    "total_sms": 48,
+    "minimum_partition_sms": 8,
+    "coscheduled_alignment": 8,
+    "parts": [
+      {
+        "actual_sms": 8,
+        "stream_ptr": 268760380371184,
+        "green_handle": 268760375881472,
+        "stream_owner_verified": true
+      },
+      {
+        "actual_sms": 40,
+        "stream_ptr": 268760382053120,
+        "green_handle": 268760380375696,
+        "stream_owner_verified": true
+      }
+    ],
+    "selected_index": 0,
+    "selected_sms": 8,
+    "observed_smids": [
+      0,
+      1,
+      8,
+      9,
+      16,
+      17,
+      24,
+      25
+    ],
+    "event": "gpu_resource_ready",
+    "enabled": true,
+    "pair": "q40-y8",
+    "pid": 1,
+    "time_ns": 1794227330867492134,
+    "clock_check": {
+      "time_namespace": "time:[4026531834]",
+      "offsets": "monotonic           0         0\nboottime            0         0\n",
+      "clock": "clock_gettime(CLOCK_MONOTONIC)"
+    }
+  },
+  "shared_clock": {
+    "time_namespace": "time:[4026531834]",
+    "offsets": "monotonic           0         0\nboottime            0         0\n",
+    "clock": "clock_gettime(CLOCK_MONOTONIC)"
+  },
+  "observed_smid_intersection": []
+}

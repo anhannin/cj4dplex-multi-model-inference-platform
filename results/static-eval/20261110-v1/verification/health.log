@@ -1,0 +1,3 @@
+{"stage": "warmup_done", "counts": {"qwen": 1, "yolo": 1}}
+{"stage": "measurement_done", "counts": {"qwen": 1, "yolo": 31}}
+{"state": "PASS", "output": "/home/avees/cj-static-eval/20261110-v1/verification/health-1794258153460603707"}

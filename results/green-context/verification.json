@@ -1,0 +1,45 @@
+{
+  "state": "PASS",
+  "native_sm_counts": [
+    16,
+    32
+  ],
+  "device_sms": 48,
+  "min_sms": 8,
+  "alignment": 8,
+  "model_green_kernel_counts": {
+    "qwen": 62606,
+    "yolo": 845
+  },
+  "qwen_exact_token_match_one_32_token_case": true,
+  "yolo_exact_boxes_one_image_case": true,
+  "cross_process_smid_mapping_observed_disjoint_rounds": 3,
+  "fixed_work_one_process_concurrent_median_ms": 190.9976787865162,
+  "fixed_work_two_process_concurrent_median_ms": 398.766641,
+  "fixed_work_solo_median_ms": [
+    190.882573,
+    190.889037
+  ],
+  "production_green_deployed": false,
+  "mps_applied": false,
+  "baseline_code_changed": false,
+  "host_operational_change": {
+    "uid": 1000,
+    "user": "avees",
+    "setting": "loginctl linger",
+    "before": "no",
+    "after": "yes",
+    "global_RemoveIPC": "yes (unchanged)",
+    "reason": "Prevent logind user IPC cleanup from invalidating long-lived hostIPC FastDDS objects",
+    "rollback": "sudo loginctl disable-linger avees",
+    "warning": "Do not disable without alternate IPC lifetime design; may reintroduce outage"
+  },
+  "original_pods_recreated_for_recovery_same_images_and_templates": true,
+  "after_no_ssh_45_seconds_shared_memory_retained": true,
+  "after_logout_audited_native_clients_pass": true,
+  "failed_health_attempts_preserved": true,
+  "observer_harness_race_workaround": "Only diagnostic client copies require two request subscribers (server+observer); production clients unchanged",
+  "final_templates_match_frozen_baseline": true,
+  "final_both_pods_ready": true,
+  "verification_scope": "Functional GPU probes, bounded counter diagnostics and recovered IPC; not optimization/SLO proof"
+}

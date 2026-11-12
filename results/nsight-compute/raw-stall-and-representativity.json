@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "block": [
+      16,
+      4,
+      1
+    ],
+    "grid": [
+      3072,
+      1,
+      1
+    ],
+    "raw_stall_metrics": {
+      "long_scoreboard_contribution_pct": 59.820092068011064,
+      "lg_throttle_contribution_pct": 26.676510251282203,
+      "interpretation": "contribution to average warp issue interval, not program wall time"
+    },
+    "dram_raw_metrics_present": false,
+    "same_geometry_baseline_kernel_count": 16256,
+    "same_geometry_fraction_of_baseline_kernel_elapsed_sum": 0.42644082507136133
+  },
+  {
+    "id": 1,
+    "block": [
+      32,
+      4,
+      1
+    ],
+    "grid": [
+      1024,
+      1,
+      1
+    ],
+    "raw_stall_metrics": {
+      "long_scoreboard_contribution_pct": 47.13619888057067,
+      "lg_throttle_contribution_pct": 36.62564679960479,
+      "interpretation": "contribution to average warp issue interval, not program wall time"
+    },
+    "dram_raw_metrics_present": false,
+    "same_geometry_baseline_kernel_count": 8128,
+    "same_geometry_fraction_of_baseline_kernel_elapsed_sum": 0.1583339061610788
+  }
+]

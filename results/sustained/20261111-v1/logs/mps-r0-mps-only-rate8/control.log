@@ -1,0 +1,67 @@
+[2026-11-11 16:13:52.405 Control 2791295] Starting control daemon using socket /home/avees/cj-sustained/20261111-v1/eval-pipe/control
+[2026-11-11 16:13:52.405 Control 2791295] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-sustained/20261111-v1/eval-pipe
+[2026-11-11 16:13:52.405 Control 2791295] CUDA MPS Control binary version: 13020
+[2026-11-11 16:13:52.407 Control 2791295] Accepting connection...
+[2026-11-11 16:13:52.407 Control 2791295] NEW UI
+[2026-11-11 16:13:52.407 Control 2791295] Cmd:get_server_list
+[2026-11-11 16:13:52.407 Control 2791295] UI closed
+[2026-11-11 16:13:53.247 Control 2791295] Accepting connection...
+[2026-11-11 16:13:53.247 Control 2791295] User did not send valid credentials
+[2026-11-11 16:13:53.247 Control 2791295] Accepting connection...
+[2026-11-11 16:13:53.247 Control 2791295] NEW CLIENT 2791667 from user 1000: Server is not ready, push client to pending list
+[2026-11-11 16:13:53.247 Control 2791669] Starting new server 2791669 for user 1000
+[2026-11-11 16:13:53.248 Control 2791295] Accepting connection...
+[2026-11-11 16:13:53.553 Control 2791295] NEW SERVER 2791669: Ready
+[2026-11-11 16:13:53.555 Control 2791295] Accepting connection...
+[2026-11-11 16:13:53.555 Control 2791295] User did not send valid credentials
+[2026-11-11 16:13:53.555 Control 2791295] Accepting connection...
+[2026-11-11 16:13:53.555 Control 2791295] NEW CLIENT 2791678 from user 1000: Server already exists
+[2026-11-11 16:14:24.125 Control 2791295] Accepting connection...
+[2026-11-11 16:14:24.125 Control 2791295] User did not send valid credentials
+[2026-11-11 16:14:24.125 Control 2791295] Accepting connection...
+[2026-11-11 16:14:24.125 Control 2791295] NEW CLIENT 2791507 from user 1000: Server already exists
+[2026-11-11 16:14:24.133 Control 2791295] Accepting connection...
+[2026-11-11 16:14:24.133 Control 2791295] User did not send valid credentials
+[2026-11-11 16:14:24.133 Control 2791295] Accepting connection...
+[2026-11-11 16:14:24.133 Control 2791295] NEW CLIENT 2791500 from user 1000: Server already exists
+[2026-11-11 16:14:24.193 Control 2791295] Accepting connection...
+[2026-11-11 16:14:24.193 Control 2791295] NEW CLIENT 2791507 from user 1000: Server already exists
+[2026-11-11 16:14:24.197 Control 2791295] Accepting connection...
+[2026-11-11 16:14:24.197 Control 2791295] NEW CLIENT 2791500 from user 1000: Server already exists
+[2026-11-11 16:16:18.257 Control 2791295] Accepting connection...
+[2026-11-11 16:16:18.257 Control 2791295] NEW UI
+[2026-11-11 16:16:18.257 Control 2791295] Cmd:get_server_list
+[2026-11-11 16:16:18.257 Control 2791295] 2791669
+[2026-11-11 16:16:18.257 Control 2791295] UI closed
+[2026-11-11 16:16:18.258 Control 2791295] Accepting connection...
+[2026-11-11 16:16:18.258 Control 2791295] NEW UI
+[2026-11-11 16:16:18.258 Control 2791295] Cmd:get_client_list 2791669
+[2026-11-11 16:16:18.258 Control 2791295] 2791507
+[2026-11-11 16:16:18.258 Control 2791295] 2791500
+[2026-11-11 16:16:18.258 Control 2791295] UI closed
+[2026-11-11 16:19:44.375 Control 2791295] Accepting connection...
+[2026-11-11 16:19:44.375 Control 2791295] NEW UI
+[2026-11-11 16:19:44.375 Control 2791295] Cmd:get_server_list
+[2026-11-11 16:19:44.375 Control 2791295] 2791669
+[2026-11-11 16:19:44.375 Control 2791295] UI closed
+[2026-11-11 16:19:44.376 Control 2791295] Accepting connection...
+[2026-11-11 16:19:44.376 Control 2791295] NEW UI
+[2026-11-11 16:19:44.376 Control 2791295] Cmd:get_client_list 2791669
+[2026-11-11 16:19:44.376 Control 2791295] 2791507
+[2026-11-11 16:19:44.376 Control 2791295] 2791500
+[2026-11-11 16:19:44.376 Control 2791295] UI closed
+[2026-11-11 16:19:46.773 Control 2791295] Accepting connection...
+[2026-11-11 16:19:46.773 Control 2791295] NEW UI
+[2026-11-11 16:19:46.773 Control 2791295] Cmd:get_server_list
+[2026-11-11 16:19:46.773 Control 2791295] 2791669
+[2026-11-11 16:19:46.773 Control 2791295] UI closed
+[2026-11-11 16:19:46.774 Control 2791295] Accepting connection...
+[2026-11-11 16:19:46.774 Control 2791295] NEW UI
+[2026-11-11 16:19:46.774 Control 2791295] Cmd:get_client_list 2791669
+[2026-11-11 16:19:46.774 Control 2791295] UI closed
+[2026-11-11 16:19:46.775 Control 2791295] Accepting connection...
+[2026-11-11 16:19:46.775 Control 2791295] NEW UI
+[2026-11-11 16:19:46.775 Control 2791295] Cmd:quit
+[2026-11-11 16:19:46.775 Control 2791295] Try shutting down server 2791669, backoff is disabled
+[2026-11-11 16:19:46.844 Control 2791295] Server 2791669 exited with status 0
+[2026-11-11 16:19:46.844 Control 2791295] Exit with status 0

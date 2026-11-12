@@ -1,0 +1,7 @@
+{
+  "state": "PASS",
+  "scope": "Native595 static MPS16/32; NO Green; pairedactualmodels; diagnosticprofileonly",
+  "start_wall_ns": 1794246080610120698,
+  "restoration": "PASS",
+  "end_wall_ns": 1794246593682256161
+}

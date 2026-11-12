@@ -1,0 +1,37 @@
+{
+  "state": "PASS",
+  "run_id": "r4-static-q16-y32-rate8-warmup_c34cbe5c83ad",
+  "expected": {
+    "qwen": 3,
+    "yolo": 30
+  },
+  "sm": {
+    "qwen": 16,
+    "yolo": 32
+  },
+  "green": false,
+  "workload": {
+    "input_tokens": 512,
+    "input_ids_sha256": "6095b3535875488ee3f7934344507bfeb77ed3f68b2c210489f188957fc6ec2a",
+    "matches_prior_sm_sweep": true,
+    "output_tokens": 128,
+    "image": "bus.jpg",
+    "image_sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "generation": "stock min_new_tokens=max_new_tokens=128,greedy,cache=True",
+    "ros_domain": 73
+  },
+  "ros_domain": 74,
+  "load": "finite simultaneous burst, no response-gated pacing",
+  "e2e": "before per-request JSON encoding/publish -> matching response parsed",
+  "batch_makespan": "common barrier release -> last parsed response",
+  "excluded": [
+    "initial discovery/subscription preparation",
+    "input file/base64 preparation"
+  ],
+  "start_wall_ns": 1794396131661422243,
+  "setup_complete_wall_ns": 1794396134876965729,
+  "batch_t0_perf_ns": 150727153900654,
+  "batch_t0_wall_ns": 1794396134878337361,
+  "completed": 33,
+  "end_wall_ns": 1794396201466347166
+}

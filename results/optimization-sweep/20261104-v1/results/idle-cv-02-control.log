@@ -1,0 +1,3 @@
+{"stage": "warmup_done", "counts": {"yolo": 5}}
+{"stage": "measurement_done", "counts": {"yolo": 500}}
+{"state": "PASS", "output": "/home/avees/cj-optimization/20261104-v1/results/idle-cv-02-control"}

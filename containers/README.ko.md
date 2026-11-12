@@ -117,9 +117,4 @@ Kubernetes 배포와 GPU 공유 설정은 추후 별도 구성·검증한다.
 
 ## 이름이 고정된 개발 컨테이너
 
-`bash containers/start-dev.sh`는 `cj-qwen-dev`, `cj-yolo-dev`를 만든다.
-이 컨테이너는 shell 접근용으로만 대기하며 모델을 상주시키거나 HTTP 서비스를 제공하지 않는다.
-GPU 메모리를 계속 점유하지 않도록, 실제 모델 프로세스는 필요할 때 실행한다.
-`docker exec -it cj-qwen-dev bash` / `docker exec -it cj-yolo-dev bash`로 접근할 수 있다.
-공통 scripts 디렉터리만 편집 가능하게 마운트하고 모델/데이터는 read-only다.
-기존 동명 컨테이너는 덮어쓰지 않는다. 외부 포트와 네트워크는 열지 않는다.
+개발용 sleep 컨테이너 실행기는 제출 정리에서 제거했다. 모델 이미지 검증은 위 `scripts/run_containers.py`, 실제 서빙은 ROS2/Kubernetes 경로를 사용한다.

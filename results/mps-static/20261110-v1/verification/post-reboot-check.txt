@@ -1,0 +1,13 @@
+Tue Nov 10 02:31:08 KST 2026
+2026-11-10 02:30:07
+7.0.0-1025-nvidia
+NVIDIA GB10, 595.99.02
+Built on Tue_Dec_16_07:27:17_PM_PST_2025
+Cuda compilation tools, release 13.1, V13.1.115
+Build cuda_13.1.r13.1/compiler.37061995_0
+SecureBoot enabled
+Canonical Ltd. Kernel Module Signing
+disabled
+NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+qwen   0/0     0            0           7d
+yolo   0/0     0            0           7d

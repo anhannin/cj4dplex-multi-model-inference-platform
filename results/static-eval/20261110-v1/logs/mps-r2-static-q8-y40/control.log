@@ -1,0 +1,94 @@
+[2026-11-10 04:11:42.590 Control 168834] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 04:11:42.590 Control 168834] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 04:11:42.590 Control 168834] CUDA MPS Control binary version: 13020
+[2026-11-10 04:11:42.591 Control 168834] Accepting connection...
+[2026-11-10 04:11:42.591 Control 168834] NEW UI
+[2026-11-10 04:11:42.592 Control 168834] Cmd:get_server_list
+[2026-11-10 04:11:42.592 Control 168834] UI closed
+[2026-11-10 04:11:42.611 Control 168834] Accepting connection...
+[2026-11-10 04:11:42.611 Control 168834] NEW UI
+[2026-11-10 04:11:42.611 Control 168834] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-10 04:11:42.630 Control 168834] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:11:42.630 Control 168834] UI closed
+[2026-11-10 04:11:42.631 Control 168834] Accepting connection...
+[2026-11-10 04:11:42.632 Control 168834] NEW UI
+[2026-11-10 04:11:42.632 Control 168834] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-10 04:11:42.632 Control 168834] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:11:42.632 Control 168834] UI closed
+[2026-11-10 04:11:42.633 Control 168834] Accepting connection...
+[2026-11-10 04:11:42.633 Control 168834] NEW UI
+[2026-11-10 04:11:42.633 Control 168834] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 04:11:42.633 Control 168834] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 04:11:42.633 Control 168834] Failed to create partition
+[2026-11-10 04:11:42.633 Control 168834] UI closed
+[2026-11-10 04:11:43.435 Control 168834] Accepting connection...
+[2026-11-10 04:11:43.435 Control 168834] User did not send valid credentials
+[2026-11-10 04:11:43.435 Control 168834] Accepting connection...
+[2026-11-10 04:11:43.435 Control 168834] NEW CLIENT 169128 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 04:11:43.435 Control 169130] Starting new server 169130 for user 1000
+[2026-11-10 04:11:43.438 Control 168834] Accepting connection...
+[2026-11-10 04:11:43.764 Control 168834] NEW SERVER 169130: Ready
+[2026-11-10 04:11:43.765 Control 168834] Accepting connection...
+[2026-11-10 04:11:43.765 Control 168834] User did not send valid credentials
+[2026-11-10 04:11:43.765 Control 168834] Accepting connection...
+[2026-11-10 04:11:43.765 Control 168834] NEW CLIENT 169213 from user 1000: Server already exists
+[2026-11-10 04:11:44.556 Control 168834] Accepting connection...
+[2026-11-10 04:11:44.556 Control 168834] User did not send valid credentials
+[2026-11-10 04:11:44.556 Control 168834] Accepting connection...
+[2026-11-10 04:11:44.556 Control 168834] NEW CLIENT 169025 from user 1000: Server already exists
+[2026-11-10 04:11:44.590 Control 168834] Accepting connection...
+[2026-11-10 04:11:44.591 Control 168834] User did not send valid credentials
+[2026-11-10 04:11:44.591 Control 168834] Accepting connection...
+[2026-11-10 04:11:44.591 Control 168834] NEW CLIENT 169117 from user 1000: Server already exists
+[2026-11-10 04:11:44.602 Control 168834] Accepting connection...
+[2026-11-10 04:11:44.602 Control 168834] NEW CLIENT 169025 from user 1000: Server already exists
+[2026-11-10 04:11:44.639 Control 168834] Accepting connection...
+[2026-11-10 04:11:44.640 Control 168834] NEW CLIENT 169117 from user 1000: Server already exists
+[2026-11-10 04:13:23.478 Control 168834] Accepting connection...
+[2026-11-10 04:13:23.478 Control 168834] NEW UI
+[2026-11-10 04:13:23.478 Control 168834] Cmd:get_server_list
+[2026-11-10 04:13:23.478 Control 168834] 169130
+[2026-11-10 04:13:23.478 Control 168834] UI closed
+[2026-11-10 04:13:23.479 Control 168834] Accepting connection...
+[2026-11-10 04:13:23.479 Control 168834] NEW UI
+[2026-11-10 04:13:23.479 Control 168834] Cmd:get_client_list 169130
+[2026-11-10 04:13:23.479 Control 168834] 169025
+[2026-11-10 04:13:23.479 Control 168834] 169117
+[2026-11-10 04:13:23.479 Control 168834] UI closed
+[2026-11-10 04:14:34.159 Control 168834] Accepting connection...
+[2026-11-10 04:14:34.159 Control 168834] NEW UI
+[2026-11-10 04:14:34.159 Control 168834] Cmd:get_server_list
+[2026-11-10 04:14:34.159 Control 168834] 169130
+[2026-11-10 04:14:34.159 Control 168834] UI closed
+[2026-11-10 04:14:34.160 Control 168834] Accepting connection...
+[2026-11-10 04:14:34.160 Control 168834] NEW UI
+[2026-11-10 04:14:34.160 Control 168834] Cmd:get_client_list 169130
+[2026-11-10 04:14:34.160 Control 168834] 169025
+[2026-11-10 04:14:34.160 Control 168834] 169117
+[2026-11-10 04:14:34.160 Control 168834] UI closed
+[2026-11-10 04:16:32.854 Control 168834] Accepting connection...
+[2026-11-10 04:16:32.854 Control 168834] NEW UI
+[2026-11-10 04:16:32.854 Control 168834] Cmd:get_server_list
+[2026-11-10 04:16:32.854 Control 168834] 169130
+[2026-11-10 04:16:32.854 Control 168834] UI closed
+[2026-11-10 04:16:32.855 Control 168834] Accepting connection...
+[2026-11-10 04:16:32.855 Control 168834] NEW UI
+[2026-11-10 04:16:32.855 Control 168834] Cmd:get_client_list 169130
+[2026-11-10 04:16:32.855 Control 168834] 169025
+[2026-11-10 04:16:32.855 Control 168834] 169117
+[2026-11-10 04:16:32.855 Control 168834] UI closed
+[2026-11-10 04:16:35.246 Control 168834] Accepting connection...
+[2026-11-10 04:16:35.246 Control 168834] NEW UI
+[2026-11-10 04:16:35.246 Control 168834] Cmd:get_server_list
+[2026-11-10 04:16:35.246 Control 168834] 169130
+[2026-11-10 04:16:35.246 Control 168834] UI closed
+[2026-11-10 04:16:35.247 Control 168834] Accepting connection...
+[2026-11-10 04:16:35.247 Control 168834] NEW UI
+[2026-11-10 04:16:35.247 Control 168834] Cmd:get_client_list 169130
+[2026-11-10 04:16:35.248 Control 168834] UI closed
+[2026-11-10 04:16:35.249 Control 168834] Accepting connection...
+[2026-11-10 04:16:35.249 Control 168834] NEW UI
+[2026-11-10 04:16:35.249 Control 168834] Cmd:quit
+[2026-11-10 04:16:35.249 Control 168834] Try shutting down server 169130, backoff is disabled
+[2026-11-10 04:16:35.372 Control 168834] Server 169130 exited with status 0
+[2026-11-10 04:16:35.372 Control 168834] Exit with status 0

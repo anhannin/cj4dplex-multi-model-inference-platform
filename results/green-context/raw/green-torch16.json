@@ -1,0 +1,100 @@
+{
+  "state": "PASS",
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "cuda": "13.0",
+  "requested_first_partition_sms": 16,
+  "scope": "functional binding probe; not performance optimization",
+  "total_sms": 48,
+  "minimum_partition_sms": 8,
+  "coscheduled_alignment": 8,
+  "parts": [
+    {
+      "actual_sms": 16,
+      "stream_ptr": 704786976,
+      "green_handle": 689223440,
+      "stream_owner_verified": true,
+      "smids": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        16,
+        17,
+        18,
+        19,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "actual_sms": 32,
+      "stream_ptr": 671723408,
+      "green_handle": 705382880,
+      "stream_owner_verified": true,
+      "smids": [
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15,
+        20,
+        21,
+        22,
+        23,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    }
+  ],
+  "native_validation": {
+    "observed_disjoint": true,
+    "observed_sm_counts": [
+      16,
+      32
+    ],
+    "assigned_sm_counts": [
+      16,
+      32
+    ],
+    "global_reservation_claimed": false
+  },
+  "pytorch_results": [
+    {
+      "partition": 0,
+      "correct": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "partition": 1,
+      "correct": true,
+      "max_abs_error": 0.0
+    }
+  ]
+}

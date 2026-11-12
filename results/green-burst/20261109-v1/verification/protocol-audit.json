@@ -1,0 +1,702 @@
+[
+  {
+    "run": "default-post-warmup",
+    "kind": "warmup",
+    "state": "PASS",
+    "counts": {
+      "qwen": 3,
+      "yolo": 30
+    },
+    "overall_completion_ms": 66952.625679,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 3,
+        "captured": 3,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 30,
+        "captured": 30,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "default-pre-warmup",
+    "kind": "warmup",
+    "state": "PASS",
+    "counts": {
+      "qwen": 3,
+      "yolo": 30
+    },
+    "overall_completion_ms": 66291.137162,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 3,
+        "captured": 3,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 30,
+        "captured": 30,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q16-y32-warmup",
+    "kind": "warmup",
+    "state": "PASS",
+    "counts": {
+      "qwen": 3,
+      "yolo": 30
+    },
+    "overall_completion_ms": 66208.85556,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 3,
+        "captured": 3,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 30,
+        "captured": 30,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q24-y24-warmup",
+    "kind": "warmup",
+    "state": "PASS",
+    "counts": {
+      "qwen": 3,
+      "yolo": 30
+    },
+    "overall_completion_ms": 67203.206626,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 3,
+        "captured": 3,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 30,
+        "captured": 30,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q32-y16-warmup",
+    "kind": "warmup",
+    "state": "PASS",
+    "counts": {
+      "qwen": 3,
+      "yolo": 30
+    },
+    "overall_completion_ms": 66937.193663,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 3,
+        "captured": 3,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 30,
+        "captured": 30,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q40-y8-warmup",
+    "kind": "warmup",
+    "state": "PASS",
+    "counts": {
+      "qwen": 3,
+      "yolo": 30
+    },
+    "overall_completion_ms": 67011.220878,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 3,
+        "captured": 3,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 30,
+        "captured": 30,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q8-y40-warmup",
+    "kind": "warmup",
+    "state": "PASS",
+    "counts": {
+      "qwen": 3,
+      "yolo": 30
+    },
+    "overall_completion_ms": 69527.108285,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 3,
+        "captured": 3,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 30,
+        "captured": 30,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "default-post-r0",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 122705.241218,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "default-post-r1",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 122861.717664,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "default-post-r2",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 122819.648707,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "default-pre-r0",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 122642.658532,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "default-pre-r1",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 122611.994587,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "default-pre-r2",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 122586.984034,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q16-y32-r0",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 121236.294882,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q16-y32-r1",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 121238.82243,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q16-y32-r2",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 121193.970102,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q24-y24-r0",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 124492.001991,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q24-y24-r1",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 124649.084891,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q24-y24-r2",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 124520.184551,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q32-y16-r0",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 125627.731306,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q32-y16-r1",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 125761.419234,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q32-y16-r2",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 125472.875397,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q40-y8-r0",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 128084.001405,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q40-y8-r1",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 127880.492404,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q40-y8-r2",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 128045.457028,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q8-y40-r0",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 131747.16712,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q8-y40-r1",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 131645.793376,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  },
+  {
+    "run": "q8-y40-r2",
+    "kind": "results",
+    "state": "PASS",
+    "counts": {
+      "qwen": 10,
+      "yolo": 300
+    },
+    "overall_completion_ms": 132061.208496,
+    "negative_residual_ids": [],
+    "publications": {
+      "qwen": {
+        "expected": 10,
+        "captured": 10,
+        "complete": true,
+        "ack_failed": 0
+      },
+      "yolo": {
+        "expected": 300,
+        "captured": 300,
+        "complete": true,
+        "ack_failed": 0
+      }
+    }
+  }
+]

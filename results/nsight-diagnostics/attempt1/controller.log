@@ -1,0 +1,41 @@
+configmap/cj-nsys-diagnostics created
+deployment.apps/qwen configured
+deployment.apps/yolo configured
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+deployment.apps/qwen patched
+deployment.apps/yolo patched
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+configmap "cj-nsys-diagnostics" deleted from cj-inference namespace
+{
+  "state": "FAIL",
+  "phase": "complete",
+  "started_at_utc": "2026-11-03T08:10:40.113164+00:00",
+  "scope": "diagnostic only, not a performance baseline",
+  "reports": {},
+  "error": "CalledProcessError(1, ['python3', '/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/generated/bench_profile.py', '--models', 'both', '--output', '/home/avees/cj-nsys-diagnostics/20261103-v1/clients/warmup', '--samples', '1', '--warmup', '5', '--max-new-tokens', '128', '--timing-mode', 'tokens'])",
+  "baseline_restored": true,
+  "finished_at_utc": "2026-11-03T08:14:56.982257+00:00"
+}
+Traceback (most recent call last):
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 294, in <module>
+    main()
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 143, in main
+    bench("warmup", "both", 1, 5)
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 95, in bench
+    execute(
+  File "/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/run.py", line 47, in execute
+    return subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', '/home/avees/cj-nsys-diagnostics/20261103-v1/scripts/generated/bench_profile.py', '--models', 'both', '--output', '/home/avees/cj-nsys-diagnostics/20261103-v1/clients/warmup', '--samples', '1', '--warmup', '5', '--max-new-tokens', '128', '--timing-mode', 'tokens']' returned non-zero exit status 1.

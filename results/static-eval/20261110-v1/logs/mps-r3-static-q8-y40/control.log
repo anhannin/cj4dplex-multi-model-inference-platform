@@ -1,0 +1,94 @@
+[2026-11-10 04:54:38.705 Control 240117] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 04:54:38.705 Control 240117] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 04:54:38.705 Control 240117] CUDA MPS Control binary version: 13020
+[2026-11-10 04:54:38.706 Control 240117] Accepting connection...
+[2026-11-10 04:54:38.706 Control 240117] NEW UI
+[2026-11-10 04:54:38.707 Control 240117] Cmd:get_server_list
+[2026-11-10 04:54:38.707 Control 240117] UI closed
+[2026-11-10 04:54:38.727 Control 240117] Accepting connection...
+[2026-11-10 04:54:38.727 Control 240117] NEW UI
+[2026-11-10 04:54:38.727 Control 240117] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 4
+[2026-11-10 04:54:38.742 Control 240117] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/QRAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:54:38.742 Control 240117] UI closed
+[2026-11-10 04:54:38.744 Control 240117] Accepting connection...
+[2026-11-10 04:54:38.744 Control 240117] NEW UI
+[2026-11-10 04:54:38.744 Control 240117] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 20
+[2026-11-10 04:54:38.744 Control 240117] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/vu/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 04:54:38.744 Control 240117] UI closed
+[2026-11-10 04:54:38.746 Control 240117] Accepting connection...
+[2026-11-10 04:54:38.746 Control 240117] NEW UI
+[2026-11-10 04:54:38.746 Control 240117] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 04:54:38.746 Control 240117] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 04:54:38.746 Control 240117] Failed to create partition
+[2026-11-10 04:54:38.746 Control 240117] UI closed
+[2026-11-10 04:54:39.624 Control 240117] Accepting connection...
+[2026-11-10 04:54:39.624 Control 240117] User did not send valid credentials
+[2026-11-10 04:54:39.624 Control 240117] Accepting connection...
+[2026-11-10 04:54:39.624 Control 240117] NEW CLIENT 240479 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 04:54:39.624 Control 240484] Starting new server 240484 for user 1000
+[2026-11-10 04:54:39.627 Control 240117] Accepting connection...
+[2026-11-10 04:54:39.948 Control 240117] NEW SERVER 240484: Ready
+[2026-11-10 04:54:39.948 Control 240117] Accepting connection...
+[2026-11-10 04:54:39.948 Control 240117] User did not send valid credentials
+[2026-11-10 04:54:39.948 Control 240117] Accepting connection...
+[2026-11-10 04:54:39.948 Control 240117] NEW CLIENT 240499 from user 1000: Server already exists
+[2026-11-10 04:54:40.773 Control 240117] Accepting connection...
+[2026-11-10 04:54:40.773 Control 240117] User did not send valid credentials
+[2026-11-10 04:54:40.773 Control 240117] Accepting connection...
+[2026-11-10 04:54:40.773 Control 240117] NEW CLIENT 240361 from user 1000: Server already exists
+[2026-11-10 04:54:40.808 Control 240117] Accepting connection...
+[2026-11-10 04:54:40.808 Control 240117] User did not send valid credentials
+[2026-11-10 04:54:40.808 Control 240117] Accepting connection...
+[2026-11-10 04:54:40.808 Control 240117] NEW CLIENT 240309 from user 1000: Server already exists
+[2026-11-10 04:54:40.816 Control 240117] Accepting connection...
+[2026-11-10 04:54:40.817 Control 240117] NEW CLIENT 240361 from user 1000: Server already exists
+[2026-11-10 04:54:40.857 Control 240117] Accepting connection...
+[2026-11-10 04:54:40.857 Control 240117] NEW CLIENT 240309 from user 1000: Server already exists
+[2026-11-10 04:56:34.666 Control 240117] Accepting connection...
+[2026-11-10 04:56:34.666 Control 240117] NEW UI
+[2026-11-10 04:56:34.666 Control 240117] Cmd:get_server_list
+[2026-11-10 04:56:34.666 Control 240117] 240484
+[2026-11-10 04:56:34.666 Control 240117] UI closed
+[2026-11-10 04:56:34.667 Control 240117] Accepting connection...
+[2026-11-10 04:56:34.668 Control 240117] NEW UI
+[2026-11-10 04:56:34.668 Control 240117] Cmd:get_client_list 240484
+[2026-11-10 04:56:34.668 Control 240117] 240361
+[2026-11-10 04:56:34.668 Control 240117] 240309
+[2026-11-10 04:56:34.668 Control 240117] UI closed
+[2026-11-10 04:57:45.799 Control 240117] Accepting connection...
+[2026-11-10 04:57:45.799 Control 240117] NEW UI
+[2026-11-10 04:57:45.799 Control 240117] Cmd:get_server_list
+[2026-11-10 04:57:45.799 Control 240117] 240484
+[2026-11-10 04:57:45.799 Control 240117] UI closed
+[2026-11-10 04:57:45.800 Control 240117] Accepting connection...
+[2026-11-10 04:57:45.800 Control 240117] NEW UI
+[2026-11-10 04:57:45.800 Control 240117] Cmd:get_client_list 240484
+[2026-11-10 04:57:45.800 Control 240117] 240361
+[2026-11-10 04:57:45.800 Control 240117] 240309
+[2026-11-10 04:57:45.800 Control 240117] UI closed
+[2026-11-10 04:59:44.440 Control 240117] Accepting connection...
+[2026-11-10 04:59:44.440 Control 240117] NEW UI
+[2026-11-10 04:59:44.440 Control 240117] Cmd:get_server_list
+[2026-11-10 04:59:44.440 Control 240117] 240484
+[2026-11-10 04:59:44.440 Control 240117] UI closed
+[2026-11-10 04:59:44.442 Control 240117] Accepting connection...
+[2026-11-10 04:59:44.442 Control 240117] NEW UI
+[2026-11-10 04:59:44.442 Control 240117] Cmd:get_client_list 240484
+[2026-11-10 04:59:44.442 Control 240117] 240361
+[2026-11-10 04:59:44.442 Control 240117] 240309
+[2026-11-10 04:59:44.442 Control 240117] UI closed
+[2026-11-10 04:59:46.271 Control 240117] Accepting connection...
+[2026-11-10 04:59:46.271 Control 240117] NEW UI
+[2026-11-10 04:59:46.271 Control 240117] Cmd:get_server_list
+[2026-11-10 04:59:46.271 Control 240117] 240484
+[2026-11-10 04:59:46.271 Control 240117] UI closed
+[2026-11-10 04:59:46.272 Control 240117] Accepting connection...
+[2026-11-10 04:59:46.272 Control 240117] NEW UI
+[2026-11-10 04:59:46.272 Control 240117] Cmd:get_client_list 240484
+[2026-11-10 04:59:46.272 Control 240117] UI closed
+[2026-11-10 04:59:46.273 Control 240117] Accepting connection...
+[2026-11-10 04:59:46.273 Control 240117] NEW UI
+[2026-11-10 04:59:46.273 Control 240117] Cmd:quit
+[2026-11-10 04:59:46.273 Control 240117] Try shutting down server 240484, backoff is disabled
+[2026-11-10 04:59:46.351 Control 240117] Server 240484 exited with status 0
+[2026-11-10 04:59:46.351 Control 240117] Exit with status 0

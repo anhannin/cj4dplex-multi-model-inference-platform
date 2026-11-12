@@ -1,0 +1,5 @@
+# Large binary evidence is retained locally and on Spark, not in Git.
+*.nsys-rep
+*.sqlite
+*.qdstrm
+*.tar

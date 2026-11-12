@@ -1,0 +1,8 @@
+{
+  "ssh": "PASS",
+  "boot_id_changed": true,
+  "new_boot_id": "9fa36866-9b0e-423c-af4b-720fd4f0a3cf",
+  "old_boot_id": "65880fec-ccf9-48b6-9bef-4021ce796781",
+  "kernel": "7.0.0-1025-nvidia",
+  "elapsed_seconds": 40.3
+}

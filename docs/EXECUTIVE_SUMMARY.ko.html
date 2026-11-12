@@ -1,0 +1,34 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>CJ4DPLEX Executive Summary</title><style>
+@page{size:A4;margin:15mm 16mm}body{font-family:'Noto Sans CJK JP',sans-serif;color:#172530;font-size:10pt;line-height:1.55;margin:0}section{break-after:page}section:last-child{break-after:auto}h1{font-size:20pt;margin:0 0 4mm}h2{font-size:13pt;margin:0 0 3mm}h3{font-size:11pt;margin:4mm 0 1.8mm;color:#235d76}p{margin:1.8mm 0}.bullet{margin:1.2mm 0}table{width:100%;border-collapse:collapse;font-size:9.5pt;margin:3mm 0}td{border:1px solid #bdc8cf;padding:2mm}tr:first-child{background:#e9f0f4;font-weight:700}strong{font-weight:700}footer{margin-top:3mm;font-size:8pt;color:#526570}
+</style><section><h1>Executive Summary</h1>
+<h2>하나의 GPU에서 두 AI 서비스의 간섭을 줄이는 운영 정책</h2>
+<p><strong>CJ 4DPLEX AI Platform 개발 사전과제 | 안하민 | 2026-11-12</strong></p>
+<h3>문제와 목표</h3>
+<p>한 대의 DGX Spark에서 문장을 생성하는 Qwen3.5-9B와 이미지를 검출하는 YOLO26l을 함께 운영했다. 모델 정확도 향상이 아니라, 서로 다른 AI 작업이 같은 GPU를 쓸 때 생기는 지연을 측정하고 안정적으로 요청을 처리하는 것이 목표다.</p>
+<p>주요 시나리오는 <strong>Qwen10건·YOLO300건이 한꺼번에 제출되는 제작 작업 묶음</strong>이다. 실제 회사 트래픽을 수집한 것은 아니다. Qwen 전체 응답시간을 악화시키지 않으면서 YOLO의 늦은 응답(p95)을20% 이상 줄이는 상대 목표를 합의했다. Burst 결과를 탐색한 뒤 목표를 정했다는 점을 밝히며 사전등록된 독립 검증처럼 설명하지 않는다.</p>
+<h3>접근 방법</h3>
+<p class="bullet">• 두 모델을 별도 컨테이너·Kubernetes Pod로 배포하고, 모델별 독립 대기열과 Worker를 사용했다.</p>
+<p class="bullet">• 요청별 전체 지연, 대기시간, 모델 호출, GPU forward 구간과 자원·로그를 수집했다.</p>
+<p class="bullet">• 최적화 없음·일반 MPS·고정 SM 분할5개 조합을 같은 환경에서 각각5회 비교했다.</p>
+<p class="bullet">• 생성의 Prefill은 많은 SM에서 빨라졌지만 반복 Decode는 SM 수에 비례해 빨라지지 않았다. 이를 근거로 <strong>Qwen8 / YOLO40 SM</strong> 분배를 검증했다. 단순히 GPU 공유 기능을 켠 것만으로 개선됐다고 주장하지 않는다.</p>
+<h3>주요 결과 — 최적화 없음 대비</h3>
+<table>
+<tr><td>Burst 지표</td><td>최적화 없음</td><td>고정8/40</td><td>변화</td></tr>
+<tr><td>YOLO300건 전체 완료 평균</td><td>16.322초</td><td>11.592초</td><td><strong>28.98% 단축</strong></td></tr>
+<tr><td>YOLO 요청 E2E p95</td><td>14.963초</td><td>10.674초</td><td><strong>28.66% 감소</strong></td></tr>
+<tr><td>Qwen 요청 E2E p95</td><td>113.299초</td><td>111.876초</td><td>약1.26% 감소</td></tr>
+</table>
+<p>p95는 요청95%가 해당 시간 이내에 완료됐음을 나타내는 기술통계다. Burst p95는 조건별 요청을 합친 분포이며 실행 반복 단위는5회다. 전체 요청묶음 완료시간은 약1.30%만 줄었으므로 대폭적인 전체 처리량 개선으로 과장하지 않는다.</p><footer>CJ 4DPLEX AI Platform · 안하민 · 1/2</footer></section><section><h3>최적화의 적용 범위</h3>
+<p>최종 비교는 같은 입력·출력·Queue·Worker를 유지한 7조건 × 5회 Burst다. 본측정 10,850건과 워밍업 1,155건의 응답을 구분해 검증했다. 요청을 버리거나 모델 batch 크기를 늘려 작업량을 줄인 결과가 아니다.</p>
+<p class="bullet">• 측정한 분할 후보 중 8/40이 Qwen 전체 응답 유지와 YOLO 지연 개선에 유리했다. 모든 입력·업무·지표의 유일한 최적해라는 뜻은 아니다.</p>
+<p class="bullet">• YOLO가 먼저 끝나므로 전체 측정시간 내내 두 모델이 계속 경합한 것은 아니다. 다른 요청 도착 패턴·장기 운영으로 결과를 확대하지 않는다.</p>
+<p class="bullet">• SLO는 탐색 후 정한 상대 기준이며 관측 통과를 독립 검증된 운영 보장으로 설명하지 않는다.</p>
+<h3>비용과 운영 리스크</h3>
+<p>SM을 적게 받은 Qwen의 내부 첫 토큰 생성시간 평균은 <strong>188→472ms</strong>로 악화됐다. 최종 응답이 비슷하게 유지됐다는 사실이 첫 반응까지 유지됐다는 뜻은 아니다. 또한 단일 YOLO 모델 호출의 p95는 8/40보다 16/32가 낮았다. 최종 완료·첫 반응·개별 tail 중 무엇을 우선하는지에 따라 정책 선택이 달라진다.</p>
+<p>GPU 공유는 메모리·대역폭·장애의 완전한 격리를 제공하지 않는다. UUID 응답 채널은 요청 혼선 방지이며 보안 인증이 아니다. 신뢰된 단일 호스트의 실험이며 외부 공개 서비스의 SLA나 장기 가용성을 보증하지 않는다.</p>
+<h3>장애 대응과 검증 범위</h3>
+<p>YOLO 자신의 CUDA 작업이 유휴이고 큐가 비었음을 확인한 뒤 Node를 강제 종료하고 <strong>Kubernetes 기본 재시작</strong>을 검증했다. 3회에서 종료 신호 직전부터 첫 정상 결과 수신까지 <strong>4.163~4.504초</strong>였다. 직접 만든 복구 최적화나 무중단 서비스 성과가 아니다. 진행 중 요청 보존, GPU 실행 중 장애, 반복 CrashLoop는 검증하지 않았다.</p>
+<h3>결론과 활용</h3>
+<p>하나의 GPU에서 모델별 자원 민감도를 측정하고 실행 정책을 바꾸면, 언어 모델의 전체 응답시간을 유지하면서 CV 대기와 완료시간을 줄일 수 있었다. 동시에 첫 토큰 비용과 고정 자원 배분·입력 범위의 한계를 공개해 정책의 적용 범위를 구분했다.</p>
+<p>기존 운영 배포는 원래 설정으로 복구했다. 8/40은 검토 가능한 후보이며 사용자 승인 없이 상시 운영 설정을 바꾸지 않았다. 다음 단계는 실제 업무 입력과 우선순위에 맞춘 독립 검증, 필요한 health·요청 보존 수준 결정이다.</p>
+<p><strong>산출물:</strong> 소스·설정·재현 안내·구성도·기술 보고서·원시 결과 및 감사 기록. 모델/OSS/AI 보조 범위와 권리 미확정 사항은 별도 고지했다. 상세: 기술 보고서.</p><footer>CJ 4DPLEX AI Platform · 안하민 · 2/2</footer></section></html>

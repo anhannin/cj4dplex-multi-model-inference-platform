@@ -1,0 +1,12 @@
+[
+  {
+    "candidate": "trt-dds",
+    "label": "factorial-00-trt-dds",
+    "status": "PASS"
+  },
+  {
+    "candidate": "dds-mps-q50",
+    "label": "factorial-01-dds-mps-q50",
+    "status": "PASS"
+  }
+]

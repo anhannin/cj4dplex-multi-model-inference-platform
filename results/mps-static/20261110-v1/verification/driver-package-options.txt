@@ -1,0 +1,33 @@
+linux-modules-nvidia-595-open-6.17.0-1031-nvidia:
+  Installed: (none)
+  Candidate: 6.17.0-1031.31
+  Version table:
+     6.17.0-1031.31 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages
+        500 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages
+nvidia-open-590:
+  Installed: (none)
+  Candidate: (none)
+  Version table:
+cuda-compat-13-1:
+  Installed: (none)
+  Candidate: 590.48.01-0ubuntu1
+  Version table:
+     590.48.01-0ubuntu1 500
+        500 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  Packages
+     590.44.01-0ubuntu1 500
+        500 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  Packages
+nvidia-compute-utils-590:
+  Installed: (none)
+  Candidate: 590.48.01-0ubuntu0.24.04.5
+  Version table:
+     590.48.01-0ubuntu0.24.04.5 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages
+        500 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages
+nvidia-compute-utils-595:
+  Installed: (none)
+  Candidate: 595.99.02-0ubuntu0.24.04.1
+  Version table:
+     595.99.02-0ubuntu0.24.04.1 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages
+        500 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages

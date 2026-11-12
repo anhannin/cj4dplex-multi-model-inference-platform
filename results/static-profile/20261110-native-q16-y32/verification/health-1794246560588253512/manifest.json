@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "run_id": "health-1794246560588253512_85411af7",
+  "models": [
+    "qwen",
+    "yolo"
+  ],
+  "samples_minimum": 1,
+  "warmup_per_model": 1,
+  "max_new_tokens": 8,
+  "timing_mode": "tokens",
+  "prompts": [
+    "Explain GPU resource contention in six concise bullet points.",
+    "Describe the responsibilities of an AI model serving platform in six bullet points.",
+    "Explain why queue waiting time increases under heavy request traffic.",
+    "Describe how to compare two inference systems fairly using latency and throughput.",
+    "Explain the differences between a language model workload and an object detection workload."
+  ],
+  "images": [
+    {
+      "name": "bus.jpg",
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63"
+    },
+    {
+      "name": "zidane.jpg",
+      "sha256": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb"
+    }
+  ],
+  "concurrency_per_model": 1,
+  "load": "closed-loop; YOLO continues until Qwen completes in both mode",
+  "e2e_boundary": "before request JSON encoding/publish -> matching response parsed",
+  "excluded": [
+    "initial discovery",
+    "input image read/base64",
+    "output image drawing/saving"
+  ],
+  "percentile_method": "linear interpolation (n-1)*p",
+  "start_wall_ns": 1794246560699468036,
+  "measurement_seconds": {
+    "qwen": 0.770344354,
+    "yolo": 0.769995383
+  },
+  "state": "PASS",
+  "setup_discovery_ms": 101.216213,
+  "end_wall_ns": 1794246593482959820
+}

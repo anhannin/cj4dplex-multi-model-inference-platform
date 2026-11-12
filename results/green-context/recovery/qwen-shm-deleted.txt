@@ -1,0 +1,8 @@
+fc16ac469000-fc16ac4f0000 rw-s 00000000 00:1e 14977                      /dev/shm/fastrtps_8a39dde23fa9aa1f (deleted)
+fc16b9803000-fc16b9810000 rw-s 00000000 00:1e 14970                      /dev/shm/fastrtps_port17911 (deleted)
+fc16b9833000-fc16b9840000 rw-s 00000000 00:1e 14973                      /dev/shm/fastrtps_port7000 (deleted)
+fc16b9f62000-fc16b9f63000 rw-s 00000000 00:1e 14996                      /dev/shm/sem.3R6oxc (deleted)
+fc16b9f63000-fc16b9f70000 rw-s 00000000 00:1e 14449                      /dev/shm/fastrtps_port7001 (deleted)
+fc16ba011000-fc16ba01e000 rw-s 00000000 00:1e 14442                      /dev/shm/fastrtps_port17913 (deleted)
+fc16ba01f000-fc16ba020000 r--s 00000000 00:1e 14421                      /dev/shm/lttng-ust-wait-8-1000 (deleted)
+fc16ba049000-fc16ba04a000 r--s 00000000 00:1e 3                          /dev/shm/lttng-ust-wait-8

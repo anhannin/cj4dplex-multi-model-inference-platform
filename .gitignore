@@ -40,3 +40,10 @@ local_ros2/.pixi/
 **/triton/
 
 *.tar.zst
+
+# Profiler binaries remain local; portable exports, logs and summaries are tracked.
+*.nsys-rep
+*.ncu-rep
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

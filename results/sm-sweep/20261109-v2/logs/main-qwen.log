@@ -1,0 +1,33 @@
+/usr/local/lib/python3.12/dist-packages/torch/backends/cuda/__init__.py:131: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /opt/pytorch/pytorch/aten/src/ATen/Context.cpp:80.)
+  return torch._C._get_cublas_allow_tf32()
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights: 100%|██████████| 760/760 [00:00<00:00, 10383.80it/s]
+{"event": "model_loaded", "model": "qwen"}
+{"event": "point_start", "sm_count": 48, "backend": "default", "round": -1}
+{"event": "point_complete", "sm_count": 48, "round": -1, "samples": 5}
+{"event": "point_start", "sm_count": 24, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 24, "round": 0, "samples": 15}
+{"event": "point_start", "sm_count": 40, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 40, "round": 0, "samples": 15}
+{"event": "point_start", "sm_count": 48, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 48, "round": 0, "samples": 15}
+{"event": "point_start", "sm_count": 32, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 32, "round": 0, "samples": 15}
+{"event": "point_start", "sm_count": 8, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 8, "round": 0, "samples": 15}
+{"event": "point_start", "sm_count": 16, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 16, "round": 0, "samples": 15}
+{"event": "point_start", "sm_count": 16, "backend": "green", "round": 1}
+{"event": "point_complete", "sm_count": 16, "round": 1, "samples": 15}
+{"event": "point_start", "sm_count": 8, "backend": "green", "round": 1}
+{"event": "point_complete", "sm_count": 8, "round": 1, "samples": 15}
+{"event": "point_start", "sm_count": 32, "backend": "green", "round": 1}
+{"event": "point_complete", "sm_count": 32, "round": 1, "samples": 15}
+{"event": "point_start", "sm_count": 48, "backend": "green", "round": 1}
+{"event": "point_complete", "sm_count": 48, "round": 1, "samples": 15}
+{"event": "point_start", "sm_count": 40, "backend": "green", "round": 1}
+{"event": "point_complete", "sm_count": 40, "round": 1, "samples": 15}
+{"event": "point_start", "sm_count": 24, "backend": "green", "round": 1}
+{"event": "point_complete", "sm_count": 24, "round": 1, "samples": 15}
+{"event": "point_start", "sm_count": 48, "backend": "default", "round": 2}
+{"event": "point_complete", "sm_count": 48, "round": 2, "samples": 5}
+{"state": "PASS", "output": "/experiment/results/main-qwen"}

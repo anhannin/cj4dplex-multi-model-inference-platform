@@ -1,0 +1,20 @@
+Creating new Ultralytics Settings v0.0.8 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/tmp/yolo/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings
+{"event": "model_loaded", "model": "yolo"}
+{"event": "point_start", "sm_count": 48, "backend": "default", "round": -1}
+{"event": "point_complete", "sm_count": 48, "round": -1, "samples": 1}
+{"event": "point_start", "sm_count": 48, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 48, "round": 0, "samples": 1}
+{"event": "point_start", "sm_count": 8, "backend": "green", "round": 0}
+{"event": "point_complete", "sm_count": 8, "round": 0, "samples": 1}
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-a9a5.qdstrm'
+[1/1] [0%                          ] pilot-yolo.nsys-repProcessing events...
+[1/1] [0%                          ] pilot-yolo.nsys-rep[1/1] [===================82%      ] pilot-yolo.nsys-rep[1/1] [========================100%] pilot-yolo.nsys-rep[1/1] [========================100%] pilot-yolo.nsys-rep
+{"event": "point_start", "sm_count": 48, "backend": "default", "round": 1}
+{"event": "point_complete", "sm_count": 48, "round": 1, "samples": 1}
+{"state": "PASS", "output": "/experiment/validation/pilot-yolo"}
+Generated:
+	/experiment/validation/pilot-yolo.nsys-rep

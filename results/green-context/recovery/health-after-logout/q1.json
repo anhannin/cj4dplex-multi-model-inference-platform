@@ -1,0 +1,31 @@
+{
+  "timing_schema": 1,
+  "timings_ms": {
+    "envelope_parse_ms": 0.3999704495072365,
+    "template_tokenize_ms": 0.436226,
+    "input_transfer_ms": 0.184032,
+    "generate_wall_ms": 11626.645916,
+    "output_decode_ms": 0.266513,
+    "callback_to_result_ready_ms": 11628.218434751034
+  },
+  "sequence": 5,
+  "request_id": "r_8d0bc9d98435419d8ddfb27dd0d8da52",
+  "queue_wait_ms": 0.2724491059780121,
+  "run_id": "",
+  "timing_mode": "basic",
+  "input_tokens": 24,
+  "status": "ok",
+  "text": "Here is a detailed explanation of GPU resource contention in six key points:\n\n*   **Memory Bandwidth Saturation**: When multiple processes or threads attempt to access the GPU's high-speed memory (HBM or GDDR) simultaneously, they compete for the limited memory bus width. This creates a bottleneck where data transfer rates drop significantly, causing threads to stall while waiting for data to be fetched or written, effectively reducing overall throughput.\n*   **Register File Exhaustion**: Each thread in a warp or wavefront requires a specific number of registers to store local variables. If a kernel launches too many threads or uses excessive local variables, the",
+  "output_tokens": 128,
+  "generation_mode": "bounded",
+  "effective_max_new_tokens": 128,
+  "context_limit": 262144,
+  "finish_reason": "length",
+  "processing_ms": 11627.945105545223,
+  "client_timings_ms": {
+    "request_e2e_ms": 11630.523403,
+    "response_parse_ms": 0.028256,
+    "prepare_ms": 57.502851,
+    "setup_discovery_ms": 650.599701
+  }
+}

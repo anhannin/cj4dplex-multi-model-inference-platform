@@ -1,0 +1,3 @@
+Get:1 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-compat-13-1 590.48.01-0ubuntu1 [86.6 MB]
+Get:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnvidia-compute 590.48.01-0ubuntu1 [74.0 MB]
+Fetched 161 MB in 16s (9754 kB/s)

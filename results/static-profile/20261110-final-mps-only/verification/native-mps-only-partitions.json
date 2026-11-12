@@ -1,0 +1,15 @@
+{
+  "case": {
+    "label": "native-mps-only",
+    "condition": "mps-only",
+    "mps": true,
+    "static": false,
+    "green": false,
+    "qsm": 48,
+    "ysm": 48
+  },
+  "parts": {},
+  "native_driver": true,
+  "green": false,
+  "actual_chunk_sms": 2
+}

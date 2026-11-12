@@ -1,0 +1,33 @@
+{
+  "state": "PASS",
+  "source": "docs/TECHNICAL_REPORT.ko.md",
+  "source_sha256": "d1bd22dd14e62f7ae6471666c27841e5f1299cdcaaa16c706b6162fd75b47664",
+  "pdf": "docs/TECHNICAL_REPORT.ko.pdf",
+  "pdf_sha256": "1df8698a18f571dd1bca4cbfbbab6c44518455177d9d8805838b1e3c6f33f077",
+  "pages": 11,
+  "page_size": "A4",
+  "bytes": 903776,
+  "embedded_diagram": "Mermaid rendered SVG",
+  "embedded_data_figures": 2,
+  "text_checks": [
+    "문제 정의",
+    "Baseline 측정",
+    "Bottleneck 분석",
+    "가설 수립 및 검증",
+    "최적화 결과",
+    "Trade-off 분석",
+    "장애 대응",
+    "한계 및 개선 방향",
+    "결론"
+  ],
+  "reviewed_pages": [
+    1,
+    2,
+    8,
+    11
+  ],
+  "renderer": "Google Chrome 148.0.7778.178",
+  "tools": "temporary Marked12.0.2+Mermaid10.9.3, no project dependency changes",
+  "markdown_changed": false,
+  "new_gpu_runs": false
+}

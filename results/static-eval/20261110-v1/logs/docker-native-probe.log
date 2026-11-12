@@ -1,0 +1,5 @@
+qwen 0 {"cuda_runtime": 13010, "torch_build_cuda": "13.0", "sms": 16, "sum": 1024.0}
+
+yolo 0 {"cuda_runtime": 13010, "torch_build_cuda": "13.0", "sms": 32, "sum": 1024.0}
+
+NATIVE_DOCKER_TWO_CLIENT_PASS

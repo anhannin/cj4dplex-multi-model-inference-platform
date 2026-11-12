@@ -1,0 +1,3 @@
+{"stage": "warmup_done", "counts": {"qwen": 1, "yolo": 1}}
+{"stage": "measurement_done", "counts": {"qwen": 1, "yolo": 24}}
+{"state": "PASS", "output": "/home/avees/cj-green-burst/20261109-v1/verification/health-1794228640115128552"}

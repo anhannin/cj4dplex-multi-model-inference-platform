@@ -1,0 +1,23 @@
+{
+  "state": "PASS",
+  "models": {
+    "qwen": {
+      "template_matches_backup": true,
+      "ready": true,
+      "restart_count": 0,
+      "image_id": "sha256:d4a616af01248e7284de73a326abe0f1e1fec02ea16c66abda1550e4dfe5b313",
+      "source_sha256": "3cff3b3d48b3316bf5c070cae85431477e729d6d68abad0fb09fdd05927649ac",
+      "command": "python /app/ros2/qwen_node.py "
+    },
+    "yolo": {
+      "template_matches_backup": true,
+      "ready": true,
+      "restart_count": 0,
+      "image_id": "sha256:307b93e7372e1c520a3055dca0531aaa6e71124ed8eb44a225514355198f5625",
+      "source_sha256": "748373c3a06917ff2a029e2d6748c0dd7fa3a98466492d89ac3b14b76015656c",
+      "command": "python /app/ros2/yolo_node.py "
+    }
+  },
+  "mps_daemon_running": false,
+  "temporary_configmap_removed": true
+}

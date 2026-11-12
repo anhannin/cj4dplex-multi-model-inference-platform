@@ -1,0 +1,6 @@
+2026-11-09T20:48:27+09:00
+Linux spark-e6d6 6.17.0-1031-nvidia #31-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 24 22:03:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+name, uuid, driver_version, compute_cap, compute_mode
+NVIDIA GB10, GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc, 580.173.02, 12.1, Default
+sha256:d4a616af01248e7284de73a326abe0f1e1fec02ea16c66abda1550e4dfe5b313
+sha256:307b93e7372e1c520a3055dca0531aaa6e71124ed8eb44a225514355198f5625

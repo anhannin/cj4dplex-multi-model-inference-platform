@@ -1,0 +1,62 @@
+{
+  "mps_server_host_pid": 358487,
+  "mps_clients_host_pid": [
+    359146,
+    359149
+  ],
+  "scheduler_clock": {
+    "anchors": 69,
+    "base_trace_ns": 1794258484183796583,
+    "base_host_ns": 13076459269467,
+    "slope": 0.9999988096556441,
+    "intercept_relative_ns": 77309.93425369263,
+    "max_midpoint_residual_ns": 77310.0,
+    "max_anchor_bracket_ns": 186096.0,
+    "empirical_alignment_error_ns": 170358.0,
+    "note": "empirical anchor-fit/bracket tolerance, not a hardware clock accuracy guarantee"
+  },
+  "context_events": 21,
+  "internal_sequence_gaps": 0,
+  "context_attribution_note": "This driver attributes MPS scheduling events to member client PIDs, not the server PID. Membership verified separately; never infer attribution from server name alone.",
+  "context_pids": [
+    0,
+    359149
+  ],
+  "mps_associated_hardware_resident_ms": 20036.69596,
+  "cross_model_kernel_overlap_in_mps_hardware_residence_ms": 1750.926057,
+  "overlap_away_from_context_transitions_200us_ms": 1750.896041,
+  "conservative_overlap_in_uninterrupted_mps_residence_ms": 29.014596,
+  "device_metrics": {
+    "6": {
+      "samples": 200415,
+      "mean_percent": 99.71684255170521,
+      "max_percent": 100
+    },
+    "7": {
+      "samples": 200415,
+      "mean_percent": 95.73904148891052,
+      "max_percent": 100
+    },
+    "8": {
+      "samples": 200415,
+      "mean_percent": 6.3253648678991095,
+      "max_percent": 48
+    },
+    "9": {
+      "samples": 200415,
+      "mean_percent": 1.5502282763266222,
+      "max_percent": 81
+    },
+    "16": {
+      "samples": 200415,
+      "mean_percent": 25.526317890377467,
+      "max_percent": 99
+    }
+  },
+  "note": "Kernel start/end overlap inside uninterrupted MPS-associated GPU hardware-context residence, with verified two actual-model clients. Aggregate metrics are not attributed to individual processes. Static partition IDs and per-client visible SM counts verified; no Green API used. Process membership captured before warmup and host PIDs reconfirmed at capture start."
+}
+Traceback (most recent call last):
+  File "/home/avees/cj-static-profile/20261110-final-mps-only/src/debug-analysis.py", line 108, in <module>
+    assert duration(conservative) > 50_000_000, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: No substantial overlap under shared server residence

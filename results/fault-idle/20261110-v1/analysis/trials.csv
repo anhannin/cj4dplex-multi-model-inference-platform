@@ -1,0 +1,4 @@
+trial,detect_observed_ms,container_start_observed_ms,ready_observed_ms,first_valid_response_ms,probe_e2e_ms,probe_publish_after_fault_ms,observer_max_query_ms,same_pod_uid,new_container,restart_count,exit_code,mps_server_unchanged,qwen_host_pid_unchanged
+0,745.692606,1252.729384,8257.675978,4503.881406,4499.980524,3.900882,57.585619,True,True,1,137,True,True
+1,999.417647,1254.343595,6505.886573,4504.094511,4498.547727,5.546784,58.563706,True,True,1,137,True,True
+2,492.560233,997.059368,6497.966813,4162.603897,4160.906682,1.697215,53.251915,True,True,1,137,True,True

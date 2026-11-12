@@ -1,0 +1,2 @@
+595.99.02
+Canonical Ltd. Kernel Module Signing

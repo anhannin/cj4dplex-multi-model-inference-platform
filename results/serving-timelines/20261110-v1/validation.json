@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "rounds": 5,
+  "settings": 3,
+  "requests_per_setting_per_round": {
+    "qwen": 10,
+    "yolo": 300
+  },
+  "validated_requests": 4650,
+  "selection": "round0fixedforPNGS;all5inHTML;notaveragetimeline",
+  "no_new_experiments": true
+}

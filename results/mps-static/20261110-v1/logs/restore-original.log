@@ -1,0 +1,4 @@
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+deployment "yolo" successfully rolled out
+{"state": "PASS", "start_wall_ns": 1794243604794916637, "end_wall_ns": 1794243771525101037}

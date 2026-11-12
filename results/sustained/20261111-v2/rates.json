@@ -1,0 +1,40 @@
+{
+  "rates": [
+    8,
+    15
+  ],
+  "pilot": [
+    {
+      "rate": 8,
+      "tail_queue_mean_ms": 0.2674321008574528,
+      "queue_slope_rps": 0.0,
+      "errors": 0
+    },
+    {
+      "rate": 15,
+      "tail_queue_mean_ms": 5.502110969585677,
+      "queue_slope_rps": 0.0035714285714285713,
+      "errors": 0
+    },
+    {
+      "rate": 22,
+      "tail_queue_mean_ms": 1377.22100878503,
+      "queue_slope_rps": 0.5214285714285715,
+      "errors": 0
+    },
+    {
+      "rate": 30,
+      "tail_queue_mean_ms": 9331.29625731206,
+      "queue_slope_rps": 9.471428571428572,
+      "errors": 0
+    }
+  ],
+  "selected_wall_ns": 1794379915306223007,
+  "rule": "control stable: last-half queue mean<=100ms and queue slope<=0.1req/s, errors0; high=maxstable, low=stable closest to high/2",
+  "duration_s": 120,
+  "rounds": 5,
+  "main_decision": "mean of 5 trial E2E p95 per model and rate; compare control, Q<=0%, Y<=-20%; no errors",
+  "generator_revision": "v2-dedicated-yolo-publisher-process",
+  "pilot_source": "../20261111-v1/rates.json",
+  "main_started_wall_ns": 1794382952828096931
+}

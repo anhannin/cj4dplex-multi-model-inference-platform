@@ -1,0 +1,655 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-03T08:32:22Z",
+                "generateName": "qwen-797976b765-",
+                "generation": 1,
+                "labels": {
+                    "app": "qwen",
+                    "pod-template-hash": "797976b765"
+                },
+                "name": "qwen-797976b765-j45l6",
+                "namespace": "cj-inference",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "apps/v1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "qwen-797976b765",
+                        "uid": "2b8b6f3a-4eb3-4004-a44c-1c6bfcd39f78"
+                    }
+                ],
+                "resourceVersion": "117127",
+                "uid": "b6948eb1-5ba9-44c1-9073-e3ec70db36f0"
+            },
+            "spec": {
+                "automountServiceAccountToken": false,
+                "containers": [
+                    {
+                        "env": [
+                            {
+                                "name": "HOME",
+                                "value": "/runtime"
+                            },
+                            {
+                                "name": "PYTHONUNBUFFERED",
+                                "value": "1"
+                            },
+                            {
+                                "name": "OMP_NUM_THREADS",
+                                "value": "4"
+                            },
+                            {
+                                "name": "HF_HUB_OFFLINE",
+                                "value": "1"
+                            },
+                            {
+                                "name": "TRITON_CACHE_DIR",
+                                "value": "/runtime/triton"
+                            },
+                            {
+                                "name": "YOLO_CONFIG_DIR",
+                                "value": "/runtime/ultralytics"
+                            },
+                            {
+                                "name": "ROS_DOMAIN_ID",
+                                "value": "42"
+                            },
+                            {
+                                "name": "ROS_AUTOMATIC_DISCOVERY_RANGE",
+                                "value": "LOCALHOST"
+                            },
+                            {
+                                "name": "RMW_IMPLEMENTATION",
+                                "value": "rmw_fastrtps_cpp"
+                            },
+                            {
+                                "name": "NVIDIA_DRIVER_CAPABILITIES",
+                                "value": "compute,utility"
+                            }
+                        ],
+                        "image": "docker.io/library/cj-qwen-ros:9b-timing-v1",
+                        "imagePullPolicy": "Never",
+                        "name": "qwen",
+                        "readinessProbe": {
+                            "exec": {
+                                "command": [
+                                    "/bin/sh",
+                                    "-c",
+                                    "test -s /tmp/cj-model-ready \u0026\u0026 kill -0 \"$(cat /tmp/cj-model-ready)\""
+                                ]
+                            },
+                            "failureThreshold": 3,
+                            "periodSeconds": 5,
+                            "successThreshold": 1,
+                            "timeoutSeconds": 2
+                        },
+                        "resources": {
+                            "limits": {
+                                "nvidia.com/gpu.shared": "1"
+                            },
+                            "requests": {
+                                "cpu": "1",
+                                "memory": "24Gi",
+                                "nvidia.com/gpu.shared": "1"
+                            }
+                        },
+                        "securityContext": {
+                            "allowPrivilegeEscalation": false,
+                            "capabilities": {
+                                "drop": [
+                                    "ALL"
+                                ]
+                            }
+                        },
+                        "startupProbe": {
+                            "exec": {
+                                "command": [
+                                    "/bin/sh",
+                                    "-c",
+                                    "test -s /tmp/cj-model-ready \u0026\u0026 kill -0 \"$(cat /tmp/cj-model-ready)\""
+                                ]
+                            },
+                            "failureThreshold": 120,
+                            "periodSeconds": 5,
+                            "successThreshold": 1,
+                            "timeoutSeconds": 2
+                        },
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/runtime",
+                                "name": "runtime"
+                            },
+                            {
+                                "mountPath": "/cache",
+                                "name": "cache",
+                                "readOnly": true
+                            }
+                        ]
+                    }
+                ],
+                "dnsPolicy": "ClusterFirstWithHostNet",
+                "enableServiceLinks": true,
+                "hostIPC": true,
+                "hostNetwork": true,
+                "nodeName": "spark-e6d6",
+                "nodeSelector": {
+                    "kubernetes.io/hostname": "spark-e6d6"
+                },
+                "preemptionPolicy": "PreemptLowerPriority",
+                "priority": 0,
+                "restartPolicy": "Always",
+                "runtimeClassName": "nvidia",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": 1000,
+                    "runAsGroup": 1000,
+                    "runAsUser": 1000
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "terminationGracePeriodSeconds": 300,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "volumes": [
+                    {
+                        "emptyDir": {},
+                        "name": "runtime"
+                    },
+                    {
+                        "hostPath": {
+                            "path": "/home/avees/.cache/huggingface/hub",
+                            "type": "Directory"
+                        },
+                        "name": "cache"
+                    }
+                ]
+            },
+            "status": {
+                "allocatedResources": {
+                    "cpu": "1",
+                    "memory": "24Gi",
+                    "nvidia.com/gpu.shared": "1"
+                },
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:23Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "PodReadyToStartContainers"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:22Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:34:33Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:34:33Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "ContainersReady"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:22Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "allocatedResources": {
+                            "cpu": "1",
+                            "memory": "24Gi",
+                            "nvidia.com/gpu.shared": "1"
+                        },
+                        "allocatedResourcesStatus": [
+                            {
+                                "name": "nvidia.com/gpu.shared",
+                                "resources": [
+                                    {
+                                        "health": "Healthy",
+                                        "resourceID": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc::0"
+                                    }
+                                ]
+                            }
+                        ],
+                        "containerID": "containerd://0f1828c10f31d3cbb4704e74eebc2013b7c52d51b91fa88d6a5a20b4f3866f49",
+                        "image": "docker.io/library/cj-qwen-ros:9b-timing-v1",
+                        "imageID": "sha256:d4a616af01248e7284de73a326abe0f1e1fec02ea16c66abda1550e4dfe5b313",
+                        "lastState": {},
+                        "name": "qwen",
+                        "ready": true,
+                        "resources": {
+                            "limits": {
+                                "nvidia.com/gpu.shared": "1"
+                            },
+                            "requests": {
+                                "cpu": "1",
+                                "memory": "24Gi",
+                                "nvidia.com/gpu.shared": "1"
+                            }
+                        },
+                        "restartCount": 0,
+                        "started": true,
+                        "state": {
+                            "running": {
+                                "startedAt": "2026-11-03T08:32:23Z"
+                            }
+                        },
+                        "user": {
+                            "linux": {
+                                "gid": 1000,
+                                "supplementalGroups": [
+                                    4,
+                                    20,
+                                    24,
+                                    25,
+                                    27,
+                                    29,
+                                    30,
+                                    44,
+                                    46,
+                                    1000
+                                ],
+                                "uid": 1000
+                            }
+                        },
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/runtime",
+                                "name": "runtime"
+                            },
+                            {
+                                "mountPath": "/cache",
+                                "name": "cache",
+                                "readOnly": true,
+                                "recursiveReadOnly": "Disabled"
+                            }
+                        ]
+                    }
+                ],
+                "hostIP": "192.168.24.204",
+                "hostIPs": [
+                    {
+                        "ip": "192.168.24.204"
+                    }
+                ],
+                "observedGeneration": 1,
+                "phase": "Running",
+                "podIP": "192.168.24.204",
+                "podIPs": [
+                    {
+                        "ip": "192.168.24.204"
+                    }
+                ],
+                "qosClass": "Burstable",
+                "resources": {
+                    "requests": {
+                        "cpu": "975m",
+                        "memory": "24Gi"
+                    }
+                },
+                "startTime": "2026-11-03T08:32:22Z"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-03T08:32:22Z",
+                "generateName": "yolo-7897dfbb-",
+                "generation": 1,
+                "labels": {
+                    "app": "yolo",
+                    "pod-template-hash": "7897dfbb"
+                },
+                "name": "yolo-7897dfbb-d5d85",
+                "namespace": "cj-inference",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "apps/v1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "yolo-7897dfbb",
+                        "uid": "64669d70-40ca-4a60-a4ca-b12862d3c9fb"
+                    }
+                ],
+                "resourceVersion": "116920",
+                "uid": "8d073377-0c10-4aef-a987-a7d1f82bfbb9"
+            },
+            "spec": {
+                "automountServiceAccountToken": false,
+                "containers": [
+                    {
+                        "env": [
+                            {
+                                "name": "HOME",
+                                "value": "/runtime"
+                            },
+                            {
+                                "name": "PYTHONUNBUFFERED",
+                                "value": "1"
+                            },
+                            {
+                                "name": "OMP_NUM_THREADS",
+                                "value": "4"
+                            },
+                            {
+                                "name": "HF_HUB_OFFLINE",
+                                "value": "1"
+                            },
+                            {
+                                "name": "TRITON_CACHE_DIR",
+                                "value": "/runtime/triton"
+                            },
+                            {
+                                "name": "YOLO_CONFIG_DIR",
+                                "value": "/runtime/ultralytics"
+                            },
+                            {
+                                "name": "ROS_DOMAIN_ID",
+                                "value": "42"
+                            },
+                            {
+                                "name": "ROS_AUTOMATIC_DISCOVERY_RANGE",
+                                "value": "LOCALHOST"
+                            },
+                            {
+                                "name": "RMW_IMPLEMENTATION",
+                                "value": "rmw_fastrtps_cpp"
+                            },
+                            {
+                                "name": "NVIDIA_DRIVER_CAPABILITIES",
+                                "value": "compute,utility"
+                            }
+                        ],
+                        "image": "docker.io/library/cj-yolo-ros:26l-timing-v1",
+                        "imagePullPolicy": "Never",
+                        "name": "yolo",
+                        "readinessProbe": {
+                            "exec": {
+                                "command": [
+                                    "/bin/sh",
+                                    "-c",
+                                    "test -s /tmp/cj-model-ready \u0026\u0026 kill -0 \"$(cat /tmp/cj-model-ready)\""
+                                ]
+                            },
+                            "failureThreshold": 3,
+                            "periodSeconds": 5,
+                            "successThreshold": 1,
+                            "timeoutSeconds": 2
+                        },
+                        "resources": {
+                            "limits": {
+                                "nvidia.com/gpu.shared": "1"
+                            },
+                            "requests": {
+                                "cpu": "1",
+                                "memory": "4Gi",
+                                "nvidia.com/gpu.shared": "1"
+                            }
+                        },
+                        "securityContext": {
+                            "allowPrivilegeEscalation": false,
+                            "capabilities": {
+                                "drop": [
+                                    "ALL"
+                                ]
+                            }
+                        },
+                        "startupProbe": {
+                            "exec": {
+                                "command": [
+                                    "/bin/sh",
+                                    "-c",
+                                    "test -s /tmp/cj-model-ready \u0026\u0026 kill -0 \"$(cat /tmp/cj-model-ready)\""
+                                ]
+                            },
+                            "failureThreshold": 120,
+                            "periodSeconds": 5,
+                            "successThreshold": 1,
+                            "timeoutSeconds": 2
+                        },
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/runtime",
+                                "name": "runtime"
+                            },
+                            {
+                                "mountPath": "/assets",
+                                "name": "assets",
+                                "readOnly": true
+                            }
+                        ]
+                    }
+                ],
+                "dnsPolicy": "ClusterFirstWithHostNet",
+                "enableServiceLinks": true,
+                "hostIPC": true,
+                "hostNetwork": true,
+                "nodeName": "spark-e6d6",
+                "nodeSelector": {
+                    "kubernetes.io/hostname": "spark-e6d6"
+                },
+                "preemptionPolicy": "PreemptLowerPriority",
+                "priority": 0,
+                "restartPolicy": "Always",
+                "runtimeClassName": "nvidia",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": 1000,
+                    "runAsGroup": 1000,
+                    "runAsUser": 1000
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "terminationGracePeriodSeconds": 300,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "volumes": [
+                    {
+                        "emptyDir": {},
+                        "name": "runtime"
+                    },
+                    {
+                        "hostPath": {
+                            "path": "/home/avees/cj-containers/assets",
+                            "type": "Directory"
+                        },
+                        "name": "assets"
+                    }
+                ]
+            },
+            "status": {
+                "allocatedResources": {
+                    "cpu": "1",
+                    "memory": "4Gi",
+                    "nvidia.com/gpu.shared": "1"
+                },
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:22Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "PodReadyToStartContainers"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:22Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:27Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:27Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "ContainersReady"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2026-11-03T08:32:22Z",
+                        "observedGeneration": 1,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "allocatedResources": {
+                            "cpu": "1",
+                            "memory": "4Gi",
+                            "nvidia.com/gpu.shared": "1"
+                        },
+                        "allocatedResourcesStatus": [
+                            {
+                                "name": "nvidia.com/gpu.shared",
+                                "resources": [
+                                    {
+                                        "health": "Healthy",
+                                        "resourceID": "GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc::1"
+                                    }
+                                ]
+                            }
+                        ],
+                        "containerID": "containerd://df73a920653f546cab1c8f12c4ff22ca0f1bd2f50673ae250184709216223500",
+                        "image": "docker.io/library/cj-yolo-ros:26l-timing-v1",
+                        "imageID": "sha256:307b93e7372e1c520a3055dca0531aaa6e71124ed8eb44a225514355198f5625",
+                        "lastState": {},
+                        "name": "yolo",
+                        "ready": true,
+                        "resources": {
+                            "limits": {
+                                "nvidia.com/gpu.shared": "1"
+                            },
+                            "requests": {
+                                "cpu": "1",
+                                "memory": "4Gi",
+                                "nvidia.com/gpu.shared": "1"
+                            }
+                        },
+                        "restartCount": 0,
+                        "started": true,
+                        "state": {
+                            "running": {
+                                "startedAt": "2026-11-03T08:32:22Z"
+                            }
+                        },
+                        "user": {
+                            "linux": {
+                                "gid": 1000,
+                                "supplementalGroups": [
+                                    4,
+                                    20,
+                                    24,
+                                    25,
+                                    27,
+                                    29,
+                                    30,
+                                    44,
+                                    46,
+                                    1000
+                                ],
+                                "uid": 1000
+                            }
+                        },
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/runtime",
+                                "name": "runtime"
+                            },
+                            {
+                                "mountPath": "/assets",
+                                "name": "assets",
+                                "readOnly": true,
+                                "recursiveReadOnly": "Disabled"
+                            }
+                        ]
+                    }
+                ],
+                "hostIP": "192.168.24.204",
+                "hostIPs": [
+                    {
+                        "ip": "192.168.24.204"
+                    }
+                ],
+                "observedGeneration": 1,
+                "phase": "Running",
+                "podIP": "192.168.24.204",
+                "podIPs": [
+                    {
+                        "ip": "192.168.24.204"
+                    }
+                ],
+                "qosClass": "Burstable",
+                "resources": {
+                    "requests": {
+                        "cpu": "975m",
+                        "memory": "4Gi"
+                    }
+                },
+                "startTime": "2026-11-03T08:32:22Z"
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

@@ -1,0 +1,1052 @@
+[
+  {
+    "label": "default",
+    "models": {
+      "qwen": {
+        "solo_n": 10,
+        "concurrent_n": 10,
+        "solo_rate": 0.0840610247827432,
+        "concurrent_rate": 0.06181021805215463,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 11895.246982,
+              "concurrent": 16178.0152214,
+              "ratio": 1.3600402955803041,
+              "change_percent": 36.00402955803042,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11965.16627805,
+              "concurrent": 16353.71060315,
+              "change_percent": 36.677671025355906
+            }
+          },
+          "generate_wall_ms": {
+            "mean": {
+              "solo": 11874.3863778,
+              "concurrent": 16162.7821726,
+              "ratio": 1.3611467286273806,
+              "change_percent": 36.11467286273806,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11884.48085555,
+              "concurrent": 16342.0789429,
+              "change_percent": 37.50772239469191
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 11876.360001880676,
+              "concurrent": 16165.376974642277,
+              "ratio": 1.3611390166753463,
+              "change_percent": 36.113901667534634,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11886.389255151153,
+              "concurrent": 16344.345862790942,
+              "change_percent": 37.50471662963473
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.5111980251967907,
+              "concurrent": 1.0500850155949593,
+              "ratio": 2.0541648516555178,
+              "change_percent": 105.41648516555178,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.9819262195378541,
+              "concurrent": 1.4942684676498168,
+              "change_percent": 52.17726524841122
+            }
+          },
+          "server_ttft_ms": {
+            "mean": {
+              "solo": 188.7306188,
+              "concurrent": 251.23256750000002,
+              "ratio": 1.3311701572188137,
+              "change_percent": 33.11701572188137,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 189.58698264999998,
+              "concurrent": 266.7105457,
+              "change_percent": 40.67977767881841
+            }
+          },
+          "tpot_ms": {
+            "mean": {
+              "solo": 92.0289267496063,
+              "concurrent": 125.30557484251969,
+              "ratio": 1.3615890054162318,
+              "change_percent": 36.15890054162318,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 92.10901448425197,
+              "concurrent": 126.64882211141732,
+              "change_percent": 37.49883528834268
+            }
+          }
+        },
+        "possible_transport_masking": false
+      },
+      "yolo": {
+        "solo_n": 300,
+        "concurrent_n": 3780,
+        "solo_rate": 41.64897670343997,
+        "concurrent_rate": 23.363541613566515,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 22.85320739333333,
+              "concurrent": 40.80443232989418,
+              "ratio": 1.7855013358780234,
+              "change_percent": 78.55013358780234,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 96.5918187,
+              "concurrent": 49.4036528,
+              "change_percent": -48.853170522194546
+            }
+          },
+          "yolo_inference_ms": {
+            "mean": {
+              "solo": 7.947330533837278,
+              "concurrent": 16.938310840891468,
+              "ratio": 2.1313207961809786,
+              "change_percent": 113.13207961809786,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 8.492840267717838,
+              "concurrent": 17.78683136217296,
+              "change_percent": 109.43324967246282
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 12.737759922941526,
+              "concurrent": 33.39880059803368,
+              "ratio": 2.6220309379422586,
+              "change_percent": 162.20309379422585,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 13.383024651557207,
+              "concurrent": 35.424895910546184,
+              "change_percent": 164.70022160815682
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.156920546044906,
+              "concurrent": 0.22695905593021837,
+              "ratio": 1.4463310359962005,
+              "change_percent": 44.63310359962005,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.25027152150869375,
+              "concurrent": 0.3426040522754192,
+              "change_percent": 36.89294339608593
+            }
+          }
+        },
+        "possible_transport_masking": false
+      }
+    },
+    "both_means_near_equal": false,
+    "both_means_not_worse_5pct": false
+  },
+  {
+    "label": "q16-y32",
+    "models": {
+      "qwen": {
+        "solo_n": 10,
+        "concurrent_n": 10,
+        "solo_rate": 0.08485970051214564,
+        "concurrent_rate": 0.06317271526065485,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 11783.3965814,
+              "concurrent": 15828.8370585,
+              "ratio": 1.3433170095866667,
+              "change_percent": 34.331700958666666,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11847.7679536,
+              "concurrent": 16006.124907399999,
+              "change_percent": 35.098230908012205
+            }
+          },
+          "generate_wall_ms": {
+            "mean": {
+              "solo": 11761.3716388,
+              "concurrent": 15821.655788,
+              "ratio": 1.3452219922891806,
+              "change_percent": 34.52219922891806,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11765.71836055,
+              "concurrent": 16000.2199819,
+              "change_percent": 35.99016644447415
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 11763.340932503343,
+              "concurrent": 15825.131588056684,
+              "ratio": 1.3452922667853813,
+              "change_percent": 34.52922667853813,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11767.72449715063,
+              "concurrent": 16003.626928385347,
+              "change_percent": 35.99593474728589
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.6759539246559143,
+              "concurrent": 0.8822519332170486,
+              "ratio": 1.3051953706255166,
+              "change_percent": 30.51953706255166,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.8996433578431605,
+              "concurrent": 0.9534833952784538,
+              "change_percent": 5.984597892699561
+            }
+          },
+          "server_ttft_ms": {
+            "mean": {
+              "solo": 296.5415332,
+              "concurrent": 392.1267122,
+              "ratio": 1.322333192145241,
+              "change_percent": 32.2333192145241,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 298.43935015,
+              "concurrent": 421.31977365,
+              "change_percent": 41.17433690906998
+            }
+          },
+          "tpot_ms": {
+            "mean": {
+              "solo": 90.29128086299212,
+              "concurrent": 121.51846864330709,
+              "ratio": 1.3458494273405985,
+              "change_percent": 34.58494273405985,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 90.32213241614173,
+              "concurrent": 122.76722943700788,
+              "change_percent": 35.921535677857634
+            }
+          }
+        },
+        "possible_transport_masking": false
+      },
+      "yolo": {
+        "solo_n": 300,
+        "concurrent_n": 3655,
+        "solo_rate": 31.599641784227693,
+        "concurrent_rate": 23.086411106837705,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 30.552884523333333,
+              "concurrent": 41.3049007370725,
+              "ratio": 1.3519149298498419,
+              "change_percent": 35.19149298498419,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 98.0260606,
+              "concurrent": 50.22400089999999,
+              "change_percent": -48.76464422563973
+            }
+          },
+          "yolo_inference_ms": {
+            "mean": {
+              "solo": 8.576242355629802,
+              "concurrent": 17.641588753769646,
+              "ratio": 2.057030109718037,
+              "change_percent": 105.7030109718037,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 9.02679217979312,
+              "concurrent": 20.24318454787135,
+              "change_percent": 124.25668105206444
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 13.34094095043838,
+              "concurrent": 33.579484571571555,
+              "ratio": 2.51702520057014,
+              "change_percent": 151.702520057014,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 13.906848570331931,
+              "concurrent": 37.01802287250757,
+              "change_percent": 166.1855609147833
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.16797024756669998,
+              "concurrent": 0.2247385800435181,
+              "ratio": 1.3379665940795602,
+              "change_percent": 33.79665940795602,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.2678627148270607,
+              "concurrent": 0.3359151072800159,
+              "change_percent": 25.405698025905398
+            }
+          }
+        },
+        "possible_transport_masking": false
+      }
+    },
+    "both_means_near_equal": false,
+    "both_means_not_worse_5pct": false
+  },
+  {
+    "label": "q24-y24",
+    "models": {
+      "qwen": {
+        "solo_n": 10,
+        "concurrent_n": 10,
+        "solo_rate": 0.08328152764404274,
+        "concurrent_rate": 0.059307408712677256,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 12006.6509677,
+              "concurrent": 16860.5282831,
+              "ratio": 1.4042657130999963,
+              "change_percent": 40.42657130999962,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12052.497814,
+              "concurrent": 17016.3137246,
+              "change_percent": 41.18495590875866
+            }
+          },
+          "generate_wall_ms": {
+            "mean": {
+              "solo": 11994.210511199999,
+              "concurrent": 16846.0526673,
+              "ratio": 1.4045153410947246,
+              "change_percent": 40.45153410947246,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12003.86171155,
+              "concurrent": 16984.082502,
+              "change_percent": 41.488488539134714
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 11996.18689948693,
+              "concurrent": 16849.368494935334,
+              "ratio": 1.4045603520612013,
+              "change_percent": 40.456035206120134,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12005.777734844014,
+              "concurrent": 16987.674019671977,
+              "change_percent": 41.49582305167245
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.845824833959341,
+              "concurrent": 0.9174417704343796,
+              "ratio": 1.0846711205437143,
+              "change_percent": 8.467112054371428,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 1.0625021532177925,
+              "concurrent": 1.080043101683259,
+              "change_percent": 1.6509094510861688
+            }
+          },
+          "server_ttft_ms": {
+            "mean": {
+              "solo": 243.0946697,
+              "concurrent": 341.4198437,
+              "ratio": 1.4044727682484435,
+              "change_percent": 40.447276824844344,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 245.05144785,
+              "concurrent": 359.1070825,
+              "change_percent": 46.54354652897841
+            }
+          },
+          "tpot_ms": {
+            "mean": {
+              "solo": 92.54638121968505,
+              "concurrent": 129.98334508503936,
+              "ratio": 1.4045210992797987,
+              "change_percent": 40.452109927979876,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 92.61539716141732,
+              "concurrent": 131.08329197677165,
+              "change_percent": 41.53509674888021
+            }
+          }
+        },
+        "possible_transport_masking": false
+      },
+      "yolo": {
+        "solo_n": 300,
+        "concurrent_n": 3656,
+        "solo_rate": 35.708335273044824,
+        "concurrent_rate": 21.682830987331293,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 26.861489053333333,
+              "concurrent": 44.13777170541575,
+              "ratio": 1.6431617628412356,
+              "change_percent": 64.31617628412356,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 99.3831136,
+              "concurrent": 52.626695749999996,
+              "change_percent": -47.046642187310184
+            }
+          },
+          "yolo_inference_ms": {
+            "mean": {
+              "solo": 9.880254864692688,
+              "concurrent": 20.96592658072001,
+              "ratio": 2.1220026070017908,
+              "change_percent": 112.20026070017907,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 10.26828158646822,
+              "concurrent": 21.72499825246632,
+              "change_percent": 111.57384582339493
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 14.784791423007846,
+              "concurrent": 37.073613193621796,
+              "ratio": 2.5075506399047645,
+              "change_percent": 150.75506399047646,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 15.305857919156551,
+              "concurrent": 39.05226942151785,
+              "change_percent": 155.14590314235633
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.17468837710718313,
+              "concurrent": 0.2190690819801726,
+              "ratio": 1.254056426694942,
+              "change_percent": 25.40564266949421,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.2854133490473032,
+              "concurrent": 0.3284243866801262,
+              "change_percent": 15.069735797709495
+            }
+          }
+        },
+        "possible_transport_masking": false
+      }
+    },
+    "both_means_near_equal": false,
+    "both_means_not_worse_5pct": false
+  },
+  {
+    "label": "q32-y16",
+    "models": {
+      "qwen": {
+        "solo_n": 10,
+        "concurrent_n": 10,
+        "solo_rate": 0.08310603962664478,
+        "concurrent_rate": 0.0565634383617909,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 12031.961345,
+              "concurrent": 17678.4573629,
+              "ratio": 1.4692914027891602,
+              "change_percent": 46.929140278916016,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12038.47090195,
+              "concurrent": 17780.97242155,
+              "change_percent": 47.701253476218675
+            }
+          },
+          "generate_wall_ms": {
+            "mean": {
+              "solo": 12025.629662,
+              "concurrent": 17669.6701405,
+              "ratio": 1.4693342999190058,
+              "change_percent": 46.933429991900574,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12032.970861150001,
+              "concurrent": 17774.2720022,
+              "change_percent": 47.713081061191055
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 12027.54691010341,
+              "concurrent": 17673.052234668285,
+              "ratio": 1.469381276727553,
+              "change_percent": 46.93812767275529,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12034.833469893783,
+              "concurrent": 17778.563093952835,
+              "change_percent": 47.72587538022446
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.6241139955818653,
+              "concurrent": 0.686443317681551,
+              "ratio": 1.0998684896363775,
+              "change_percent": 9.986848963637751,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.8979614358395337,
+              "concurrent": 0.9433513972908258,
+              "change_percent": 5.054778483761457
+            }
+          },
+          "server_ttft_ms": {
+            "mean": {
+              "solo": 214.8942793,
+              "concurrent": 317.5878915,
+              "ratio": 1.477879692910001,
+              "change_percent": 47.78796929100011,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 216.34940495,
+              "concurrent": 335.8480552,
+              "change_percent": 55.23410165034519
+            }
+          },
+          "tpot_ms": {
+            "mean": {
+              "solo": 93.01418955669291,
+              "concurrent": 136.65020286299213,
+              "ratio": 1.4691328657946614,
+              "change_percent": 46.91328657946614,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 93.07272823110236,
+              "concurrent": 137.39778316614172,
+              "change_percent": 47.62410619894899
+            }
+          }
+        },
+        "possible_transport_masking": false
+      },
+      "yolo": {
+        "solo_n": 300,
+        "concurrent_n": 3394,
+        "solo_rate": 33.412123010047125,
+        "concurrent_rate": 19.197505782616144,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 28.766876926666665,
+              "concurrent": 50.108822822922804,
+              "ratio": 1.7418930442349243,
+              "change_percent": 74.18930442349243,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 101.5653984,
+              "concurrent": 58.764205999999994,
+              "change_percent": -42.141509878624184
+            }
+          },
+          "yolo_inference_ms": {
+            "mean": {
+              "solo": 11.989581302429238,
+              "concurrent": 26.3206233401082,
+              "ratio": 2.1952912846735786,
+              "change_percent": 119.52912846735786,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12.57134173065424,
+              "concurrent": 29.204242955893278,
+              "change_percent": 132.30808279343006
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 16.683218339458108,
+              "concurrent": 42.429831855297614,
+              "ratio": 2.543264194711474,
+              "change_percent": 154.32641947114737,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 17.357583064585924,
+              "concurrent": 46.116418950259686,
+              "change_percent": 165.68456436973312
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.16478560554484525,
+              "concurrent": 0.2219940661400574,
+              "ratio": 1.347169040682035,
+              "change_percent": 34.71690406820349,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.25640279054641724,
+              "concurrent": 0.33768131397664547,
+              "change_percent": 31.69954712934928
+            }
+          }
+        },
+        "possible_transport_masking": false
+      }
+    },
+    "both_means_near_equal": false,
+    "both_means_not_worse_5pct": false
+  },
+  {
+    "label": "q8-y40",
+    "models": {
+      "qwen": {
+        "solo_n": 10,
+        "concurrent_n": 10,
+        "solo_rate": 0.07806737011481064,
+        "concurrent_rate": 0.05887911053638035,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 12808.5392938,
+              "concurrent": 16983.2574584,
+              "ratio": 1.3259324165575055,
+              "change_percent": 32.593241655750546,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12851.7314914,
+              "concurrent": 17223.0203186,
+              "change_percent": 34.01322872427841
+            }
+          },
+          "generate_wall_ms": {
+            "mean": {
+              "solo": 12793.7026085,
+              "concurrent": 16976.5045791,
+              "ratio": 1.326942254216617,
+              "change_percent": 32.69422542166169,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12804.5582337,
+              "concurrent": 17216.3594949,
+              "change_percent": 34.45492753969981
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 12795.575334038585,
+              "concurrent": 16979.044800437987,
+              "ratio": 1.326946569981156,
+              "change_percent": 32.694656998115605,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 12806.474782945588,
+              "concurrent": 17219.492241879925,
+              "change_percent": 34.459267938520924
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.9745004586875439,
+              "concurrent": 0.835048034787178,
+              "ratio": 0.8568985548881319,
+              "change_percent": -14.310144511186806,
+              "classification": "faster",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 1.6146392095834006,
+              "concurrent": 1.050840225070715,
+              "change_percent": -34.91795449821596
+            }
+          },
+          "server_ttft_ms": {
+            "mean": {
+              "solo": 524.025357,
+              "concurrent": 692.9367348000001,
+              "ratio": 1.322334359480242,
+              "change_percent": 32.233435948024194,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 526.74036275,
+              "concurrent": 732.38055725,
+              "change_percent": 39.04014369174143
+            }
+          },
+          "tpot_ms": {
+            "mean": {
+              "solo": 96.63062217952756,
+              "concurrent": 128.2371047448819,
+              "ratio": 1.327085574453132,
+              "change_percent": 32.708557445313204,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 96.71215431771654,
+              "concurrent": 130.02186576771652,
+              "change_percent": 34.442115042305524
+            }
+          }
+        },
+        "possible_transport_masking": false
+      },
+      "yolo": {
+        "solo_n": 300,
+        "concurrent_n": 3957,
+        "solo_rate": 35.89420794849522,
+        "concurrent_rate": 23.297120718739727,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 26.6176797,
+              "concurrent": 41.15598215163002,
+              "ratio": 1.5461896985570092,
+              "change_percent": 54.61896985570092,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 97.539239,
+              "concurrent": 115.01859259999998,
+              "change_percent": 17.920330094025005
+            }
+          },
+          "yolo_inference_ms": {
+            "mean": {
+              "solo": 8.199681835249066,
+              "concurrent": 16.752834254129684,
+              "ratio": 2.043107841344775,
+              "change_percent": 104.31078413447752,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 8.748224889859557,
+              "concurrent": 17.447723262012005,
+              "change_percent": 99.44301251601809
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 13.00663378710548,
+              "concurrent": 31.831412314182433,
+              "ratio": 2.447321331191739,
+              "change_percent": 144.7321331191739,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 13.697497686371207,
+              "concurrent": 33.601055666804314,
+              "change_percent": 145.30798570776057
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.17643563449382782,
+              "concurrent": 0.2046593751815765,
+              "ratio": 1.1599662152643888,
+              "change_percent": 15.996621526438881,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.2761640120297671,
+              "concurrent": 0.3049636259675026,
+              "change_percent": 10.42844566388732
+            }
+          }
+        },
+        "possible_transport_masking": false
+      }
+    },
+    "both_means_near_equal": false,
+    "both_means_not_worse_5pct": false
+  },
+  {
+    "label": "q40-y8",
+    "models": {
+      "qwen": {
+        "solo_n": 10,
+        "concurrent_n": 10,
+        "solo_rate": 0.08370495903235622,
+        "concurrent_rate": 0.052799441047604555,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 11945.9334013,
+              "concurrent": 18938.7874713,
+              "ratio": 1.5853752766811013,
+              "change_percent": 58.53752766811014,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11950.9979858,
+              "concurrent": 19339.4332501,
+              "change_percent": 61.82274713022986
+            }
+          },
+          "generate_wall_ms": {
+            "mean": {
+              "solo": 11941.6124521,
+              "concurrent": 18921.6363118,
+              "ratio": 1.5845126768012407,
+              "change_percent": 58.451267680124076,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11946.7235397,
+              "concurrent": 19328.4620792,
+              "change_percent": 61.788811927972056
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 11943.608571775258,
+              "concurrent": 18925.9728343226,
+              "ratio": 1.5846109423786574,
+              "change_percent": 58.46109423786574,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 11948.743991553783,
+              "concurrent": 19332.30714770034,
+              "change_percent": 61.793634221017534
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.7629728876054287,
+              "concurrent": 0.7730192504823208,
+              "ratio": 1.013167391712204,
+              "change_percent": 1.3167391712203935,
+              "classification": "near_equal",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 1.0154529474675655,
+              "concurrent": 0.9972233325242995,
+              "change_percent": -1.795220053152513
+            }
+          },
+          "server_ttft_ms": {
+            "mean": {
+              "solo": 201.1634592,
+              "concurrent": 319.883236,
+              "ratio": 1.5901657153447877,
+              "change_percent": 59.01657153447877,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 202.39983684999999,
+              "concurrent": 343.94640675,
+              "change_percent": 69.93413240985032
+            }
+          },
+          "tpot_ms": {
+            "mean": {
+              "solo": 92.46178340629922,
+              "concurrent": 146.4982588425197,
+              "ratio": 1.5844195671499355,
+              "change_percent": 58.44195671499355,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 92.50456381023622,
+              "concurrent": 149.65669793031498,
+              "change_percent": 61.7830426586526
+            }
+          }
+        },
+        "possible_transport_masking": false
+      },
+      "yolo": {
+        "solo_n": 300,
+        "concurrent_n": 2636,
+        "solo_rate": 25.293364613106753,
+        "concurrent_rate": 13.912195832776945,
+        "metrics": {
+          "request_e2e_ms": {
+            "mean": {
+              "solo": 38.474216913333336,
+              "concurrent": 69.81395522116844,
+              "ratio": 1.8145646831079294,
+              "change_percent": 81.45646831079294,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 110.2071089,
+              "concurrent": 79.57144775,
+              "change_percent": -27.798262249850193
+            }
+          },
+          "yolo_inference_ms": {
+            "mean": {
+              "solo": 20.809538830071688,
+              "concurrent": 44.970399630503316,
+              "ratio": 2.1610473926273164,
+              "change_percent": 116.10473926273164,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 21.355918422341347,
+              "concurrent": 47.24586522206664,
+              "change_percent": 121.2307814991497
+            }
+          },
+          "processing_ms": {
+            "mean": {
+              "solo": 25.67538112712403,
+              "concurrent": 61.29673603789284,
+              "ratio": 2.3873739491694494,
+              "change_percent": 138.73739491694494,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 26.32636772468686,
+              "concurrent": 64.71694633364677,
+              "change_percent": 145.82558068943237
+            }
+          },
+          "queue_wait_ms": {
+            "mean": {
+              "solo": 0.17365260049700737,
+              "concurrent": 0.2301537590058964,
+              "ratio": 1.3253689167175056,
+              "change_percent": 32.53689167175055,
+              "classification": "slower",
+              "note": "descriptive practical band, not statistical equivalence"
+            },
+            "p95": {
+              "solo": 0.2650476060807705,
+              "concurrent": 0.3430319484323263,
+              "change_percent": 29.42276804710733
+            }
+          }
+        },
+        "possible_transport_masking": false
+      }
+    },
+    "both_means_near_equal": false,
+    "both_means_not_worse_5pct": false
+  }
+]

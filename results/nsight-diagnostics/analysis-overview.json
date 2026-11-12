@@ -1,0 +1,36 @@
+{
+  "qwen": {
+    "qwen-only": {
+      "kernels": 499860,
+      "gpu_union_ms": 22023.607328,
+      "phase_ms": 25064.642864
+    },
+    "yolo-only": {
+      "kernels": 0,
+      "gpu_union_ms": 0.0,
+      "phase_ms": 3811.280048
+    },
+    "concurrent": {
+      "kernels": 499860,
+      "gpu_union_ms": 29824.951072,
+      "phase_ms": 34344.158048
+    }
+  },
+  "yolo": {
+    "qwen-only": {
+      "kernels": 0,
+      "gpu_union_ms": 0.0,
+      "phase_ms": 25015.506176
+    },
+    "yolo-only": {
+      "kernels": 84500,
+      "gpu_union_ms": 618.844288,
+      "phase_ms": 3771.142032
+    },
+    "concurrent": {
+      "kernels": 659100,
+      "gpu_union_ms": 6579.900128,
+      "phase_ms": 34336.466416
+    }
+  }
+}

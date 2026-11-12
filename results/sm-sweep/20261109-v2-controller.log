@@ -1,0 +1,13 @@
+{"event": "launch", "label": "pilot-yolo", "time": 1794212001.3978305}
+{"event": "complete", "label": "pilot-yolo", "time": 1794212008.9593225}
+{"event": "launch", "label": "pilot-qwen", "time": 1794212009.2516093}
+{"event": "complete", "label": "pilot-qwen", "time": 1794212290.5621858}
+{"event": "launch", "label": "main-yolo", "time": 1794212290.8644762}
+{"event": "complete", "label": "main-yolo", "time": 1794212306.3039677}
+{"event": "launch", "label": "main-qwen", "time": 1794212306.6000543}
+{"event": "complete", "label": "main-qwen", "time": 1794215237.5433378}
+Waiting for deployment "qwen" rollout to finish: 0 of 1 updated replicas are available...
+deployment "qwen" successfully rolled out
+
+deployment "yolo" successfully rolled out
+

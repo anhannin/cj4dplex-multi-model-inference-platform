@@ -1,0 +1,10 @@
+{
+  "state": "FAIL",
+  "phase": "complete",
+  "started_at_utc": "2026-11-03T08:15:42.029158+00:00",
+  "scope": "diagnostic only, not a performance baseline",
+  "reports": {},
+  "error": "TimeoutError('qwen report export')",
+  "baseline_restored": true,
+  "finished_at_utc": "2026-11-03T08:23:59.046822+00:00"
+}

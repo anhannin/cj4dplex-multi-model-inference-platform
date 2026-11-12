@@ -1,0 +1,94 @@
+[2026-11-10 02:55:28.922 Control 42274] Starting control daemon using socket /home/avees/cj-static-eval/20261110-v1/eval-pipe/control
+[2026-11-10 02:55:28.922 Control 42274] To connect CUDA applications to this daemon, set env CUDA_MPS_PIPE_DIRECTORY=/home/avees/cj-static-eval/20261110-v1/eval-pipe
+[2026-11-10 02:55:28.922 Control 42274] CUDA MPS Control binary version: 13020
+[2026-11-10 02:55:28.924 Control 42274] Accepting connection...
+[2026-11-10 02:55:28.924 Control 42274] NEW UI
+[2026-11-10 02:55:28.924 Control 42274] Cmd:get_server_list
+[2026-11-10 02:55:28.924 Control 42274] UI closed
+[2026-11-10 02:55:28.944 Control 42274] Accepting connection...
+[2026-11-10 02:55:28.944 Control 42274] NEW UI
+[2026-11-10 02:55:28.944 Control 42274] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 12
+[2026-11-10 02:55:28.963 Control 42274] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/x3EcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 02:55:28.963 Control 42274] UI closed
+[2026-11-10 02:55:28.964 Control 42274] Accepting connection...
+[2026-11-10 02:55:28.964 Control 42274] NEW UI
+[2026-11-10 02:55:28.965 Control 42274] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 12
+[2026-11-10 02:55:28.965 Control 42274] Partition GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc/OI7jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA created
+[2026-11-10 02:55:28.965 Control 42274] UI closed
+[2026-11-10 02:55:28.966 Control 42274] Accepting connection...
+[2026-11-10 02:55:28.966 Control 42274] NEW UI
+[2026-11-10 02:55:28.966 Control 42274] Cmd:sm_partition add GPU-99d4368a-1f38-9f7b-7d83-98d415b7e3bc 1
+[2026-11-10 02:55:28.966 Control 42274] Failed to create the requested SM partition of 1 chunks, error 915
+[2026-11-10 02:55:28.966 Control 42274] Failed to create partition
+[2026-11-10 02:55:28.966 Control 42274] UI closed
+[2026-11-10 02:55:29.800 Control 42274] Accepting connection...
+[2026-11-10 02:55:29.800 Control 42274] User did not send valid credentials
+[2026-11-10 02:55:29.800 Control 42274] Accepting connection...
+[2026-11-10 02:55:29.800 Control 42274] NEW CLIENT 42646 from user 1000: Server is not ready, push client to pending list
+[2026-11-10 02:55:29.800 Control 42649] Starting new server 42649 for user 1000
+[2026-11-10 02:55:29.801 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.002 Control 42274] NEW SERVER 42649: Ready
+[2026-11-10 02:55:30.003 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.003 Control 42274] User did not send valid credentials
+[2026-11-10 02:55:30.003 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.003 Control 42274] NEW CLIENT 42654 from user 1000: Server already exists
+[2026-11-10 02:55:30.802 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.802 Control 42274] User did not send valid credentials
+[2026-11-10 02:55:30.802 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.802 Control 42274] NEW CLIENT 42470 from user 1000: Server already exists
+[2026-11-10 02:55:30.840 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.840 Control 42274] NEW CLIENT 42470 from user 1000: Server already exists
+[2026-11-10 02:55:30.882 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.882 Control 42274] User did not send valid credentials
+[2026-11-10 02:55:30.882 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.882 Control 42274] NEW CLIENT 42489 from user 1000: Server already exists
+[2026-11-10 02:55:30.934 Control 42274] Accepting connection...
+[2026-11-10 02:55:30.934 Control 42274] NEW CLIENT 42489 from user 1000: Server already exists
+[2026-11-10 02:57:34.824 Control 42274] Accepting connection...
+[2026-11-10 02:57:34.824 Control 42274] NEW UI
+[2026-11-10 02:57:34.824 Control 42274] Cmd:get_server_list
+[2026-11-10 02:57:34.824 Control 42274] 42649
+[2026-11-10 02:57:34.824 Control 42274] UI closed
+[2026-11-10 02:57:34.825 Control 42274] Accepting connection...
+[2026-11-10 02:57:34.825 Control 42274] NEW UI
+[2026-11-10 02:57:34.825 Control 42274] Cmd:get_client_list 42649
+[2026-11-10 02:57:34.825 Control 42274] 42470
+[2026-11-10 02:57:34.825 Control 42274] 42489
+[2026-11-10 02:57:34.825 Control 42274] UI closed
+[2026-11-10 02:58:45.949 Control 42274] Accepting connection...
+[2026-11-10 02:58:45.949 Control 42274] NEW UI
+[2026-11-10 02:58:45.949 Control 42274] Cmd:get_server_list
+[2026-11-10 02:58:45.949 Control 42274] 42649
+[2026-11-10 02:58:45.949 Control 42274] UI closed
+[2026-11-10 02:58:45.950 Control 42274] Accepting connection...
+[2026-11-10 02:58:45.951 Control 42274] NEW UI
+[2026-11-10 02:58:45.951 Control 42274] Cmd:get_client_list 42649
+[2026-11-10 02:58:45.951 Control 42274] 42470
+[2026-11-10 02:58:45.951 Control 42274] 42489
+[2026-11-10 02:58:45.951 Control 42274] UI closed
+[2026-11-10 03:00:45.839 Control 42274] Accepting connection...
+[2026-11-10 03:00:45.839 Control 42274] NEW UI
+[2026-11-10 03:00:45.840 Control 42274] Cmd:get_server_list
+[2026-11-10 03:00:45.840 Control 42274] 42649
+[2026-11-10 03:00:45.840 Control 42274] UI closed
+[2026-11-10 03:00:45.842 Control 42274] Accepting connection...
+[2026-11-10 03:00:45.842 Control 42274] NEW UI
+[2026-11-10 03:00:45.842 Control 42274] Cmd:get_client_list 42649
+[2026-11-10 03:00:45.842 Control 42274] 42470
+[2026-11-10 03:00:45.842 Control 42274] 42489
+[2026-11-10 03:00:45.842 Control 42274] UI closed
+[2026-11-10 03:00:47.680 Control 42274] Accepting connection...
+[2026-11-10 03:00:47.680 Control 42274] NEW UI
+[2026-11-10 03:00:47.680 Control 42274] Cmd:get_server_list
+[2026-11-10 03:00:47.680 Control 42274] 42649
+[2026-11-10 03:00:47.680 Control 42274] UI closed
+[2026-11-10 03:00:47.681 Control 42274] Accepting connection...
+[2026-11-10 03:00:47.681 Control 42274] NEW UI
+[2026-11-10 03:00:47.681 Control 42274] Cmd:get_client_list 42649
+[2026-11-10 03:00:47.681 Control 42274] UI closed
+[2026-11-10 03:00:47.684 Control 42274] Accepting connection...
+[2026-11-10 03:00:47.684 Control 42274] NEW UI
+[2026-11-10 03:00:47.684 Control 42274] Cmd:quit
+[2026-11-10 03:00:47.684 Control 42274] Try shutting down server 42649, backoff is disabled
+[2026-11-10 03:00:47.791 Control 42274] Server 42649 exited with status 0
+[2026-11-10 03:00:47.791 Control 42274] Exit with status 0

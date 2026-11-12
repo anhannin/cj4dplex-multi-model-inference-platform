@@ -1,0 +1,184 @@
+{
+  "state": "PASS",
+  "start_wall_ns": 1794212003471861104,
+  "model": "yolo",
+  "sms": [
+    8,
+    48
+  ],
+  "rounds": 1,
+  "samples_per_round": 1,
+  "warmup_per_point_round": 1,
+  "reference_samples_per_position": 1,
+  "torch": "2.9.0a0+50eac811a6.nv25.09",
+  "cuda": "13.0",
+  "cudnn_version": 91300,
+  "cudnn_benchmark": false,
+  "matmul_allow_tf32": true,
+  "gpu": "NVIDIA GB10",
+  "graph_capture": false,
+  "mps": false,
+  "scope": "single active real-model CUDA-event/host inference sensitivity, NOT service E2E or concurrent performance",
+  "timing_note": "CUDA events bracket native Module.forward; spans can include GPU idle/dispatch gaps, not pure kernel busy time. No added per-token synchronize.",
+  "workload": {
+    "model": "YOLO26l",
+    "dtype": "float16",
+    "backend": "native PyTorch",
+    "imgsz": 640,
+    "batch": 1,
+    "rect": false,
+    "image_sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "reference_detections": [
+      [
+        6.9609375,
+        229.078125,
+        804.9375,
+        737.859375,
+        0.93359375,
+        5.0
+      ],
+      [
+        667.828125,
+        395.71875,
+        810.0,
+        880.875,
+        0.921875,
+        0.0
+      ],
+      [
+        50.625,
+        399.7265625,
+        247.640625,
+        904.5,
+        0.91845703125,
+        0.0
+      ],
+      [
+        222.328125,
+        407.109375,
+        345.09375,
+        860.203125,
+        0.8984375,
+        0.0
+      ],
+      [
+        0.0,
+        550.96875,
+        79.3125,
+        873.28125,
+        0.84912109375,
+        0.0
+      ]
+    ],
+    "graph_capture": false
+  },
+  "point_sensors": [
+    {
+      "sm_count": 48,
+      "backend": "default",
+      "round": -1,
+      "before": "53, 2405 MHz, 13.37 W, 0 %",
+      "after": "53, 2405 MHz, 14.07 W, 0 %"
+    },
+    {
+      "sm_count": 48,
+      "backend": "green",
+      "round": 0,
+      "before": "53, 2405 MHz, 14.37 W, 0 %",
+      "after": "53, 2405 MHz, 15.06 W, 0 %"
+    },
+    {
+      "sm_count": 8,
+      "backend": "green",
+      "round": 0,
+      "before": "53, 2405 MHz, 15.10 W, 0 %",
+      "after": "53, 2405 MHz, 15.85 W, 0 %"
+    },
+    {
+      "sm_count": 48,
+      "backend": "default",
+      "round": 1,
+      "before": "53, 2405 MHz, 12.89 W, 0 %",
+      "after": "53, 2405 MHz, 13.39 W, 0 %"
+    }
+  ],
+  "green_resources": {
+    "48": {
+      "actual_sms": 48,
+      "total_sms": 48,
+      "minimum_sms": 8,
+      "alignment": 8,
+      "stream_ptr": 1000088400,
+      "stream_owner_verified": true,
+      "observed_smids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    "8": {
+      "actual_sms": 8,
+      "total_sms": 48,
+      "minimum_sms": 8,
+      "alignment": 8,
+      "stream_ptr": 354981568,
+      "stream_owner_verified": true,
+      "observed_smids": [
+        0,
+        1,
+        8,
+        9,
+        16,
+        17,
+        24,
+        25
+      ]
+    }
+  },
+  "end_wall_ns": 1794212007074957280
+}

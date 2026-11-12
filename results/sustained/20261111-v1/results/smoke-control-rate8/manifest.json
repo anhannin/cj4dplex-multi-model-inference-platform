@@ -1,0 +1,40 @@
+{
+  "state": "PASS",
+  "phase": "smoke",
+  "condition": "control",
+  "round": -1,
+  "rate": 8.0,
+  "duration_s": 10.0,
+  "run_id": "smoke-control-rate8_9064953a7519433fa719291257f43ee9",
+  "ros_domain": 74,
+  "qwen_load": "closed-loop C1",
+  "yolo_load": "fixed-rate open-loop",
+  "result_subscriptions": "rolling 128 ahead; retain >=1s after receive",
+  "e2e": "before JSON encoding/publish -> matching result parsed",
+  "start_wall_ns": 1794379713363874520,
+  "t0_ns": 134309075796367,
+  "stop_ns": 134319075796367,
+  "t0_wall_ns": 1794379716800238210,
+  "deadline_ns": 134619075796367,
+  "expected": {
+    "qwen": 1,
+    "yolo": 80
+  },
+  "received": {
+    "qwen": 1,
+    "yolo": 80
+  },
+  "errors": [],
+  "generator": {
+    "valid": true,
+    "lag_p95_ms": 1.0996213999999995,
+    "lag_max_ms": 1.438659,
+    "errors": 0
+  },
+  "pilot_queue": {
+    "tail_queue_mean_ms": 0.2986004241392948,
+    "queue_slope_rps": 0.0,
+    "errors": 0
+  },
+  "end_wall_ns": 1794379729835994478
+}

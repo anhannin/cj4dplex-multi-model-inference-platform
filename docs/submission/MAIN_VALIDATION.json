@@ -1,0 +1,33 @@
+{
+  "main_original": "5a69e1aab9677941cb641e718381c4ae45a44661",
+  "imported_baseline": "90cb3fa2c4ff18587de527dab0a783d7d0ba6d08",
+  "frozen_original": "6a99fdaf26307e2f0b41f708478fdec3fcfad7ac",
+  "baseline_ref_unchanged": true,
+  "core_and_raw_diff_against_baseline": [],
+  "files_sha256": {
+    "README.md": "deaf8e4a80af3c5ab3d62586664990d5ffbbf507d183bd21024208a0af79e4fa",
+    "docs/ARCHITECTURE.ko.md": "251b04ba5c371ba630c85ed10eb68276d03569025b16292e15d8a5047d45f5d2",
+    "docs/EXECUTIVE_SUMMARY.ko.md": "065eb937b188c38a6f9f70ca09cd79a88c35343261187ecb8c4b7b05d4c0fc80",
+    "docs/EXECUTIVE_SUMMARY.ko.pdf": "d60c20f94d03a85f702528e08c6edf226288b33af6032d6baf5be28288ec9d06",
+    "docs/DEPLOYMENT_MODES.ko.md": "d187429036fa541be2888cce4e7df66feb44eb1d6a2f450bb7808955d00d0572",
+    "docs/IMPLEMENTATION.ko.md": "ff1f1c80fcc1016aa7c35d226c289e9d72d617a70fa7045b82c422950a5f8d2e",
+    "docs/EXPERIMENT_INDEX.ko.md": "f2a3aebaa238a861a3a76f3a93b9495111184f1782af6f6fd869e8f6b8c6a533"
+  },
+  "executive_pdf_pages": 2,
+  "review": "independent read-only reviewer found no blockers; concrete fault source paths corrected",
+  "new_gpu_run": false,
+  "new_docker_build": false,
+  "new_kubernetes_apply": false,
+  "remote_push": false,
+  "checks": [
+    "155 CPU tests",
+    "Docker COPY existence",
+    "Kubernetes JSON7/YAML7 parse (no cluster)",
+    "Bash -n",
+    "compileall",
+    "README metric rows vs source JSON",
+    "all delivery Markdown links",
+    "frozen677/protected145 audit",
+    "offline raw copies: static12005 inclwarmup, archivedstudy55620/40, fault28"
+  ]
+}

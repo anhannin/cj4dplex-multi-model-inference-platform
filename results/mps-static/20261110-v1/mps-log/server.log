@@ -1,0 +1,33 @@
+[2026-11-10 01:52:46.873 Server 1018982] Startup
+[2026-11-10 01:52:46.873 Server 1018982] Connecting to control daemon on socket: /home/avees/cj-mps-static/20261110-v1/mps-pipe/control
+[2026-11-10 01:52:46.873 Server 1018982] Initializing server process
+[2026-11-10 01:52:46.890 Server 1018982] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-10 01:52:47.019 Server 1018982] Created anonymous shared memory region mps.shm.1000.1018982
+[2026-11-10 01:52:47.019 Server 1018982] CUDA MPS Server for Linux/Unix. Binary version: 13010
+[2026-11-10 01:52:47.019 Server 1018982] Display Driver version: 580
+[2026-11-10 01:52:47.019 Server 1018982] Active Threads Percentage set to 100.0
+[2026-11-10 01:52:47.019 Server 1018982] Server Priority set to 0
+[2026-11-10 01:52:47.019 Server 1018982] Server has started
+[2026-11-10 01:52:47.019 Server 1018982] Destroy server context on device 0 (NVIDIA GB10)
+[2026-11-10 01:55:39.665 Server 1022744] Startup
+[2026-11-10 01:55:39.665 Server 1022744] Connecting to control daemon on socket: /home/avees/cj-mps-static/20261110-v1/mps-pipe/control
+[2026-11-10 01:55:39.665 Server 1022744] Initializing server process
+[2026-11-10 01:55:39.793 Server 1022744] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-10 01:55:39.970 Server 1022744] Created anonymous shared memory region mps.shm.1000.1022744
+[2026-11-10 01:55:39.970 Server 1022744] CUDA MPS Server for Linux/Unix. Binary version: 13010
+[2026-11-10 01:55:39.970 Server 1022744] Display Driver version: 580
+[2026-11-10 01:55:39.970 Server 1022744] Active Threads Percentage set to 100.0
+[2026-11-10 01:55:39.970 Server 1022744] Server Priority set to 0
+[2026-11-10 01:55:39.970 Server 1022744] Server has started
+[2026-11-10 01:55:39.970 Server 1022744] Destroy server context on device 0 (NVIDIA GB10)
+[2026-11-10 01:58:14.260 Server 1026403] Startup
+[2026-11-10 01:58:14.260 Server 1026403] Connecting to control daemon on socket: /home/avees/cj-mps-static/20261110-v1/mps-pipe/control
+[2026-11-10 01:58:14.260 Server 1026403] Initializing server process
+[2026-11-10 01:58:14.389 Server 1026403] Creating server context on device 0 (NVIDIA GB10)
+[2026-11-10 01:58:14.576 Server 1026403] Created anonymous shared memory region mps.shm.1000.1026403
+[2026-11-10 01:58:14.576 Server 1026403] CUDA MPS Server for Linux/Unix. Binary version: 13010
+[2026-11-10 01:58:14.576 Server 1026403] Display Driver version: 580
+[2026-11-10 01:58:14.576 Server 1026403] Active Threads Percentage set to 100.0
+[2026-11-10 01:58:14.576 Server 1026403] Server Priority set to 0
+[2026-11-10 01:58:14.576 Server 1026403] Server has started
+[2026-11-10 01:58:14.576 Server 1026403] Destroy server context on device 0 (NVIDIA GB10)
