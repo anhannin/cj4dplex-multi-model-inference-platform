@@ -1,0 +1,14 @@
+{
+  "source": "docs/TECHNICAL_REPORT.ko.md section1.2",
+  "source_sha256": "5a24386785980a0e24bf1cfb6b9cff129fe27789bfa00840d7131a0ecc4f45ef",
+  "diagram_source": "docs/figures/system-architecture.mmd",
+  "diagram_sha256": "98332fb572d148c3d9c7a3c97b1536f99e4604377a2ac3645d719d3addd05c30",
+  "svg_source": "first rendered Mermaid SVG from docs/TECHNICAL_REPORT.ko.html",
+  "png": "docs/figures/system-architecture.png",
+  "png_size": [
+    1800,
+    2563
+  ],
+  "new_architecture_design": false,
+  "new_gpu_execution": false
+}

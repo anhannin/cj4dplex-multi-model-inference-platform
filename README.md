@@ -42,7 +42,7 @@ NVIDIA DGX Spark의 **단일 GB10 GPU(48 SM)**에서 서로 다른 특성을 가
 
 ## 2. System Architecture
 
-![System Architecture](docs/architecture.svg)
+![System Architecture](docs/figures/system-architecture.png)
 
 ROS 2 기반 요청·응답 경로를 사용하며, 두 모델은 Kubernetes에서 별도 Pod로 실행됩니다.
 

@@ -1,0 +1,24 @@
+flowchart TB
+    C[ROS2 Client]
+    subgraph S[DGX Spark / Kubernetes]
+        subgraph Q[Qwen Pod]
+            QI[Request Topic] --> QF[FIFO16] --> QW[Worker1] --> QM[Qwen3.5-9B]
+            QO[Pod의 결과 publish]
+        end
+        subgraph Y[YOLO Pod]
+            YI[Request Topic] --> YF[FIFO512] --> YW[Worker1] --> YM[YOLO26l]
+            YO[Pod의 결과 publish]
+        end
+        subgraph G[GB10 / MPS Static 후보]
+            GQ[Qwen8SM]
+            GY[YOLO40SM]
+        end
+    end
+    C --> QI
+    C --> YI
+    QM -->|CUDA 호출| GQ
+    YM -->|CUDA 호출| GY
+    GQ -->|연산 완료| QO
+    GY -->|연산 완료| YO
+    QO --> QR[Qwen Result / UUID] --> C
+    YO --> YR[YOLO Result / UUID] --> C

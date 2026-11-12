@@ -118,3 +118,16 @@ class MainDeliveryContracts(unittest.TestCase):
                 scale = 1 if key == "generate_ttft_ms" else 1000
                 wanted.append(f"{value / scale:.3f}")
             self.assertEqual(got, wanted, label)
+
+    def test_author_architecture_uses_technical_report_diagram(self):
+        text = (ROOT / "docs/ARCHITECTURE.ko.md").read_text()
+        self.assertTrue(text.startswith("# System Architecture\n"))
+        self.assertNotIn("기존 Technical Report의 System Architecture 그림 삽입", text)
+        self.assertIn("figures/system-architecture.png", text)
+        report = (ROOT / "docs/TECHNICAL_REPORT.ko.md").read_text()
+        diagram = re.search(r"```mermaid\n(.*?)\n```", report, re.S).group(1) + "\n"
+        self.assertEqual(
+            (ROOT / "docs/figures/system-architecture.mmd").read_text(), diagram
+        )
+        for i in range(1, 9):
+            self.assertIn(f"## {i}. ", text)
